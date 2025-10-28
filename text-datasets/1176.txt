@@ -1,0 +1,2476 @@
+1176 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+abstract
+Although replication repair deficiency, either by mismatch repair deficiency 
+(MMRD) and/or loss of DNA polymerase proofreading, can cause hypermutation in 
+cancer, microsatellite instability (MSI) is considered a hallmark of MMRD alone. By genome-wide analy-
+sis of tumors with germline and somatic deficiencies in replication repair, we reveal a novel association 
+between loss of polymerase proofreading and MSI, especially when both components are lost. Analysis 
+of indels in microsatellites (MS-indels) identified five distinct signatures (MS-sigs). MMRD MS-sigs 
+are dominated by multibase losses, whereas mutant-polymerase MS-sigs contain primarily single-base 
+gains. MS deletions in MMRD tumors depend on the original size of the MS and converge to a preferred 
+length, providing mechanistic insight. Finally, we demonstrate that MS-sigs can be a powerful clinical 
+tool for managing individuals with germline MMRD and replication repair–deficient cancers, as they can 
+detect the replication repair deficiency in normal cells and predict their response to immunotherapy.
+Significance: Exome- and genome-wide MSI analysis reveals novel signatures that are uniquely 
+attributed to mismatch repair and DNA polymerase. This provides new mechanistic insight into MS 
+maintenance and can be applied clinically for diagnosis of replication repair deficiency and immuno-
+therapy response prediction.
+1Program in Genetics and Genome Biology, The Hospital for Sick Children, 
+Toronto, Ontario, Canada. 2The Arthur and Sonia Labatt Brain Tumour 
+Research Centre, The Hospital for Sick Children, Toronto, Ontario, Canada. 
+3Institute of Medical Science, Faculty of Medicine, University of Toronto, 
+Toronto, Ontario, Canada. 4Massachusetts General Hospital Center for 
+Cancer Research, Charlestown, Massachusetts. 5Broad Institute of Harvard 
+and MIT, Cambridge, Massachusetts. 6Harvard Graduate Program in Bio-
+physics, Harvard University, Cambridge, Massachusetts. 7Department of 
+Experimental Medicine, McGill University, Montreal, Quebec, Canada. 8The 
+Research Institute of the McGill University Health Center, Montreal, Quebec, 
+Canada. 9Department of Paediatrics, University of Toronto, Toronto, 
+Ontario, Canada. 10Department of Paediatric Laboratory Medicine, The 
+Hospital for Sick Children, Toronto, Ontario, Canada. 11Department of 
+Laboratory Medicine and Pathobiology, Faculty of Medicine, University 
+of Toronto, Toronto, Ontario, Canada. 12Department of Biochemistry and 
+Molecular Biology, Tulane Cancer Center, Tulane University of Medicine, 
+New Orleans, Louisiana. 13Cumming School of Medicine, University of 
+Calgary, Calgary, Alberta, Canada. 14Charbonneau Cancer Institute and 
+Alberta Children’s Hospital Research Institute, Calgary, Alberta, Canada. 
+15Department of Pediatrics and Harold C. Simmons Comprehensive Cancer 
+Center, The University of Texas Southwestern Medical Center, Dallas, 
+Texas. 16Pauline Allen Gill Center for Cancer and Blood Disorders, Children’s 
+Health, Dallas, Texas. 17Department of Pediatrics, Centre Mere-enfant 
+Soleil du CHU de Quebec, CRCHU de Quebec, Universite Laval, Quebec 
+City, Quebec, Canada. 18Department of Pediatric Hematology and Oncol-
+ogy, University Medical Center Hamburg-Eppendorf, Hamburg, Germany. 
+19Department of Haematology and Oncology, Women’s and Children’s Hos-
+pital, North Adelaide, South Australia, Australia. 20Division of Oncology 
+and Center for Childhood Cancer Research, Children’s Hospital of Philadel-
+phia, Philadelphia, Pennsylvania. 21Perelman School of Medicine at the Uni-
+versity of Pennsylvania, Philadelphia, Pennsylvania. 22Pediatric Oncology 
+and Hematology, Azienda Ospedaliera-Universita’ degli Studi di Padova, 
+Padova, Italy. 23Department of Pediatric Hematology-Oncology, Children’s 
+Hospital of Pittsburgh of UPMC, Pittsburgh, Pennsylvania. 24Division of 
+Pediatric Hematology-Oncology, Oregon Health and Science University, 
+Portland, Oregon. 25Division of Hematology and Oncology, Medical College 
+DNA Polymerase and Mismatch Repair Exert 
+Distinct Microsatellite Instability Signatures 
+in Normal and Malignant Human Cells  
+Jiil Chung1,2,3, Yosef E. Maruvka4,5, Sumedha Sudhaman1,2, Jacalyn Kelly1,2, Nicholas J. Haradhvala4,5,6, 
+Vanessa Bianchi1, Melissa Edwards1, Victoria J. Forster1,2, Nuno M. Nunes1,2, Melissa A. Galati1,2,3,  
+Martin Komosa1, Shriya Deshmukh7,8, Vanja Cabric9, Scott Davidson1,10, Matthew Zatzman1,11,  
+Nicholas Light1,3,11, Reid Hayes1,10, Ledia Brunga1,10, Nathaniel D. Anderson1,11, Ben Ho11, Karl P. Hodel12,  
+Robert Siddaway2, A. Sorana Morrissy13,14, Daniel C. Bowers15,16, Valérie Larouche17, Annika Bronsema18, 
+Michael Osborn19, Kristina A. Cole20,21, Enrico Opocher22, Gary Mason23, Gregory A. Thomas24,  
+Ben George25, David S. Ziegler26,27, Scott Lindhorst28, Magimairajan Vanan29, Michal Yalon-Oren30,  
+Alyssa T. Reddy31, Maura Massimino32, Patrick Tomboc33, An Van Damme34, Alexander Lossos35,  
+Carol Durno36,37, Melyssa Aronson36, Daniel A. Morgenstern38, Eric Bouffet39, Annie Huang2,11,39,  
+Michael D. Taylor2,40, Anita Villani39, David Malkin39, Cynthia E. Hawkins2,10,11,41, Zachary F. Pursell12,  
+Adam Shlien1,10,11, Thomas A. Kunkel42, Gad Getz4,5,43,44, and Uri Tabori1,2,39
+Research Article
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+	
+MAY  2021 CANCER DISCOVERY | 1177 
+of Wisconsin, Milwaukee, Wisconsin. 26Kids Cancer Centre, Sydney Chil-
+dren’s Hospital, Randwick, New South Wales, Australia. 27Children’s Cancer 
+Institute, Lowy Cancer Research Centre, University of New South Wales, 
+Randwick, New South Wales, Australia. 28Neuro-Oncology, Department of 
+Neurosurgery, and Department of Medicine, Division of Hematology/Medical 
+Oncology, Medical University of South Carolina Charleston, South Carolina.  
+29Department of Pediatric Hematology-Oncology, Cancer Care Manitoba; 
+Research Institute in Oncology and Hematology (RIOH), University of 
+Manitoba, Winnipeg, Manitoba, Canada. 30Pediatric Hemato-Oncology, 
+Edmond and Lilly Safra Children’s Hospital and Cancer Research Center, 
+Sheba Medical Center, Tel Hashomer Affiliated to the Sackler School 
+of Medicine, Tel-Aviv University, Tel Aviv, Israel. 31Division of Pediatric 
+Hematology and Oncology, Department of Pediatrics, University of Ala-
+bama at Birmingham, Birmingham, Alabama. 32Pediatric Unit, Fondazione 
+IRCCS Istituto Nazionale dei Tumori (INT), Milano, Italy. 33Department of 
+Pediatrics Section of Hematology-Oncology, WVU Medicine Children’s, 
+Morgantown, West ­Virginia. 34Division of Hematology and Oncology, 
+Department of Pediatrics, Cliniques Universitaires Saint-Luc, Brussels, 
+Belgium. 35Department of Neurology, Agnes Ginges Center for Human 
+Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, 
+Israel. 36Zane Cohen Centre for Digestive Diseases, Mount Sinai Hospi-
+tal, Toronto, Ontario, Canada. 37Division of Gastroenterology, Hepatology 
+and Nutrition, The Hospital for Sick Children, Toronto, Ontario, Canada. 
+38Department of Paediatrics, Hospital for Sick Children and University of 
+Toronto, Toronto, Ontario, Canada. 39Department of Hematology/Oncol-
+ogy, The Hospital for Sick Children, Toronto, Ontario, Canada. 40Depart-
+ment of Neurosurgery, The Hospital for Sick Children, Toronto, Ontario, 
+Canada. 41Program in Cell Biology, The Peter Gilgan Centre for Research 
+and Learning, The Hospital for Sick Children, Toronto, Ontario, Canada. 
+42Genome Integrity Structural Biology Laboratory, National Institute of 
+Environmental Health Sciences, NIH, Durham, North Carolina. 43Harvard 
+Medical School, Boston, Massachusetts. 44Department of Pathology, Mas-
+sachusetts General Hospital, Boston, Massachusetts.
+J. Chung, Y.E. Maruvka, G. Getz, and U. Tabori contributed equally to this 
+article.
+G. Getz and U. Tabori are co-senior authors of this article.
+Corresponding Authors: Uri Tabori, Hematology/Oncology, The Hospital 
+for Sick Children, University of Toronto, 555 University Avenue, Toronto, 
+Ontario M5G1X8, Canada. Phone: 416-813-7654, ext. 1503; Fax: 416-813-
+5327; E-mail: uri.tabori@sickkids.ca; and Gad Getz, The Broad Institute, 
+415 Main Street, Cambridge, MA 02142. Phone: 617-714-7471; E-mail: 
+gadgetz@broadinstitute.org
+Cancer Discov 2021;11:1176–91
+doi: 10.1158/2159-8290.CD-20-0790
+©2020 American Association for Cancer Research.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1178 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+Introduction
+The two major mechanisms that safeguard the fidelity of 
+genome replication are the DNA mismatch repair machin-
+ery and DNA polymerase proofreading (ε or δ, encoded by 
+POLE and POLD1; refs. 1–4). Deficiencies of mismatch repair 
+(MMRD) or polymerase proofreading can occur independently 
+or simultaneously, leading to combined DNA replication repair 
+deficiency (RRD). Both mechanisms maintain genome stabil-
+ity by correcting misincorporated noncomplementary nucleo-
+tides. Thus, when either or both pathways are inactivated, 
+there is an increased rate of replicative mutagenesis that leads 
+to a wide array of hypermutant cancers (1, 2, 4). The MMR 
+machinery also repairs insertions and deletions in stretches of 
+DNA with small repeated motifs [called microsatellites (MS)], 
+which are created as a result of DNA polymerase slippage (4, 5). 
+Nevertheless, the impact of DNA polymerase on the accumu-
+lation of these MS insertions and deletions (MS-indels) in 
+human cancer is currently not well described (6–9).
+The increased number of MS-indels in MMRD tumors is 
+marked by MS instability (MSI). MSI is clinically used for 
+tumor stratification, referral to germline testing for cancer 
+predisposition, and has recently been approved as a bio-
+marker for immune checkpoint inhibitors (ICI; refs. 10–13). 
+MSI is commonly detected by comparing MS lengths of a 
+limited panel of MSs (five loci) between a patient’s tumor and 
+germline DNA. The Cancer Genome Atlas (TCGA) used this 
+approach to stratify tumors as MS unstable [MSI-high (MSI-H)] 
+or MS stable (MSS) for colorectal, gastric, and endometrial 
+tumors. However, this stratification approach has recently 
+been challenged as being limited in scope, due to the misclas-
+sification of some MMRD cancers (6, 14). Importantly, using 
+this assay, polymerase mutant cancers do not exhibit high 
+MSI (2, 15, 16), and therefore, in humans, the role of polymer-
+ase mutations in the accumulation of MS-indels in cancer is 
+currently considered largely unknown.
+The most common cause of MMRD in human cancers is 
+somatic hypermethylation of the MLH1 promoter, whereas 
+others are due to LOH from the germline allele in any one 
+of the MMR genes, MSH2, MSH6, MLH1, and PMS2 (17, 18). 
+Insight regarding the pathogenesis and clinical behavior of 
+RRD can be gained by studying human syndromes with germ­
+line mutations in these genes. Lynch syndrome is caused by 
+germline heterozygous inactivating mutations in one of the 
+MMR genes and is followed by somatic loss of the remaining 
+allele, leading to MMR deficiency. Because it requires loss 
+of only one allele, Lynch syndrome is associated with earlier 
+cancer onset than somatic MMRD (19). However, although 
+less common, the most aggressive form of MMRD stems 
+from germline biallelic inactivating mutations in one of the 
+MMR genes. This condition, termed constitutional MMRD 
+(CMMRD), is one of the most aggressive cancer syndromes 
+in humans, in which virtually all individuals will be affected 
+by a variety of cancers during childhood, and all share hyper-
+mutation and specific mutational signatures (1, 2, 4, 20). 
+Similarly, heterogeneous germline polymerase mutations in 
+the exonuclease (proofreading) domain of POLE or POLD1(1) 
+result in a cancer syndrome termed polymerase proofreading 
+deficiency (PPD), which is less well described but also leads to 
+hypermutant cancers (1, 2, 7, 20–22). Importantly, MS-indels 
+in either of these cancer predisposition syndromes have not 
+been previously investigated.
+In patients with CMMRD, somatic mutations in the poly-
+merase genes result in combined dysfunction of the replica-
+tion repair machinery, leading to a dramatic accumulation 
+of single-nucleotide variations (SNV; refs. 1, 2, 7, 20–22). 
+Analysis of SNV-based mutational signatures and their tim-
+ing also enabled the prediction of early germline events and 
+late treatment-related processes in each cancer that correlate 
+with the type of RRD (2). Moreover, cancers with both MMRD 
+and PPD have unique SNV signatures that are characteristic of 
+the interaction between the two DNA repair mechanisms (7). 
+Nevertheless, SNV-based analyses fail to provide information 
+on several biological and clinical questions related to RRD car-
+cinogenesis. These include insights regarding the mechanisms 
+of mutagenesis during RRD tumor initiation and progression, 
+explaining genotype–phenotype correlations between differ-
+ent mutations in MMR and polymerase genes, and the ability 
+to detect RRD in normal cells. These are highly important 
+for the management of these patients and their tumors, and 
+implementation of surveillance to family members.
+Although indel-based signatures were recently reported 
+(23), the accumulation of MS-indels and their potential signa-
+tures in MMRD during tumorigenesis are not well described 
+(24–26). Furthermore, the impact of polymerase mutations 
+on the accumulation of MS-indels and their corresponding 
+signatures in cancer is not known (6–9).
+To answer the above biological and clinical questions, we 
+used our large cohort of carefully annotated cancers and 
+normal tissues from patients with germline mutations in the 
+MMR and polymerase genes. We analyzed genomic MS-indels 
+from this cohort using whole-exome sequencing (WES) and 
+whole-genome sequencing (WGS), thoroughly investigating 
+the roles of both replication repair machineries in correcting 
+MS alterations, and their impact on cancer progression and 
+response to therapy. Comparison of these tumors with adult 
+RRD cancers and pediatric non-RRD tumors uncovered: (i) 
+important insights into the accumulation of MS-indels in 
+RRD cancers; (ii) a novel and distinct association between 
+polymerase mutations and MS-indel accumulation; and (iii) 
+a potential mechanism of MMRD that produces large dele-
+tions in MSs by single events that converge to an MS-locus 
+length of approximately 15 bp. We then considered using the 
+activity levels of different MS-indel signatures for tumor strati-
+fication and genetic diagnosis, and as biomarkers of response to 
+immunotherapy.
+Results
+A Distinct Pattern of MSI in CMMRD Cancers
+Because all cells from patients with CMMRD have impaired 
+abilities to repair mismatches and MS-indels (1, 2), MSI 
+should be prevalent in all normal and cancerous tissues. To 
+test this hypothesis, we analyzed the MSI status of a cohort of 
+96 CMMRD cancers and 8 normal tissues using the current 
+gold-standard method, the Microsatellite Instability Analysis 
+System (MIAS, Promega; refs. 27, 28). Strikingly, only 17 (18%) 
+of the 96 CMMRD cancers and none of the normal tissues 
+were classified as MSI-H (≥2 loci with ≥3 bp indels; Fig. 1A). 
+This observation was not related to the specific ­MMR-mutated 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1179 
+100%
+18%
+11%
+71%
+0
+25
+50
+75
+100
+Nonmalignant
+Malignant
+Percent of MSI classifications
+MSS
+MSI-L
+MSI-H
+4%
+12%
+84%
+22%
+78%
+27%
+73%
+40%
+20%
+40%
+0
+25
+50
+75
+100
+Brain
+tumors
+Other
+cancers
+Hematologic
+cancer
+GI
+cancers
+n = 51
+n = 11
+n = 9
+n = 25
+n = 8
+n = 96
+MSS
+MSI-L
+MSI-H
+A
+Blood
+(reference)
+90
+110
+130
+150
+170
+102
+123
+134
+139
+180
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+Thymic
+lymphoma
+(MSS)
+90
+110
+130
+150
+170
+121
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+Length of microsatellite (bp)
+Luminescence
+Colorectal
+cancer
+(MSI-H)
+90
+110
+130
+150
+170
+99
+131
+175
+0
+1,000
+2,000
+3,000
+4,000
+5,000
+MMR160
+(CMMRD)
+B
+0.27
+0.37
+< 2.2 × 10−16
+< 2.2 × 10−16
+4.4 × 10−7
+2.6 × 10−15
+< 2.2 × 10−16
+0
+10
+100
+1,000
+10,000
+MMRP
+n = 239
+MMRD
+n = 69
+MMRP
+brain
+n = 14
+MMRD
+brain
+n = 47
+MMRD
+hematologic
+n = 5
+MMRD
+other
+n = 7
+MMRD
+GI
+n = 10
+MMRP
+GI
+n = 465
+MMRD
+GI
+n = 114
+MMRP
+endo
+n = 306
+MMRD
+endo
+n = 142
+MMR-deficient
+MMR-proficient
+Log10 total MS-indel burden (TMSIB; no. of MS-indels)
+All pediatric cancers
+Pediatric cancers by tissue
+Adult cancers
+Figure 1. MSs accumulate MS-indels in germline MMRD cancers. A, MSI status as measured by the MIAS (Promega) of CMMRD samples. Left and right 
+plots: The proportion of MSI-H, MSI-low (MSI-L), and MSS samples in different tissue types with the number of samples tested (top). The middle section 
+describes a single patient with CMMRD, MMR160, who had an MSS lymphoma and an MS unstable (MSI-H) colorectal cancer. Histograms represent the 
+results of the MIAS, with germline MS lengths of the five tested loci (bottom plot) marked as dashed lines in all plots. B, Comparison of exome-wide total 
+TMSIB between pediatric MMRP and MMRD cancers, pediatric cancers by tissue type, and between pediatric and adult MMRD cancers (TMSIB in logarithmic 
+scale). Median TMSIB for each group is written beside each box, and sample numbers are written below each group. Green represents MMRP, and red repre-
+sents MMRD in children and adults. Statistical significance was calculated by the Mann–Whitney U test. Endo, endometrial cancers. (continued on next page) 
+gene (P = 0.95, Kruskal–Wallis, Supplementary Fig. S1A), and 
+similarly, different tumors from the same patient resulted 
+in different MSI classifications (Fig. 1A; Supplementary Fig. 
+S1B; Supplementary Table S1). Interestingly, we observed tis-
+sue specificity, with gastrointestinal (GI) cancers having the 
+highest proportion of MSI-H (10/25, 40%) compared with 
+brain tumors (2/51, 4%, P = 2 × 10−4, χ2 test).
+It is unclear whether the lack of indels in the five MIAS 
+MS-loci is a unique feature to these loci, or whether MS-
+loci in CMMRD tumors universally have a low rate of indel 
+accumulation. To test this, we applied MSMuTect to all of the 
+MS-loci in the 69 tumor/normal whole-exome pairs of pedi-
+atric CMMRD cancers (6). We found that pediatric CMMRD 
+cancers had a significantly higher tumor MS-indel burden 
+(TMSIB) than pediatric MMR-proficient (MMRP; n = 239) 
+cancers (P < 2.0 × 10−15, Mann–Whitney U test, Fig. 1B). 
+Importantly, pediatric CMMRD cases had a similar TMSIB 
+to the adult MMRD cases (n = 114, P = 0.37), and no sig-
+nificant difference was found in the TMSIB across pediatric 
+cases from different tissues (Fig. 1B). On the other hand, the 
+number of SNVs in the pediatric tumors was higher due to 
+the somatic POLE mutations commonly found in CMMRD 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1180 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+chr19
+chr20
+chr21
+chr22
+chrX
+chrY
+chr13
+chr14
+chr15
+chr16
+chr17
+chr18
+chr7
+chr8
+chr9
+chr10
+chr11
+chr12
+chr1
+chr2
+chr3
+chr4
+chr5
+chr6
+0
+50
+100
+0
+50
+100
+0
+50
+100
+0
+50
+100
+Proportion of mutated MS-loci 
+C
+0.0
+0.1
+0.2
+0.3
+0.4
+Log (ranked MS-loci) 
+Fraction of samples with mutated MS-locus
+Adult
+n = 256
+Pediatric
+n = 69
+0.014
+n = 8
+0
+200
+400
+600
+Diagnosis Relapse
+Total MS-indel burden (TMSIB; no. of MS-indels)
+D
+E
+tumors (2). Overall, our method demonstrates that, as pre-
+dicted by the lack of MMR, pediatric CMMRD cancers indeed 
+have an increased rate of MS-indel accumulation, similar to 
+adult MMRD cancers.
+MS-indels are spread equally on different chromosomes 
+in both adult and pediatric cohorts (Fig. 1C; Supplementary 
+Table S2), and increase between initial and relapsed tumors 
+(ref. 29; n = 8; P = 0.014, Paired-samples Wilcoxon test; 
+Fig. 1D). Furthermore, in contrast to adult MMRD tumors 
+which exhibit highly mutated loci (refs. 6, 14; hotspots) 
+like those used in the MIAS assay, pediatric MMRD tumors 
+lacked this characteristic. For example, the MS in the ACVR2A 
+gene (chr2:148683686-148683693) is mutated in approxi-
+mately 45% of adult MMRD cases, but only 11% in pediat-
+ric CMMRD cases (Supplementary Table S3). In addition, 
+although adult tumors have 19 hotspots that are mutated in 
+more than 30% of the cases, the strongest hotspot in pediatric 
+tumors is mutated in approximately 20% (Fig. 1E; Supple-
+mentary Table S4). Together, these observations suggest that 
+MS-indels do accumulate in childhood CMMRD cancers and 
+continue to accumulate as tumors progress. Furthermore, the 
+key differences between adult and childhood MMRD cancers, 
+i.e., the different mutated loci and the lack of MS-loci that are 
+mutated very frequently, may explain why the MIAS assay was 
+unable to detect MSI in pediatric tumors.
+MMRD and Polymerase Mutant Tumors Have 
+Distinct MSI-Indel Signatures
+Another striking observation was that childhood tumors 
+had a similar number of MS-indels as adult MMRD cancers, 
+despite being largely MSS in the MIAS analysis (Fig. 1A). This 
+was most clearly observed between childhood CMMRD brain 
+tumors and adult GI cancers (P = 0.27, Mann–Whitney U test; 
+Fig. 1B), as well as between pediatric and adult GI cancers 
+(P = 0.37, Mann–Whitney U test; Fig. 1B). Because CMMRD 
+tumors acquire somatic polymerase mutations, which are 
+known to dramatically increase SNV mutations in cancer and 
+MS-indels in yeast, we hypothesized that mutant polymerases 
+actively contribute to MS-indel accumulation in pediatric 
+CMMRD tumors (3, 30, 31). We therefore compared MS-
+indels found in WES of 239 pediatric MMRP, 38 MMRD, 
+4 polymerase mutant, and 31 combined RRD (MMRD and 
+polymerase mutant) tumors with 505 adult endometrial can-
+cers spanning the same four subtypes. Despite proficiency in 
+MMR, polymerase mutant cancers exhibited increased MS-
+indel burden in both pediatric and adult cancers (P = 0.0071, 
+P = 1.1 × 10−8, respectively; Fig. 2A). Moreover, combined 
+RRD cancers have an increased MS-indel burden compared 
+with MMRD cancers in the pediatric cohort (P = 1.2 × 10−6; 
+Fig. 2A, left), further highlighting the contribution of poly-
+merase mutations to the accumulation of MS-indels.
+Figure 1. (Continued) C, Proportion of mutated MS-loci in each chromosome in the entire cohort. The average proportion (90.7%) is labeled and 
+shown as a gray-dotted line. The height of the bars indicates proportion, and similar heights indicate strong correlation of MS-indels to the number of 
+MS-loci in that region of the chromosome. Supplementary Table S2 shows the similar proportions of MS-loci mutated in each chromosome. D, Compari-
+son of the number of MS-indels in diagnosis and relapsed pediatric RRD tumors (n = 8). Statistical significance was calculated by the paired-samples 
+Wilcoxon test. E, Analysis of recurrent indels in MS-loci, separated by adult MMRD cancers (red; n = 256) and pediatric MMRD tumors (blue; n = 69). Each 
+point represents the fraction of tumors mutated for a given MS-locus (y axis) sorted from most to least frequently altered (left to right on the x axis).
+Figure 2. MMRD and PPD tumors have distinct MS-indel signatures. A, Comparison of TMSIB between RRD variants (MMRD, PPD, and MMRD and 
+PPD) with MMRP in pediatric brain and GI tumors (left) and adult endometrial tumors (right). Sample numbers are written below each group. P values cal-
+culated using the Mann–Whitney U test. B, Graphical presentation of MS-sig1 (top left) and MS-sig2 (top right) based on indel size (x axis) and MS-locus 
+length, separated by A- or C-repeats (z axis). The total number of MS-sig1 indels and MS-sig2 indels is compared between the RRD variants in boxplots 
+(bottom left and bottom right). P values calculated using the Mann–Whitney U test. C, Graphical representation of RRD subgroups (2) separated by age 
+of tumor onset, most common tumor types, proportion of RRD-associated COSMIC SBS signatures, and MS-sig1 and MS-sig2. The size of each graphic 
+corresponds to the proportion of the cancer observed clinically. MS-sigs correlate to the proportion of the COSMIC SBS signatures in each cluster. 
+Statistical significance was calculated using the Mann–Whitney U test.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1181 
+A
+Pediatric cancers
+MS-sig1 MMR deficiency signature
+MS-sig2 polymerase proofreading deficiency signature
+0
+0
+0
+Replication repair
+deficiency
+Age
+Tumor types
+SBS types
+(COSMIC)
+MS-sigs
+MS-sig 1
+MS-sig 2
+200
+Number of MS-indels
+400
+600
+3.2e–05
+Cluster 1
+Cluster 2
+Cluster 3
+< 2.2e–16
+0.0053
+200
+Number of MS-indels
+200
+300
+100
+Number of MS-indels
+200
+300
+600
+SBS 6 (MMR)
+SBS 14 (MMR/POL)
+SBS 15 (MMR/POL)
+SBS 21 (MMR)
+SBS 10 (POL)
+Other
+Proportion of mut
+Proportion of mut
+Proportion of mut
+Brain
+Gl
+GU
+Endo. Other
+Hem.
+10
+100
+1,000
+−3 −2 −1 1
+2
+Indel size
+3
+−3 −2 −1 1
+2
+Indel size
+3
+5
+10
+A-repeats
+length
+C-repeats
+length
+15
+205
+10
+5
+10
+A-repeats
+length
+C-repeats
+length
+15
+205
+10
+5
+10
+15
+20
+25
+30
+0
+5
+10
+15
+20
+25
+MMRP
+n = 238
+MMRP
+n = 365
+MMRD
+& PPD
+MMRD
+PPD
+0.0071
+0.09
+0.0017
+1.2 × 10−6
+1.1 × 10−8
+2.7 × 10−8
+1.6 × 10−6
+0.062
+PPD
+n = 4
+PPD
+n = 38
+PPD
+n = 32
+MMRD
+n = 38
+MMRD
+n = 286
+MMRD
+n = 142
+MMRP
+n = 306
+MMRD
+& PPD
+n = 31
+MMRD
+& PPD
+n = 57
+MMRP
+n = 365
+PPD
+n = 38
+MMRD
+n = 286
+MMRD
+& PPD
+n = 57
+MMRD
+& PPD
+n = 26
+Log10 total MS-indel burden (TMSIB; no. of MS-indels)
+Log10 No. MS-sig1 MS-indels
+0
+10
+100
+1,000
+Log10 No. MS-sig2 MS-indels
+10
+100
+1,000
+Adult cancers
+B
+C
+< 2.2 × 10−16
+4.4 × 10−14 5.7 × 10−7
+< 2.2 × 10−16
+1.7 × 10−9
+< 2.2 × 10−16
+< 2.2 × 10−16
+0.00028
+1.1 × 10−9
+8.7 × 10−10
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1182 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+We then wondered whether the two components of the 
+replication repair machinery exert distinct alterations in 
+MSs. To investigate this, we characterized each MS-indel 
+based on three features, its motif (A or C), the MS length 
+(5–20 bp), and the indel size (-3–+3 bp; Methods). We then used 
+SignatureAnalyzer (32, 33) to infer the different mutational 
+signatures based on these 192 (= 2 × 16 × 6) configurations 
+and found 5 distinct MS-indel signatures (MS-sigs; Fig. 2B; 
+Supplementary Fig. S2A). When compared with MMRP can-
+cers (Fig. 2B), MMRD cancers were enriched for two signa-
+tures dominated by 1 bp deletions in both A- and C-repeats 
+(MS-sig1 and MS-sig3, Mann–Whitney U test, P < 2.2 × 10−16), 
+whereas polymerase mutations resulted in two signatures 
+dominated by 1 bp insertions (MS-sig2 and MS-sig4, P = 4.4 × 
+10−14). In addition, we analyzed RRD cancers with driver 
+mutations in POLD1 (encoding the DNA polymerase that syn-
+thesizes the lagging strand; ref. 3; Supplementary Fig. 2B and 
+S2C). POLD1mut cancers were similarly dominated by inser-
+tions in MS-indels as POLEmut cancers (Supplementary Fig. 
+S2B). To our knowledge, this is the first time that the unique 
+mechanism of MS-indel accumulation by DNA polymerase 
+is described in human cancers. Interestingly, our results are 
+in agreement with several yeast studies, which showed a bias 
+toward 1 bp insertions in MSs in mutant POLE strains as the 
+leading strand polymerase (9, 34, 35), but contrast with other 
+yeast reports which suggest that mutant POLD1 creates single-
+base deletions in MS sequences (8, 36). Together, these findings 
+support that POLE and POLD1 with defective proofreading are 
+associated with increased insertion events (as opposed to the 
+deletion events associated with MMRD) and can contribute to 
+the overall TMSIB in human cancers.
+Previously (2), we classified hypermutant cancers into three 
+clinically relevant subtypes of RRD (MMRD, PPD, or both 
+MMRD and PPD) based on their single-base substitution (SBS) 
+signatures (COSMIC SBS signatures; Supplementary Fig. S3). 
+We therefore examined the correlation of the MS-sigs to these 
+clusters. MMRD and PPD (SBS-Cluster 1) are mostly seen 
+in children with germline MMRD who later acquire somatic 
+POLE mutations and fit a combination of MS-sig1 and MS-sig2. 
+MS-sig1 is specific for MMRD-only cancers (SBS-Cluster 2) in 
+both children and adults, and PPD (SBS-Cluster 3) cancers are 
+highly driven by the mutant polymerase and have more MS-
+sig2 MS-indels than MS-sig1 (P = 3.2 × 10−5, P = 0.0053, and 
+P < 2.2 × 10−16, respectively; Fig. 2C). These data suggest 
+that both SNV-based signatures and MS-sigs provide additional 
+complementary information to standard mutational calls and 
+can be used to clinically screen and stratify tumors in the future.
+Accumulation of Large MS Deletions in MMRD 
+Cancers with Preferred Final Length
+To gain insight into the mechanism of MS-indel accumu-
+lation during RRD tumorigenesis, we analyzed the patterns 
+of MS-indels in whole genomes of 46 pediatric RRD cancers 
+(39 brain, 4 colorectal, 1 osteochondroma, 1 Wilms tumor, 
+and 1 T-cell lymphoma) and 28 MMRD adult cancers (12 
+colorectal, 5 gastric, and 11 endometrial). The genome pro-
+vides approximately 50 times more MS-loci compared with 
+the exome, and has disproportionally higher numbers of 
+longer (>20 bp) MS-loci. These two features enable a more 
+refined analysis of the MS-indel distribution. Adult MMRD 
+cancers present (Fig. 3A; Supplementary Figs. S3, S4A, S4B; 
+Supplementary Table S5) bias toward deletions similar to 
+their behavior in WES (Fig. 2B). They also present a new phe-
+nomenon of accumulating long deletions (>3 bases), which 
+increase in size with increasing MS-loci length. In contrast, 
+pediatric CMMRD cases have mostly 1 bp deletions, and 
+MMRD and PPD cancers are enriched with 1 bp insertions 
+(Fig. 3A; Supplementary Figs. S3 and S4A–S4C; Supplemen-
+tary Table S5) with a lack of long deletions. The lack of long 
+MS-indels in pediatric cancers is likely the reason for the 
+inability of the conventional electrophoresis methodologies 
+(e.g., MIAS, Promega; Fig. 1A) to detect MSI in these cancers, 
+as the standard assay cannot robustly identify short indels 
+and considers only indels of ≥3 bases as robust events.
+To better understand the kinetics of the accumulation of 
+large deletions in MS-loci, we compared two known models. 
+(i) A two-phase model where each mutational event can alter 
+either a single repeat motif or multiple motifs; or a simple 
+(ii) stepwise-mutation model, which assumes only one repeat 
+motif is altered per mutational event, making large dele-
+tions the amalgamation of multiple deletions (37, 38). The 
+stepwise model predicts that the relationship between the 
+MS-indel size and the frequency of the mutational events of 
+that size will be unimodal (i.e., Poisson). On the other hand, 
+the two-phase model enables a bimodal relationship between 
+the MS-indel size and frequency (see Methods).
+The pediatric tumors follow the predictions of the stepwise 
+model (39) and present a sharp decrease in the frequency of 
+MS-indels as the deletion size increases. In contrast, the adult 
+tumors follow the stepwise model only for short loci (<12 bp), 
+and from 12 bp and onward, they deviate from the stepwise 
+model and resemble the two-phase model (ref. 37; Fig. 3B; 
+Supplementary Fig. S4D and S4E).
+Interestingly, the large deletions in adult tumors reduced 
+the length of long (>15 bp) MS-loci to become approximately 
+15 bp (Fig. 3C; Supplementary Fig. S4F). These findings 
+suggest that there is an underlying mechanism of MS dele-
+tions that gives larger loci the tendency to converge to 15 bp 
+in length. A potential model for this phenomenon is that 
+after the DNA polymerase replicates 12 to 15 bp on an MS-
+locus, it may become more susceptible to slip off from the 
+template strand. The width of the DNA-binding domain of 
+the polymerase is known to be approximately 50 Å, which is 
+approximately the combined length of 15 nucleotides (51 Å) 
+in a DNA double helix (40). We predict that because 15 
+nucleotides span the entire DNA-binding domain, the weak 
+association of the polymerase to repeated nucleotides makes 
+the polymerase especially prone to detach from the template 
+strand. As the new strand then rebinds to the template 
+strand, the template strand may generate a loop to become 
+fully complementary to the approximately 15 bp of the nas-
+cent strand (refs. 41, 42; Fig. 3D).
+This process is restricted to deletions, hinting that it may 
+be specific to MMR-deficient cells, whereas insertions in poly-
+merase mutant cancers did not reveal the same large events 
+(Supplementary Fig. S4A).
+Clinical Applications of MS-Sigs
+To begin answering the potential diagnostic and predic-
+tive role of MS-indels in patients with RRD cancers, we first 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1183 
+Deletions
+Insertions
+1
+5
+9
+13
+17
+21
+25
+29
+19
+17
+15
+13
+11
+9
+7
+5
+3
+1
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+1
+2
+3
+4
+Size of MS-locus
+Length of MS-indel
+Deletions
+Insertions
+1
+5
+9
+13
+17
+21
+25
+29
+19
+17
+15
+13
+11
+9
+7
+5
+3
+1
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+1
+2
+3
+4
+Length of MS-indel
+Pediatric cancers
+5−10
+11−15
+16−20
+21−25
+26−30
+20
+15
+10
+5
+0
+20
+15
+10
+5
+0
+20
+15
+10
+5
+0
+20
+15
+10
+5
+0
+20
+15
+10
+5
+0
+100
+101
+102
+103
+104
+105
+100
+101
+102
+103
+104
+105
+100
+101
+102
+103
+104
+105
+100
+101
+102
+103
+104
+105
+100
+101
+102
+103
+104
+105
+Length of deletion
+Average number of MS-indels (log-scale)
+Adult
+Pediatric
+Lengths of MS-loci
+Number of MS-indel
+events (log-scale)
+A
+B
+C
+D
+D1118 (MMRD)
+Deletions
+Insertions
+1
+5
+9
+13
+17
+21
+25
+29
+19
+17
+15
+13
+11
+9
+7
+5
+3
+1
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+1
+2
+3
+4
+Deletions
+Insertions
+1
+5
+9
+13
+17
+21
+25
+29
+19
+17
+15
+13
+11
+9
+7
+5
+3
+1
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+1
+2
+3
+4
+Size of MS-locus
+Length of MS-indel
+Length of MS-indel
+Number of MS-indel
+events (log-scale)
+Adult cancers
+AX-A0J1 (MMRD & PPD)
+CG-4442 (MMRD)
+D132 (MMRD & PPD)
+5
+7
+9
+11
+13
+15
+17
+19
+21
+23
+25
+27
+29
+5
+7
+9
+11 13 15 17 19 21 23 25 27 29
+Initial MS-locus length
+Mutated MS-locus length
+0.00
+0.25
+0.50
+0.75
+Fraction of
+MS-indels
+1.00
+Adult MMRD
+cancers
+DNA polymerase
+Microsatellite (23 A’s)
+1. DNA polymerase 
+replicates along a 
+microsatellite of 23 
+A’s
+2. DNA polymerase 
+replicates 12–15 
+bases along DNA 
+before slippage
+3. Polymerase binds 
+onto DNA at the 
+terminus of the 
+microsatellite
+4. The section of the 
+microsatellite that 
+was not replicated 
+creates a loop on 
+the template strand
+5. Nascent strand 
+has a deletion that 
+causes it to become 
+15 bp
+DNA-binding
+domain
+1
+1′
+Template strand
+microsatellite
+~50 Å
+3.4 Å
+2
+3
+4
+5
+6
+7
+8
+9
+10 11 12 13 14 15
+2′
+3′
+4′
+5′
+6′
+7′
+8′
+9′ 10′ 11′ 12′ 13′ 14′ 15′
+Daughter strand
+The width of the 
+DNA-binding domain 
+(~50 Å) fits ~12–15 
+bp, and may be prone 
+to slippage when the 
+entire domain contains 
+repetitive bases
+Figure 3.  Accumulation of large MS deletions in MMRD cancers toward a preferred final length. A, Examples of genomic MS-indel heat maps of 
+germline MMRD and MMRD and PPD cancers in adults (TCGA) and children. Pediatric cancers have an enrichment of single-base MS-indels, whereas adult 
+cancers accumulate insertions of one base and large (>3 bp) deletions that increase in size (x axis) with increasing locus length (y axis). Each color rep-
+resents the log10 count of MS-indel events. B, The total number of MS deletions in both pediatric and adults by locus length (each plot presents a range 
+of five bases) and mutation size (x axis). The number of deletions was averaged for each deletion length. C, The fraction of MS-indels by initial (x axis) 
+and final/postmutation (y axis) lengths in adult tumors revealing the convergence of MS-loci to 15 bp (indicated by red arrow). Fraction of indels was 
+calculated by dividing the number of indels corresponding to each initial and mutated locus length by total number of MS-indels in each initial MS-locus 
+length. D, Schematic representation of the emergence of 15-bp-long MSs as a targeted locus length in adult MMRD cancers. The polymerase is prone to 
+slippage after replicating a tract of 15 bp repeats, resulting in a loop in the template strand upon rebinding. If unrepaired, the loop can result in a deletion 
+that causes the nascent strand to become 15 bp, irrespective of the original locus length.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1184 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+compared the ability of MS-sigs to diagnose RRD cancers with 
+currently used SNV-based clinically approved tools (2). The 
+MS-indel signatures presented above (MS-sig1 and MS-sig2) are 
+based on detecting MS-indels by comparing pairs of tumor and 
+normal samples. However, the characteristic patterns of MS-
+indels and the large number of MSs in the genome may enable 
+analyzing tumors without the need for matched normal sam-
+ples. To test this, we designed scores that reflect the prevalence 
+of MS-sig1 (MMRDness score) and MS-sig2 (POLEness score, 
+Methods) in any given sample. Both scores were calculated by 
+taking the logarithm (base 10) of the ratio of the number of 
+-1 deletions (MMRDness) or +1 insertions (POLEness) divided 
+by the total number of MS-loci within the specified lengths 
+(10–15 bp for MMRDness and 5–6 bp for POLEness, Methods). 
+Higher scores indicate higher prevalence of the MMRDness and 
+POLEness signatures in each sample. Only MS-sig1 and MS-
+sig2 were used due to the overwhelming dominance of A-repeat 
+MS-loci in the genome compared with C-repeats, which are rep-
+resented by MS-sig3 and MS-sig4. We calculated the two scores 
+for a well-characterized set of tumors and were able to separate 
+the four subtypes that we analyzed (MMRP, MMRD, PPD, and 
+MMRD and PPD; Fig. 4A).
+We then validated whether the MMRDness and POLEness 
+scores can be used as a more cost-effective clinical tool for 
+detecting MMRD and PPD. We sequenced 52 MMRP and 
+RRD tumors with a small fraction of the standard genomic 
+coverage (0.5X instead of the typical 30X) and calculated their 
+MMRDness and POLEness. We observed similar clustering of 
+the RRD subtypes (Supplementary Fig. S5A), validating their 
+ability to accurately and cost-effectively classify RRD tumors. 
+Subsequently, we tested whether the MS-sigs can improve 
+the current SNV-based methods used to screen and diagnose 
+RRD tumors (4). We assessed the MMRDness and POLEness 
+scores (Methods) of 72 tumors for which WGS was available 
+through our clinical SickKids Cancer Sequencing (KiCS) 
+program (2). The MMRDness score uncovered four tumors 
+(Fig. 4B; Supplementary Fig. S5B) that were not known to 
+be MMRD by the sequencing center, as they had relatively 
+low tumor mutational burdens and no SNV-based MMRD 
+signatures (3–17 Mut/Mb; Supplementary Table S6). Genetic 
+testing revealed that three of them had canonical Lynch syn-
+drome germline mutations, and the remaining one carried a 
+novel germline MMR mutation (Supplementary Table S6). 
+This suggests that MMRDness and POLEness can be both a 
+more accurate and less expensive test compared with current 
+methods for detecting RRD in tumors.
+Analysis of Whole-Genome MSI Signatures Can 
+Diagnose CMMRD in Normal Cells
+Having established the ability of MS-sigs and the corre-
+sponding MMRDness score to identify MMRD tumors, we 
+tested the ability of the tool to identify germline (CMMRD) 
+mutations in nonmalignant (blood) samples. All nonmalig-
+nant samples from patients with CMMRD (n = 34) had an ele-
+vated MMRDness score compared with patients with MMRP, 
+polymerase mutant, and Lynch syndrome (P = 8.7 × 10−11, 
+Mann–Whitney U test; Fig. 4C; Supplementary Fig. S5C). 
+Notably, the Promega panel assay was completely unable to 
+detect CMMRD in nonmalignant tissues (Fig. 1A), and, simi-
+larly, SNV-based signatures are not able to detect hypermuta-
+tion in normal cells. The MMRDness score requires neither a 
+patient-matched normal control nor high sequencing depth 
+to detect the MS-sig patterns throughout the genome that 
+correspond to CMMRD. The high specificity and sensitivity of 
+the MMRDness score (Fig. 4D) enables it to be an inexpensive 
+and robust assay for screening and diagnosing CMMRD prior 
+to cancer, which can be used to implement early surveillance 
+protocols to improve the survival of patients with CMMRD. 
+On the other hand, the diagnostic role of POLEness is limited 
+to RRD tumors (Fig. 4A), and further investigation is required 
+to assess its ability to detect PPD in the germline.
+Different Alterations of the MMR and  
+Polymerase Genes Have Varying Effects on 
+MMRDness and POLEness
+The four genes MLH1, MSH2, MSH6, and PMS2, that when 
+mutated lead to MMRD, play different roles in the MMR mech-
+anism (43). However, thus far, no footprint has been found in 
+the mutational landscape for the four different genes. For exam-
+ple, germline mutations in MSH2 and MLH1 have higher pen-
+etrance than MSH6 and PMS2, and are found most commonly 
+in adult Lynch syndrome cases. In contrast, for individuals with 
+CMMRD, the reverse is observed. PMS2 is the most commonly 
+mutated gene, followed by MSH6, and biallelic MSH2 germline 
+mutations are extremely rare. These cancers have similar tumor 
+mutation burdens (TMB) irrespective of the mutated MMR 
+gene (1, 2); thus, the different penetrance cannot be simply 
+explained by a higher mutation rate. Other functional assays 
+have also failed to explain this genotype–phenotype relation-
+ship despite the different mechanistic roles of the MMR genes. 
+Similarly, PPD is almost strictly observed with POLE but not 
+POLD1 germline mutations—an observation that also cannot 
+be explained by differences in TMB or other functional assays.
+We therefore evaluated whether the deficiency in different 
+genes may have distinct effects on the MMRDness score (Fig. 4E). 
+We found that MMRD cancers with biallelic inactivating muta-
+tions in MSH2 had the strongest MMRDness score, followed by 
+MLH1, and was much lower in PMS2 mutant cancers (P = 6.7 × 
+10−4, Mann–Whitney U test; Fig. 4E). This fits well with the clini-
+cal observations of MMRD, as MSH2 and MLH1 mutations have 
+higher cancer penetrance than PMS2 and MSH6. This also corre-
+lates with the known mechanism of MMR, as the MSH2 protein 
+initially recognizes mismatches during replication and is crucial 
+for both the mutSα and mutSβ complexes, whereas MLH1 is an 
+important factor in the mutL complex (44–46).
+Next, we investigated whether the two polymerase genes 
+(POLE and POLD1) have a distinct effect on the POLEness 
+score. POLD1mut cancers had significantly higher POLEness 
+scores than POLEmut cancers (P = 2.7 × 10−4, Mann–Whitney 
+U test; Fig. 4E), supporting our previous finding from the 
+exomes (P = 2.3 × 10−4, Supplementary Fig. S2C), where 
+­POLD1mut cancers had a higher TMSIB than POLEmut. This 
+can be explained by the replication of the lagging strand 
+inherently having more dissociation and slippage of the poly-
+merase from the DNA (16, 47).
+POLEness Score Predicts Response to 
+Immunotherapy in RRD Cancers
+It was recently shown that RRD tumors tend to respond 
+to ICI therapy (48). However, not all patients respond, and 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1185 
+−2.25
+−0.7
+−2.25
+−2.50
+−2.75
+−3.00
+−0.8
+−0.9
+−1.0
+−1.1
+−1.2
+−1.00
+−1.04
+−1.08
+−1.12
+100
+Cell-based
+functional assays63,64
+93% sensitivity
+4,62
+95% sensitivity2
+82% sensitivity4,20,65
+84% sensitivity
+4,62
+76.4%
+sensitivity2
+18% sensitivity
+100% sensitivity
+100% sensitivity
+Tumor
+Germline
+Cannot determine
+functionality of mutated
+protein if expressed
+Requires high TMB and
+matched normal DNA for
+analysis
+Requires matched
+normal DNA
+Requires matched normal
+DNA
+Difficulties with VUSs and
+pseudogenes in MMR genes
+Can distinguish VUS and
+pseudogenes in MMR genes
+No matched normal DNA needed
+Does not require fresh tissue
+No matched tumor
+DNA needed
+Does not require fresh
+tissue
+Does not require
+fresh tissue
+Does not require fresh
+tissue
+Can distinguish between hetero-
+and homozygous pathogenic
+variants in MMR genes
+Cannot distinguish between
+hetero- and homozygous
+pathogenic variants in MMR
+genes
+Does not require fresh tissue
+Does not require fresh
+tissue
+Does not require
+fresh tissue
+Does not require fresh tissue
+Technical issues with
+tissue fixation methods
+Does not require fresh
+tissue
+IHC
+Signatures
+TMB
+Mut/Mb
+MIAS
+(promega)
+Genetics
+MS-indels/MS-sigs
+12 bp
+AAAAAAAAAAAA
+AAAAAAAAAA
+AAAAAAAA
+AAAAAA
+10 bp
+8 bp
+6 bp
+Requires cellular growth
+in vitro
+Quality control issues
+Low throughput
+Requires fresh tissue
+Requires cellular growth
+in vitro
+Quality control issues
+Low throughput
+Requires fresh tissue
+80
+60
+40
+G
+T
+3′ repair activity (%)
+P < .001
+20
+0
+C > A
+Signature 6
+Mutation type
+probability
+15%
+10%
+5%
+0%
+C > G
+C > T
+T > A
+T > C
+T > G
+WT
+Confirmed CMMRD
+Complement
+Complement
+Complement
+Lynch
+NF1
+LFS
+Lynch (CMMRD)
+POLE
+Suspected CMMRD
+−2.50
+−2.75
+POLEness
+−3.00
+−2.25
+−2.50
+−2.75
+POLEness
+MMRDness
+−3.00
+−1.2
+−1.0
+−0.8
+MMRP
+(n = 68)
+PPD
+(n = 1)
+KiCS
+(n = 72)
+MMRD
+(n = 5)
+MMRP
+n = 4
+MLH1
+n = 5
+MSH2
+n = 8
+MSH6
+n = 19
+PMS2
+n = 32
+POLE
+n = 6
+POLE
+n = 23
+POLD1
+n = 9
+PPD
+n = 3
+Lynch
+n = 6
+CMMRD
+n = 21
+MMRD
+(n = 5)
+MMRD
+& PPD
+(n = 37)
+MMRDness
+−1.2
+−1.0
+−0.8
+MMRDness
+Stratification of RRD tumors
+A
+D
+E
+B
+C
+Detection of MMRD in tumors
+Diagnosis of CMMRD in germline
+8.7 × 10−11
+0.0073
+0.00067
+0.023
+0.2
+0.42
+3.6 × 10−11
+MMRDness
+POLEness
+2.7 × 10−4
+0.95
+0.83
+–Sensitivity
+↓ Cost
+↓ Feasibility
+↑ Time
+↑ Sensitivity
+↓ Cost
+↑ Feasibility
+↓ Time
+↑ Sensitivity
+↑ Cost
+↓ Feasibility
+↑ Time
+↓ Sensitivity
+↑ Cost
+↑ Feasibility
+↑ Time
+↓ Sensitivity
+↓ Cost
+↑ Feasibility
+↓ Time
+↓ Sensitivity
+↑ Cost
+↑ Feasibility
+↑ Time
+↑ Sensitivity
+↓ Cost
+↑ Feasibility
+↓ Time
+↑ Sensitivity
+↓ Cost
+↑ Feasibility
+↓ Time
+↓ Sensitivity
+↑ Cost
+↑ Feasibility
+↑ Time
+↓ Sensitivity
+↓ Cost
+↑ Feasibility
+↓ Time
+– Sensitivity
+↓ Cost
+↑ Feasibility
+↑ Time
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ATA
+ATC
+ATG
+ATT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+ACA
+ACC
+ACG
+ACT
+Figure 4.  Clinical applications of MS-sigs. A, Two-dimensional plot separating all types of RRD from wild-type (MMRP) cancers using WGS. Green 
+represents MMRP cancers, red represents MMRD cancers, blue is PPD cancers, and purple is combined MMRD and PPD cancers. Each dot represents 
+an individual tumor. B, Discovery of unexpected MMRD tumors using MS-sigs. Two-dimensional plot of presumed MMRP tumors from the KiCS program. 
+KiCS samples shown in green, and MMRD tumors in red. Four tumors from the KiCS cohort that had increased MMRDness are highlighted by red arrows. 
+These were later confirmed to be MMRD (Supplementary Table S6). C, Detection of germline CMMRD using ultra low-passage WGS MMRDness scores. 
+Blood samples from CMMRD and relevant control patients were used. Statistical significance was calculated using the Mann–Whitney U test. D, Compari-
+son of MS-sigs with other clinically approved (CLIA) methods to diagnose MMRD in normal and malignant cells. Sensitivity was calculated by dividing the 
+number of positive MMRD cases in each assay by the number of samples that were tested (2, 4, 20, 62–65). E, Genotype–phenotype differences between 
+different replication repair genes. Comparison of MMRDness between MMR gene mutations, and POLEness in POLEmut versus POLD1mut cancers. P values 
+were calculated using the Mann–Whitney U test. CLIA, Clinical Laboratory Improvement Amendments.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1186 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+­currently there is no adequate method to distinguish respond-
+ers from nonresponders (Supplementary Fig. S6A). As MS-
+indels are highly immunogenic (10, 49–52), we hypothesized 
+that within the context of RRD cancers, MMRDness and/or 
+the POLEness score could predict response to ICI therapy. 
+To test this, we initially used WGS data of 22 RRD tumors 
+undergoing ICI as a part of our consortium registry study 
+(48). We observed that the POLEness score of responders was 
+higher than nonresponders to ICI (P = 0.011, Mann–Whitney 
+U test; Fig. 5A), and tumors with a high POLEness score (≥2.92 
+POLEness, Methods) had a significantly higher survival than 
+the low POLEness group (P = 0.012, Log-rank test; Fig. 5A). We 
+therefore tested the ability of the POLEness score to predict 
+response to ICI using exomes from a larger cohort of patients 
+(n = 28). POLEness scores were higher in responders to ICI 
+therapy than in nonresponders (P = 0.0016, Mann–Whitney 
+U test; Fig. 5B). However, exome and genome MMRDness was 
+not shown to have a significant ­difference between respond-
+ers and nonresponders, potentially because all tumors in the 
+cohort are MMRD (Supplementary Fig. S6B). The high-POLE-
+ness groups in both genome and exome had significantly 
+longer survival times than the low-POLEness groups (P = 0.012 
+and 0.016, Log-rank test; Fig. 5A and B). To our knowledge, 
+this is the first time that a mutational signature was suggested 
+as a biomarker to distinguish between responders and nonre-
+sponders to ICI in RRD tumors (10, 49–51). This result sheds 
+new light on the immunogenicity of MS-indels and the use of 
+their signatures as novel biomarkers for response to immune 
+checkpoint inhibition in the context of RRD.
+Discussion
+This report uncovers roles for both components of the 
+replication repair machinery in MS-indel accumulation in 
+cancers. These observations address important fundamental 
+biological questions regarding accumulation of MS-indels 
+during carcinogenesis, which can be translated to clinical use.
+Our data reveal that in addition to defects in MMR, loss of 
+proofreading by replication-specific DNA polymerases is also 
+associated with an increase in MS-indels. MS-indels produced 
+by the deficiencies of the two replicative repair mechanisms have 
+distinct characteristics. Although MMRD generates mainly 
+deletions (MS-sig1 and MS-sig3), PPD results predominantly 
+in insertions (MS-sig2 and MS-sig4), suggesting a strand-bias 
+repair process (Supplementary Fig. S7). The MS-sigs described 
+were comparable to the ID-1 and ID-2 indel signatures reported 
+in the study by Alexandrov and colleagues, which were common 
+in tissues that are associated with RRD (23). However, Alexan-
+drov and colleagues did not analyze MS-indels in loci longer 
+than five repeated units, and therefore were not able to find the 
+unique MS-sigs present in larger MS-loci.
+We hypothesize that the proofreading domain of the poly-
+merase repairs extra bases on the nascent strand by changing 
+the conformation of the DNA to push the substrate into 
+the exonuclease domain of the polymerase. This would acti-
+vate the exonucleolytic mode of DNA polymerase to excise 
+the loop. Because mutations in the proofreading domain 
+of the polymerase would prevent the DNA substrate from 
+shifting into the exonuclease site, these remain unrepaired 
+Figure 5.  POLEness score 
+predicts response to immu­
+notherapy in RRD cancers.  
+A, Genomic POLEness scores 
+of 22 RRD cancers stratified by 
+response to immune checkpoint 
+inhibition. Overall survival of 
+patients on immunotherapy 
+separated by the median genomic 
+POLEness scores (median  
+POLEness = −2.92, Methods).  
+P values for comparing respond-
+ers with nonresponders were cal-
+culated using the Mann–Whitney 
+U test, and Kaplan–Meier curves 
+were generated for survival, with 
+P values calculated using the 
+log-rank test. B, Same as A using 
+exomic POLEness scores from 
+28 patients with RRD (median 
+POLEness = −2.75, Methods).
+++
+++
+++ ++
++
++
++
++ +
++
++
++
+0.00
+0.25
+0.50
+0.75
+1.00
+0
+1
+2
+3
+4
+Years
+Overall survival
++
++ High POLEness (≥ 2.75)
+n = 14
+Low POLEness (≤ 2.75)
+n = 14
+P = 0.016 
+A
+B
++
++
+++
++
++
++
++
+0.00
+0.25
+0.50
+0.75
+1.00
+0
+1
+2
+3
+4
+Years
+Overall survival
+P = 0.012
++
++ High POLEness (≥ 2.92)
+n = 11
+Low POLEness (≤ 2.92)
+n = 11
+P = 0.0016
+−3.00
+−2.75
+−2.50
+−2.25
+−2.00
+Nonresponder
+n = 11
+Responder
+n = 17
+POLEness score (exome)
+P = 0.011
+−3.0
+−2.8
+−2.6
+−2.4
+−2.2
+Nonresponder
+n = 9
+Responder
+n = 13
+POLEness score (genome)
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1187 
+as ­replication continues (34, 53), creating a permanent inser-
+tion. As larger insertions were not observed in PPD cancers, 
+we postulate that larger indel loops within the nascent strand 
+do not fit into the exonuclease domain of the polymerase 
+(Supplementary Fig. S7). In contrast, the MMR system is 
+more effective in detecting loops on the parental strand (3, 
+45, 54, 55). These loops would result in deletions if unre-
+paired, which translated into the surge of MS-sig1 and MS-
+sig3 in MMRD cancers in our cohort.
+Another intriguing observation related to the role of MMR 
+on the template strand is that larger deletions in adult MMRD 
+cancers converged to a common length of MSs of approxi-
+mately 15 bp (Fig. 3C). We propose that this 15 bp conver-
+gence is due to the size of the DNA-binding domain of the 
+polymerase complex being similar to the length of 15 bp, 
+which is about 50 Å (40). Indeed, these large events can explain 
+the ease of detection of MSI-H in adult MMRD cancers by the 
+standard electrophoresis-based assay that specifically looks for 
+long (≥3 bp) MS-indels. Furthermore, pediatric tumors lacked 
+hotspots or commonly mutated MS-loci even within specific 
+tissues (Fig. 1E; Supplementary Table S3). In adults, MMRD 
+cells can acquire MS-indels in the ACVR2A gene, which may 
+lead to a selection advantage in the GI system, but not in other 
+tissue types. Thus, the contrast between pediatric and adult 
+cases may be due to the selective pressures that are present in 
+different tissue types, although comparative analysis between 
+pediatric and adult GI cancers still showed unique MS-indel 
+profiles (Supplementary Fig. S4B). In addition, the distinct 
+MS deletions in adult and pediatric cancers might be due to 
+unknown differences in DNA damage sensing or response 
+mechanisms. Further experimental investigation could clarify 
+these phenomena and can hint toward a better understanding 
+of the kinetics and patterns of MS-indel accumulation.
+The biological observations described above can have a 
+major clinical impact on the management of patients with 
+RRD cancers. First, the standard methods for MSI classifica-
+tion (e.g., MIAS Promega) cannot detect MSI in most pediat-
+ric MMRD tumors (Fig. 1A) and possibly in tumors in which 
+MMRD occurs late in carcinogenesis due to other mutational 
+processes. The latter includes treatment-related MMRD can-
+cers such as leukemias, gliomas, and POLEmut-driven tumors 
+(2, 56, 57), where MMRD occurs later, and which are there-
+fore falsely termed MSS (6, 15, 16). Both SNV- and MS-
+indel–based methods may be more sensitive and specific to 
+classify such tumors correctly for management and potential 
+genetic testing. In addition, MS-sigs were able to differentiate 
+between MMRD and PPD tumor genotypes (Fig. 4E), which 
+has not been previously shown through SNV or the canonical 
+MSI analysis method. The increased MMRDness signature in 
+MSH2 and MLH1 mutant tumors (Fig. 4E) correlates with the 
+more aggressive phenotype seen in Lynch syndrome cases and 
+the biological importance of the two proteins in the repair 
+mechanism of the mutSα and mutSβ MMR complexes (44–
+46). The ability to use low-pass WGS from tumors, without 
+their matched normal samples, can make MS-sigs the basis 
+for an inexpensive tool for RRD classification. There has been 
+a recent report that used deep sequencing of a panel of 277 
+MS-loci to diagnose CMMRD using blood DNA (58). How-
+ever, our method of ultra low-pass WGS (ULP-WGS) at 0.1 to 
+0.5X coverage is less expensive per sample and covers between 
+10% and 50% of the approximately 23 million MS-loci, respec-
+tively. The ULP-WGS approach can be more sensitive and spe-
+cific than deep sequencing of specific loci, depending on the 
+depth of sequencing in each of the approaches. MS-sigs can 
+also provide additive information to the clinical diagnosis, 
+such as the POLEness signature that can predict response to 
+immunotherapy (Fig. 5). Ongoing and future investigations 
+will compare the effectiveness of the two methods in detect-
+ing CMMRD.
+Second, we showed that MS-sigs can be used to detect 
+MMRD in nonmalignant samples of individuals with 
+CMMRD. The potential to detect MMRD from nonmalig-
+nant samples, perhaps even before cancer development, has 
+important clinical applications. In many cases, genetic diag-
+nosis of CMMRD is difficult due to the large number of vari-
+ants of unknown significance (VUS) and pseudogenes in the 
+mismatch repair and DNA polymerase genes. Furthermore, 
+MS-sigs were found to have extremely high sensitivity and 
+specificity (both 100% in our cohort) in detecting MMRD 
+in tumors and CMMRD in normal tissue. MS-sigs can dis-
+tinguish functionally disruptive mutations from VUSs and 
+pseudogenes in the MMR and polymerase genes, and can be 
+conducted using low quantities (<150 ng) of unmatched DNA 
+from formalin-fixed, paraffin-embedded (FFPE) or frozen tis-
+sue (Fig. 4D). We suggest here that MS-sig is an assay that can 
+assess the MMRD phenotype from accessible, nonmalignant 
+tissues, which may become a frontline tool for the clinical 
+diagnosis of RRD tumors and for monitoring patients at high 
+risk. Further validation on clinical cohorts is required.
+Finally, our data provide further support for the notion 
+that MS-indels may be strongly immunogenic in RRD hyper-
+mutant cancers (59). In our cohort, MS-sig–based POLEness 
+score, but not MMRDness, was a predictive biomarker for 
+response to immune checkpoint inhibition. This adds to 
+the recent report which correlates MSI status to anti–PD-1 
+immunotherapy response (49). Because our cohort includes 
+responders from brain and other tumor sites, which are not 
+considered MSI-H using conventional methods, the robust-
+ness of next-generation sequencing–based MS-sig analysis 
+may be superior to panel-based methods. Our observations 
+suggest that the single repeat insertions represented by the 
+POLEness signature likely yield highly immunogenic neo-
+antigens, which in turn result in a robust immunogenic 
+response against RRD tumor cells (48, 60, 61). Future large 
+studies comparing MSI-based signatures with other genomic 
+features of RRD cancers, as well as investigating differences in 
+immunotherapy response between MMRD, PPD, and MMRD 
+and PPD cancers will be required to validate our findings.
+In summary, our data add a new dimension to the role 
+of RRD in human cancer mutagenesis in the form of MS 
+maintenance and instability. Studies of cancers emerging 
+from rare, germline childhood cancer syndromes provide 
+important insights and may be applied to more common 
+adult cancers. Further mechanistic analysis will potentially 
+explain the different types and sizes of MS-indels that are 
+introduced during tumorigenesis. Future studies will deter-
+mine the impact of both MMRD and PPD on MSs, which 
+can lead to advancements in the classification, diagnosis, and 
+determination of biomarkers in the management of RRD 
+cancers and individuals.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1188 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+Methods
+Sample Collection and DNA Extraction  
+for WES and WGS of RRD Tumors
+As described in previous reports, patients with RRD have been 
+routinely consented and registered into the International Replica-
+tion Repair Consortium with written informed consent. The study 
+was conducted in accordance with the Canadian Tri-Council Policy 
+Statement II and was approved by the Institutional Research Eth-
+ics Board (approval number 1000048813), and all data were cen-
+tralized in the Division of Haematology/Oncology at The Hospital 
+for Sick Children (SickKids; Toronto, Ontario, Canada). Tumor 
+and blood samples were collected from the SickKids tumor bank, 
+and diagnosis of RRD was confirmed via sequencing and immu-
+nohistochemistry of the four MMR genes and sequencing of the 
+POLE and POLD1 genes by a clinically approved laboratory. DNA 
+was extracted using the QIAGEN DNeasy Blood & Tissue Kit for 
+frozen tissues, and the QIAamp DNA FFPE Tissue Kit for paraffin-
+embedded tissues.
+WES and WGS Data of Pediatric Tumors  
+in the KiCS Program
+WES and WGS data of pediatric tumors were obtained through 
+the KiCS program. Detailed information about KiCS can be found at 
+www.kicsprogram.com.
+WES Data of Pediatric Brain Tumors
+Written informed consent was provided for patients with brain 
+tumors treated at The Hospital for Sick Children and was approved 
+by the Institutional Review Board. DNA from the tumors and non-
+malignant samples was extracted for WES. Further details on the 
+DNA extraction protocol and exome-sequencing pipeline are avail-
+able in previous reports.
+WES and WGS Data and MSI Status Identification  
+of Adult Tumors in TCGA Database
+WES and WGS data for colorectal carcinoma, stomach adenoma, 
+and uterine corpus endometrial carcinoma were downloaded from 
+TCGA and were sequenced on the Illumina platform. As described in 
+a previous report, their MSI status was annotated by TCGA.
+WES Data of Pediatric Neuroblastoma  
+from the TARGET Database
+WES data of pediatric neuroblastoma were acquired from the 
+Therapeutically Applicable Research to Generate Effective Treatments 
+(TARGET) initiative.
+MSI Status of Pediatric Tumors Determined  
+by the MIAS (Promega)
+DNA extracted from tumor and matched normal tissues was 
+quantified with Nanodrop (Thermo Fisher Scientific) and amplified 
+with Platinum Multiplex PCR Master Mix (Thermo Fisher Scientific) 
+and MSI 10X Primer Pair Mix (Promega) in a Veriti 96-Well Thermal 
+Cycler, as per the manufacturer’s recommendations for PCR cycling 
+conditions. The primer mix targets a panel of five mononucleotide 
+loci, termed BAT-25, BAT-26, NR-21, NR-24, and MONO-27, and fol-
+lowing amplification, the products were run in a 3130 Genetic Ana-
+lyzer for fluorescent capillary electrophoresis. Electrophoretograms 
+were subsequently visualized using the Peak Scanner Software (v1.0, 
+Thermo Fisher Scientific), and the highest peaks that were flanked by 
+lower peaks were selected to be the representative alleles for each of 
+the five loci in the panel. Each tumor–normal pair was compared by 
+their allelic lengths. Tumors were considered MSI-H if two or more 
+loci were unstable (≥3 bp shift from the normal allele), MSI-L if one 
+locus was unstable, and MSS if all five loci were stable (<2 bp shift 
+from the normal allele; refs. 27, 28).
+Exome Sequencing of RRD Pediatric Tumors
+All high-throughput sequencing and mutation identification were 
+performed at The Centre for Applied Genomics at the Hospital for 
+Sick Children, as described in previous reports (1, 2). Briefly, tumor 
+and matched nonmalignant tissue DNA was sequenced on an Illumina 
+HiSeq2500 machine using Agilent’s exome enrichment kit (Sure Select 
+V4/V5; with >50% baits above 25x coverage). Processing into FASTQ 
+files was done using CASAVA and/or HAS, which were aligned to 
+UCSC’s hg19 GRCh37 with BWA. The realignment and recalibration 
+of aligned reads were done using Short-read micro re-aligner and/or 
+Genome Analysis Toolkit and the Genome Analysis Toolkit26 (v1.1–28), 
+respectively. Whole-exome TMB was calculated using MuTect (v1.1.4) 
+and filtered using dbSNP (v132), the 1000 Genomes Project (February 
+2012), a 69-­sample Complete Genomics dataset, the Exome Sequencing 
+Project (v6500), and the ExAc database for common SNPs.
+Genome Sequencing of Pediatric Tumors
+WGS was done using the Illumina HiSeq2500 or Illumina HiSeqX 
+at ≥30X coverage, as well as on the Illumina NovaSeq6000 at 0.5X 
+coverage. Read realignment and recalibration were conducted using 
+the same pipeline as exome sequencing.
+Exomic and Genomic MS Definition and Identification and 
+Mutation Calling via MSMuTect
+The detailed methods of the MSMuTect algorithm were previously 
+reported (6). Briefly, repeats of five or more nucleotides were consid-
+ered to be MS loci, and using the PHOBOS algorithm and the lob-
+STR approach, tumor and normal BAM files were aligned with their 
+5′ and 3′ flanking sequences. Each MS-locus allele was estimated 
+using the empirical noise model, P
+k m
+j m
+Noise
+(
+)(
+),
+,
+,
+ which is the probabil-
+ity of observing a read with an MS length k and motif m, where the 
+true length of the allele is j with the motif m. This was used to call the 
+MS alleles with the highest likelihood of being the true allele at each 
+MS-locus. The MS alleles of each tumor and matched normal pair 
+were called individually, which were compared to identify the muta-
+tions on the tumor MS-loci. The Akaike Information Criterion score 
+was assigned to both the tumor and normal models, and a threshold 
+score that was determined by using simulated data was applied to 
+make the final call of the MS-indel.
+MS-Indel Signatures Discovered by SignatureAnalyzer
+For the WES samples noted in Supplementary Table S7, we quanti-
+fied the number of MS-indels they had using different parameters, 
+defined by the length of the MS-locus in the normal sample, the size of 
+the indel (one base indel, two base indel, etc.), and the MS-locus motif 
+(A- and C-repeats, Fig. 2B; Supplementary Fig. S2A). We then used 
+the Bayesian Non-negative matrix factorization algorithm (Signature-
+Analyzer; refs. 32, 33) with its default parameters to infer the different 
+mutational processes operating in our samples. We did not include 
+other repeat motifs, as they do not have sufficient mutational events.
+Calculation of MMRDness and POLEness Scores
+Exome- and genome-wide MS-indels in each sample were quanti-
+fied and segregated into deletions and insertions of up to three bases, 
+and by locus size from 5 to 40 bases. The number of MS-indels in 
+each sample was normalized to its own sum of total MS-indels. 
+MMRDness scores were calculated by taking log10 of the sum of the 
+average proportions of one base deletions in loci sized from 10 to 15 
+bases. The POLEness scores were similarly calculated by taking log10 
+of the sum of the average proportions of one base insertions in loci 
+sized five to six bases. Both scores were normalized to the total num-
+ber of MS-loci with the respective lengths.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1189 
+WES MS-Indel Quantification and Comparison
+Exome-wide MS-indels for each tumor/normal pair were identified 
+and quantified using MSMuTect (6). We processed the MSMuTect 
+output using the Rstudio graphical user interface (v1.1.447). The pro-
+cessing included summing the total number of MS-indels and calcu-
+lating the length change of each MS in each tumor compared with 
+their matched normal samples. The median numbers of MS-indels in 
+the exome of each tumor type and in each MS-indel signature cluster 
+were compared using the Mann–Whitney U test in Rstudio, and sta-
+tistical significance was considered at P < 0.05.
+WGS MS-Indel Quantification
+Genome-wide MS-indels were summed for each sample according 
+to the reference length of each locus and the change in size/length 
+of the indel. Genome-wide deletions were identified and summed for 
+both adult and pediatric samples, and were averaged for each deletion 
+length. The mean and SDs were calculated using Rstudio (v1.1.447) 
+at each deletion length in adult and pediatric samples independently. 
+Fractions of indels based on initial and mutated loci size in adult can-
+cers were calculated by dividing the number of events pertaining to a 
+specific initial and mutated locus size by the sum of all MS-indels in all 
+adult tumors. The same procedure was followed for pediatric cancers.
+MMRDness and POLEness Score Comparison between 
+Deficient MMR and Polymerase Proofreading
+MMRDness medians were calculated for pediatric RRD tumors 
+with the same mutated MMR gene, and compared between the four 
+genes using the Mann–Whitney U test. Similarly, POLEness medians 
+were calculated for POLE or POLD1 mutants and compared.
+MMRDness and POLEness Score Calculation and 
+Comparison for Ultra Low-Coverage WGS Samples
+MMRDness and POLEness scores were calculated as explained 
+above for the ultra low-pass coverage sequencing samples. The 
+tumors were separated according to their RRD type (MMRP, PPD, 
+MMRD, and MMRD and PPD), and medians of their MMRDness 
+were calculated. Comparison of MMRDness between groups was 
+done using the Mann–Whitney U test. Germline samples were also 
+segregated based on their RRD statuses (MMRP, PPD, Lynch, and 
+CMMRD), and their MMRDness scores were compared using the 
+same method as the tumors.
+Immunotherapy Response Thresholds for POLEness Scores
+POLEness scores were determined from 28 tumors where WES 
+was available, and from 22 of them that had WGS available. These 
+tumors were collected from patients with RRD cancers who under-
+went immunotherapy. POLEness scores were calculated as described 
+above. For survival analysis, tumors were separated by their respec-
+tive median POLEness scores (-2.92 in genome and -2.75 in exome). 
+P values were determined using the log-rank test.
+Data Availability
+Existing WES and/or WGS data have previously been depos-
+ited in the European Genome Phenome Archive under the study 
+accession numbers EGAS00001000579 and EGAS00001001112. 
+New sequencing data from this report have been deposited in the 
+European Genome Phenome Archive, and the accession number is 
+EGAS00001004816. Public datasets used include the TCGA data-
+base (https://portal.gdc.cancer.gov/), the TARGET database (https://
+ocg.cancer.gov/programs/target), and the KiCS program (https://
+kicsprogram.com/). Supplementary Table S7 includes all of the raw 
+data used in all analyses within this article. Further information and/
+or requests for data will be fulfilled by the corresponding author, Uri 
+Tabori (uri.tabori@sickkids.ca).
+Code Availability
+The software and pipelines used for data collection are the fol-
+lowing: MSMuTect (Maruvka and colleagues; https://github.com/
+getzlab/MSMuTect/; ref. 6), SignatureAnalyzer (https://software. 
+broadinstitute.org/cancer/cga/msp), and MuTect (https://software.
+broadinstitute.org/cancer/cga/mutect). All data were analyzed using 
+Rstudio (v1.1.447). All R packages and other statistical code used for anal-
+ysis are as follows: Scales (https://CRAN.R-project.org/package=scales), 
+ggplot2 (https://CRAN.R-project.org/package=ggplot2), dplyr (https://
+CRAN.R-project.org/package=dplyr), Reshape2 (https://CRAN.R- 
+project.org/package=reshape2), RColorBrewer (https://CRAN.R-project. 
+org/package=RColorBrewer), ggpubr (https://CRAN.R-project.org/
+package=ggpubr), tibble (https://CRAN.R-project.org/package=tibble), 
+epade (https://CRAN.R-project.org/package=epade), Plot3-D (https://
+CRAN.R-project.org/package=plot3-D), forcats (https://CRAN.R-
+project.org/package=forcats), survival (https://cran.r-project.org/web/ 
+packages/survival/index.html), and survminer (https://CRAN.R-project.
+org/package=survminer). Scripts used to generate the figures are accessible 
+upon request from the corresponding author.
+Authors’ Disclosures
+Y.E. Maruvka reports MGH startup money grant outside the sub-
+mitted work. N.J. Haradhvala reports personal fees from Constella-
+tion Pharmaceuticals outside the submitted work. M. Osborn reports 
+nonfinancial support from Amgen, Pfizer, and Novartis outside the 
+submitted work. G. Mason reports other support from Janssen Phar-
+maceuticals outside the submitted work. B. George reports grants 
+and personal fees from Ipsen, BMS, Celgene, Taiho Oncology, and 
+Roche/Genentech; personal fees from Foundation Medicine, Exelixis, 
+Terumo Interventional Systems, and Eisai; and grants from Boehringer 
+Ingelheim, Tolero Pharmaceuticals, Glyconex, and NGM Bio outside 
+the submitted work. D.S. Ziegler reports personal fees from Bayer 
+outside the submitted work. A. Van Damme reports other from BMS 
+outside the ­submitted work. D.A. Morgenstern reports personal fees 
+from Roche, Boehringer Ingelheim, Bayer, Clarity Pharmaceuticals, 
+Y-mAbs Therapeutics, and EUSA Pharma outside the submitted 
+work. E. Bouffet reports grants from Bristol Myers Squibb during the 
+conduct of the study and grants from Roche outside the submitted 
+work. G. Getz reports a patent for MSMuTect issued and a patent for 
+MSIDetect pending. G. Getz also receives research funds from IBM 
+and Pharmacyclics, and is an inventor on patent applications related 
+to MuTect, ABSOLUTE, MutSig, MSMuTect, MSMutSig, MSIDetect, 
+POLYSOLVER, and TensorQTL. G. Getz is also a founder, consultant, 
+and holds privately held equity in Scorpion Therapeutics. U. Tabori 
+reports grants from AACR/SU2C BMS Catalyst during the conduct of 
+the study. No disclosures were reported by the other authors.
+Authors’ Contributions
+J. Chung: Conceptualization, resources, data curation, software, 
+formal analysis, validation, investigation, visualization, methodol-
+ogy, writing–original draft, project administration, writing–review 
+and editing. Y.E. Maruvka: Conceptualization, resources, data cura-
+tion, software, formal analysis, validation, investigation, visualiza-
+tion, methodology, writing–original draft, project administration, 
+writing–review and editing. S. Sudhaman: Resources, data cura-
+tion, software, formal analysis, investigation, writing–review and 
+editing. J. Kelly: Resources, data curation, formal analysis, investiga-
+tion, writing–review and editing. N.J. Haradhvala: Writing–review 
+and editing. V. Bianchi: Data curation, writing–review and editing. 
+M. Edwards: Resources, data curation, writing–review and editing. 
+V.J. Forster: Writing–review and editing. N.M. Nunes: Writing– 
+review and editing. M.A. Galati: Writing-review and editing. 
+M. Komosa: Writing–review and editing. S. Deshmukh: Formal 
+analysis, writing–review and editing. V. Cabric: Formal analysis, 
+­writing–review and editing. S. Davidson: Resources, data curation, 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Chung et al.
+RESEARCH ARTICLE
+1190 | CANCER DISCOVERY MAY  2021	
+AACRJournals.org
+writing–review and editing. M. Zatzman: Data curation, writing–
+review and editing. N. Light: Data curation, writing–review and editing. 
+R. Hayes: Data curation, writing–review and editing. L. Brunga: 
+Data curation, writing–review and editing. N.D. Anderson: Data 
+curation, writing–review and editing. B. Ho: Data curation, writ-
+ing–review and editing. K.P. Hodel: Data curation, writing–review 
+and editing. R. Siddaway: Data curation, writing–review and editing. 
+A.S. ­Morrissy: Data curation, writing–review and editing. D.C. Bowers: 
+Data curation, writing–review and editing. V. Larouche: Data cura-
+tion, writing–review and editing. A. Bronsema: Data curation, writ-
+ing–review and editing. M. Osborn: Data curation, writing–review and 
+editing. K.A. Cole: Data curation, writing–review and editing. 
+E. Opocher: Data curation, writing–review and editing. G. Mason: 
+Data curation, writing–review and editing. G.A. Thomas: Data cura-
+tion, writing–review and editing. B. George: Data curation, writ-
+ing–review and editing. D.S. Ziegler: Writing–review and editing. 
+S. Lindhorst: Data curation, writing–review and editing. M. Vanan: 
+Data curation, writing–review and editing. M. Yalon-Oren: Data cura-
+tion, writing–review and editing. A.T. Reddy: Data curation, ­writing–
+review and editing. M. Massimino: Data curation, writing–review 
+and editing. P. Tomboc: Data curation, writing–review and editing. 
+A. Van Damme: Data curation, writing–review and editing. A. Lossos: 
+Data curation, writing–review and editing. C. Durno: Data curation, 
+writing–review and editing. M. Aronson: Data curation, writing–
+review and editing. D.A. Morgenstern: Data curation, writing–review 
+and editing. E. Bouffet: Writing–review and editing. A. Huang: Data 
+curation, writing–review and editing. M.D. Taylor: Data curation, 
+writing–review and editing. A. Villani: Writing–review and editing. 
+D. Malkin: Writing–review and editing. C.E. Hawkins: Data curation, 
+writing–review and editing. Z.F. Pursell: Investigation, writing–review 
+and editing. A. Shlien: Data curation, methodology, writing–review 
+and editing. T.A. Kunkel: Visualization, writing–review and editing. 
+G. Getz: Conceptualization, resources, data curation, software, super-
+vision, validation, investigation, visualization, methodology, writing– 
+original draft, project administration, writing–review and editing. 
+U. Tabori: Conceptualization, resources, data curation, supervision, 
+funding acquisition, investigation, visualization, methodology, ­writing–
+original draft, project administration, writing–review and editing.
+Acknowledgments
+The KiCS program is supported by the Garron Family Cancer Centre 
+with funds from the SickKids Foundation. This research is supported 
+by Meagan’s Walk (MW-2014-10), b.r.a.i.n.child Canada, LivWise, an 
+Enabling Studies Program grant from BioCanRx, Canada’s Immu-
+notherapy Network (a Network Centre of Excellence), the Canadian 
+Institutes for Health Research (CIHR) grant (PJT-156006), the 
+CIHR Joint Canada-Israel Health Research Program (108188), and a 
+Stand Up To Cancer (SU2C)–Bristol Myers Squibb Catalyst Research 
+(SU2C-AACR-CT07-17) research grant. Stand Up To Cancer is a divi-
+sion of the Entertainment Industry Foundation. Research grants are 
+administered by the American Association for Cancer Research, the 
+scientific partner of SU2C. G. Getz and Y.E. Maruvka were partially 
+funded by G. Getz funds at Massachusetts General Hospital. G. Getz 
+was partially funded by the Paul C. Zamecnick Chair in Oncology at 
+the Massachusetts General Hospital Cancer Center.
+Received June 3, 2020; revised September 23, 2020; accepted 
+December 15, 2020; published first December 18, 2020.
+References
+	 1.	 Shlien A, Campbell BB, de Borja R, Alexandrov LB, Merico D, Wedge D, 
+et al. Combined hereditary and somatic mutations of replication 
+error repair genes result in rapid onset of ultra-hypermutated cancers. 
+Nat Genet 2015;47:257–62.
+	 2.	 Campbell BB, Light N, Fabrizio D, Zatzman M, Fuligni F, de Borja 
+R, et al. Comprehensive analysis of hypermutation in human cancer. 
+Cell 2017;171:1042–56.
+	 3.	 Kunkel TA, Erie DA. Eukaryotic mismatch repair in relation to DNA 
+replication. Annu Rev Genet 2015;49:291–313.
+	 4.	 Tabori U, Hansford JR, Achatz MI, Kratz CP, Plon SE, Frebourg T, et al. 
+Clinical management and tumor surveillance recommendations of 
+inherited mismatch repair deficiency in childhood. Clin Cancer Res 
+2017;23:e32–e7.
+	 5.	 Kunkel TA. Evolving views of DNA replication (in)fidelity. Cold 
+Spring Harb Symp Quant Biol 2009;74:91–101.
+	 6.	 Maruvka YE, Mouw KW, Karlic R, Parasuraman P, Kamburov A, 
+Polak P, et al. Analysis of somatic microsatellite indels identifies 
+driver events in human tumors. Nat Biotechnol 2017;35:951–9.
+	 7.	 Haradhvala NJ, Kim J, Maruvka YE, Polak P, Rosebrock D, Livitz D, 
+et al. Distinct mutational signatures characterize concurrent loss of pol-
+ymerase proofreading and mismatch repair. Nat Commun 2018;9:1746.
+	 8.	 Fortune JM, Pavlov YI, Welch CM, Johansson E, Burgers PM, Kunkel TA. 
+Saccharomyces cerevisiae DNA polymerase delta: high fidelity for 
+base substitutions but lower fidelity for single- and multi-base dele-
+tions. J Biol Chem 2005;280:29980–7.
+	 9.	 Kirchner JM, Tran H, Resnick MA. A DNA polymerase ε mutant that 
+specifically causes +1 frameshift mutations within homonucleotide 
+runs in yeast. Genetics 2000;155:1623–32.
+	10.	 Le DT, Uram JN, Wang H, Bartlett BR, Kemberling H, Eyring AD, et al. 
+PD-1 blockade in tumors with mismatch-repair deficiency. N Engl J Med 
+2015;372:2509–20.
+	11.	 Gryfe R, Kim H, Hsieh ET, Aronson MD, Holowaty EJ, Bull SB, 
+et al. Tumor microsatellite instability and clinical outcome in young 
+patients with colorectal cancer. N Engl J Med 2000;342:69–77.
+	12.	 Yamashita H, Nakayama K, Ishikawa M, Nakamura K, Ishibashi T, 
+Sanuki K, et al. Microsatellite instability is a biomarker for immune 
+checkpoint inhibitors in endometrial cancer. Oncotarget 2018;9: 
+5652–64.
+	13.	 Dudley JC, Lin MT, Le DT, Eshleman JR. Microsatellite instability as 
+a biomarker for PD-1 blockade. Clin Cancer Res 2016;22:813–20.
+	14.	 Hause RJ, Pritchard CC, Shendure J, Salipante SJ. Classification and 
+characterization of microsatellite instability across 18 cancer types. 
+Nat Med 2016;22:1342–50.
+	15.	 Cancer Genome Atlas Research Network, Kandoth C, Schultz N, 
+Cherniack AD, Akbani R, Liu Y, et al. Integrated genomic characteri-
+zation of endometrial carcinoma. Nature 2013;497:67–73.
+	16.	 Prindle MJ, Loeb LA. DNA polymerase delta in DNA replication and 
+genome maintenance. Environ Mol Mutagen 2012;53:666–82.
+	17.	 Lynch HT, Snyder CL, Shaw TG, Heinen CD, Hitchins MP. Milestones 
+of Lynch syndrome: 1895–2015. Nat Rev Cancer 2015;15:181–94.
+	18.	 Vilar E, Gruber SB. Microsatellite instability in colorectal cancer-the 
+stable evidence. Nat Rev Clin Oncol 2010;7:153–62.
+	19.	 Umar A, Boland CR, Terdiman JP, Syngal S, Chapelle Adl, Rüschoff 
+J, et al. Revised Bethesda guidelines for hereditary nonpolyposis colo-
+rectal cancer (Lynch syndrome) and microsatellite instability. J Natl 
+Cancer Inst 2004;96:261–8.
+	20.	 Wimmer K, Kratz CP, Vasen HF, Caron O, Colas C, Entz-Werle N, 
+et al. Diagnostic criteria for constitutional mismatch repair defi-
+ciency syndrome: suggestions of the European consortium ‘care for 
+CMMRD’ (C4CMMRD). J Med Genet 2014;51:355–65.
+	21.	 Wimmer K, Kratz CP. Constitutional mismatch repair-deficiency 
+syndrome. Haematologica 2010;95:699–701.
+	22.	 Abedalthagafi M. Constitutional mismatch repair-deficiency: current 
+problems and emerging therapeutic strategies. Oncotarget 2018;9: 
+35458–69.
+	23.	 Alexandrov LB, Kim J, Haradhvala NJ, Huang MN, Tian Ng AW, Wu 
+Y, et al. The repertoire of mutational signatures in human cancer. 
+Nature 2020;578:94–101.
+	24.	 Dietmaier W, Wallinger S, Bocker T, Kullmann F, Fishel R, Ruschoff J. 
+Diagnostic microsatellite instability: definition and correlation with 
+mismatch repair protein expression. Cancer Res 1997;57:4749–56.
+	25.	 Thibodeau SN, French AJ, Roche PC, Cunningham JM, Tester DJ, Lin-
+dor NM, et al. Altered expression of hMSH2 and hMLH1 in tumors 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+DNA Polymerase Has Novel Microsatellite Mutation Signatures
+RESEARCH ARTICLE
+	
+MAY  2021 CANCER DISCOVERY | 1191 
+with microsatellite instability and genetic alterations in mismatch 
+repair genes. Cancer Res 1996;56:4836–40.
+	26.	 Gologan A, Sepulveda AR. Microsatellite instability and DNA mis-
+match repair deficiency testing in hereditary and sporadic gastroin-
+testinal cancers. Clin Lab Med 2005;25:179–96.
+	27.	 Loukola A, Eklin K, Laiho P, Salovaara R, Kristo P, Jarvinen H, et al. 
+Microsatellite marker analysis in screening for hereditary nonpolypo-
+sis colorectal cancer (HNPCC). Cancer Res 2001;61:4545–9.
+	28.	 Murphy KM, Zhang S, Geiger T, Hafez MJ, Bacher J, Berg KD, et al. 
+Comparison of the microsatellite instability analysis system and the 
+Bethesda panel for the determination of microsatellite instability in 
+colorectal cancers. J Mol Diagn 2006;8:305–11.
+	29.	 von Loga K, Woolston A, Punta M, Barber LJ, Griffiths B, Semian-
+nikova M, et al. Extreme intratumour heterogeneity and driver evo-
+lution in mismatch repair deficient gastro-oesophageal cancer. Nat 
+Commun 2020;11:139.
+	30.	 Pursell ZF, Kunkel TA. DNA polymerase epsilon: a polymerase of unusual 
+size (and complexity). Prog Nucleic Acid Res Mol Biol 2008;82:101–45.
+	31.	 Tran HT, Gordenin DA, Resnick MA. The 3′→5′ exonucleases of 
+DNA polymerases delta and epsilon and the 5′→3′ exonuclease Exo1 
+have major roles in postreplication mutation avoidance in Saccharo-
+myces cerevisiae. Mol Cell Biol 1999;19:2000–7.
+	32.	 Kasar S, Kim J, Improgo R, Tiao G, Polak P, Haradhvala N, et al. 
+Whole-genome sequencing reveals activation-induced cytidine deam-
+inase signatures during indolent chronic lymphocytic leukaemia 
+evolution. Nat Commun 2015;6:8866.
+	33.	 Kim J, Mouw KW, Polak P, Braunstein LZ, Kamburov A, Kwiatkowski 
+DJ, et al. Somatic ERCC2 mutations are associated with a distinct 
+genomic signature in urothelial tumors. Nat Genet 2016;48:600–6.
+	34.	 Xing X, Kane DP, Bulock CR, Moore EA, Sharma S, Chabes A, et al. A 
+recurrent cancer-associated substitution in DNA polymerase epsilon 
+produces a hyperactive enzyme. Nat Commun 2019;10:374.
+	35.	 Aksenova A, Volkov K, Maceluch J, Pursell ZF, Rogozin IB, Kunkel 
+TA, et al. Mismatch repair–independent increase in spontaneous 
+mutagenesis in yeast lacking non-essential subunits of DNA polymer-
+ase ε. PLos Genet 2010;6:e1001209.
+	36.	 Abdulovic AL, Hile SE, Kunkel TA, Eckert KA. The in vitro fidelity of yeast 
+DNA polymerase delta and polymerase epsilon holoenzymes during dinu-
+cleotide microsatellite DNA synthesis. DNA Repair 2011;10:497–505.
+	37.	 Sainudiin R, Durrett RT, Aquadro CF, Nielsen R. Microsatellite muta-
+tion models: insights from a comparison of humans and chimpan-
+zees. Genetics 2004;168:383–95.
+	38.	 Slatkin M. A measure of population subdivision based on microsatel-
+lite allele frequencies. Genetics 1995;139:457–62.
+	39.	 Dieringer D, Schlötterer C. Two distinct modes of microsatellite 
+mutation processes: evidence from the complete genomic sequences 
+of nine species. Genome Res 2003;13:2242–51.
+	40.	 Hogg M, Osterman P, Bylund GO, Ganai RA, Lundstrom EB, Sauer-
+Eriksson AE, et al. Structural basis for processive DNA synthesis by 
+yeast DNA polymerase varepsilon. Nat Struct Mol Biol 2014;21:49–55.
+	41.	 Levinson G, Gutman GA. High frequencies of short frameshifts in 
+poly-CA/TG tandem repeats borne by bacteriophage M13 in Escheri-
+chia coli K-12. Nucleic Acids Res 1987;15:5323–38.
+	42.	 Schlotterer C, Tautz D. Slippage synthesis of simple sequence DNA. 
+Nucleic Acids Res 1992;20:211–5.
+	43.	 Martín-López JV, Fishel R. The mechanism of mismatch repair and 
+the functional analysis of mismatch repair defects in Lynch syn-
+drome. Fam Cancer 2013;12:159–68.
+	44.	 Zhang Y, Yuan F, Presnell SR, Tian K, Gao Y, Tomkinson AE, et al. 
+Reconstitution of 5′-directed human mismatch repair in a purified 
+system. Cell 2005;122:693–705.
+	45.	 Constantin N, Dzantiev L, Kadyrov FA, Modrich P. Human mismatch 
+repair: reconstitution of a nick-directed bidirectional reaction. J Biol 
+Chem 2005;280:39752–61.
+	46.	 Dzantiev L, Constantin N, Genschel J, Iyer RR, Burgers PM, Modrich 
+P. A defined human system that supports bidirectional mismatch-
+provoked excision. Mol Cell 2004;15:31–41.
+	47.	 Burgers PM. Polymerase dynamics at the eukaryotic DNA replication 
+fork. J Biol Chem 2009;284:4041–5.
+	48.	 Bouffet E, Larouche V, Campbell BB, Merico D, Borja Rd, Aronson M, 
+et al. Immune checkpoint inhibition for hypermutant glioblastoma 
+multiforme resulting from germline biallelic mismatch repair defi-
+ciency. J Clin Oncol 2016;34:2206–11.
+	49.	 Mandal R, Samstein RM, Lee KW, Havel JJ, Wang H, Krishna C, et al. 
+Genetic diversity of tumors with mismatch repair deficiency influ-
+ences anti-PD-1 immunotherapy response. Science 2019;364:485–91.
+	50.	 Havel JJ, Chowell D, Chan TA. The evolving landscape of biomarkers for 
+checkpoint inhibitor immunotherapy. Nat Rev Cancer 2019;19:133–50.
+	51.	 Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, et al. 
+Mismatch repair deficiency predicts response of solid tumors to PD-1 
+blockade. Science 2017;357:409–13.
+	52.	 Samstein RM, Lee CH, Shoushtari AN, Hellmann MD, Shen R, 
+­Janjigian YY, et al. Tumor mutational load predicts survival after immu-
+notherapy across multiple cancer types. Nat Genet 2019;51:202–6.
+	53.	 Parkash V, Kulkarni Y, Ter Beek J, Shcherbakova PV, Kamerlin SCL, 
+Johansson E. Structural consequence of the most frequently recur-
+ring cancer-associated substitution in DNA polymerase epsilon. Nat 
+Commun 2019;10:373.
+	54.	 Modrich P. Mechanisms in eukaryotic mismatch repair. J Biol Chem 
+2006;281:30305–9.
+	55.	 Haye JE, Gammie AE. The eukaryotic mismatch recognition com-
+plexes track with the replisome during DNA synthesis. PLos Genet 
+2015;11:e1005719.
+	56.	 van Thuijl HF, Mazor T, Johnson BE, Fouse SD, Aihara K, Hong C, 
+et al. Evolution of DNA repair defects during malignant progression 
+of low-grade gliomas after temozolomide treatment. Acta Neuro-
+pathol 2015;129:597–607.
+	57.	 Diouf B, Cheng Q, Krynetskaia NF, Yang W, Cheok M, Pei D, et al. 
+Somatic deletions of genes regulating MSH2 protein stability cause 
+DNA mismatch repair deficiency and drug resistance in human leu-
+kemia cells. Nat Med 2011;17:1298–303.
+	58.	 González-Acosta M, Marín F, Puliafito B, Bonifaci N, Fernández A, 
+Navarro M, et al. High-sensitivity microsatellite instability assess-
+ment for the detection of mismatch repair defects in normal tissue 
+of biallelic germline mismatch repair mutation carriers. J Med Genet 
+2020;57:269–73.
+	59.	 Turajlic S, Litchfield K, Xu H, Rosenthal R, McGranahan N, Read-
+ing JL, et al. Insertion-and-deletion-derived tumour-specific neoanti-
+gens and the immunogenic phenotype: a pan-cancer analysis. Lancet 
+Oncol 2017;18:1009–21.
+	60.	 Maletzki C, Huehns M, Bauer I, Ripperger T, Mork MM, Vilar E, et al. 
+Frameshift mutational target gene analysis identifies similarities and 
+differences in constitutional mismatch repair-deficiency and Lynch 
+syndrome. Mol Carcinog 2017;56:1753–64.
+	61.	 Maby P, Galon J, Latouche JB. Frameshift mutations, neoantigens 
+and tumor-specific CD8(+) T cells in microsatellite unstable colorec-
+tal cancers. Oncoimmunology 2016;5:e1115943.
+	62.	 Bakry D, Aronson M, Durno C, Rimawi H, Farah R, Alharbi QK, et al. 
+Genetic and clinical determinants of constitutional mismatch repair 
+deficiency syndrome: report from the constitutional mismatch repair 
+deficiency consortium. Eur J Cancer 2014;50:987–96.
+	63.	 Shuen AY, Lanni S, Panigrahi GB, Edwards M, Yu L, Campbell BB, 
+et al. Functional repair assay for the diagnosis of constitutional mis-
+match repair deficiency from non-neoplastic tissue. J Clin Oncol 2019;37: 
+461–70.
+	64.	 Bodo S, Colas C, Buhard O, Collura A, Tinat J, Lavoine N, et al. Diag-
+nosis of constitutional mismatch repair-deficiency syndrome based 
+on microsatellite instability and lymphocyte tolerance to methylating 
+agents. Gastroenterology 2015;149:1017–29.
+	65.	 Durno C, Boland CR, Cohen S, Dominitz JA, Giardiello FM, Johnson 
+DA, et al. Recommendations on surveillance and management of 
+biallelic mismatch repair deficiency (BMMRD) syndrome: a consen-
+sus statement by the US multi-society task force on colorectal cancer. 
+Gastroenterology 2017;152:1605–14.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/11/5/1176/3101696/1176.pdf by Massachusetts Institute of Technology user on 17 May 2024

@@ -1,0 +1,2226 @@
+REGULAR ARTICLE
+Genomic analyses of ﬂow-sorted Hodgkin Reed-Sternberg cells reveal
+complementary mechanisms of immune evasion
+Kirsty Wienand,1,2,* Bjoern Chapuy,1-3,* Chip Stewart,4,* Andrew J. Dunford,4,* David Wu,5,* Jaegil Kim,4 Atanas Kamburov,4
+Timothy R. Wood,4 Fathima Zumla Cader,1,2 Matthew D. Ducar,6,7 Aaron R. Thorner,1,7 Anwesha Nag,1,7 Alexander T. Heubeck,8
+Michael J. Buonopane,8 Robert A. Redd,9 Kamil Bojarczuk,1,2 Lee N. Lawton,1 Philippe Armand,1,2 Scott J. Rodig,10 Jonathan R. Fromm,5,†
+Gad Getz,2,4,11,12,† and Margaret A. Shipp1,2,†
+1Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA; 2Harvard Medical School, Boston, MA; 3Department of Hematology and Oncology, University
+Medical Center G¨ottingen, G¨ottingen, Germany; 4Broad Institute of Harvard and Massachusetts Institute of Technology, Cambridge, MA; 5Department of Laboratory Medicine,
+University of Washington, Seattle, WA; 6Department of Data Science, Knowledge Systems Group, Boston, MA;
+7Center for Cancer Genome Discovery, Boston, MA;
+8Hematologic Neoplasia Flow Cytometry Core and
+9Department of Data Sciences, Dana-Farber Cancer Institute, Boston, MA; 10Department of Pathology, Brigham and
+Women’s Hospital, Boston, MA; and 11Department of Pathology and 12Center for Cancer Research, Massachusetts General Hospital, Boston, MA
+Key Points
+• Analyses of recurrent
+mutations, copy num-
+ber alterations, and
+structural variants re-
+veal complementary
+immune evasion mech-
+anisms in cHL.
+• The mutational burden
+in EBV– cHLs is among
+the highest reported,
+potentially contributing
+to the efficacy of PD-1
+blockade.
+Classical Hodgkin lymphoma (cHL) is composed of rare malignant Hodgkin Reed-Sternberg
+(HRS) cells within an extensive, but ineffective, inﬂammatory/immune cell inﬁltrate. HRS cells
+exhibit near-universal somatic copy gains of chromosome 9p/9p24.1, which increase
+expression of the programmed cell death protein 1 (PD-1) ligands. To deﬁne genetic
+mechanisms of response and resistance to PD-1 blockade and identify complementary
+treatment targets, we performed whole-exome sequencing of ﬂow cytometry–sorted HRS cells
+from 23 excisional biopsies of newly diagnosed cHLs, including 8 Epstein-Barr virus–positive
+(EBV1) tumors. We identiﬁed signiﬁcantly mutated cancer candidate genes (CCGs) as well as
+somatic copy number alterations and structural variations and characterized their
+contribution to disease-deﬁning immune evasion mechanisms and nuclear factor kB (NF-kB),
+JAK/STAT, and PI3K signaling pathways. EBV– cHLs had a higher prevalence of genetic
+alterations in the NF-kB and major histocompatibility complex class I antigen presentation
+pathways. In this young cHL cohort (median age, 26 years), we identiﬁed a predominant
+mutational signature of spontaneous deamination of cytosine- phosphate-guanines (“Aging”),
+in addition to apolipoprotein B mRNA editing catalytic polypeptide-like, activation-induced
+cytidine deaminase, and microsatellite instability (MSI)–associated hypermutation. In
+particular, the mutational burden in EBV– cHLs was among the highest reported, similar
+to that of carcinogen-induced tumors. Together, the overall high mutational burden,
+MSI-associated hypermutation, and newly identiﬁed genetic alterations represent additional
+potential bases for the eﬃcacy of PD-1 blockade in cHL. Of note, recurrent cHL alterations,
+including B2M, TNFAIP3, STAT6, GNA13, and XPO1 mutations and 2p/2p15, 6p21.32, 6q23.3,
+and 9p/9p24.1 copy number alterations, were also identiﬁed in .20% of primary mediastinal
+B-cell lymphomas, highlighting shared pathogenetic mechanisms in these diseases.
+Introduction
+Classical Hodgkin lymphomas (cHLs) include rare malignant Hodgkin Reed-Sternberg (HRS) cells that
+are embedded within an extensive inflammatory/immune cell infiltrate. In cHL, tumor cells have a range of
+Submitted 21 September 2019; accepted 22 October 2019. DOI 10.1182/
+bloodadvances.2019001012.
+*K.W., B.C., C.S., A.J.D., and D.W. contributed equally to this work.
+†J.R.F., G.G., and M.A.S. jointly supervised this work.
+Data will be available through dbGap (accession number: phs000450).
+The full-text version of this article contains a data supplement.
+© 2019 by The American Society of Hematology
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+4065
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+sizes and shapes and include mononuclear Hodgkin and bi- or
+multinuclear Reed-Sternberg cells that exhibit defective cytokinesis.1-3
+HRS cells are derived from crippled, largely CD301, pre-apoptotic
+germinal center (GC) B cells that lack functional B-cell receptors
+(BCRs) and have reduced expression of multiple B-cell transcription
+factors.1,4 These tumor cells rely on alternative signaling and survival
+pathways, including JAK/STAT and nuclear factor kB (NF-kB), and
+exhibit genetic alterations of select pathway components.1,5-10
+In 30% to 40% of cHLs in North America and Europe, the malignant
+HRS cells have evidence of latent Epstein-Barr virus (EBV) infection
+and associated expression of latent membrane protein 1 (LMP1)
+and latent membrane protein 2A (LMP2A).1 In these tumors, LMP1
+mimics an active CD40 receptor and provides an alternative
+mechanism for NF-kB signaling.1 LMP2A facilitates BCR-like
+signaling via a cytoplasmic motif that resembles the BCR immunor-
+eceptor tyrosine-based activation motif.1
+The paucity of malignant HRS cells in primary cHLs has limited
+comprehensive genomic characterization of these tumors. Previous
+genetic analyses were largely restricted to cHL cell lines, laser-capture
+microdissected primary tumors, and a small series of flow-sorted
+HRS cells; these studies primarily focused on somatic mutations.6-10
+We and others previously identified recurrent gains and amplifications
+of chromosome 9p/9p24.1/PD-L1(CD274) and PD-L2(PDCD1LG2)
+and associated overexpression of these programmed cell death
+protein 1 (PD-1) ligands in cHL.11-13 The 9p24.1 amplicon also
+includes JAK2, which further augments JAK/STAT signaling and
+PD-1 ligand expression.11,14 These findings provided a genetic
+rationale for evaluating PD-1 blockade in patients with cHL and
+underscored the importance of somatic copy number alterations
+(SCNAs) in this disease. Patients with multiply relapsed/refractory
+cHL had overall response rates of ;70% to PD-1 blockade, among
+the highest reported response rates for any tumor type.15-18 PD-1
+blockade is now being evaluated in earlier treatment settings, including
+the frontline therapy of cHL.19
+However, the mechanism of action of PD-1 blockade in cHL and the
+reasons for its efficacy in this disease are incompletely defined.
+In a small pilot study, HRS cells were shown to exhibit frequent
+inactivating mutations of B2M that were postulated to limit trans-
+port and cell surface expression of major histocompatibility complex
+(MHC) class I and associated antigen presentation to CD81 T cells.6 In
+several larger series, HRS cells often lacked membranous expression
+of b2-microglobulin (b2M) and MHC class I.6,20,21 In these tumors,
+HRS cells less frequently lost expression of MHC class II, and
+membranous MHC class II was positively associated with a favor-
+able response to PD-1 blockade.20,21
+Herein, we assess complementary genetic mechanisms of immune
+escape and enhanced sensitivity to PD-1 blockade in purified,
+flow-sorted primary HRS cells and characterize the comprehen-
+sive genetic signature of these cHLs. In a companion article, we
+compare and contrast the recurrent genetic alterations in cHL
+with those in a related lymphoid malignancy, primary mediastinal
+large B-cell lymphoma (PMBL).22
+Methods
+Patient samples and cell lines
+The 23 newly diagnosed primary cHLs were collected at the
+University of Washington (supplemental Figure 1; supplemental
+Table 1). This study was approved by the Institutional Review
+Boards of the University of Washington and Dana-Farber Cancer
+Institute. All cHL tumor samples were mechanically dissociated
+and cryopreserved as single-cell suspensions as described.23 The
+cHL cell lines were cultured in cell line–specific media11 and short
+tandem repeat-typed to confirm their identity (https://www.dsmz.de).
+Flow cytometry cell sorting
+CHL cell suspensions were incubated with a blocking antibody
+cocktail (CD2, CD58, CD54 and lymphocyte function-associated
+antigen 1 [LFA-1]) for 1 hour on ice before fluorescent antibody
+staining and flow cytometry sorting23,24 on the BD FACS ARIA II
+cell sorter (supplemental Table 2). All flow sorting experiments were
+performed using the 100-mm nozzle at 20 psi with an average of
+2000 events per second. HRS cells and normal CD30– B cells
+were isolated as described23,25 (supplemental Methods). Isolated
+HRS cells were identified by their decreased expression of CD45,
+intermediate to bright expression of CD30, CD15, CD40, and
+CD95, and the absence of detectable CD64 and CD5 (supple-
+mental Figure 2A-B). Paired normal B cells were identified by their
+increased CD19 expression and the absence of detectable
+CD30 and CD15 (supplemental Figure 2C). For 9 of the 23 cHLs,
+additional HRS cell sorting and flow cytometric analyses were
+performed using an expanded antibody panel (supplemental
+Table 2B).
+Library preparation and whole-exome sequencing
+Genomic DNA was extracted, and whole-exome sequencing (WES)
+was performed using the Agilent SureSelect Human All Exon v5.0
+(catalog No. 5190-6208) plus a custom, spiked-in bait set (Agilent
+Technologies) for structural variant (SV) detection as described26,27
+(supplemental Methods).
+Processing and analysis of the WES data
+WES data were processed and analyzed as described.26 Steps
+included read alignment and quality control, with estimation of
+contamination in samples using ContEst (median, 1.8%; range,
+0.1%-11%; supplemental Table 1)28 and confirmation of matching
+of tumor and normal pairs by mass spectrometric fingerprint
+genotyping; removal of artifacts and filtering using a panel of
+normals; estimation and correction for tumor-in-normal content29;
+mutation calling using MuTect30 followed by significance analysis
+to identify mutated CCGs with MutSig2CV31 as well as clustering
+in 3-dimensional protein structures (CLUMPS)32; and estimation of
+purity and ploidy using ABSOLUTE33 and inferring the cancer cell
+fraction (CCF). SVs were identified with an established pipeline26
+using BreaKmer,34 Lumpy v0.2.13,35 dRanger,36 and SvABA37
+followed by Breakpointer validation.26 Additions or modifications
+to previous processing and analyses,26 including determination
+of EBV status and copy number evaluation, are described in
+supplemental Methods.
+Mutational signature analysis.
+Mutational signature analysis
+was performed as described26 with minor adjustments (supplemental
+Methods). In brief, a clustering feature threshold of 10 kb for the
+nearest mutation distance (NMD) for all single nucleotide variants
+with partitioning of clustered (NMD #10 kb) and nonclustered
+(NMD .10 kb) groups was used (supplemental Figure 4). The initial
+de novo signature extraction for the 23 cHLs was performed as
+described26 followed by an enforced semi-supervised signature
+4066
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+analysis excluding the hypermutators to delineate the 2 apolipopro-
+tein B mRNA editing catalytic polypeptide-like (APOBEC) signatures
+(COSMIC2 and COSMIC13). The same semi-supervised signature
+analysis was performed on the combined cohort of 23 primary cHLs
+and cHL cell lines.
+Visualization of mutational densities across
+tumor types
+The mutational density in cHL was compared with that in other
+tumor types as described31 and extended to include clonal
+mutations and mutations in CCGs as reported.38 Mutation
+densities (tumor mutational burden) were corrected for varia-
+tions in the number of bases sufficiently covered ($143 in the
+tumor and $83 in the normal) by the exome target bait sets
+used for each cohort, such that the mutation density is displayed
+consistently in units of mutations per Mb across all cohorts.
+Gene-by-sample matrix
+Morpheus (https://software.broadinstitute.org/morpheus) was used
+for visualization of the matrix of samples by recurrent genetic
+alterations.
+Results
+CCGs in cHLs
+In this cohort of patients with newly diagnosed cHL, the median age
+was 26 years (range, 10-75 years) and the sexes were balanced;
+83% (19 of 23) of the patients had nodular sclerosis Hodgkin
+lymphoma (NSHL) and 17% (4 of 23) had mixed cellularity (MC) HL
+(supplemental Figure 1). Thirty-five percent (8 of 23) of the primary
+cHLs were EBV1 and 65% (15 of 23) were EBV– (supplemental
+Figure 1; supplemental Table 1).
+To isolate the rare HRS cells from these primary cHL tumor cell
+suspensions, we used an established multicolor flow cytometric
+sorting strategy23,24 (supplemental Figure 2) and obtained a median
+of 1262 HRS cells (range, 465-3832 HRS cells) per cHL specimen.
+We performed WES of the 23 purified HRS cell samples and obtained
+a mean target read coverage of 503 (range, 20.76-178.94X);
+a mean number of coding mutations of 227 (range, 61-3524 coding
+mutations); and a mean allele fraction of 0.35 (range, 0.12-0.44 allele
+fractions) (supplemental Table 1). Thereafter, we applied MutSig2CV31
+using a false discovery rate threshold of 10%, and we identified 15
+CCGs (Figure 1; supplemental Table 3). Five CCGs were found by
+the CLUMPS algorithm,32 which identifies genes with significant
+mutational clustering within 3-dimensional protein space (q , 0.25)
+(Figure 1B-C; supplemental Figure 3A). Of note, 3 of the CCGs
+defined by CLUMPS were not captured by MutSig2CV (supple-
+mental Figure 3; supplemental Table 3). A comparison of the
+identified CCGs in this series and previously reported mutations in
+cHL6,7,10 is included in supplemental Table 4.
+The most significantly mutated CCG, B2M, was perturbed by
+missense and truncating mutations in 39% of tumors (Figure 1A,D).
+Such alterations likely impair the transport of MHC class I
+molecules/b2M to the cell surface, as described6,7,9,10,20,21,39
+(supplemental Table 4). An additional potential basis of perturbed
+MHC class I function was the newly identified truncating and
+missense mutations of HLA-B in 17% of cHLs (Figure 1A,D).
+We defined additional CCGs with known roles in the biology of
+cHL, including negative regulators of NF-kB signaling, NFKBIE,
+NFKBIA, and TNFAIP35,6,8,10 (Figure 1A,D; supplemental Table 4).
+In NFKBIE (26% cases), NFKBIA (17% cases), and TNFAIP3
+(26% cases), mutations were largely truncating (Figure 1D). This
+cohort of cHLs also exhibited missense mutations in IKBKB (13%
+cases), including V203I, a gain-of-function mutation in the encoded
+inhibitor of k kinase B (IKK), which phosphorylates IKBa and
+liberates associated NF-kB molecules (Figure 1A,D; supplemental
+Table 4).10,40
+Additional described cHL CCGs encode the JAK/STAT pathway
+components STAT6 and SOCS16,10,41-44 (Figure 1A,D; sup-
+plemental Table 4). STAT6 alterations (35% cases) primarily
+involved known mutational hotspots in the DNA binding domain
+(D419G/H/N and N421S)7,10,45,46 (Figure 1A-B,D). The largely
+truncating or missense mutations of SOCS1 (70% cases) spanned
+the entire coding sequence, consistent with the known role of the
+encoded tumor suppressor protein in this disease7,41,42 (Figure 1A,D).
+In our series, 22% of the cHLs also exhibited largely truncating (4 of 5)
+or missense mutations of PTPN1 (false discovery rate q 5 0.36,
+exceeding our discovery threshold of q 5 0.1; supplemental Figure 3B;
+supplemental Table 3), a known negative regulator of JAK/STAT
+signaling.47,48 In 17% of cHLs, we also identified previously described
+mutations in CSF2RB (Figure 1A,D; supplemental Table 4),6 which
+encodes the common b chain of the granulocyte-macrophage colony-
+stimulating factor and interleukin-3 and interleukin-5 receptors. All of
+these receptors signal via the JAK/STAT pathway.49
+We defined additional CCGs that were described in cHL, other
+lymphomas, and/or solid tumors, including XPO1, RBM38, GNA13,
+ACTB, and ARID1A.6,7,10 XPO1 encodes an importin-b superfamily
+member and nuclear export protein that translocates multiple cargo
+proteins, including STAT6, from the nucleus to the cytoplasm.50,51
+The recurrent XPO1 E571K mutation in 26% of cHLs (Figure 1A,D)
+is located close to the hydrophobic groove responsible for cargo
+recognition. This alteration has been described in multiple hemato-
+logic malignancies, including cHL and PMBL.7,10,22,50-52
+RBM38 encodes an RNA-binding protein and a reported
+tumor suppressor that modulates gene expression by binding
+to adenylate-uridylate/uridylate-rich elements in the 39 untranslated
+region of target transcripts.53-55 Of interest, murine Rbm38 defi-
+ciency promotes accelerated aging and lymphomagenesis, in
+part by destabilizing PTEN transcripts and decreasing PTEN
+protein expression.55,56 In 17% of analyzed cHLs, there are
+previously unreported truncating or missense mutations of RBM38
+(Figure 1A,D). Functional studies will be required to deter-
+mine whether RBM38 alterations represent a potential basis for
+enhanced PI3K signaling in these tumors.
+An additional 26% of the analyzed cHLs had truncating or missense
+mutations of GNA13, which abolished polar interactions around
+the catalytic pocket (Figure 1A,C-D; supplemental Table 4). Such
+alterations have been described in cHL6,7,9,10 and additional GC
+B-cell derived diffuse large B-cell lymphoma (DLBCL) and Burkitt
+lymphomas.57-59 The encoded protein, Ga13, transmits G-protein
+coupled receptor signals, activates RHO family members, and inhibits
+associated cellular migration and AKT-dependent pathways.57-59 In
+murine models, Ga13 deficiency was associated with GC B-cell
+expansion and dissemination, enhanced AKT signaling, and an
+increased incidence of B-cell lymphomas.58,59
+In these multinuclear HRS cells, which are postulated to
+have defective RHOA– and b actin–dependent cytokinesis,1-3,60
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4067
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+0.5
+2.0
+3.5
+-log10(q-value)
+Log10(#mut)
+mutations/Mb
+2
+*
+*
+Syn.
+Missense
+Splice site
+Frame shift
+In frame indel
+Nonsense
+1
+0
+50 40 30
+# mutations
+20
+70%
+13%
+26%
+26%
+13%
+17%
+26%
+17%
+35%
+17%
+26%
+17%
+26%
+26%
+39%
+SOCS1
+IKBKB
+GNA13
+ARID1A
+DNAH12
+NFKBIA
+ACTB
+HLA-B
+STAT6
+RBM38
+XPO1
+CSF2RB
+TNFAIP3
+NFKBIE
+B2M
+10 0
+%
+A-(T/C)
+C-(G/A)
+A-G
+*Cp(A/C/T)-T
+*CpG-T
+100
+0
+Allelic fraction
+100
+0
+c_cHL_103
+c_cHL _104
+c_cHL_ 47
+c_cHL_12
+c_cHL_48
+c_cHL_45
+c_cHL_100
+c_cHL_46
+c_cHL_16
+c_cHL_21
+c_cHL_44
+c_cHL_28
+c_cHL_24
+c_cHL_49
+c_cHL_15
+c_cHL_43
+c_cHL_7
+c_cHL _4
+c_cHL _3
+c_cHL_ 40
+c_cHL_51
+c_cHL_102
+c_cHL _6
+A
+Missense
+5
+0
+5
+p.S199I/R
+Actin
+0
+100
+200
+300
+375 aa
+ACTB
+Truncating
+Missense
+8
+2
+0
+3
+zf-A20
+OTU
+0
+790 aa
+TNFAIP3
+Truncating
+Missense
+1
+4
+0
+5
+p.D30G
+RRM_1
+0
+200 239 aa
+RBM38
+Truncating
+10
+Missense
+22
+Inframe
+Other
+2
+1
+0
+p.A44fs p.A70fs
+p.S106R/T p.S116N/R
+p.F135V/Y
+p.I182T/V
+0
+4
+100
+211 aa
+SH2
+SOCS_box
+SOCS1
+Truncating
+4
+Missense
+Other
+1
+1
+0
+3
+ARID1A
+0
+400
+ARID
+BAF250_C
+800
+1200 1600
+2285 aa
+Truncating
+Missense
+1
+3
+0
+3
+MHC_I
+C1-set
+MHC
+0
+100
+200
+362 aa
+HLA-B
+Truncating
+Inframe
+6
+1
+0
+4
+p.TY253fs
+Ank_2
+Ank_2
+0
+500 aa
+NFKBIE
+Missense
+5
+0
+5
+p.E571K
+CRM1_C
+Xpo1
+IBN_N
+0
+XPO1
+1071 aa
+Missense
+3
+0
+IKKbetaNEMObind
+p.V203I
+0
+5
+200
+400
+600
+Pkinase
+IKBKB
+756 aa
+Truncating
+Missense
+2
+2
+0
+5
+DHC_N2
+Dynein_heavy
+DNAH12
+0
+AAA_6 AAA_5 AAA_7
+500
+1000 1500 2000 2500 3092 aa
+Missense
+13
+0
+0
+5
+STAT_int
+p.N417Y
+p.D419G/H/N
+STAT_alpha
+STAT_bind
+STAT6_C
+SH2
+p.N421S
+200
+400
+600
+847 aa
+STAT6
+Truncating
+Missense
+4
+4
+0
+3
+p.L12P/R
+C1-set
+0
+119 aa
+B2M
+Truncating
+4
+0
+5
+fn3
+p.E788*
+IL6Ra-bind
+0
+200
+CSF2RB
+400
+600
+897 aa
+Truncating
+Missense
+2
+6
+0
+G-alpha
+GNA13
+100
+0
+3
+200
+300
+377 aa
+Truncating
+Missense
+2
+1
+0
+3
+Ank_2
+Ank_2
+NFKBIA
+0
+100
+200
+300 aa
+# mutations
+D
+B
+C
+Figure 1. Recurrently mutated genes in cHL. (A) A coMut plot100 of the CCGs in 23 primary cHLs indicating the number and frequency of recurrent mutations (left), color-
+coded mutated genes (center), with ranking by significance (MutSig2CV q value) (right). Coding nonsynonymous mutational density (log10[#mutations]) for each primary case
+is indicated at the top; allelic frequency and mutation type are noted below. *Indicates 2 hypermutated cases. (B-C) Genes identified by CLUMPS included STAT6 (protein
+data bank [PDB]: 4y5w; http://www.rcsb.org/) (B) and GNA13 (PDB: 3ab3) (C), which exhibited significant spatial clustering in protein structures. STAT6 dimer is shown with
+molecules in gray and cyan, respectively, and mutated residues in red. Color intensity and thickness of line scales with the number of mutations. Co-crystalized small molecules
+are shown in blue (GDP). (D) Mutation diagrams (lollipop figures) of the 15 significantly mutated genes identified in panel A. Positions within the genes perturbed in multiple
+cHLs ($2) are labeled.
+4068
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+we detected missense mutations of ACTB (Figure 1A,D; supplemental
+Table 4).6 CLUMPS revealed additional alterations in EEF1A1
+(supplemental Figure 3A; supplemental Tables 3 and 4),6 which
+encodes a translation factor implicated in chromosome conden-
+sation and tetraploid cell formation.61 EEF1A1 is also recurrently
+mutated in follicular lymphoma62 and inactivated by translocation
+in DLBCL.26
+We identified truncating and splice site mutations of ARID1A in
+26% of the primary cHLs (Figure 1A,D; supplemental Table 4). ARID1A
+encodes a subunit of the chromatin remodeling SWItch/sucrose
+non-fermentable (SWI/SNF) complex, which is a known tumor
+suppressor in multiple solid tumors63-68 and certain hematologic
+malignancies, including follicular lymphoma.10,45,69,70 Of interest,
+ARID1A deficiency was recently associated with increased mutation
+load and enhanced responsiveness to PD-1 blockade.69 The majority
+of identified CCGs in primary cHLs (Figure 1A) were also mutated in
+6 cHL cell lines that are often used as model systems of the disease
+(supplemental Figure 3C).
+Mutational signature analysis
+To gain insights into putative mutational processes in cHL, we
+applied our SignatureAnalyzer tool,71,72 which detects mutational
+signatures while taking into account clustering of the mutations
+along the genome and the 3-base context of the mutations. We
+initially identified 2 different microsatellite instability (MSI) signa-
+tures (COSMIC6 and COSMIC15; https://cancer.sanger.ac.uk/
+cosmic/signatures_v2), an activation-induced cytidine deaminase
+(AID) signature, and a mixed signature composed of spontaneous
+deamination at cytosine-phosphate-guanines (CpGs) (hereafter
+termed “Aging”) and APOBEC (supplemental Figure 4A; supplemental
+Table 5).73,74
+The two MSI cases were noted to be hypermutators (Figure 1A,
+top). One of these tumors (c_cHL_4) harbored both a splice site
+and a nonsense mutation in MSH3 (chr5:79974914T.C and chr5:
+80160722G.T, respectively). The other MSI case (c_cHL_24) had
+a homozygous deletion in MSH2 in addition to a nonsense mutation
+in ARID1A.
+To deconvolute the Aging and APOBEC signatures, we removed
+the 2 MSI cases and reidentified the mutational signatures in a semi-
+supervised manner (supplemental Methods; Figure 2A). In tumors
+from this predominantly young patient cohort, spontaneous deam-
+ination at CpG (Aging) was the most frequent mutational signature,
+followed by APOBEC (COSMIC2 and COSMIC13) and AID
+(Figure 2A-C). There was no association between the patient’s age
+at diagnosis and the number of mutations attributed to the Aging
+signature (supplemental Figure 4B), prompting speculation regard-
+ing an early increase in the division rate of HRS cells or other
+mechanisms that could increase CpG deamination in cHL.
+We next determined the relative contribution of the predominant
+mutational processes (Aging, APOBEC, and AID) to each of the
+15 CCGs in our cHL cohort (Figure 2D) as described.26 Known
+targets of aberrant somatic hypermutation, such as SOCS141,42
+had preponderant AID mutational signatures as did RBM38 (Figure 2D).
+Although STAT6 is not a known target of aberrant somatic hyper-
+mutation, a subset of the identified STAT6 mutations had features of
+an aberrant AID mutational signature (supplemental Figure 4C). In
+contrast, genes including NFKBIA, NFKBIE, XPO1, CSFR2B, and
+ARID1A had predominant Aging mutational signatures (Figure 2D).
+We did not observe the reported cHL cell line mutational signature
+COSMIC25 (https://cancer.sanger.ac.uk/cosmic/signatures_v2) in
+our series of primary cHLs (Figure 2A,C; supplemental Figure 4A).
+For this reason, we leveraged our own cHL cell line data and
+performed a new mutational signature analysis on the com-
+bined series of primary cHLs and cHL cell lines (supplemental
+Figure 4D-E). In addition to the signatures detected in primary
+cHLs, we found 2 additional mutational patterns, COSMIC25
+and COSMIC11, that were largely restricted to cHL cell lines
+(supplemental Figure 4D-E). Because COSMIC11 reflects the
+DNA damage of alkylating agents, the COSMIC11 and COSMIC25
+cell line signatures may be more closely associated with previous
+treatment and/or in vitro growth conditions than primary trans-
+forming events specific to cHL.75
+Somatic copy number alterations and
+chromosomal rearrangements
+We next assessed recurrent SCNAs in the primary cHLs with the
+GISTIC2.0 program76 and detected 13 recurrent SCNAs, in-
+cluding 6 copy gains (2 focal and 4 arm level) and 7 copy losses
+(6 focal and 1 arm level) (Figure 3A). The frequency of focal SCNAs
+in our primary cHL cohort ranged from 9% to 52%; these SCNAs
+harbored a median of 78 genes in focal peaks (range, 21 to 778 genes
+in focal peaks). Using the COSMIC Cancer Gene Census database
+(http://cancer.sanger.ac.uk/cosmic [v88 cancer_gene_census]),
+we identified candidate driver genes that reside within these
+focal SCNAs (supplemental Table 6).
+When assessing the recurrent SCNAs, we observed that specific
+CCGs could be perturbed by arm-level copy gain or loss as well
+as focal SCNAs (Figure 3A-C). For example, XPO1 was mutated
+in 26% of the cHLs (Figure 1) and additionally altered by SCNAs,
+including arm-level gain of 2p and focal amplification of 2p15
+(Figure 3A-B). Consistent with previous reports,6,11,12,21 we
+observed frequent arm-level 9p gain and focal amplification of
+the 9p24.1/PD-L1/PD-L2/JAK2 region in the primary cHLs (Figure 3A;
+supplemental Figure 5A; supplemental Table 4). In addition, TNFAIP3
+was perturbed by mutations in 26% of tumors (6 of 23)6 (Figure 1)
+and 6q arm-level or 6q23.3 focal copy loss in 74% of cHLs (17 of
+23) (Figure 3A,C; supplemental Table 4).
+We identified 6 SCNAs (arm-level gain of 5p and 5q, focal loss of
+1p36.32, 6p21.32, 6q23.3, and arm-level loss of 6q) that were
+recently described in DLBCL26 as well as focal gain of 5p15.3377,78
+and focal loss of 6q1279 that were reported in lung and pros-
+tate cancer, respectively. The focal region of 1p36.32 copy loss
+includes TNFRSF14 (Figure 3A),80,81 which is one of the most
+frequently mutated genes in GC-derived B-cell lymphomas.26,82
+Of interest, loss of TNFRSF14 and its encoded cell surface
+receptor HVEM leads to cell-autonomous B-cell activation and
+the development of GC B-cell lymphoma in vivo.82
+By using our recently described computational pipeline,26 we
+identified specific SVs in the primary cHLs, including those
+involving ETV6 (17% [4 of 23]) and CIITA (8% [2 of 23]) (Figure 3D-E;
+supplemental Tables 4 and 7). ETV6 is a reported fusion partner in
+up to 30 different translocations in hematopoietic malignancies.83
+In the primary cHL cohort, ETV6 deletions and inversions pre-
+dominantly involved exon 3, which encodes the helix-loop-helix
+and homodimerization domain of this transcriptional repressor
+(Figure 3F).83 Structural analyses of ETV684 suggest that the
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4069
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+identified exon 3 alterations abrogate ETV6-mediated transcrip-
+tional repression.
+Consistent with previous reports, SVs in CIITA included a tandem
+duplication (supplemental Figure 7) and a balanced translocation
+with HLA-DQB1 (Figure 3D), the latter likely leading to inactivation
+of CIITA and decreased MHC class II expression.85,86 We also
+identified translocations that juxtaposed genes with known roles
+in GC B-cell biology, such as BCOR, to IgH (IgH-Any, 26%) in this
+primary cHL series (Figure 3D-E; supplemental Figure 5B).
+Co-occurrence of genetic alterations
+Co-occurring genetic alterations in EBV1 and EBV– cHLs
+and cHL cell lines.
+The cHLs in our series had a median of 11
+recurrent genetic drivers (range, 3-16 drivers) prompting further
+analysis of co-occurring alterations in the primary cHLs (Figure 4A)
+and cHL cell lines (Figure 4B). Although the majority of HRS cell
+samples exhibited 2p/2p15 and 9p/9p24.1 copy gain, 6q/6q23.3
+copy loss, and SOCS1 somatic mutations, 2-way hierarchical
+clustering revealed additional genetic substructure (Figure 4A, left
+and right branches). Of interest, this objectively defined genetic
+substructure delineated EBV1 tumors (left branch) from EBV– cHLs
+(right branch, Figure 4A, top; supplemental Table 8). In this series,
+as in others,87 the primary MC cHLs were largely EBV1 (Figure 4A,
+top). Notably, there were fewer recurrent genetic alterations in the
+EBV1 than the EBV– cHLs (P 5 .011, Mann-Whitney U test) and
+fewer driver events in the 4 MC cHLs than the NSHLs (P 5 .008)
+(Figure 4A,C), as previously described.7 There were no significant
+differences in the sequencing mean target coverage between the
+EBV1 and EBV– tumors (P 5 .55) or between the MC cHLs and
+A
+400
+C–>A
+C–>G
+C–>T
+T–>A
+T–>C
+T–>G
+Aging
+APOBEC
+AID
+COSMIC2 COSMIC13
+200
+75
+75
+Contributions
+Tri-nucleotide sequence motifs
+0
+0
+0
+0
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+A–A
+A–C
+A–G
+A–T
+C–A
+C–C
+C–G
+C–T
+G–A
+G–C
+G–G
+G–T
+T–A
+T–C
+T–G
+T–T
+D
+RBM38
+SOCS1
+STAT6
+GNA13
+TNFAIP3
+HLA-B
+ACTB
+B2M
+DNAH12
+IKBKB
+NFKBIA
+NFKBIE
+XPO1
+CSF2RB
+ARID1A
+0
+0.2 0.4 0.6 0.8
+10
+40
+Mutations
+Signature proportion
+Aging
+APOBEC
+AID
+C
+Aging
+APOBEC
+AID
+COSMIC2
+COSMIC13
+Contributions
+Primary samples
+300
+Clustered
+Non-clustered
+0
+40
+0
+60
+0
+100
+c_cHL_7
+c_cHL_103
+c_cHL_47
+c_cHL_104
+c_cHL_43
+c_cHL_100
+c_cHL_46
+c_cHL_21
+c_cHL_12
+c_cHL_16
+c_cHL_45
+c_cHL_44
+c_cHL_102
+c_cHL_28
+c_cHL_48
+c_cHL_49
+c_cHL_40
+c_cHL_6
+c_cHL_15
+c_cHL_3
+c_cHL_51
+0
+B
+500
+Frequency
+200
+0
+0
+Clustered
+mutations
+Non-clustered
+mutations
+4
+log10 (NMD)
+8
+Figure 2. Mutational signatures in cHL. (A) Mutational signature analysis with clustering based on the NMD after removal of MSI samples. Identified signatures included
+C.T at CpG (Aging), AID, and an additional contribution of APOBEC signatures (COSMIC2 and COSMIC13). (B) Mutational clustering. Based on the bimodal distribution
+of NMD, all mutations were designated as either clustered (NMD #10 kb) or nonclustered (NMD $10 kb). (C) Signature activity (number of mutations assigned to each
+signature, y-axis) in each group (red, NMD #10 kb; blue, NMD $10 kb) across the 21 cHLs (2 MSI hypermutator cases were excluded, x-axis). (D) Relative contribution of
+each mutational process (Aging, APOBEC, and AID) for the 15 significantly mutated genes. Genes are ordered top to bottom by the fraction of the Aging signature. Error bars
+show the standard error of the mean. Histogram to the right shows the number of mutations within each mutated gene.
+4070
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+A
+Amplifications
+Deletions
+Arm-level
+Focal
+1p36.32 (22%, 778|24),
+TNFRSF14
+6p21.32 (43%, 749|2),
+HLA-B, MHC I, MHC II
+6q23.3 (22%, 78|2),
+TNFAIP3
+18q22.2 (17%, 88|3),
+SOCS6
+4
+4
+-log10(q-value)
+2
+2
+0
+4
+4
+-log10(q-value)
+2
+2
+0
+1q41 (52%, 213|5)
+6q12 (9%, 78|-)
+6q (61%)
+Arm-level
+Focal
+2p15 (30%, 21|3),
+XPO1, REL
+9p24.1(13%, 10|3),
+PD-L1/PD-L2, JAK2
+5p15.33 (22%, 38|2)
+2p (74%)
+5p (57%)
+5q (48%)
+9p (74%)
+F
+ETV6
+Deletions of Exons 3-5
+6,4
+Inversion of intron 3
+2,2
+Long range inversion
+6,7
+C12orf67
+= ORF
+= Exon
+= First coding exon
+Deletion of Exon 3
+10,26
+ETV6
+ETV6
+ETV6 - C12orf67
+E
+BCOR
+AKT3
+PGBD2
+MUC20
+HLA-DQB1
+AMPH
+TARP
+NEAT1
+ETV6
+C12orf67
+IGH
+GOLGA6L6
+CIITA
+PLCG2
+ARHGDIA
+ERGIC3
+D
+6
+# of cases
+4
+2
+0
+IgH
+ETV6
+CIITA
+PGBD2-AKT3
+AMPH-TARP
+B
+XPO1 mutations
+2p11.2
+XPO1
+cHL primary cases
+2p13.3
+2p16.1
+2p21
+2p22.3
+2p24.1
+2p25.1
+c_cHL_16
+c_cHL_102
+c_cHL_15
+c_cHL_104
+c_cHL_46
+c_cHL_100
+c_cHL_47
+c_cHL_51
+c_cHL_12
+c_cHL_21
+c_cHL_28
+c_cHL_44
+c_cHL_7
+c_cHL_43
+c_cHL_24
+c_cHL_103
+c_cHL_49
+c_cHL_6
+c_cHL_45
+c_cHL_3
+c_cHL_4
+c_cHL_40
+c_cHL_48
+C
+TNFAIP3 mutations
+6q26
+6q25.2
+6q23.3
+6q22.1
+6q21
+6q15
+6q13
+6q12
+TNFAIP3
+cHL primary cases
+c_cHL_15
+c_cHL_102
+c_cHL_24
+c_cHL_6
+c_cHL_21
+c_cHL_12
+c_cHL_45
+c_cHL_44
+c_cHL_16
+c_cHL_28
+c_cHL_43
+c_cHL_100
+c_cHL_46
+c_cHL_47
+c_cHL_104
+c_cHL_7
+c_cHL_49
+c_cHL_51
+c_cHL_4
+c_cHL_3
+c_cHL_40
+c_cHL_48
+c_cHL_103
+1.5
+0
+-1.5
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+Figure 3. Recurrent SCNAs and chromosomal rearrangements in cHL. (A) SCNAs labeled with their associated cytoband/arm followed in parentheses by frequency of
+the alteration, total number of genes, and COSMIC-defined genes. SCNAs that include significantly mutated genes (black) and genes of interest (gray) are highlighted. (B)
+Arm-level and focal alterations of 2p/2p15. Image visibility graph (IVG) plot of copy number from chromosome 2p indicates a frequent arm-level gain with focal amplification of
+2p15 region (XPO1). (C) Arm-level and focal loss of 6q/6q23.3. IGV plot of copy number from chromosome 6q indicates frequent arm-level copy loss and focal copy loss of
+6q23.3 (TNFAIP3). (D) Summary of SVs in all cHLs. (E) Circos plots of identified SVs in cHL. (F) ETV6 deletions and insertions. Boxes indicate exons: red, first coding exon;
+white, protein-coding exon; green, open reading frame (ORF) with intervening introns.
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4071
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+Mutations:
+SVs:
+non-syn.
+Yes
+No
+No
+SCNAs:
+High-level gain
+High-level loss
+Low-level gain
+Low-level loss
+No
+c_cHL_15
+c_cHL_3
+c_cHL_4
+c_cHL_12
+c_cHL_40
+c_cHL_51
+c_cHL_49
+c_cHL_6
+c_cHL_102
+c_cHL_104
+c_cHL_45
+c_cHL_16
+c_cHL_24
+c_cHL_103
+c_cHL_48
+c_cHL_100
+c_cHL_46
+c_cHL_47
+c_cHL_21
+c_cHL_44
+c_cHL_43
+c_cHL_28
+c_cHL_7
+EEF1A1
+Primary cHL samples
+Morphological subtype (
+MC
+EBV (
+RBM38
+NFKBIA
+ACTB
+1p36.32
+GNA13
+CSF2RB
+ARID1A
+NFKBIE
+2p/ XPO1
+2p15/ XPO1
+6q/ TNFAIP3
+6p21.32/HLA-B / NFKBIE
+5p15.33
+5p
+5q
+TNFAIP3
+STAT6
+SOCS1
+ADGRG6
+B2M
+1q41
+DNAH12
+9p24.1 /PD-Ligands / JAK2
+6q12
+ETV6
+IGLL5
+XPO1
+6q23.3/ TNFAIP3
+IKBKB
+CIITA
+HLA-B
+9p /PD-Ligands / JAK2
+18q22.2 / SOCS6
+NSHL)
+Pos
+Neg)
+0
+100
+%
+A
+Cell lines
+HDLM-2
+KM-H2
+L-540
+L-1236
+SUP-HDI
+L-428
+5p
+5q
+EEF1A1
+RBM38
+NFKBIA
+ACTB
+1p36.32
+GNA13
+CSF2RB
+ARID1A
+NFKBIE
+2p/ XPO1
+2p15/ XPO1
+6q/ TNFAIP3
+6p21.32/HLA-B / NFKBIE
+5p15.33
+TNFAIP3
+STAT6
+SOCS1
+ADGRG6
+B2M
+1q41
+DNAH12
+9p24.1 /PD-Ligands / JAK2
+6q12
+ETV6
+IGLL5
+XPO1
+6q23.3/ TNFAIP3
+IKBKB
+CIITA
+HLA-B
+9p /PD-Ligands / JAK2
+18q22.2 / SOCS6
+0
+100
+%
+B
+20
+15
+10
+5
+0
+Number of driver events
+EBV+
+EBV-
+MC
+NSHL
+ARID1A WT
+ARID1A mutant
+MC classification
+p= 0.011
+p= 0.008
+p= 0.012
+MHC class II -
+3
+MHC class II copy loss
+None defined
+1
+5
+p=0.048
+0
+MHC class II +
+C
+E
+c_cHL_40
+c_cHL_6
+c_cHL_49
+c_cHL_3
+c_cHL_51
+c_cHL_15
+c_cHL_12
+c_cHL_4
+c_cHL_104
+c_cHL_24
+c_cHL_100
+c_cHL_21
+c_cHL_44
+c_cHL_28
+c_cHL_46
+c_cHL_48
+c_cHL_47
+c_cHL_7
+c_cHL_45
+c_cHL_103
+c_cHL_16
+c_cHL_43
+c_cHL_102
+6p21.32
+6p21.33
+EBV status
+B2M mutation
+HLA-B mutation
+CIITA SV
+HLA-B
+MHC I
+MHC II
+*
+* * *
+* *
+*
+*
+*
+-1.5
+0
+1.5
+cHL primary cases
+D
+Figure 4. Co-occurring genetic alterations in cHL. (A) Genetic alterations are visualized in a color-coded matrix. Mutations and SCNAs with a false discovery rate–
+corrected q , 0.1 and SVs detected in $ 2 cases. Left: primary EBV1 cases; right: EBV– cases. Morphologic subtype as labeled. Each column represents an individual cHL
+sample. Clustering of alterations used the 1-Pearson-correlation method. Right: frequency of the genetic alterations are presented as a bar graph. (B) Genetic alterations
+identified in primary cHLs in panel A are shown in cHL cell lines. (C) Graphical comparison of the number of driver events in EBV1 vs EBV–, MC vs NSHL, and ARID1A wild-
+type (WT) vs mutant cHLs. MC cHLs are shown in red. (D) Genetic bases of perturbed MHC class I and MHC class II expression in the cHLs. IGV plot of copy number from
+chromosome 6p21.32 to 6p21.33 reveals copy loss of MHCII and/or MHCI, including HLA-B, in individual cHLs. The EBV status, B2M and HLA-B mutations, and CIITA SVs
+in individual cHLs are indicated in the header. *Indicates 9 cHLs for which additional flow cytometry analysis was performed. (E) Table comparing the HRS cell MHC class II
+expression levels in tumors with known MHCII status (copy loss or no copy loss). The P value (P 5 .048) was determined by using a Fisher’s exact test (see also supplemental
+Figure 7). non-syn, non-synonymous.
+4072
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+NSHLs (P 5 .37), suggesting that the quantitative differences in
+driver events in these cHL subsets were disease related.
+EBV1 HRS cells are known to express LMP1, which binds tumor
+necrosis factor receptor–associated factors and activates NF-kB.5,88
+As a consequence, EBV1 cHLs are reported to be less reliant on
+genetic enhancement of NF-kB signaling.5,8 Consistent with earlier
+studies,6,8 we found that EBV positivity and TNFAIP3 inactivation
+via mutation or focal copy loss were mutually exclusive in our
+primary cHLs (TNFAIP3 mutation and/or focal-copy loss, EBV–
+(9 of 15 [60%]) vs EBV1 (0 of 8 [0%]) (P 5 .0061; Figure 4A). In
+comparison with EBV1 cHLs, EBV– cHLs were significantly more
+likely to have inactivating B2M mutations, HLA-B mutations, or
+high-level focal copy loss of 6p21.32/HLA-B (P 5 .0084) (Figure 4A,D).
+The latter findings provide potential structural bases for the
+reported differences in cell surface expression of MHC class I in
+EBV1 and EBV– cHLs.20
+ARID1A-mutant cHLs (both EBV1 and EBV–) had a significantly
+higher number of candidate driver events than ARID1A wild-type
+cHLs (P 5 .012; P 5 .038 without hypermutators) (Figure 4C;
+supplemental Figure 6), which is also of interest, given the reported
+association between ARID1A deficiency, increased mutation load,
+and sensitivity to PD-1 blockade.69
+Structural basis for decreased MHC class II expression
+in cHL.
+After identifying potential genetic bases for previously
+reported perturbed MHC class I expression in cHL (Figure 4D),20,21
+we analyzed MHC class II expression in our genetically character-
+ized cHLs. In the 9 cHLs with additional available samples, we
+used a flow cytometric approach with an expanded antibody panel
+(supplemental Table 2) to assess HRS cell surface expression
+of MHC class II (supplemental Figure 7). HRS cell expression of
+MHC class II was compared with that on MHC class II–negative
+normal infiltrating T cells and MHC class II–positive normal infiltrating
+B cells from the same primary tumor cell suspensions (supplemental
+Figure 7). cHLs with decreased HRS cell expression of MHC class II
+were significantly more likely to have MHCII copy loss than cHLs with
+intact HRS cell expression of MHC class II (P 5 .048, Fisher’s exact
+test; Figure 4E; supplemental Figure 7). These data are of particular
+interest because we previously reported that HRS cell surface
+LOCUS
+Immune evasion
+GENE
+T cell
+JAK/STAT
+pathway
+PD-1
+CD4
+CD8
+or
+BTLA CD160
+Cytokines
+TCR
+TCR
+GPCR
+MHC II
+MHC I
+B2M
+HLA-B
+TNFAIP3
+IKBKB
+TNFRSF14
+PD-L1/L2
+CSFR2B
+JAK2
+STAT6
+SOCS6
+SOCS1
+PTPN1
+ACTB
+GNA13
+XPO1
+CIITA
+ARID1A
+ETV6
+RBM38
+NF-B
+pathway
+Cell
+migration
+ARGEF
+RHO-A
+AKT
+STAT6
+STAT6
+STAT6
+STAT6
+XPO1
+NPC
+MHC II
+transcripts
+Enhanceosome
+SWI/SNF
+Transcription
+PD-L1
+Mutation
+Amplification
+Deletion
+Structural
+variant
+KEY
+Mutation
++ Amplification
+Mutation
++ Deletion
+Nucleus
+p p
+p
+p
+Coupled
+receptor
+G13
+TRAF
+RIP
+IKK
+IKK
+NEMO
+p50
+p50
+p65
+p65
+IB/
+IB
+2p/2p15
+9p/9p24.1
+1p36.32
+6q/6q23.3
+6p21.31
+6p21.32
+18q22.2
+XPO1
+PD-L1 / PD-L2 / JAK2
+TNFRSF14
+TNFAIP3
+MHC I* /HLA-B
+MHC II* / NFBIE
+
+NF  BIE
+
+NF  BIA
+
+SOCS6
+
+
+
+
+
+
+
+MHC II genes
+Figure 5. Graphical representation of the pathways perturbed in cHL. Comprehensive analysis of the genetic alterations, including mutations, SCNAs, and SVs, in cHL
+indicate that pathways can be perturbed by multiple mechanisms. Mutations or SVs that are known to inactivate the involved proteins are noted (’).
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4073
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+expression of MHC class II, but not MHC class I, was predictive for
+response to PD-1 blockade.21
+Key pathways perturbed by multiple genetic mechanisms.
+By analyzing all genetic driver alterations, we observed that multi-
+ple components of key cHL signaling pathways were perturbed
+by different genetic mechanisms, including mutations, SCNAs, and
+SVs (Figures 4A and 5). For example, genetic bases of immune
+evasion included recurrent inactivating mutations of B2M and
+HLA-B, focal deletion of 6p21.32/HLA-B and the extended MHC
+class I and class II chromosome regions (6p21.32-6p21.33), and
+inactivating SVs of CIITA (Figures 4A,D and 5). In addition to genetic
+alterations of MHC class I and class II antigen presentation path-
+way components, cHLs exhibited 1p36.32/TNFRSF14 copy loss as
+described81 (Figures 4A and 5). Of note, TNFRSF14 deficiency has
+been reported to disrupt B- and T-lymphocyte attenuator inhibitory
+T-cell signals and induce a tumor-supportive microenvironment in
+GC B-cell lymphomas (Figure 5).81,82
+In addition, the primary cHLs exhibited recurrent 9p/9p24.1 copy
+gain (Figures 4A and 5), which is known to increase PD-1 ligand
+expression and associated PD-1 signaling.11,12,21 Chromo-
+some 9p/9p24.1 copy gain also augments JAK2 abundance and
+JAK/STAT-dependent programmed death-ligand 1 (PD-L1) expres-
+sion (Figure 5).14 In the primary cHLs, other known genetic bases
+of enhanced JAK/STAT signaling included activating STAT6
+mutations and inactivating SOCS1 and PTPN1 mutations41,42;
+additional potential mechanisms included CSFR2B mutations,
+18q22.2/SOCS6 copy loss, and altered XPO1-dependent
+STAT6 transport (Figures 4 and 5).50,51
+The primary cHLs also exhibited multiple NF-kB pathway alter-
+ations: TNFAIP3 mutations and focal 6q23.3/TNFAIP3 or arm-level
+6q copy loss; NFKBIE mutations and 6p21.32/NFKBIE copy loss;
+NFKBIA mutations and IKBKB mutations; and likely bases of
+enhanced PI3K signaling such as GNA13 and RBM38 mutations
+(Figures 4A and 5). The majority of the identified candidate drivers
+in primary cHLs were also detected in cHL cell lines (Figure 4B).
+Temporal ordering of genetic events and mutational
+burden in cHL
+We next determined the purity and ploidy for each primary cHL
+using ABSOLUTE, and we calculated the cancer cell fraction
+(CCF) for each genetic driver event (supplemental Table 9). The
+enriched HRS cell samples had a median purity of 78% and
+a median ploidy of 3.13 (range, 1.65-5.84 ploidy), which aligns
+with multinucleated structure of these tumor cells.89,90 Although
+there was no association between ploidy and the overall mutational
+burden (P 5 .3421) in the primary cHLs, ploidy and the number
+of driver events were significantly correlated (P 5 .0096) (supplemental
+Figure 8).
+We classified each recurrent genetic alteration (CCGs, SCNAs
+with q , 0.1, and SVs occurring $2 times) as clonal or subclonal
+by using a CCF threshold of 0.9 (Figure 6). The majority of these
+alterations, including each of the CCGs and the 18q22.2, 6q23.3,
+12
+0
+100
+%
+2
+14
+2
+12
+4
+4
+7
+17
+16
+3
+10
+4
+8
+5
+5
+6
+6
+8
+6
+6
+4
+4
+2
+5
+3
+16
+5
+5
+4
+6
+3
+4
+n= 10
+Clonal
+Subclonal
+CCF
+1
+0.8
+0.6
+0.4
+0.2
+0
+1q41
+6q
+6q12
+5p
+5p15.33
+2p15
+9p24.1
+6p21.32
+HLA-B
+B2M
+TNFAIP3
+NFKBIA
+GNA13
+ACTB
+STAT6
+NFKBIE
+XPO1
+CSF2RB
+RBM38
+DNAH12
+ARID1A
+IKBKB
+SOCS1
+EEF1A1
+IGLL5
+ADGRG6
+1p36.32
+6q23.3
+18q22.2
+5q
+2p
+9p
+CIITA
+ETV6
+Subclonal
+Clonal
+Figure 6. Clonality of genetic drivers in the primary cHLs. CCFs of genetic alterations ($2 within the cohort). The alterations are ranked by the median CCF indicated as
+red bar (left to right, high to low), error bars, and interquartile range. Mutations, black; copy number (CN) gain, red; CN loss, blue; SVs, green. The staggered bar graph in the
+lower panel categorizes the alterations in percentage of clonal and subclonal alterations; the threshold for clonal alterations is a CCF of $0.9.
+4074
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+100
+50
+0
+20
+Percentage
+20
+50
+100
+ETV6
+CIITA
+18q22.2
+6p21.32
+6q23.3
+6q12
+6q
+1q41
+1p36.32
+9p24.1
+9p
+5p15.33
+5p
+5q
+2p15
+2p
+ADGRG6
+IGLL5
+(2p16.1)
+* Significant alteration in PMBL
+EEF1A1
+SOCS1
+IKBKB
+GNA13
+ARID1A
+DNAH12
+NFKBIA
+ACTB
+HLA-B
+STAT6
+RBM38
+XPO1
+CSF2RB
+TNFAIP3
+NFKBIE
+B2M
+cHL (n=23)
+PMBL (n=37)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+A
+103
+n= 397
+Thyroid
+carcinoma
+Chronic
+lymphoid leukemia
+Low grade
+glioma
+Kidney renal papillary
+cell carcinoma
+Kidney renal clear
+cell carcinoma
+Glioblastoma
+Uterine
+carcinosarcoma
+Diffuse large
+B-cell lymphoma
+Classical hodgkin
+lymphoma
+EBV positive
+Stomach
+adenocarcinoma
+Urothelial bladder
+carcinoma
+Lung
+adenocarcinoma
+Lung squamous
+cell carcinoma
+Classical hodgkin
+lymphoma
+EBV negative
+Skin cutaneous
+melanoma
+381
+419
+101
+217
+264
+55
+304
+8
+214
+125
+420
+416
+15
+256
+Coding mutations/Mb per sample
+102
+101
+100
+10-1
+10-2
+B
+Coding mutations
+Clonal coding mutations
+Significantly mutated genes
+Figure 7. Comparative analysis between cHL and other lymphoid malignancies and cancer subtypes. (A) Mirror plots, centric to genetic alterations identified in cHL,
+generated by directly comparing cHL (n 5 23) to PMBL (n 5 37).22 Focal gain of 2p16.1, observed in PMBL,22 is labeled to indicate the similarity in the focal gain to that
+observed at 2p15 in cHL. Non-synonymous mutations, black; CN gain, red; CN loss, blue; SVs, green. *Indicates the genetic alteration was also significant in PMBL.
+(B) Cancer subtypes sorted by median of coding mutations per Mb per sample, with the tumor type labeled below and number of cases within each cohort shown at the top.
+EBV1 and EBV– cHL are labeled in red. EBV– tumors have a high mutational burden, similar to that of carcinogen-induced tumors (melanoma and squamous cell lung cancer).
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4075
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+1p36.32, 6p21.32, 9p/9p24.1 and 2p/2p15 SCNAs, were clonal,
+suggesting that they were early pathogenetic events (Figure 6).
+Comparison with other cancer subtypes
+We next compared the genetic landscape of primary cHL (Figure 4) to
+that of a related cancer type, PMBL, described in a companion paper.22
+In previous studies, we and others defined common transcriptional
+signatures and key signaling and immune evasion pathways in these
+cancers.11,14,91-94 We used mirror bar plots (Figure 7A) to compare the
+frequencies of the recurrent genetic alterations in cHL (Figure 4) to
+those in PMBL.22 Like cHL, PMBL exhibited recurrent alterations of
+B2M, TNFAIP3, CSF2RB, XPO1, STAT6, GNA13, and chromosomes
+2p/2p15 (2p16.1), 6p21.32, 6q23.3, and 9p/9p24.1 (Figure 7A),
+highlighting the shared genetic features of these diseases.22
+Thereafter, we sought to compare the tumor mutational burden
+(7.66 mutations per Mb) in primary cHLs to that in other cancers
+with available WES data31 (Figure 7B). The observed differences
+in numbers of driver events (Figure 4C) and mutational density
+(supplemental Figure 9) in EBV1 and EBV– cHLs prompted us to
+analyze these cHL subsets separately (Figure 7B). The median
+frequency of coding mutations in EBV– cHLs was among the
+highest described, comparable to that in carcinogen induced-tumors
+such as squamous cell lung carcinoma and melanoma (Figure 7B).
+These findings (Figure 7B) provide an additional potential basis for
+the sensitivity of cHLs to PD-1 blockade.
+Discussion
+Our comprehensive genomic analyses of flow cytometry–sorted
+HRS cells reveal complementary mechanisms—mutations, SCNAs,
+and SVs—of immune escape, NF-kB activation, and enhanced
+JAK/STAT and PI3K/AKT signaling in cHL (Figure 5). Our studies
+extend the findings in previously reported genetic analyses of cHL6,7,10
+by using prioritization methods to identify bona fide CCGs and
+additional approaches to characterize mutational signatures, tumor
+mutational burden, recurrent focal and arm-level SCNAs, SVs, and
+co-occurring genetic legions to derive novel insights regarding the
+comprehensive genetic signature of cHL (supplemental Table 4).
+Comparison of EBV– and EBV1 cHLs confirms that EBV– tumors
+are significantly more likely to exhibit genetic alterations of specific
+NF-kB signaling intermediaries and MHC class I antigen presen-
+tation pathway components (Figure 4). Of particular interest, the
+mutational burden in EBV– cHLs is among the highest reported,
+similar to that in carcinogen-induced tumors (Figure 7).
+Additional previously unappreciated aspects of the cHL genetic
+signature include the likely role of ARID1A alterations in driver
+mutational events (Figure 4C),69 the predominant Aging muta-
+tional signature95 in this young patient population (Figure 2), and
+potential genetic mechanisms of defective cytokinesis2,3,60,61 in
+multinucleated HRS cells (Figure 5; supplemental Figure 3).
+Importantly, the high mutational burden in EBV– cHLs and the
+genetically driven JAK/STAT signaling and MSI signatures in
+EBV– and EBV1 cHLs may be additional bases, beyond 9/9p24.1
+SCNAs,11,20,21 for the sensitivity of these tumors to PD-1 blockade.
+In contrast, genetic alterations that decrease PTEN abundance
+and/or enhance PI3K signaling potentially limit the efficacy of
+PD-1 blockade96,97 in affected cHLs. In addition, the pervasive
+genetic alterations of MHC class I antigen presentation pathway
+components in EBV– cHLs (Figure 4) highlight the likely role of
+non-CD81 T-cell effector mechanisms98,99 in PD-1 blockade
+in these tumors. The comprehensive cHL genetic landscape,
+including recurrent SCNAs and SVs, can now be translated into
+targeted assays of primary tumors and circulating tumor DNA10
+to delineate bases of response and resistance to immunomod-
+ulatory therapy in pivotal clinical trials.
+Acknowledgments
+This work was supported by a grant from the National Institutes of
+Health, National Cancer Institute (R01 CA161026) (M.A.S.), the Miller
+Family Fund (M.A.S.), The Leukemia & Lymphoma Society (D.W., J.R.F.,
+and M.A.S.), a Claudia Adams Barr Program Award in Basic Cancer
+Research (B.C.), and a Mobility Plus fellowship from the Polish Ministry
+of Science and Higher Education (1261/MOB/IV/2015/0) (K.B.). G.G.
+was partially supported by the Paul C. Zamecnick Chair in Oncology at
+the Massachusetts General Hospital Cancer Center.
+Authorship
+Contributions: K.W., B.C., C.S., and A.J.D. designed and performed
+the research, analyzed the data, and wrote the manuscript; J.K. an-
+alyzed the data and contributed to scientific discussions; A.K., F.Z.C.,
+M.D.D., A.N., A.R.T., T.R.W., K.B., R.A.R., L.N.L., P.A., and S.J.R.
+contributed to the analysis and scientific discussions; A.T.H. and
+M.J.B. performed the flow cytometry research and analyzed the data;
+D.W., J.R.F., G.G., and M.A.S. designed and supervised the research
+and data analyses and wrote the manuscript; and all authors dis-
+cussed the results and contributed to the final manuscript.
+Conflict-of-interest disclosure: S.J.R. received research fund-
+ing from Bristol-Myers Squibb, Meyer, KITE/Gilead, and Affimed.
+P.A. received research funding from Merck, Bristol-Myers Squibb,
+Adaptive, Roche, Tensha, Otsuka, Sigma-Tau Pharmaceuticals, and
+Genentech, served as a consultant for Merck, Bristol-Myers Squibb,
+Pfizer, Affimed, Adaptive, Infinity, and ADC Therapeutics, and has
+received honoraria from Merck and Bristol-Myers Squibb. G.G. re-
+ceived research funding from IBM and Pharmacylics and is an in-
+ventor on patent applications related to MuTect, ABSOLUTE,
+and MutSig. M.A.S. received research funding from Bristol-Myers
+Squibb, Bayer, and Merck, served on advisory boards for Bayer and
+Bristol-Myers Squibb, and received honoraria from Bristol-Myers
+Squibb and Bayer. The remaining authors declare no competing
+financial interests.
+The current affiliation for A.K. is Bayer AG, Berlin, Germany.
+The current affiliation for M.D.D. is Foundation Medicine,
+Cambridge, MA.
+The current affiliation for A.T.H. is Allen Institute for Immunology,
+Seattle, WA.
+The current affiliation for K.B. is Department of Experimental
+Hematology, Institute of Hematology and Transfusion Medicine,
+Warsaw, Poland.
+ORCID profiles: K.W., 0000-0001-9548-4420; B.C., 0000-
+0002-6485-8773; C.S., 0000-0003-2245-9552; A.J.D., 0000-
+0002-6152-3169; D.W., 0000-0001-7729-5730; F.Z.C., 0000-
+0001-5107-0146; A.N., 0000-0002-1947-7429; R.A.R., 0000-
+0002-1329-5288; K.B., 0000-0002-6110-4060; L.N.L., 0000-
+0001-7824-9787; P.A., 0000-0001-6098-1603; S.J.R., 0000-
+0003-1761-9769; J.R.F., 0000-0002-2287-5284; G.G., 0000-
+0002-0936-0753; M.A.S., 0000-0002-3949-6897.
+4076
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+Correspondence: Margaret A. Shipp, Dana-Farber Cancer
+Institute, 450 Brookline Ave, Mayer 513, Boston, MA 02215;
+e-mail: margaret_shipp@dfci.harvard.edu; and Gad Getz, Broad
+Institute of Harvard and MIT, 415 Main St, Cambridge, MA 02142;
+e-mail: gadgetz@broadinstitute.org; and Jonathan R. Fromm,
+Department of Laboratory Medicine, University of Washington,
+1959 NE Pacific St, NW120, Seattle, WA 98195-7110; e-mail:
+jfromm@uw.edu.
+References
+1.
+Mathas S, Hartmann S, K¨uppers R. Hodgkin lymphoma: pathology and biology. Semin Hematol. 2016;53(3):139-147.
+2.
+Rengstl B, Newrzela S, Heinrich T, et al. Incomplete cytokinesis and re-fusion of small mononucleated Hodgkin cells lead to giant multinucleated
+Reed-Sternberg cells. Proc Natl Acad Sci U S A. 2013;110(51):20729-20734.
+3.
+Lens SMA, Medema RH. Cytokinesis defects and cancer. Nat Rev Cancer. 2019;19(1):32-45.
+4.
+Weniger MA, Tiacci E, Schneider S, et al. Human CD301 B cells represent a unique subset related to Hodgkin lymphoma cells. J Clin Invest. 2018;
+128(7):2996-3007.
+5.
+Weniger MA, K¨uppers R. NF-kB deregulation in Hodgkin lymphoma. Semin Cancer Biol. 2016;39:32-39.
+6.
+Reichel J, Chadburn A, Rubinstein PG, et al. Flow sorting and exome sequencing reveal the oncogenome of primary Hodgkin and Reed-Sternberg cells.
+Blood. 2015;125(7):1061-1072.
+7.
+Tiacci E, Ladewig E, Schiavoni G, et al. Pervasive mutations of JAK-STAT pathway genes in classical Hodgkin lymphoma. Blood. 2018;131(22):2454-2465.
+8.
+Schmitz R, Hansmann ML, Bohle V, et al. TNFAIP3 (A20) is a tumor suppressor gene in Hodgkin lymphoma and primary mediastinal B cell lymphoma.
+J Exp Med. 2009;206(5):981-989.
+9.
+Tiacci E, D¨oring C, Brune V, et al. Analyzing primary Hodgkin and Reed-Sternberg cells to capture the molecular and cellular pathogenesis of classical
+Hodgkin lymphoma. Blood. 2012;120(23):4609-4620.
+10.
+Spina V, Bruscaggin A, Cuccaro A, et al. Circulating tumor DNA reveals genetics, clonal evolution, and residual disease in classical Hodgkin lymphoma.
+Blood. 2018;131(22):2413-2425.
+11.
+Green MR, Monti S, Rodig SJ, et al. Integrative analysis reveals selective 9p24.1 amplification, increased PD-1 ligand expression, and further induction via
+JAK2 in nodular sclerosing Hodgkin lymphoma and primary mediastinal large B-cell lymphoma. Blood. 2010;116(17):3268-3277.
+12.
+Roemer MG, Advani RH, Ligon AH, et al. PD-L1 and PD-L2 genetic alterations define classical Hodgkin lymphoma and predict outcome. J Clin Oncol.
+2016;34(23):2690-2697.
+13.
+Hartmann S, Martin-Subero JI, Gesk S, et al. Detection of genomic imbalances in microdissected Hodgkin and Reed-Sternberg cells of classical
+Hodgkin’s lymphoma by array-based comparative genomic hybridization. Haematologica. 2008;93(9):1318-1326.
+14.
+Hao Y, Chapuy B, Monti S, Sun HH, Rodig SJ, Shipp MA. Selective JAK2 inhibition specifically decreases Hodgkin lymphoma and mediastinal large B-cell
+lymphoma growth in vitro and in vivo. Clin Cancer Res. 2014;20(10):2674-2683.
+15.
+Ansell SM, Lesokhin AM, Borrello I, et al. PD-1 blockade with nivolumab in relapsed or refractory Hodgkin’s lymphoma. N Engl J Med. 2015;372(4):311-319.
+16.
+Armand P, Engert A, Younes A, et al. Nivolumab for relapsed/refractory classic Hodgkin lymphoma after failure of autologous hematopoietic cell
+transplantation: extended follow-up of the multicohort single-arm phase II CheckMate 205 trial. J Clin Oncol. 2018;36(14):1428-1439.
+17.
+Armand P, Shipp MA, Ribrag V, et al. Programmed death-1 blockade with pembrolizumab in patients with classical Hodgkin lymphoma after brentuximab
+vedotin failure. J Clin Oncol. 2016;34(31):3733-3739.
+18.
+Chen R, Zinzani PL, Fanale MA, et al. Phase II study of the efficacy and safety of pembrolizumab for relapsed/refractory classic Hodgkin lymphoma. J Clin
+Oncol. 2017;35(19):2125-2132.
+19.
+Ramchandren R, Domingo-Dom`enech E, Rueda A, et al. Nivolumab for newly diagnosed advanced-stage classic Hodgkin lymphoma: safety and efficacy
+in the phase II CheckMate 205 study. J Clin Oncol. 2019;37(23):1997-2007.
+20.
+Roemer MG, Advani RH, Redd RA, et al. Classical Hodgkin lymphoma with reduced b2M/MHC class I expression is associated with inferior outcome
+independent of 9p24.1 status. Cancer Immunol Res. 2016;4(11):910-916.
+21.
+Roemer MGM, Redd RA, Cader FZ, et al. Major histocompatibility complex class II and programmed death ligand 1 expression predict outcome after
+programmed death 1 blockade in classic Hodgkin lymphoma. J Clin Oncol. 2018;36(10):942-950.
+22.
+Chapuy B, Stewart C, Dunford AJ, et al. Genomic analyses of PMBL reveal new drivers and mechanisms of sensitivity to PD-1 blockade [published online
+ahead of print 28 October 2019]. Blood. 10.1182/blood.2019002067.
+23.
+Fromm JR, Wood BL. Strategies for immunophenotyping and purifying classical Hodgkin lymphoma cells from lymph nodes by flow cytometry and flow
+cytometric cell sorting. Methods. 2012;57(3):368-375.
+24.
+Fromm JR, Kussick SJ, Wood BL. Identification and purification of classical Hodgkin cells from lymph nodes by flow cytometry and flow cytometric cell
+sorting. Am J Clin Pathol. 2006;126(5):764-780.
+25.
+Fromm JR, Thomas A, Wood BL. Flow cytometry can diagnose classical Hodgkin lymphoma in lymph nodes with high sensitivity and specificity. Am J Clin
+Pathol. 2009;131(3):322-332.
+26.
+Chapuy B, Stewart C, Dunford AJ, et al. Molecular subtypes of diffuse large B cell lymphoma are associated with distinct pathogenic mechanisms and
+outcomes. Nat Med. 2018;24(5):679-690.
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4077
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+27.
+Chapuy B, Roemer MG, Stewart C, et al. Targetable genetic features of primary testicular and primary central nervous system lymphomas. Blood. 2016;
+127(7):869-881.
+28.
+Cibulskis K, McKenna A, Fennell T, Banks E, DePristo M, Getz G. ContEst: estimating cross-contamination of human samples in next-generation
+sequencing data. Bioinformatics. 2011;27(18):2601-2602.
+29.
+Taylor-Weiner A, Stewart C, Giordano T, et al. DeTiN: overcoming tumor-in-normal contamination. Nat Methods. 2018;15(7):531-534.
+30.
+Cibulskis K, Lawrence MS, Carter SL, et al. Sensitive detection of somatic point mutations in impure and heterogeneous cancer samples. Nat Biotechnol.
+2013;31(3):213-219.
+31.
+Lawrence MS, Stojanov P, Polak P, et al. Mutational heterogeneity in cancer and the search for new cancer-associated genes. Nature. 2013;499(7457):
+214-218.
+32.
+Kamburov A, Lawrence MS, Polak P, et al. Comprehensive assessment of cancer missense mutation clustering in protein structures. Proc Natl Acad Sci
+U S A. 2015;112(40):E5486-E5495.
+33.
+Carter SL, Cibulskis K, Helman E, et al. Absolute quantification of somatic DNA alterations in human cancer. Nat Biotechnol. 2012;30(5):413-421.
+34.
+Abo RP, Ducar M, Garcia EP, et al. BreaKmer: detection of structural variation in targeted massively parallel sequencing data using kmers. Nucleic Acids
+Res. 2015;43(3):e19.
+35.
+Layer RM, Chiang C, Quinlan AR, Hall IM. LUMPY: a probabilistic framework for structural variant discovery. Genome Biol. 2014;15(6):R84.
+36.
+Berger MF, Lawrence MS, Demichelis F, et al. The genomic complexity of primary human prostate cancer. Nature. 2011;470(7333):214-220.
+37.
+Wala JA, Bandopadhayay P, Greenwald NF, et al. SvABA: genome-wide detection of structural variants and indels by local assembly. Genome Res.
+2018;28(4):581-591.
+38.
+Cherniack AD, Shen H, Walter V, et al; Cancer Genome Atlas Research Network. Integrated molecular characterization of uterine carcinosarcoma.
+Cancer Cell. 2017;31(3):411-423.
+39.
+Challa-Malladi M, Lieu YK, Califano O, et al. Combined genetic inactivation of b2-microglobulin and CD58 reveals frequent escape from immune
+recognition in diffuse large B cell lymphoma. Cancer Cell. 2011;20(6):728-740.
+40.
+Cardinez C, Miraghazadeh B, Tanita K, et al. Gain-of-function IKBKB mutation causes human combined immune deficiency. J Exp Med. 2018;215(11):
+2715-2724.
+41.
+Mottok A, Renn´e C, Seifert M, et al. Inactivating SOCS1 mutations are caused by aberrant somatic hypermutation and restricted to a subset of B-cell
+lymphoma entities. Blood. 2009;114(20):4503-4506.
+42.
+Mottok A, Renn´e C, Willenbrock K, Hansmann ML, Br¨auninger A. Somatic hypermutation of SOCS1 in lymphocyte-predominant Hodgkin lymphoma is
+accompanied by high JAK2 expression and activation of STAT6. Blood. 2007;110(9):3387-3390.
+43.
+Baus D, Nonnenmacher F, Jankowski S, et al. STAT6 and STAT1 are essential antagonistic regulators of cell survival in classical Hodgkin lymphoma cell
+line. Leukemia. 2009;23(10):1885-1893.
+44.
+Weniger MA, Melzner I, Menz CK, et al. Mutations of the tumor suppressor gene SOCS-1 in classical Hodgkin lymphoma are frequent and associated
+with nuclear phospho-STAT5 accumulation. Oncogene. 2006;25(18):2679-2684.
+45.
+Pasqualucci L, Khiabanian H, Fangazio M, et al. Genetics of follicular lymphoma transformation. Cell Reports. 2014;6(1):130-140.
+46.
+Ritz O, Guiter C, Castellano F, et al. Recurrent mutations of the STAT6 DNA binding domain in primary mediastinal B-cell lymphoma. Blood. 2009;
+114(6):1236-1242.
+47.
+Gunawardana J, Chan FC, Telenius A, et al. Recurrent somatic mutations of PTPN1 in primary mediastinal B cell lymphoma and Hodgkin lymphoma. Nat
+Genet. 2014;46(4):329-335.
+48.
+Zahn M, Marienfeld R, Melzner I, et al. A novel PTPN1 splice variant upregulates JAK/STAT activity in classical Hodgkin lymphoma cells. Blood. 2017;
+129(11):1480-1490.
+49.
+Watanabe-Smith K, Tognon C, Tyner JW, Meijerink JP, Druker BJ, Agarwal A. Discovery and functional characterization of a germline, CSF2RB-activating
+mutation in leukemia. Leukemia. 2016;30(9):1950-1953.
+50.
+Camus V, Miloudi H, Taly A, Sola B, Jardin F. XPO1 in B cell hematological malignancies: from recurrent somatic mutations to targeted therapy. J Hematol
+Oncol. 2017;10(1):47.
+51.
+Miloudi H, Leroy K, Jardin F, Sola B. STAT6 is a cargo of exportin 1: biological relevance in primary mediastinal B-cell lymphoma. Cell Signal. 2018;46:
+76-82.
+52.
+Jardin F, Pujals A, Pelletier L, et al. Recurrent mutations of the exportin 1 gene (XPO1) and their impact on selective inhibitor of nuclear export compounds
+sensitivity in primary mediastinal B-cell lymphoma. Am J Hematol. 2016;91(9):923-930.
+53.
+Zhou XJ, Wu J, Shi L, et al. PTEN expression is upregulated by a RNA-binding protein RBM38 via enhancing its mRNA stability in breast cancer. J Exp
+Clin Cancer Res. 2017;36(1):149.
+54.
+Xue JQ, Xia TS, Liang XQ, et al. RNA-binding protein RNPC1: acting as a tumor suppressor in breast cancer. BMC Cancer. 2014;14(1):322.
+55.
+Zhang J, Xu E, Ren C, et al. Mice deficient in Rbm38, a target of the p53 family, are susceptible to accelerated aging and spontaneous tumors. Proc Natl
+Acad Sci U S A. 2014;111(52):18637-18642.
+56.
+Zhang J, Xu E, Ren C, et al. Genetic ablation of Rbm38 promotes lymphomagenesis in the context of mutant p53 by downregulating PTEN. Cancer Res.
+2018;78(6):1511-1521.
+57.
+Basso K, Dalla-Favera R. Germinal centres and B cell lymphomagenesis. Nat Rev Immunol. 2015;15(3):172-184.
+4078
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+58.
+Muppidi JR, Schmitz R, Green JA, et al. Loss of signalling via Ga13 in germinal centre B-cell-derived lymphoma. Nature. 2014;516(7530):254-258.
+59.
+Healy JA, Nugent A, Rempel RE, et al. GNA13 loss in germinal center B cells leads to impaired apoptosis and promotes lymphoma in vivo. Blood. 2016;
+127(22):2723-2731.
+60.
+Chen A, Arora PD, McCulloch CA, Wilde A. Cytokinesis requires localized b-actin filament production by an actin isoform specific nucleator. Nat
+Commun. 2017;8(1):1530.
+61.
+Kobayashi Y, Yonehara S. Novel cell death by downregulation of eEF1A1 expression in tetraploids. Cell Death Differ. 2009;16(1):139-150.
+62.
+Green MR, Kihira S, Liu CL, et al. Mutations in early follicular lymphoma progenitors are associated with suppressed antigen presentation. Proc Natl Acad
+Sci U S A. 2015;112(10):E1116-E1125.
+63.
+Jones S, Wang TL, Shih IM, et al. Frequent mutations of chromatin remodeling gene ARID1A in ovarian clear cell carcinoma. Science. 2010;330(6001):
+228-231.
+64.
+Wiegand KC, Shah SP, Al-Agha OM, et al. ARID1A mutations in endometriosis-associated ovarian carcinomas. N Engl J Med. 2010;363(16):
+1532-1543.
+65.
+Wang K, Kan J, Yuen ST, et al. Exome sequencing identifies frequent mutation of ARID1A in molecular subtypes of gastric cancer. Nat Genet. 2011;
+43(12):1219-1223.
+66.
+Cornen S, Adelaide J, Bertucci F, et al. Mutations and deletions of ARID1A in breast tumors. Oncogene. 2012;31(38):4255-4256.
+67.
+Guan B, Mao TL, Panuganti PK, et al. Mutation and loss of expression of ARID1A in uterine low-grade endometrioid carcinoma. Am J Surg Pathol. 2011;
+35(5):625-632.
+68.
+Guan B, Wang TL, Shih IM. ARID1A, a factor that promotes formation of SWI/SNF-mediated chromatin remodeling, is a tumor suppressor in gynecologic
+cancers. Cancer Res. 2011;71(21):6718-6727.
+69.
+Shen J, Ju Z, Zhao W, et al. ARID1A deficiency promotes mutability and potentiates therapeutic antitumor immunity unleashed by immune checkpoint
+blockade. Nat Med. 2018;24(5):556-562.
+70.
+Pastore A, Jurinovic V, Kridel R, et al. Integration of gene mutations in risk prognostication for patients receiving first-line immunochemotherapy for
+follicular lymphoma: a retrospective analysis of a prospective clinical trial and validation in a population-based registry. Lancet Oncol. 2015;16(9):
+1111-1122.
+71.
+Helleday T, Eshtad S, Nik-Zainal S. Mechanisms underlying mutational signatures in human cancers. Nat Rev Genet. 2014;15(9):585-598.
+72.
+Kim J, Mouw KW, Polak P, et al. Somatic ERCC2 mutations are associated with a distinct genomic signature in urothelial tumors. Nat Genet. 2016;48(6):
+600-606.
+73.
+Roberts SA, Lawrence MS, Klimczak LJ, et al. An APOBEC cytidine deaminase mutagenesis pattern is widespread in human cancers. Nat Genet. 2013;
+45(9):970-976.
+74.
+Swanton C, McGranahan N, Starrett GJ, Harris RS. APOBEC enzymes: mutagenic fuel for cancer evolution and heterogeneity. Cancer Discov. 2015;
+5(7):704-712.
+75.
+Alexandrov LB, Nik-Zainal S, Wedge DC, et al; ICGC PedBrain. Signatures of mutational processes in human cancer. Nature. 2013;500(7463):
+415-421.
+76.
+Mermel CH, Schumacher SE, Hill B, Meyerson ML, Beroukhim R, Getz G. GISTIC2.0 facilitates sensitive and confident localization of the targets of focal
+somatic copy-number alteration in human cancers. Genome Biol. 2011;12(4):R41.
+77.
+Kachuri L, Amos CI, McKay JD, et al. Fine mapping of chromosome 5p15.33 based on a targeted deep sequencing and high density genotyping identifies
+novel lung cancer susceptibility loci. Carcinogenesis. 2016;37(1):96-105.
+78.
+Kang JU, Koo SH, Kwon KC, Park JW, Kim JM. Gain at chromosomal region 5p15.33, containing TERT, is the most frequent genetic event in early stages
+of non-small cell lung cancer. Cancer Genet Cytogenet. 2008;182(1):1-11.
+79.
+Kluth M, Hesse J, Heinl A, et al. Genomic deletion of MAP3K7 at 6q12-22 is associated with early PSA recurrence in prostate cancer and absence of
+TMPRSS2:ERG fusions. Mod Pathol. 2013;26(7):975-983.
+80.
+Steidl C, Telenius A, Shah SP, et al. Genome-wide copy number analysis of Hodgkin Reed-Sternberg cells identifies recurrent imbalances with
+correlations to treatment outcome. Blood. 2010;116(3):418-427.
+81.
+Salipante SJ, Adey A, Thomas A, et al. Recurrent somatic loss of TNFRSF14 in classical Hodgkin lymphoma. Genes Chromosomes Cancer. 2016;55(3):
+278-287.
+82.
+Boice M, Salloum D, Mourcin F, et al. Loss of the HVEM tumor suppressor in lymphoma and restoration by modified CAR-T cells. Cell. 2016;167(2):
+405-418.e13.
+83.
+De Braekeleer E, Douet-Guilbert N, Morel F, Le Bris MJ, Basinko A, De Braekeleer M. ETV6 fusion genes in hematological malignancies: a review. Leuk
+Res. 2012;36(8):945-961.
+84.
+Wang Q, Dong S, Yao H, et al. ETV6 mutation in a cohort of 970 patients with hematologic malignancies. Haematologica. 2014;99(10):e176-e178.
+85.
+Steidl C, Shah SP, Woolcock BW, et al. MHC class II transactivator CIITA is a recurrent gene fusion partner in lymphoid cancers. Nature. 2011;
+471(7338):377-381.
+86.
+Mottok A, Woolcock B, Chan FC, et al. Genomic alterations in CIITA are frequent in primary mediastinal large B cell lymphoma and are associated with
+diminished MHC class II expression. Cell Reports. 2015;13(7):1418-1431.
+87.
+Gulley ML, Eagan PA, Quintanilla-Martinez L, et al. Epstein-Barr virus DNA is abundant and monoclonal in the Reed-Sternberg cells of Hodgkin’s disease:
+association with mixed cellularity subtype and Hispanic American ethnicity. Blood. 1994;83(6):1595-1602.
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+GENETIC CHARACTERIZATION OF cHL
+4079
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024
+
+88.
+Huen DS, Henderson SA, Croom-Carter D, Rowe M. The Epstein-Barr virus latent membrane protein-1 (LMP1) mediates activation of NF-kappa B and
+cell surface phenotype via two effector regions in its carboxy-terminal cytoplasmic domain. Oncogene. 1995;10(3):549-560.
+89.
+K¨uppers R, Engert A, Hansmann ML. Hodgkin lymphoma. J Clin Invest. 2012;122(10):3439-3447.
+90.
+Weber-Matthiesen K, Deerberg J, Poetsch M, Grote W, Schlegelberger B. Numerical chromosome aberrations are present within the CD301 Hodgkin
+and Reed-Sternberg cells in 100% of analyzed cases of Hodgkin’s disease. Blood. 1995;86(4):1464-1468.
+91.
+Savage KJ, Monti S, Kutok JL, et al. The molecular signature of mediastinal large B-cell lymphoma differs from that of other diffuse large B-cell lymphomas
+and shares features with classical Hodgkin lymphoma. Blood. 2003;102(12):3871-3879.
+92.
+Rosenwald A, Wright G, Leroy K, et al. Molecular diagnosis of primary mediastinal B cell lymphoma identifies a clinically favorable subgroup of diffuse
+large B cell lymphoma related to Hodgkin lymphoma. J Exp Med. 2003;198(6):851-862.
+93.
+Feuerhake F, Kutok JL, Monti S, et al. NFkappaB activity, function, and target-gene signatures in primary mediastinal large B-cell lymphoma and diffuse
+large B-cell lymphoma subtypes. Blood. 2005;106(4):1392-1399.
+94.
+Armand P, Rodig S, Melnichenko V, et al. Pembrolizumab in relapsed or refractory primary mediastinal large B-cell lymphoma [published ahead of print 14
+October 2019]. J Clin Oncol. doi:10.1200/JCO.19.01389.
+95.
+Tubbs A, Nussenzweig A. Endogenous DNA damage as a source of genomic instability in cancer. Cell. 2017;168(4):644-656.
+96.
+Peng W, Chen JQ, Liu C, et al. Loss of PTEN promotes resistance to T cell-mediated immunotherapy. Cancer Discov. 2016;6(2):202-216.
+97.
+George S, Miao D, Demetri GD, et al. Loss of PTEN is associated with resistance to anti-PD-1 checkpoint blockade therapy in metastatic uterine
+leiomyosarcoma. Immunity. 2017;46(2):197-204.
+98.
+Carey CD, Gusenleitner D, Lipschitz M, et al. Topological analysis reveals a PD-L1-associated microenvironmental niche for Reed-Sternberg cells in
+Hodgkin lymphoma. Blood. 2017;130(22):2420-2430.
+99.
+Cader FZ, Schackmann RCJ, Hu X, et al. Mass cytometry of Hodgkin lymphoma reveals a CD41 regulatory T-cell-rich and exhausted T-effector
+microenvironment. Blood. 2018;132(8):825-836.
+100. Stransky N, Egloff AM, Tward AD, et al. The mutational landscape of head and neck squamous cell carcinoma. Science. 2011;333(6046):1157-1160.
+4080
+WIENAND et al
+10 DECEMBER 2019 x VOLUME 3, NUMBER 23
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/3/23/4065/1546936/advancesadv2019001012.pdf by guest on 17 May 2024

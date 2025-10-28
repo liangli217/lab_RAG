@@ -1,0 +1,2589 @@
+Article
+Immune biomarkers of response to immunotherapy
+in patients with high-risk smoldering myeloma
+Graphical abstract
+Highlights
+d EloLenDex is associated with 4-year PFS of 89% in patients
+with high-risk SMM
+d Immune reactivity, post-therapy immune normalization are
+associated with longer PFS
+d Higher abundance of GZMK+ cytotoxic T cells is associated
+with longer PFS
+d Blood-based immune proﬁling detects immune dysregulation
+associated with disease
+Authors
+Romanos Sklavenitis-Pistoﬁdis,
+Michelle P. Aranha, Robert A. Redd, ...,
+Lorenzo Trippa, Gad Getz,
+Irene M. Ghobrial
+Correspondence
+gadgetz@broadinstitute.org (G.G.),
+irene_ghobrial@dfci.harvard.edu (I.M.G.)
+In brief
+Sklavenitis-Pistoﬁdis et al. report results
+of a phase II trial of EloLenDex in patients
+with high-risk smoldering multiple
+myeloma and use single-cell RNA
+sequencing to identify biomarkers of
+outcomes. They show that immune cell
+composition affects progression-free
+survival and that blood-based immune
+proﬁling can detect immune alterations
+observed in the bone marrow.
+Sklavenitis-Pistoﬁdis et al., 2022, Cancer Cell 40, 1358–1373
+November 14, 2022 ª 2022 Elsevier Inc.
+https://doi.org/10.1016/j.ccell.2022.10.017
+ll
+
+Article
+Immune biomarkers of response to immunotherapy
+in patients with high-risk smoldering myeloma
+Romanos Sklavenitis-Pistoﬁdis,1,2,3,4 Michelle P. Aranha,1,2,4 Robert A. Redd,5 Joanna Baginska,1
+Nicholas J. Haradhvala,4,6 Margaret Hallisey,1 Ankit K. Dutta,1,2,3,4 Alexandra Savell,1,3 Shohreh Varmeh,1,4
+Daniel Heilpern-Mallory,1,4 Sylvia Ujwary,1,2,3,4 Oksana Zavidij,1,2,3,4 Francois Aguet,4 Nang K. Su,1,2,3,4
+Elizabeth D. Lightbody,1,2,3,4 Mark Bustoros,1,2,3,4 Sabrin Tahri,1,2,3,4 Tarek H. Mouhieddine,1,2,3,4 Ting Wu,4 Lea Flechon,7
+Shankara Anand,4 Jacalyn M. Rosenblatt,8 Jeffrey Zonder,9 James J. Vredenburgh,10 Adam Boruchov,10
+Manisha Bhutani,11 Saad Z. Usmani,11 Jeffrey Matous,12 Andrew J. Yee,13 Andrzej Jakubowiak,14 Jacob Laubach,1
+Salomon Manier,7,15 Omar Nadeem,1,3 Paul Richardson,1,2,3 Ashraf Z. Badros,16 Maria-Victoria Mateos,17
+Lorenzo Trippa,5 Gad Getz,2,4,13,18,19,* and Irene M. Ghobrial1,2,3,4,19,20,*
+1Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA 02215, USA
+2Harvard Medical School, Boston, MA 02115, USA
+3Center for Prevention of Progression (CPOP), Medical Oncology, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA
+02215, USA
+4Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA
+5Harvard T.H. Chan School of Public Health, Boston, MA 02115, USA
+6Harvard Graduate Program in Biophysics, Harvard University, Cambridge, MA 02138, USA
+7INSERM UMRS1277, CNRS UMR9020, Lille University, 59000 Lille, France
+8Beth Israel Deaconess Medical Center, Boston, MA 02215, USA
+9Barbara Ann Karmanos Cancer Institute, Detroit, MI 48201, USA
+10St. Francis Hospital and Cancer Center, Hartford, CT 06105, USA
+11Levine Cancer Institute, Charlotte, NC 28204, USA
+12Colorado Blood Cancer Institute, Denver, CO 80218, USA
+13Massachusetts General Hospital Cancer Center, Boston, MA 02114, USA
+14University of Chicago Cancer Center, Chicago, IL 60637, USA
+15Department of Hematology, CHU Lille, Lille University, 59000 Lille, France
+16University of Maryland Marlene and Stewart Greenebaum Cancer Center, Baltimore, MD 21201, USA
+17University Hospital of Salamanca – Instituto de Investigacio´ n Biome´ dica de Salamanca, 37007 Salamanca, Spain
+18Department of Pathology, Massachusetts General Hospital, Boston, MA 02114, USA
+19These authors contributed equally
+20Lead contact
+*Correspondence: gadgetz@broadinstitute.org (G.G.), irene_ghobrial@dfci.harvard.edu (I.M.G.)
+https://doi.org/10.1016/j.ccell.2022.10.017
+SUMMARY
+Patients with smoldering multiple myeloma (SMM) are observed until progression, but early treatment may
+improve outcomes. We conducted a phase II trial of elotuzumab, lenalidomide, and dexamethasone
+(EloLenDex) in patients with high-risk SMM and performed single-cell RNA and T cell receptor (TCR)
+sequencing on 149 bone marrow (BM) and peripheral blood (PB) samples from patients and healthy donors
+(HDs). We ﬁnd that early treatment with EloLenDex is safe and effective and provide a comprehensive charac-
+terization of alterations in immune cell composition and TCR repertoire diversity in patients. We show that the
+similarityof a patient’simmune cellcomposition to that of HDs mayhaveprognosticrelevance at diagnosisand
+after treatment and that the abundance of granzyme K (GZMK)+ CD8+ effector memory T (TEM) cells may be
+associated with treatment response. Last, we uncover similarities between immune alterations observed in
+the BM and PB, suggesting that PB-based immune proﬁling may have diagnostic and prognostic utility.
+INTRODUCTION
+Multiple myeloma (MM) is an incurable plasma cell malignancy
+that resides in the bone marrow (BM) and is preceded by an
+asymptomatic condition called smoldering MM (SMM) (Weiss
+et al., 2009). Approximately half of patients with SMM progress
+within 5 years from diagnosis, but not all patients with SMM prog-
+ress (Kyle et al., 2007; Mateos et al., 2020). Therefore, patients
+with SMM are observed until end-organ damage occurs, which
+signiﬁes progression to overt MM, warranting treatment (Visram
+et al., 2021). Two phase III clinical trials, testing lenalidomide/
+dexamethasone (LenDex) or Len alone (Len) versus observation,
+1358
+Cancer Cell 40, 1358–1373, November 14, 2022 ª 2022 Elsevier Inc.
+ll
+
+demonstrate that early treatment can signiﬁcantly prolong pro-
+gression-free survival (PFS) in patients with high-risk SMM
+(HRSMM) and, in one instance, sustainably prolong overall sur-
+vival(OS)(Mateosetal.,2013,2022;Lonialetal.,2020).Identifying
+patients who will beneﬁt the most from early intervention remains
+an unmet clinical need (Kim et al., 2020; Mateos and San Miguel,
+2015). Currently, patients withHR of progression are identiﬁed us-
+ing predictionmodels based on clinical variables (Kyleet al.,2007;
+Pe´ rez-Persona et al., 2007), such as the ‘‘20-2-20’’ model devel-
+oped by theInternational MyelomaWorking Group (IMWG),which
+stratiﬁes patients based on BM plasma cell inﬁltration (>20%), the
+amountofMprotein intheserum (>2 g/dL),andthefreelight-chain
+ratio (>20) (Mateos et al., 2020). In recent years, it has become
+evident that genomic biomarkers detected through cytogenetics
+and sequencing, including translocations t(4;14) and t(14;16),
+gain or ampliﬁcation of chromosome 1q (chr1q), del13q, del17p,
+translocations and copy number abnormalities (CNAs) involving
+MYC, and KRAS mutations, may be associated with faster pro-
+gression in untreated patients with SMM (Mateos et al., 2020;
+Bustoros et al., 2020; Misund et al., 2020; Boyle et al., 2021; Bolli
+et al., 2018; Oben et al., 2021). Tumor-extrinsic microenviron-
+mental factors are important for disease control at early stages,
+and the BM immune microenvironment is altered in composition
+and functionality in patients with SMM (Zavidij et al., 2020; Bailur
+et al., 2019; Dhodapkar et al., 2003; Das et al., 2016). However, lit-
+tle is known about the role of BM-based immune proﬁling in pa-
+tient prognostication and the utility of peripheral blood (PB) for
+detection of immune alterations related to disease.
+Here we conducted a phase II trial of the immunotherapeutic
+anti-SLAMF7 antibody elotuzumab in combination with LenDex
+(EloLenDex;
+EloLenDex-PRecision
+Intervention
+Smoldering
+Myeloma (E-PRISM) study; ClinicalTrials.gov: NCT02279394)
+to determine the utility and safety of early immunotherapy in pa-
+tients with HRSMM. We performed correlative DNA sequencing
+studies on 34 BM samples at baseline (BL) and single-cell RNA
+and T cell receptor (TCR) sequencing studies on 149 serial BM
+and PB samples from patients and healthy donors (HDs) to iden-
+tify genomic and immune biomarkers for optimal patient selec-
+tion and monitoring of response to treatment.
+RESULTS
+Early treatment with Elo, Len, and Dex is safe and
+effective in patients with HRSMM
+We conducted a phase II trial of EloLenDex in patients with
+HRSMM (n = 51). Enrollment in E-PRISM was based on the
+HRSMM criteria by Rajkumar et al. (2015). The primary objective
+was to determine the proportion of patients with HRSMM who
+were progression free 2 years after treatment. Patients were
+initially randomized 1:1 to arm A (EloLenDex, n = 40) or arm B
+(EloLen, n = 11), but accrual to arm B was halted early because
+the difference in exposure to steroids was negligible between the
+two arms because of the premedication requirement for Elo
+infusion. Treatment was planned for 24 cycles followed by
+observation until progression to overt MM. Stem cell collection
+was allowed for eligible patients. The BL characteristics of all pa-
+tients are listed in Table 1, and the trial schema and Consolidated
+Standards of Reporting Trials (CONSORT) diagram are shown in
+Figures S1A and S1B.
+Treatment-related grade 3–5 adverse events (AEs) with at
+least 10% frequency were hypophosphatemia (n = 19/51,
+37%), neutropenia (n = 13/51, 26%), and lymphocytopenia (n =
+11/51, 22%). Thromboembolic events occurred in 6 patients
+(12%), and no secondary leukemias were observed. Treat-
+ment-related grade 2 adverse events with at least 10% fre-
+quency and all grade 3–5 events are summarized in Table 2
+and Figure S1C. Overall, two deaths occurred: one because of
+uncontrolled diabetic ketoacidosis, bowel perforation, and sep-
+tic shock at cycle 19 and another because of hypertensive crisis
+and myocardial infarction at cycle 24 (Figure S1B).
+Median follow-up for all 51 patients was 50 months (range,
+2–67). Six patients had PFS events, deﬁned as progression to
+myeloma-deﬁning events (n = 4) or death (n = 2). Median PFS
+Table 1. BL characteristics of patients enrolled in the
+E-PRISM study
+Total
+Treatment arm
+p value
+A: EloLenDex B: EloLen
+n = 51 (%) n = 40 (78)
+n = 11 (22)
+Age at registration
+Median (range)
+62 (29–79) 62 (29–79)
+62 (44–75) 0.65
+Sex
+Female
+32 (63)
+26 (65)
+6 (55)
+0.73
+Male
+19 (37)
+14 (35)
+5 (45)
+Race
+Black or African
+American
+7 (14)
+7 (18)
+–
+0.59
+White
+42 (82)
+31 (78)
+11 (100)
+Ethnicity
+Non-Hispanic
+48 (94)
+37 (92)
+11 (100)
+ECOG PS
+00 – fully active
+34 (67)
+27 (68)
+7 (64)
+0.94
+01 – restricted
+16 (31)
+12 (30)
+4 (36)
+02 – ambulatory
+1 (2)
+1 (2)
+–
+Heavy chain
+Immunoglobulin
+A (IgA)
+14 (27)
+10 (25)
+4 (36)
+>0.99
+IgG
+29 (57)
+22 (55)
+7 (64)
+Light chain
+Kappa light chain
+2 (4)
+2 (5)
+–
+>0.99
+Lambda light chain
+3 (6)
+3 (8)
+–
+Mayo criteria 20-2-20
+Low
+21 (41)
+17 (42)
+4 (36)
+0.47
+Intermediate
+15 (29)
+10 (25)
+5 (45)
+High
+15 (29)
+13 (32)
+2 (18)
+Cytogenetics, FISH
+t(4;14) Yes
+6 (12)
+4 (10)
+2 (18)
+t(14;16) Yes
+2 (4)
+1 (2)
+1 (9)
+17p deletion Yes
+4 (8)
+3 (8)
+1 (9)
++1q ampliﬁcation Yes 11 (22)
+9 (22)
+2 (18)
+High-risk cytogenetics
+No
+30 (59)
+25 (62)
+5 (45)
+0.70
+Yes
+17 (33)
+13 (32)
+4 (36)
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1359
+
+and OS were not reached for the 46 patients who were eligible
+for the study and received at least two full treatment cycles;
+PFS was 88.7% at 48 months (90% conﬁdence interval [CI],
+81.2%–96.9%), and OS was 95.6% at 48 months (90% CI,
+90.6%–100%) (Figure S1D). The Kaplan-Meier curve of PFS
+for eligible patients who received at least two cycles is de-
+picted in Figure 1A.
+The overall response rate (partial response or better) for these
+patients was 87% (n = 40). Three patients (7%) experienced a
+best overall response of stringent complete response, 1 patient
+(2%) achieved complete response, 14 patients (30%) achieved
+very good partial response, 22 patients (48%) achieved partial
+response, and 6 patients (13%) achieved minor response
+(Table S1).
+Overall, approximately 13% (n = 6) of all patients and 20%
+(n = 3) of patients deﬁned as having HRSMM by the 20-2-20
+criteria experienced progression or death within 4 years
+of follow-up (Figure S1E). Without treatment, approximately
+80% of patients with HRSMM as deﬁned by the 20-2-20
+criteria
+are
+expected
+to
+progress
+within
+5
+years
+of
+follow-up (Mateos et al., 2020). Our data suggest that early
+treatment with EloLenDex was safe and effective in patients
+with HRSMM.
+Genomic predictors of PFS in patients with HRSMM
+treated with EloLenDex
+We observed three main categories of progression in our cohort:
+those who developed overt myeloma (n = 4), those who were
+treated based on evolving biomarkers and the physician’s deci-
+sion (n = 4), and those who presented biochemical progression
+(n = 19). For two of the four individuals who developed overt
+MM and had samples available for testing, we performed
+whole-exome sequencing (WES) on CD138+ BM cells taken at
+BL and end of treatment (EOT) to assess whether early treatment
+had selected for aggressive subclones with HR genetic abnor-
+malities. Both individuals had HR genomic features at BL: pro-
+gressor patient 1 had del17p and a TP53 single-nucleotide
+variant (SNV), and progressor patient 2 had t(4;14), del1p, and
+TP53 and KRAS SNVs. We did not observe selection of sub-
+clones carrying abnormalities associated with increased risk of
+progression (Figures 1B and 1C). In progressor patient 1, several
+large-scale CNAs increased in frequency with treatment,
+although none are known to be associated with an increased
+risk of progression. In both patients, we observed a post-treat-
+ment contraction of potentially aggressive subclones that
+harbored amp1q (progressor patient 1), and del1p and a TP53
+SNV (progressor patient 2), suggesting that, in some instances,
+early treatment can alter the tumor’s clonal dynamics.
+A total of 15 patients showed no evidence of clinical or
+biochemical progression, suggesting that our patient selection
+can improve to identify patients with HRSMM who are more likely
+to beneﬁt from early treatment. Although our study was under-
+powered, we did not observe a signiﬁcant association between
+20-2-20 risk staging and PFS in our cohort or the treatment
+arm in Lonial et al. (2020) (Figures S2A and S2B). To search for
+genomic biomarkers of PFS, we performed WES (n = 31) and
+deep targeted sequencing (DTS) (n = 3) on BM samples collected
+at BL to detect coding genetic alterations and explore their asso-
+ciation with patient outcomes (Figure 1D). Testing events present
+in at least 3 individuals, del17p, t(4;14), and del16q, were signif-
+icant predictors of PFS at the univariate level, whereas del17p
+was an independent predictor of progression at the multivariate
+level (Figures 1E and 1F). These results are consistent with our
+prior study showing that del17p is a risk factor for progression
+in untreated patients with SMM (Bustoros et al., 2020) and sug-
+gest that patients with SMM and del17p may need a different or
+longer regimen to prolong PFS, a hypothesis that requires valida-
+tion in larger cohorts.
+Comprehensive characterization of changes in the BM
+immune cell composition and TCR repertoire of patients
+with HRSMM
+Next we set out to explore whether immune proﬁling can help to
+identify patients with HRSMM who are more likely to beneﬁt from
+EloLenDex. We performed single-cell RNA sequencing on
+211,374 immune cells from 149 samples of 34 patients enrolled
+in E-PRISM (60 CD138 BM mononuclear cell samples at BL [n =
+28], cycle 9 day 1 [C9D1; n = 16] and EOT [n = 16], and 68 PB
+mononuclear cell [PBMC] samples at BL [n = 33], cycle 4 day 1
+[C4D1; n = 1], C9D1 [n = 13], and EOT [n = 21]) and 21 age-
+matched HDs (BM samples [n = 11] and PBMCs [n = 10]). We
+also integrated E-PRISM data with our cohort of non-trial pa-
+tients
+with
+monoclonal
+gammopathy
+of
+undetermined
+Table 2. Highest-grade toxicity experienced on treatment for 51
+patients
+Total
+Worst grade
+2 –
+moderate
+3 –
+severe
+4 – life
+threatening
+5 –
+fatal
+n =
+51
+Upper respiratory
+infection
+22 (43)
+21 (41)
+1 (2)
+–
+–
+Fatigue
+21 (41)
+18 (35)
+3 (6)
+–
+–
+Hypophosphatemia
+21 (41)
+2 (4)
+16 (31)
+3 (6)
+–
+Neutropenia
+15 (29)
+2 (4)
+12 (24)
+1 (2)
+–
+Lymphocytopenia
+14 (27)
+3 (6)
+11 (22)
+–
+–
+Hyperglycemia
+12 (24)
+9 (18)
+2 (4)
+1 (2)
+–
+Constipation
+10 (20)
+9 (18)
+1 (2)
+–
+–
+Cytopenia
+10 (20)
+8 (16)
+2 (4)
+–
+–
+Diarrhea
+10 (20)
+8 (16)
+2 (4)
+–
+–
+Anemia
+8 (16)
+7 (14)
+1 (2)
+–
+–
+Lung infection
+8 (16)
+3 (6)
+5 (10)
+–
+–
+Hypertension
+7 (14)
+4 (8)
+3 (6)
+–
+–
+Insomnia
+7 (14)
+6 (12)
+1 (2)
+–
+–
+Thrombocytopenia
+7 (14)
+4 (8)
+2 (4)
+1 (2)
+–
+Rash,
+maculopapular
+6 (12)
+4 (8)
+2 (4)
+–
+–
+Cataract
+1 (2)
+–
+–
+1 (2)
+–
+Cholecystitis
+1 (2)
+–
+–
+1 (2)
+–
+Diabetic
+ketoacidosis
+1 (2)
+–
+–
+1 (2)
+–
+Lymphocytosis
+1 (2)
+–
+–
+1 (2)
+–
+Myocardial
+infarction
+1 (2)
+–
+–
+–
+1 (2)
+Sepsis
+1 (2)
+–
+–
+–
+1 (2)
+AEs grade 2+ in at least 10% of patients and all grade 4+.
+ll
+Article
+1360
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+Figure 1. Genomic dissection of response to early treatment with EloLenDex
+(A) Kaplan-Meier (KM) curve of progression-free survival (PFS) in the E-PRISM cohort (n = 46).
+(B and C) Scatterplot of cancer cell fractions (CCFs) at BL and EOT for progressor patients 1 and 2 (in red: mutational drivers and CNVs associated with risk of
+progression). All CNVs and mutational drivers are visualized. Bars correspond to 95% conﬁdence intervals for each event’s CCF.
+(legend continued on next page)
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1361
+
+signiﬁcance (MGUS; n = 6), low-risk SMM (LRSMM; n = 3),
+HRSMM (n = 12), newly diagnosed MM (NDMM; n = 9), and
+HDs (n = 11) (Zavidij et al., 2020), reaching a total of 190 samples
+and 231,608 cells (Figures 2A–2L). For 9 samples, we thawed
+two cell vials and found that the inter-replicate divergence of im-
+mune cell composition was signiﬁcantly lower compared with
+cross-replicate estimates, suggesting that the quantiﬁcation of
+immune cell composition is reproducible (Figure S3A). To assess
+whether RNA-based quantiﬁcation is consistent with protein-
+based estimates, we performed cytometry by time-of-ﬂight
+(CyTOF) on 17 BM samples (10 drawn at BL and 7 drawn at
+EOT) with matched single-cell RNA sequencing data and
+observed signiﬁcant positive correlation between protein-based
+and
+RNA-based
+abundance
+estimates
+(Figure
+S3B).
+By
+comparing the BM immune cell composition of patients with
+HRSMM at BL (n = 32) and HDs (n = 19) with at least 100 cells,
+we observed a signiﬁcant increase in the abundance of naive
+and memory CD4+ T cells (including regulatory T [Treg], Th1,
+Th2, and Th17 cells), granzyme B (GZMB)-expressing CD8+
+T cells, and CD56dim natural killer (NK) cells in patients and a
+signiﬁcant decrease in the abundance of CD14+ monocytes,
+plasmacytoid dendritic cells (pDCs), AXL+ SIGLEC6+ DCs (AS-
+DCs), progenitor cells, and immature B cells (Figure 3A). We
+observed a relative decrease in the abundance of mucosa-asso-
+ciated invariant T (MAIT) cells in patients, a shift from CD14+ to
+CD16+ monocyte subpopulations, and a bias toward memory
+B cells (Figures S4A–S4C).
+Next we set out to characterize changes in the TCR reper-
+toire of patients compared with HDs and performed single-
+cell TCR sequencing on 91 samples with available single-cell
+RNA sequencing data. Speciﬁcally, we proﬁled 70 BM and
+PB patient samples drawn before and after therapy (BM: 14
+at BL, 3 at C9D1, 2 at EOT; PB: 26 at BL, 8 at C9D1, 17 at
+EOT) and 21 samples from HDs (BM, 11; PB, 10). To control
+for variability in T cell numbers, which can affect diversity
+estimates, we randomly sampled a range of T cell numbers
+(n = 75–300) from each sample over 100 iterations and aver-
+aged repertoire
+diversity estimates
+across iterations.
+We
+observed that patient BM TCR repertoires were signiﬁcantly
+less diverse compared with those of HDs, as assessed by the
+Chao index, independent of the number of T cells sampled
+(Figure 3B). The observed decrease in repertoire diversity ap-
+peared to be driven by broad low-level clonal expansion rather
+than a targeted expansion of a few large clones dominating the
+repertoire (Figure 3C). Treg cells and GZMB+ CD8+ TEM cells
+from patient BM were more likely to be part of an expanded
+clone compared with those from HD BM, where clonal expan-
+sion was contained within cytotoxic populations (Figures 3D
+and 3E). This ﬁnding is consistent with the increase in Treg
+cell and GZMB+ CD8+ TEM cell abundance observed in patient
+BM and suggests that these cells may be expanding in an
+antigen-speciﬁc manner. To gain more insight into the pheno-
+type of clonally expanded GZMB+ CD8+ TEM cells in patients,
+we compared their gene expression with that of clonally
+expanded GZMB+ CD8+ TEM cells from HDs (Figure 3F).
+Compared with HDs, clonally expanded cytotoxic T cells from
+patients expressed higher levels of ZNF683 (which encodes
+the tissue residence transcription factor Hobit), the senescence
+markers KLRG1 and B3GAT1 (which encode CD57), genes
+associated
+with
+effector
+function
+(ITGB1,
+ITGA4,
+ITGB2,
+ITGB7, S100A4, S100A10, S100A6, TNF, PRF1, CCL5, and
+GZMH), and genes induced by interferon signaling (STAT1,
+XAF1, IFITM1, and IFITM2) and lower levels of genes related
+to induction of potent cytotoxic responses (GZMB, FGFBP2,
+TBX21, PRDM1, EOMES, and IFNGR1) or granule formation
+and degranulation (VAMP2, OCD1, and SRGN). These results
+suggest that, despite their increased abundance in patient
+BM, cytotoxic T cells may be dysfunctional. Further mecha-
+nistic studies are required to determine the effect of these
+changes on T cell functionality and tumor clearance.
+Immune reactivity at BL and post-therapy immune
+normalization are associated with longer PFS in patients
+with HRSMM treated with EloLenDex
+We hypothesized that the similarity of a patient’s BM immune
+cell composition to that ofHD could be harnessed for prognostica-
+tion. We trained a naive Bayes classiﬁer with 10-fold cross-valida-
+tion and 100 iterations on a training set of 41 BM samples from
+patients and HDs to predict the presence of malignancy based
+onthecompositionoftheBMimmunemicroenvironment;theclas-
+siﬁerachieved94% accuracyinthe testing set (n= 16;FigureS5A).
+We then computed a weighted sum score of the product of each
+cell type’s proportion and its corresponding signed importance
+to the classiﬁcation (‘‘normalization score’’) and classiﬁed patients
+based on the median score at BL as reactive (least normal like) or
+non-reactive (most normal like) (Figure 4A). Patients who were
+classiﬁed asreactiveatBLhad signiﬁcantlylongerPFS(Figure4B).
+Immune
+reactivity
+was
+independent
+of
+the
+patients’
+risk
+stage but signiﬁcantly associated with the presence of del17p,
+although patients with del17p were only a fraction of the non-reac-
+tive group (Figures 4C and 4D). pDCs and pro-inﬂammatory
+cytokine+ CD14+ monocytes, which expressed genes related to
+neutrophil chemotaxis and acute inﬂammation, were among the
+top 3 cell types with the highest importance for a sample to be
+classiﬁed as normal like. Aside from monocytes, this pro-inﬂam-
+matory signaling was also active in DCs and pDCs (gene
+expression signature GEX-6), and together with pDC signaling
+(GEX-13),
+they
+were
+signiﬁcantly
+associated
+with
+shorter
+PFS (Figures 4E and S5B–S5E). As expected, reactive patients
+had a signiﬁcantly lower abundance of pDCs and cytokine+
+CD14+ monocytes (Figure S5F). By comparing gene expression
+levels
+between
+reactive
+and
+non-reactive
+patients,
+we
+observed signiﬁcant downregulation of exhaustion markers
+(TOX, TNFRSF9, TNFSF9, PDCD1, NR4A2, and NR4A3) in gran-
+zyme K (GZMK)+ CD8+ TEM cells of reactive patients, along with
+upregulation of markers associated with long-lived memory
+(D) Comutation plot visualizing the genomic landscape of the E-PRISM cohort at BL (n = 34).
+(E) Univariate Cox regression forest plot of genomic variables present in at least 3 individuals. Hazard ratio, 95% CI, and p values were computed using Cox
+proportional hazards regression.
+(F) KM curve of PFS in the E-PRISM cohort, stratiﬁed based on the presence of del17p (n = 33).
+See also Figures S1 and S2 and Table S1.
+ll
+Article
+1362
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+Figure 2. BM and PB immune cell populations in the E-PRISM cohort
+(A–L) Uniform manifold approximation and projection (UMAP) embeddings and heatmaps of gene expression markers (mean Z score of normalized expression) in
+T cells (A and B), NK cells (C and D), B cells (E and F), monocytes (G and H), DCs (I and J), and progenitor cells (K and L).
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1363
+
+(legend on next page)
+ll
+Article
+1364
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+effectors (IL7R and CD27),markers associated withterminal effec-
+tors (GZMB, GZMH, FCGR3A, FGFBP2, and NKG7), and markers
+associated with functionality (IFNG and TNF), a proﬁle consistent
+with long-lived memory effector cells of increased potency (Fig-
+ure 4F). In GZMB+ CD8+ TEM cells from reactive patients, we
+observed upregulation of exhaustion markers (TIGIT and LAG3)
+and the senescence marker KLRG1, along with higher levels of
+IFNG and TNF, and downregulation of cytotoxicity markers
+(GZMB, FCGR3A, and PRF1), a proﬁle consistent with exhausted,
+senescent terminal effector cells (Figure 4G). Consistent with the
+hypothesis that these cells may be exhausted because of chronic
+antigenic stimulation, GZMB+ CD8+ TEM cells from reactive pa-
+tients were more likely to be clonally expanded compared with
+those from non-reactive patients (Figure 4H). These results sug-
+gest that immune reactivity captures a patient subpopulation
+with decreased pro-inﬂammatory myeloid signaling, long-lived
+GZMK+ effector memory cells of increased potency, and clonally
+expanded, exhausted GZMB+ terminal effectors.
+On average, patients showed signiﬁcantly higher normaliza-
+tion scores at EOT compared with BL (Figure 4I). Using a
+threshold of 0.1 based on the distribution of change in normaliza-
+tion scores at EOT, we deﬁned a state of post-therapy immune
+normalization (PIN) and classiﬁed four patients who showed no
+or minimal increase in their normalization score at EOT as PIN
+(Figures 4J and 4K). Patients who achieved PIN at EOT (PIN+)
+had signiﬁcantly longer PFS (Figure 4L), suggesting that PIN
+may be important for prognostication. Both patients who had
+del17p of the 12 patients with matched BL and EOT BM samples
+were classiﬁed as PIN, so the effect of PIN on PFS needs to be
+deconvolved from that of del17p in larger cohorts.
+Higher abundance of GZMK-expressing CD8+ T cells is
+associated with longer PFS in patients with HRSMM
+treated with EloLenDex
+We have shown previously that patients with HRSMM have
+decreased abundance of memory-like GZMK+ CD8+ TEM cells
+in favor of more mature GZMB+ effectors and that lower levels
+of memory T cells in vivo are associated with shorter OS (Zavidij
+et al., 2020). Therefore, we hypothesized that higher levels of
+GZMK+ CD8+ TEM cells in the BM may be associated with pro-
+longed PFS in our patients. Consistent with our prior ﬁndings,
+patients with HRSMM showed a signiﬁcant shift from GZMK+
+to GZMB+ CD8+ TEM cells in the BM, with a signiﬁcant decrease
+in the abundance of GZMK+ CD8+ TEM cells relative to all cyto-
+toxic T cells at BL compared with HD (Figure 5A). However, the
+average levels of GZMK expression in patient T cells increased
+signiﬁcantly at EOT, reﬂecting a signiﬁcant increase in GZMK-
+expressing cells, which was validated by CyTOF (Figures 5B
+and S6A). In the PB, where we were powered to investigate
+changes in T cell clonality at EOT, we found that GZMK+ CD8+
+TEM cells from EOT samples were more likely to belong to
+expanded clones (Figure 5C). These results suggest that this
+subpopulation may play a role in response to immunotherapy.
+Compared with GZMB+ CD8+ TEM cells in our cohort, GZMK+
+CD8+ TEM cells showed higher expression of CXCR4 and lower
+expression of S1P receptors, suggesting preferential retainment
+of GZMK+ CD8+ TEM cells in the BM (Figure 5D). By comparing
+the abundance of these cells between matched BM and PB pa-
+tient samples, we observed enrichment of GZMK+ CD8+ TEM
+cells in the BM (Figure 5E). This enrichment was also observed
+in BM samples from HDs (data not shown), suggesting that this
+may be a physiological bias. GZMK+ CD8+ TEM cells had higher
+expression of the canonical exhaustion markers TOX, TIGIT,
+TNFRSF9 (encoding 4-1BB), and TNFSF9 (encoding 4-1BBL)
+as well as markers of long-lived memory effector cells, including
+TCF7 (encoding Tcf-1), CD27, and CD28, a phenotype consis-
+tent with progenitor exhausted T (TPEX) cells (Figure 5D). At the
+protein level, GZMK+ CD8+ TEM cells were a major source of
+PD-1 expression within cytotoxic T cells in patients (Figures 5F
+and S6B), in accordance with the suspected TPEX phenotype.
+TPEX cells maintain their proliferative capacity, can differentiate
+into terminal effector cells, and are thought to mediate the clin-
+ical beneﬁts observed in patients treated with immune check-
+point inhibitors (Galletti et al., 2020). In our cohort, patients
+with a higher abundance of GZMK+ CD8+ TEM cells had signiﬁ-
+cantly longer PFS in response to EloLenDex (Figure 5G). Simi-
+larly, patients with higher average GZMK expression across their
+T cells had signiﬁcantly longer PFS (Figure S6C). No association
+Figure 3. Comprehensive proﬁling of changes in BM immune cell composition and TCR repertoire in patients with HRSMM
+(A) Volcano plot of proportion changes in the BM of patients with HRSMM (n = 32) compared with HD (normal bone marrow [NBM], n = 19) with at least 100 cells
+overall. p-values were computed with Wilcoxon’s rank-sum test and corrected using the Benjamini-Hochberg approach. Cell types with q < 0.2 are marked
+with stars.
+(B) Boxplots, violin plots, and scatterplots comparing BM TCR repertoire diversity, as assessed by the Chao index, between patients with HRSMM (n = 14) and
+healthy individuals (NBM, n = 11) given different numbers of downsampled cells. Each data point represents the average diversity estimate across 100 random
+samples of the given size for a single sample; the range of diversity estimates across all iterations for each sample is visualized in error bars (dotted line). Violin
+outline width represents density. p values were computed with Wilcoxon’s rank-sum tests (box: ﬁrst quartile, median, third quartile; whiskers: ±1.5 3 interquartile
+range [IQR]).
+(C) Bar plots showing the proportion of T cells in a given BL patient sample (P; n = 14) or sample from an HD (n = 11) that were determined to belong to one of four
+clone size categories (rare, %1%; small, >1% and <5%; medium, R5% and <10%; large: R10%) through iterative (n = 100) downsampling of 100 cells. The
+average proportion per clone size category is visualized, and the SD across iterations is depicted in solid-line error bars.
+(D) UMAP embedding of HD BM (NBM) and patient BM T cells at BL with matched TCR data. T cells belonging to rare clonotypes (with a frequency % 1%) are
+colored in blue, and T cells belonging to expanded clonotypes (with a frequency > 1%) are colored in red.
+(E) Bar plots showing the proportion of clonotypes in a given T cell subtype across all patients (n = 14) or HDs (n = 11) that belonged to one of the four clone size
+categories. For each T cell subtype, 100 cells were randomly sampled 100 times from all patients or HDs, and the proportion of expanded (1-rare) clonotypes was
+compared between patients and HDs using bootstrapping with 10,000 iterations. The average proportion per clone size category is visualized, and the SD across
+iterations is depicted in solid-line error bars.
+(F) Volcano plot highlighting genes that are highly expressed in expanded GZMB+ CD8+ TEM cells from patients (n = 743, red) compared with expanded GZMB+
+CD8+ TEM cells from HD (n = 1,074, blue).
+See also Figures S3 and S4.
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1365
+
+Figure 4. Immune reactivity at BL and PIN are associated with signiﬁcantly longer PFS in patients with HRSMM under treatment
+(A) Bar plot visualizing the signed importance of each cell type toward the classiﬁcation.
+(B) KM curve of PFS in the E-PRISM cohort, stratiﬁed based on the median normalization score (reactivity+ > median) (n = 24).
+(legend continued on next page)
+ll
+Article
+1366
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+was observed between the abundance of GZMK+ CD8+ TEM
+cells and age (Wilcoxon, p = 0.55), whereas age had no effect
+on PFS (log rank, p = 0.7).
+These results suggest that GZMK+ CD8+ TEM cells may be
+important for disease control and response to therapy in patients
+with SMM.
+PB-based immune proﬁling accurately detects
+alterations in immune cell composition and TCR
+repertoire diversity observed in the BM
+Next we set out to determine whether PB can be used reliably for
+immune proﬁling of patients with HRSMM because BM biopsies
+are invasive and carry risk, which precludes regular patient
+testing. First, we compared the Jensen-Shannon divergence of
+immune cell composition between matched and unmatched
+PB and BM samples and observed signiﬁcantly lower diver-
+gence in matched pairs, which was also low overall, suggesting
+that matched PB samples reﬂect BM composition well (Fig-
+ure 6A). In principal-component analysis (PCA) space, where
+principal component 1 (PC1) captured the compositional
+changes observed in patient BM (Figure 6B), HD PB and BM
+samples clustered together on the right end of the axis, whereas
+patient PB and BM samples clustered together on the opposite
+side of PC1 (Figure 6C). This observation suggests that the
+compositional differences between patient and HD PB are
+similar to those observed in patient BM compared with HD
+BM. When we compared PB samples between patients and
+HD, we recovered compositional changes originally discovered
+in our BM-based analysis (Figure 6D). However, patient PB
+showed a signiﬁcantly lower abundance of CD16+ monocytes,
+which are enriched in patient BM. Contrary to HDs, where
+CD16+ monocytes are signiﬁcantly enriched in the PB compared
+with the BM, in patients there was no signiﬁcant difference be-
+tween the PB and the BM, suggesting that these cells may be
+homing to the patient BM (Figure S7). Last, consistent with
+what we observed in patient BM, the patient PB TCR repertoire
+showed signiﬁcantly lower diversity compared with HDs,
+suggesting that the observed effect on diversity may not be
+constrained to the tumor microenvironment (Figure 6E). These
+results suggest that certain immune biomarkers may be measur-
+able in the PB. Consistent with what we saw in the BM, higher BL
+levels of signature GEX-13 in patient PB were associated with
+signiﬁcantly shorter PFS (Figure 6F). Neither signature GEX-6
+nor immune reactivity were prognostic in PB, suggesting that
+PB-based immune proﬁling may not be able to entirely replace
+BM-based proﬁling.
+Last, given the concordance of compositional changes be-
+tween patient BM and PB, we tested whether immune proﬁling
+of PB samples alone could enable the diagnosis of an individual
+with HRSMM. Remarkably, a classiﬁer we trained on BM compo-
+sition data (this time excluding progenitor cells, which are pri-
+marily encountered in the BM) to infer the presence of SMM
+was able to correctly classify nearly all of our patient and HD
+PB samples with an accuracy of 97% (Figure 6G). Our ﬁndings
+demonstrate that PB-based immune proﬁling accurately detects
+compositional changes observed in the BM and may hold diag-
+nostic and prognostic potential.
+DISCUSSION
+Although early treatment has been shown to delay progression in
+patients with HRSMM, identifying those who will beneﬁt the
+most remains an unmet clinical need (Mateos and San Miguel,
+2015; Kim et al., 2020). Despite the availability of clinical and
+genomic biomarkers of progression (Kyle et al., 2007; Mateos
+et al., 2020; Pe´rez-Persona et al., 2007; Bustoros et al., 2020; Mis-
+und et al., 2020; Boyle et al., 2021; Bolli et al., 2018; Oben et al.,
+2021), little is known about the role of BM immune dysregulation
+indiseaseprogressionandresponsetotreatmentorthediagnostic
+and prognostic utility of PB-based immune proﬁling. Here we con-
+ducted a phase II trial to determine the utility and safety of early
+treatment with EloLenDex in patients with HRSMM and performed
+correlative DNA sequencing and single-cell RNA and TCR
+sequencing studies to develop genomic and immune biomarkers
+for optimal patient selection and monitoring of response to treat-
+ment. The overall response rate was 87%, PFS was 88.7% at
+48 months (90% CI, 81.2%–96.9%), and OS was 95.6% at
+48 months (90% CI, 90.6%–100%). Although this trial did not
+have an observation arm, this progression rate (13% at 4 years)
+is substantially lower than that determined for patients with
+HRSMMinlargeobservationalstudies,whichshowedprogression
+rates of 50% or more within 2 years from diagnosis and 70%–80%
+(C and D) Bar plots visualizing the frequency of 20-2-20 risk stages (C) and del17p (D) by reactivity status (LR, low risk; IR, intermediate risk, HR, high risk). The p
+value was computed with a Fisher’s exact test.
+(E) UMAP embedding of lymphocytes and myeloid cells colored by the log-scaled activity of signature GEX-6.
+(F and G) Volcano plots visualizing genes that are differentially expressed in GZMK+ CD8+ TEM (F) and GZMB+ CD8+ TEM (G) cells of reactive patients (n = 12)
+compared with non-reactive patients (n = 12).
+(H) Bar plot visualizing the proportion of clonotypes belonging to each of four clone size categories per cytotoxic T cell subtype in BM samples from reactive (n = 7)
+or non-reactive patients (n = 7). For each T cell subtype, 100 cells were randomly sampled 100 times from patients with or without reactivity, and the proportion of
+expanded (1-rare) clonotypes was compared between the two using bootstrapping with 10,000 iterations. The average proportion per clone size category was
+visualized, and the SD across iterations is depicted in solid-line error bars.
+(I) Boxplots, violin plots, and scatterplots visualizing normalization scores in patient BM samples drawn at BL (n = 28) or EOT (n = 16) and in HD BM samples (NBM,
+n = 22). Violin outline width represents density. p values were computed using a paired t test for paired patient samples or Wilcoxon’s rank-sum test for com-
+parisons between patients and HDs (box: ﬁrst quartile, median, third quartile; whiskers: ±1.5 3 IQR).
+(J) Boxplots, violin plots, and scatterplots visualizing paired normalization scores at BL and EOT from patients with HRSMM (n = 12). Violin outline width rep-
+resents density. Solid lines connect samples from patients classiﬁed as PIN+; dashed lined connect samples from patients classiﬁed as PIN (box: ﬁrst quartile,
+median, third quartile; whiskers: ±1.5 3 IQR).
+(K) Histogram of the distribution of change in normalization scores between paired BL and EOT BM patient samples (n = 12). The dashed line corresponds to the
+threshold used to determine the presence of PIN.
+(L) KM curve of PFS in the E-PRISM cohort, stratiﬁed based on PIN status (n = 12).
+See also Figure S5.
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1367
+
+(legend on next page)
+ll
+Article
+1368
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+within 5 years from diagnosis (Rajkumar et al., 2015; Kyle et al.,
+2007; Mateos et al., 2020). This was also true for patients in our trial
+who had HR by the 20-2-20 criteria and who showed a 20%
+progression rate within 4 years of follow-up. Treatment was well
+tolerated with minimal toxicity of grade 3 or higher, including hypo-
+phosphatemia and cytopenias, which were expected. Because
+this was a single-arm study, we cannot comment on how the
+response rate and PFS of EloLenDex compare with those of
+LenDex alone, and future clinical trials randomizing these 2 regi-
+mens would be required to answer this. Overall, EloLenDex was
+deemed safe and effective, with no evidence of aggressive sub-
+clone selection after treatment in two patients who progressed.
+In fact, in those patients, we observed a regression of subclones
+harboring amp1q or del1p and a TP53 SNV. Although preliminary,
+these results suggest that, in some instances, early treatment
+could alter the clonal dynamics in patients who progress, which
+could potentiallyresultinimprovedOSinthelongterm.Theseﬁnd-
+ings would need to be validated in larger trials with more available
+samples before and after therapy. Aggressive tumor biology, as
+determined by the presence of del17p, was a signiﬁcant predictor
+of shorter PFS in patients treated with EloLenDex in our cohort.
+Therefore, patients with HRSMM and del17p may perhaps need
+different regimens or longer duration of therapy.
+Patients with HRSMM showed increased abundance of naive
+and memory CD4+ T cells, GZMB+ CD8+ TEM cells, and CD56dim
+NK cells and decreased abundance of CD14+ monocytes and
+pDCs compared with HDs. Their TCR repertoire diversity was
+signiﬁcantly lower compared with HDs because of broad low-level
+clonal expansion, which was mostly observed in GZMB+ CD8+
+TEM cells and Treg cells. More studies are required to determine
+the functionality and antigen speciﬁcity of these immune cell
+populations and their role in controlling or promoting disease
+progression.
+We found that the similarity of a patient’s BM immune microen-
+vironment to that of HDs may be useful for prognostication. At BL,
+patients with the least normal-like immune cell composition,
+presumed to be reactive to the tumor, had signiﬁcantly longer
+PFS under treatment with EloLenDex. Reactive patients had lower
+proportions of pro-inﬂammatory myeloid cells and pDCs, long-
+lived GZMK+ CD8+ TEM cells of increased potency, and clonally
+expanded,exhausted GZMB+CD8+ TEMcells.GZMK-expressing
+cells, which are normally enriched in the BM, had a phenotype
+compatible withprogenitorexhausted cells and clonallyexpanded
+after treatment, suggesting that they may play a role in response to
+therapy. Patients with a higher abundance of GZMK+ CD8+ TEM
+cells in their BM showed signiﬁcantly longer PFS. Patients whose
+BM normalization scores increased after therapy (PIN) had signif-
+icantly longer PFS. This ﬁnding suggests that immune proﬁling
+may be useful to monitor response to treatment, although valida-
+tion in larger cohorts and with different regimens is required.
+Last, immune proﬁling currently requires a BM biopsy, which
+precludes its regular use for prognostication. By comparing PB
+from patients and HDs, we identiﬁed nearly the same alterations
+in immune cell composition and TCR repertoire diversity as those
+seen in our BM-based comparisons. A classiﬁer trained to detect
+the presence of SMM based on BM immune proﬁling was able to
+correctly classify nearly all PB samples from patients with SMM
+and HDs. Our results suggest that PB-based immune proﬁling
+may have diagnostic and prognostic utility, although it may not
+be able to entirely replace BM-based proﬁling.
+Our results demonstrate the utility and safety of EloLenDex in
+patients with HRSMM, provide a comprehensive characteriza-
+tion of alterations in immune cell composition and TCR repertoire
+diversity in patient BM and PB, nominate immune biomarkers for
+optimal patient selection and assessment of response to treat-
+ment, and demonstrate that PB-based immune proﬁling may
+have diagnostic and prognostic utility in patients with SMM.
+STAR+METHODS
+Detailed methods are provided in the online version of this paper
+and include the following:
+d KEY RESOURCES TABLE
+d RESOURCE AVAILABILITY
+B Lead contact
+B Materials availability
+B Data and code availability
+Figure 5. A higher abundance of GZMK-expressing CD8+ T cells is associated with longer PFS in patients with HRSMM treated with Elo-
+LenDex
+(A) Boxplots, violin plots, and scatterplots visualizing the relative abundance of GZMK+ CD8+ TEM and GZMB+ CD8+ TEM among all cytotoxic T cells in patient
+BM (n = 33) at BL compared with samples from HD (NBM, n = 22). Violin outline width represents density. p values were computed with Wilcoxon’s rank-sum test
+(box: ﬁrst quartile, median, third quartile; whiskers: ±1.5 3 IQR).
+(B) Boxplots, violin plots, and scatterplots visualizing the abundance of GZMK+ CD8+ TEM cells by CyTOF in patient BM samples drawn at BL (n = 10) and EOT
+(n = 7). Violin outline width represents density. The p value was computed with Wilcoxon’s rank-sum test because these samples were not paired (box: ﬁrst
+quartile, median, third quartile; whiskers: ±1.5 ± IQR).
+(C) Bar plot visualizing the proportion of clonotypes belonging to each of four clone size categories per cytotoxic T cell subtype in patient PB samples drawn at BL
+(n = 22) or EOT (n = 17). For each T cell subtype, 100 cells were randomly sampled 100 times from patients at BL and EOT, and the proportion of expanded (1-rare)
+clonotypes was compared between the two using bootstrapping with 10,000 iterations. The average proportion per clone size category is visualized, and the SD
+across iterations is depicted in solid-line error bars.
+(D) Volcano plot visualizing genes that are differentially expressed between GZMK+ CD8+ TEM and GZMB+ CD8+ TEM cells from patient BM samples drawn at BL
+(n = 28).
+(E) Boxplots, violin plots, and scatterplots comparing the abundance of GZMK+ CD8+ TEM cells between paired BM and PB samples drawn at BL from patients
+with HRSMM (n = 22). Violin outline width represents density. Solid red lines connect samples that are enriched in the BM, and dashed orange lines connect
+samples that are enriched in the PB. The p value was computed using a paired t test (box: ﬁrst quartile, median, third quartile; whiskers: ±1.5 3 IQR).
+(F) Scatterplot visualizing the correlation between the BL proportion of CD8+ T cells expressing PD-1 and those expressing GZMK by CyTOF (n = 10). A regression
+line was ﬁtted (in red), and the correlation coefﬁcient and p value were computed using Pearson’s approach.
+(G) KM curve of PFS in the E-PRISM cohort, stratiﬁed based on the median abundance of GZMK+ CD8+ TEM cells in patient BM samples at BL (n = 26)
+See also Figure S6.
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1369
+
+(legend on next page)
+ll
+Article
+1370
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+d EXPERIMENTAL MODEL AND SUBJECT DETAILS
+B Clinical trial and patients
+d METHOD DETAILS
+B Sample processing
+B Whole-exome and deep targeted sequencing
+B Single-cell RNA sequencing
+B Single-cell TCR sequencing
+B Cytometry by time-of-ﬂight (CyTOF)
+d QUANTIFICATION AND STATISTICAL ANALYSIS
+B Clinical trial statistical analysis & biomarker discovery
+B WES analysis
+B Single-cell RNA sequencing analysis
+B Single-cell TCR sequencing analysis
+B CyTOF analysis
+d ADDITIONAL RESOURCES
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.
+ccell.2022.10.017.
+ACKNOWLEDGMENTS
+We thank the patients who participated in the E-PRISM trial. We also thank
+Anna V. Justis, PhD, for medical editing support and Sarah Nersersian, MSc,
+and Tiana Issa for illustration support. This research was supported by a Stand
+Up To Cancer-Bristol-Meyers Squibb Catalyst Research Grant (SU2C-AACR-
+CT05-17). Stand Up To Cancer is a division of the Entertainment Industry
+Foundation. Research Grants are administered by the American Association
+for Cancer Research, the Scientiﬁc Partner of SU2C. This research was sup-
+ported in part by the National Institutes of Health (NIH; R01 CA205954), the
+Leukemia and Lymphoma Society (LLS; Career Development Program
+2316-17), the Multiple Myeloma Research Foundation (MMRF), and the Dr.
+Miriam and Sheldon G. Adelson Medical Research Foundation. R.S.-P. is sup-
+ported by an MMRF Research Fellowship Award, the International Walden-
+strom’s Macroglobulinemia Foundation’s Robert A. Kyle Award, the Claudia
+Adams-Barr Award for Innovative Basic Cancer Research, and the Interna-
+tional Myeloma Society. G.G. is partially supported by the Paul C. Zamecnik
+Chair in Oncology at Massachusetts General Hospital Cancer Center. S.Z.U.
+was supported by a career development award from the LLS.
+AUTHOR CONTRIBUTIONS
+R.S.-P., I.M.G., and G.G. conceived and designed the study. J.M.R., J.Z.,
+J.J.V., A.B., M.B., S.Z.U., J.M., A.J.Y., A.J., J.L., O.N., P.R., A.Z.B., and
+I.M.G. provided patient care. R.S.-P., J.B., M.H., A.K.D., S.V., D.H.-M., O.Z.,
+N.K.S., E.D.L., M.B., S.T., and T.H.M. acquired the data. R.S.-P., M.P.A.,
+R.A.R., J.B., M.H., S.U., T.W., L.F., S.A., and L.T. analyzed the data. R.S.-P.,
+N.J.H., L.T., and G.G. provided guidance in data analysis. R.S.-P., M.P.A.,
+R.A.R., J.B., N.J.H., A.K.D., S.U., A.S., F.A., and L.T. interpreted the data.
+R.S.-P. drafted the manuscript. All authors reviewed, edited, and approved
+the manuscript.
+DECLARATION OF INTERESTS
+N.J.H. is a consultant for Constellation Pharmaceuticals. F.A. is an employee of
+Illumina Inc. O.Z. is an employee of Ikena Oncology and a stockholder in Ikena
+Oncology and Morphosys AG. G.G. receives research funds from IBM and Phar-
+macyclics and is an inventor on patent applications ﬁled by the Broad Institute
+related to MSMuTect, MSMutSig, POLYSOLVER, SignatureAnalyzer-GPU, and
+MSIDetect. He is also a founder and consultant of and holds privately held equity
+in Scorpion Therapeutics. I.M.G. has a consulting or advisory role with AbbVie,
+Adaptive,Amgen,Aptitude Health,Bristol Myers Squibb,GlaxoSmithKline,Huron
+Consulting, Janssen, Menarini Silicon Biosystems, Oncopeptides, Pﬁzer, Sanoﬁ,
+Sognef, Takeda, The Binding Site, and Window Therapeutics and has received
+speaker fees from Vor Biopharma and Veeva Systems, Inc., and her spouse is
+the CMO and equity holder of Disc Medicine. S.M. has a consulting role with Abb-
+vie, Adaptive Biotechnology, Amgen, Celgene/BMS, GlaxoSmithKline, Janssen,
+Novartis, Oncopeptides, Regeneron, Roche, and Takeda and has received
+research funding from Abbvie, Adaptive Biotechnology, Amgen, Celgene/BMS,
+GlaxoSmithKline, Janssen, Novartis, Oncopeptides, Regeneron, Roche, and
+Takeda. A.J.Y. has a consulting role with Adaptive Biotechnologies, Amgen,
+BMS, Celgene, GSK, Janssen, Karyopharm, Oncopeptides, Sanoﬁ, and Takeda
+and has received research funding from Amgen, Janssen, and Takeda. M.B. is
+aconsultantforSanoﬁ,Genzyme,andJanssenandhasreceivedresearchfunding
+from MedImmune, Janssen, Legend Biotech, Amgen, Celularity, Bristol Myers
+Squibb, Celgene, Bluebird bio, Millennium, Takeda, Cerecor (currently Avalo
+Therapeutics), and C4 Therapeutics. M.B has an advisory role and received hon-
+orariafromBristolMyersSquibb,Takeda,Janssen,andMenarini.T.H.M.received
+advisory board fees from Legend Biotech. R.S.-P., G.G., and I.M.G. are co-inven-
+tors on a patent application related to this work (PCT/US22/74839).
+INCLUSION AND DIVERSITY
+One or more of the authors of this paper self-identiﬁes as an underrepresented
+ethnic and/or gender minority in science. One or more of the authors of this pa-
+per self-identiﬁes as a member of the LGBTQIA+ community. We support in-
+clusive, diverse, and equitable conduct of research.
+Received: June 26, 2021
+Revised: August 3, 2022
+Accepted: October 18, 2022
+Published: November 14, 2022
+Figure 6. PB-based immune proﬁling accurately detects alterations in immune cell composition and TCR repertoire diversity in the BM
+(A) Boxplots, violin plots, and scatterplots showing the Jensen-Shannon divergence between matched BM and PB samples (n = 22) compared with unmatched
+samples. Violin outline width represents density. The p value was computed using Wilcoxon’s rank-sum test (box: ﬁrst quartile, median, third quartile;
+whiskers: ±1.5 3 IQR).
+(B) Heatmap of Pearson’s correlation coefﬁcient (r) between BM immune cell abundance and the ﬁrst 10 PCs. The x axis was sorted by decreasing PC1 value. The
+top panel shows the log2 fold change in abundance between BM samples from patients with HRSMM (n = 32) and those from HDs (n = 19). p values were
+corrected using the Benjamini-Hochberg approach, and stars correspond to pairs with signiﬁcant (q < 0.05) correlation.
+(C) Two-dimensional density plot of BM and PB samples from patients (BM, n = 26; PB, n = 29) or HDs (BM, n = 22; PB, 10) according to PC1 and PC2.
+(D) Volcano plot of proportion changes in the PB of patients with HRSMM (n = 19) compared with HDs (NPB, n = 10) with at least 100 cells overall. p values were
+computed with Wilcoxon’s rank-sum test and corrected using the Benjamini-Hochberg approach. Cell types with q < 0.2 are marked with stars.
+(E) Boxplots, violin plots, and scatterplots comparing PB TCR repertoire diversity, as assessed by the Chao index, between patients with HRSMM (n = 22) and
+healthy individuals (NPB, n = 10) given different numbers of downsampled cells. Each data point represents the average diversity estimate across 100 random
+samples of the given size for a single sample; the range of diversity estimates across all iterations for each sample is visualized in error bars (dotted line). Violin
+outline width represents density. p values were computed with Wilcoxon’s rank-sum tests (box: ﬁrst quartile, median, third quartile; whiskers: ±1.5 3 IQR).
+(F) Forest plot showing the effect of mean BL GEX-13 activity in the PB on PFS. Hazard ratio, 95% CI, and p value were computed using Cox proportional hazards
+regression.
+(G) Confusion matrix visualizing the accuracy of a naive Bayes classiﬁer trained on BM samples from patients and HDs (training set, n = 41) and tested in PB
+samples (n = 29).
+See also Figure S7.
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1371
+
+REFERENCES
+Bailur, J.K., McCachren, S.S., Doxie, D.B., Shrestha, M., Pendleton, K.,
+Nooka, A.K., Neparidze, N., Parker, T.L., Bar, N., Kaufman, J.L., et al.
+(2019). Early alterations in stem-like/resident T cells, innate and myeloid cells
+in the BM in preneoplastic gammopathy. JCI Insight 5, 127807. https://doi.org/
+10.1172/jci.insight.127807.
+Bais, A.S., and Kostka, D. (2020). scds: computational annotation of doublets
+in single-cell RNA sequencing data. Bioinformatics 36, 1150–1158. https://doi.
+org/10.1093/bioinformatics/btz698.
+Bolli, N., Maura, F., Minvielle, S., Gloznik, D., Szalat, R., Fullam, A.,
+Martincorena, I., Dawson, K.J., Samur, M.K., Zamora, J., et al. (2018).
+Genomic patterns of progression in smoldering multiple myeloma. Nat.
+Commun. 9, 3363. https://doi.org/10.1038/s41467-018-05058-y.
+Boyle, E.M., Deshpande, S., Tytarenko, R., Ashby, C., Wang, Y., Bauer, M.A.,
+Johnson, S.K., Wardell, C.P., Thanendrarajan, S., Zangari, M., et al. (2021). The
+molecular make up of smoldering myeloma highlights the evolutionary path-
+ways leading to multiple myeloma. Nat. Commun. 12, 293. https://doi.org/
+10.1038/s41467-020-20524-2.
+Bustoros, M., Sklavenitis-Pistoﬁdis, R., Park, J., Redd, R., Zhitomirsky, B.,
+Dunford, A.J., Salem, K., Tai, Y.T., Anand, S., Mouhieddine, T.H., et al.
+(2020). Genomic proﬁling of smoldering multiple myeloma identiﬁes patients
+at a high risk of disease progression. J. Clin. Oncol. 38, 2380–2389. https://
+doi.org/10.1200/JCO.20.00437.
+Carter, S.L., Cibulskis, K., Helman, E., McKenna, A., Shen, H., Zack, T., Laird,
+P.W., Onofrio, R.C., Winckler, W., Weir, B.A., et al. (2012). Absolute quantiﬁca-
+tion of somatic DNA alterations in human cancer. Nat. Biotechnol. 30,
+413–421. https://doi.org/10.1038/nbt.2203.
+Cibulskis, K., McKenna, A., Fennell, T., Banks, E., DePristo, M., and Getz, G.
+(2011). ContEst: estimating cross-contamination of human samples in next-
+generation sequencing data. Bioinformatics 27, 2601–2602. https://doi.org/
+10.1093/bioinformatics/btr446.
+Cibulskis, K., Lawrence, M.S., Carter, S.L., Sivachenko, A., Jaffe, D., Sougnez,
+C., Gabriel, S., Meyerson, M., Lander, E.S., and Getz, G. (2013). Sensitive
+detection of somatic point mutations in impure and heterogeneous cancer
+samples. Nat. Biotechnol. 31, 213–219. https://doi.org/10.1038/nbt.2514.
+Costello, M., Pugh, T.J., Fennell, T.J., Stewart, C., Lichtenstein, L., Meldrim,
+J.C., Fostel, J.L., Friedrich, D.C., Perrin, D., Dionne, D., et al. (2013).
+Discovery and characterization of artifactual mutations in deep coverage tar-
+geted capture sequencing data due to oxidative DNA damage during sample
+preparation. Nucleic Acids Res. 41, e67. https://doi.org/10.1093/nar/gks1443.
+Das, R., Strowig, T., Verma, R., Koduru, S., Hafemann, A., Hopf, S., Kocoglu,
+M.H., Borsotti, C., Zhang, L., Branagan, A., et al. (2016). Microenvironment-
+dependent growth of preneoplastic and malignant plasma cells in humanized
+mice. Nat. Med. 22, 1351–1357. https://doi.org/10.1038/nm.4202.
+Dhodapkar, M.V., Krasovsky, J., Osman, K., and Geller, M.D. (2003). Vigorous
+premalignancy-speciﬁc effector T cell response in the BM of patients with
+monoclonal gammopathy. J. Exp. Med. 198, 1753–1757. https://doi.org/10.
+1084/jem.20031030.
+Galletti, G., De Simone, G., Mazza, E.M.C., Puccio, S., Mezzanotte, C., Bi,
+T.M., Davydov, A.N., Metsger, M., Scamardella, E., Alvisi, G., et al. (2020).
+Two subsets of stem-like CD8(+) memory T cell progenitors with distinct fate
+commitments in humans. Nat. Immunol. 21, 1552–1562. https://doi.org/10.
+1038/s41590-020-0791-5.
+Germain, P.L., Lun, A., Garcia Meixide, C., Macnair, W., and Robinson, M.D.
+(2021).
+Doublet
+identiﬁcation
+in
+single-cell
+sequencing
+data
+using
+scDblFinder. F1000Res. 10, 979. https://doi.org/10.12688/f1000research.
+73600.2.
+Guyot, P., Ades, A.E., Ouwens, M.J.N.M., and Welton, N.J. (2012). Enhanced
+secondary analysis of survival data: reconstructing the data from published
+Kaplan-Meier survival curves. BMC Med. Res. Methodol. 12, 9. https://doi.
+org/10.1186/1471-2288-12-9.
+Hallisey, M., Dennis, J., Abrecht, C., Pistoﬁdis, R.S., Schork, A.N., Lightbody,
+E.D., Heilpern-Mallory, D., Severgnini, M., Ghobrial, I.M., Hodi, F.S., and
+Baginska, J. (2022). Mass cytometry staining for human BM clinical samples.
+STAR Protoc. 3, 101163. https://doi.org/10.1016/j.xpro.2022.101163.
+Kasar, S., Kim, J., Improgo, R., Tiao, G., Polak, P., Haradhvala, N., Lawrence,
+M.S., Kiezun, A., Fernandes, S.M., Bahl, S., et al. (2015). Whole-genome
+sequencing reveals activation-induced cytidine deaminase signatures during
+indolent chronic lymphocytic leukaemia evolution. Nat. Commun. 6, 8866.
+https://doi.org/10.1038/ncomms9866.
+Kim, J., Mouw, K.W., Polak, P., Braunstein, L.Z., Kamburov, A., Kwiatkowski,
+D.J., Rosenberg, J.E., Van Allen, E.M., D’Andrea, A., and Getz, G. (2016).
+Somatic ERCC2 mutations are associated with a distinct genomic signature
+in urothelial tumors. Nat. Genet. 48, 600–606. https://doi.org/10.1038/
+ng.3557.
+Kim, E.B., Yee, A.J., and Raje, N. (2020). Treatment of smoldering multiple
+myeloma: ready for prime time? Cancers 12, E1223. https://doi.org/10.3390/
+cancers12051223.
+Korsunsky, I., Millard, N., Fan, J., Slowikowski, K., Zhang, F., Wei, K.,
+Baglaenko, Y., Brenner, M., Loh, P.R., and Raychaudhuri, S. (2019). Fast, sen-
+sitive and accurate integration of single-cell data with Harmony. Nat. Methods
+16, 1289–1296. https://doi.org/10.1038/s41592-019-0619-0.
+Kuhn, M. (2008). Building predictive models in R using the caret package.
+J. Stat. Softw. 28, 1–26. https://doi.org/10.18637/jss.v028.i05.
+Kyle, R.A., Remstein, E.D., Therneau, T.M., Dispenzieri, A., Kurtin, P.J.,
+Hodneﬁeld, J.M., Larson, D.R., Plevak, M.F., Jelinek, D.F., Fonseca, R.,
+et al. (2007). Clinical course and prognosis of smoldering (asymptomatic) mul-
+tiple myeloma. N. Engl. J. Med. 356, 2582–2590. https://doi.org/10.1056/
+NEJMoa070389.
+Landau, D.A., Carter, S.L., Stojanov, P., McKenna, A., Stevenson, K.,
+Lawrence, M.S., Sougnez, C., Stewart, C., Sivachenko, A., Wang, L., et al.
+(2013). Evolution and impact of subclonal mutations in chronic lymphocytic
+leukemia. Cell 152, 714–726. https://doi.org/10.1016/j.cell.2013.01.019.
+Lawrence, M.S., Stojanov, P., Mermel, C.H., Robinson, J.T., Garraway, L.A.,
+Golub, T.R., Meyerson, M., Gabriel, S.B., Lander, E.S., and Getz, G. (2014).
+Discovery and saturation analysis of cancer genes across 21 tumour types.
+Nature 505, 495–501. https://doi.org/10.1038/nature12912.
+Lonial, S., Jacobus, S., Fonseca, R., Weiss, M., Kumar, S., Orlowski, R.Z.,
+Kaufman, J.L., Yacoub, A.M., Buadi, F.K., O’Brien, T., et al. (2020).
+Randomized trial of Lenalidomide versus observation in smoldering multiple
+myeloma. J. Clin. Oncol. 38, 1126–1137. https://doi.org/10.1200/JCO.
+19.01740.
+Love, M.I., Huber, W., and Anders, S. (2014). Moderated estimation of fold
+change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15,
+550. https://doi.org/10.1186/s13059-014-0550-8.
+Lun, A.T.L., McCarthy, D.J., and Marioni, J.C. (2016). A step-by-step workﬂow
+for low-level analysis of single-cell RNA-seq data with Bioconductor.
+F1000Res. 5, 2122. https://doi.org/10.12688/f1000research.9501.2.
+Mateos, M.V., and San Miguel, J.F. (2015). Smoldering multiple myeloma:
+when to observe and when to treat? Am. Soc. Clin. Oncol. Educ. Book,
+e484–e492. https://doi.org/10.14694/EdBook_AM.2015.35.e484.
+Mateos, M.V., Herna´ ndez, M.T., Giraldo, P., de la Rubia, J., de Arriba, F.,
+Lo´ pez Corral, L., Rosin˜ ol, L., Paiva, B., Palomera, L., Bargay, J., et al.
+(2013). Lenalidomide plus dexamethasone for high-risk smoldering multiple
+myeloma.
+N.
+Engl.
+J.
+Med.
+369,
+438–447.
+https://doi.org/10.1056/
+NEJMoa1300439.
+Mateos, M.V., Kumar, S., Dimopoulos, M.A., Gonza´ lez-Calle, V., Kastritis, E.,
+Hajek, R., De Larrea, C.F., Morgan, G.J., Merlini, G., Goldschmidt, H., et al.
+(2020). International Myeloma Working Group risk stratiﬁcation model for
+smoldering multiple myeloma (SMM). Blood Cancer J. 10, 102. https://doi.
+org/10.1038/s41408-020-00366-3.
+Mateos, M.V., Herna´ ndez, M.T., Salvador, C., Rubia, J.d.l., de Arriba, F.,
+Lo´ pez-Corral, L., Rosin˜ ol, L., Paiva, B., Palomera, L., Bargay, J., et al.
+(2022). Lenalidomide-dexamethasone versus observation in high-risk smol-
+dering myeloma after 12 years of median follow-up time: a randomized,
+open-label study. Eur. J. Cancer 174, 243–250. https://doi.org/10.1016/j.
+ejca.2022.07.030.
+ll
+Article
+1372
+Cancer Cell 40, 1358–1373, November 14, 2022
+
+McKenna, A., Hanna, M., Banks, E., Sivachenko, A., Cibulskis, K., Kernytsky,
+A., Garimella, K., Altshuler, D., Gabriel, S., Daly, M., and DePristo, M.A. (2010).
+The Genome Analysis Toolkit: a MapReduce framework for analyzing next-
+generation DNA sequencing data. Genome Res. 20, 1297–1303. https://doi.
+org/10.1101/gr.107524.110.
+McLaren, W., Gil, L., Hunt, S.E., Riat, H.S., Ritchie, G.R.S., Thormann, A.,
+Flicek, P., and Cunningham, F. (2016). The ensembl variant effect predictor.
+Genome Biol. 17, 122. https://doi.org/10.1186/s13059-016-0974-4.
+Misund, K., Keane, N., Stein, C.K., Asmann, Y.W., Day, G., Welsh, S., Van
+Wier, S.A., Riggs, D.L., Ahmann, G., Chesi, M., et al. (2020). MYC dysregula-
+tion in the progression of multiple myeloma. Leukemia 34, 322–326. https://
+doi.org/10.1038/s41375-019-0543-4.
+Oben, B., Froyen, G., Maclachlan, K.H., Leongamornlert, D., Abascal, F.,
+Zheng-Lin, B., Yellapantula, V., Derkach, A., Geerdens, E., Diamond, B.T.,
+et al. (2021). Whole-genome sequencing reveals progressive versus stable
+myeloma precursor conditions as two distinct entities. Nat. Commun. 12,
+1861. https://doi.org/10.1038/s41467-021-22140-0.
+Paiva, B., Mateos, M.V., Sanchez-Abarca, L.I., Puig, N., Vidriales, M.B.,
+Lo´ pez-Corral, L., Corchete, L.A., Hernandez, M.T., Bargay, J., de Arriba, F.,
+et al. (2016). Immune status of high-risk smoldering multiple myeloma patients
+and its therapeutic modulation under LenDex: a longitudinal analysis. Blood
+127, 1151–1162. https://doi.org/10.1182/blood-2015-10-662320.
+Pe´ rez-Persona, E., Vidriales, M.B., Mateo, G., Garcı´a-Sanz, R., Mateos, M.V.,
+de Coca, A.G., Galende, J., Martı´n-Nun˜ ez, G., Alonso, J.M., de Las Heras, N.,
+et al. (2007). New criteria to identify risk of progression in monoclonal gamm-
+opathy of uncertain signiﬁcance and smoldering multiple myeloma based on
+multiparameter ﬂow cytometry analysis of BM plasma cells. Blood 110,
+2586–2592. https://doi.org/10.1182/blood-2007-05-088443.
+Rajkumar, S.V., Dimopoulos, M.A., Palumbo, A., Blade, J., Merlini, G., Mateos,
+M.V., Kumar, S., Hillengass, J., Kastritis, E., Richardson, P., et al. (2014).
+International Myeloma Working Group updated criteria for the diagnosis of
+multiple myeloma. Lancet Oncol. 15, e538–e548. https://doi.org/10.1016/
+S1470-2045(14)70442-5.
+Rajkumar, S.V., Landgren, O., and Mateos, M.V. (2015). Smoldering multiple
+myeloma. Blood 125, 3069–3075. https://doi.org/10.1182/blood-2014-09-
+568899.
+Ramos, A.H., Lichtenstein, L., Gupta, M., Lawrence, M.S., Pugh, T.J.,
+Saksena, G., Meyerson, M., and Getz, G. (2015). Oncotator: cancer variant
+annotation tool. Hum. Mutat. 36, E2423–E2429. https://doi.org/10.1002/
+humu.22771.
+Saunders, C.T., Wong, W.S.W., Swamy, S., Becq, J., Murray, L.J., and
+Cheetham, R.K. (2012). Strelka: accurate somatic small-variant calling from
+sequenced tumor-normal sample pairs. Bioinformatics 28, 1811–1817.
+https://doi.org/10.1093/bioinformatics/bts271.
+Taylor-Weiner, A., Stewart, C., Giordano, T., Miller, M., Rosenberg, M.,
+Macbeth, A., Lennon, N., Rheinbay, E., Landau, D.A., Wu, C.J., and Getz, G.
+(2018). DeTiN: overcoming tumor-in-normal contamination. Nat. Methods
+15, 531–534. https://doi.org/10.1038/s41592-018-0036-9.
+Visram, A., Cook, J., and Warsame, R. (2021). Smoldering multiple myeloma:
+evolving diagnostic criteria and treatment strategies. Hematology. Am. Soc.
+Hematol. Educ. Program 2021, 673–681. https://doi.org/10.1182/hematolo-
+gy.2021000304.
+Weiss, B.M., Abadie, J., Verma, P., Howard, R.S., and Kuehl, W.M. (2009). A
+monoclonal gammopathy precedes multiple myeloma in most patients.
+Blood 113, 5418–5422. https://doi.org/10.1182/blood-2008-12-195008.
+Wolock, S.L., Lopez, R., and Klein, A.M. (2019). Scrublet: computational iden-
+tiﬁcation of cell doublets in single-cell transcriptomic data. Cell Syst. 8, 281–
+291.e9. https://doi.org/10.1016/j.cels.2018.11.005.
+Young, M.D., and Behjati, S. (2020). SoupX removes ambient RNA contamina-
+tion from droplet-based single-cell RNA sequencing data. Gigascience 9,
+giaa151. https://doi.org/10.1093/gigascience/giaa151.
+Zavidij, O., Haradhvala, N.J., Mouhieddine, T.H., Sklavenitis-Pistoﬁdis, R., Cai,
+S., Reidy, M., Rahmat, M., Flaifel, A., Ferland, B., Su, N.K., et al. (2020). Single-
+cell RNA sequencing reveals compromised immune microenvironment in pre-
+cursor stages of multiple myeloma. Nat. Cancer 1, 493–506. https://doi.org/
+10.1038/s43018-020-0053-3.
+Zheng, G.X.Y., Terry, J.M., Belgrader, P., Ryvkin, P., Bent, Z.W., Wilson, R.,
+Ziraldo, S.B., Wheeler, T.D., McDermott, G.P., Zhu, J., et al. (2017).
+Massively
+parallel
+digital
+transcriptional
+proﬁling
+of
+single
+cells.
+Nat.
+Commun. 8, 14049. https://doi.org/10.1038/ncomms14049.
+ll
+Article
+Cancer Cell 40, 1358–1373, November 14, 2022
+1373
+
+STAR+METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Antibodies
+Anti-Human CD45 (HI30)-89Y—100 Tests
+Fluidigm
+Cat# 3089003B
+Anti-Human CD196/CCR6 (G034E3)-141Pr—50 Tests
+Fluidigm
+Cat# 3141003A, RRID: AB_2687639
+Anti-Human CD19 (HIB19)-142Nd—100 Tests
+Fluidigm
+Cat# 3142001B
+Anti-Human CD45RA (HI100)-143Nd—100 Tests
+Fluidigm
+Cat# 3143006B, RRID: AB_2651156
+Anti-Human CD69 (FN50)-144Nd—100 Tests
+Fluidigm
+Cat# 3144018B, RRID: AB_2687849
+Anti-Human CD4 (RPA-T4)-145Nd—100 Tests
+Fluidigm
+Cat# 3145001B
+Anti-Human IgD (IA6-2)-146Nd—100 Tests
+Fluidigm
+Cat#3146005B, RRID: AB_2811082
+Anti-Human CD20 (2H7)-147Sm—100 Tests
+Fluidigm
+Cat# 3147001B
+Anti-Human CD14 (RMO52)-148Nd—100 Tests
+Fluidigm
+Cat# 3148010B
+Anti-Human CD56/NCAM (NCAM16.2)-149Sm—100 Tests
+Fluidigm
+Cat# 3149021B
+Anti-Human CD138/Syndecan-1 (DL-101)-150Nd—25 tests
+Fluidigm
+Cat# 3150012C
+Anti-Human TNFa (mab11)-152Sm—100 Tests
+Fluidigm
+Cat# 3152002B
+Anti-Human TIGIT (MBSA43)-153Eu—100 Tests
+Fluidigm
+Cat# 3153019B, RRID: AB_2756419
+Anti-Human CD3 (UCHT1)-154Sm—100 Tests
+Fluidigm
+Cat# 3154003B, RRID: AB_2811086
+Anti-Human CD27 (L128)-155Gd—100 Tests
+Fluidigm
+Cat# 3155001B, RRID: AB_2687645
+Anti-Human IFNg (B27)-158Gd—100 Tests
+Fluidigm
+Cat# 3158017B
+Anti-Human CD161 (HP-3G10)-159Tb—100 Tests
+Fluidigm
+Cat# 3159004B, RRID: AB_2756421
+Anti-Human/Mouse MIP1beta (D21-1351)-160Gd—100 Tests
+Fluidigm
+Cat# 3160013B
+Anti-Human/Mouse Tbet (4B10)-161Dy—100 Tests
+Fluidigm
+Cat# 3161014B, RRID: AB_2858233
+Anti-Human FoxP3 (259D/C7)-162Dy—50 Tests
+Fluidigm
+Cat# 3162024A
+Anti-Human CD183/CXCR3 (G025H7)-163Dy—100 Tests
+Fluidigm
+Cat# 3163004B, RRID: AB_2810969
+Anti-Human IL-17A (N49-653)-164Dy—100 Tests
+Fluidigm
+Cat# 3164002B, RRID: AB_2864733
+Anti-Human CD279/PD-1 (EH12.2H7)-165Ho—100 Tests
+Fluidigm
+Cat# 3165042B
+Anti-Human CD197/CCR7 (G043H7)-167Er—50 Tests
+Fluidigm
+Cat# 3167009A, RRID: AB_2858236
+Anti-Human CD8 (SK1)-168Er—100 Tests
+Fluidigm
+Cat# 3168002B
+Anti-Human CD25 (2A3)-169Tm—100 Tests
+Fluidigm
+Cat# 3169003B
+Anti-Human Granzyme B (GB11)-171Yb—100 Tests
+Fluidigm
+Cat# 3171002B, RRID: AB_2687652
+Anti-Human CD57 (HCD57)-172Yb—100 Tests
+Fluidigm
+Cat# 3172009B, RRID: AB_2888930
+Anti-Human HLA-DR (L243)-173Yb—100 Tests
+Fluidigm
+Cat# 3173005B, RRID: AB_2810248
+Anti-Human CD94 (HP-3D9)-174Yb—100 Tests
+Fluidigm
+Cat# 3174015B
+Anti-Human Perforin (B-D48)-175Lu—100 Tests
+Fluidigm
+Cat# 3175004B
+Anti-Human CD127/IL-7Ra (A019D5)-176Yb—100 Tests
+Fluidigm
+Cat# 3176004B
+Anti-Human CD16 (3G8)-209Bi—100 Tests
+Fluidigm
+Cat# 3209002B, RRID: AB_2756431
+Anti-Granzyme K antibody [GM-24C3] (ab3771)
+Abcam
+Cat# ab3771
+Chemicals, peptides, and recombinant proteins
+1X Phosphate-Buffered Saline without Calcium & Magnesium
+Mediatech
+Cat# 21040CV
+10X RBC Lysis Buffer
+BioLegend
+Cat# 420301
+0.4% Trypan Blue Solution
+Life Technologies
+Cat# 15250061
+autoMACS Running Buffer – MACS Separation Buffer
+Miltenyi Biotec
+Cat# 130091221
+CD138 MicroBeads, Human
+Miltenyi Biotec
+Cat# 130051301
+DMSO
+Sigma Aldrich
+Cat# D2650
+PBS, pH 7.4 (1X)
+Gibco
+Cat# 10010023
+Bovine Serum Albumin (BSA), 30% ± 2% in 0.85% NaCl
+Sigma Aldrich
+Cat# A7284
+Sodium Azide, 10% (w/v) solution in Ultra-Pure H2O
+Teknova
+Cat# S0209
+(Continued on next page)
+ll
+Article
+e1
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+
+RESOURCE AVAILABILITY
+Lead contact
+Further information and requests for resources and reagents should be directed to and will be fulﬁlled by the lead contact, Irene
+Ghobrial (irene_ghobrial@dfci.harvard.edu).
+Materials availability
+This study did not generate new unique reagents.
+Data and code availability
+d Raw single-cell RNA and TCR sequencing data generated for this study have been deposited in dbGaP (dbGaP:
+phs002476.v1.p1). Raw single-cell RNA sequencing data generated in Zavidij et al. have been deposited in dbGaP (dbGaP:
+phs001323.v3.p1). Raw whole-exome sequencing data generated for this study have been deposited in dbGaP
+(dbGaP: phs001323.v3.p1).
+d This paper does not report original code.
+d Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+RPMI 1640 (1X) Medium
+Gibco
+Cat# 11875093
+Fetal Bovine Serum, heat inactivated, qualiﬁed (FBS)
+Gibco
+Cat# 10438026
+Antibiotic-Antimycotic (100X)
+Gibco
+Cat# 15240096
+UltraPureTM DNAse/RNAse-Free Distilled Water
+Invitrogen
+Cat# 10977023
+ViaStainTM AOPI Staining Solution
+Nexcelom Biosciences
+Cat# CS2-0106-5mL
+Cell-IDTM Intercalator-Rh—500 mM
+Fluidigm
+Cat# 201103A
+Cell-IDTM Intercalator-Ir—125 mM
+Fluidigm
+Cat# 201192A
+Maxpar Cell Acquisition Solution
+Fluidigm
+Cat# 201237
+Maxpar Cell Staining Buffer
+Fluidigm
+Cat# 201068
+EQTM Four Element Calibration Beads
+Fluidigm
+Cat# 201078
+eBioscienceTM Permeabilization Buffer (10X)
+Invitrogen
+Cat# 00833356
+eBioscienceTM Fixation/Permeabilization
+Concentrate
+Invitrogen
+Cat# 00512343
+eBioscienceTM Fixation/Permeabilization Diluent
+Invitrogen
+Cat# 00522356
+Human TruStain FcXTM (FcR Blocking Solution)
+BioLegend
+Cat# 422302
+PierceTM 16% Formaldehyde
+Solution (w/v), Methanol-free
+Thermo Scientiﬁc
+Cat# 28906
+Critical commercial assays
+Maxpar X8 Antibody Labeling
+Kit, 166Er—4 Rxn
+Fluidigm
+Cat# 201166A
+Software and algorithms
+FlowJo
+Becton Dickinson & Company
+https://www.ﬂowjo.com/solutions/
+ﬂowjo/downloads/, RRID: SCR_008520
+CyTOF Software v7.0.8493
+Fluidigm
+https://www.ﬂuidigm.com/software,
+RRID: SCR_021055
+Biological samples
+Peripheral blood and bone
+marrow samples collected
+This paper; E-PRISM trial
+ClinicalTrials.gov: NCT02279394
+Deposited data
+Single-cell RNA sequencing (n = 149)
+and TCR sequencing (n = 91)
+This paper; E-PRISM trial
+dbGaP: phs002476.v1.p1
+Single-cell RNA sequencing
+Zavidij et al., 2020
+dbGaP: phs001323.v3.p1
+Whole-exome sequencing
+Bustoros et al., 2020
+dbGaP: phs001323.v3.p1
+ll
+Article
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+e2
+
+EXPERIMENTAL MODEL AND SUBJECT DETAILS
+Clinical trial and patients
+Study design
+The primary objective of this trial was to determine the proportion of patients with high-risk SMM (HRSMM) who were progression-
+free at 2 years post-treatment. Secondary objectives included safety and toxicity, time to progression, overall response rate, duration
+of response, and overall survival.
+From January 2015 to November 2016, patients were enrolled at Dana Faber Cancer Institute, Boston, Massachusetts; Beth Israel
+Deaconess Medical Center, Boston, Massachusetts; Carolina HC Levine Cancer Institute, Charlotte, North Carolina; Colorado Blood
+Cancer Institute, Denver, Colorado; Eastern Maine Medical Center, Bangor, Maine; Karmanos Cancer Institute, Detroit, Michigan;
+Marlene and Stewart Greenbaum Cancer Center, Baltimore, Maryland; Massachusetts General Hospital, Boston, Massachusetts;
+Newton-Wellesley Hospital, Newton, Massachusetts; St. Francis Hospital, Hartford, Connecticut; and University of Chicago, Chi-
+cago, Illinois.
+Patients were eligible for this trial if they were 18 years of age or older, had an Eastern Cooperative Oncology Group performance
+status of 0 to 2, and were classiﬁed as HRSMM. HRSMM was deﬁned according to Rajkumar et al. as the presence of BM clonal
+plasma cells R10% (but less than 60%) and at least one of the following: serum M protein R3.0 mg/dL; IgA SMM; immunoparesis
+with reduction of two uninvolved immunoglobulin isotypes; serum involved/uninvolved free light chain ration R8 (but less than 100);
+evolving type of SMM, i.e., progressive increase in M protein level; BM clonal plasma cells 50–60%; abnormal cell immunophenotype
+(R95% of BM plasma cells are clonal) and reduction of one or more uninvolved immunoglobulin isotypes; t(4;14) or del17p or amp1q;
+increased circulating plasma cells; MRI with diffuse abnormalities or 1 focal lesion (R5 mm); PET-CT with one focal lesion (R5 mm)
+with increased uptake without underlying osteolytic bone destruction (Rajkumar et al., 2015). Furthermore, patients had to show no
+evidence of myeloma-deﬁning events as described by the IMWG (Rajkumar et al., 2014), and the following laboratory values had to
+be shown within 28 days prior to registration: Absolute Neutrophil Count R1000/mm3, Platelets (PLT) R 50,000/mm3, Total Bilirubin
+<2.0 mg/dL, Aspartate and Alanine Aminotransferase (AST/ALT) % 3 3 ULN, and an estimated creatinine clearance >50 mL/min/
+1.73m2. Patients with other concurrent chemotherapy, immunotherapy, radiotherapy, or any ancillary therapy considered investiga-
+tional, serious medical or psychiatric illness likely to interfere with participation, a diagnosis or treatment for another malignancy
+within 2 years of enrollment were excluded.
+All patients provided informed consent. The review boards of all participating centers approved the study in accordance with the
+Declaration of Helsinki and the International Conference of Harmonization Guideline for Good Clinical Practice. This study was regis-
+tered as a phase II study with ClinicalTrials.gov NCT02279394.
+Study treatment
+This phase II trial used a single-stage design to assess the efﬁcacy of the combination of Elotuzumab and Lenalidomide with or
+without Dexamethasone in patients with HRSMM. Patients were randomized 1:1 to Arm A (EloLenDex) or Arm B (EloLen), based
+on the stratiﬁcation factors described below.
+In the treatment schema a cycle is deﬁned as 28 consecutive days. In cycles 1 and 2, 10 mg/kg of intravenous push Elotuzumab
+was administered on days 1, 8, 15, and 22. In cycles 3–4, it was administered on days 1 and 15. A 25 mg dose of oral Lenalidomide
+was administered on days 1–21 of each cycle. In Arm A, 40 mg of oral Dexamethasone was administered on days 1, 8, 15, and 22 in
+cycles 1 and 2 and on days 1, 8, and 15 in cycles 3–8. Patients on maintenance treatment (cycles 9–24) were administered 20 mg/kg
+of intravenous push Elotuzumab on day 1 and 15 mg oral Lenalidomide on days 1–21. All patients received thromboprophylaxis.
+In consideration of the Mateos et al. study, investigators were given the option to allow high-dose Dexamethasone to be resumed
+during maintenance due to biochemical progression (progressive increase in serum M-spike by at least 25% with an absolute in-
+crease of at least 0.5 g/dL or urine M-spike by at least 25% with an absolute increase of at least 200 mg/24 hours, on two successive
+evaluations, as determined by the IMWG response criteria or documented progression by serum free light chain criteria in the
+absence of serum or urine involvement; Mateos et al., 2013). A total of 5 patients were given Dexamethasone during maintenance.
+The dosing schedule for this followed that of cycles 3–8, with 8 mg intravenous push and 32 mg oral Dexamethasone on days 1 and 15
+and 40 mg oral Dexamethasone on day 8.
+Stratiﬁcation factors
+Originally, the study aimed to secondarily determine whether Dexamethasone is beneﬁcial or detrimental in this immunotherapy
+regimen for SMM. Therefore, the study was designed with two arms, meant to serve as two independent phase II studies to determine
+the activity of EloLen with or without Dexamethasone in the patient population. Patients were stratiﬁed by age (R65 vs <65) and high-
+risk cytogenetics [t(4;14), t(14;16), del17p, TP53 mutation, amp1q] (high-risk, low-risk, FISH failure) before being randomly assigned
+to one of the two arms.
+Arm B accrual
+Arm B accrual was halted in April 2016 for two reasons: 1) treatment with Elotuzumab required premedication with high doses of
+steroids to avoid infusion reactions and the difference in Dexamethasone dosing between the two arms (approximately 4 mg Dexa-
+methasone per dosing day) for the ﬁrst 2 cycles was not signiﬁcant, and 2) a publication by Paiva et al. (2016). demonstrated that once
+weekly high-dose Dexamethasone does not have a detrimental effect on the immune system in patients with SMM in a clinical trial of
+Lenalidomide and Dexamethasone. The patients who were originally enrolled in Arm B remained in Arm B until the completion of
+therapy.
+ll
+Article
+e3
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+
+Cohort details
+In total, 51 patients enrolled and received at least one dose of treatment. Three patients were deemed ineligible soon after they
+received treatment, due to misdiagnosis (overt myeloma with lesions on PET-CT, amyloidosis, and light chain deposition disease),
+and were excluded from further analysis. Two patients received less than 2 full cycles of treatment and were excluded from our overall
+response assessment and correlative studies but were included for toxicity assessment. Out of the 46 patients remaining in the
+cohort, 29 were female and 17 were male, while the median age at registration was 62 (range: 29–77).
+Imaging
+To assess the extent of disease involvement, imaging studies were performed at both BL and EOT. All patients had either an MRI with
+a skeletal survey or a PET/CT scan.
+Efﬁcacy and safety assessments
+Toxicities were monitored throughout the study and for up to 30 days after the last dose of the study drug. Adverse events (AEs) were
+graded according to the National Cancer Institute Common Terminology Criteria for Adverse Events (CTCAE; version 4.0; Bethesda,
+MD). In addition, neuropathy symptoms were assessed using the FACT/GOG- Neuropathy questionnaire (Version 4.0). Efﬁcacy was
+measured using the IWMG criteria for response.
+Treatment discontinuation and patient disposition
+The median duration of treatment was 24 cycles (range = 1–24). In total, 40 of 51 patients received all 24 cycles. Of those, 30 (75%)
+were in arm A and 10 (25%) in arm B. Of the 10 patients in Arm A who did not complete all 24 cycles, 3 patients discontinued therapy
+during the induction cycles due to an incorrect initial diagnosis (one participant had myeloma lytic lesions on a PET scan that was
+originally misread at an outside institution and re-checked at DFCI afterward; another participant had amyloidosis that was missed
+at the time of enrollment but was discovered after 3 cycles of therapy—the patient achieved VGPR on therapy before being removed
+from the protocol and placed on active amyloidosis therapy with a proteasome inhibitor-based approach; one ﬁnal patient had light
+chain deposition disease, which was identiﬁed on a kidney biopsy after one cycle of therapy—the patient was then removed from the
+protocol to start active therapy). Six other patients discontinued therapy due to toxicity and withdrawal of consent or physician de-
+cision. Patient disposition is visualized in Figure S1B.
+Overall, two deaths occurred. One patient had Type I Diabetes and was hospitalized for Diabetic ketoacidosis (cycle 19). This was
+at a time when the patient was not receiving Dexamethasone. The patient developed diverticulitis, bowel perforation, and sepsis and
+died due to sepsis. The second patient was on the last cycle of therapy when they experienced uncontrolled hypertension due to non-
+compliance with their hypertension medications. They then developed heart failure and died of hypertensive crisis.
+METHOD DETAILS
+Sample processing
+Bone marrow (BM) aspirate and peripheral blood (PB) samples were collected in EDTA tubes, and mononuclear cells (BMMCs &
+PBMCs) were isolated using Red Blood Cell Lysis Buffer (ThermoFisher). Tumor and immune cells were then isolated by magnetic
+enrichment for CD138 (Miltenyi Biotec), according to the manufacturer’s instructions, and cryopreserved in FBS with 10% DMSO.
+Whole-exome and deep targeted sequencing
+We performed WES on baseline BM aspirate specimens from 37 study participants. Tumor DNA was extracted from CD138+ cells
+from the patients’ BM. For germline control, DNA was obtained from PBMCs. Genomic DNA was extracted using the QIAamp DNA
+mini kit (QIAGEN) according to the manufacturer’s protocols, and the DNA concentration was quantiﬁed using PicoGreen dsDNA
+Assay kit (Life Technologies). WES libraries were prepared by Agilent SureSelect XT2 Target Enrichment kit (V5+UTR probes). For
+three individuals, libraries for deep targeted sequencing (DTS) were prepared using SureSelect XT Reagent Kits (Agilent) and an
+in-house bait set targeting 117 genes, comprising pan-cancer driver genes and frequently mutated genes in MM (Bustoros et al.,
+2020). Lastly, for two out of four patients who progressed to overt myeloma, tumor samples were available at the time of progression
+and were also studied by WES (Roche MedExome+) to characterize the landscape of clonal evolution under treatment. All
+sequencing was performed on the Illumina HiSeq 4000 platform at the Genomics Platform of the Broad Institute of MIT & Harvard.
+Six WES samples were excluded from analysis due to low tumor purity (<15%). Our ﬁnal baseline cohort comprised 31 WES samples
+and 3 DTS samples.
+Single-cell RNA sequencing
+We performed single-cell RNA sequencing on 149 CD138- BMMC and PBMC samples from 34 patients enrolled in the E-PRISM trial.
+Speciﬁcally, we sequenced 60 CD138- BMMC samples at BL (n = 28), C9D1 (n = 16), and EOT (n = 16), 68 PBMC samples at BL (n =
+33), C9D1 (n = 13), C4D1 (n = 1), and EOT (n = 21)], 11 CD138- BMMC samples from age-matched HD, and 10 PBMC samples from
+age-matched HD. For 23 patients, BL BM and PB samples were matched; for 8 patients, C9D1 BM and PB samples were matched;
+for 13 patients EOT BM and PB samples were matched (Figure S8A). Of note, in contrast to our patient samples, HD BM and PB
+samples were from different individuals.
+For library preparation, we used Chromium Single Cell 30 Gene Expression (n = 40) and Chromium Single Cell 50 Gene Expression
+kits (n = 109) by 10X Genomics. Speciﬁcally, we performed 30 single-cell RNA sequencing on 40 CD138- BMMC samples drawn at BL
+(n = 11), C9D1 (n = 13) or EOT (n = 9), and PBMC samples drawn at BL(n = 4) and C9D1 (n = 3). We performed 50 single-cell RNA
+ll
+Article
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+e4
+
+sequencing on 98 CD138- BMMC samples drawn at BL (n = 17), C9D1 (n = 3) or EOT (n = 7), and PBMC samples drawn at BL (n = 29),
+C4D1 (n = 1), C9D1 (n = 10) or EOT (n = 21). We also performed 50 single-cell RNA sequencing on 11 CD138- BMMC samples and 10
+PBMC samples from HD. All 30 libraries were sequenced on a HiSeq2500 instrument and all 50 libraries were sequenced on a
+NovaSeq 6000 instrument at the Genomics Platform of the Broad Institute of MIT & Harvard.
+Reproducibility of cell type abundance quantiﬁcation via single-cell RNA sequencing
+To assess the reproducibility of our cell type quantiﬁcation, we thawed two cell vials for each of 9 samples; for ﬁve of them, both
+replicate libraries were prepared using the same technology (30- or 50-end sequencing) (technical replicates); for four of them,
+each replicate library was prepared with a different technology (technology replicates).
+Single-cell TCR sequencing
+We performed single-cell TCR sequencing on 91 samples with available single-cell RNA sequencing data (Figure S8A). Speciﬁcally,
+we proﬁled 70 BM and PB patient samples drawn before and after therapy [BM: 14 at BL, 3 at C9D1, 2 at EOT; PB: 26 at BL, 8 at
+C9D1, 17 at EOT], and 21 samples from HD [BM:11; PB:10]. Complementary DNA generated from barcoded CD138- immune cells
+using Chromium Single Cell 50 Gene Expression and V(D)J enrichment kits by 10X Genomics was subjected to V(D)J enrichment and
+library preparation and sequenced on a NovaSeq 6000 instrument at the Genomics Platform of the Broad Institute of MIT & Harvard.
+Cytometry by time-of-ﬂight (CyTOF)
+Metal-tagged antibodies used for the mass cytometry panel are listed in the Key Resources table. In-house conjugation of Granzyme
+K antibody was performed with Maxpar labeling kit per manufacturer instructions (Fluidigm). All antibodies were used per the man-
+ufacturer’s recommendation (Fluidigm).
+Cryopreserved patient CD138- BM Mononuclear Cell (BMMC) samples were thawed, counted using AO/PI, and pelleted by centri-
+fugation at 400g for 10 minutes. Cells were then incubated in 103Rh viability stain for 15 minutes, washed in CyFACS, and incubated
+with undiluted Human TruStain FcX for 10 min for Fc receptor blocking. Antibody master mix was applied to the cell suspension
+for 30 minutes, washed, and ﬁxed/permeabilized with FoxP3 Fixation/Permeabilization Concentrate and Diluent following manufac-
+turer’s guidelines (eBioscience). A mix of intracellular antibodies prepared with 1X Perm Wash was added to each sample and
+incubated for 30 minutes. Next, cells were washed with 1X Perm Wash, and incubated overnight at 4C in FoxP3 Fixation/Permea-
+bilization Concentrate and Diluent, containing 191/193Ir DNA Intercalator. Prior to acquisition, samples were transferred to 5 mL
+round-bottom polystyrene tubes with cell strainer caps, washed and ﬁltered with Cell Staining Buffer (CSB), Cell Acquisition Solution
+(CAS), and resuspended in CAS supplemented with EQ Four Element Calibration Beads (1:10).
+All mass cytometry data was collected on a HeliosTM Mass Cytometer (Fluidigm). The instrument was tuned using CyTOF Tuning
+Solution according to the Helios User Guide (Fluidigm, p. 60–68). A brief overview of tuning steps includes Pre-XY Optimization, Mass
+Calibration, XY Optimization, DV Calibration, Dual Calibration, Gases/Current Calibration, and QC report. EQ Four Element Calibra-
+tion Beads (1:10 in CAS) were used according to the manufacturer protocol before and during acquisition.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Clinical trial statistical analysis & biomarker discovery
+Patient baseline characteristics were summarized as the number of patients or median values. Responses to study treatment were
+reported as proportions with 90% exact binomial conﬁdence intervals.
+We assessed the proportion of patients alive and progression-free at 2 years, compared to the previously published rate for
+HRSMM—a median time to progression of only 1.9 years according to the Kyle et al. model (Kyle et al., 2007). Therefore, we decided
+that for this study, a 2-year progression-free survival rate of 50% would not be considered promising; instead, a progression-free
+survival rate of 70% or higher would be a promising result.
+This phase II study used a single-stage binomial design. With a sample size of 39 patients, the probability of concluding that the
+treatment is effective if the true rate is 50% was 0.10 and was >0.9 if the true rate is 70%. Assuming an ineligibility rate of 5%, we
+aimed to accrue 41 patients per Arm to the trial. Time to response (TTR) was measured from treatment initiation to the date the
+response was ﬁrst observed. Duration of response was measured from response to progressive disease (PD) or death, censored
+at the date of last disease assessment for those who did not progress. Time-to-progression (TTP), and progression-free survival
+(PFS) were measured from the time of treatment initiation to event (PD for TTP; PD or death for PFS). Patients without event were
+censored at the date of last disease assessment for both TTP and PFS. If non-protocol therapy, excluding erythropoietin, was added
+prior to an event, patients were censored in the time-to-event analyses at the initiation of non-protocol therapy. Six total patients had
+progression-free survival events deﬁned as progressive disease to myeloma-deﬁning events (n = 4) or death (n = 2). Another four
+patients (n = 4) were treated based on worsening biomarkers and the physician’s decision and were considered progressors for
+our correlative studies only. The Kaplan-Meier method was used to estimate time to event and the log-rank test was used to compare
+time to event. Cox proportional hazards regression was employed to assess the signiﬁcance of variable associations with outcome.
+Continuous variables, such as cell type proportions, were tested as such and were dichotomized based on the median for Kaplan-
+Meier curves. Statistical analyses were performed using R version 4.1.3. All results with p-values < 0.05 were considered statistically
+signiﬁcant. The Benjamini-Hochberg method was used to correct for multiple hypothesis testing, when appropriate. Our data cut-off
+was November 7, 2020.
+ll
+Article
+e5
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+
+ECOG randomized trial of Lenalidomide versus observation in patients with HRSMM
+Due to the unavailability of patient-level information, survival data were recapitulated from published Kaplan-Meier (KM) plots in Lo-
+nial et al. (2020). The curves and at-risk tables were extracted as raster images, and their x and y coordinates were digitized using the
+commercial software DigitizeIt (https://www.digitizeit.xyz/). Using the algorithm proposed by Guyot et al., the coordinates and num-
+ber of patients at-risk during each time interval were used to estimate censored, time-to-event data (Guyot et al., 2012). With the pa-
+tient-level data, we were able to re-generate the survival curves, at-risk tables, log-rank tests, etc. In particular, we used the KM
+method to explore the effect of the 20-2-20 risk stratiﬁcation system on PFS in the Lenalidomide arm of the ECOG trial and the
+log-rank test to compute the p-value.
+WES analysis
+The output from Illumina software was processed by the Picard data processing pipeline to yield BAM ﬁles containing well-calibrated,
+aligned reads. We utilized the Getz Lab CGA WES Characterization pipeline developed at the Broad Institute to call, ﬁlter, and anno-
+tate somatic mutations and copy number variation. The pipeline employs the following tools: MuTect, ContEst, Strelka, Orientation
+Bias Filter, DeTiN, AllelicCapSeg, MAFPoNFilter, RealignmentFilter, ABSOLUTE, GATK, PicardTools, Variant Effect Predictor, Onco-
+tator (Cibulskis et al., 2011, 2013; Saunders et al., 2012; Costello et al., 2013; Taylor-Weiner et al., 2018; Landau et al., 2013; Law-
+rence et al., 2014; Carter et al., 2012; McKenna et al., 2010; McLaren et al., 2016; Ramos et al., 2015). SNVs and CNVs were further
+cleaned with a custom PoN made of matched normal samples (Lawrence et al., 2014), and a bait bias ﬁlter was developed to correct
+for observed artifacts in the SNV data, as described before (Bustoros et al., 2020). ABSOLUTE was applied to estimate sample purity,
+ploidy, and absolute somatic copy numbers, which were used to infer the CCFs of point mutations and CNVs from the WES data,
+following the framework previously described (Carter et al., 2012).
+Single-cell RNA sequencing analysis
+Analysis workﬂow
+CellRanger v.5.0.1. was used for FASTQ ﬁle extraction and generation of count matrices (Zheng et al., 2017). We integrated E-PRISM
+data with our cohort of non-trial patients with MGUS (n = 6), low-risk SMM (LRSMM, n = 3), HRSMM (HRSMM, n = 12), newly diag-
+nosed MM (NDMM, n = 9) and HD (n = 11) (Zavidij et al., 2020). Non-trial patients with SMM were risk-stratiﬁed based on the original
+Mayo Clinic criteria (Kyle et al., 2007), and NDMM was diagnosed based on the CRAB criteria.
+We performed ambient RNA correction with SoupX; doublet detection with Scrublet, scDblFinder, and SCDS; normalization with
+Scran; and integration with Harmony (correcting for sample ID and technology) (Young and Behjati, 2020; Wolock et al., 2019; Ger-
+main et al., 2021; Bais and Kostka, 2019; Lun et al., 2016; Korsunsky et al., 2019). Samples prepared with 30-end or 50-end technology
+mixed well in PCA, demonstrating successful integration across technologies (Figure S8B). Droplets were deemed to be doublets
+when at least 2 out of four methods classiﬁed them as such and they were only removed from consideration when they clustered
+together and co-expressed markers of multiple cell types. Droplets containing dying cells with more than 15% mitochondrial
+gene expression were removed before clustering. Clusters with higher mitochondrial and ribosomal gene expression that clearly
+separated from well-annotated clusters and lacked interpretable expression markers were removed downstream. In total, we proﬁled
+211,374 immune cells (1,419 cells/sample), comprising T cells, NK cells, B cells, Monocytes, Dendritic cells, and progenitor pop-
+ulations. For each cell population (T cells, NK cells, B cells, Monocytes, Dendritic cells, progenitor cells), feature selection, dimen-
+sionality reduction, and clustering were also performed separately, to identify cell subpopulations (see below for annotation strategy).
+Cell type/subtype proportions were calculated as the fraction of cells belonging to said type/subtype out of all immune cells unless
+otherwise speciﬁed. For comparisons of cell type proportions, samples with fewer than 100 cells were removed from consideration.
+Proportion changes were assessed with Wilcoxon’s rank-sum tests or paired t-tests when comparing serial timepoints within the
+same patients or matched BM and PB samples. When multiple hypotheses were tested, p-values were corrected using the
+Benjamini-Hochberg approach. For survival analysis, cell type abundance was discretized based on the median.
+Differential expression was performed using Wilcoxon’s rank-sum tests at the single-cell level and DESeq2 at the pseudobulk level
+(Love et al., 2014). Genes with more than 3 counts in at least 10 cells were considered for differential expression. For pseudobulk
+analyses, genes with more than 10 counts in at least 25% of samples were considered for differential expression. p-values were cor-
+rected for multiple hypotheses testing using the Benjamini-Hochberg approach.
+Cell type and subtype annotation
+Gene expression markers used for cell type and subtype annotation can be found in Figure 2. Scran-normalized expression values
+were Z-scored and the mean Z-score per cluster was used to plot the heatmaps.
+Within the T cell compartment, we identiﬁed naı¨ve CD8+ (CD8+ TN) and CD4+ T cells (CD4+ TN) (LEF1, TCF7, SELL, CCR7), central
+memory CD8+ (CD8+ TCM) and CD4+ T cells (CD4+ TCM) (FAS, IL7R, HNRNPLL), helper type 1 T cells (Th1) (CD4, CXCR3, GZMA,
+GZMK, LYAR, CCL5), helper type 2 T cells (Th2) (CD4, GATA3, KRT1, CCR4), helper type 17 T cells (Th17) (CD4, RORA, KLRB1,
+CCR6, TNFRSF4), regulatory T cells (Treg) (CD4, IL2RA, FOXP3, CTLA4, RTKN2, IKZF2), mucosa-associated invariant T cells
+(MAIT) expressing a mixture of Th17 and Th1 markers, as well as the speciﬁc marker SLC4A10 (MAIT annotation was conﬁrmed
+by invariant TCR chain usage in overlapping TCR sequencing data), two effector memory CD8+ T cell subpopulations, GZMK+
+CD8+ TEM cells (GZMK, CMC1, XCL1, XCL2) and terminal effector cells (GZMB+ CD8+ TEM) (GZMB, GZMH, FGFBP2, PRF1,
+FCGR3A, GNLY). Furthermore, we identiﬁed a subpopulation of CD4+ TN cells expressing genes related to response to inter-
+feron-gamma (IFN+ CD4+ TN) (MX1, ISG15, IFI6, IFI44L), two separate subpopulations expressing genes related to response to
+ll
+Article
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+e6
+
+interferon type-I (IFN-I+ CD4+ TEM & IFN-I+ CD8+ TEM) (IFIT1, IFIT2, IFIT3, TNF), and two activated CD4+ subpopulations expressing
+genes of the AP-1 module and general activation markers (aCD4+ TN & aCD4+ TCM) (JUN, FOS, FOSB, CD69, DUSP1, TSC22D3).
+Lastly, we identiﬁed a second CD4+ regulatory subpopulation, clustering adjacent to Tregs and expressing high levels of CTLA4 and
+MHC-II-encoding genes, a proﬁle most consistent with effector Tregs, which we annotated as eTregs.
+Within the NK cell compartment, we identiﬁed CD56bright NK cells (CD56br NK) (NCAM1), CD2, XCL2, KLRC1, IL7R, SELL, GZMK),
+CD160+ NK cells expressing markers of CD56bright NK cells as well as CD160, SPRY2, and TOX2, CD56dim NK cells (CD56dim NK)
+(GZMB, GZMH, FGFBP2, PRF1, NKG7, CX3CR1, GNLY, B3GAT1) and gamma-delta T cells (Tgd) (CD3D, TRGV9, TRDV2). Further-
+more, we identiﬁed a subpopulation of NK cells expressing genes related to response to interferon-gamma (IFN+ NK) (MX1, ISG15,
+IFI6, IFI44L), a separate subpopulation expressing genes related to response to interferon type-I (IFN-I+ NK) (IFIT1, IFIT2, IFIT3, TNF),
+and an activated subpopulation with characteristics of both CD56bright and CD56dim NK cells (aNK), expressing genes of the AP-1
+module and general activation markers (FOS, JUN, JUNB, CD69, CXCR4, DUSP1, NFKB1, NFKB2).
+Within the B cell compartment, we identiﬁed immature B cells (IBC) (MME, CD19, CD38, IGHM, SOX4, TCL1A, RAG1, RAG2,
+VPREB1, IGLL1), transitional B cells (TBC) (CD19, MS4A1, CD38, IGHM, IGHD, TCL1A, IL4R, SELL), naı¨ve B cells (NBC) (CD19,
+MS4A1, IGHM, IGHD, IL4R, SELL, CCR7, FCER2, ABCB1), a population expressing higher levels of CXCR5, CD83, and TNFSF9 (en-
+coding 4-1BBL), called germinal center B cells (GBC), marginal zone B cells (MZB) (CD1C, IGHM, PLD4, LINC01857), atypical B cells
+(ABC) (TBX21, ITGAX, FCRL5, ENC1, TNFRSF1B, SOX5, MPP6), and two populations of class-switched memory B cells: one ex-
+pressed higher levels of TCF7 and was called resting memory B cells (BRM), while the other expressed higher levels of FAS,
+CD86, ITGB1, S100A10, and TOX, and was called effector memory B cells (BEM). Lastly, we identiﬁed a subpopulation of B cells
+expressing genes related to response to interferon-gamma (IFN+ BC) (MX1, ISG15, IFI6, IFI44L).
+Within the monocyte compartment, we identiﬁed three main subpopulations of classical (CD14+) monocytes: a subpopulation ex-
+pressing higher levels of SELL, VCAN, S100A8, S100A9, and S100A12 (SELL+ CD14+ Mono), a subpopulation expressing higher
+levels of genes encoding MHC-II peptides (HLA-DR++ CD14+ Mono), and a subpopulation expressing pro-inﬂammatory factors,
+such as IL1B, CXCL8, CXCL2, CCL3, CCL4, and CEBPD (Cytokine+ CD14+ Mono). A fourth subpopulation expressed CD14,
+SELL, VCAN, S100A8, S100A9, S100A12, as well as MPO, AZU1, ELANE, PRTN3, and RNASE2, and was called ‘‘Neutrophil-like
+Mono’’. Furthermore, we identiﬁed non-classical CD16+ Monocytes (FCGR3A, MS4A7, CSF1R, CDKN1C, RHOC), intermediated
+CD14+ CD16+ Monocytes expressing CD14, FCGR3A (which encodes CD16), and high levels of MHC-II-encoding genes, a
+CD16+ subpopulation of macrophages expressing high levels of complement factor C1q (C1QA, C1QB, C1QC, SELENOP,
+SDC3), and a population of monocytes expressing genes related to response to interferon-gamma (IFN+ Mono) (MX1, ISG15,
+IFI6, IFI44L).
+Within the dendritic cell compartment, we identiﬁed canonical dendritic cells type 2 (cDC2) (FCER1A, CLEC10A, CD1C and MHC-II
+encoding genes), canonical dendritic cells type 1 (cDC1) (CLEC9A, C1orf54, IDO1, CADM1, CLMK, BATF3), monocyte-derived den-
+dritic cells (MoDC) (FCER1A, CLEC10A, CD1C, CD14), plasmacytoid dendritic cells (pDCs) (LILRA4, IL3RA, GZMB, IRF4, SER-
+PINF1), and AXL+ SIGLEC6+ dendritic cells (AS-DCs) (AXL, SIGLEC6, ADAM33, LTK). Furthermore, we identiﬁed cycling subpopu-
+lations of pDCs and cDC2s (cpDC, ccDC2), activated subpopulations expressing the pro-inﬂammatory markers IL1B, CXCL8, and
+CCL3 (acDC2, apDC), and a MoDC subpopulation expressing genes related to response to interferon-gamma (IFN+ MoDC) (MX1,
+ISG15, IFI6, IFI44L).
+Lastly, within the progenitor cell compartment, we identiﬁed hematopoietic stem cells (HSC) (CD34, CD164, BEX1, BEX2, AVP,
+CRHBP, HLF), multi-potent progenitor cells (MPP) (CD34, CD33, MPO, FLT3, MZB1), granulocyte-monocyte progenitor cells
+(GMP) (MPO, AZU1, PRTN3, ELANE, LYZ), monocyte-dendritic cell progenitors (MDP) (MPO, LYZ, IRF8, LY86, RUNX2, LILRB4),
+megakaryocyte-erythroid progenitors (MEP) (GATA2, FCER1A, ITAG2B, CSF2RB), erythroid progenitors (EP) (GATA1, EPOR,
+CA1, CA2, EPCAM, KLF1, BLVRB, APOC1, APOE), megakaryocyte progenitors (MKP) (GATA2, FCER1A, ITGA2B, PLEK, GP1BB,
+PPBP, PF4, GP9), basophil-mast cell progenitors (BMP) (MS4A2, MS4A3, TPSAB1, TPSB2, HDC, CLC, PRG2), common lymphoid
+progenitors (CLP) (FLT3, TRBC2, MZB1, LTB, JCHAIN, ADA, BCL2), pro-B cells (Pro-B) (DNTT, MME, PAX5, RAG1, RAG2), and
+pre-B cells (Pre-B) (VPREB1, IGLL1, JCHAIN, TCL1A). Within this compartment, we also identiﬁed a small population of stroma cells
+(CXCL12, LEPR, KITLG, VCAM1, COL1A1, COL1A2, CCL2).
+Gene expression signature discovery & annotation
+A Bayesian version of Non-negative Matrix Factorization (NMF) was performed using SignatureAnalyzer on the count matrix of the top
+5,000 highly variable genes for gene expression signature discovery (Kasar et al., 2015; Kim et al., 2016). Half-normal priors were
+imposed for both the W (gene by signature) and the H matrix (cell by signature), as we reasoned that a single gene could contribute
+towards multiple expression programs and a single cell could be described by multiple expression programs. The tool was run 30
+times and the run that resulted in a K (i.e., number of signatures) equal to the mode of the K distribution and had the lowest objective
+was selected for downstream analysis (Figure S5B). Gene expression signature markers were nominated by (i) multiplying the W ma-
+trix by the sum of signature activity across all cells in the H matrix, (ii) calculating the fraction of each signature’s activity for each gene
+(matrix F) and (iii) ranking genes based on the product of W (i.e., how strongly each gene contributes to the signature) and F (i.e., how
+strongly each signature contributes to the gene). A total of 26 gene expression (GEX) signatures were extracted (Figure S5C): GEX-1
+corresponded to cytokine signaling associated with GZMK-expressing subpopulations (XCL1, XCL2, CCL3, CCL4); GEX-2 captured
+naı¨ve T cells (TCF7, LEF1, TXNIP, IL7R, LTB, NOSIP); GEX-3 captured dendritic cells (CLEC10A, FCER1A, CD74, HLA-DRA, HLA-
+DRB1); GEX-4 captured B cells (CD19, MS4A1, IGHM, IGHD, CD79A, CD79B); GEX-5 was associated with ferritin heavy and light
+chain expression (FTH1, FTL) and was primarily active in myeloid cells; GEX-6 corresponded to pro-inﬂammatory signaling (IL1B,
+ll
+Article
+e7
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+
+CXCL8, CXCL2, CEBPD) and was primarily active in myeloid cells; GEX-7 corresponded to genes induced by interferon-gamma
+(MX1, STAT1, XAF1, IFI6, IFI44L, ISG15) and was active in T cells, B cells, NK cells, and monocytes; GEX-8 was associated with
+thymosin expression and the alpha and beta chains of the TCR (TMSB4X, TMSB10, TRAC, TRBC1), and was primarily active in
+T cells; GEX-9 was associated with histone 1 gene expression (HIST1H1C, HIST1H1D, HIST1H1E) and was primarily active in den-
+dritic cells; GEX-10 was associated with metabolic programming (GLUL, SLC43A2, SLC25A37) and hypoxia-related signaling
+(HIF1A, TIMP1, NEAT1), and was primarily active in myeloid cells; GEX-11 corresponded to CD14+ monocytes (CD14, MS4A6A,
+FCN1, LYZ); GEX-12 corresponded to immature B cells (ACSM3, IGLL1, VPREB1, TCL1A, MME, SOX4); GEX-13 corresponded
+to pDCs (LILRA4, JCHAIN, SERPINF1, PTGDS, ITM2C, IRF4, IRF8); GEX-14 corresponded to a different program within classical
+monocytes (S100A8, S100A9, S100A12, VCAN); GEX-15 corresponded to Th17 cells and MAITs (RORA, KLRB1, CCR6); GEX-16
+was associated with interferon type-I signaling (IFIT1, IFIT2, IFIT3, PMAIP1, OASL, TNF, HERC5, ZC3HAV1); GEX-17 was associated
+with T cell surface antigens (CD5, CD6, CD7); GEX-18 and GEX-19 were associated with genes of the AP-1 module (JUN, FOS, FOSB)
+and general activation markers (DUSP1, TSC22D3, NFKBIA); GEX-20 corresponded to CD16+ monocytes (FCGR3A, CDKN1C, SER-
+PINA1, MS4A7); GEX-21 corresponded to cytotoxic T cells (GZMK, GZMH, NKG7, CD8A, CD8B); GEX-22 corresponded to GZMB+
+cytotoxic T cells and NK cells (GZMB, GNLY, SPON2, CLIC3, FGFBP2); GEX-23 was associated with genes frequently expressed by
+myeloid cells (AHNAK, TLR2, CYBB) and was primarily active in monocytes; GEX-24 was associated with memory CD4+ T cell
+expression markers (GATA3, CD28, PRDM1, ITGB1, ANXA1) and was primarily active in those populations; GEX-25 and GEX-26
+were associated with cytoskeleton-related genes (ACTB, ACTG1, PFN1, CFL) and were primarily active in myeloid cells.
+For survival analysis, each sample was assigned its mean signature activity across cells, and mean activity was discretized based
+on the median.
+Naı¨ve Bayes classiﬁer and normalization scores
+We trained a Naı¨ve Bayes classiﬁer using the R package caret on a training set (n = 41) comprising BM samples from patients with
+HRSMM and HD, using 10-fold cross-validation and 100 iterations, following a parameter sweep (Kuhn, 2008). The input to the clas-
+siﬁer was the composition matrix of cell type proportions and included data on 63 subpopulations. The accuracy in the testing set (n =
+16) was 94% (95% CI: 69.8%–99.8%, p = 0.0057) (Figure S5A). For each cell type, we compute its importance to the classiﬁcation
+using the varImp() function, which employs an ROC approach, and signed it based on whether the cell type had a higher mean abun-
+dance in disease (minus) or HD (plus). We then computed the weighted sum of the product of each cell type’s proportion and its
+signed importance (normalization score), and classiﬁed patients as reactive (least normal-like) or non-reactive (most normal-like),
+based on the median normalization score of patients at BL.
+Single-cell TCR sequencing analysis
+CellRanger v5.0.1 was used to extract FASTQ ﬁles and produce clonotype matrices (Zheng et al., 2017). When multiple alignments
+were called for a single chain, the alignment with the most UMIs was selected, and when multiple chains were called for a single cell
+barcode, the top two chains in terms of UMI counts were selected.
+To control for variability in T cell numbers across samples, we downsampled a range of T cell numbers (n = 75–500) from each
+sample with 100 iterations and averaged repertoire diversity estimates across iterations. Repertoire diversity was assessed using
+the Chao index, as implemented in the vegan R package. To estimate the proportion of clonotypes belonging to a given clone
+size (Rare: %1%; Small: >1% and <5%; Medium: R5% and <10%; Large: R10%) in a given sample, we downsampled 100
+T cells from each sample with 100 iterations, converted clonotype counts into frequencies, computed the frequency of each clone
+size, and subsequently averaged the frequency of each clone size across iterations and renormalized those frequencies for plotting.
+To estimate the probability of a given T cell subtype to be clonally expanded in patients or HD, we ﬁrst computed stable clone sizes for
+each clonotype in each sample, by downsampling 100 T cells with 100 iterations, converting clonotype counts into frequencies,
+computing each clonotype’s clone size, and subsequently assigning each clonotype the mode of its clone size distribution across
+all iterations. Next, for each T cell subtype, we randomly sampled 100 cells across all patients (or HD), and for each iteration, we
+computed the frequency of rare (proportion of singletons) and expanded (1-rare) clonotypes. For visualization purposes, the average
+frequencies were renormalized and plotted. p-values were computed by bootstrapping with 10,000 iterations.
+CyTOF analysis
+The data was normalized using the FCS Processing tab of the Fluidigm CyTOF Software 7.0.8493. Data analysis was manually per-
+formed using FlowJo 10.7.1. For initial data clean-up, cell events were gated to remove dead cells and debris through biaxial plots of
+Time vs. Event Length, Beads (for removal of the EQ Calibration Beads), and Gaussian-derived parameters (Residual, Width, Offset).
+The viability stain 103Rh was used to gate out dead cells on PBMC populations. All viable cells were backgated on both DNA pa-
+rameters (191Ir and 193Ir) to ensure no doublets were included. Please refer to Hallisey et al. for the detailed protocol (Hallisey
+et al., 2022).
+ADDITIONAL RESOURCES
+The clinical trial study design and record can be found at: https://clinicaltrials.gov/ct2/show/NCT02279394.
+ll
+Article
+Cancer Cell 40, 1358–1373.e1–e8, November 14, 2022
+e8
+
+Cancer Cell, Volume 40
+Supplemental information
+Immune biomarkers of response to immunotherapy
+in patients with high-risk smoldering myeloma
+Romanos
+Sklavenitis-Pistoﬁdis,
+Michelle
+P.
+Aranha,
+Robert
+A.
+Redd,
+Joanna
+Baginska, Nicholas J. Haradhvala, Margaret Hallisey, Ankit K. Dutta, Alexandra
+Savell,
+Shohreh
+Varmeh,
+Daniel
+Heilpern-Mallory,
+Sylvia
+Ujwary,
+Oksana
+Zavidij, Francois Aguet, Nang K. Su, Elizabeth D. Lightbody, Mark Bustoros, Sabrin
+Tahri, Tarek H. Mouhieddine, Ting Wu, Lea Flechon, Shankara Anand, Jacalyn M.
+Rosenblatt,
+Jeffrey
+Zonder,
+James
+J.
+Vredenburgh,
+Adam
+Boruchov,
+Manisha
+Bhutani, Saad Z. Usmani, Jeffrey Matous, Andrew J. Yee, Andrzej Jakubowiak, Jacob
+Laubach, Salomon Manier, Omar Nadeem, Paul Richardson, Ashraf Z. Badros, Maria-
+Victoria Mateos, Lorenzo Trippa, Gad Getz, and Irene M. Ghobrial
+
+ 
+1 
+ 
+  Hepatobiliary disorders
+  Eye disorders
+  Skin and subcutaneous tissue disorders
+  Vascular disorders
+  Psychiatric disorders
+  Gastrointestinal disorders
+  General disorders and admin site conditions
+  Infections and infestations
+  Metabolism and nutrition disorders
+  Hematological toxicity
+Cholecystitis
+Cataract
+Rash maculo−papular
+Hypertension
+Insomnia
+Diarrhea
+Constipation
+Myocardial infarction
+Fatigue
+Upper respiratory infection
+Sepsis
+Lung infection
+Hypophosphatemia
+Hyperglycemia
+Diabetic ketoacidosis
+Thrombocytopenia
+Neutropenia
+Lymphocytosis
+Lymphocytopenia
+Cytopenia
+Anemia
+1 (2) 
+1 (2) 
+6 (12) 
+7 (14) 
+7 (14) 
+10 (20) 
+10 (20) 
+1 (2) 
+21 (41) 
+22 (43) 
+1 (2) 
+8 (16) 
+21 (41) 
+12 (24) 
+1 (2) 
+7 (14) 
+15 (29) 
+1 (2) 
+14 (27) 
+10 (20) 
+8 (16) 
+Category
+Description
+N=51 (%)
+0 (%)
+25 (49)
+1
+1
+4
+2
+4
+3
+6
+1
+8
+2
+9
+1
+1
+18
+3
+21
+1
+1
+3
+5
+2
+16
+3
+9
+2
+1
+1
+4
+2
+1
+2
+12
+1
+1
+3
+11
+8
+2
+7
+1
+Grade
+2 − Moderate
+3 − Severe
+4 − Life Threatening
+5 − Fatal
+AEs grade 2+ in 10% or more of patients and all grade 4+
+Overall survival
+0
+12
+24
+36
+48
+0
+50
+100
+Months from registration
+Percent surviving
+46
+45
+44
+40
+33
+Number at risk
+OS by arm
+0
+12
+24
+36
+48
+0
+50
+100
+Months from registration
+Percent surviving
+Elo/Len
+Elo/Len/Dex
+10
+10
+10
+10
+9
+36
+35
+34
+30
+24
+Number at risk
+Progression−free survival
+0
+12
+24
+36
+48
+0
+50
+100
+Months from registration
+Percent alive and
+free from progression
+46
+45
+44
+39
+33
+Number at risk
+PFS by arm
+0
+12
+24
+36
+48
+0
+50
+100
+Months from registration
+Percent alive and
+free from progression
+Elo/Len
+Elo/Len/Dex
+10
+10
+10
+10
+9
+36
+35
+34
+29
+24
+Number at risk
+A.
+B.
+C.
+D.
+E.
+
+ 
+2 
+Figure S1. E-PRISM trial design and results, related to Figure 1. (A) E-PRISM trial 
+schema. (B) CONSORT diagram of the E-PRISM study. (C) Treatment-related Grade 2 
+adverse events with at least 10% frequency and all Grade 3-5 events. (D) Kaplan-Meier 
+curves for Overall Survival (OS) and Progression-Free Survival (PFS) in the E-PRISM 
+cohort and by arm. (E) Kaplan-Meier curve of Progression-Free Survival (PFS) in patients 
+from the E-PRISM cohort who were classified as high-risk based on the “20-2-20” criteria.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+3 
+Table S1: Best overall response, R/N, % (90% CI), overall and by treatment arm (A: 
+EloLenDex, B: LenDex), related to Figure 1. 
+  
+Evaluation 
+  
+Outcome (90% CI) 
+ 
+sCR 
+CR 
+VGPR 
+PR 
+MR 
+ 
+CR or 
+better 
+VGPR or 
+better 
+PR or 
+better 
+Treatment arm 
+A:  
+ 
+1/36, 3% 
+(0 - 13%) 
+1/36, 3% 
+(0 - 13%) 
+10/36, 
+28%  
+(16 - 43%) 
+20/36, 56%  
+(41 - 70%) 
+4/36, 11%  
+(4 - 24%) 
+ 
+ 2/36, 6% 
+(1 - 16%) 
+12/36, 33%  
+(20 - 48%) 
+32/36, 89%  
+(76 - 96%) 
+B:  
+ 
+2/10, 20% 
+(4 - 51%) 
+0/10, 0% 
+(0 - 26%) 
+4/10, 40% 
+(15 - 70%) 
+2/10, 20% 
+(4 - 51%) 
+2/10, 20%  
+(4 - 51%) 
+  
+2/10, 
+20%  
+(4 - 51%) 
+6/10, 60% 
+(30 - 85%) 
+8/10, 80% 
+(49 - 96%) 
+A+B 
+3/46, 7% 
+(2 - 16%) 
+1/46, 2% 
+(0 - 10%) 
+14/46, 
+30%  
+(19 - 43%) 
+22/46, 48% 
+(35 - 61%) 
+6/46, 13% 
+(6 - 24%) 
+ 
+4/46, 9% 
+(3 - 19%) 
+18/46, 39% 
+(27 - 52%) 
+40/46, 87% 
+(76 - 94%) 
+ 
+
+ 
+4 
+ 
+ 
++
++
++++ ++ +
++
+++++++
++ +
++
++++++++ ++++
+++
+p = 0.15
+0.00
+0.25
+0.50
+0.75
+1.00
+0
+20
+40
+60
+Time (months)
+Progression−Free Survival
+Strata +
++
++
+High−risk
+Int−risk
+Low−risk
+15
+14
+9
+8
+6
+2
+13
+12
+12
+10
+8
+3
+18
+18
+18
+17
+11
+4
+Low−risk
+Int−risk
+High−risk
+10
+20
+30
+40
+50
+60
+Time (months)
+Strata
+Number at risk
++ +
++
++ + +
++ + +
++ + +
++ + +
++ + + +
+++++
++
++ + + +
++ + + +
++ +
+++++++++++++ +++++
++ +
++ +
++
+p = 0.32
+0.00
+0.25
+0.50
+0.75
+1.00
+0
+10
+20
+30
+40
+Time (months)
+Progression−Free Survival
+Strata +
++
++
+High−risk
+Int−risk
+Low−risk
+25
+24
+21
+15
+0
+34
+29
+23
+14
+0
+31
+29
+16
+9
+0
+Low−risk
+Int−risk
+High−risk
+0
+10
+20
+30
+40
+Time (months)
+Strata
+Number at risk
+A.
+B.
+E-PRISM
+ECOG
+
+ 
+5 
+Figure S2. Impact of “20-2-20” risk stratification on response to therapy, related to Figure 
+1. (A) Kaplan-Meier curve of Progression-Free Survival (PFS) in the E-PRISM cohort, 
+stratified based on the “20-2-20” criteria. (B) Kaplan-Meier curve of Progression-Free 
+Survival (PFS) in the Lenalidomide arm of the ECOG cohort, stratified based on the “20-
+2-20” criteria. 
+
+ 
+6 
+ 
+Technical replicates
+Two vials from the same sample, prepared with same technology
+Technology replicates
+Two vials from the same sample, prepared with different technology
+A.
+B.
+
+ 
+7 
+Figure S3. Reproducibility of cell type abundance quantification by single-cell RNA-
+sequencing, related to Figure 3. (A) Boxplots, violin plots, and scatter plots comparing 
+the inter-replicate Jensen-Shannon divergence of immune cell composition, compared to 
+cross-replicate estimates for technical replicates (i.e., two cell vials from the same sample 
+were thawed and libraries were prepared using the same technology), and technology 
+replicates (i.e., two cell vials from the same sample were thawed and libraries were 
+prepared using different technology for each replicate: 3’-end or 5’-end library 
+preparation). Violin outline width represents density. P-values were computed using 
+Wilcoxon’s rank-sum test. (Box: 1st quartile, median, 3rd quartile; whiskers: +/- 1.5*IQR). 
+(B) Scatterplots of cell type proportions as measured by single-cell RNA-sequencing (y-
+axis) or CyTOF (x-axis) performed on CD138- bone marrow immune cells (n=17). Dashed 
+black lines correspond to the diagonal (y=x); correlation coefficients and p-values were 
+computed with Pearson’s approach.  
+
+ 
+8 
+ 
+B.
+A.
+C.
+
+ 
+9 
+Figure S4. Alterations in BM immune cell composition in patients with HRSMM, related 
+to Figure 3. Boxplots and scatterplots of (A) T cell, (B) Monocyte, and (C) B cell 
+proportions in healthy individuals (NBM, n=22), patients with HRSMM in the E-PRISM 
+cohort (n=26), and non-trial patients with HRSMM (n=9). The horizontal black line 
+corresponds to the median, the box’s hinges correspond to the first and third quartiles, 
+the whiskers extend to the largest value within 1.5 times the interquartile range, and 
+outliers are visualized with dots past the whisker ends. P-values were computed with 
+Wilcoxon’s rank-sum test and corrected using the Benjamini-Hochberg approach. Cell 
+types with adjusted p-values < 0.1 have been annotated with brackets and their 
+corresponding adjusted p-value. 
+ 
+
+ 
+10 
+ 
+A.
+C.
+D.
+E.
+F.
+B.
+
+ 
+11 
+Figure S5. Immune cell classifier and gene expression signature analysis, related to 
+Figure 4. (A) Confusion matrix visualizing the performance of the disease classifier on a 
+testing set of BM samples from patients and HD (n=16). (B) Scatterplot of the number of 
+signatures extracted (K, x-axis) and the corresponding value of the objective function (y-
+axis) for each of the NMF runs (n=30). On the top axis, a histogram of the frequency of 
+runs supporting a given K is visualized in black (mode=26). On the right axis, a density 
+plot of the objective function values across all runs is visualized in yellow. The selected 
+run, which has the lowest objective among runs with K equal to the distribution’s mode 
+(i.e., K=26), is highlighted in red. (C) Heatmap of mean z-scored gene expression (GEX) 
+signature activity in cells assigned to those signatures through NMF. (D) Boxplots 
+visualizing the activity of gene expression signature GEX-6 across lymphocytes and 
+antigen-presenting cells. Cell types with significant activity are denoted in red. The 
+horizontal black line corresponds to the median, the box’s hinges correspond to the first 
+and third quartiles, the whiskers extend to the largest value within 1.5 times the 
+interquartile range, and outliers are visualized with dots past the whisker ends. (E) Forest 
+plot showing the effect of mean BL GEX-6 and GEX-13 signature activity in the BM on 
+PFS. Hazard ratio, 95% confidence interval, and p-value were computed using Cox 
+proportional hazards regression. (F) Boxplots, violin plots, and scatter plots comparing 
+the abundance of Cytokine+ CD14+ Monocytes and pDCs between patients classified as 
+reactive (n=12) or not (n=12). Violin outline width represents density. P-values were 
+computed with Wilcoxon’s rank-sum test. (Box: 1st quartile, median, 3rd quartile; 
+whiskers: +/- 1.5*IQR). 
+ 
+
+ 
+12 
+ 
+A.
+B.
+C.
+GZMK-high
+GZMK-low
+GZMK-high
+GZMK-low
+
+ 
+13 
+Figure S6. Granzyme K-expressing CD8+ TEM cells are associated with response to 
+therapy, related to Figure 5. (A) Boxplots, violin plots, and scatter plots comparing mean 
+GZMK expression levels in T cells of untreated patients (BL) compared to patients at 
+EOT. Violin outline width represents density. The p-value was computed using Wilcoxon’s 
+rank-sum test. (Box: 1st quartile, median, 3rd quartile; whiskers: +/- 1.5*IQR). (B) 
+Scatterplot of the proportion of CD8+ T cells that were positive for PD-1 (x-axis), and the 
+proportion of CD8+ T cells and were positive for both PD-1 and GZMK (y-axis) by CyTOF. 
+A regression line is visualized (in orange), together with its standard error (in light blue). 
+The dashed grey lines correspond to the diagonal (y=x) and the vertical distances from 
+the regression line to the diagonal. (C) Kaplan-Meier curve of progression-free survival in 
+the E-PRISM cohort, stratified based on the mean expression of GZMK across all T cells.  
+
+ 
+14 
+ 
+
+ 
+15 
+Figure S7. Possible homing of CD16+ monocytes to the patient BM, related to Figure 6. 
+Boxplot, violin plot, and scatter plot showing the abundance of CD16+ monocytes in 
+patient BM (BM), patient PB (PB), HD BM (NBM), and HD PB (NPB). Violin outline width 
+represents density. P-values were computed using a paired t-test for matched patient BM 
+and PB samples, and Wilcoxon’s rank-sum test for unmatched HD BM and PB samples. 
+(Box: 1st quartile, median, 3rd quartile; whiskers: +/- 1.5*IQR). 
+ 
+
+ 
+16 
+ 
+A.
+B.
+
+ 
+17 
+Figure S8. Cohort diagram and dataset integration, related to STAR Methods. (A) Cohort 
+diagram. (B) Scatterplot of immune cell composition principal components 1 (PC1, x axis) 
+and 2 (PC2, y axis) demonstrating the absence of an observable batch effect due to the 
+samples’ tissue of origin or library preparation technology (n=176). 
+ 

@@ -1,0 +1,2011 @@
+CLINICAL CANCER RESEARCH | CLINICAL TRIALS: TARGETED THERAPY
+Clinical Efﬁcacy and Whole-Exome Sequencing of Liquid
+Biopsies in a Phase IB/II Study of Bazedoxifene and
+Palbociclib in Advanced Hormone Receptor–Positive
+Breast Cancer
+Junko Tsuji1, Tianyu Li2, Albert Grinshpun3,4, Tim Coorens1, Douglas Russo2,5, Leilani Anderson3,6,
+Rebecca Rees3,6, Agostina Nardone3,5, Candace Patterson1, Niall J. Lennon1, Carrie Cibulskis1,
+Ignaty Leshchiner1, Nabihah Tayob2,4, Sara M. Tolaney3,4,6, Nadine Tung4,7, Donald P. McDonnell8,
+Ian E. Krop3,4,6, Eric P. Winer3,4,6, Chip Stewart1, Gad Getz1,4,9, and Rinath Jeselsohn3,4,5,6
+ABSTRACT
+◥
+Purpose: Sensitivity to endocrine therapy (ET) is critical for the
+clinical beneﬁt from the combination of palbociclib plus ET in
+hormone receptor–positive/HER2-negative (HRþ/HER2) advanced
+breast cancer. Bazedoxifene is a third-generation selective estrogen
+receptor (ER) modulator and selective ER degrader with activity in
+preclinical models of endocrine-resistant breast cancer, including
+models harboring ESR1 mutations. Clinical trials in healthy women
+showed that bazedoxifene is well tolerated.
+Patients and Methods: We conducted a phase Ib/II study
+of bazedoxifene plus palbociclib in patients with HRþ/HER2
+advanced breast cancer who progressed on prior ET (N ¼ 36;
+NCT02448771).
+Results: The study met its primary endpoint, with a clinical
+beneﬁt rate of 33.3%, and the safety proﬁle was consistent with what
+has previously been seen with palbociclib monotherapy. The medi-
+an progression-free survival (PFS) was 3.6 months [95% conﬁdence
+interval (CI), 2.0–7.2]. An activating PIK3CA mutation at baseline
+was associated with a shorter PFS (HR ¼ 4.4; 95% CI, 1.5–13; P ¼
+0.0026), but activating ESR1 mutations did not impact the PFS.
+Longitudinal
+plasma
+circulating
+tumor
+DNA
+whole-exome
+sequencing (WES; N ¼ 68 plasma samples) provided an overview
+of the tumor heterogeneity and the subclonal genetic evolution, and
+identiﬁed actionable mutations acquired during treatment.
+Conclusions: The combination of palbociclib and bazedoxifene
+has clinical efﬁcacy and an acceptable safety proﬁle in a heavily
+pretreated patient population with advanced HRþ/HER2 breast
+cancer. These results merit continued investigation of bazedoxifene
+in breast cancer.
+Introduction
+CDK4/6 inhibitors (CDK4/6i) with endocrine therapy (ET) are the
+standard of care in hormone receptor–positive/HER2-negative (HRþ/
+HER2) advanced breast cancer (1). The cyclin D1–dependent kinases
+CDK4 and CDK6 phosphorylate the pRB tumor suppressor, enabling
+progression through the cell cycle. Cyclin D1 is a key transcriptional
+target of the estrogen receptor (ER), and the convergence of the ER
+transcriptional network and cyclin D1-CDK4/6-Rb1 axis contributes
+to the synergistic activity of ET and CDK4/6i, such as palbociclib (2–4).
+This synergy is a key component of the clinical efﬁcacy of palbociclib,
+which has limited clinical beneﬁt as a single agent (5).
+The importance of the synergy between ET and palbociclib suggests
+that improved targeting of ER may enhance the efﬁcacy of regimens
+combining ET and palbociclib. This notion is supported by recent
+studies demonstrating that several mechanisms of resistance to ET are
+also mechanisms of resistance to the combination of ET and palbo-
+ciclib (6, 7). Importantly, in the randomized phase III PADA-1 trial,
+patients with HRþ/HER2 metastatic breast cancer with an ESR1-
+activating ligand-binding domain (LBD) mutation, which confers
+resistance to ET, had double the odds of disease progression while
+on treatment with an aromatase inhibitor (AI) plus palbociclib com-
+pared with patients with wild-type (WT) ESR1 (8). Furthermore, in the
+PADA-1 trial, patients with rising plasma circulating tumor DNA
+(ctDNA) ESR1 mutations had improved progression-free survival
+(PFS) when treatment was switched to fulvestrant and palbociclib
+versus continued treatment with an AI and palbociclib (9). In the
+PALOMA-3 trial, the Y537S ESR1 LBD mutation was enriched after
+the acquisition of resistance to fulvestrant alone or to the combi-
+nation of palbociclib plus fulvestrant in metastatic disease (10).
+Collectively, these results suggest that better targeting of ER can
+improve outcomes with the combination of a CDK4/6i and ET, and
+the Y537S ESR1 mutation has a role in the acquisition of resistance
+to fulvestrant and palbociclib.
+Bazedoxifene is a selective ER modulator (SERM)-selective ER
+degrader (SERD) hybrid (SSH; i.e., has ER degrader properties in
+addition to the SERM activity; refs. 11–13). Bazedoxifene has favorable
+1Broad Institute of MIT and Harvard, Cambridge, Massachusetts. 2Department
+of Data Science, Dana-Farber Cancer Institute, Boston, Massachusetts.
+3Department of Medical Oncology, Dana-Farber Cancer Institute, Boston,
+Massachusetts. 4Harvard Medical School, Boston, Massachusetts. 5Center
+for Functional Cancer Epigenetics, Dana-Farber Cancer Institute, Boston,
+Massachusetts. 6Breast Oncology Program, Dana-Farber Brigham Cancer
+Center, Boston, Massachusetts.
+7Department of Medical Oncology, Beth
+Israel Deaconess Medical Center, Boston, Massachusetts. 8Department of
+Pharmacology and Cancer Biology, Duke University School of Medicine,
+Durham, North Carolina. 9Massachusetts General Hospital Cancer Center
+and Department of Pathology, Massachusetts General Hospital, Boston,
+Massachusetts.
+Current address for E.P. Winer: Yale Cancer Center, New Haven, Connecticut.
+Corresponding Authors: Rinath Jeselsohn, Dana-Farber Cancer Institute, 450
+Brookline Avenue, Boston MA 02215 D728. Phone: 617-632-3800; E-mail:
+rinath_jeselsohn@dfci.harvard.edu; and Gad Getz, gadgetz@broadinstitute.org
+Clin Cancer Res 2022;28:5066–78
+doi: 10.1158/1078-0432.CCR-22-2305
+2022 American Association for Cancer Research
+AACRJournals.org | 5066
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+effects on bone and lipid metabolism without adversely affecting the
+uterus (14, 15). It is the only SERM that is approved in combination
+with conjugated estrogens for the prevention of postmenopausal
+symptoms and osteoporosis based on large randomized clinical
+trials in healthy postmenopausal women (16). Preclinical studies
+showed that bazedoxifene has antitumor activity in HRþ breast
+cancer models, including models of resistance to tamoxifen, resis-
+tance to estrogen deprivation, and models harboring a Y537S ER
+LBD mutation (11, 12, 17, 18). Preclinical studies showed that
+bazedoxifene had greater inhibitory effects on cell growth and ER-
+mediated transcription compared with tamoxifen or fulvestrant in
+the presence of the Y537S ESR1 mutations (13, 19). Computational
+predictions and, more recently, the crystal structure of mutant LBD
+bound to bazedoxifene showed that the Y537S-mutant LBD bound
+to bazedoxifene leads to the formation of a new S537-E380 hydro-
+gen bond that stabilizes helix 12 (H12) in the activating function-2
+(AF-2) cleft of the LBD, and this enables the inhibition of coacti-
+vator binding that results in transcriptional inhibition. In contrast,
+several other SERMS and SERDs, including tamoxifen and fulves-
+trant, were shown to have limited transcriptional inhibitory activity
+in the presence of the Y537S mutation. This is likely because H12 is
+pushed out from the AF-2 cleft of the Y537S-mutant LBD after
+interacting with tamoxifen or fulvestrant, and this allows coacti-
+vator binding and consequently a decreased response to these
+drugs (13, 19).
+Taken together, based on the preclinical data of bazedoxifene in
+endocrine-resistant HRþ breast cancer models, the safety proﬁle of
+bazedoxifene in randomized clinical trials, and the rationale of com-
+bining palbociclib with next-generation ETs, we conducted the ﬁrst
+clinical trial with the combination of palbociclib and bazedoxifene.
+This was a phase Ib/II study designed to investigate the efﬁcacy and
+safety of palbociclib with bazedoxifene for the treatment of patients
+with HRþ/HER2 advanced breast cancer who had progressed on
+prior ET. In addition, we performed serial ctDNA whole-exome
+sequencing (WES) to study genetic mechanisms of resistance and the
+tumor clonal architecture and evolution during treatment with pal-
+bociclib and bazedoxifene.
+Patients and Methods
+Patient population
+We enrolled female or male patients ages 18 years or older with
+histologically conﬁrmed invasive breast cancer that was metastatic or
+unresectable locally advanced disease. Primary or invasive disease was
+conﬁrmed to be HRþ (ER >10% and/or progesterone receptor>10%)
+and HER2 according the American Society of Clinical Oncology/
+College of Pathology guidelines (20) [deﬁned as 0–1þ by IHC or FISH-
+negative (HER2 copy number < 6 and HER2/CEP17 ratio < 2.0)].
+Measurable disease was required per RECIST 1.1 (21). Bone-only
+disease was allowed if there was evidence of lytic lesions (22). Pro-
+gressive disease on prior ET was required; this was deﬁned as relapse
+while on adjuvant ET or within 1 year of completion of adjuvant ET, or
+progression through at least one line of ET in metastatic or locally
+advanced breast cancer. Postmenopausal and premenopausal women
+who have been on a GnRH agonist were eligible. Prior treatment with
+up to two lines of chemotherapy in advanced disease was allowed. The
+protocol was amended to allow up to one line of prior chemotherapy
+when the 18th patient was enrolled. There was no limit to the number
+of prior endocrine therapies.
+Study design and treatment
+The study was a phase IB/II, single-arm, single-institution, and
+open-label study. The objectives were to evaluate the safety and
+antitumor activity of the combination of palbociclib and bazedoxifene.
+The primary endpoint was clinical beneﬁt rate (CBR), deﬁned as the
+proportion of patients with complete response (CR), partial response
+(PR), or stable disease (SD) at week 24 [per RECIST version 1.1 (21)]. A
+CBR of 20% or less would not be of clinical interest based on a
+conservative estimate of the percentage of patients who progressed on
+adjuvant ET or progressed on ET or palbociclib as a single agent in
+metastatic disease (5). Secondary endpoints included objective
+response rate, PFS, overall survival (OS), and safety. Objectives were
+determined in the intention-to-treat (ITT) population and the evalu-
+able cohort who reached the ﬁrst restaging timepoint.
+All patients received bazedoxifene 40 mg orally once daily on days
+1–28 and palbociclib 125 mg orally once daily on days 1–21 of a 28-day
+cycle. The bazedoxifene dose of 40 mg was based on published safety
+data for this dose (23). The ﬁrst 6 patients enrolled completed a safety
+run-in, and accrual was paused for safety assessment after these
+patients completed at least one treatment cycle. Response and pro-
+gression were evaluated using RECIST 1.1 guidelines (21). For patients
+with bone-only disease, evaluation was done per MD Anderson bone
+tumor response criteria (22). After a baseline scan, tumor response was
+assessed every 8 weeks, with a PR or CR requiring conﬁrmation within
+4–6 weeks. After cycle 6, tumor measurements were performed every
+12 weeks. Safety was evaluated according to NCI-CTCAE version 4.0.
+Exploratory translational objectives were to investigate the efﬁcacy of
+the combination of bazedoxifene and palbociclib in relation to geno-
+mic ﬁndings in ctDNA.
+Statistical analyses
+The study followed a Simon “optimal” two-stage design. On the
+basis of the published activity of palbociclib as a single agent, a CBR of
+20% or less was considered not to be of clinical interest and was the null
+hypothesis, and a CBR of ≥30% was considered worthy of further
+investigation. The sample size of 37 patients was chosen to have 90%
+power to declare the combination effective at this rate while controlling
+for no more than 10% one-sided type I error under the null hypothesis.
+The ﬁrst stage of the study included 17 evaluable patients, and accrual
+was continued to the second stage after the conﬁrmation that at least 4
+patients met the primary endpoint.
+CBR was reported as a proportion and 95% conﬁdence interval (CI)
+accounting for the two-stage design. Associations between CBR and
+clinical and/or correlative factors were assessed using the Wilcoxon
+test for continuous variables and Fisher exact test for categorical
+variables.
+Median PFS in months was estimated using the Kaplan–Meier
+estimation method and compared between clinical and/or correlative
+factors via log-rank test. HRs were obtained using Cox proportional
+Translational Relevance
+In this clinical trial, we show that bazedoxifene plus palbociclib
+has clinical efﬁcacy in patients with advanced hormone receptor–
+positive breast cancer and this combination is well tolerated.
+Pathogenic PIK3CA mutations are a candidate biomarker of
+resistance to bazedoxifene plus palbociclib. In addition, we dem-
+onstrate the utility of circulating tumor DNA whole-exome
+sequencing and the signiﬁcance of determining the subclonal
+evolution in individual patients.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5067
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+hazards models. All tests were two sided with a type I error of 0.05. All
+analyses were carried out via SAS, V9.4 (SAS Institute) and R, V4.0.2.
+Sample collection and processing
+Whole venous blood (6–10 mL) was collected from patients
+into ethylenediaminetetraacetic acid vacutainer tubes (Becton and
+Dickinson). Blood was processed within 2 hours of collection. Whole
+blood was centrifuged for 10 minutes at 1,200  g and the plasma
+supernatant was cleared by centrifugation for 10 minutes at 3,000  g.
+Cell-free DNA (cfDNA was extracted from 2 to 7 mL of plasma
+and eluted into 40–80 mL of resuspension buffer using the Qiagen
+Circulating DNA kit on the QIAsymphony liquid handling system.
+Germline DNA (gDNA) was extracted using the Qiasymphony DSP
+DNA midi kit on the QIAsymphony liquid handling system. Quan-
+tiﬁcation of extracted cfDNA and gDNA was performed using the
+PicoGreen (Life Technologies) assay on a Hamilton STAR-line liquid
+handling system. Library preparation was performed using a com-
+mercially available kit (KAPA HyperPrep Kit with Library Ampliﬁ-
+cation product KK8504) and IDT’s duplex UMI adapters. Unique
+8-base dual index sequences embedded within the p5 and p7 primers
+(purchased from IDT) were added during PCR. Enzymatic clean-up
+was performed using Beckman Coultier AMPure XP beads. Samples
+were sequenced using Illumina sequencing technology.
+ctDNA analysis
+Sequenced reads in both ultra-low passage whole-genome sequenc-
+ing (ULP-WGS) and WES libraries were mapped to the human
+reference genome (hg19) with BWA-MEM (version 0.17.7; RRID:
+SCR_010910). PCR duplicates were ﬂagged by MarkDuplicates in
+Picard tool (version 2.26.10; RRID: SCR_006525). ichorCNA (version
+0.1; ref. 24) was run for estimating tumor purity estimation. We
+applied the hg19 panel of normals provided in the ichorCNA github
+repo (inst/extdata/HD_ULP_PoN_1Mb_median _normAutosome_-
+mapScoreFiltered_median.rds).
+SNV/indel detection
+Somatic mutations on the exome data were called by The Cancer
+Genome Analysis (TCGA) WES Characterization Pipeline (the CGA
+pipeline). The CGA pipeline ﬁrst runs deTiN (25) and ContEst (ref. 26;
+RRID: SCR_000595) for estimating potential tumor-in-normal con-
+tamination and cross-patient contamination, and calls single-
+nucleotide variants (SNV) and indels with MuTect (ref. 27; RRID:
+SCR_000559) and Strelka (ref. 28; RRID: SCR_005109), respectively.
+Out of the 68 exome samples, two samples were processed as tumor-
+only due to lack of the matched normals. For the tumor-only runs,
+CalculateContamination
+in
+GATK4
+(version
+4.0.5.1;
+RRID:
+SCR_001876) was used for estimating the cross-patient contamina-
+tion. For the indel calling step in the tumor-only runs, an unmatched
+normal sample was used for Strelka, which requires a matched normal
+input. Potential artifacts were ﬁltered with two panels of normals
+(created from 298 normal samples and 8,334 TCGA normal samples,
+respectively), the BLAT (RRID: SCR_011919) read-realignment ﬁlter,
+and the read orientation bias ﬁlters. The mutations in the tumor-only
+runs were further ﬁltered if the called mutations overlapped with the
+germline mutations with the population allele frequencies ≥5% in the
+gnomAD database (ref. 29; RRID: SCR_014964). Mutations were
+denoted as pathogenic or likely pathogenic based on OncoKB (ref. 30;
+RRID: SCR_014782).
+Mutational signatures were extracted using two algorithms: (i)
+hierarchical Dirichlet process (HDP; https://github.com/nicolaro
+berts/hdp) based on the Bayesian hierarchical Dirichlet process, and
+(ii) SignatureAnalyzer based on Bayesian non-negative matrix factor-
+ization (31). The Gibbs sampler was run with 20,000 burn-in iterations
+(parameter “burnin”). With a spacing of 200 iterations (parameter
+“space”), 100 iterations were collected (parameter “n”). After each
+Gibbs sampling iteration, three iterations of concentration parameter
+sampling were performed (parameter “cpiter”). To deconvolute com-
+posite signatures and to equate obtained HDP signatures to reference
+signatures, we used an expectation-maximization algorithm to decon-
+struct these signatures into reference constituents (31). Because of the
+low burden of indels, we excluded a mismatch repair deﬁciency
+signature (SBS6) and homologous repair deﬁciency signature (SBS3)
+from the candidate list using SigFit (32).
+Copy-number alterations in the WES samples were detected
+by GATK-CNV (version 4.1.2.0; RRID: SCR_001876) with -num-
+ber-of-changepoints-penalty-factor ¼ 2.0. As the postﬁltering steps, a
+panel of normals created from 298 normal samples was used,
+and potential germline copy-number alterations were discarded. The
+allelic copy-number alteration outputs from ModelSegments in
+GATK-CNV (version 4.1.2.0) were used for estimating tumor purity
+with ABSOLUTE (ref. 33; RRID: SCR_005198). The estimated tumor
+purity between the exomes (ABSOLUTE) and the ULP-WGS data
+(ichorCNA) was highly correlated (Pearson correlation coefﬁcient ¼
+0.98). Tumor mutation burden (TMB) was calculated as the number of
+coding mutations per Mb of covered exons.
+The genomic sites of detected mutations across serial WES in a
+patient were force-called by investigating the number of reference and
+alternate bases at the sites. Somatic copy-number alterations (SCNA)
+in the serial WES were also grouped across the timepoints. Phylo-
+gicNDT was run with 500 iterations of Markov chain Monte Carlo
+Gibbs sampler on the force-called mutations and SCNAs to assign
+mutations to clonal clusters for estimating the phylogeny (34).
+Compliance with ethical standards
+The study was conducted in accordance with the International
+Conference on Harmonization Good Clinical Practice Standards and
+the Declaration of Helsinki. Institutional review board approval was
+obtained at Dana-Farber/Harvard Cancer Center (DF/HCC). The
+study was registered in ClinicalTrials.gov (NCT02448771). The DF/
+HCC Data and Safety Monitoring Committee, which is composed of
+clinical specialists with experience in oncology and who had no direct
+relationship with the study, reviewed and monitored toxicity and
+accrual data from the study. Participants provided written informed
+consent prior to the performance of any protocol speciﬁc procedures
+or assessments. The study was an investigator-initiated trial funded by
+Pﬁzer. Palbociclib and bazedoxifene were supplied by the manufac-
+turer (Pﬁzer). The funder had no role in data collection, data analysis,
+or data interpretation.
+Data and materials availability
+TCGA pan-cancer data are available through a data portal
+(https://gdc.cancer.gov/node/905/; https://gdc.cancer.gov/about-data/
+publications/pancanatlas). The WES data from this study was depos-
+ited in dbGap accession number phs002802.v1.p1.
+Results
+Patients
+Between July 2015 and July 2017, we enrolled 36 patients with
+advanced HRþ/HER2 breast cancer (34 females and 2 males; Sup-
+plementary Fig. S1). The study met its primary endpoint after enrolling
+36 patients. Patient demographics and baseline characteristics are
+in Table 1 and Supplementary Table S1 (Supplementary Table S1
+Tsuji et al.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5068
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+includes the study representative information). All patients had ERþ,
+HER2 disease. The median age was 59.5 years (range, 37–79 years).
+Most of the patients had liver metastases (64%, 23/36) and 33% of
+patients (12/36) had lung metastases. Only 6% of patients (2/36) had
+bone-only disease. All patients had disease progression while on ET or
+disease recurrence within 1 year of completion of adjuvant ET. Most
+patients were heavily pretreated, with 50% of patients (18/36) having
+received two or more prior lines of ET and 52% of patients (19/36)
+having received up to two lines of chemotherapy in advanced disease.
+Nearly all patients (28/36) had disease progression while on treatment
+with an AI or disease recurrence within 1 year of completion of
+adjuvant treatment with an AI. There were 7 (19%) patients who
+received prior treatment with fulvestrant and 4 (11%) patients who
+received prior treatment with everolimus.
+Treatment administration and safety
+At the data cutoff in August 2020, with a median follow-up of
+29.6 months, all patients had discontinued palbociclib and bazedox-
+ifene treatment. A median of 4 cycles were given per patient (range, 1–
+34). The ﬁrst 6 patients who were included in the safety run-in did not
+experience any dose-limiting toxicities (DLT) during their ﬁrst treat-
+ment cycle. Thus, all patients were given 125 mg palbociclib for the
+remainder of the study. Neutropenia (61%) and fatigue (22%) were the
+most common adverse events associated with study treatment. A total
+of 16 patients (44%) experienced grade 3 neutropenia, and 1 patient
+(3%) experienced grade 4 neutropenia (Table 2; Supplementary
+Table S2). There were no deaths attributed to the study treatment.
+Most patients discontinued treatment due to disease progression
+(83%). Only 1 patient (3%) discontinued treatment due to proto-
+col-speciﬁed unacceptable toxicity (neutropenia). Palbociclib dose
+reductions were required in 14 (38.9%) patients due to toxicity. Doses
+were held in 23 (63.9%) patients for a median of 10 days (range, 1–
+45 days). There were no bazedoxifene dose reductions, and bazedox-
+ifene doses were held in 13 (36.1%) patients for a median of 12 days
+(range, 5–22 days; Supplementary Tables S3 and S4).
+Efﬁcacy
+Of the 36 patients, 1 patient was unevaluable (this patient developed
+grade 4 neutropenia during the ﬁrst cycle) and was included in the ITT
+analysis (Table 3). In the ﬁrst stage of the study, 17 evaluable patients
+Table 1. Baseline characteristics of study participants in the
+intention-to-treat patient population.
+Characteristic
+Number of
+patients (%)
+Sex
+Male
+2 (6%)
+Female
+34 (94%)
+ECOG performance status
+00
+33 (92%)
+01
+3 (8%)
+Estrogen receptor status
+Low positive
+1 (3%)
+Positive (>10%)
+35 (97%)
+Progesterone receptor status
+Unknown
+1 (3%)
+Low positive
+1 (3%)
+Positive (>10%)
+22 (61%)
+Negative (≤10%)
+12 (33%)
+HER2 status
+Negative
+36 (100%)
+Sites of disease
+Lymph nodes
+13 (36%)
+Breast and chest wall
+14 (39%)
+Lung
+12 (33%)
+Liver
+23 (64%)
+Bone
+26 (72%)
+Other
+7 (19%)
+Bone only
+Yes
+2 (6%)
+No
+34 (94%)
+Visceral disease
+Yes
+29 (81%)
+No
+7 (19%)
+Prior lines of hormonal treatment for metastatic breast cancer
+0
+6 (17%)
+1
+12 (33%)
+2
+7 (19%)
+3
+8 (22%)
+4
+2 (6%)
+5
+1 (3%)
+Prior lines of chemotherapy for metastatic breast cancer
+0
+17 (47%)
+1
+16 (44%)
+2
+3 (8%)
+Everolimus for metastatic breast cancer
+Yes
+4 (11%)
+No
+32 (89%)
+Abbreviation: ECOG, Eastern Cooperative Oncology Group.
+Table 2. Adverse events related to study treatment in at least 5%
+of patients.
+Adverse event
+All grades (%)
+Grade ≥3 (%)
+Neutrophil count decreased
+22 (61.1%)
+17 (47.2%)
+Fatigue
+8 (22.2%)
+0 (0%)
+Anemia
+3 (8.3%)
+1 (2.8%)
+Mucositis oral
+3 (8.3%)
+0 (0%%)
+White blood cell decreased
+3 (8.3%)
+1 (2.8%)
+Gastroesophageal reﬂux disease
+2 (5.6%)
+0 (0%)
+Thrombocytopenia
+2 (5.6%)
+1 (2.8%)
+Table 3. Summary of efﬁcacy in ITT and evaluable patients.
+Response
+Intention-to-treat
+cohort (n ¼ 36)
+Evaluable cohort
+(n ¼ 35)
+Best overall response n (%)
+Complete response (CR)
+0 (0%)
+0 (0%)
+Partial response (PR)
+Total
+4 (11.1%)
+4 (11.4%)
+Conﬁrmed
+1 (2.8%)
+1 (2.9%)
+Unconﬁrmed
+3 (8.3%)
+3 (8.6%)
+Stable disease (SD)
+20a (55.6%)
+20 (57.1%)
+SD ≥24 weeks
+11 (30.6%)
+11 (31.4%)
+Progressive disease
+14 (38.9%)
+14 (40%)
+Clinical beneﬁt rate (CR þ PR
+þ SD ≥24 weeks)
+12 (33.3%)
+12 (34.3%)
+Response duration ≥
+12 months
+4 (11.1%)
+4 (11.5%)
+Median PFS, months (95% CI)
+3.6 (2–7.2)
+Median OS, months (95% CI)
+26.5 (20.7-NA)
+Abbreviations: CI, conﬁdence interval; OS, overall survival; PFS, progression-free
+survival.
+aIncludes the 3 unconﬁrmed PR patients. They all had SD ≥24weeks.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5069
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+were enrolled; 5 of these patients achieved a clinical beneﬁt (SD ≥
+24 weeks). The study continued to the second stage and accrued 19
+additional patients. Accounting for the two-stage design, the best
+overall response in the ITT analysis was SD in 20 patients (20/36,
+55.6%), progressive disease in 14 patients (14/36, 38.9%) and a
+conﬁrmed PR in 1 patient. Among the patients with SD, 3 patients
+had unconﬁrmed PR (Fig. 1A). The CBR at ≥24 weeks was 33.3% (12/
+36; 95% CI, 9.8–56.4) accounting for two-stage design. This exceeded
+the predetermined boundary of at least 11 patients experiencing
+clinical beneﬁt and therefore met the primary endpoint. These includ-
+ed 1 patient with a conﬁrmed PR and 11 patients with SD ≥24 weeks.
+When including only evaluable patients, the CBR at ≥24 weeks was
+34.3% (12/35; 95% CI, 20.7–58.9) accounting for two-stage design. Of
+the patients who achieved a clinical beneﬁt at ≥24 weeks, 4 patients (4/
+36, 11.1%) had an exceptional clinical beneﬁt with disease stability for
+≥12 months (Fig. 1A and B; Table 3). The median PFS was 3.6 months
+(95% CI, 2.0–7.2; Fig. 1C), and the median OS was 26.5 months (95%
+CI, 20.7–notreached; Fig. 1D). Therewas no association between prior
+treatment regimens in the metastatic setting and the clinical beneﬁt,
+including; prior tamoxifen treatment [prior tamoxifen, 30.8% (8/26)
+vs. no prior tamoxifen, 40% (4/10); P ¼ 0.7, Fisher exact test for all
+comparisons in this section], prior fulvestrant [prior fulvestrant, 28.6%
+(2/7) vs. no prior fulvestrant, 34.5% (10/29); P ¼ 0.8], or prior
+chemotherapy treatment [prior chemotherapy, 36.8% (7/19) vs. no
+prior chemotherapy, 29.4% (5/17); P ¼ 0.7]. There was also no
+association between the number of prior treatment regimens in the
+metastatic setting and clinical beneﬁt [0–1 lines of treatment, 33.3% (3/
+9) vs. ≥2 lines of treatment, 33.3% (9/27); P ¼ 1.0]. However, liver
+metastases versus no liver metastases [17.4% (4/23) vs. 61.5% (8/13),
+respectively], or three to four organs with metastatic involvement
+versus two organs versus one organ with metastatic involvement
+[14.2% (3/21) vs. 60% (6/10) vs. 60% (3/5), respectively] were asso-
+ciated with decreased clinical beneﬁt (P ¼ 0.01).
+Cell-free DNA tumor fraction dynamics
+Plasma samples were collected at baseline (n ¼ 36), day 1 of cycle 2
+(C2D1; n ¼ 33) and at the time of disease progression at the end of
+treatment (EOT; n ¼ 33) to identify genetic alterations associated with
+primary or acquired resistance to bazedoxifene and palbociclib (Sup-
+plementary Fig. S2A and S2B). All samples (n ¼ 102) were subjected to
+ULP-WGS (mean coverage 0.19–0.57X) to determine cell-free DNA
+(cfDNA) tumor fraction (TF; see Patients and Methods) for the
+selection of samples with detectable ctDNA for subsequent WES, and
+to determine the relationship between the TF and clinical outcomes
+(Supplementary Fig. S3A). The median tumor fraction in all samples
+was 0.04 [range (0–0.85)]. Baseline cfDNA TF was higher in patients
+with liver metastases [median ¼ 0.07 (0–0.85)] versus patients without
+liver metastases [median ¼ 0.04 (0–0.3)] (Wilcoxon P ¼ 0.01; Sup-
+plementary Fig. S3B) and patients who had three to four organs
+involved with metastases [median ¼ 0.06 (0–0.85)] versus one
+organ involved with metastases [median ¼ 0.03 (0–0.04)] (Wilcoxon
+P ¼ 0.03). Moreover, baseline cfDNA TF correlated with PFS; patients
+with a high baseline cfDNA TF (≥0.1) had a lower PFS (n ¼ 12, median
+PFS ¼ 1.94 months) compared with patients with a low cfDNA TF
+(<0.1; n ¼ 24, median PFS ¼ 5.56 months; HR ¼ 2.29; 95% CI, 1.08–
+4.89; P ¼ 0.027, log-rank test; Supplementary Fig. S3C). There was no
+signiﬁcant association between the changes incfDNA TF after 1 month
+of treatment and PFS [ratio between C2D1/baseline TF > 1 (n ¼ 12),
+median PFS ¼ 2.04 months; vs. C2D1/baseline TF ≤1 (n ¼ 19), median
+PFS ¼ 3.67 months, HR ¼ 0.9; 95% CI, 0.4–1.9; P ¼ 0.71] (Supple-
+mentary Fig. S3D). Comparison of the TF at C2D1 and the EOT
+showed an increase in TF in most cases (58%, 18/31). The TF was
+unchanged in 7 patients (23%) and in 6 patients (19%) there was a
+decrease at the EOT. In most of the cases in which the TF decreased at
+the EOT, the absolute change was marginal and the TF either remained
+low (in the range of 0.03) or very high (above 0.45) except for one
+patient (patient 25) who had a decrease in the TF from 0.6 at C2D1 to
+0.045 at the EOT. This patient had an increase in the size of the liver
+metastases but a mixed response of bone metastases with evidence of
+decreased ﬂuorodeoxyglucose uptake in several bone metastases based
+on a PET-CT scan. Thus, although the early cfDNA TF dynamics were
+not indicative of PFS, the cfDNA TF was overall reﬂective of metastatic
+burden and in most cases of disease progression.
+Genomic alterations and clinical beneﬁt
+Samples with detectable ctDNA (cfDNA TF > 0.03) were subjected
+to WES (mean target coverage ¼ 90–461X, median ¼ 193X). WES was
+performed in 68 samples [baseline 28/36 (78%), C2D1 19/34 (56%)
+and EOT 23/32 (78%)] (Mutation Annotation Format in Supplemen-
+tary table S5). These included 20 matched pairs of baseline and EOT
+samples. Sample-to-sample correlation of the somatic SNVs (SSNV) in
+the 68 samples showed that the matched samples from an individual
+patient had the strongest correlation in nearly all cases except for two
+samples that had a low number of mutations (Supplementary
+Fig. S4A). As expected, most of the SSNVs in exonic regions were
+unique to a single patient (4,205 of 4,227 nonsilent SSNVs, 99.5%;
+3,190 of 3,211 silent SSNVs, 99.3%). The most frequent SSNVs were
+oncogenic hotspot mutations in ESR1 and PIK3CA (Supplementary
+Fig. S4B).
+We next focused on known cancer-related genes (list of genes and
+the detected amino acid changes in Supplementary Table S6). At
+baseline, the most frequent mutations in the cancer-related genes
+included pathogenic or likely-pathogenic mutations in ESR1 (Fig. 2B),
+pathogenic PIK3CA mutations (Fig. 2D), EPAS1 (none of these are
+known to be pathogenic) and TP53 mutations (Supplementary
+Table S6). Other baseline pathogenic or likely pathogenic mutations
+identiﬁed in at least 2 patients included AKT1 and KMT2C mutations
+(Figs. 2A–C; Supplementary Table S6). Pathogenic ESR1 mutations
+were found in 32% (9/28) of baseline samples, with the missense
+mutations Y537 and D538 accounting for the majority of the ESR1
+mutations (Fig. 2B). ESR1 mutations were detected in patients who
+had or did not have a clinical beneﬁt at ≥24 weeks (Fig. 2A), and there
+was no association between the ESR1 mutations and PFS [WT median
+PFS ¼ 3.6 months (n ¼ 19), mutant median PFS ¼ 2.0 months (n ¼ 9);
+HR ¼ 1.0; 95% CI, 0.4–2.4; P ¼ 0.94, log-rank test for all comparisons
+in this section] (Fig. 2D). In contrast, baseline hotspot PIK3CA
+mutations were not detected in patients who had a clinical beneﬁt at
+≥24 weeks (Fig. 2A), and patients with a baseline PIK3CA mutation
+had a lower PFS compared with patients with WT PIK3CA at baseline
+[WT median PFS ¼ 3.9 months (n ¼ 22), mutant median PFS ¼
+1.8 months (n ¼ 6); HR ¼ 0.2; 95% CI, 0.06–0.6, P ¼ 0.0019] (Fig. 2E).
+This difference remained signiﬁcant in a multivariate analysis correct-
+ing for signiﬁcant clinical variables including the presence of liver
+metastases versus no liver metastases and 1 versus three to four organs
+with metastases (mutant vs. WT HR ¼ 3.82; 95% CI, 1.18–12.33; P ¼
+0.025; Supplementary Table S7). In addition, patients who had a
+baseline truncating mutation, including mostly pathogenic or likely
+pathogenic mutations in tumor suppressor genes (TP53, MEN1, RB1,
+CDKN1B, NF1, TP53, BP1, TP63, SMAD2, SMAD4, ARID1A, and
+KMT2C), had a worse PFS in a univariate analysis [no truncating
+mutation PFS ¼ 3.8 months (n ¼ 21), truncating mutation median PFS
+¼ 1.7 months (n ¼ 7), HR ¼ 0.3; 95% CI, 0.1–0.7; P ¼ 0.006] and in a
+Tsuji et al.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5070
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+A
+B
+Best response
+50
+0
+50
+12 11 5
+4 21 20 17 31 2 13 24 6 19 27 14 16 23 30 9
+3 25 35 22 18 8 15 26 10 29 28 34 32 36 33
+% Change of target lesion
+Progression-free survival (%)
+Overall survival (%)
+Months
+Months
+1.00
+1.00
+0.75
+0.75
+PR
+SD
+PD
+0.50
+0.50
+0.25
+0.25
+0.00
+0.00
+0
+0
+5
+5
+15
+15
+25
+25
+35
+35
+10
+10
+20
+20
+30
+30
+40
+C
+D
+Median 3.6 M
+Median 26.5 M
+Fulv
+Chemo
+No. txs
+0
+4
+3
+1
+0
+2
+5
+2
+2
+2
+4
+0
+7
+0
+2
+3
+3
+2
+2
+1
+2
+2
+4
+2
+1
+1
+2
+2
+1
+3
+3
+3
+2
+4
+No. mets
+liver mets
+4
+3
+1
+1
+1
+2
+2
+2
+ 2
+2
+3
+1
+2
+3
+3
+2
+4
+3
+2
+4
+3
+3
+2
+3
+1
+3
+4
+4
+3
+3
+3
+2
+3
+3
+†
+‡
+1
+5
+19
+20
+21
+2
+12
+23
+31
+4
+22
+13
+17
+11
+10
+6
+24
+25
+14
+27
+16
+36
+9
+29
+8
+30
+18
+33
+15
+34
+26
+28
+35
+3
+32
+0
+5
+10
+15
+20
+25
+30
+35
+Time on treatment (months)
+Best response
+PR
+SD
+PD
+Symbol key
+Confirmed PR
+Unconfirmed PR
+4
+5
+Figure 1.
+Efﬁcacy of bazedoxifene and palbociclib in evaluable patients. A, Swimmer plot of 34 patients evaluable for time to event endpoints. Vertical dotted line indicates
+6 months. The left panel denotes patients who have liver metastases (liver mets) in red, the number of organs involved with metastases (number of mets), number of
+lines of treatment in the metastatic setting (patients who had not received treatment in metastatic disease developed disease recurrence during or within 1 year of
+adjuvant ET), prior fulvestrant (Fulv) treatment indicated in green, and prior chemotherapy treatment indicated in blue (Chemo). †Patient 28 stayed on treatment for
+18 cycles despite the PD assessment after cycle 2. zPatient 29 stayed on treatment for an additional 14 days after the last disease evaluation. Neither patient 28 nor
+patient 29 is considered as having clinical beneﬁt. B, Waterfall plot with best percentage of tumor changes from baseline sum of the longest diameter in target lesions
+of the 34 evaluable patients. Response is based on RECIST 1.1. Horizontal dotted line indicates 30% change of targeted lesion. C, Kaplan–Meier curve representing
+PFS for ITT patient population (n ¼ 36). Median PFS, 3.6 months; 95% CI: 2–7.2 months. D, Kaplan–Meier curve representing OS for the ITT patient population (n ¼ 36).
+Median OS, 26.5 months (95% lower conﬁdence limit, 20.7 months). PD, progressive disease; PR, partial response; SD, stable disease.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5071
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+P2_Baseline
+P20_Baseline
+P11_Baseline
+P21_Baseline
+P17_Baseline
+P7_Baseline
+P27_Baseline
+P10_Baseline
+P31_Baseline
+P4_Baseline
+P19_Baseline
+P36_Baseline
+P14_Baseline
+P24_Baseline
+P29_Baseline
+P1_Baseline
+P25_Baseline
+P6_Baseline
+P5_Baseline
+P22_Baseline
+P3_Baseline
+P18_Baseline
+P15_Baseline
+P30_Baseline
+P9_Baseline
+P35_Baseline
+P8_Baseline
+P26_Baseline
+ESR1
+PIK3CA
+KMT2C
+AKT3
+32%
+21%
+7%
+7%
+TP53
+11%
+PTEN
+AKT1
+NF1
+7%
+11%
+7%
+GATA3
+7%
+EGFR
+7%
+KDM5C
+7%
+SOS1
+7%
+0
+2
+4
+6
+8
+Alterations
+Missense
+Splice site
+Nonsense
+Frame shift
+In frame indel
+Tumor fraction
+High
+Low
+Ploidy
+2
+2.5
+3
+3.5
+4
+Clinical benefit
+Yes
+No
+PIK3CA mutation at baseline
+P2_EOT
+P20_EOT
+P11_EOT
+P17_EOT
+P27_EOT
+P10_EOT
+P12_EOT
+P31_EOT
+P23_EOT
+P4_EOT
+P19_EOT
+P14_EOT
+P24_EOT
+P25_EOT
+P6_EOT
+P5_EOT
+P22_EOT
+P3_EOT
+P30_EOT
+P9_EOT
+P8_EOT
+P16_EOT
+ESR1
+PIK3CA
+PTEN
+TP53
+GATA3
+CDH1
+MAP3K1
+INSR
+25%
+29%
+13%
+8%
+8%
+13%
+8%
+8%
+ERBB2
+8%
+0
+2
+4
+6
+Alterations
+Missense
+Splice site
+Nonsense
+Frame shift
+Tumor fraction
+High
+Low
+Ploidy
+2
+2.5
+3
+3.5
+4
+Clinical benefit
+Yes
+No
+Truncating mutation at baseline
+ESR1 mutation at baseline
+p85
+C2
+Helical
+Kinase
+RBD
+AF1
+DBD
+Hinge
+LBD/AF2
+1
+200
+400
+600
+800
+1,068
+1,000
+400
+A
+B
+C
+D
+E
+F
+G
+1
+100
+200
+300
+500
+595
+D538G
+Y537S(2)
+Y537C(1)
+Y537C(1)
+L536R
+E380Q
+G415VL469V
+G1049R
+H1047R
+N1044K
+E545K
+E542K
+N345K
+H
+EPAS1
+14%
+0
+10
+20
+30
+0
+10
+20
+30
+Baseline  (%)
+EOT (%)
+ESR1
+PIK3CA
+CDH1
+EPAS1
+r = 0.71
+P = 0.01
+WT median PFS = 3.6M
+mutant median PFS = 2M
+WT median PFS = 3.9M
+mutant median PFS = 1.8M
+WT median PFS = 3.8M
+mutant median PFS = 1.7M
+Mutant
+WT
+WT
+Mutant
+WT
+mutant
+HR = 1 (95% CI 0.42.4), P = 0.94 
+HR = 0.2 (95% CI 0.060.6), P = 0.0019 
+HR = 0.3 (95% CI 0.10.7), P = 0.0059 
+* * * * * *
+* *
+*
+*
+*
+* *
+*
+*
+*
+*
+* *
+*
+* *
+* *
+* * * * *
+*
+*
+*
+*
+* *
+*Pathogenic
+Likely pathogenic
+*
+Pathogenic
+Likely pathogenic
+*
+*
+* * * * *
+*
+P1_EOT
+*
+Estrogen receptor
+Phosphoinositide 3-kinase
+Progression-free survival (%)
+Progression-free survival (%)
+Progression-free survival (%)
+Figure 2.
+WES. A, Baseline somatic mutations in cancer-related genes detected by ctDNA WES (n ¼ 28) in at least 2 patients. B, Lollipop diagram denoting the ESR1 mutations
+detected in the baseline ctDNA samples. C, Lollipop diagram denoting the PIK3CA mutations detected in the baseline ctDNA samples. D, Kaplan–Meier curve
+representing PFS during treatment with palbociclib and bazedoxifene in patients with baseline ctDNA WES stratiﬁed by no/yes baseline ESR1 ctDNA mutation. The
+median PFS for patients with WT ESR1 versus mutant ESR1 is 3.6 months and 2 months, respectively. HR ¼ 1.0 (95% CI: 0.4–2.4); P ¼ 0.94, log-rank test. E, Kaplan–
+Meier curve representing PFS on treatment for patients with baseline WES ctDNA analysis stratiﬁed by no/yes baseline ctDNA PIK3CA mutation. The median PFS for
+patients with WT PIK3CA versus mutant PIK3CA was 3.9 months versus 1.8 months, respectively. HR ¼ 0.2 (95% CI: 0.06–0.6); P ¼ 0.0019, log-rank test. F, Kaplan–
+Meier curve representing PFS on treatment for patients with baseline WES ctDNA analysis stratiﬁed by no/yes baseline ctDNA truncating mutation. The median PFS
+for patients without a truncating mutation versus with a truncating mutation was 3.8 months versus 1.7 months, respectively. HR ¼ 0.3 (95% CI: 0.1–0.7); P ¼ 0.0059,
+log-rank test. G, EOT somatic mutations in cancer-related genes detected by ctDNA WES (n ¼ 22) in at least 2 patients. H, Correlation of the frequency of mutations in
+cancer-related genes that were detected in at least 2 patients and including patientswith matched baseline and EOT treatment ctDNA WES (n ¼ 20), r ¼ 0.7, P ¼ 0.01,
+Pearson correlation. ctDNA, circulating tumor DNA.
+Tsuji et al.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5072
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+multivariate analysis (mutant vs. WT HR ¼ 3.01; 95% CI, 1.09–8.3; P ¼
+0.034; Fig. 2F; Supplementary Table S7).
+Consistent with the baseline ctDNA, the most common SSNVs in
+cancer-related genes at the EOT were PIK3CA (32%, 7/22) and ESR1
+(27%, 6/22), followed by PTEN, TP53, and GATA3 (Fig. 2G). Com-
+parison of the matched baseline and EOT ctDNA pairs showed a high
+correlation between the frequency of the mutations found in at least
+two different patients (r ¼ 0.7, P ¼ 0.01, Pearson correlation; Fig. 2H).
+However, when comparing EOT ctDNA versus baseline ctDNA in
+individual patients, several patients gained actionable driver mutations
+at the EOT that are suggestive of putative mechanisms of acquired
+resistance and offer potential therapeutic targets. As examples, one
+patient (patient 30) who was on treatment for 7 months gained two
+BRAF missense mutations (G469A and D287H) and 2 hotspot
+PIK3CA mutations (E365K and N1044K). A second patient (patient
+10) was on treatment for 3 months and gained pathogenic mutations in
+ERBB2 (S310Y) and PIK3CA (H1047L), and a missense mutation in
+FGFR2 (L309V; Supplementary Fig. S5).
+SCNA analysis was performed in 30 plasma ctDNA samples from 16
+patients with a TF ≥0.15 (baseline n ¼ 12, C2D1 n ¼ 9, EOT n ¼
+9; Fig. 3A). Two patients (patient 1 and patient 14) were found to have
+genome doubling, which is associated with poor outcomes (35). In all
+samples, there were SCNAs in at least two cancer-related driver genes.
+In addition, in all samples we identiﬁed SCNAs in at least one gene
+related to a potential mechanism of resistance to ET and/or CDK4/6i.
+These included SCNAs in CCND1, CCNE2, MYC, ESR1, CDKN2B,
+CDKN2A, FOXA1, PIK3CA, AURKA, AURKB, CDKN1A, FGFR1,
+CDK6, CDK4, IGF1R, or PTEN (7, 36–38). Ampliﬁcations or gains
+in CCND1 and other genes that are within the same genomic region on
+11q13.3 (FGF19, FGF3, and FGF4) were among the most common
+SCNAs. In addition, ELF3 ampliﬁcations or gains were identiﬁed in
+most of the patients (69%, 11/16). In line with the high frequency of
+ELF3 SCNAs that we identiﬁed, ampliﬁcations of ELF3 are more
+frequent in ERþ/HER2 metastatic breast cancers in the Metastatic
+Breast Cancer Project (39, 40) versus the ERþ/HER2 primary breast
+cancers in TCGA cohort (ref. 41; 31%, 22/70 in metastatic tumors vs.
+6%, 29/471 in primary tumors, P < 0.0001, Fisher exact test). Overall,
+ampliﬁcations and losses at baseline or C2D1 compared with EOT
+within the matched pairs were comparable. Only a small number
+SCNA were acquired at the EOT. As an example, one patient (Patient
+4) acquired losses of CDKN2A and CDKN2B (genes that encode the
+cell-cycle inhibitors P16 and P15,respectively, and are both in the same
+region in 9p).
+We next assessed additional genomic features, including TMB
+(42, 43) and mutational signatures (44, 45) in the 30 ctDNA WES
+with sufﬁcient TF. These features are associated with breast cancer
+outcomes and could potentially predict sensitivity or resistance to
+bazedoxifene plus palbociclib. The median TMBs at baseline (n ¼ 12)
+and EOT (n ¼ 9) were comparable and low [baseline median of 1.3
+mutations/Mb, range (0.74–19.5); EOT median of 0.87 mutations/Mb,
+range (0.73–12.0); Wilcoxon P ¼ 0.84] (Fig. 3B) and there was no
+signiﬁcant difference in the TMB in patients who had a clinical
+beneﬁt compared with patients who did not across all timepoints
+(Wilcoxon P ¼ 0.7).
+As for the mutational signatures in the cohort (Fig. 3C), the most
+common mutational signatures (SBS1, SBS5, and SBS40) can be
+attributed to clock-like and aging processes. The patients with a high
+TMB (Patient 2, 10, and 30) had enriched APOBEC signatures (SBS2
+and SBS13). The same set of APOBEC signatures was detected in
+patients 21 and 31. Overall, most of the patients with APOBEC
+signatures (4 of 5 patients) did not have a clinical beneﬁt from
+bazedoxifene and palbociclib. Albeit a small number of patients, these
+results are consistent with previous studies showing that the APOBEC
+signature is associated with endocrine resistance (44) and a high
+TMB (46). We also detected the mutational signature (SBS17b) that
+is associated with exposure to chemotherapeutic agents, 5-ﬂuorouracil
+and capecitabine in a patient who received treatment with capecitabine
+followed by eribulin prior to enrollment on the study.
+Clonal architecture and subclonal evolution during treatment
+To better understand how tumor heterogeneity and the subclonal
+evolution contribute to treatment resistance, we performed an evo-
+lutionary analysis (see Patients and Methods). Seven patients had
+sufﬁcient ctDNA (cfDNA TF ≥0.15) from three timepoints or at
+baseline and EOT (Fig. 4A–D; Supplementary Fig. S6A–S6C). In at
+least 3 of these patients the clonal evolution helped to shed light on
+potential mechanisms of treatment resistance. Patients 17 (Fig. 4A)
+and 2 (Fig. 4B) had clonal PIK3CA and ESR1 pathogenic mutations.
+Patient 17 had a subclone with losses of the tumor suppressor genes,
+RB1 and PBRM1, and the abundance of this subclone increased at the
+time of disease progression [cancer cell fraction (CCF) of 0.10 at
+baseline increased to 0.52 at EOT]. Patient 2 had two major subclone
+branches (light blue and red in Fig. 4B). Interestingly, within less than
+2 months at the time of disease progression, the subclone with an ESR1
+D538G and an NF1 truncal mutation increased from a CCF of 0.37 at
+baseline to 1. Loss of neuroﬁbromin was shown to be a mechanism of
+treatment resistance in HRþ breast cancer (47). On the other hand, the
+second subclone with a SMAD2-truncating mutation and VHL mis-
+sense mutation decreased from a CCF of 0.45 at baseline to 0.02 at EOT
+and is likely not a key driver of the disease progression.
+Patient 1 had rapid disease progression within less than a month and
+was found to have a clonal pathogenic RB1 mutation (E54) at baseline
+and at EOT (Fig. 4C). Although this RB1 mutation is monoallelic, it
+has been shown that the loss of even one copy of Rb1 can lead to
+genomic instability (48). Patient 1 and patient 5 had clonal ZFHX3
+(zinc ﬁnger homeobox 3) mutations (Fig. 4C and D). In addition, three
+other patients in our study had nonsilent ZFHX3 mutations (clonal
+status could not be evaluated in these other patients), making ZFHX3 a
+common mutation in our dataset [16% (5/31)]. In contrast, ZFHX3
+mutations, mainly deletions and truncating mutations, were found in
+only 4% of the ERþ breast cancers in TCGA cohort (39–41).
+Discussion
+We provide the ﬁrst study report of the clinical efﬁcacy and
+safety of bazedoxifene in combination with palbociclib for the treat-
+ment of endocrine-resistant HRþ/HER2 advanced breast cancer. We
+observed SD as the best response in 56% of the ITT patient population
+and 57% in the evaluable patient population. The CBR ≥24 weeks was
+33% and 34% in the ITT and the evaluable patients, respectively, in a
+heavily pretreated patient population. The CBR at 24 weeks exceeded
+the predeﬁned threshold, meeting the primary endpoint of the study.
+In this study, >50% of the patients had prior chemotherapy in the
+metastatic setting, and >40% of the patients had at least two prior lines
+of ET. Prior chemotherapy is associated with decreased beneﬁt from
+subsequent treatments (49, 50). In addition, most of the patients had
+liver metastases, which is also associated with worse outcomes in HRþ
+advanced breast cancer (51). Importantly, the results of this study
+compare favorably to a phase II study of palbociclib as monotherapy in
+patients with HRþ advanced breast cancer, in which the CBR ≥
+24 weeks was 21% (7/33; ref. 5), providing evidence for the clinical
+efﬁcacy of bazedoxifene in this setting.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5073
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+The need for new ETs when combined with a CDK4/6i that better
+target the ER mutations in advanced breast cancer is supported by the
+recent results from the PADA-1 clinical trial. In PADA-1, switching
+from an AI plus palbociclib to fulvestrant plus palbociclib in patients
+with HRþ advanced breast cancer and rising levels of ctDNA ESR1
+mutations, resulted in improved PFS (9). In retrospective analyses, the
+presence of an ESR1 mutation did not lead to inferior outcomes with
+the combination of fulvestrant and a CDK4/6i (52). However, pre-
+clinical studies (53) and clinical studies (54, 55) showed decreased
+activity of single-agent fulvestrant in the presence of the ESR1
+P1_Baseline
+P1_EOT
+P14_Baseline
+P14_Cycle1
+P14_EOT
+P10_EOT
+P5_Baseline
+P5_Cycle1
+P5_EOT
+P7_Baseline
+P4_Cycle1
+P4_EOT
+P21_Baseline
+P17_Baseline
+P17_Cycle1
+P17_EOT
+P24_Baseline
+P24_Cycle1
+P24_EOT
+P25_Baseline
+P25_Cycle1
+P31_Baseline
+P2_Baseline
+P2_EOT
+P 11 _ B a s e l i n e
+P9_Baseline
+P9_Cycle1
+P9_EOT
+P3_Cycle1
+P30_EOT
+FGF19
+FGF3
+FGF4
+ELF3
+CCND1
+CCNE2
+MYC
+ESR1
+CCNE1
+CDKN2A
+CDKN2B
+FOXA1
+PIK3CA
+PLEKHF1
+AURKA
+IDO1
+IDO2
+CDK6
+CDKN1A
+FGFR1
+KMT5C
+MEN1
+PPP2R1A
+PTPRH
+RB1
+RXRB
+WHSC1L1
+ABL1
+CDK4
+PMS2
+TSC1
+IGF1R
+AURKB
+RAD52
+CDKN1B
+CCNB2
+KDM5A
+JMJD7
+MAPKBP1
+PTEN
+80%
+80%
+80%
+77%
+73%
+73%
+73%
+63%
+60%
+60%
+60%
+60%
+60%
+60%
+57%
+57%
+57%
+53%
+53%
+53%
+53%
+53%
+53%
+53%
+53%
+53%
+53%
+47%
+47%
+47%
+47%
+43%
+40%
+40%
+37%
+33%
+33%
+30%
+30%
+27%
+0
+10
+20
+A
+Time point 
+Ploidy
+Clinical benefit
+P2_Baseline
+P10_EOT
+P2_EOT
+P30_EOT
+P1_Cycle1
+P21_Baseline
+P31_Baseline
+P24_EOT
+P24_Baseline
+P24_Cycle1
+P1_Baseline
+P9_EOT
+P9_Cycle1
+P11_Baseline
+P7_Baseline
+P9_Baseline
+P5_Baseline
+P5_EOT
+P5_Cycle1
+P17_Baseline
+P14_Cycle1
+P14_Baseline
+P17_EOT
+P4_EOT
+P14_EOT
+P25_Cycle1
+P25_Baseline
+P4_Cycle1
+P3_Cycle1
+P17_Cycle1
+0
+200
+400
+600
+800
+1,000
+1,200
+SBS1
+SBS5
+SBS40
+SBS2
+SBS13
+SBS17b
+Clock-like,
+aging
+APOBEC
+5FU/Capec.
+Number of single base subsititions
+Alterations
+Amp.
+Gain
+Loss
+nLOH
+Baseline
+Cycle1
+EOT
+Tumor fraction
+High
+Ploidy
+2
+2.5
+3
+3.5
+4
+Clinical benefit
+Yes
+No
+Time point 
+0
+5
+10
+15
+20
+Baseline
+Cycle1
+Mutations/Mb
+No
+Yes
+Coding TMB
+Clinical benefit
+B
+C
+EOT
+Figure 3.
+Copy-number variations, TMB, and mutational signatures. A, Somatic copy-number variations [ampliﬁcations (AMP), gains, loss, and neutral loss of
+heterozygosity] in cancer-related genes detected in at least 2 patients. Samples are from 16 patients and include matched samples from at least two
+timepoints (baseline, C2D1, and EOT) in 9 patients. B, Serial TMB at baseline (n ¼ 28), C2D1 (n ¼ 18), and EOT (n ¼ 22). C, Mutational signatures detected in
+cfDNA samples. cfDNA, cell-free DNA.
+Tsuji et al.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5074
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+RB1 loss
+PBRM1 loss
+PIK3CA N1044K
+PIK3CA N345K
+ESR1 D538G
+A
+Patient 17
+B
+(M = 2)
+Baseline
+C2D1
+EOT
+CCF
+C
+30
+4
+34
+(M = 1.7)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+CCF
+Baseline
+EOT
+CCF
+(M = 0.9)
+Rb1 E54*
+ALK L414V
+NOTCH2 N1047T
+ZFHX3 Q2007*
+CDH1 Y523*
+TP53BP1 Q852*
+EGFR R255Q
+DNAH12 K2741T
+Patient 1
+58
+29
+30
+40
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+D
+CHD4 R922Q
+TNF Q59H
+VHL S33L
+ERBB2 P1119S
+ESR1 D538G
+NF1 S575*
+CDKN1B S27*
+Patient 2
+427
+195
+595
+53
+ESR1 E380Q
+SMAD2 S464*
+PIK3CA E545K
+ESR1 G415V
+41
+KEL S92C
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+(M = 1.7)
+Baseline
+C2D1
+EOT
+CCF
+BRCA1 V1181
+ZFHX3 P3455fs
+MYC gain
+EIF2A loss
+Patient 5
+56
+4
+6
+9
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Baseline
+EOT
+ESR1 G415V
+KEL S690C
+Figure 4.
+Evolutionary analysis of longitudinal
+plasma ctDNA samples. A–D, Left
+panel showing the phylogenetic trees
+representing the clonal architecture
+in plasma ctDNA samples. The num-
+ber of somatic alterations assigned to
+each clone and detected alterations in
+known cancer genes are denoted in
+each branch. Truncating mutations.
+A–D, Right panel showing the esti-
+mated CCF of each clone at baseline,
+after 1 cycle of treatment (C2D1) and
+EOT. The color of the clone matches
+the respective clone in the phyloge-
+netic trees. ctDNA, circulating tumor
+DNA.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5075
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+mutations, particularly the Y537S ER mutation. On the other hand,
+preclinical studies showed that bazedoxifene has superior activity in
+inhibiting the Y537S ER mutation compared with fulvestrant and
+biophysical and structural studies provided mechanistic insights
+explaining these differences (13, 18). In line with these preclinical
+studies, our clinical trial showed that the presence of an ESR1 mutation
+was not associated with decreased beneﬁt from the combination of
+bazedoxifene and palbociclib. Taken together, these published clinical
+and preclinical studies, along with the results from our clinical trial
+support a future randomized clinical trial comparing the combination
+bazedoxifene plus a CDK4/6i versus fulvestrant plus a CDK4/6i in
+patients with advanced breast cancer who have rising levels of ctDNA
+ESR1 mutations.
+The EMERALD trial was a randomized phase III study investigating
+the new a SSH, elacetsrant, versus standard-of-care ET (AI or fulves-
+trant; ref. 56). In this trial, patients with HRþ advanced breast cancer
+who progressed on prior treatment with ET and a CDK4/6i and were
+randomized to receive elacestrant had improved PFS compared with
+patients that received standard-of-care ET. The magnitude of this
+improvement was higher in patients that had an ESR1 mutation. These
+results provided evidence for improved clinical outcomes with a single-
+agent next-generation ET, particularly in patients that have disease
+that remains ER dependent and support further development of this
+class of drugs. However, the median PFS was limited in the EMERALD
+trial and future studies will need to identify the patients who continue
+to beneﬁt from ET after treatment with CDK4/6i and investigate novel
+treatment combination that incorporate the next-generation ETs.
+Increasing the dose of ET is another potential strategy to improve
+efﬁcacy from ET, especially in the presence of the Y537S ER mutation,
+which is characterized by decreased afﬁnity to multiple SERMs and
+SERDS (19, 57). Because bazedoxifene was well tolerated in large
+clinical trials with healthy women and in our study in advanced breast
+cancer, there were no signiﬁcant gastrointestinal or other DLTs, a trial
+to investigate the pharmacokinetics, safety, and efﬁcacy of higher doses
+of bazedoxifene in patients with HRþ advanced breast cancer and an
+ESR1 mutation is warranted.
+We performed a prospective analysis of serial ctDNA WES to
+search for genetic determinants of sensitivity and resistance to the
+combination of bazedoxifene and palbociclib in advanced breast
+cancer after multiple lines of treatment. We showed that pathogenic
+PIK3CA mutations were associated with decreased PFS. Preclinical
+studies support the role of the PI3-kinase pathway in endocrine
+resistance (58, 59), and the a-speciﬁc PI3-kinase inhibitor alpelisib
+in combination with fulvestrant is approved for the treatment of
+PIK3CA-mutant HRþ metastatic breast cancer (60). A preclinical
+study showed that inhibition of PI3 kinase can prevent adaptive
+resistance to palbociclib, suggesting that the activation of the PI3-
+kinase pathway is involved in resistance to palbociclib (61). In the
+phase III PALOMA-III trial in which patients were randomized to
+fulvestrant plus palbociclib or fulvestrant plus placebo, there was an
+enrichment of plasma ctDNA PIK3CA mutations at the EOT. How-
+ever, baseline plasma ctDNA PIK3CA mutations were not predictive of
+decreased PFS (10, 62). Our results suggest that in HRþ advanced
+breast cancer, the pathogenicity of the PIK3CA mutations increases in
+more advanced metastatic disease after multiple lines of treatment.
+This is in keeping with previous studies that showed that in metastatic
+disease, the presence of a PIK3CA mutation is associated with treat-
+ment resistance and tumor progression (63), whereas in early-stage,
+treatment-na€ve HRþ breast cancer, PIK3CA mutations are associated
+with improved outcomes (64, 65).
+The ctDNA WES analyses also identiﬁed genetic alterations that are
+potential novel drivers of disease progression and treatment resistance.
+As an example, we identiﬁed a high rate of ELF3 SCNAs. ELF3 is a
+member of the ETS transcription factors and is located within 1q32, a
+region commonly gained in breast cancer. In preclinical studies, ELF3
+was shown to be a transcriptional repressor of ER, suggesting a possible
+role in endocrine resistance (66). We also identiﬁed a relatively high
+rate of ZFHX3 mutations. ZFHX3 encodes the transcription factor
+AT-motif binding factor-1 (ATBF1), which has key roles in pro-
+tein–protein interactions and is a tumor suppressor in prostate
+cancer (67). In HRþ breast cancer, ATBF1 inhibits ER-mediated
+transcription (68), implying that aberrations in this gene may have a
+role in resistance to ET.
+We acknowledge several limitations in our study, including the
+small number of patients that limits our ability to make strong
+conclusions about the efﬁcacy of the combination of bazedoxfene and
+palbociclib, and the determinants of sensitivity or resistance. In
+addition, not all the plasma samples had sufﬁcient ctDNA TF for
+TMB, SCNV, mutational signature, and phylogenetic analyses. None-
+theless, herein we demonstrate the utility and breadth of data that can
+be gleaned from WES of ctDNA. In summary, our results showed: (i)
+the safety of bazedoxifene in combination with palbociclib; (ii) a signal
+of the efﬁcacy of bazedoxifene in HRþ breast cancer; (iii) PIK3CA
+mutations are a candidate biomarker of resistance to this combination
+that can be applicable to other next-generation ETs; and (iv) the
+advantages of WES of ctDNA that enabled us to capture the tumor
+heterogeneity and subclonal evolution during disease progression.
+WES also allowed us to identify potential novel genomic mechanisms
+of tumor progression that warrant future investigation.
+Authors’ Disclosures
+I. Leshchiner reports personal fees and nonﬁnancial support from ennov1, LLC,
+and NoRD Bio, Inc and personal fees from PACT Pharma, Inc. outside the
+submitted work. S.M. Tolaney reports grants and personal fees from Pﬁzer during
+the conduct of the study as well as grants and personal fees from AstraZeneca,
+Merck, Genentech/Roche, Novartis, SeaGen, Eli Lilly, Gilead, Bristol-Myers
+Squibb, Eisai, and Sanoﬁ; grants from Exelixis, Nektar, Cyclacel, and NanoString;
+and personal fees from Daiichi Sankyo, Athenex, CytomX, Certara, Mersana
+Therapeutics, Ellipses Pharma, 4D Pharma, Inﬁnity Therapeutics, OncoSec Med-
+ical Inc, Chugai Pharmaceuticals, BeyondSpring Pharmaceuticals, OncXerna,
+Zymeworks, Zentalis, Blueprint Medicines, Reveal Genomics, ARC Therapeutics,
+Myovant, Umoja Buopharma, and Menarini/Stemline outside the submitted work.
+D.P. McDonnell reports personal fees from Pﬁzer and grants from NIH during the
+conduct of the study as well as grants, personal fees, and other support from
+Zentalis Pharmaceuticals and RAPPTA Therapeutics; other support from G1
+Therapeutics and XRAD Therapeutics; and grants and personal fees from BMS
+outside the submitted work. In addition, D.P. McDonnell has a patent for a method
+of treating cancer using selective estrogen receptor modulators (US10,071,066,
+US10,420,734 issued, licensed, and with royalties paid from Radius Health) and a
+patent for lasofoxifene for treatment of breast cancer (US10,258,604, US10,905659,
+issued, licensed, and with royalties paid from Sermonix). I.E. Krop reports personal
+fees from AstraZeneca, Daiichi Sankyo, Genentech/Roche, Novartis, Merck, and
+Macrogenics and grants from Genentech/Roche and Pﬁzer outside the submitted
+work. E.P. Winer reports grants from Maor Foundation during the conduct of the
+study as well as other support from Carrick Therapeutics, Genentech/Roche,
+Jounce Therapeutics, and Leap Therapeutics outside the submitted work. G. Getz
+reports personal fees from Scorpion Therapeutics and grants from IBM during the
+conduct of the study as well as grants from Pharmacyclics outside the submitted
+work; in addition, G Getz is an inventor on patent applications related to
+MSMuTect, MSMutSig, MSIDetect, Polysolver, and SignatureAnalyzer-GPU and
+is a founder of, is a consultant for, and holds privately equity in Scorpion
+Therapeutics. R. Jeselsohn reports grants from Pﬁzer during the conduct of the
+study as well as grants from Lilly and personal fees from GE Healthcare outside the
+submitted work. No disclosures were reported by the other authors.
+Tsuji et al.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5076
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Authors’ Contributions
+J. Tsuji: Formal analysis, investigation, methodology, writing–original draft,
+writing–review and editing. T. Li: Formal analysis, visualization, methodology,
+writing–original draft, writing–review and editing. A. Grinshpun: Data curation,
+investigation, visualization, writing–review and editing. T. Coorens: Formal
+analysis,
+visualization,
+writing–original
+draft,
+writing–review
+and
+editing.
+D. Russo: Formal analysis, visualization, writing–original draft, writing–review
+and editing. L. Anderson: Data curation, project administration, writing–review
+and editing. R. Rees: Data curation, writing–review and editing. A. Nardone:
+Data curation, writing–review and editing. C. Patterson: Data curation, project
+administration, writing–review and editing. N.J. Lennon: Supervision, writing–
+review and editing. C. Cibulskis: Supervision, writing–review and editing.
+I. Leshchiner: Formal analysis, writing–review and editing. N. Tayob: Formal
+analysis, supervision, validation, writing–review and editing. S.M. Tolaney:
+Supervision, writing–review and editing. N. Tung: Supervision, investigation,
+writing–review and editing. D.P. McDonnell: Conceptualization, investigation,
+writing–review and editing. I.E. Krop: Conceptualization, supervision, investi-
+gation, writing–review and editing. E.P. Winer: Conceptualization, supervision,
+investigation, writing–review and editing. C. Stewart: Formal analysis, supervi-
+sion, writing–original draft, writing–review and editing. G. Getz: Conceptuali-
+zation, supervision, investigation, visualization, methodology, writing–original
+draft, writing–review and editing. R. Jeselsohn: Conceptualization, supervision,
+funding acquisition, investigation, visualization, writing–original draft, writing–
+review and editing.
+Acknowledgments
+The study was conducted with funding from Pﬁzer. R. Jeselsohn is funded by the
+Claudia Adams Barr Program and an R01 CA237414-01.
+We thank Myles Brown for helpful discussion. We thank Sam Pollock and Fanny
+Dao for assistance in sequencing data management. G. Getz was partially funded by
+the Paul C. Zamecnik Chair in Oncology at the Massachusetts General Hospital
+Cancer Center.
+The publication costs of this article were defrayed in part by the payment of
+publication fees. Therefore, and solely to indicate this fact, this article is hereby
+marked “advertisement” in accordance with 18 USC section 1734.
+Note
+Supplementary data for this article are available at Clinical Cancer Research Online
+(http://clincancerres.aacrjournals.org/).
+Received July 25, 2022; revised September 10, 2022; accepted October 6, 2022;
+published ﬁrst October 10, 2022.
+References
+1. Lynce F, Shajahan-Haq AN, Swain SM. CDK4/6 inhibitors in breast cancer
+therapy: current practice and future opportunities. Pharmacol Ther 2018;191:
+65–73.
+2. Watts CK, Sweeney KJ, Warlters A, Musgrove EA, Sutherland RL. Anti-
+estrogen regulation of cell cycle progression and cyclin D1 gene expres-
+sion in MCF-7 human breast cancer cells. Breast Cancer Res Treat 1994;
+31:95–105.
+3. Finn RS, Dering J, Conklin D, Kalous O, Cohen DJ, Desai AJ, et al. PD 0332991, a
+selective cyclin D kinase 4/6 inhibitor, preferentially inhibits proliferation of
+luminal estrogen receptor-positive human breast cancer cell lines in vitro.
+Breast Cancer Res 2009;11:R77.
+4. Eeckhoute J, Carroll JS, Geistlinger TR, Torres-Arzayus MI, Brown M. A cell-
+type-speciﬁc transcriptional network required for estrogen regulation of
+cyclin D1 and cell cycle progression in breast cancer. Genes Dev 2006;20:
+2513–26.
+5. DeMichele A, Clark AS, Tan KS, Heitjan DF, Gramlich K, Gallagher M, et al.
+CDK 4/6 inhibitor palbociclib (PD0332991) in Rbþ advanced breast cancer:
+phase II activity, safety, and predictive biomarker assessment. Clin Cancer Res
+2015;21:995–1001.
+6. Formisano L, Stauffer KM, Young CD, Bhola NE, Guerrero-Zotano AL, Jansen
+VM, et al. Association of FGFR1 with ERalpha maintains ligand-independent ER
+transcription and mediates resistance to estrogen deprivation in ER(þ) breast
+cancer. Clin Cancer Res 2017;23:6138–50.
+7. Formisano L, Lu Y, Servetto A, Hanker AB, Jansen VM, Bauer JA, et al. Aberrant
+FGFR signaling mediates resistance to CDK4/6 inhibitors in ERþ breast cancer.
+Nat Commun 2019;10:1373.
+8. Bidard FC, Callens C, Dalenc F, Pistilli B, Rouge T, Clatot F, et al. Prognostic
+impact of ESR1 mutations in ERþ HER2- MBC patients prior treated with ﬁrst
+line AI and palbociclib: an exploratory analysis of the PADA-1 trial. J Clin Oncol
+38: 15s, 2020 (suppl; abstr 1010).
+9. Jacobson A. Early switch to fulvestrant plus palbociclib improves outcomes in
+esr1-mutated, estrogen receptor-positive metastatic breast cancer. Oncologist
+2022;27:S9–S10.
+10. O’Leary B, Cutts RJ, Liu Y, Hrebien S, Huang X, Fenwick K, et al. The genetic
+landscape and clonal evolution of breast cancer resistance to palbociclib plus
+fulvestrant in the PALOMA-3 Trial. Cancer Discov 2018;8:1390–403.
+11. Wardell SE, Nelson ER, Chao CA, McDonnell DP. Bazedoxifene exhibits
+antiestrogenic activity in animal models of tamoxifen-resistant breast cancer:
+implications for treatment of advanced disease. Clin Cancer Res 2013;19:
+2420–31.
+12. Lewis-Wambi JS, Kim H, Curpan R, Grigg R, Sarker MA, Jordan VC. The
+selective
+estrogen
+receptor
+modulator
+bazedoxifene
+inhibits
+hormone-
+independent breast cancer cell growth and down-regulates estrogen receptor
+alpha and cyclin D1. Mol Pharmacol 2011;80:610–20.
+13. Fanning SW, Jeselsohn R, Dharmarajan V, Mayne CG, Karimi M, Buchwalter G,
+et al. The SERM/SERD bazedoxifene disrupts ESR1 helix 12 to overcome
+acquired hormone resistance in breast cancer cells. Elife 2018;7:e37161.
+14. Peng L, Luo Q, Lu H. Efﬁcacy and safety of bazedoxifene in postmenopausal
+women with osteoporosis: a systematic review and meta-analysis. Medicine
+2017;96:e8659.
+15. Mirkin S, Archer DF, Taylor HS, Pickar JH, Komm BS. Differential effects of
+menopausal therapies on the endometrium. Menopause 2014;21:899–908.
+16. Duggan ST, McKeage K. Bazedoxifene: a review of its use in the treatment of
+postmenopausal osteoporosis. Drugs 2011;71:2193–212.
+17. Song Y, Santen RJ, Wang JP, Yue W. Inhibitory effects of a bazedoxifene/
+conjugated equine estrogen combination on human breast cancer cells in vitro.
+Endocrinology 2013;154:656–65.
+18. Wardell SE, Ellis MJ, Alley HM, Eisele K, VanArsdale T, Dann SG, et al. Efﬁcacy
+of SERD/SERM Hybrid-CDK4/6 inhibitor combinations in models of endocrine
+therapy-resistant breast cancer. Clin Cancer Res 2015;21:5121–30.
+19. Hosﬁeld DJ, Weber S, Li NS, Sauvage M, Joiner CF, Hancock GR, et al.
+Stereospeciﬁc lasofoxifene derivatives reveal the interplay between estrogen
+receptor alpha stability and antagonistic activity in ESR1 mutant breast cancer
+cells. Elife 2022;11:e72512.
+20. Press MF, Seoane JA, Curtis C, Quinaux E, Guzman R, Sauter G, et al. Assessment
+of ERBB2/HER2 status in HER2-equivocal breast cancers by FISH and 2013/
+2014 ASCO-CAP Guidelines. JAMA Oncol 2019;5:366–75.
+21. Eisenhauer EA, Therasse P, Bogaerts J, Schwartz LH, Sargent D, Ford R, et al.
+New response evaluation criteria in solid tumours: revised RECIST guideline
+(version 1.1). Eur J Cancer 2009;45:228–47.
+22. Costelloe CM, Chuang HH, Madewell JE, Ueno NT. Cancer response criteria and
+bone metastases: RECIST 1.1, MDA and PERCIST. J Cancer 2010;1:80–92.
+23. Christiansen C, Chesnut CH 3rd, Adachi JD, Brown JP, Fernandes CE, Kung
+AW, et al. Safety of bazedoxifene in a randomized, double-blind, placebo- and
+active-controlled Phase 3 study of postmenopausal women with osteoporosis.
+BMC Musculoskelet Disord 2010;11:130.
+24. Adalsteinsson VA, Ha G, Freeman SS, Choudhury AD, Stover DG, Parsons HA,
+et al. Scalable whole-exome sequencing of cell-free DNA reveals high concor-
+dance with metastatic tumors. Nat Commun 2017;8:1324.
+25. Taylor-Weiner A, Stewart C, Giordano T, Miller M, Rosenberg M, Macbeth A,
+et al. DeTiN: overcoming tumor-in-normal contamination. Nat Methods 2018;
+15:531–4.
+26. Cibulskis K, McKenna A, Fennell T, Banks E, DePristo M, Getz G. ContEst:
+estimating cross-contamination of human samples in next-generation sequenc-
+ing data. Bioinformatics 2011;27:2601–2.
+27. Cibulskis K, Lawrence MS, Carter SL, Sivachenko A, Jaffe D, Sougnez C, et al.
+Sensitive detection of somatic point mutations in impure and heterogeneous
+cancer samples. Nat Biotechnol 2013;31:213–9.
+Bazedoxifene and Palbociclib in Advanced Breast Cancer
+AACRJournals.org
+Clin Cancer Res; 28(23) December 1, 2022
+5077
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+28. Kim S, Schefﬂer K, Halpern AL, Bekritsky MA, Noh E, Kallberg M, et al. Strelka2:
+fast and accurate calling of germline and somatic variants. Nat Methods 2018;15:
+591–4.
+29. Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alfoldi J, Wang Q, et al. The
+mutational constraint spectrum quantiﬁed from variation in 141,456 humans.
+Nature 2020;581:434–43.
+30. Chakravarty D, Gao J, Phillips SM, Kundra R, Zhang H, Wang J, et al. OncoKB: a
+precision oncology knowledge base. JCO Precis Oncol 2017;2017:PO.17.00011.
+31. Kim J, Mouw KW, Polak P, Braunstein LZ, Kamburov A, Kwiatkowski DJ, et al.
+Somatic ERCC2 mutations are associated with a distinct genomic signature in
+urothelial tumors. Nat Genet 2016;48:600–6.
+32. Gori K, Baez-Ortega A. sigﬁt: ﬂexible Bayesian inference of mutational signa-
+tures. bioRxiv 2020:372896.
+33. Carter SL, Cibulskis K, Helman E, McKenna A, Shen H, Zack T, et al. Absolute
+quantiﬁcation of somatic DNA alterations in human cancer. Nat Biotechnol
+2012;30:413–21.
+34. Leshchiner I, Livitz D, Gainor JF, Rosebrock D, Spiro O, Martinez A, et al.
+Comprehensive analysis of tumour initiation, spatial and temporal progression
+under multiple lines of treatment. bioRxiv 2019:508127.
+35. Bielski CM, Zehir A, Penson AV, Donoghue MTA, Chatila W, Armenia J, et al.
+Genome doubling shapes the evolution and prognosis of advanced cancers.
+Nat Genet 2018;50:1189–95.
+36. Hanker AB, Sudhan DR, Arteaga CL. Overcoming endocrine resistance in breast
+cancer. Cancer Cell 2020;37:496–513.
+37. Wander SA, Cohen O, Gong X, Johnson GN, Buendia-Buendia JE, Lloyd MR,
+et al. The genomic landscape of intrinsic and acquired resistance to cyclin-
+dependent kinase 4/6 inhibitors in patients with hormone receptor-positive
+metastatic breast cancer. Cancer Discov 2020;10:1174–93.
+38. Cornell L, Wander SA, Visal T, Wagle N, Shapiro GI. MicroRNA-mediated
+suppression of the TGF-beta pathway confers transmissible and reversible
+CDK4/6 inhibitor resistance. Cell Rep 2019;26:2667–80.
+39. Cerami E, Gao J, Dogrusoz U, Gross BE, Sumer SO, Aksoy BA, et al. The cBio
+cancer genomics portal: an open platform for exploring multidimensional cancer
+genomics data. Cancer Discov 2012;2:401–4.
+40. Gao J, Aksoy BA, Dogrusoz U, Dresdner G, Gross B, Sumer SO, et al. Integrative
+analysis of complex cancer genomics and clinical proﬁles using the cBioPortal.
+Sci Signal 2013;6:pl1.
+41. Koboldt DC, Fulton RS, McLellan MD, Schmidt H, Kalicki-Veizer J, McMichael
+JF, et al. Comprehensive molecular portraits of human breast tumours. Nature
+2012;490:61–70.
+42. van Geelen CT, Savas P, Teo ZL, Luen SJ, Weng CF, Ko YA, et al. Clinical
+implications of prospective genomic proﬁling of metastatic breast cancer
+patients. Breast Cancer Res 2020;22:91.
+43. Aftimos P, Oliveira M, Irrthum A, Fumagalli D, Sotiriou C, Gal-Yam EN, et al.
+Genomic and transcriptomic analyses of breast cancer primaries and matched
+metastases in AURORA, the breast international group (BIG) molecular screen-
+ing initiative. Cancer Discov 2021;11:2796–811.
+44. Law EK, Sieuwerts AM, LaPara K, Leonard B, Starrett GJ, Molan AM, et al. The
+DNA cytosine deaminase APOBEC3B promotes tamoxifen resistance in ER-
+positive breast cancer. Sci Adv 2016;2:e1601737.
+45. Bertucci F, Ng CKY, Patsouris A, Droin N, Piscuoglio S, Carbuccia N, et al.
+Genomic characterization of metastatic breast cancers. Nature 2019;569:560–4.
+46. Barroso-Sousa R, Jain E, Cohen O, Kim D, Buendia-Buendia J, Winer E, et al.
+Prevalence and mutational determinants of high tumor mutation burden in
+breast cancer. Ann Oncol 2020;31:387–94.
+47. Zheng ZY, Anurag M, Lei JT, Cao J, Singh P, Peng J, et al. Neuroﬁbromin is an
+estrogen
+receptor-alpha
+transcriptional
+co-repressor
+in
+breast
+cancer.
+Cancer Cell 2020;37:387–402.
+48. Coschi CH, Ishak CA, Gallo D, Marshall A, Talluri S, Wang J, et al. Haploin-
+sufﬁciency of an RB-E2F1-Condensin II complex leads to aberrant replication
+and aneuploidy. Cancer Discov 2014;4:840–53.
+49. Roche H, Vahdat LT. Treatment of metastatic breast cancer: second line and
+beyond. Ann Oncol 2011;22:1000–10.
+50. Park IH, Lee KS, Ro J. Effects of second and subsequent lines of chemotherapy for
+metastatic breast cancer. Clin Breast Cancer 2015;15:e55–62.
+51. Robertson JFR, Di Leo A, Johnston S, Chia S, Bliss JM, Paridaens RJ, et al.
+Meta-analyses of visceral versus non-visceral metastatic hormone receptor-
+positive breast cancer treated by endocrine monotherapies. NPJ Breast
+Cancer 2021;7:11.
+52. Fribbens C, O’Leary B, Kilburn L, Hrebien S, Garcia-Murillas I, Beaney M, et al.
+Plasma ESR1 mutations and the treatment of estrogen receptor-positive
+advanced breast cancer. J Clin Oncol 2016;34:2961–8.
+53. Jeselsohn R, Yelensky R, Buchwalter G, Frampton G, Meric-Bernstam F,
+Gonzalez-Angulo AM, et al. Emergence of constitutively active estrogen recep-
+tor-alpha mutations in pretreated advanced estrogen receptor-positive breast
+cancer. Clin Cancer Res 2014;20:1757–67.
+54. O’Leary B, Hrebien S, Morden JP, Beaney M, Fribbens C, Huang X, et al. Early
+circulating tumor DNA dynamics and clonal selection with palbociclib and
+fulvestrant for breast cancer. Nat Commun 2018;9:896.
+55. Tolaney SM, Toi M, Neven P, Sohn J, Grischke EM, Llombart-Cussac A, et al.
+Clinical signiﬁcance of PIK3CA and ESR1 mutations in circulating tumor DNA:
+analysis from the MONARCH 2 study of abemaciclib plus fulvestrant.
+Clin Cancer Res 2022;28:1500–6.
+56. Bidard FC, Kaklamani VG, Neven P, Streich G, Montero AJ, Forget F, et al.
+Elacestrant (oral selective estrogen receptor degrader) versus standard endocrine
+therapy for estrogen receptor-positive, human epidermal growth factor receptor
+2-negative advanced breast cancer: results from the randomized phase III
+EMERALD trial. J Clin Oncol 2022;40:3246–56.
+57. Fanning SW, Mayne CG, Dharmarajan V, Carlson KE, Martin TA, Novick SJ,
+et al. Estrogen receptor alpha somatic mutations Y537S and D538G confer breast
+cancer endocrine resistance by stabilizing the activating function-2 binding
+conformation. Elife 2016;5:e12792.
+58. Campbell RA, Bhat-Nakshatri P, Patel NM, Constantinidou D, Ali S, Nakshatri
+H. Phosphatidylinositol 3-kinase/AKT-mediated activation of estrogen receptor
+alpha: a new model for anti-estrogen resistance. J Biol Chem 2001;276:9817–24.
+59. Ma CX, Crowder RJ, Ellis MJ. Importance of PI3-kinase pathway in response/
+resistance to aromatase inhibitors. Steroids 2011;76:750–2.
+60. Andre F, Ciruelos E, Rubovszky G, Campone M, Loibl S, Rugo HS, et al. Alpelisib
+for PIK3CA-mutated, hormone receptor-positive advanced breast cancer.
+N Engl J Med 2019;380:1929–40.
+61. Herrera-Abreu MT, Palafox M, Asghar U, Rivas MA, Cutts RJ, Garcia-Murillas I,
+et al. Early adaptation and acquired resistance to CDK4/6 inhibition in estrogen
+receptor-positive breast cancer. Cancer Res 2016;76:2301–13.
+62. Tolaney SM, Toi M, Neven P, Sohn J, Grischke EM, Llombart-Cussac A, et al.
+Clinical signiﬁcance of PIK3CA and ESR1 mutations in circulating tumor DNA:
+analysis from the MONARCH 2 study of abemaciclib plus fulvestrant.
+Clin Cancer Res 2022;28:1500–6.
+63. Mosele F, Stefanovska B, Lusque A, Tran Dien A, Garberis I, Droin N, et al.
+Outcome and molecular landscape of patients with PIK3CA-mutated metastatic
+breast cancer. Ann Oncol 2020;31:377–86.
+64. Kalinsky K, Jacks LM, Heguy A, Patil S, Drobnjak M, Bhanot UK, et al. PIK3CA
+mutation associates with improved outcome in breast cancer. Clin Cancer Res
+2009;15:5049–59.
+65. Zardavas D, Te Marvelde L, Milne RL, Fumagalli D, Fountzilas G, Kotoula V,
+et al. Tumor PIK3CA genotype and prognosis in early-stage breast cancer: a
+pooled analysis of individual patient data. J Clin Oncol 2018;36:981–90.
+66. Gajulapalli VN, SamanthapudiVS, PulagantiM,Khumukcham SS, Malisetty VL,
+Guruprasad L, et al. A transcriptional repressive role for epithelial-speciﬁc ETS
+factor ELF3 on oestrogen receptor alpha in breast cancer cells. Biochem J 2016;
+473:1047–61.
+67. Sun X, Frierson HF, Chen C, Li C, Ran Q, Otto KB, et al. Frequent somatic
+mutations of the transcription factor ATBF1 in human prostate cancer.
+Nat Genet 2005;37:407–12.
+68. Dong XY, Sun X, Guo P, Li Q, Sasahara M, Ishii Y, et al. ATBF1 inhibits estrogen
+receptor (ER) function by selectively competing with AIB1 for binding to the ER
+in ER-positive breast cancer cells. J Biol Chem 2010;285:32801–9.
+Clin Cancer Res; 28(23) December 1, 2022
+CLINICAL CANCER RESEARCH
+5078
+Tsuji et al.
+Downloaded from http://aacrjournals.org/clincancerres/article-pdf/28/23/5066/3226115/5066.pdf by Massachusetts Institute of Technology user on 17 May 2024

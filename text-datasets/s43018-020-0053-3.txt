@@ -1,0 +1,2290 @@
+Articles
+https://doi.org/10.1038/s43018-020-0053-3
+1Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA. 2Harvard Medical School, Boston, MA, USA. 3Broad Institute of MIT and Harvard, 
+Cambridge, MA, USA. 4Massachusetts General Hospital, Boston, MA, USA. 5Harvard Biophysics Graduate Program, Harvard University, Boston, MA, 
+USA. 6Transplantation Research Center, Renal Division, Brigham and Women’s Hospital, Boston, MA, USA. 7Specialized Histopathology Core, Brigham and 
+Women’s Hospital, Boston, MA, USA. 8Department of Medicine, Mayo Clinic Arizona, Scottsdale, AZ, USA. 9These authors contributed equally:  
+Oksana Zavidij, Nicholas J. Haradhvala, Tarek H. Mouhieddine. 10These authors jointly supervised this work: Jamil Azzi, Gad Getz, Irene M. Ghobrial.  
+✉e-mail: gadgetz@broadinstitute.org; irene_ghobrial@dfci.harvard.edu
+B
+one marrow (BM) plasma cell malignancy MM remains an 
+incurable disease1. Despite the readily detectable monoclonal 
+gammopathy of unknown significance (MGUS) and smol-
+dering MM (SMM) precursor states1–3, treatment is not adminis-
+tered until patients progress to MM. Since early premalignancy not 
+always leads to progression, treatment cannot be justified solely on 
+this basis. Low- and high-risk SMM exhibit 5-year progression rates 
+of 15 and 70%, respectively, compared to a 20-year rate of 2 and 27% 
+for low- and high-risk MGUS4,5. Therefore, further molecular char-
+acterization is required to accurately identify and thwart high-risk 
+premalignant MM.
+Genomic studies have shown that MGUS/SMM clones may 
+already harbor chromosomal alterations that define MM (translo-
+cations involving IgH or hyperdiploidy2,6) and that progression can 
+be driven by the acquisition of events like MYC translocations, 1q 
+gains and TP53 mutations7,8. However, not all patients with MGUS/
+SMM with a similar genetic makeup eventually progress to MM, 
+implying that further nongenomic alterations may be required for 
+disease progression4,9–11. Indeed, it is becoming more recognized 
+that tumors represent complex ecosystems12. Not only can tumor 
+behavior be regulated by the extracellular milieu13–15, but emerging 
+evidence documents that compositional and expression changes 
+of individual immune and stromal components correlate with dis-
+ease subtypes and prognostic and therapeutic outcomes in breast, 
+colorectal and other solid cancers16–20.
+Prior studies have confirmed that the BM microenvironment in 
+MM exhibits dysregulation in receptor signaling21, cytokine expres-
+sion21,22 and numerical alterations in T, natural killer (NK) and 
+dendritic cells23–26. MM cells induce immunosuppression, which 
+comprises expansion of regulatory T (Treg) cells27,28, myeloid-derived 
+suppressor cells (MDSCs)29,30, tumor-associated macrophages31,32 
+and dysfunction of NK cells33. Alterations to the microenviron-
+ment have been linked to reduced antitumor responses, induction 
+of angiogenesis, chemotherapy resistance and progression27,31,34,35.
+In this study, we used single-cell transcriptomics to dissect the 
+immune microenvironment in the BM in people with MGUS, SMM 
+and overt MM compared to healthy donors. We observe that the 
+tumor microenvironment exhibits substantial alterations begin-
+ning at the MGUS stage, with increased populations of NK cells, 
+T  cells and nonclassical monocytes. Among T  cells, we observe 
+an early accumulation of regulatory and gamma delta T cells, fol-
+lowed by loss of CD8+ memory populations and elevation of IFN 
+signaling at the SMM stage. We demonstrate the critical impor-
+tance of memory T cells for MM immunosurveillance. In CD14+  
+Single-cell RNA sequencing reveals compromised 
+immune microenvironment in precursor stages of 
+multiple myeloma
+Oksana Zavidij1,2,3,9, Nicholas J. Haradhvala   3,4,5,9, Tarek H. Mouhieddine   1,2,3,9, 
+Romanos Sklavenitis-Pistofidis1,2,3, Songjie Cai   2,6, Mairead Reidy1,2,3, Mahshid Rahmat   1,2,3, 
+Abdallah Flaifel2,7, Benjamin Ferland7, Nang K. Su1, Michael P. Agius   1,2,3, Jihye Park1,2,3, 
+Salomon Manier1,2, Mark Bustoros1,2,3, Daisy Huynh1, Marzia Capelletti1,2,3, Brianna Berrios1, 
+Chia-Jen Liu   1,2, Meng Xiao He3,5, Esteban Braggio8, Rafael Fonseca8, Yosef E. Maruvka3, 
+Jennifer L. Guerriero1,2, Melissa Goldman2,3, Eliezer M. Van Allen   1,2,3, Steven A. McCarroll2,3, 
+Jamil Azzi2,6,10, Gad Getz   2,3,4,10 ✉ and Irene M. Ghobrial   1,2,3,10 ✉
+Precursor states of multiple myeloma (MM) and its native tumor microenvironment need in-depth molecular characterization 
+to better stratify and treat patients at risk. Using single-cell RNA sequencing of bone marrow cells from precursor stages, 
+monoclonal gammopathy of unknown significance and smoldering MM, to full-blown MM alongside healthy donors, we dem-
+onstrate early immune changes during patient progression. We find that natural killer cell abundance is frequently increased 
+in the early stages and associated with altered chemokine receptor expression. As early as smoldering MM, we show loss of 
+granzyme K+ memory cytotoxic T cells and show their critical role in MM immunosurveillance in mouse models. Finally, we 
+report major histocompatibility complex class II dysregulation in CD14+ monocytes, which results in T-cell suppression in vitro. 
+These results provide a comprehensive map of immune changes at play over the evolution of premalignant MM, which will help 
+develop strategies for immune-based patient stratification.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+493
+
+Articles
+Nature Cancer
+monocytes, we find dysregulated expression of major histocompat-
+ibility complex (MHC) type II genes. We show that MM cells lead to 
+loss of antigen presentation, inducing a T-cell suppressive phenotype 
+in monocytes. Together, our results characterize transcriptional and 
+compositional changes occurring in the BM compartment during 
+MM progression. They hint at mechanisms of antitumor immune 
+response and immune evasion. Importantly, the immune patterns 
+we observed are often heterogeneous across patients and thus may 
+prove important biomarkers for risk assessment and therapeutic 
+strategies for the prevention of progression in MM.
+Results
+To better understand the changes occurring in the tumor micro-
+environment during MM progression, we performed single-cell 
+RNA sequencing (RNA-seq; 10x Genomics) on BM aspirates from 
+patients at varying stages of progression. We sequenced approxi-
+mately 19,000 CD45+/CD138− cells from the microenvironment 
+(approximately 15,000 from MM stages) from patients with MGUS 
+(n = 5 patients), low-risk SMM (SMM-low; n = 3), high-risk SMM 
+(SMM-high; n = 8) and newly diagnosed MM (n = 7), as well as nine 
+healthy donors (normal BM (NBM), n = 9; Supplementary Tables 
+1 and 2). One patient contributed sequential samples (SMM-low-1 
+and MM-8). Patients with SMM were stratified by risk of progres-
+sion into low (SMMl) and high (SMMh) based on the Mayo clinic 
+established criteria10,36.
+The CD45+CD138− subset was isolated using magnetic bead 
+sorting of the BM samples and further in silico cell filtering based 
+on gene expression (Experimental procedures). By clustering cells 
+based on expression profile, we isolated 21 subpopulations. Using 
+(1) the expression of known marker genes (Extended Data Fig. 1) 
+and (2) finding the top differentially expressed genes for each cluster 
+(Supplementary Table 3), we classified our clusters with ten broad cell 
+types, ranging from hematopoietic progenitor cells and pre-B cells to 
+mature populations engaged in the immune response (Fig. 1a).
+Compositional alterations in the microenvironment occur early 
+in MM progression. To investigate the relative contribution of dif-
+ferent cell types to the microenvironmental repertoire across differ-
+ent stages of disease, we searched for populations that were enriched 
+on average in the disease microenvironment compared to normal 
+BM. Consistent with previous data23–26, we observed a significant 
+enrichment in NK, T and CD16+ cells in the diseased BM, as well as 
+a relative decrease in plasmacytoid dendritic cells, immature neu-
+trophils, CD14+ monocytes and other progenitor cells (Fig. 1b,c). 
+Several of these alterations could already be observed as early as 
+the MGUS stage. Interestingly, the degree of this compositional shift 
+was not uniform across patients. While BM samples from healthy 
+donors universally had <2% CD16+ macrophages and <10% NK 
+cells, patient samples occupied a spectrum from unaltered composi-
+tions to approximately 12% CD16+ macrophages and approximately 
+40% NK cells. These changes were observed independent of disease 
+stage or tumor burden, suggesting they were mediated by the prop-
+erties of the tumor itself or the immune response of the individual 
+patients (Fig. 1c). In particular, NK-cell fractions correlated with 
+the proportion of nonclassical monocytes and this relationship did 
+not correspond to the cytogenetic characteristics of the tumor, dis-
+ease stage or tumor burden (Fig. 1d).
+NK levels were most elevated in patients with immunoglobulin 
+G–secreting tumors, which given their interaction with immuno-
+globulin G via the Fc receptor III in normal physiology37, could indi-
+cate a reason for their presence or be a factor in their failure to clear 
+the disease (Extended Data Fig. 2a). Furthermore, samples with 
+overall increases in NK cells were accompanied by a shift in their 
+phenotype. Subclustering of NK cells revealed three populations: 
+a CXCR4+, a CX3CR1+/CCL3+ and a less frequent IL7R+CD62L+ 
+population (markers of the classical immature CD56bright subset38) 
+(Fig. 1e). Notably, we observed a correlation between the over-
+all fraction of NK cells in a given sample and the representation 
+of the CXCR4+ subset (Spearman ρ = 0.60, 95% bootstrapped con-
+fidence interval (0.18,0.86), n = 23, samples with ≥5% NK cells; 
+Fig. 1f,g and Extended Data Fig. 2b). Samples with enrichment 
+(greater than the median) for NK cell frequency also had signifi-
+cant enrichment for the CXCR4+ subset (Fisher exact test, P = 0.012, 
+n = 23), while samples with lower NK-cell frequencies displayed 
+a shift toward the CX3CR1+ subset (Extended Data Fig. 2c). The 
+current understanding is that CXCR4 is required for NK homing 
+toward CXCL12-producing cells in the BM and signifies less mature 
+NK cells, while CX3CR1 expression causes migration toward BM 
+sinusoids, leading to egress from the BM39. This suggests chemotac-
+tic relocalization could be the basis for the observed heterogeneity 
+in NK-cell frequency.
+To further validate the compositional changes observed in our 
+sequencing data, we performed simultaneous deep phenotyping of 
+viably frozen BM aspirates of patients with MGUS, SMM and MM 
+(n = 13) and healthy BM controls (n = 4) using mass cytometry by 
+time-of-flight (CyTOF). Overall, CyTOF data correlated with the 
+RNA-seq results (Extended Data Fig. 3a–c), with the exception that 
+we observed substantially lower neutrophil output from the 10x 
+Genomics assay compared to the CyTOF data. While in CyTOF 
+neutrophils represented 8–50% of live cells in the BM (Extended 
+Data Fig. 3d), the 10x Genomics cell distribution favored T cells and 
+monocytes. Due to low messenger RNA content in mature neutro-
+phils, they may not be distinguishable as cells in single-cell RNA 
+data from empty droplets with ambient RNA. However, this type 
+of bias decreases neutrophil counts in both healthy-donor and MM 
+samples, and thus should not alter the results for comparisons of a 
+given cell type across samples.
+Composition of noncytotoxic T cells shows increased Treg num-
+bers and patient-specific heterogeneity. To delve deeper into the 
+T-cell subtypes and states, we used two complementary approaches. 
+First, we performed additional subclustering at higher resolu-
+tion using genes variably expressed among T cells, resulting in 12 
+subclusters (Fig. 2). Then, because activation of continuous gene 
+expression modules may not be captured by discrete clustering, 
+we used a Bayesian variant of nonnegative matrix factorization to 
+extract seven expression signatures (Fig. 3). First, we examined the 
+noncytotoxic subsets marked by high expression of signature T-sig1 
+(Fig. 3a). T-cell clusters distinguished by T-sig1 included three 
+CCR7-expressing naive CD4 subsets, two populations of helper 
+CD4 cells and a population of Treg cells (Fig. 2a–c). An additional 
+cluster of helper CD4 cells showed upregulated interferon (IFN) 
+type I-activated genes; indeed, in our signature analysis we found 
+a corresponding signature of IFN response that was highly upregu-
+lated in five late-stage samples (T-sig2, Fig. 4a, 1 SMM-high and 
+four MM). In addition, as described previously27,28, we saw a sig-
+nificant upregulation of Treg cells in the diseased microenvironment 
+(Fig. 2d,e, q = 0.0005, d.f. = 26.1, Benjamini–Hochberg-corrected 
+t-test of NBM versus disease samples). Interestingly, transcriptional 
+profiles of Treg cells demonstrate high expression of MHC type II 
+proteins, which have been reported to inhibit T-cell proliferation 
+and cytokine production via an early contact-dependent mecha-
+nism40. Additionally, our patient with sequential samples had CD4+ 
+subsets that express corticotropin-releasing hormone, which pro-
+motes inflammation41.
+Cytotoxic T-cell populations shift toward effector phenotype dur-
+ing disease progression. Our cytotoxic T cells were broadly sepa-
+rated by two signatures of (T-sig4 and T-sig7; Fig. 3a), most notably 
+corresponding to the expression of either granzymes B (GZMB, 
+GrB) and H (GZMH, GrH; T-sig4) or granzyme K (GZMK, GrK; 
+T-sig 7; Fig. 3b), present exclusively in CD8+ cells. The GrK-to-GrB 
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+494
+
+Articles
+Nature Cancer
+transition has been associated with the differentiation of cytotoxic 
+T cells from memory to effector state42. The T cells marked by the 
+GrB expression signature included clusters of CD8+ cytotoxic effec-
+tor and gamma delta T cells, in addition to a subpopulation of CD4+ 
+cytotoxic cells and NK T  cells predominantly derived from one 
+patient (Fig. 2d).
+Among cells expressing one of two cytotoxic signatures (con-
+sidered as >100 and >50 activity for signatures T-sig4 and T-sig7 
+based on their distribution), T-sig7 was more prevalent in healthy 
+individuals and patients with MGUS (P = 0.0013, d.f. = 21.5, 
+n = 30, t-test on patient mean signature activity across these 
+cytotoxic cells between healthy/MGUS and SMM/MM), whereas 
+a
+c
+d
+NBM−1
+NBM−2
+NBM−3
+NBM−4
+NBM−5
+NBM−8
+NBM−9
+NBM−10
+NBM−11
+MGUS−1
+MGUS−2
+MGUS−3
+MGUS−4
+MGUS−6
+SMM-low−1
+SMM-low−2
+SMM-low−3
+SMM-high−2
+SMM-high−3
+SMM-high−4
+SMM-high−6
+SMM-high−7
+SMM-high−8
+SMM-high−9
+SMM-high−10
+MM−1
+MM−3
+MM−4
+MM−5
+MM−6
+MM−7
+MM−8
+CD14+ monocytes
+Myeloid dendritic cells
+Pre-B cells
+Plasmacytoid dendritic cells
+Hematopoietic progenitor cells
+Immature neutrophils
+B cells
+T cells
+CD16+ monocytes
+NK cells
+z-score fraction cells
+0
+0.1
+0.2
+0.3
+0
+0.03
+0.06
+0.09
+0.12
+Fraction of
+nonclassical monocytes
+Fraction of NK cells
+Healthy (n = 6)
+SMM-low (n = 3)
+Disease/stage
+MGUS (n = 3)
+SMM-high (n = 8)
+MM (n = 6)
+Altered composition
+Normal
+composition
+CX3CR1
++
+CXCR4
++
+CD56
+bright
+CX3CR1
+GIMAP7
+IFI44L
+LGALS1
+IFI16
+ADGRG1
+LAIR2
+HLA−DPB1
+PTGDS
+CCL3
+CXCR4
+RGS2
+ZFP36
+MYOM2
+MAP3K8
+RP11−160E2.6
+AREG
+DDIT4
+WDR74
+PTCH2
+GZMK
+XCL1
+IL7R
+SELL
+KLRC1
+CMC1
+CD44
+XCL2
+NFKBIA
+LTB
+NK subset
+−0.5
+0
+0.5
+1.0
+Mean
+expression
+e
+0
+0.25
+0.50
+0.75
+1.00
+0.1
+0.2
+0.3
+Fraction of NK cells
+Fraction CXCR4+ subset (out of NK cells)
+Disease/stage
+Healthy (n = 2)
+MGUS (n = 4)
+SMM-low (n = 4)
+SMM-high (n = 6)
+MM (n = 7)
+f
+0
+0.1
+0.2
+0.3
+NBM−1
+NBM−2
+NBM−3
+NBM−4
+NBM−5
+NBM−8
+NBM−9
+NBM−10
+NBM−11
+MGUS−1
+MGUS−2
+MGUS−3
+MGUS−4
+MGUS−6
+SMM-low−1
+SMM-low−2
+SMM-low−3
+SMM-high−2
+SMM-high−3
+SMM-high−4
+SMM-high−6
+SMM-high−7
+SMM-high−8
+SMM-high−9
+SMM-high−10
+MM−1
+MM−3
+MM−4
+MM−5
+MM−6
+MM−7
+MM−8
+Patient
+Fraction of cells
+(out of all immune cells)
+Subset
+CX3CR1+
+CXCR4+
+CD56bright
+g
+ρ = 0.62
+P = 8.8 × 10–4
+ρ = 0.60
+P = 3.1 × 10–3
+B cells
+CD14+ monocytes
+CD16+ monocytes
+HPCs
+Immature neutrophils
+Myeloid dendritic cells
+NK cells
+Plasmacytoid
+dendritic cells
+Pre-B cells
+T cells
+n = 32
+–2
+4
+2
+0
+–1
+1
+–3
+3
+Enriched in TME (n = 23)
+Enriched in NBM (n = 9)
+b
+B cells
+CD14+ monocytes
+CD16+ monocytes
+Hematopoietic
+progenitor cells
+Myeloid dendritic cells
+Immature neutrophils
+NK cells
+Plasmacytoid
+dendritic cells
+Pre-B cells
+T cells
+0
+1
+2
+3
+−2
+0
+2
+log fold change
+−log10 (q)
+4
+Fig. 1 | The immune landscape in healthy-donor and MM samples. a, t-SNE representation of immune cells identified in the CD45+ population. b, Immune 
+composition changes between normal and cancer samples. For each cell type, the log fold change in mean cell fraction between tumor and normal 
+samples, with −log10 Benjamin–Hochberg-corrected, two-sided Wilcoxon rank-sum P values on the y axis (n = 32 patient samples) is shown. c, Distribution 
+of different cell types in the CD45+ fraction for individual patients and healthy donors. Cell type fractions are z-standardized across patients. d, Proportion 
+of NK cells correlated with numbers of nonclassical monocyte cell fractions indicating inflammatory environment in patients compared to healthy controls. 
+Only samples with at least 200 total cells are shown. Correlation was assessed by Spearman coefficient on n = 26 patient samples. e, Distribution of 
+NK-cell subsets in the BM microenvironment. The heatmap shows the mean expression of highly represented individual marker genes per cluster.  
+f, Scatter plot of the fraction of NK cells in a given patient that are CXCR4+ versus the fraction of all immune cells that are NK cells. Only samples with at 
+least 50 NK cells are shown. Correlation was assessed by Spearman coefficient on n = 23 patient samples. g, Proportion of distinct NK-cell subsets per 
+sample. Samples with high NK-cell enrichment are largely composed of the CXCR4+ subtype. Only samples with at least 50 NK cells are shown on n = 23 
+patient samples.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+495
+
+Articles
+Nature Cancer
+Naive 1
+Naive 2
+Naive 3
+Helper 1
+Helper 2
+Treg
+IFN-responding
+Memory cytotoxic
+CD8 cytotoxic
+CD4 cytotoxic
+Gamma delta T cells
+NK T cells
+Naive 1
+Naive 2
+Naive 3
+Helper 1
+Helper 2
+Treg
+IFN-responding
+Memory cytotoxic
+CD8 cytotoxic
+CD4 cytotoxic
+Gamma delta T cells
+NK T cells
+RP11−291B21.2
+RPS26
+CCR7
+LTB
+TSHZ2
+ADTRP
+ZNF90
+MYC
+IL6ST
+MAL
+AC074117.10
+C1orf56
+HNRNPH1
+LRRC75A
+PHKG1
+CDC42SE1
+SET
+C16orf54
+MDM4
+TNRC6B
+PIM2
+S100A4
+TNFRSF4
+KLRB1
+ANXA1
+CRIP1
+TNFAIP3
+ITGB1
+GPR183
+FOS
+CRH
+KRT1
+RRS1
+IL4R
+RNF125
+KPNA6
+RP11−347P5.1
+RP11−386I14.4
+CD69
+RTKN2
+HLA−DRB1
+HLA−DQB1
+LINC00152
+ANXA2
+MIR4435−2HG
+IL32
+IFI44L
+IFIT3
+MX1
+ISG15
+XAF1
+IFI44
+IRF7
+IFITM1
+STAT1
+CMC1
+GZMK
+CCL5
+CST7
+RGS1
+CCL4
+XCL2
+DUSP2
+ZFP36
+CCL3
+GZMH
+NKG7
+GNLY
+FGFBP2
+GZMA
+GZMB
+KLRD1
+PRF1
+CX3CR1
+HOPX
+C12orf75
+TRDC
+KLRC2
+KLRF1
+CD8A
+HLA−DPA1
+HLA−DPB1
+CTSW
+CD8B
+−1.0
+−0.5
+0
+0.5
+1.0
+1.5
+Mean
+expression
+Naive 1
+Naive 2
+Naive 3
+Helper 1
+Helper 2
+Treg
+IFN-responding
+Memory cytotoxic
+CD8 cytotoxic
+CD4 cytotoxic
+Gamma delta T cells
+NK T cells
+CD4
+CD8A
+CD8B
+IL2RA
+CTLA4
+FOXP3
+−0.25
+0
+0.25
+0.50
+0.75
+1.00
+Mean
+expression
+0
+0.25
+0.50
+0.75
+1.00
+NBM−2
+NBM−5
+NBM−8
+NBM−9
+NBM−10
+NBM−11
+MGUS−1
+MGUS−2
+MGUS−3
+MGUS−4
+MGUS−6
+SMM-low−1
+SMM-low−2
+SMM-low−3
+SMM-high−2
+SMM-high−3
+SMM-high−4
+SMM-high−6
+SMM-high−7
+SMM-high−8
+SMM-high−9
+SMM-high−10
+MM−1
+MM−3
+MM−4
+MM−5
+MM−6
+MM−7
+MM−8
+Sample
+Fraction noncytotoxic cells
+Naive 1
+Naive 2 (qdisease = 0.0062)
+Naive 3
+Helper 1
+Helper 2
+Treg (qdisease = 2.3 × 10–4)
+IFN-responding
+0
+0.25
+0.50
+0.75
+1.00
+NBM−2
+NBM−5
+NBM−8
+NBM−10
+NBM−11
+MGUS−1
+MGUS−3
+MGUS−4
+MGUS−6
+SMM-low−1
+SMM-low−2
+SMM-low−3
+SMM-high−3
+SMM-high−4
+SMM-high−6
+SMM-high−7
+SMM-high−8
+SMM-high−10
+MM−1
+MM−3
+MM−4
+MM−5
+MM−7
+MM−8
+Sample
+Fraction of cytotoxic cells
+Memory cytotoxic (qstage = 0.001)
+CD8 cytotoxic
+CD4 cytotoxic
+Gamma delta T cells (qdisease = 0.07)
+NK T cells
+a
+c
+b
+d
+0
+5
+10
+15
+20
+0
+250
+500
+750
+1,000
+1,250
+Number of T cells
+Number of Treg cells
+Disease
+Healthy
+MGUS
+SMM-low
+SMM-high
+MM
+Healthy range
+q = 5 × 10–4
+e
+Fig. 2 | Heterogeneous composition of T cells in diseased BM microenvironment. a, t-SNE visualization of T-cell clusters localized in the BM. b, Mean 
+expression of differentially expressed marker genes per cluster. c, Mean expression of individual genes additionally used for cluster definition.  
+d, Distribution of noncytotoxic and cytotoxic T-cell populations in individual samples. Only samples with at least 50 cells of the corresponding type are 
+shown. e, Significant enrichment of regulatory T cells in the BM of diseased patients (q = 0.0005, d.f. = 26.1, Benjamini–Hochberg-corrected, two-tailed 
+t-test on the fraction of Treg cells between NBM and disease samples using n = 29 patient samples with at least 50 T cells).
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+496
+
+Articles
+Nature Cancer
+Signature
+Marker gene
+0
+100
+200
+300
+Activity
+T-sig1
+0
+100
+200
+300
+400
+Activity
+T-sig4
+0
+100
+200
+Activity
+T-sig7
+0
+1
+2
+3
+4
+Expression
+IL7R
+0
+1
+2
+3
+4
+5
+Expression
+NKG7
+−4
+−2
+0
+2
+4
+GZMK
+JUN
+CXCR4
+CH17−373J23.1
+RGS1
+NFKBIA
+JUNB
+CD69
+CD8B
+IFRD1
+GIMAP7
+FGFBP2
+LGALS1
+GZMB
+PRF1
+CD52
+GZMH
+GNLY
+log2(T-sig4/T-sig7)
+T-sig4 high
+T-sig7 high
+Healthy
+n = 8,
+c = 730
+MGUS
+n = 4,
+c = 225
+SMM-low
+n = 4,
+c = 460
+SMM-high
+n = 8,
+c = 1,194
+MM
+n = 7,
+c = 1,193
+0
+50
+100
+150
+2000
+50
+100
+150
+2000
+50
+100
+150
+2000
+50
+100
+150
+2000
+50
+100
+150
+200
+0
+100
+200
+300
+400
+T-sig7 (GrK/memory)
+Signature
+T-sig4 (GrH/GrB)
+Cell density
+Central
+memory T cells
+Effector
+memory T cells
+0
+1
+2
+3
+4
+Percentage of CD8+ cells
+Healthy
+SMM
+P = 0.019
+P = 0.004
+GZMA+GZMB–
+0
+20
+40
+60
+80
+0
+50
+100
+Days
+Percentage survival
+1.5 years (established memory pool)
+10 weeks (deficient memory pool)
+Age
+1.5 years: 45 d
+10 weeks: 35 d
+Median survival
+0
+50
+100
+150
+0
+50
+100
+Days
+Percentage survival
+1.5 years (established memory pool)
+6 months (established memory pool)
+Age
+1.5 years: 46.5 d
+6 months: 42 d
+Median survival
+P = 0.035
+P = 0.63
+M spike
+10 weeks
+1.5 years
+10 weeks
+1.5 years
+0
+1
+2
+3
+4
+5
+Percentage of plasma
+cells in spleen
+P = 0.047
+a
+b
+c
+d
+e
+f
+g
+Fig. 3 | Skewed differentiation of cytotoxic T cells in patients with MM at an early disease stage. a, t-SNE representation colored by T-cell signature 
+activity and marker genes for broad characteristic signatures. b, Log fold change of NMF gene weightings between cytotoxic T-cell signatures T-sig4 
+and T-sig7. c, Distribution of cells expressing GrB/H (T-sig7) and GrK (T-sig4) cytotoxic signatures in healthy donors at different stages of disease. Only 
+T cells expressing one of the two signatures (>100 T-sig4 or >50 T-sig7 activity) are shown. d, CyTOF data show decreased numbers of cytotoxic memory 
+cells in the BM of patients SMM compared to healthy donors (with a median value of 1.08 versus 0.45 for central memory T cells; 1.92 versus 0.51 for 
+effector memory T cells in healthy BM and patients with SMM, respectively). CyTOF was performed on CD138− cells from BM aspirates of patients with 
+SMM (n = 9) and healthy donors (n = 4) using the GrB-171Yb, GrA-149Sm and Maxpar Human T-Cell Phenotyping Panel Kit, 16 Marker. Cell subsets were 
+defined as suggested by the manufacturer. Significance was tested with a two-tailed t-test; the bars represent the s.d. e, Memory cells are critical for 
+immunosurveillance in MM. Significantly shorter survival of 10-week-old KaLwRj mice (n = 6) after injection with 5TGM1 MM cells, compared to older 
+animals (n = 5). No difference in survival of myeloma-injected mice was observed in groups with an established memory cell pool (6-month-old KaLwRj 
+mice, n = 9, versus 1.5-year-old KaLwRj mice, n = 10). Significance was tested with the log-rank (Mantel–Cox) test. f, Early accumulation of CD138+ plasma 
+cells in the spleen of 10-week-old BL6 mice (n = 8) at 3 weeks post Vk*MYC MM cell injection, compared to older animals (n = 8), with a median value 
+of 1.99 in younger mice compared to 0.78 in older mice. The significant difference was tested with a two-tailed t-test; the bars represent the s.d. g, Faster 
+abundance of monoclonal proteins (M spike) in the blood of 10-week-old BL6 mice (n = 10) at 3 weeks post Vk*MYC MM cell injection, compared to 
+1.5-year-old mice (n = 10). QuickGel Split-Beta gels separate serum proteins by the classic electrophoresis zones, with monoclonal proteins appearing as 
+a specific band (M spike). The gel has been cut from the outside; no samples/bands were removed. The experiment was repeated twice with the same 
+results. Representative data from one experiment is shown.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+497
+
+Articles
+Nature Cancer
+the SMM and MM stages presented a striking shift to T-sig4 
+(P = 3.1 × 10−4, d.f. = 27.9, n = 30, Fig. 3c), suggesting a depletion of 
+memory CD8+ T cells later during disease progression. In support 
+of this result, we observed in our CyTOF data a twofold decrease 
+in memory CD8+ cells in the BM aspirates of patients with SMM 
+(central memory and effector memory T cells, GrA+GrB−; Fig. 3d 
+and Extended Data Fig. 4a).
+We next examined whether these populations displayed the 
+characteristics of T-cell exhaustion. Of four key markers of exhaus-
+tion (PDCD1, HAVCR2, LAG3 and TIGIT), we found that only 
+LAG3 and TIGIT were expressed at detectable levels and were rela-
+tively specific to the cytotoxic subsets (with the exception of TIGIT 
+expression on Treg cells; Extended Data Fig. 4b). Across cytotoxic 
+T cells, we did not see a difference between healthy individuals and 
+patients in the expression of these genes (Extended Data Fig. 4c). 
+However, since healthy donor samples primarily were composed of 
+GrK+ cytotoxic subsets, we cannot reliably compare the expression 
+of specifically GrB+ subsets, which probably would be the relevant 
+subsets to display classical exhaustion.
+Of note, in our CyTOF data, we observed significantly higher 
+expression of the checkpoint receptor programmed cell death 
+protein 1 (PD-1) on memory cells in healthy individuals than in 
+patients with SMM (Extended Data Fig. 4d,e, P = 0.047). Recent 
+publications have connected the expression of PD-1 at the early 
+stages of T-cell differentiation with a mechanism for T-cell activa-
+tion to balance effector and memory responses43,44; however, its role 
+in MM remains to be elucidated.
+Notably, the degree of the shift from memory to effector 
+was variable, and in several samples, such as MM-7, it was com-
+pletely absent. We did not observe any correlation between 
+T-sig2
+1
+2
+DDX60
+IFI44
+PARP9
+MX2
+MX1
+IRF7
+EIF2AK2
+XAF1
+IFI44L
+STAT1
+0
+0.5
+1.0
+1.5
+Mean expression
+Mean
+activity
+M-sig1
+10
+20
+CCL2
+IFIT1
+IFIT3
+IFITM1
+IFIT2
+OAS3
+MX1
+EPSTI1
+IFI44L
+ISG15
+NBM 1
+NBM 2
+NBM 3
+NBM 4
+NBM 5
+NBM 8
+NBM 9
+NBM 10
+NBM 11
+MGUS 1
+MGUS 2
+MGUS 3
+MGUS 4
+MGUS 6
+SMM-low 1
+SMM-low 2
+SMM-low 3
+SMM-high 2
+SMM-high 3
+SMM-high 4
+SMM-high 6
+SMM-high 7
+SMM-high 8
+SMM-high 9
+SMM-high 10
+MM 1
+MM 3
+MM 4
+MM 5
+MM 6
+MM 7
+MM 8
+Patient
+0
+1
+2
+3
+Mean expression
+Mean
+activity
+T cells
+CD14+ monocytes
+IFN-α high
+a
+0
+1
+2
+3
+4
+Expression
+IFI44L
+b
+NK
+T
+CD16+ monocyte
+CD14+ monocyte
+Fig. 4 | IFN type I target genes are upregulated in patients compared to healthy donors. a, Mean T-sig2 and M-sig1 cell signature activity across samples, 
+and mean expression of genes most highly weighted in these signatures. b, t-SNE representation of cells colored by IFI44L expression.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+498
+
+Articles
+Nature Cancer
+plasma cell cytogenetics and types of cells composing the cytotoxic 
+T-cell cluster.
+To address the role of GrK-expressing cytotoxic memory cells 
+in MM progression, we performed in vivo assays using syngeneic 
+transplantable myeloma mice with different maturation stages of 
+the memory cell pool. For this, 10-week-old KaLwRiJ mice with 
+impaired memory cell function and fully immunocompetent older 
+animals (1.5 years old) were injected with 5TGM1 MM cells. Young 
+mice with impaired memory cells showed significantly shorter sur-
+vival than older animals (Fig. 3e). In a similar assay with C57BL/6J 
+mice injected with Vk*MYC MM cells, we observed early accumu-
+lation of plasma cells in the spleen and faster abundance of mono-
+clonal proteins in the blood of younger animals (Fig. 3f,g). However, 
+no difference in survival of myeloma-injected mice was obtained 
+when animal groups with fully established memory cell pool were 
+compared (6-month-old versus 1.5-year-old KaLwRiJ mice; Fig. 3e, 
+right panel), providing compelling evidence for a previously unde-
+termined critical role of memory cells for immunosurveillance 
+against MM. Future studies in age-matched mice are necessary to 
+further eliminate potential age-associated confounding factors.
+IFN response is seen across immune cell types in late-stage dis-
+ease. The T-sig2 signature was highly enriched for IFN-responsive 
+genes (for example, STAT1, IFI44L and ISG15) and uniquely present 
+in a subset of late-stage patients (Fig. 4a). Likewise, signature analy-
+sis in CD14+ monocytes isolated an expression program (M-sig1) 
+with highly overlapping marker genes. This signature was present 
+in precisely the same samples, suggesting a common response to the 
+external signals. Indeed, when we visualized expression of the top 
+genes, we observed IFN response in subpopulations of different cell 
+types, including NK, nonclassical monocytes and small numbers of 
+B cells (Fig. 4b). While this signature was strongly present in 4 out of 
+23 samples, which means we are underpowered to directly link it to 
+myeloma progression (Fisher exact test, P = 0.054, n = 27), we have 
+shown in previous work that IFN signaling is significantly upregu-
+lated in malignant plasma cells27. Interrogating a publicly available 
+dataset from CD138-enriched plasma cells at different stages of the 
+MM disease (n = 147) and healthy donors (n = 15, GSE6477) for the 
+expression of ISG15 and MX1, which scored highly in gene signature 
+analyses in our single-cell data, we found a significantly increased 
+expression of these genes throughout MM progression (Extended 
+Data Fig. 5). Thus, our data from the immune microenvironment 
+provide evidence that signaling in this context occurs not just in 
+myeloma cells, but across immune populations.
+CD14+ monocytes in the MM microenvironment show defec-
+tive antigen presentation due to intracellular accumulation of 
+human leukocyte antigen DR isotype (HLA-DR). In addition to 
+the IFN signature found in CD14+ monocytes, we discovered that 
+the M-sig2 signature was significantly upregulated in all malig-
+nant cases (t-test, n = 30, d.f. = 19.7, q = 1.3 × 10−6). The majority of 
+genes highly contributing to this signature were encoding the MHC 
+class II cell surface receptor (HLA-DRA, HLA-DPB1, HLA-DRB1 
+and HLA-DPA1; q ≤ 2 × 10−4; Fig. 5a and Extended Data Fig. 6a). 
+Expression of MHC class II encoding genes individually was sig-
+nificantly upregulated in CD14+ monocytes/macrophages across 
+all disease stages, including MGUS (Fig. 5a and Extended Data 
+Fig. 6a). The mRNA levels of MHC class II receptors together with 
+the expression of IFN-activated genes predominantly determined 
+the organization of CD14+ monocytic subclusters (Extended Data 
+Fig. 6b). Additional subclusters were built from individual patients 
+with high expression of the mannose receptor C-type 1 (MRC1), 
+CCL3/4 and CCAAT/enhancer binding protein signaling (Extended 
+Data Fig. 6b).
+However, study of MHC class II expression using CyTOF 
+revealed that despite elevated mRNA levels, CD14+ cells from 
+patients with SMM and MM exhibited significantly lower HLA-DR 
+surface expression compared to those from healthy donors 
+(Fig. 5b), suggesting pathway dysregulation yet resulting in com-
+promised antigen presentation in these cells. To elucidate whether 
+this change in expression represented a shift in cell subpopula-
+tions (for example, MDSCs are known to have low levels of MHC 
+class II surface presentation) or a phenotypic change specifically 
+induced by the myeloma cells, we cocultured CD14+ cells isolated 
+from the peripheral blood of healthy donors with MM.1S or RPMI 
+8226 myeloma cells and analyzed HLA-DRA mRNA and HLA-DR 
+and HLA-DP surface expression levels. Indeed, while quantita-
+tive reverse-transcription PCR showed a significant increase of 
+HLA-DRA mRNA in monocytes cocultured with MM cells, as 
+compared to coculture with CD19+ control cells (Extended Data 
+Fig. 7a), a dramatic drop in the surface expression of both HLA-DR 
+and HLA-DP molecules was observed (Fig. 5c, left panel). However, 
+the proportion of CD14+ cells expressing HLA-DR and HLA-DP 
+intracellularly remained similar or slightly lower compared to that 
+in controls (Fig. 5c, right panel). We observed intracellular accu-
+mulation of HLA-DR in CD14-expressing cells in tissue microarray 
+(TMA) slides of patients with MM compared to membrane-bound 
+HLA-DR in CD14 monocytes from healthy donors (Fig. 5d and 
+Extended Data Fig. 7b). Taken together, our results suggest that MM 
+Fig. 5 | Dysregulation of MHC class II in CD14+ monocytes in the MM environment. a, Mean activity of MHC class II gene signature (M-sig2) and mean 
+expression of these genes across the samples, grouped by stage of progression. Significance was tested by a Benjamini–Hochberg-corrected, two-tailed 
+t-test with d.f. = 19.7 on n = 30 patient samples with at least ten CD14+ monocytes. b, HLA-DR cell surface protein expression measured by CyTOF 
+across samples. Significantly lower levels of HLA-DR molecules were observed on the surface of CD14+ monocytes/macrophages in patients (SMM and 
+MM samples) compared to healthy donors (NBM), with median values of 26.7 for NBM, and 10.9 and 7.9 for SMM and MM samples, respectively. The 
+significant difference was tested with a two-tailed t-test; the bars represent the s.d. c, Myeloma cells significantly downregulated surface representation 
+of MHC class II on CD14+ monocytes after direct coculture. Human CD14+ monocytes were isolated from the blood of healthy donors and cocultured with 
+CD19+ B cells or MM1.S and RPMI 8226 myeloma cells. FACS analysis was performed on day 3 of coculture. The median values for surface expression 
+on CD14+ cells cocultured with CD19+ cells or with RPMI 8226 cells in Transwells or direct coculture were 94.2, 60.4 and 31.3 for HLA-DR and 64.6, 35.9 
+and 1.7 for HLA-DP, respectively. The median values of 97.0, 97.2 and 91.2 for HLA-DR and 75.8, 86.2 and 6.4 for HLA-DP were detected on the surface of 
+CD14+ cells after similar experimental settings with MM1.S cells. The median proportion of CD14+ cells expressing HLA-DR intracellularly was 97.8, 96.4 
+and 98.0; 96.7, 95.9 and 96.0 for HLA-DP in coculture with RPMI 8226; 97.9, 98.6 and 91.9 for HLA-DR; and 96.8, 97.8 and 90.9 for HLA-DP in coculture 
+with MM1.S cells, respectively. The experiment was performed with three independent donors for two different cell lines in triplicate. Significance was 
+derived from the technical replicates, but different donors demonstrated similar loss of HLA-DR expression to that in controls (two-sided t-test; the error 
+bars indicate the s.d.). d, Immunofluorescence staining of TMAs from patients with MGUS demonstrates intracellular accumulation of HLA-DR (green) in 
+CD14-expressing monocytes (red) compared to membrane-bound localization of HLA-DR in healthy BM monocytes (BM TMAs of patients with MGUS, 
+SMM and MM (n = 45, performed in triplicate, total of 135 BM sections; the yellow arrows point to cells with HLA-DR localized to the cell membrane, the 
+white arrows point to cells with HLA-DR accumulated in the cytoplasm). e, Upregulated MARCHF1/MARCH1 expression and decreased VAPA levels in 
+CD14+ cells from the BM of patients with MM, compared to healthy donors. The violin plots show the minimum, medium and maximum values.  
+A Benjamini–Hochberg-corrected, two-tailed t-test was performed on n = 27 patient samples with ≥50 CD14+ monocytes.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+499
+
+Articles
+Nature Cancer
+cells induce internalization of MHC class II in CD14+ cells, reduc-
+ing their potential for antigen presentation.
+Looking for the alterations in the expression of genes 
+responsible for the posttranslational control of MHC class II, 
+we found the gene encoding the E3 ubiquitin protein ligase 
+MARCHF1/MARCH1 to be progressively upregulated in patients 
+compared to healthy individuals (P = 0.008) and found decreased 
+levels of the gene encoding ER-resident protein VAMP associ-
+ated protein A (VAPA), which plays a role in the inward trans-
+port of MHC class II (P = 0.01, Fig. 5e). By treating CD14+ cells 
+cocultured with MM cell lines with anti-MARCHF1/MARCH1 
+small interfering RNAs (siRNAs), we rescued HLA-DR surface 
+presentation (Extended Data Fig. 8). Thus, our results suggest 
+that the upregulation of MARCHF1/MARCH1 observed in our 
+single-cell RNA dataset could indeed lead to internalization of 
+MHC class II in monocytes in the MM microenvironment.
+CD14+ monocytes in the MM microenvironment can promote 
+proliferation of myeloma cells and suppress T-cell activation. 
+Since CD14+CD11b+HLA-DRlow cells have been previously defined 
+Healthy
+MGUS
+SMM/MM
+0
+20
+40
+60
+Percentage of
+CD14+ HLA-DR+ cells
+P = 0.0087
+n = 4 n = 4 n = 10
+M-sig2
+100
+200
+GIMAP7
+RP11-347P5.1
+ZFP36L2
+HLA-DPA1
+HLA-DPB1
+RPS26
+CD52
+HLA-DRB1
+CD74
+HLA-DRA
+NBM−1
+NBM−2
+NBM−3
+NBM−4
+NBM−5
+NBM−8
+NBM−9
+NBM−10
+NBM−11
+MGUS−1
+MGUS−2
+MGUS−3
+MGUS−4
+MGUS−6
+SMM-low−1
+SMM-low−2
+SMM-low−3
+SMM-high−2
+SMM-high−3
+SMM-high−4
+SMM-high−6
+SMM-high−7
+SMM-high−8
+SMM-high−9
+SMM-high−10
+MM−1
+MM−3
+MM−4
+MM−5
+MM−6
+MM−7
+MM−8
+0
+1
+2
+3
+Mean expression
+Mean
+activity
+q = 1.3 × 10–6
+Intracellular
+Patient
+Surface
+RPMI 8226
+MM1.S
+MM cell line
+0
+50
+100
+150
+0
+50
+100
+150
+P = 2.7 × 10–6
+P = 0.004
+P = 5.0 × 10–9
+0
+50
+100
+150
+Percentage of
+CD14+ cells
+Percentage of
+CD14+ cells
+Percentage of
+CD14+ cells
+Percentage of
+CD14+ cells
+P = 0.02
+CD19+ (direct)
+MM (Transwell)
+MM (direct)
+0
+50
+100
+150
+P = 8.6 × 10–6
+P = 7.9 × 10–6
+0
+50
+100
+150
+HLA-DR
+0
+50
+100
+150
+HLA-DR
+P = 0.0001
+P = 0.0004
+P = 0.007
+0
+50
+100
+150
+HLA-DP
+0
+50
+100
+150
+HLA-DP
+P = 0.0003
+P = 3.1 × 10–6
+P = 4.7 × 10–5
+VAPA
+MARCHF1/MARCH1
+Healthy
+MGUS
+SMM
+MM
+0.2
+0.4
+0.6
+0.8
+0.6
+0.8
+1.0
+1.2
+Mean expression
+P = 2.9 × 10–3
+P = 0.025
+n = 9
+n = 3
+n = 8
+n = 7
+DAPI
++ HLA-DR
+DAPI
++ CD14
+DAPI + HLA-DR
++ CD14
+MGUS
+NBM
+a
+b
+c
+e
+d
+50 µm
+CD19+ (direct)
+MM (Transwell)
+MM (direct)
+CD19+ (direct)
+MM (Transwell)
+MM (direct)
+CD19+ (direct)
+MM (Transwell)
+MM (direct)
+50 µm
+50 µm
+50 µm
+50 µm
+50 µm
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+500
+
+Articles
+Nature Cancer
+as one of the subsets of monocytic MDSCs (mMDSC), we wanted to 
+further characterize the CD14+HLA-DRlow cell population from the 
+MM environment and understand its role in myeloma progression 
+and immune suppression. According to our sequencing results, the 
+population of CD14+ cells expressed CD11b at levels similar to those 
+in healthy cells. Likewise, it expressed various markers that define 
+mature macrophages, such as CD86, CD163 and CD68, with highly 
+elevated CD206 in one patient (Extended Data Fig. 9a). According 
+to suggested guidelines for the characterization of MDSCs45, we 
+did not observe increased expression of MDSC-associated genes 
+in patients relative to healthy donors (Extended Data Fig. 9b). 
+Furthermore, CD14+ cells from healthy donors after coculture 
+with MM cells expressed inducible nitric oxide synthase, CD206 
+and CD163 and did not polarize toward the Lin−CD11b+CD33+ 
+mMDSC phenotype (Extended Data Fig. 9c). Thus, while this cell 
+population may overlap with CD14+CD11b+HLA-DRlow popula-
+tions termed mMDSCs described in other studies, our results agree 
+with the observation of others that additional markers are needed to 
+isolate myeloid cells with a specific mMDSC phenotype.
+Interestingly, after coculture of myeloma cell lines (MM1.S, 
+RPMI 8226, OPM-2, KMS-18) with CD14+HLA-DRlow cells, we 
+observed significant changes in the cell cycle of MM1.S cells result-
+ing in a significantly increased fraction of cells in the S (P = 0.006) 
+and G2M (P = 0.0012) phases of the cell cycle, as compared to that in 
+PBMCs
+B cells
+CD14 cells
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+0
+30
+60
+90
+120
+B cells+
+MM1.S
+CD14+
+MM1.S
+G0
+S
+G2M
+Percentage of
+CD138+ cells
+10.14%
+105
+104
+103
+102
+–102
+20 k
+40 k
+60 k
+80 k
+100 k
+120 k
+140 k
+160 k
+180 k
+200 k
+220 k
+240 k
+260 k
+101
+100
+–101
+2.03%
+79.76%
+BrdU-APC
+7-AAD
+7-AAD
+a
+b
+BrdU-APC
+PBMCs
+B cells
+RPMI 8226
+OPM-2
+0.7
+0.8
+0.9
+1.0
+1.1
+1.2
+CD44+ in CD4+ T cells
+c
+e
+CD14+ cells
+Healthy peripheral blood
+MM cells
+or
+CD19+ B cells
+Day 1
+Day 2
+CD14+ cells
+isolation
+PBMCs
+Healthy peripheral blood
+FACS
+T-cell activation
+Day 5
+CD44 expression
+(MFI, ratio)
+CD44+ in CD8+ T cells
+CD44 expression
+(MFI, ratio)
+d
+f
+SMM BM
+Day 1
+CD14+ or CD19+ cells
+isolation
+PBMCs
+SMM peripheral blood
+FACS
+T-cell activation
+Day 5
+P = 0.0015
+P = 0.0008
+P = 0.0012
+P = 0.0034
+P = 0.04
+P = 0.03
+P = 0.045
+24.48%
+11.06%
+61.34%
+105
+104
+103
+102
+–102
+101
+–100
+–101
+B cells+ MM1.S
+CD14+ MM1.S
+20 k
+40 k
+60 k
+80 k
+100 k
+120 k
+140 k
+160 k
+180 k
+200 k
+220 k
+240 k
+260 k
+Fig. 6 | CD14-expressing monocytes from the myeloma environment can enhance proliferation of myeloma cells and suppress T-cell activation.  
+a, Proportion of MM1.S cells in the G0, S and G2M cell cycle phases assessed from the frequency of myeloma cells that incorporated BrdU into cellular 
+DNA in the presence of CD14+HLA-DRlow monocytes or B cells. The median values for MM1.S cells in the G0, S and G2M phase of the cell cycle were 
+86.1, 9.3 and 4.6 for controls cocultured with B cells compared to 62.4, 27.1 and 10.6 for coculture with CD14+HLA-DRlow cells. The error bars indicate the 
+average deviation. Representative data from one out of three independent experiments performed with three healthy donors. b, Representative FACS 
+profiles show the distribution of MM cells in the different cell cycle phases. c, Experimental design for the T-cell activation assay of CD14+ cells from the 
+MM environment. CD14+ cells isolated from the peripheral blood of healthy donors were cocultured with MM cell lines or healthy B cells as a control. The 
+next day, CD14+ cells were isolated from the MM coculture and placed into culture with healthy PBMCs. On day 5, activation of T cells was analyzed using 
+FACS. d, CD8+ T cells cocultured with CD14+ cells preconditioned with RPMI 8226 myeloma cells show decreased levels of CD44 compared to those in 
+controls precultured with B cells. The mean fluorescence intensity (MFI) for the PBMC controls was 1.0 compared to 0.98 for B cells, 0.85 for RPMI 8226 
+cells and 0.9 for OPM-2 cells. One-way ANOVA and Tukey multiple comparison tests were used to test significant differences between groups; statistics 
+were derived from three independent experiments performed in duplicate; the bars indicate the s.d. e, Experimental design for T-cell activation assay of 
+CD14+ cells from patients with SMM. CD14+ or B cells isolated from the BM of patients with SMM were cocultured with PBMCs. On day 5, activation 
+of T cells was analyzed using FACS. f, CD4+ T cells cocultured with CD14+ cells from patients with SMM show decreased levels of CD44 compared to 
+those in controls. The MFI for PBMC controls was 1.0 as compared to 1.2 for B cells and 0.96 for CD14+ SMM cells. One-way ANOVA and Tukey multiple 
+comparison tests were used to test significant differences between groups; statistics were derived from three independent experiments performed in 
+duplicate; the bars indicate s.d.
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+501
+
+Articles
+Nature Cancer
+control cells, indicating that CD14+HLA-DRlow cells can accelerate 
+the proliferation of MM cells (Fig. 6a,b).
+Then, we tested the ability of CD14+ cells from the MM envi-
+ronment to alter T-cell activity. We assessed the expression of the 
+CD44 activation marker in T cells after coculture with CD14+ cells 
+that were preconditioned with MM cells (Fig. 6c). In contrast to 
+B-cell controls, CD8+ cells after coculture with CD14+ monocytes 
+from the MM environment showed reduced expression of CD44 
+(Fig. 6d), indicating suppression of T-cell activation. In a similar 
+experiment with peripheral blood mononuclear cells (PBMCs) 
+cocultured with either CD14+ cells or CD19+ B cells isolated from 
+the BM aspirates of patients with SMM (Fig. 6e), we observed 
+downregulation of CD44 in CD4+ T cells cocultured with CD14+ 
+cells (Fig. 6f).
+Altogether, these results indicate that CD14+HLA-DRlow cells 
+from the myeloma environment can accelerate proliferation of MM 
+cells and exhibit suppressive activity by inhibiting T-cell activation.
+Discussion
+Myeloma is an incurable disease that can cause irreversible organ 
+damage. Early intervention represents an attractive alternative for 
+treatment, although we cannot accurately predict which patients 
+with MGUS/SMM will progress. Further understanding of dis-
+ease progression requires comprehensive molecular character-
+ization, including that of the tumor’s microenvironment and the 
+host’s immune response. In this study, we used single-cell RNA-seq 
+(scRNA-seq) of patient samples across all stages of MM to elucidate 
+the transcriptomic alterations within the immune microenviron-
+ment along disease progression.
+Through analysis of the cellular composition of the tumor 
+microenvironment, we showed a significant, albeit heterogeneous, 
+enrichment of T cells, CD16+ monocytes and NK cells established 
+at the MGUS stage of the disease, indicating an early launch of 
+an immune response. Indeed, expansion of T and NK cells in the 
+peripheral blood and BM of patients with hematopoietic malig-
+nancies, including MM, has been reported previously23–25,46–48 and 
+has been associated with improved outcomes in MM33,38,49,50. Using 
+scRNA-seq, we characterized the subtypes and expression states of 
+these populations.
+Our analysis further revealed that in patients with high 
+NK-cell infiltration, this fraction is predominantly composed of 
+CXCR4-expressing cells, while samples with fewer NK cells have a 
+shift toward CX3CR1 expression. Previous studies have shown that 
+these receptors are responsible for chemotaxis, mediating homing 
+to the BM or facilitating BM egress39. If in certain subsets MM may 
+initiate the egress of NK cells into the circulation51, this may explain 
+the heterogeneous frequency of NK cells observed in our data and 
+could suggest an MM-orchestrated mechanism of immune evasion.
+Interrogation of the cytotoxic compartment demonstrates that, 
+starting from SMM, there is a loss of memory cells with consider-
+able skewing of T-cell differentiation toward the GrB/H-expressing 
+effector state. From our in vivo results, we demonstrate the previ-
+ously unrecognized pivotal role of memory cells in the immune 
+response against tumor cells. It is important to note that the pro-
+portion of the effector cell subtypes did not correlate with the cyto-
+genetic characteristics of the tumor. Individual subpopulations of 
+cytotoxic effectors, including NK T cells, gamma delta T cells, CD4+ 
+and CD8+ effector cells are well described and their functionality in 
+MM is under extensive investigation. In MM, these cytotoxic cells 
+often exhibit either suppressed phenotype (as CD8+ T  cells52) or 
+anergy (as in gamma delta T cells53) and impaired functionality as 
+reported for NK T cells54, and several approaches have been tested 
+to overcome this dysregulation55,56.
+The immunosuppressive role of MDSCs, CD14+HLA-DRlow/neg 
+cells from the monocytic lineage, has been previously established 
+in lymphoma, glioblastoma, prostate cancer, renal cell carcinoma 
+and MM29,57–59. Our data demonstrate that in addition to MDSCs, 
+mature CD14+ monocytes/macrophages also undergo a phenotypic 
+shift leading to loss of MHC class II surface representation as early 
+as in the MGUS stage. These CD14+ cells with compromised MHC 
+class II representation acquire immunosuppressive potential and can 
+suppress T-cell activation. We demonstrated that overexpression of 
+MARCHF1/MARCH1 contributes to the internalization of MHC 
+class II proteins. Importantly, this condition can be rescued by down-
+regulating MARCHF1/MARCH1 expression, offering a potential for 
+therapeutic interventions. Overall, this signaling was impaired in 
+the majority of patients already at the early precursor MGUS stage, 
+indicating that monocytes/macrophages are very sensitive to the 
+MM-directed shaping of a permissive tumor microenvironment.
+Extensive coregulatory networks have been described in the 
+tumor microenvironment, whereby tumor cells regulate the stromal 
+and immune microenvironment and vice versa, all in support of 
+tumor growth and dissemination16,17. We have previously demon-
+strated that IFN type I secreted from MM cells promotes immu-
+nosuppression, which favors MM growth60. In this study, we found 
+highly upregulated IFN signaling across immune subsets. Thus, our 
+results further implicate IFN signaling in MM and indicate that 
+such a complex regulatory network could already be in place at the 
+high-risk SMM stage of disease, identifying it as a potential target 
+for therapeutic intervention to prevent progression.
+We profiled sequential immune alterations occurring during 
+MM progression, beginning at the earliest stage (Extended Data 
+Fig. 10). MM represents a unique setting with a readily detectable 
+premalignant stage; observing early immune alterations in response 
+to a neoplastic environment raises the possibility of similar mecha-
+nisms appearing in the precursors of other cancers. It is our hope 
+that understanding this evolution of the myeloma microenviron-
+ment will provide new targets for therapeutic approaches, and that 
+leveraging inter-patient heterogeneity will enable stratification of 
+patients by risk of progression and create the opportunity for early 
+intervention.
+Methods
+Patient samples and cell preparation. Primary peripheral blood cells or BM 
+samples from patients with MGUS, SMM or MM, as well as healthy donors were 
+collected at the Dana-Farber Cancer Institute. These studies were approved by 
+the Dana-Farber Cancer Institute Institutional Review Board. Informed consent 
+was obtained from all patients and healthy volunteers in accordance with the 
+Declaration of Helsinki protocol (fifth revision from 2000 with Clarifications of 
+Articles 29, 30 (2002–2004), and the most recent iteration from 2013). CD138− 
+or CD45+ BM cell fractions were isolated using magnetic-activated cell sorting 
+technology (Miltenyi Biotec). Selected cells were either viably cryopreserved 
+in dimethylsulfoxide at a final concentration of 10% or used immediately for 
+scRNA-seq.
+Human MM.1S and RPMI 8226 cells were purchased from ATCC, while the 
+KMS-18 myeloma cell line was obtained from the Japanese Collection of Research 
+Bioresources and the OPM-2 cell line was obtained from DSMZ. For the in vitro 
+experiments, these cell lines were cultured in Roswell Park Memorial Institute 
+(RPMI) 1640 medium containing 10% fetal calf serum (Sigma-Aldrich), 2 mM of 
+l-glutamine, 100 U ml−1 penicillin and 100 μg ml−1 streptomycin (Gibco).
+Sequencing library construction using the 10x Genomics platform. Frozen BM 
+cells were rapidly thawed, washed, counted and resuspended in PBS and 0.04% 
+bovine serum albumin to a final concentration of 1,000 cells per μl. The Chromium 
+Controller (10x Genomics) was used for parallel sample partitioning and molecular 
+barcoding61. To generate a single-cell Gel Bead in EMulsion, cellular suspensions 
+were loaded on a Single Cell 3′ chip together with the Single Cell 3′ Gel Beads, 
+according to the manufacturer’s instructions (10x Genomics). scRNA-seq libraries 
+were prepared using the Chromium Single Cell 3′ Library Kit v.2 (10x Genomics). 
+Fourteen cycles were used for the total complementary DNA amplification reaction 
+and for the total sample index PCR. Generated libraries were combined according 
+to Illumina specifications and paired-end sequenced on HiSeq 2500/4000 
+platforms with standard Illumina sequencing primers for both sequencing and 
+index reads; 100 cycles were used to sequence Read1 and Read2.
+Preprocessing of scRNA-seq data. Sample demultiplexing, barcode processing, 
+alignment to the human genome (hg38) and single-cell 3′ gene counting was 
+performed using the Cell Ranger Single-Cell Software Suite v.2.0.1. Cells called by 
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+502
+
+Articles
+Nature Cancer
+Cell Ranger were further filtered to those with <10% mitochondrial expression, 
+>200 genes covered and >600 total unique molecular identifiers. Expression values 
+were calculated as:
+eg;c ¼ log 104
+Nc
+ng;c þ 1
+
+
+for a cell c with Nc total unique molecular identifiers, ng,c of which map to gene g.
+Separation of plasma and immune cell populations. To remove cells incorrectly 
+sorted during bead selection (that is, plasma cells in the CD138− fractions), we first 
+performed coarse clustering of the data including all cells. We selected 2,744 genes 
+with high expression and dispersion, excluding genes on the sex chromosomes, 
+and z-normalized the data after regressing out variation due to total number of 
+unique molecular identifiers or percentage mitochondrial RNA in each cell. We 
+then performed Seurat k-nearest neighbors clustering with resolution 0.6 on 
+the first 20 principal components of the resulting data. A plasma cell score was 
+calculated for each cluster as the mean expression of CD138 (SDC1), CD319 
+(SLAMF7) and BCMA (TNFRSF17); clusters with a score of >1 were identified as 
+plasma cell clusters. Clusters with >4 mean HBA1 expression were deemed to be 
+erythroid clusters, and cells in these clusters were excluded from future analyses. 
+Cells originating from the CD138− fraction in nonplasma, nonerythroid clusters 
+formed our immune cell dataset.
+Gene selection. When selecting genes for downstream analysis, we excluded 
+genes with high potential to be influenced by cross-cell contamination effects. 10x 
+technology exhibits lows rates of mRNAs associated with the barcodes of cells from 
+which they did not originate, possibly from sources such as extracellular mRNAs 
+captured in the droplet. While in the vast majority of cases this is undetectable, 
+for ultra-highly expressed genes such as immunoglobulins, the contributions 
+can become noticeable. Thus, we excluded genes that were drastically higher in 
+expression for the excluded compartments (plasma cells and erythroid cells).
+In addition, we filtered genes found to have a strong sex bias in our data. 
+For the purposes of clustering analyses, we removed all genes from the sex 
+chromosomes to avoid any cumulative effects that could separate samples based on 
+sex. For downstream gene- or signature-level analyses, so as not to lose informative 
+genes on the X chromosome, we only excluded genes found to have a statistically 
+significant sex bias (two-sample t-test on mean gene expression at a false discovery 
+rate threshold of 10%).
+Analysis of immune cell populations. A total of 2,100 variably expressed genes 
+were identified using the filtering procedure described earlier and the same 
+expression and dispersion criteria as in the analysis of principal components. 
+Clusters were identified using Seurat k-nearest neighbors clustering with resolution 
+1.4 on the first 20 principal components of the z-normalized data. Cell types were 
+then identified for each cluster by examining the expression of marker genes, as 
+well as the top differentially expressed genes, in each cluster. Cells were visualized 
+by t-distributed stochastic neighbor embedding (t-SNE) on the same 20 principal 
+components.
+Nonnegative matrix factorization (NMF)-derived gene expression signatures. 
+We defined gene expression signatures for T cells and CD14+ monocytes 
+using our SignatureAnalyzer-GPU62 tool (https://github.com/broadinstitute/
+SignatureAnalyzer-GPU), which implements a previously described Bayesian 
+NMF algorithm63. This method approximates the expression profile of each cell 
+(represented as a column in the input matrix) as an additive combination of 
+latent expression programs (each column in the W-matrix output), each with an 
+associated weight or ‘activity’ in each cell given by the H-matrix. This Bayesian 
+variant of NMF encourages sparse interpretable solutions by imposing an 
+exponential prior distribution on the weights of the W- and H-matrices and allows 
+automatic discovery of the number of signatures required to explain the data.
+After signature discovery, the columns of W were normalized to a sum of 1 and 
+all the weight was shifted into the H-matrix:
+W0
+g;k ¼
+Wg;k
+PG
+g0¼1 Wg0;k
+H0
+k;p ¼
+XG
+g¼1 Wg;k
+
+
+Hk;p
+for gene g (out of G total genes), signature k and patient p. Signatures significantly 
+altered between disease states were identified by calculating the mean signature 
+activity for each patient and performing a two-sample t-test, reporting results 
+below a 10% Benjamini–Hochberg false discovery rate level. Marker genes for each 
+signature were identified by sorting genes according to their relative contribution 
+to each signature:
+Wg;k
+PK
+k0¼1 Wg;k0
+and taking the top 10 genes where the gene contributed at least 1% of the total 
+signature activity.
+Analysis of cells by CyTOF. Sample staining for mass cytometry (CyTOF) was 
+performed according to the manufacturer’s guidelines (Fluidigm). Briefly, the 
+CD138− or CD45+ populations of BM samples from patients with MM or healthy 
+donors were thawed, washed and barcoded using the Cell-ID 20-Plex Pd Barcoding 
+Kit (Fluidigm). After barcoding, cells were incubated with human Fc Receptor 
+Blocking Reagent (Miltenyi Biotec) and human surface marker antibodies as 
+a single multiplexed sample (Maxpar Human Immune Monitoring Panel Kit, 
+29-marker panel; Fluidigm). After staining, cells were washed in Maxpar Cell 
+Staining Buffer (Fluidigm), resuspended at the concentration of 1 × 106 cells ml−1 
+and acquired on a CyTOF Helios mass cytometer (Fluidigm). Downstream 
+analysis of the individual component samples was performed after running the 
+debarcoding application. An automated analysis GemStone MC software (Verity, 
+provided by Maxpar, Fluidigm) was used to clean the data files by automatically 
+identifying and removing cell doublets, debris and dead cells, as well as identifying 
+major immune cell subsets. Expression levels of HLA-DR molecules on the cell 
+surface were analyzed in Cytobank (Cytobank).
+To phenotype the Gr-expressing T-cell populations, CyTOF was performed 
+on CD138− cells from the BM aspirates of patients with SMM and healthy donors 
+using TIGIT-143Nd, PD-1-175Lu, TIM3-153Eu (Maxpar) and the Maxpar Human 
+T-Cell Phenotyping Panel Kit, 16 Marker. T-cell subsets were defined as suggested 
+by the manufacturer.
+Flow cytometry analysis. Antihuman antibodies against CD138 (clone MI15), 
+CD14 (clone 63D3), HLA-DR (clone L243) were obtained from BioLegend. 
+HLA-DP (clone DP11.1) was obtained from Santa Cruz Biotechnology. iNOS 
+(catalog no. ab115819) was obtained from Abcam. CD33 (catalog no. 303413), 
+CD11b (catalog no. 301341), CD206 (catalog no. 321113), CD163 (catalog no. 
+33362) and FITC antihuman Lineage Cocktail (catalog no. 348801) were obtained 
+from BioLegend. Antibodies were used for fluorescence-activated cell sorting 
+(FACS) analyses. The LIVE/DEAD Fixable Aqua Dead Cell Stain Kit (Thermo 
+Fisher Scientific) was used for the discrimination of dead cells. Data from the 
+stained samples was acquired using a FACS Canto II Flow Cytometer (BD 
+Biosciences). The results were analyzed in Cytobank (Cytobank).
+Myeloma cell coculture assay. Human CD14+ monocytes or CD19+ B cells were 
+obtained from fresh peripheral blood cells using CD14 and CD19 MicroBeads 
+(Miltenyi Biotec). Briefly, red blood cells were lysed (RBC Lysis Buffer; BioLegend), 
+washed and CD14+ and CD19+ cell populations were isolated according to 
+the manufacturer’s instructions. CD14+ monocytes at 2 × 106 were cocultured 
+with 1 × 106 myeloma cell lines. CD19+ B cells were used as a negative control. 
+Transwell-permeable inserts with a pore size of 0.4 μm were used to prevent 
+cell–cell interactions (Corning). After 3–4 d of coculture, cells were collected and 
+analyzed for HLA-DR expression using flow cytometry or quantitative PCR.
+siRNA knockdown of MARCHF1/MARCH1. MARCHF1/MARCH1 knockdown 
+in CD14+ cells was performed using anti-MARCHF1/MARCH1 siRNAs (catalog 
+nos. 127048 and 127049; Thermo Fisher Scientific) and Lipofectamine RNAiMAX 
+Transfection Reagent (Thermo Fisher Scientific) according to the manufacturer’s 
+instructions. Briefly, CD14+ monocytes were isolated from the peripheral blood of 
+healthy donors using CD14 MicroBeads (Miltenyi Biotec) and plated into 24-well 
+plates at 0.5 × 106 in 500 μl; 5 pmol of siRNA was used per well. Silencer Negative 
+Control No. 1 siRNA (catalog no. AM4611; Thermo Fisher Scientific) was used as 
+a negative control. Twelve hours posttransfection, 1 × 106 MM cells were added and 
+cultured for the next 24 h. Cells were collected and analyzed for the HLA-DR and 
+MARCHF1/MARCH1 expression using flow cytometry or immunofluorescence 
+microscopy.
+RNA isolation and quantitative PCR with reverse-transcription (RT–qPCR). 
+mRNA was isolated with the miRNeasy Mini Kit (catalog no. 217004; QIAGEN). 
+Purified RNA was measured by NanoDrop (Thermo Fisher Scientific) and cDNA 
+was synthesized from 500 ng of total RNA using a High-Capacity cDNA Reverse 
+Transcription Kit (catalog no. 4368814; Thermo Fisher Scientific). Expression levels 
+of HLA-DRA were obtained using a TaqMan qPCR assay (Hs.PT.58.14332844) 
+and an actin assay as the internal control (Hs.PT.39a.22214847) from Integrated 
+DNA Technologies. To measure the expression of different MARCHF1/MARCH1 
+transcripts, two primer pairs were designed and MARCHF1/MARCH1 RT–qPCR 
+reactions were prepared using the PowerTrack SYBR Green Master Mix (catalog 
+no. 4367659; Thermo Fisher Scientific). TaqMan and SYBR green reactions were 
+carried out on Quant Studio 7 (Thermo Fisher Scientific). The assays were run in 
+triplicate using CD14+ cells isolated from three independent donors. The ΔΔCt 
+method was used for normalization on the actin and GAPDH housekeeping 
+genes. The primer sequences of MARCHF1/MARCH1 and GAPDH were: 
+MARCHF1/MARCH1 pair 2 forward, 5′-CAGGAGCCAGTCAAGGTTGT-3′; 
+MARCHF1/MARCH1 pair 2 reverse, 5′-AGAGCTCACAGCAGCGTGTA-3′; 
+MARCHF1/MARCH1 pair 3 forward, 5′-TAATCGCGATCACCTGTGTG-3′; 
+MARCHF1/MARCH1 pair 3 reverse, 5′-GCGCCACAACTGAACATAGA-3′; 
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+503
+
+Articles
+Nature Cancer
+GAPDH forward, 5′-AGCACATCGCTCAGACAC-3′ and GAPDH reverse, 
+5′-GCCCAATACGACCAAATCC-3′.
+5-bromo-2′-deoxyuridine (BrdU) proliferation assay. MM cells were cocultured 
+with CD14+ monocytes isolated from the PBMCs of healthy donors for 48 h. MM 
+cells cocultured with CD19+ B cells were used as the control. After coculture, 
+cells were labeled with 1 mM of BrdU for 2 h and then stained with antibodies for 
+surface expression of CD138 (clone MI15) and CD14 (clone 63D3). After this, 
+cells were fixed and permeabilized with Cytofix/Cytoperm Buffer according to the 
+manufacturer’s protocol (catalog no. 552598; BD Biosciences) before staining with 
+allophycocyanin (APC)-conjugated anti-BrdU for 20 min. Total DNA was stained 
+using a 7-AAD solution (catalog no. 555816, BD Biosciences). The cell cycle of 
+CD138+ MM cells was analyzed using flow cytometry.
+Mixed lymphocyte reaction. The mixed lymphocyte reaction was performed in 
+duplicate in 96-well, round-bottom plates (catalog no. 7007; Corning). PBMCs 
+were cultured in the RPMI 1640 medium (Gibco, 11875) supplemented with 
+100 U ml−1 of penicillin-streptomycin (catalog no. 15140122; Gibco), 10% (vol/vol)  
+fetal calf serum (catalog no. A31604; Gibco) and 50 μM of 2-mercaptoethanol 
+(catalog no. M6250; Sigma-Aldrich), 2 mM of l-glutamine (catalog no. 25030081; 
+Gibco) for 3 d at 37 °C in 5% CO2 in air. Cells were stimulated with 4 μg ml−1 of 
+antihuman CD3 antibody (clone OKT3, catalog no. 317302; BioLegend), 4 μg ml–1 
+antihuman CD28 antibody (clone CD28.2, catalog no. 302902; BioLegend) and 
+200 ng of recombinant human IL-2 (catalog no. 200-02; PeproTech).
+CD14+ cells were isolated from healthy PBMCs and cocultured with either 
+MM cell lines (OPM-2, MM1.S) or healthy CD19+ B cells for 24 h in a 1:2 ratio. 
+After 24 h, CD14+ cells were isolated and added as modulators to the freshly 
+isolated PBMCs from healthy donors. The cell number of responder versus 
+modulator cells was 1 × 105:8 × 103 in the final volume of 200 μl per well. PBMCs 
+without modulator cells served as a reaction system control. In the second 
+experimental setup, CD14+ or CD19+ cells isolated from fresh BM aspirate of a 
+patient with SMM were used as modulators and PBMCs from the same patient 
+were used as responders. Cells were collected at days 3–5 for flow cytometry 
+(FACSCanto II; BD Biosciences). The LIVE/DEAD Fixable Green Dead Cell 
+Stain Kit (catalog no. L23101; Thermo Fisher Scientific) was used to gate out the 
+dead cells. The antibodies used in this experiment were (all BioLegend): PerCP/
+Cy5.5 antihuman CD4 (clone OKT4; catalog no. 317428); Brilliant Violet 510 
+anti-mouse/human CD44 (clone IM7, catalog no.103044); APC/Cy7 antihuman 
+CD8a (clone HIT8a; catalog no. 300926).
+Immunohistochemistry and immunofluorescence. Formalin-fixed 
+paraffin-embedded tissue sections were baked in an Isotemp Oven at 60 °C for 
+30 min to melt excess paraffin. Tumor sections were stained with BOND RX 
+Autostainer (Leica Biosystems) using the BOND Polymer Refine Detection Kit 
+(catalog no. DS9800; Leica Biosystems). Antigen retrieval was performed with 
+the BOND Epitope Retrieval Solution 1 (citrate, pH = 6.0; Leica Biosystems) for 
+30 min. Dual-immunohistochemistry staining was performed using anti-CD14 
+(1:100, clone D7A2T; Cell Signaling Technology), which was detected by the Alexa 
+Fluor 594 Tyramide Reagent (catalog no. B40957; Thermo Fisher Scientific) and 
+anti-HLA-DR (1:500, clone TAL.1B5; Dako) detected by Alexa Fluor 488 Tyramide 
+Reagent (catalog no. B40953; Thermo Fisher Scientific). NucBlue Fixed Cell 
+ReadyProbes Reagent (DAPI; catalog no. R37606; Thermo Fisher Scientific) was 
+used as the background stain.
+For cytospins, CD14+ cells transfected with siRNA and cocultured with  
+MM cells for 24 h were purified using flow cytometry. Cells were fixed  
+with 4% paraformaldehyde, washed with PBS and diluted to no more than  
+0.5 × 106 cells ml−1. Then, 100 μl of cell suspension was loaded into a cuvette with 
+the slides mounted with the paper pad. The cuvette was placed into a metal holder 
+and centrifuged at 800 r.p.m. for 5 min. After centrifugation, cells were immediately 
+fixed, permeabilized with Cytofix/Cytoperm buffer and incubated with primary 
+antibodies for MARCHF1/MARCH1 (1:100, catalog no. PA5-53199; Thermo Fisher 
+Scientific) and HLA-DR (1:100, catalog no. 307602; BioLegend) for 1 h. Slides were 
+washed for 15 min in PBS and incubated with corresponding secondary antibodies 
+(Abcam) for 1 h. Post-incubation, slides were washed twice and mounted using 
+DAPI mounting solution (Dako).
+In vivo assays. C57BL/6 mice were purchased from The Jackson Laboratory. 
+C57BL/KalwRiJ mice were purchased from Harlan Laboratories. All mice were 
+treated, monitored and euthanized in accordance with the approved protocol of the 
+Dana-Farber Cancer Institute Animal Care and Use Committee; 4 × 106 5TGM1 
+cells were injected intravenously into C57BL/KalwRiJ mice for survival studies, 
+while 4 × 106 Vk*MYC cells were injected intravenously into C57BL/6 mice for 
+monoclonal protein secretion (M spike) and plasma cell infiltration analyses.  
+At 3 weeks postinjection, BM cells and peripheral blood were collected. BM cells 
+were obtained through flushing of femurs with 1× PBS. The proportion of CD138+ 
+plasma cells was determined after cell staining with the APC anti-mouse CD138 
+antibody (catalog no. 142505; BioLegend) by flow cytometry. An M spike analysis 
+was performed with 1 μl of blood serum using QuickGel electrophoresis  
+(Helena Laboratories).
+Statistical analysis of in vivo and in vitro studies. One-way analysis of variance 
+(ANOVA) and Tukey multiple comparison test were used when three or more 
+independent groups were compared. An unpaired Student’s t-test was used to 
+compare two independent groups. All tests were two-tailed. The log-rank test was 
+used to analyze survival data. P < 0.05 was considered statistically significant.
+Statistics and reproducibility. No statistical method was used to predetermine 
+sample size. Samples with insufficient numbers of cells or library complexity were 
+excluded from the analyses. Investigators were not blinded to the study of human 
+sequencing data.
+Reporting Summary. Further information on research design is available in the 
+Nature Research Reporting Summary linked to this article.
+Data availability
+The scRNA-seq data that support the findings of this study have been deposited 
+with the Gene Expression Omnibus under accession code GSE124310. Raw 
+sequencing data have been deposited with the database of Genotypes and 
+Phenotypes (phs001323.v1.p1). Previously published microarray data that were 
+reanalyzed in this study are available under accession code GSE6477. Source 
+data for Figs. 1–6 and Extended Data Figs. 2–4 and 6–9 have been provided in 
+corresponding Source Data tables. All other data supporting the findings of this 
+study are available from the corresponding author upon reasonable request.
+Code availability
+The single-cell RNA data was processed using cellranger v.2.0.1 (https://
+www.10xgenomics.com/) and analyzed with the R package Seurat v.2.3.1 
+(https://satijalab.org/seurat/). Gene expression signatures were extracted using 
+our SignatureAnalyzer algorithm available on github (https://github.com/
+broadinstitute/getzlab-SignatureAnalyzer).
+Received: 30 October 2019; Accepted: 10 March 2020;  
+Published online: 27 April 2020
+References
+	1.	 Kyle, R. A. & Rajkumar, S. V. Multiple myeloma. Blood 111, 2962–2972 (2008).
+	2.	 Landgren, O. Monoclonal gammopathy of undetermined significance and 
+smoldering multiple myeloma: biological insights and early treatment 
+strategies. Hematology Am. Soc. Hematol. Educ. Program 2013,  
+478–487 (2013).
+	3.	 Rajkumar, S. V. Multiple myeloma: 2011 update on diagnosis, 
+risk-stratification, and management. Am. J. Hematol. 86, 57–65 (2011).
+	4.	 Kyle, R. A. et al. Monoclonal gammopathy of undetermined significance 
+(MGUS) and smoldering (asymptomatic) multiple myeloma: IMWG 
+consensus perspectives risk factors for progression and guidelines for 
+monitoring and management. Leukemia 24, 1121–1127 (2010).
+	5.	 Rajkumar, S. V. et al. Serum free light chain ratio is an independent risk 
+factor for progression in monoclonal gammopathy of undetermined 
+significance. Blood 106, 812–817 (2005).
+	6.	 Rajkumar, S. V. et al. Impact of primary molecular cytogenetic abnormalities 
+and risk of progression in smoldering multiple myeloma. Leukemia 27, 
+1738–1744 (2013).
+	7.	 Hanamura, I. et al. Frequent gain of chromosome band 1q21 in plasma-cell 
+dyscrasias detected by fluorescence in situ hybridization: incidence increases 
+from MGUS to relapsed myeloma and is related to prognosis and disease 
+progression following tandem stem-cell transplantation. Blood 108, 
+1724–1732 (2006).
+	8.	 Manier, S. et al. Genomic complexity of multiple myeloma and its clinical 
+implications. Nat. Rev. Clin. Oncol. 14, 100–113 (2017).
+	9.	 Bladé, J., Dimopoulos, M., Rosiñol, L., Rajkumar, S. V. & Kyle, R. A. 
+Smoldering (asymptomatic) multiple myeloma: current diagnostic criteria, 
+new predictors of outcome, and follow-up recommendations. J. Clin. Oncol. 
+28, 690–697 (2010).
+	10.	Kyle, R. A. et al. Clinical course and prognosis of smoldering (asymptomatic) 
+multiple myeloma. N. Engl. J. Med. 356, 2582–2590 (2007).
+	11.	Landgren, O. et al. Monoclonal gammopathy of undetermined significance 
+(MGUS) consistently precedes multiple myeloma: a prospective study. Blood 
+113, 5412–5417 (2009).
+	12.	Hanahan, D. & Weinberg, R. A. The hallmarks of cancer. Cell 100,  
+57–70 (2000).
+	13.	Tyekucheva, S. et al. Stromal and epithelial transcriptional map of initiation 
+progression and metastatic potential of human prostate cancer. Nat. Commun. 
+8, 420 (2017).
+	14.	Glavey, S. V. et al. Proteomic characterization of human multiple myeloma 
+bone marrow extracellular matrix. Leukemia 31, 2426–2434 (2017).
+	15.	El-Haibi, C. P. et al. Critical role for lysyl oxidase in mesenchymal stem 
+cell-driven breast cancer malignancy. Proc. Natl Acad. Sci. USA 109, 
+17460–17465 (2012).
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+504
+
+Articles
+Nature Cancer
+	16.	Pearce, O. M. T. et al. Deconstruction of a metastatic tumor 
+microenvironment reveals a common matrix response in human cancers. 
+Cancer Discov. 8, 304–319 (2018).
+	17.	Finak, G. et al. Stromal gene expression predicts clinical outcome in breast 
+cancer. Nat. Med. 14, 518–527 (2008).
+	18.	Calon, A. et al. Stromal gene expression defines poor-prognosis subtypes in 
+colorectal cancer. Nat. Genet. 47, 320–329 (2015).
+	19.	Petitprez, F. et al. PD-L1 expression and CD8+ T-cell infiltrate are associated 
+with clinical progression in patients with node-positive prostate cancer. Eur. 
+Urol. Focus 5, 192–196 (2019).
+	20.	Zhang, L. et al. Intratumoral T cells, recurrence, and survival in epithelial 
+ovarian cancer. N. Engl. J. Med. 348, 203–213 (2003).
+	21.	Podar, K., Hideshima, T., Chauhan, D. & Anderson, K. C. Targeting signalling 
+pathways for the treatment of multiple myeloma. Expert Opin. Ther. Targets 9, 
+359–381 (2005).
+	22.	Klein, B. Cytokine, cytokine receptors, transduction signals, and oncogenes in 
+human multiple myeloma. Semin. Hematol. 32, 4–19 (1995).
+	23.	Sawanobori, M. et al. Natural killer cell frequency and serum cytokine levels 
+in monoclonal gammopathies: correlation of bone marrow granular 
+lymphocytes to prognosis. Acta Haematol. 98, 150–154 (1997).
+	24.	Pessoa de Magalhães, R. J. et al. Analysis of the immune system of multiple 
+myeloma patients achieving long-term disease control by multidimensional 
+flow cytometry. Haematologica 98, 79–86 (2013).
+	25.	Bailur, J. K. et al. Early alterations in stem-like/resident T cells, innate and 
+myeloid cells in the bone marrow in preneoplastic gammopathy. JCI Insight 4, 
+e127807 (2019).
+	26.	Leone, P. et al. Dendritic cells accumulate in the bone marrow of myeloma 
+patients where they protect tumor plasma cells from CD8+ T-cell killing. 
+Blood 126, 1443–1451 (2015).
+	27.	Kawano, Y. et al. Blocking IFNAR1 inhibits multiple myeloma-driven Treg 
+expansion and immunosuppression. J. Clin. Invest. 128, 2487–2499 (2018).
+	28.	Feng, X. et al. Targeting CD38 suppresses induction and function of T 
+regulatory cells to mitigate immunosuppression in multiple myeloma. Clin. 
+Cancer Res. 23, 4290–4300 (2017).
+	29.	Ramachandran, I. R. et al. Myeloid-derived suppressor cells regulate growth 
+of multiple myeloma by inhibiting T cells in bone marrow. J. Immunol. 190, 
+3815–3823 (2013).
+	30.	Nakamura, K. et al. Dysregulated IL-18 Is a key driver of immunosuppression 
+and a possible therapeutic target in the multiple myeloma microenvironment. 
+Cancer Cell 33, 634–648.e5 (2018).
+	31.	Zheng, Y. et al. Macrophages are an abundant component of myeloma 
+microenvironment and protect myeloma cells from chemotherapy 
+drug-induced apoptosis. Blood 114, 3625–3628 (2009).
+	32.	De Beule, N. et al. Tumour-associated macrophage-mediated survival of 
+myeloma cells through STAT3 activation. J. Pathol. 241, 534–546 (2017).
+	33.	Osterborg, A., Nilsson, B., Björkholm, M., Holm, G. & Mellstedt, H. Natural 
+killer cell activity in monoclonal gammopathies: relation to disease activity. 
+Eur. J. Haematol. 45, 153–157 (1990).
+	34.	Scavelli, C. et al. Vasculogenic mimicry by bone marrow macrophages in 
+patients with multiple myeloma. Oncogene 27, 663–674 (2008).
+	35.	Minnie, S. A. et al. Myeloma escape after stem cell transplantation is a 
+consequence of T-cell exhaustion and is prevented by TIGIT blockade. Blood 
+132, 1675–1688 (2018).
+	36.	Dispenzieri, A. et al. Immunoglobulin free light chain ratio is an independent 
+risk factor for progression of smoldering (asymptomatic) multiple myeloma. 
+Blood 111, 785–789 (2008).
+	37.	Perussia, B. Fc receptors on natural killer cells. Curr. Top. Microbiol. Immunol. 
+230, 63–88 (1998).
+	38.	Yang, C. et al. Heterogeneity of human bone marrow and blood natural killer 
+cells defined by single-cell transcriptome. Nat. Commun. 10, 3931 (2019).
+	39.	Bernardini, G., Sciumè, G. & Santoni, A. Differential chemotactic receptor 
+requirements for NK cell subset trafficking into bone marrow. Front. 
+Immunol. 4, 12 (2013).
+	40.	Baecher-Allan, C., Wolf, E. & Hafler, D. A. MHC class II expression  
+identifies functionally distinct human regulatory T cells. J. Immunol. 176, 
+4622–4631 (2006).
+	41.	Karalis, K. et al. Autocrine or paracrine inflammatory actions of 
+corticotropin-releasing hormone in vivo. Science 254, 421–423 (1991).
+	42.	Bratke, K., Kuepper, M., Bade, B., Virchow, J. C. Jr. & Luttmann, W. 
+Differential expression of human granzymes A, B, and K in natural killer cells 
+and during CD8+ T cell differentiation in peripheral blood. Eur. J. Immunol. 
+35, 2608–2616 (2005).
+	43.	Ahn, E. et al. Role of PD-1 during effector CD8 T cell differentiation. Proc. 
+Natl Acad. Sci. USA 115, 4749–4754 (2018).
+	44.	Odorizzi, P. M., Pauken, K. E., Paley, M. A., Sharpe, A. & Wherry, E. J. 
+Genetic absence of PD-1 promotes accumulation of terminally differentiated 
+exhausted CD8+ T cells. J. Exp. Med. 212, 1125–1137 (2015).
+	45.	Roccaro, A. M. et al. CXCR4 regulates extra-medullary myeloma through 
+epithelial-mesenchymal-transition-like transcriptional activation. Cell Rep. 12, 
+622–635 (2015).
+	46.	Brown, R. D. et al. Prognostically significant cytotoxic T cell clones are 
+stimulated after thalidomide therapy in patients with multiple myeloma. Leuk. 
+Lymphoma 50, 1860–1864 (2009).
+	47.	Raitakari, M. et al. T-cell expansions in patients with multiple myeloma have 
+a phenotype of cytotoxic T cells. Br. J. Haematol. 110, 203–209 (2000).
+	48.	Tienhaara, A. & Pelliniemi, T. T. Peripheral blood lymphocyte subsets in 
+multiple myeloma and monoclonal gammopathy of undetermined 
+significance. Clin. Lab. Haematol. 16, 213–223 (1994).
+	49.	Wu, L. et al. Lenalidomide enhances antibody-dependent cellular cytotoxicity 
+of solid tumor cells in vitro: influence of host immune and tumor markers. 
+Cancer Immunol. Immunother. 60, 61–73 (2011).
+	50.	Jurisic, V., Srdic, T., Konjevic, G., Markovic, O. & Colovic, M. Clinical 
+stage-depending decrease of NK cell activity in multiple myeloma patients. 
+Med. Oncol. 24, 312–317 (2007).
+	51.	Ponzetta, A. et al. Multiple myeloma impairs bone marrow localization of 
+effector natural killer cells by altering the chemokine microenvironment. 
+Cancer Res. 75, 4766–4777 (2015).
+	52.	Zelle-Rieser, C. et al. T cells in multiple myeloma display features of 
+exhaustion and senescence at the tumor site. J. Hematol. Oncol. 9, 116 (2016).
+	53.	Castella, B., Foglietta, M., Riganti, C. & Massaia, M. Vγ9Vδ2 T Cells in the 
+bone marrow of myeloma patients: a paradigm of microenvironment-induced 
+immune suppression. Front. Immunol. 9, 1492 (2018).
+	54.	Chan, A. C. et al. Natural killer T cell defects in multiple myeloma and the 
+impact of lenalidomide therapy. Clin. Exp. Immunol. 175, 49–58 (2014).
+	55.	Dhodapkar, M. V. & Richter, J. Harnessing natural killer T (NKT)  
+cells in human myeloma: progress and challenges. Clin. Immunol. 140, 
+160–166 (2011).
+	56.	Castella, B., Melaccio, A., Foglietta, M., Riganti, C. & Massaia, M. Vγ9Vδ2 
+T cells as strategic weapons to improve the potency of immune checkpoint 
+blockade and immune interventions in human myeloma. Front. Oncol. 8,  
+508 (2018).
+	57.	Ortiz, M. L., Lu, L., Ramachandran, I. & Gabrilovich, D. I. Myeloid-derived 
+suppressor cells in the development of lung cancer. Cancer Immunol. Res. 2, 
+50–58 (2014).
+	58.	Fang, Z. et al. Myeloid-derived suppressor cell and macrophage exert distinct 
+angiogenic and immunosuppressive effects in breast cancer. Oncotarget 8, 
+54173–54186 (2017).
+	59.	Gabrilovich, D. I., Ostrand-Rosenberg, S. & Bronte, V. Coordinated regulation 
+of myeloid cells by tumours. Nat. Rev. Immunol. 12, 253–268 (2012).
+	60.	Quail, D. F. & Joyce, J. A. Microenvironmental regulation of tumor 
+progression and metastasis. Nat. Med. 19, 1423–1437 (2013).
+	61.	Zheng, G. X. et al. Massively parallel digital transcriptional profiling of single 
+cells. Nat. Commun. 8, 14049 (2017).
+	62.	Taylor-Weiner, A. et al. Scaling computational genomics to millions of 
+individuals with GPUs. Genome Biol. 20, 228 (2019).
+	63.	Tan, V. Y. F. & Févotte, C. Automatic relevance determination in nonnegative 
+matrix factorization with the β-divergence. IEEE Trans. Pattern Anal. Mach. 
+Intell. 35, 1592–1605 (2013).
+Acknowledgements
+We thank the Dana-Farber/Harvard Cancer Center in Boston for the use of the 
+Specialized Histopathology Core for histology and immunohistochemistry service. The 
+Dana-Farber/Harvard Cancer Center is supported in part by a National Cancer Institute 
+Cancer Center Support Grant no. NIH 5 P30 CA06516. G.G. was partially funded by the 
+Paul C. Zamecnik Chair in Oncology, Massachusetts General Hospital Cancer Center. 
+N.J.H. was partially funded by G.G. startup funds at Massachusetts General Hospital, 
+R01 (principal investigator I.M.G.) and the Harvard Graduate Program in Biophysics, 
+Harvard University. Molecular Biophysics Training Grant NIH/NIGMS T32 GM008313 
+(N.J.H.; principal investigtor J. M. Hogle). This study was partially funded by two 
+National Institutes of Health grants (no. NIH R01 CA 205954 and R01CA181683), the 
+Leukemia and Lymphoma Society, the Multiple Myeloma Research Foundation and 
+Stand Up to Cancer.
+Author contributions
+O.Z., T.H.M., I.M.G., N.J.H. and G.G. conceived and designed the study. T.H.M. 
+collected patient data and performed cytogenetic analyses. O.Z. generated the 
+single-cell sequencing and CyTOF data, and performed in vivo experiments. O.Z. and 
+T.H.M. performed in vitro experiments. N.J.H. processed and analyzed the single-cell 
+sequencing data. O.Z. and N.J.H. integrated and interpreted the data. M.G., M.C., J.L.G. 
+and S.A.M. assisted in setup of the study. J.P., M.X.H., C.-J.L., Y.E.M. and E.M.V.A. 
+performed preliminary analyses. N.K.S., D.H. and B.B. managed clinical samples. R.F., 
+E.B., B.F., A.F., S.C., M.P.A., M. Reidy, M. Rahmat, S.M. and M.B. performed validation 
+experiments. I.M.G., G.G. and J.A. supervised the study. O.Z., N.J.H., T.H.M., R.S.P., G.G. 
+and I.M.G. wrote the manuscript.
+Competing interests
+G.G. receives research funds from IBM and Pharmacyclics and is an inventor 
+on patent applications related to MuTect, ABSOLUTE, MutSig, MSMuTect and 
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+505
+
+Articles
+Nature Cancer
+POLYSOLVER. I.M.G. has a consulting/advisory role with GSK, AbbVie and Bristol 
+Myers Squibb. I.M.G has a consulting role with Sanofi, Janssen Pharmaceuticals, Takeda, 
+Celgene, Karyopharm, GNS, Cellectar Biosciences, Medscape, Genetech, Adaptive 
+Biotechnologies, Aptitude, Curio Science, Magenta Therapeutics and Oncopeptides. 
+I.M.G. received research funding/ honoraria from Celgene, Takeda, Bristol Myers Squibb, 
+Janssen Pharmaceuticals and Amgen.
+Additional information
+Extended data is available for this paper at https://doi.org/10.1038/s43018-020-0053-3.
+Supplementary information is available for this paper at https://doi.org/10.1038/
+s43018-020-0053-3.
+Correspondence and requests for materials should be addressed to G.G.  
+or I.M.G.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature America, Inc. 2020
+Nature Cancer | VOL 1 | May 2020 | 493–506 | www.nature.com/natcancer
+506
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 1 | Marker genes demonstrating cell type identity of immune cell clusters. tSNE representation of CD45 cell populations. In each 
+subplot, cells are colored by log-normalized expression values for a given cell type specific marker gene.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 2 | Single-cell RNA sequencing results indicate changes in NK cell compartment as compared to healthy donors. a, A significant 
+increase in the fraction of NK cells in patients with malignant cells expressing IgG heavy chain. Fractions of NK cells are plotted for patients grouped by 
+immunoglobulin heavy chain. Violin plots show minimum, median, and maximum values. A two-tailed t-test was performed on n=19 patient samples with 
+df=12. b, Spearman correlation between NK cell fraction and CXCR4+ subset frequency calculated on 10,0000 samples with replacement of data points. 
+95% confidence interval is shown. c, Grouping of samples above and below median values for NK cell frequencies and CXCR4+ subset fractions. Points on 
+the median were assigned in the conservative direction (that is to obtain a less significant p-value). A two-sided fisher-exact test was performed on n=23 
+patient samples.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 3 | Compositional alterations in immune populations of diseased patients as compared to healthy donors. CyTOF profiling of 4 
+healthy donors and 13 MGUS-MM patients show a, significantly increased numbers of CD3+CD4+ T cells in BM aspirates of the patients as compared to 
+healthy BM with mean values of 2.3 and 11.12 for CD3+CD4+, 1.6 and 3.7 for NK, and 1.5 and 0.5 for dendritic cells (DC) in healthy donors and MM patients 
+respectively. Significant difference between groups was tested using a two-sided t-test. Bars represent SD. b, Plasmacytoid DC (pDC) are significantly 
+enriched in healthy BM as compared to MM patients with mean values of 1.2 and 0.26 respectively. Mean values for monocytic DC (mDC) are 3.7 and 
+3.2 for healthy donors and MM patients respectively. Significant difference between groups was tested using a two-sided t-test. Bars represent average 
+deviation. c, Classical monocytes (c Monoc) are enriched in BM aspirates of healthy donors compared to MM patients with respective mean values of 67.7 
+and 26.5. Mean values for non-classical monocytes (nc Monoc) were 13.1 and 44.4 for healthy donors and MM patients respectively. Significant difference 
+between groups was tested using a two-sided t-test. Bars represent average deviation. d, Proportion of CD66b+ cells in BM aspirates of SMM patients and 
+healthy donors. Mean values are 23.8 and 20.6 for healthy donors and MM patients respectively. Significant difference between groups was tested using a 
+two-sided t-test. Bars represent SD.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 4 | Transcriptional alterations in cytotoxic T cell populations of diseased patients as compared to healthy donors. a, Distribution 
+of the Granzyme expression in T-cell cluster. GZMA+GZMB− corresponds to the Granzyme K expressing cells. b, Normalized expression values for four 
+exhaustion-related genes across different T cell subsets, pooling cells across patients. c, Normalized expression values for four exhaustion-related genes 
+across different donors and patients, pooling cells across T subsets. d, Heatmap of immune checkpoint molecules expression levels on different subsets 
+of bone marrow T cells in SMM patients (n=8) as compared to healthy donors (n=4). Individual patients show increased levels of PD-1 and TIGIT in GrB 
+expressing effector cells. Colored scale represents transformed ratio of protein expression. Barplots show variable expression of TIGIT (with mean values 
+of 0.01 vs 0.12), PD-1 (0.52 vs. 0.55) and TIM-3 (0.39 vs. 0.51) in GrB-expressing T effectors from healthy BM and SMM patients respectively. Significant 
+difference between groups was tested using a two-sided t-test. Bars represent SD. e, Healthy memory cells show significantly higher expression of PD-1 
+compared to those of SMM patients with mean values of 19.5 and 4.7 respectively. Significant difference between groups was tested using a two-sided 
+t-test. Bars represent SD.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 5 | IFN type-1 signaling increases in plasma cells during disease progression. Expression of ISG-15 a, and MX1 b, increases during 
+disease progression. Significant difference is observed between MGUS and MM stage, indicating an increase of IFN signals at later stages in the disease 
+progression (GSE6477). Box plot displays the first quartile, median and third quartile for the gene expression levels, bars indicate the minimum and 
+maximum value. Significant difference between groups was tested using one-way ANOVA and Tukey multiple comparison tests for healthy donors (ND, 
+n=15), MGUS (n=21), SMM (n=23) and newly diagnosed MM (n=75).
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 6 | Marker genes demonstrating cell type identity of monocytic clusters. a, Mean expression of MHC II encoding genes. Violin plots 
+show minimum, median, and maximum values. A BH-corrected two-tailed t-test was performed on n=32 patient samples. b, Heatmap of expression 
+values for the top 10 genes with enriched expression in all monocytes discovered by k-nearest neighbors’ subclustering. Expression values are centered 
+and normalized for each gene.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 7 | Dysregulation of HLA-DR surface representation in monocytes from diseased environment. a, qPCR data demonstrate significant 
+increase of HLA-DR expression in CD14+ monocytes after co-culture with MM cell lines. CD14+ cells alone and those co-cultured with B cells were used 
+as a control. Median ratios were 1.54 for B cells, 2.07 for MM1.S cells, 3.28 for KMS-18, 8.34 for RPMI and 3.12 for OPM2 cells as compared to CD14+ 
+control (1.0). Bars represent SD. Experiment was performed twice with independent donors in triplicates. Representative data from one experiment is 
+shown. b, Immunofluorescence staining of tissue microarrays from MGUS, SMM and MM patients (n=45, TMA performed in triplicates, total of 135 
+BM sections analysed) demonstrates prevalent intracellular accumulation of HLA-DR (green) in CD14-expressing monocytes (red) in disease settings. 
+Membrane-bound localization of HLA-DR was observed in healthy bone marrow monocytes. (yellow arrows point on cells with HLA-DR localized to the 
+cell membrane, white arrows point on cells with HLA-DR accumulated in the cytoplasm.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 8 | MARCH-1 dependent internalization of HLA-DR in CD14+ monocytes in myeloma environment. a, Gating strategy for HLA-DR 
+on CD14+ cells. b, Knockdown of MARCH-1 by siRNA rescues presentation of HLA-DR molecules on the surface of CD14+ monocytes co-cultured with 
+MM cells. Representative FACS profiles show higher numbers of HLA-DR+ cells after MARCH-1 knockdown with siRNA (experiment performed 3 times 
+with 3 different donors using 2 different cell lines/2 different siRNA for MARCH-1, non-targeting si-RNA is used as a control). c, Mean fluorescence 
+intensity demonstrates the two to 4.5-fold increase in the levels of HLA-DR protein expression on the cell surface of CD14+ cells. d, qPCR data for relative 
+expression of MARCH-1 in CD14+ cells after siRNA knockdown as compared to the si-RNA control. The assay was performed twice with independent 
+donors/2 cell lines/2 siRNAs, performed in triplicates. Representative data from one experiment is shown. In MM1.S cells, siRNA knockdown leads to 
+reduction of MARCH-1 expression to 0.46 and 0.32 (median value, amplified with primer pair 2) and to 0.40 and 0.26 (median value, amplified with 
+primer pair 3) as compared to control siRNA (median value, 1.0). In OPM2 cells, siRNA knockdown leads to reduction of MARCH-1 expression to 0.65 and 
+0.7 (median value, amplified with primer pair 2) and to 0.29 and 0.36 (median value, amplified with primer pair 3) as compared to control siRNA (median 
+value, 1.0). Bars represent STDEVP. e, CD14+ cells with lower levels of MARCH-1 have increased HLA-DR protein on their cell surface. The experiment  
+was performed twice with two independent donors/2 cell lines/2 siRNAs. f, Stronger correlation of DAPI and HLA-DR localization in MM1.S and  
+OPM2 cells in control cells as compared to those after MARCH-1-siRNA transfection. The experiment was performed twice with two independent 
+donors/2 cell lines/2 siRNAs.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 9 | CD14+ monocytes do not show the M-MDSC phenotype after co-culture with MM cells. Expression of different markers for a, 
+macrophages/monocytes and b, MDSCs on CD14+ cells in patients and healthy donors. c, CD14+ cells from healthy donors were co-cultured with MM 
+cells. FACS analysis was performed on day 3 after co-culture. Representative results from one out of two independent experiments performed with two 
+healthy donors/2 different cell lines. Due to restricted cell numbers, no replicates could be used. All donors have similar distribution of cells as compared 
+to controls.
+Nature Cancer | www.nature.com/natcancer
+
+Articles
+Nature Cancer
+Articles
+Nature Cancer
+Extended Data Fig. 10 | Alterations in tumor microenvironment start from the precursor stages of the MM and exhibit heterogeneous changes in  
+the immune cell repertoire. Illustration of immune alterations observed during progression. Bars begin at the stage in which they are first observed in  
+our dataset.
+Nature Cancer | www.nature.com/natcancer
+
+
+
+

@@ -1,0 +1,215 @@
+Letter to Blood
+To the editor:
+Analysis of ITGB2 rare germ line variants in chronic lymphocytic leukemia
+Grace Tiao,1,* M. Reina Improgo,1-3,* Eugen Tausch,4 Stacey M. Fernandes,2 Jasmin Bahlo,5 Sandra Robrecht,5
+Kirsten Fischer,5 Michael Hallek,5 Stephan Stilgenbauer,4 Adam Kiezun,1 Gad Getz,1,6-8,† and Jennifer R. Brown1-3,†
+1Cancer Program, Broad Institute of MIT and Harvard, Cambridge, MA; 2Department of Medical Oncology, Dana-Farber Cancer Institute, and 3Department
+of Medicine, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA; 4Department of Internal Medicine III, Ulm University, Ulm, Germany;
+5Department I of Internal Medicine and Center of Integrated Oncology Cologne Bonn, University Hospital, Cologne, Germany; 6Center for Cancer Research
+and 7Department of Pathology, Massachusetts General Hospital, Boston, MA; and 8Department of Pathology, Harvard Medical School, Boston, MA
+Two recent publications have investigated the role of the ITGB2 variant
+p.E573K in familial chronic lymphocytic leukemia (CLL) and other
+hematologic malignancies. The ﬁrst paper, “Whole exome sequencing
+in families with CLL detects a variant in Integrin b 2 associated with
+disease susceptibility,” by Goldin et al,1 reported the identiﬁcation of a
+rare, nonsynonymous coding variant in ITGB2, p.E573K, which was
+found in 6 out of 59 families with CLL. The penetrance of the variant
+within the families was not reported, although the variant was also
+found in 3 individuals with CLL from among 173 unrelated CLL clinic
+patients. All 3 patients were diagnosed at an early age and had a family
+history of CLL or lymphoid malignancy. A follow-up paper, in which
+the frequency of this variant was studied among Tasmanian patients
+withCLLandotherhematologicmalignancies,wasrecentlypublished.2
+In this population, the minor allele frequency of this variant was 0.013,
+and the authors found that the variant was not enriched among families
+with hematologic malignancies compared with Tasmanian population
+controls or publicly available non–TCGA (The Cancer Genome
+Atlas), non-Finnish European controls from the Exome Aggrega-
+tion Consortium database.3 The authors of this latter paper suggest
+that given the conﬂicting ﬁndings, a gene-based analysis of ITGB2
+should be performed to determine whether multiple rare deleterious
+variants in this gene may contribute to disease risk.
+These ﬁndings and this suggestion are of particular interest to us, as
+we have just recently completed such a gene-based rare variant
+association analysis in CLL.4 We focused on rare germ line variants
+(,1% minor allele frequency) identiﬁed by whole-exome sequencing
+in a cohort of 646 CLL patients of European descent (composed of
+80 familial individuals, 178 sporadic individuals, and 388 individuals
+of unknown familial status) compared with 8920 ethnically matched
+population controls without cancer at sampling. We included only 1
+representativeprobandfromeachofthe80familiesinthestudycohort,
+and therefore, the 80 familial samples were all from unrelated
+individuals. ITGB2 was not signiﬁcant in an exome-wide gene
+burden analysis (q 5 0.99).
+We next queried our data set to compare the incidence of the ITGB2
+variant p.E573K in our patient cohort to that reported in the Goldin et al
+study. We found 7 CLL patients heterozygous for this germ line variant
+out of 554 CLL patients studied (only patients who had coverage at
+that genomic site sufﬁcient to make a high-conﬁdence genotype
+call were included). In the control cohort, we found 68 individuals with
+heterozygous calls at p.E573K out of a total of 8669 samples with
+sufﬁcient coverage for a high-conﬁdence call. The allele frequency of
+p.E573Kinour cases(0.0063) appears to be aboutthe same as theallele
+frequencyobservedbyGoldinetalintheirvalidationcohort(0.0087,or
+3 out of 346 alleles in 173 patients). Furthermore, in our data set, the
+allele frequency of p.E573K in cases was slightly enriched over the
+frequency in controls (0.0039). However, a 1-sided Fisher’s exact test
+comparing the ratio of alternate to reference alleles in cases vs controls
+shows that this slight enrichment in cases is not statistically signiﬁcant,
+with a P value of .163 (Table 1). We note that the same 1-sided Fisher’s
+exact test performed on Goldin et al’s validation cases compared with
+a cohort of non-Finnish European controls taken from the Exome
+Aggregation Consortium database is also not statistically signiﬁcant,
+with a 1-sided Fisher P value of .456 (Table 1).
+Given that rare variants in ITGB2 were not signiﬁcantly associated
+with CLL in our exome-wide gene burden analysis and the p.E573K
+variantwasnotspeciﬁcallyenriched,weanalyzedalloftherarevariants
+identiﬁed in ITGB2 in cases vs controls in our data set. Out of a total of
+110 rare, nonsynonymous, biallelic coding variants found in ITGB2 in
+our study cohort, only 13 were present in CLL cases, of which only
+5 were present in more than one individual with CLL. The p.E573K
+variant was the most recurrent variant, with 7 heterozygous affected
+individuals, followed by the missense variant p.R529W, which was
+found in 5 heterozygous CLL patients. Of the 30 CLL cases carrying a
+Table 1. Allele frequency and odds ratio of ITGB2 p.E573K in cases and controls from different cohorts
+Case cohort
+Control cohort
+Allele frequency in
+cases (%)
+Allele frequency in
+controls (%)
+Fisher’s OR (95% CI)
+Fisher’s P
+Tiao et al4 unrelated CLL cases
+(familial and sporadic, n 5 646)
+8920 ethnically matched
+European control samples4
+7/1108* (0.63)
+68/17 338* (0.39)
+1.62 (0.73-Inf)
+.163
+Goldin et al1 families (n 5 171;
+59 families)
+N/A
+Not reported (6 families
+with $1 carrier/individual)
+N/A
+N/A
+N/A
+Goldin et al1 unrelated CLL clinic
+patients (n 5 173)
+Exome Aggregation Consortium
+(non-Finnish European)3
+3/346 (0.87)
+461/62 646† (0.74)
+1.21 (0.32-Inf)
+.456
+CI, confidence interval; Inf, infinity; N/A, not applicable; OR, odds ratio.
+*Only patients who had coverage at the genomic site of interest sufficient to make a high-confidence genotype call were included.
+†Control cohort included 5 individuals homozygous for p.E573K.
+BLOOD, 30 NOVEMBER 2017 x VOLUME 130, NUMBER 22
+2443
+Downloaded from http://ashpublications.org/blood/article-pdf/130/22/2443/1403687/blood800128.pdf by guest on 17 May 2024
+
+rare variant in ITGB2, only 7 had known familial vs sporadic status, and
+all 7 were sporadic.None of the variants found in cases was signiﬁcantly
+enrichedcomparedwithcontrols(supplementalTable1,availableonthe
+Blood Web site).
+Of the 646 CLL patients in our cohort, 259 were CLL patients
+enrolledinaprospectivecohortnaturalhistorystudyattheDana-Farber
+Cancer Institute (DFCI),5-8 281 were from the German CLL Study
+Group’s randomized CLL8 clinical trial,9,10 and 106 were from
+published whole-exome sequencing data from the International Cancer
+Genome Consortium.11 Of the 7 CLL patients in this data set who carry
+the p.E573K germ line variant, 6 were sampled from the German CLL
+Study Group and were of unknown familial status; the remaining
+patient was from the DFCI cohort and was a sporadic case. The
+preponderance of heterozygous p.E573K samples from the German
+CLL8 study as compared with DFCI samples is suggestive, as it raises
+the possibility that the observed frequency of the p.E573K variant in
+the study by Goldin et al may be related to a speciﬁc European
+subpopulation represented by their study subjects. Without information
+on the ethnic background of the subjects in the Goldin et al study, or the
+association of the variant with CLL within families, it is difﬁcult to fully
+assess this possibility. If the familial patients in the Goldin et al study
+were sampled from a relatively homogeneous European subpopulation
+with a higher frequency of p.E573K, it may be a benign allele that
+marks a particular subpopulation rather than a true predisposition
+allele. Alternatively, it may contribute to disease development within
+that subpopulation; assessing this would require a large control group
+from within the same subpopulation.
+We believe these studies illustrate the ongoing challenges of
+disentangling germ line predisposition to CLL, when intrinsic popula-
+tion variability must be taken into account and predisposing alleles may
+be speciﬁc to small subpopulations. This is further complicated by the
+likelihood that the genetic basis of CLL within families may differ
+from that of the general population.4 Larger case cohorts categorized
+by familial vs sporadic status, as well as case cohorts analyzed by
+ethnicity together with genetically matched control groups, are
+likely to be required to better deﬁne the heritability of CLL.
+*G.T. and M.R.I. contributed equally to this study.
+†G.G. and J.R.B. contributed equally to this study.
+The online version of this article contains a data supplement.
+Acknowledgements: J.R.B. was a clinical scholar of the Leukemia and
+Lymphoma Society and is supported by the Leukemia and Lymphoma Society
+(translational research program grant 6289-13), the American Cancer Society
+(grant RSG-13-002-01-CCE), and the National Institutes of Health National
+Cancer Institute (grant RO1 CA213442-01A1). J.R.B. also received support
+from the Melton Family Fund for CLL Research, the Susan and Gary Rosenbach
+Fund for Lymphoma Research, and the Okonow Lipton Family Lymphoma
+Research Fund. S.S. and E.T. are supported by the Else Kr¨oner-Fresenius-
+Stiftung (grant 2010_Kolleg24, 2012_A146) and Deutsche
+Forschungsgemeinschaft (SFB 1074 projects B1 and B2). Genetic analyses in
+CLL8 were supported by Roche. G.G. was partially funded by the Paul C.
+Zamecnik, MD, Chair in Oncology at Massachusetts General Hospital.
+Contribution: G.T. and J.R.B. conceived and designed the study; G.T., M.R.I.,
+M.H., S.S., G.G., and J.R.B. acquired data (providing animals, acquired and
+managed patients, and provided facilities); G.T., M.R.I., E.T., J.B., S.R., K.F.,
+A.K., G.G., and J.R.B. analyzed and interpreted data (performing statistical
+analysis, biostatistics, and computational analysis); G.T., M.R.I., G.G., and
+J.R.B. wrote, reviewed, and/or revised the manuscript; and G.T., M.R.I., and
+S.M.F. provided administrative, technical, or material support (reporting or
+organizing data and constructing databases).
+Conflict-of-interest disclosure: The authors declare no competing financial
+interests.
+Correspondence: Jennifer R. Brown, Dana-Farber Cancer Institute, 450
+Brookline Ave, Boston, MA 02215, USA; e-mail: jennifer_brown@dfci.harvard.
+edu; and Gad Getz, Broad Institute of MIT and Harvard, 75 Ames St, Cambridge,
+MA 02142; e-mail: gadgetz@broadinstitute.org.
+References
+1. Goldin LR, McMaster ML, Rotunno M, et al. Whole exome sequencing in
+families with CLL detects a variant in Integrin b 2 associated with disease
+susceptibility. Blood. 2016;128(18):2261-2263.
+2. Blackburn NB, Marthick JR, Banks A, et al. Evaluating a CLL susceptibility
+variant in ITGB2 in families with multiple subtypes of hematological
+malignancies. Blood. 2017;130(1):86-88.
+3. Lek M, Karczewski KJ, Minikel EV, et al. Exome Aggregation Consortium.
+Analysis of protein-coding genetic variation in 60,706 humans. Nature.
+2016;536(7616):285-291.
+4. Tiao G, Improgo MR, Kasar S, et al. Rare germline variants in ATM are
+associated with chronic lymphocytic leukemia. Leukemia. 2017;31(10):
+2244-2247.
+5. Wang L, Lawrence MS, Wan Y, et al. SF3B1 and other novel cancer genes in
+chronic lymphocytic leukemia. N Engl J Med. 2011;365(26):2497-2506.
+6. Landau DA, Carter SL, Stojanov P, et al. Evolution and impact of subclonal
+mutations in chronic lymphocytic leukemia. Cell. 2013;152(4):714-726.
+7. Landau DA, Tausch E, Taylor-Weiner AN, et al. Mutations driving CLL and their
+evolution in progression and relapse. Nature. 2015;526(7574):525-530.
+8. Yu L, Kim HT, Kasar S, et al. Survival of Del17p CLL depends on genomic
+complexity and somatic mutation. Clin Cancer Res. 2017;23(3):735-745.
+9. Fischer K, Bahlo J, Fink AM, et al. Long-term remissions after FCR
+chemoimmunotherapy in previously untreated patients with CLL: updated
+results of the CLL8 trial. Blood. 2016;127(2):208-215.
+10. Hallek M, Fischer K, Fingerle-Rowson G, et al; German Chronic Lymphocytic
+Leukaemia Study Group. Addition of rituximab to fludarabine and
+cyclophosphamide in patients with chronic lymphocytic leukaemia: a
+randomised, open-label, phase 3 trial. Lancet. 2010;376(9747):1164-1174.
+11. Quesada V, Conde L, Villamor N, et al. Exome sequencing identifies recurrent
+mutations of the splicing factor SF3B1 gene in chronic lymphocytic leukemia.
+Nat Genet. 2011;44(1):47-52.
+DOI 10.1182/blood-2017-08-800128
+© 2017 by The American Society of Hematology
+2444
+LETTER TO BLOOD
+BLOOD, 30 NOVEMBER 2017 x VOLUME 130, NUMBER 22
+Downloaded from http://ashpublications.org/blood/article-pdf/130/22/2443/1403687/blood800128.pdf by guest on 17 May 2024

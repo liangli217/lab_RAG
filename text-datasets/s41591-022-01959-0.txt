@@ -1,0 +1,2739 @@
+Articles
+https://doi.org/10.1038/s41591-022-01959-0
+1Harvard Graduate Program in Biophysics, Harvard University, Cambridge, MA, USA. 2Cancer Program, The Broad Institute, Cambridge, MA, USA. 3Cancer 
+Center, Massachusetts General Hospital, Boston, MA, USA. 4Harvard Medical School, Boston, MA, USA. 5Department of Medical Oncology, Dana-Farber 
+Cancer Institute, Boston, MA, USA. 6Department of Haematology, University College London Hospitals, London, UK. 7Program in Computational Biology 
+and Quantitative Genetics, Harvard T.H. Chan School of Public Health, Boston, MA, USA. 8IBM Research, New York, NY, USA. 9These authors contributed 
+equally: Nicholas J. Haradhvala, Mark B. Leick, Katie Maurer, Satyen H. Gohil. 10These authors jointly supervised this work: Catherine J. Wu, Gad Getz, 
+Marcela V. Maus. ✉e-mail: cwu@partners.org; gadgetz@broadinstitute.org; mvmaus@mgh.harvard.edu
+C
+AR-T cell therapy has revolutionized the treatment of hema-
+tologic malignancies, resulting in multiple United States Food 
+and Drug Administration approvals since 2017. However, 
+long-term responses only persist in roughly half of patients1,2. 
+Proposed mechanisms for relapse include tumor resistance to apop-
+tosis3,4, target antigen loss5, upregulation of inhibitory receptors and 
+intrinsic T cell deficiencies6,7. For patients with chronic lymphocytic 
+leukemia, a dearth of specific apheresis and CAR-T subpopulations 
+seemed to be important for response7. However, thus far, investiga-
+tion of mechanisms of resistance to CAR-T therapy in aggressive 
+large B cell lymphomas (LBCL) has been limited.
+The first two Food and Drug Administration-approved 
+CAR-T cell products for LBCL—axicabtagene ciloleucel (axi-cel) 
+and tisagenlecleucel (tisa-cel)—utilize similar CAR designs with 
+identical extracellular binding domains. They have, however, dif-
+fering manufacturing processes and costimulatory domains (CD28 
+and 4-1BB respectively), endowing them with different expansion 
+and phenotypic characteristics while maintaining comparable 
+clinical efficacy8. CD19 loss has been reported in roughly 30% of 
+lymphoma relapses9, suggesting that other factors may explain 
+most cases of nonresponse or relapse. A recent study of single-cell 
+RNA-sequencing (scRNA-seq) data on cellular infusion products 
+(IP) from LBCL patients treated with axi-cel identified an associa-
+tion between complete clinical response and higher frequencies of 
+CD8 T cells expressing memory signatures, whereas poor clinical 
+response was associated with CD8 T cell exhaustion10. Much, how-
+ever, remains to be understood with respect to how transcriptional 
+mechanisms of response vary by product, evolve after infusion 
+into the patient, or fit into the broader context of the host immune 
+system.
+We hypothesized that studying the evolutionary trajectories of 
+patient-derived T cells and CAR-T cells from two different CAR 
+products would yield insights into their respective modes of suc-
+cess or failure. Here, we performed scRNA-seq and single-cell T cell 
+receptor (TCR) sequencing of 105 samples from 32 patients with 
+LBCL treated with axi-cel or tisa-cel, collected over the course of 
+treatment. We found substantial differences in the cellular dynamics 
+of response between the two products: tisa-cel responses were asso-
+ciated with striking expansion of rare CD8+ central-memory-like 
+populations from the IPs, whereas axi-cel treatment revealed less 
+shifting of T cell lineages between IPs and post-treatment. In axi-cel 
+IPs, we identified increased frequencies of CAR-T regulatory 
+Distinct cellular dynamics associated with 
+response to CAR-T therapy for refractory  
+B cell lymphoma
+Nicholas J. Haradhvala   1,2,9, Mark B. Leick3,4,9, Katie Maurer   2,5,9, Satyen H. Gohil2,5,6,9,  
+Rebecca C. Larson3,4, Ning Yao2,7, Kathleen M. E. Gallagher3,4, Katelin Katsis3, 
+Matthew J. Frigault   3,4, Jackson Southard5, Shuqiang Li2,5, Michael C. Kann   3, Harrison Silva3, 
+Max Jan3,4, Kahn Rhrissorrakrai8, Filippo Utro   8, Chaya Levovitz   8, Raquel A. Jacobs2, Kara Slowik2, 
+Brian P. Danysh   2, Kenneth J. Livak   5, Laxmi Parida   8, Judith Ferry3, Caron Jacobson5, 
+Catherine J. Wu   2,5,10 ✉, Gad Getz   2,3,4,10 ✉ and Marcela V. Maus   2,3,4,10 ✉
+Chimeric antigen receptor (CAR)-T cell therapy has revolutionized the treatment of hematologic malignancies. Approximately 
+half of patients with refractory large B cell lymphomas achieve durable responses from CD19-targeting CAR-T treatment; how-
+ever, failure mechanisms are identified in only a fraction of cases. To gain new insights into the basis of clinical response, 
+we performed single-cell transcriptome sequencing of 105 pretreatment and post-treatment peripheral blood mononuclear 
+cell samples, and infusion products collected from 32 individuals with large B cell lymphoma treated with either of two CD19 
+CAR-T products: axicabtagene ciloleucel (axi-cel) or tisagenlecleucel (tisa-cel). Expansion of proliferative memory-like CD8 
+clones was a hallmark of tisa-cel response, whereas axi-cel responders displayed more heterogeneous populations. Elevations 
+in CAR-T regulatory cells among nonresponders to axi-cel were detected, and these populations were capable of suppressing 
+conventional CAR-T cell expansion and driving late relapses in an in vivo model. Our analyses reveal the temporal dynamics of 
+effective responses to CAR-T therapy, the distinct molecular phenotypes of CAR-T cells with differing designs, and the capacity 
+for even small increases in CAR-T regulatory cells to drive relapse.
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1848
+
+Articles
+NATuRE MEDiCinE
+(CAR-Treg) cell populations in patients lacking clinical responses. 
+We then showed, through in vitro and in vivo modeling, that these 
+CAR-Treg cells, expressing either product, can suppress conventional 
+CAR-T activity and thus facilitate relapse.
+Results
+We performed scRNA-seq on peripheral blood mononuclear cells 
+(PBMC) collected from multiple timepoints from 32 individuals 
+with LBCL treated with axi-cel (n = 19) and tisa-cel (n = 13), along 
+with their matching IP (Fig. 1a,b and Supplementary Tables 1 and 
+2). Patient outcomes were tracked for up to 6 months, with fluo-
+rodeoxyglucose positron emission tomography (PET) scans taken 
+for clinical response at around 1, 3 and 6 months postinfusion for 
+most patients. We observed 15 of 32 (47%) patients progress or 
+relapse within the 6-month window of observation, consistent with 
+the known clinical activity of these agents (Fig. 1b). We analyzed 
+PBMCs collected within 30 days before treatment (n = 20 total, 
+n = 12 at day −30, n = 4 at day −5 and n = 4 on the day of infusion) 
+and, to capture peak CAR-T expansion, also at 7 days (D7) after 
+treatment (n = 29). When possible, D7 cells were sorted by flow 
+cytometry based on expression of CAR to generate an enriched frac-
+tion of CAR-T cells (n = 22) (Extended Data Fig. 1a; and Methods). 
+Altogether, our cohort yielded a total of 602,577 high-quality cells.
+Cells with an in silico detected CAR transcript (Methods) were 
+present at high numbers in the IPs and the sorted CAR+ D7 sam-
+ples, whereas they were only minimally detected in the sorted CAR– 
+fractions and unsorted samples from D7 post-treatment samples 
+(Fig. 1c). In pretreatment samples, we only artifactually detected the 
+CAR transcript in 73 of 131,000 cells (0.0006%).
+Clustering of all cells in our dataset enabled the identification 
+of diverse immune cell types present based on canonical markers 
+(Fig. 1d and Extended Data Fig. 1b). Such analysis revealed D7 
+non-CAR-T cells to intersperse with those from baseline, whereas 
+D7 CAR+ cells tended to cluster separately from the baseline and 
+the D7 CAR– cells and IPs clustered independently (Fig. 1d). Most 
+clusters, and in particular the non-T cell clusters, spanned the 
+patients, indicating that there was less variability among patients 
+than among types of cells (Fig. 1d). We observed distinct cluster-
+ing of the CAR+ cells originating from the IP cells, as well as the 
+D7 CAR-sorted samples (Fig. 1e). As expected, the IP samples and 
+D7 CAR+ samples consisted primarily of T cells, whereas baseline 
+and D7 CAR– samples contained other populations such as mac-
+rophages, myeloid, dendritic cells and B cells (Fig. 1d). We did 
+not detect extensive transcriptional differences among cells from 
+patients treated with tisa-cel versus axi-cel at baseline (Fig. 1d). 
+However, cells from the IPs and D7 samples seemed to cluster by 
+CAR construct and expression, suggesting potential CAR-driven 
+differences in their phenotype (Fig. 1e).
+Transcriptomic evolution of CAR-T cells from IP to D7. To 
+explore molecularly the observed separation between transduced 
+CAR-T cells and untransduced T cells, we devised a pseudobulk 
+differential expression approach, which has been shown to help 
+avoid inflated test statistics associated with repeatedly measuring 
+many cells from a comparatively small number of patients11. We 
+performed in silico sorting of cells of each sample into popula-
+tions of interest (CD4/CD8, CAR/non-CAR) and then aggregated 
+transcripts across all cells of a particular cell type to yield a sample 
+by gene matrix of transcript counts as one might obtain from bulk 
+sequencing (Fig. 2a; and Extended Data Fig. 1c; and Methods).
+At D7, we found 463 genes to be elevated (false discovery rate 
+(FDR) < 10%, >twofold increase in CAR+ cells relative to CAR–) 
+in both types of CAR-transduced T cells (Supplementary Table 3), 
+including genes related to cellular proliferation (DIAPH3, BUB1B, 
+KIF23, FDR-corrected P value (Q) < 10−5 for both products) and 
+activation (for example, CD109 with log2 fold change (LFC) = 1.3, 
+Q = 2.1 × 10−7 and LFC = 2.4, Q = 1.0 × 10−7 for tisa- and axi-cel, 
+respectively). Additional genes were found in product-specific 
+analyses, such as increased expression of CTLA4 in axi-cel IPs 
+(LFC = 2.3, Q = 5.0 × 10−5; Fig. 2b).
+Our analysis of tisa-cel IPs yielded just one significant hit 
+(Q < 0.1), likely due to power limitations from the lower CAR tran-
+script detection rate compared with axi-cel (Fig. 1c and Fig. 2b): 
+ENPP2 (LFC = 1.09, Q = 0.02), which is associated with a 4-1BB sig-
+nature12. Indeed, we found genes of this signature to be recurrently 
+upregulated in tisa-cel IPs over axi-cel (Fig. 2c). We observed a sub-
+set of these genes maintained expression at D7 (genes in the MHC II 
+pathway), whereas others (such as the transcription factor-encoding 
+BATF3) were transiently expressed in the IP but downregulated 
+posttransfusion.
+To further map out these temporal transcriptional changes, we 
+calculated differentially expressed genes between IP and D7 for 
+each product separately (Fig. 2d and Supplementary Table 4). Some 
+of the upregulated genes found exclusively in one product reflected 
+known differences between CD28 and 4-1BB signaling in tisa-cel 
+and axi-cel. Consistent with rapid activation associated with CD28 
+signaling, CD8+ axi-cel cells showed stronger upregulation of acti-
+vation marker PDCD1 (refs. 13–15) (PD-1, LFC = 2.74 D7 relative 
+to IP, Q = 6.2 × 10−7) and checkpoint regulator SLAMF6 (Fig. 2e; 
+LFC = 1.74, Q = 6.4 × 10−7), perhaps suggestive of an early exhaus-
+tion signature in this rapidly expanding product16. We also observed 
+upregulation of SOS1 in the IP of axi-cel, which is associated with 
+CAR proliferation17 (LFC = −1.97, Q = 4.8 × 10−7).
+We identified 1,442 differentially expressed genes shared 
+between the products (708 upregulated and 734 downregulated by 
+at least twofold in D7 samples compared with IP with Q < 0.1). This 
+included ZBP1 (tisa-cel LFC = 5.7 and Q = 5.1 × 10−9, and axi-cel 
+LFC = 3.7 and Q = 1.7 × 10−10), which plays an important role in 
+mediating necroptosis in response to interferon-exposed cells18, 
+suggestive of potential upregulation of activation-induced cell 
+death pathways in both products at this timepoint. ZBP1-deficient 
+mice resist systemic inflammation driven by elevations in inter-
+feron (IFN)γ signaling, suggesting a potential pathway for regu-
+lation of CAR toxicity18,19. Genes lowered in expression at D7 
+included (1) IRF4 (tisa-cel LFC = −1.8, Q = 2.0 × 10−9, and axi-cel 
+LFC = −1.8, Q = 3.4 × 10−8) implicated in prevention of exhaustion 
+in the CAR-T cells of in vivo cancer models20; and (2) CISH (tisa-cel 
+LFC = −5.6, Q = 9.8 × 10−13,and axi-cel LFC = −5.3, Q = 4.5 × 10−11), 
+which has been identified as encoding a critical T cell immune 
+checkpoint, the ablation of which results in enhanced T cell func-
+tion mediated through the TCR21.
+Associations of cell subsets with clinical response. We next que-
+ried our dataset for cell types with frequencies associated with clini-
+cal response, defined by whether progressive disease was observed 
+by PET within 6 months of follow up (Methods). Among the 
+CAR– PBMCs, we used the method scCODA22 to test whether any 
+non-T cell populations changed in frequency relative to the num-
+ber of T cells. We included as covariates treatment product and, for 
+baseline analyses, the timepoint of sampling (days 0, −5 or −30), 
+as we observed that T cell fractions were higher in day 0 samples 
+(Extended Data Fig. 1d). Other factors such as baseline tumor vol-
+ume were not observed to associate (Extended Data Fig. 1e). We 
+identified monocytes as more abundant in nonresponders at base-
+line for both products (FDR = 0.02, estimated LFC of 0.77 with a 
+95% high density interval of (0.24,1.31) between nonresponders and 
+responders; Extended Data Fig. 2a), in agreement with previously 
+described results23. This effect was not observed at D7, nor were any 
+other non-T cell populations found to be significantly altered.
+Assessing whether the relative fractions of CD4+ and CD8+ 
+subsets were associated with response, we found that in patients 
+treated with tisa-cel, but not axi-cel, response was associated with 
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1849
+
+Articles
+NATuRE MEDiCinE
+UMAP1
+UMAP2
+Subject
+Cell type
+UMAP1
+Sample type
+Axi-cel
+Tisa-cel
+Expression of CAR transcripts
+Tisa-cel
+Axi-cel
+Cells from each sample
+timepoint in patients treated with:
+Baseline
+IP
+D7 CAR+
+D7 CAR–
+pDC
+CD4 T
+CD8 T
+Infusion T
+Monocyte
+NK Platelet
+mDC
+Baseline
+D7 CAR–
+D7 CAR+
+IP
+d
+e
+UMAP2
+c
+Sample treatment
+Tisa-cel-treated
+Axi-cel-treated
+a
+b
+1
+2
+3
+4
+log transcripts per 10,000
+Baseline
+IP
+D7-CAR-T
+D7-non-CAR
+D7-unsorted
+0
+0.2
+0.4
+0.6
+0.8
+Fraction of cells
+Tisa-cel transcript detection
+Baseline
+IP
+D7-CAR-T
+D7-non-CAR
+D7-unsorted
+Axi-cel transcript detection
+Axi-cel (28z)
+Tisa-cel (BBz)
+Sample collection
+Cohorts
+Analysis
+scRNA-seq
+Infusion
+product
+D7 sorted CAR+
+D7 PBMC CAR–
+13
+19
+Days
+Baseline
+PBMC
+–30
+–5
+0
+7
+or
+CAR+
+CAR–
+T cell clone tracking
+Cellular determinants
+of response
+Responder
+Nonresponder
+TCR
+CAR
+Lymphodepletion
+CAR manufacturing
+Tisa-cel
+Axi-cel
+Subject ID
+–5IP0
+–30
++7
++14
+Days since CAR-T infusion 
+Ongoing clinical response
+scRNA-seq sample
+Nonresponse
+60
+120
+180
+Leukapheresis
+400
+Responder
+Nonresponder
+Axi-R-01
+Axi-R-03
+Complete response
+Partial response
+Imaging assessment
+Axi-N-18
+Response classification
+Tisa-N-29
+Tisa-R-32
+Tisa-R-26
+Tisa-N-27
+Tisa-N-20
+Axi-R-04
+Axi-R-02
+Axi-R-15
+Axi-N-16
+Tisa-R-22
+Tisa-N-28
+Tisa-N-23
+Tisa-N-25
+Axi-R-11
+Axi-R-13
+Axi-N-06
+Axi-R-17
+Axi-N-07
+Axi-N-10
+Axi-N-09
+Axi-N-14
+Tisa-N-24
+Tisa-R-30
+Tisa-R-21
+Tisa-N-31
+Axi-R-12
+Axi-P-05
+Axi-R-08
+Tisa-cel Axi-cel
+Axi-R-19
+Partial response
+Response
+evaluation
+B
+Fig. 1 | The landscape of CAR-T and host immune populations in CAR-T treated patients. a, Illustration of study design of treatment with tisa-cel (BBz) 
+or axi-cel (28z). D7, day 7 post-treatment. b, Swimmer plot of patient outcomes. Bars represent follow up window (PET scan or physician report), circles 
+represent outcome of PET scans and arrows represent ongoing response. Stars designate timepoints at which samples were collected for scRNA-seq;  
+n = 32 patients are shown. c, Fraction of cells per sample with at least one detected tisa-cel or axi-cel transcript. Each circle represents a sample, and 
+samples from patients treated with tisa-cel or axi-cel are stratified; n = 20 baseline, n = 31 IP, n = 22 D7 CAR+, n = 22 D7 CAR– and n = 7 D7 unsorted 
+biologically independent samples are shown. The timepoint and sorting strategy is denoted on the x axis. Boxes show the median, interquartile range, and 
+maximum and minimum values. d,e UMAP representation of full dataset. On the left, colored by cell type, timepoint and subject. On the right, cells from 
+the same UMAP subset for each timepoint are colored by CAR treatment (orange, axi-cel; blue, tisa-cel) (d) and colored by the expression  
+(log transcripts-per-10,000) of each CAR construct detected in each cell (e).
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1850
+
+Articles
+NATuRE MEDiCinE
+the extent to which D7 CAR+ cells were predominantly (>50%) of 
+CD8+ subtype (Fig. 3a and Extended Data Fig. 2b,c; likelihood ratio 
+test P = 0.02 and P = 0.51 for tisa-cel and axi-cel, respectively). Five 
+out of seven tisa-cel treated patients with lower proportion (<50%) 
+of CD8+CAR+ T cells at D7 exhibited progressive disease by day 30, 
+and the remaining two relapsed 6 months following treatment. In 
+contrast, only one out of six patients (Tisa-N-31) with greater than 
+50% CD8+CAR-T cells at D7 exhibited progressive disease. The 
+percentage of CD8+ cells in tisa-cel IPs was low in both respond-
+ers and nonresponders, but had a modest association with 6-month 
+response (Extended Data Fig. 2b; Q = 0.11).
+The temporal dynamics of these CD8 fractions from IP to D7 
+were strikingly different between the two treatments. In axi-cel, 
+the fraction of D7 CAR+ T cells that were CD8+ was variable across 
+patients, and this value was highly correlated with the percentage of 
+CD8+ cells in the IP (Fig. 3b; Spearman 𝝆 = 0.73, P = 0.002). Tisa-cel 
+4-1BB gene signature
+Tisa-cel (4-1BB)
+Axi-cel (CD28z)
+Responders
+Responders
+Nonresponders
+Nonresponders
+TNIP2
+TNFRSF8
+ARID5A
+ELL2
+MIR155HG
+CXCL10
+IL4I1
+G0S2
+BATF3
+ENPP2
+HMSD
+ADCY1
+BIRC3
+ANK3
+HLA-DPB1
+HLA-DRA
+HLA-DRB1
+CD74
+HLA-DPA1
+SH3BP5
+DDIT4
+JUNB
+–2
+0
+z-scored
+expression
+2
+4
+Sustained D7 signaling
+Transient IP signaling
+D7
+IP
+a
+Tisa-cel
+Axi-cel
+Upregulated at D7
+Upregulated in IP
+Upregulated at D7
+Upregulated in IP
+ZBP1
+PDCD1
+SLAMF6
+SOS1
+IRF4
+CISH
+b
+c
+d
+e
+0
+1
+2
+3
+4
+5
+–log10(P) tisa-cel
+0
+1
+2
+3
+4
+5
+6
+7
+8
+–log10(P) axi-cel
+ARL3
+C16orf87
+CTLA4
+ENPP2
+HMGB3
+IL1R2
+RASGRP4
+SMOX
+STING1
+UCK2
+ZC2HC1A
+0
+2
+4
+6
+8
+10
+–log10(P) tisa-cel
+0
+2
+4
+6
+8
+10
+12
+–log10(P) axi-cel
+AGMAT
+ASL
+ASPH
+BLM
+BUB1B
+CCR2
+CD109
+CD83
+DIAPH3
+EPB41L2
+GLRX2
+KIF23
+LMCD1
+MRPL3
+MYO1E
+NUDT16
+POGLUT2
+SLC19A1
+SQLE
+TEX30
+Both
+Tisa-cel only
+NS
+Axi-cel only
+Significant
+(Q < 0.1)
+IP
+D7
+T cells
+CAR
++
+CAR
+–
+CD8
++
+In silico
+sorting
+Differential
+expression
+comparisons
+Pseudobulk
+samples
+CD4
++
+CD8
++
+CD4
++
+Responders
+Nonresponders
+IP
+D7-CAR-T
+–0.5
+0
+0.5
+1.0
+1.5
+2.0
+PDCD1 (log10 TPM)
+LFC = 2.74 (q = 6.2 × 10–7)
+LFC = 1.24 (q = 2.5 × 10–2)
+IP
+D7-CAR-T
+1.0
+1.5
+2.0
+SLAMF6 (log10 TPM)
+Axi-cel
+Tisa-cel
+IP
+D7-CAR-T
+0.5
+1.0
+1.5
+2.0
+2.5
+SOS1 (log10 TPM)
+IP
+D7-CAR-T
+0
+1
+2
+ZBP1 (log10 TPM)
+IP
+D7-CAR-T
+0.5
+1.0
+1.5
+2.0
+IRF4 (log10 TPM)
+IP
+D7-CAR-T
+0
+1
+2
+3
+CISH (log10 TPM)
+10
+5
+0
+–5
+–10
+–10
+0
+10
+1.74 (6.4 × 10–7)
+0.75 (4.3 × 10–2)
+3.69 (1.7 × 10–10)
+5.69 (5.1 × 10–9)
+–5.33 (4.5 × 10–11)
+–5.57 (9.8 × 10–13)
+–1.79 (3.4 × 10
+–8)
+–1.85 (2.1 × 10–9)
+–1.97 (4.8 × 10
+–7)
+–0.77 (3.4 × 10–2)
+Fig. 2 | Pseudobulk analysis of genes related to treatment, timepoint and response. a, Schematic of pseudobulk approach. T cells from IP and D7 samples 
+are in silico sorted for CAR+ and CAR– cells and, when stated, CD4 and CD8. Transcript counts are then combined across these cells into one pseudobulk 
+observation. Different conditions are then compared using limma48. b, Scatterplot of two-tailed –log10 P values derived from moderated t-statistics 
+calculated by the limma package testing differential expression between CAR+ and CAR– (not separating CD4 and CD8) pseudobulk samples from the 
+IP (left, n = 13 and n = 18 for tisa-cel and axi-cel, respectively) and D7 PBMCs (right, n = 13 and n = 15) for each product. Genes with Benjamini–Hochberg 
+corrected P values (Q values) of  < 0.1 are colored (plotted values are uncorrected). NS, nonsignificant c, Expression of previously identified signature of 
+4-1BB CAR activation across timepoints and patients. Values are z-scored across patients. d, Comparison of genes differentially expressed between CD8+ 
+cells in the infusion products (n = 7 and n = 15 for tisa-cel and axi-cel, respectively) and at D7 (n = 10 and n = 7 for tisa-cel and axi-cel). The scatterplot 
+shows the signed log10 P values obtained from limma testing differences between IP and D7 samples for tisa-cel (x axis) and axi-cel (y axis). Positive values 
+indicate higher expression at D7, and negative values higher in the IP. Gray lines show a significance threshold of Q = 0.01 for both up- and down-regulated 
+genes on each axis. e, Illustration of several highlighted genes in d. Lines represent the changes in expression of the gene between IP and day 7 in 
+CD8+CAR-T cells of a single sample. Samples are colored by treatment, and split violins represent the distribution of expression across patients of each 
+treatment at a given timepoint. Only samples with 25 or more cells are shown, including n = 22 IP and n = 17 D7 CAR+ biologically independent samples. 
+Boxes show the interquartile range.
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1851
+
+Articles
+NATuRE MEDiCinE
+IPs, however, were universally composed of less than 10% CD8+ 
+cells, but these CD8+ cells dramatically expanded at D7, particularly 
+in patients exhibiting long-term response (Fig. 3b). The reduced 
+expansion in nonresponders was seen for patients with CD19 posi-
+tive and negative relapse alike (Extended Data Fig. 2d). Baseline 
+fractions of CD8+ cells were found to be predictive of neither those 
+observed in the circulating CAR– T cell populations nor in the 
+IPs (Fig. 3b).
+Response-associated expansion of CD8+ cells in tisa-cel. To 
+explore whether these changing CD4/CD8 frequencies could be 
+explained by different proliferative dynamics, we scored our cells 
+a
+b
+d
+Fraction responding
+0
+30
+90
+180
+0
+0.5
+1.0
+0
+30
+90
+180
+CD8-high
+CD8-low
+2
+3
+3
+3
+5
+7
+5
+7
+4
+0
+5
+2
+5
+3
+6
+7
+Number at risk
+CD8-high
+Tisa-cel 
+Axi-cel
+c
+e
+0
+0.5
+1.0
+Tisa-cel
+CD4 T
+CD8 T
+Baseline
+IP
+D7-CAR-T
+Timepoint
+0
+0.5
+1.0
+Axi-cel
+Baseline
+IP
+D7-CAR-T
+Timepoint
+Fraction of proliferating cells
+**
+Responder
+Nonresponder
+P = 0.02
+P = 0.51
+Baseline
+n = 3
+Infusion
+n = 5
+Day 7
+n = 5
+Tisa-cel
+CD8
+CD4
+CAR
++
+CAR
+–
+Responder
+Baseline
+n = 5
+Infusion
+n = 8
+Day 7
+n = 8
+CD8
+CD4
+CAR
++
+CAR
+–
+Nonresponder
+Baseline
+n = 7
+Infusion
+n = 11
+Day 7
+n = 9
+Axi-cel
+CD8
+CD4
+CAR
++
+CAR
+–
+Baseline
+n = 5
+Infusion
+n = 6
+Day 7
+n = 7
+CD8
+CD4
+CAR
++
+CAR
+–
+CM
+EM
+EMRA
+Naive
+T-reg
+CD4+ CTL
+CD4 T
+CD8 T
+n = 5
+n = 8
+n = 8
+n = 7
+–1
+0
+1
+PC1
+–1.0
+–0.5
+0
+0.5
+1.0
+1.5
+PC2
+TEMRA
+(CCR7–CD45RA+)
+TEM
+(CCR7–CD45RO+)
+Tnaive
+(CCR7+CD45RA+)
+TCM
+(CCR7+CD45RO+)
+10
+3
+10
+2
+10
+1
+10
+0
+Number of cells
+CD8-low
+Tisa-cel
+IP
+D7 CAR-T
+Axi-cel
+–6
+–4
+–2
+0
+2
+4
+6
+0
+1
+2
+3
+4
+5
+6
+7
+PRF1
+CST7
+IQCG
+LAG3
+GZMH
+CSF2
+CCL3L1
+CCL3
+CAPG
+RORA
+–6
+–4
+–2
+0
+2
+4
+6
+0
+1
+2
+3
+4
+5
+6
+7
+–6
+–4
+–2
+0
+2
+4
+6
+0
+1
+2
+3
+4
+5
+6
+7
+–6
+–4
+–2
+0
+2
+4
+6
+0
+1
+2
+3
+4
+5
+6
+7
+ALOX5AP
+CTLA4
+HLA.H
+S100B
+HLA.J
+PAX8.AS1
+LFC
+Nonresponder
+Responder
+f
+0
+0.5
+1.0
+Fraction CD8
++ IP
+0
+0.25
+0.50
+0.75
+1.00
+Fraction CD8
++ D7 CAR
++
+Infusion to D7 CAR
++
+0.25
+0.50
+0.75
+Fraction CD8
++ baseline
+0
+0.2
+0.4
+0.6
+0.8
+Fraction CD8
++ IP
+Baseline to IP
+0.25
+0.50
+0.75
+Fraction CD8
++ baseline
+0.2
+0.4
+0.6
+0.8
+1.0
+Fraction CD8
++ D7 CAR
+–
+Baseline to D7 CAR
+–
+Product
+Tisa-cel
+Axi-cel
+Response
+Nonresponders
+Responders
+ρ = 0.73
+P = 0.002
+Days postinfusion
+–log10 P value
+Response-associated genes in CD8
++ cells
+P = 0.007
+Fig. 3 | Temporal evolution of T cells in responders and nonresponders of different products. a, Kaplan–Meier response curves stratified by whether 
+patients had greater than 50% CD8 CAR-T cells (out of all CAR-T cells) at D7. P values testing the significance of this stratification using a Cox 
+proportional-hazards model are shown. b, Changes in CD8 frequency between different timepoints for CAR– and CAR+ cells. c, Fraction of cycling cells at 
+different timepoints for different CD4/CD8 designations, treatments and response outcomes. A two-tailed t-test is shown for tisa-cel CD8+ IPs comparing 
+responders and nonresponders (P = 0.007, t-statistic = −4.3, n = 4 and n = 3 for responders and nonresponders, respectively). Individual samples are shown 
+as dots, and a line is drawn showing the mean of each timepoint, with an error band showing a 95% confidence interval derived from bootstrapping 1,000 
+iterations. d, Volcano plots of differentially expressed genes in CD8+CAR-T cells between responders and nonresponders for each product and timepoint. 
+P values were calculated with the limma package two-tailed test of moderated t-statistics. All genes with Benjamini–Hochberg FDR-corrected P values 
+Q < 0.25 are colored and labeled (plotted values are uncorrected). The area of each dot is the absolute value of the LFC times the negative log10 P value.  
+e, PCA dimensionality reduction using knn-smoothed expression of T differentiation markers (CD45RO, CD45RA and CCR7) visualizing the classification 
+of T cell subtypes. Dotted lines represent where the cutoffs used to define CCR7+ and CD45RA+ (smoothed expression values >0.5) fall in the projection. 
+f, Depiction of T subset frequencies at each timepoint for each product and response. Bar widths at each timepoint are proportional to the fraction of cells 
+(out of all cells) being classified as a particular subset. CD4 and CD8 cells are stratified, and distinguished with cross-hatching for CD4 subsets.
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1852
+
+Articles
+NATuRE MEDiCinE
+CM
+EM 1
+EM 2
+EM 1
+EM 2
+SLEC
+CM
+CTL
+EM
+CTL
+EM
+CM
+EM
+CM
+EM 1
+EM 2
+EM 3
+CM
+CTL
+EM
+Treg
+CM
+CTL 1
+CTL 2
+CTL 3
+Treg
+CM
+EM 1
+EM 2
+0
+0.2
+0.4
+0.6
+0.8
+Fraction cells
+(out of CD8
++ CAR-T)
+Responders
+Nonresponders
+P = 0.0057
+P = 0.0062
+P = 0.93
+Tisa-cel
+Axi-cel
+CM: CD45RO
++CCR7
++
+EM: CD45RO
++CCR7
+–
+SLEC: SELL-KLRG1
++
+CD4 CTL: CD4
++GrK/B
++
+Treg: FOXP3
++
+GrB
++PRF1
++
+CX3CR1
++CD27
++
+IL7R
++
+GrB
++
+GrB
++TIGIT
++
+GrK
++
+GrB
++
+IFN-high
+GrB
++TIGIT
++
+Infusion
+D7
+a
+CD8
++
+CD4
++
+CD8
++
+CD4
++
+b
+g
+Infusion
+D7
+Responder
+Nonresponder
+Responder
+Nonresponder
+Infusion
+D7
+CAR-T subpopulations
+Subpopulation frequencies
+by response
+TCR clone tracking
+CXCR3
++
+IFITM1/2
++
+G1
+S
+G2M
+Cha
+n
+g
+e
+ i
+n
+ 
+c
+lo
+ne 
+p
+h
+e
+n
+o
+ty
+pe
+IP phenotype 1
+Fraction of cells
+per cell cycle 
+IP
+D7
+Clone frequency
+Responder
+Nonresponder
+IP phenotype 2
+D7 phenotype 1
+D7 phenotype 2
+EM
+CTL
+CM
+EM 2
+EM 1
+CM
+EM
+CTL
+SLEC
+EM 2
+EM 1
+Treg
+EM
+CTL
+CM
+EM
+CM
+Treg
+CTL 3
+CTL 2
+CTL 1
+CM
+EM 3
+EM 2
+EM 1
+CM
+c
+d
+Q = 0.060
+e
+f
+Cells in cluster
+Cells in cluster
+Tisa-cel CD8
++ IP
+0
+0.25
+0.50
+0.75
+1.00
+Fraction CD8
++ CAR-T (of all CAR-T)
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+Fraction SLECs (of CD8
++ CAR-T)
+Nonresponder
+Responder
+Tisa-cel CD8
++ D7
+Tisa-cel CD8
++ D7 subclusters
+marker genes for cluster
+Tisa-cel CD8
++ IP subclusters
+marker genes for cluster
+Q = 0.18
+Q = 0.59
+Q = 0.98
+Q = 0.71
+Q = 0.92
+Q = 0.71
+Q = 0.98
+1% 10% 25%
+50%
+Cell frequency
+EM 2
+EM 1
+CM
+SLEC
+EM 2
+EM 1
+25%
+5%
+1%
+EM
+CTL
+CM
+EM
+CTL
+EM
+CM
+EM 3
+EM 2
+EM 1
+CM
+Treg
+EM
+CTL
+CM
+Treg
+CTL 3
+CTL 2
+CTL 1
+CM
+CM
+EM
+SLEC
+CD4
++ CTL
+Treg
+CM
+EM 1
+EM 2
+–0.4 0
+0.4 0.8
+Mean z-scored
+expression
+IFITM2
+IFITM1
+CCR4
+COTL1
+STAT1
+NME2
+IL7R
+F12
+LEF1
+CCR7
+PRF1
+LAG3
+CST7
+IFNG
+CTSW
+LTA
+TNFRSF18
+HAVCR2
+CSF1
+CD2
+CD8B
+LTB
+CXCR3
+CD7
+CD8A
+LGALS3
+SELL
+IFITM2
+MAD1L1
+CD99
+CM
+EM 1
+EM 2
+EM 1
+EM 2
+SLEC
+–0.4 0
+0.4 0.8
+Mean z-scored
+expression
+IFITM2
+IL7R
+IFITM1
+IFITM3
+DDIT4
+ZNF683
+CD7
+TSC22D3
+LGALS3
+LTB
+CD27
+FOS
+HLA-DQA2
+KLF2
+CX3CR1
+TIGIT
+SIRPG
+PECAM1
+FCMR
+HMOX1
+HLA-H
+KLRG1
+HLA-DPB1
+HLA-DQB1
+LAIR1
+CST7
+ITM2A
+HLA-DRB1
+CCL3L1
+FCGR3A
+EM 1
+EM 2
+SLEC
+n = 5
+n = 8
+n = 5
+n = 8
+n = 11
+n = 6
+n = 9
+n = 7
+Fig. 4 | Tracking temporal evolution of CAR-T clones by TCR sequencing. a, UMAP plots of CAR-T cells of different treatments and at different timepoints 
+colored by subcluster. b, Frequencies of CAR-T subclusters. Circle area represents the estimated median percentage of cells belonging to the cluster 
+(out of all CAR-T cells) in patients treated with each product and with each response outcome. Comparison with significant compositional shift between 
+responders and non-responders (log likelihood ratio test Q < 0.1; Methods) is highlighted with a box. c, Top ten differentially expressed genes in each 
+tisa-cel CD8+ IP subcluster, as identified by a t-test. d, Relative frequencies of each tisa-cel CD8+ IP cluster stratified by response. Only samples with 
+at least 25 CD8+CAR-T cells are shown. e, Top differentially expressed genes in each tisa-cel CD8+ D7 subcluster, as identified by a two-tailed t-test. 
+Biologically independent samples from n = 3 responders and n = 3 nonresponders are shown. Boxes show the median, interquartile range, and maximum 
+and minimum values. f, Scatterplot of the fraction of CD8+ tisa-cel D7 cells in each patient that fell into the SLEC cluster (y axis) versus the overall fraction 
+of CAR-T cells that were CD8+ (x axis). Arrow highlights the sole nonresponder to have predominantly CD8+ cells are D7. g, Up to 15 of the most prevalent 
+TCR clones identified at both timepoints are shown for each CAR-T subset. For each, circles show the cluster in Fig. 3d to which the clone belongs at each 
+timepoint, with sizes corresponding to the clone frequency in its sample. Pie charts show the distribution of cells in each phase of the cell cycle.
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1853
+
+Articles
+NATuRE MEDiCinE
+for cell cycle gene sets24, and calculated the fraction of cycling 
+CAR-T cells at each timepoint. A higher fraction of cells at a single 
+timepoint in the S and G2/M phases is suggestive that, as a whole, 
+cells in the population are moving faster through G0/G1 (ref. 25), 
+which is the main determinant of proliferation rate. Tisa-cel 
+CD4+CAR-T cells exhibited fractions of cycling cells comparable 
+with those of CD8+ cells in the IP but essentially no CD4+ cells were 
+dividing at D7 (Fig. 3c), explaining the outgrowth of CD8+ cells. 
+Responders had higher fractions proliferating CD8+ cells in their 
+IPs (two-tailed t-test P = 0.007), likely underlying the greater expan-
+sion seen at D7. Meanwhile, axi-cel CD4+CAR-T cells exhibited 
+similar proliferation rates to CD8+ cells both in the IP and at D7, 
+consistent with them maintaining similar ratios across timepoints.
+By testing for genes associated with response in our pseudobulk 
+framework, we found that most differentially expressed genes (14 
+out of 17 genes with FDR < 10%) were in the CD8+ cells of tisa-cel 
+IPs (Fig. 3d and Supplementary Table 5). Nonresponders showed 
+an activated cytotoxic phenotype, with upregulation of genes such 
+as PRF1 (perforin), GZMH and LAG3. Thus, further differentiation 
+of these cells provides a possible explanation for the lower prolifera-
+tion and failure of expansion in nonresponders. We did not observe 
+differential expression when studying CD8+ axi-cel IPs. Prior work10 
+studying axi-cel IPs had proposed dysfunctional and memory genes 
+characteristic of nonresponders and responders, respectively, but 
+examining these genes in our data did not yield a significant separa-
+tion of patients by response (Extended Data Fig. 3).
+To better characterize the differentiation states of these cells, we 
+developed an expectation–maximization-based method to estimate 
+CD45RA and CD45RO isoform expression from 5′ scRNA data 
+(Extended Data Fig. 4a,b; and Methods). We found in published 
+PBMC datasets with additional feature barcoding of CD45 iso-
+forms that our RNA-based measurements of these isoforms were 
+highly concordant to the surface protein measurements (Extended 
+Data Fig. 4c), and could be used to define T cell subsets similar to 
+those from the protein-derived data (Extended Data Fig. 4d–f). 
+We used smoothed expression of these and other common T cell 
+subset markers (Supplementary Table 6; and Methods) to clas-
+sify the cells into naive (CCR7+CD45RA+), central memory (CM, 
+CCR7+CD45RO+), effector memory (EM, CCR7–CD45RO+), ter-
+minally differentiated effector memory re-expressing CD45RA 
+(EMRA, CCR7–CD45RA+) and regulatory T cells (FOXP3+) (Fig. 3e 
+and Extended Data Figs. 4g and 5a–d). We further distinguished 
+CD4+ cytotoxic cells (CD4+CTLs, NKG7+), prevalent in our dataset, 
+from other EMs with a more typical helper phenotype (Extended 
+Data Fig. 5b,d).
+Tisa-cel IPs were composed primarily of CD4+ cells with a mix 
+of CM and EM phenotypes, with a modest elevation of CMs in non-
+responders compared with responders (Fig. 3f; median of 24% and 
+56% cells for responders and nonresponders, respectively; two-sided 
+t-test P = 0.084). We observed very few cells classified as Naive in 
+either product (Fig. 3f and Extended Data Fig. 4g), in contrast to the 
+median of 13.9% seen in the pivotal axi-cel trial26, though consistent 
+with other studies of these products27,28. Due to the stimulation of IP 
+cells during the course of manufacturing, CD45RA expression may 
+be modulated to an extent that would affect the classification of cells 
+as CM or Naive, particularly when comparing protein-based with 
+our RNA-based methods.
+At D7, CMs were largely replaced by EMs for both products, 
+including CD4+CTLs in three of eight of the nonresponding 
+tisa-cel-treated patients (and seen in zero of five responders). The 
+previously noted post-treatment expansion of CD8+ cells in tisa-cel 
+took on a primarily CCR7–CD45RO+ EM phenotype regardless 
+of response. We observed cells beginning to re-express CD45RA 
+(EMRA) in several patients (Extended Data Fig. 5e), although 
+other markers of terminal differentiation were not seen to be ele-
+vated (Extended Data Fig. 5f), suggesting they may retain func-
+tions similar to EMs. In axi-cel-treated patients, an expansion of 
+CD4+CTLs was also seen following treatment (median of 9.2% and 
+30% of cells in IP and D7 CAR-T populations respectively, t-test 
+P = 0.0032) in responders and nonresponders alike. CAR– cells in 
+patients treated with either treatment were a mix of EM and EMRA 
+phenotypes, which remained unchanged in frequency from base-
+line to post-treatment (Fig. 3f). T cell subset frequencies at baseline 
+were heterogeneous across patients and mostly not associated with 
+tumor burden or timepoint, with the exception of a depletion of 
+TEMRA cells at day 0 (Extended Data Fig. 1f,g; FDR-corrected rank 
+sum Q = 0.02).
+To further dissect these populations in an unsupervised man-
+ner, we performed clustering of IP and D7 CAR-T cells for each 
+treatment and clinical outcome (Fig. 4a and Extended Data Fig. 6a). 
+CD8+ tisa-cel IP cells demonstrated a considerable shift in their dis-
+tribution across the identified clusters when comparing responders 
+and nonresponders (Fig. 4b; log likelihood ratio 20.3, Benjamini–
+Hochberg-corrected Q = 0.060; and Methods). Tisa-cel responders 
+had more cells from the cluster expressing CM markers CCR7 and 
+LEF1 (two-tailed t-test P = 0.0057; Fig. 4c,d), and expressed the tran-
+scription factor STAT1. Nonresponders had higher frequencies of 
+cells in cluster EM 1 (two-tailed t-test P = 0.0062) with markers sim-
+ilar to those observed in our pseudobulk analysis: interferon gamma 
+(IFNG), perforin (PRF1) and markers of activation/exhaustion 
+LAG3 and HAVCR2 (TIM-3) (Fig. 4c,d). While overall a shift in the 
+subtypes of CD8+ tisa-cel CAR-Ts at D7 was not observed (log like-
+lihood ratio 0.34, Q  =  0.98), we found that the only nonresponder 
+that more than 50% CD8+ cells of their CAR-T cells post-treatment 
+(Tisa-N-31) had a phenotype distinct from that of responders in our 
+dataset (Fig. 4e,f). Their cells were distinguished by high expression 
+of KLRG1 and lack of L-selectin (SELL)—a phenotype attributed 
+to short-lived effector cells (SLECs)29. Thus these CD8+ cells may 
+not have had the correct phenotype to induce an effective response. 
+This patient had a CD19 positive relapse (Supplementary Table 1), 
+ruling out antigen loss as a potential explanation. The cells of most 
+responders fell into an IL7R+EM 1 cluster, with the exception of 
+Fig. 5 | Mediation of relapse by CAR-Treg cells in patients and in vivo validation experiments. a,b Summary of CAR-Treg representation in infusion product 
+cells of this dataset (n = 28 biologically independent samples with ≥100 cells) (a) as well as an independent set of axi-cel infusion products (n = 22 
+biologically independent samples) (b). Shown are a UMAP representation of cells colored by FOXP3 expression (left) and the fraction of identified 
+CAR-Treg cells (out of all CAR-T cells) stratified by product and response (right). Boxes show the median, interquartile range, and maximum and minimum 
+values. R, responders; NR, nonresponders. c, Intracellular flow cytometry staining of FOXP3 staining of donor Treg cells, CD4-control T cells and Tconv T cells. 
+d, Schematic of in vivo CAR-Treg validation. NSG mice were injected with 1 × 106 Jeko-CBG lymphoma cells on day −7. On day 0, mice were injected with 
+1 × 106 CAR-T cells representing 95% CAR-Tconv cells with either 5% CAR-Treg cells or 5% CD4–CAR-T control cells. Experiment performed with CD19-CD28 
+(left) or CD19-4-1BB (right) constructs. BLI, bioluminescence imaging. e–h, Time course tumor radiance (photons s–1 cm–2 sr–1) (e,f) and flux (photons s−1) 
+(g,h) for CD28 and 4-1BB experiments, respectively. Mean ± s.e.m. overlaid on individual subject curves for n = 10 biologically independent animals 
+treated with each construct. P value represents the result of two-way ANOVA. i,j, Flow cytometric quantification of CAR-Tconv day 14 after CAR injection 
+for n = 10 biologically independent animals. P value represents two-tailed unpaired t-test. A line denoting the median value is shown. k,l, Representative 
+immunohistochemical staining for human CD3 in the spleen. Scale bars, 100 μm. m,n, Flow cytometric quantification of CD3 cells from the spleens of the 
+indicated conditions for n = 10 biologically independent animals. P value represents two-tailed unpaired t-test. A line denoting the median value is drawn.
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1854
+
+Articles
+NATuRE MEDiCinE
+5% CAR-CD4 5% CAR-Treg
+Day after  CAR inj.
+5% CAR-Treg
+5% CAR-CD4
+5% CAR-Treg
+5% CAR-CD4
+5%CAR-CD4
+5%CAR-Treg
+3
+–1
+31
+38
+52
+65
+3
+–1
+31
+38
+52
+Day after  CAR inj.
+101
+102
+103
+FOXP3 (APC)
+Tconv
+CD4
+Treg
+b
+d
+0.0065
+0.0127
+5 × 104
+Tumor radiance
+(photons s–1 cm–2 sr–1)
+1 × 107
+5 × 104
+Tumor radiance
+(photons s–1 cm–2 sr–1)
+1 × 107
+0
+20
+40
+60
+Days after CAR injection
+Flux
+0
+20
+40
+105
+106
+107
+108
+109
+1010
+1011
+105
+106
+107
+108
+109
+1010
+1011
+Days after CAR injection
+Flux
+4-1BB CAR-CD4
+4-1BB CAR-Treg
+CD28 CAR-CD4
+CD28 CAR-Treg
+Splenic stain for CD3
+Splenic stain for CD3
+ 5% CAR-CD4
+5% CAR-Treg
+0
+10
+20
+30
+Tconv CAR cells µl–1 blood
+0.0091
+ 5% CAR-CD4
+5% CAR-Treg
+0
+5
+10
+15
+Tconv CAR cells µl–1 blood
+0.0012
+ 5% CAR-CD4
+5% CAR-Treg
+0
+20
+40
+60
+80
+CD3+ of single cells (%)
+<0.0001
+ 5% CAR-CD4
+5% CAR-Treg
+0
+20
+40
+60
+80
+CD3+ of single cells (%)
+< 0.0001
+e
+g
+i
+k
+m
+c
+f
+j
+h
+n
+l
+D7
+1 × 106 JeKo-1-CBG
+Day 0
+1 × 106 CAR:
+Day 21 
+blood analysis 
+Serial BLI measurement
+•  95% CAR-Tconv +5% CAR-Treg
+•  95% CAR-Tconv +5% CAR-CD4 
+95% CD28-CAR-Tconv plus:
+95% 4-1BB-CAR-Tconv plus:
+UMAP1
+UMAP2
+0
+0.02
+0.04
+0.06
+0.08
+0.10
+0
+2
+4
+6
+8
+Axi-cel
+Tisa-cel
+FOXP3 expression in IP cells
+Fraction of CAR+ cells
+CAR-Treg frequencies
+UMAP1
+UMAP2
+Fraction of CAR+ cells
+0
+1
+2
+3
+R
+NR
+0.05
+0.10
+0.15
+0.20
+0.25
+Deng et al.10
+This study
+P = 0.013
+R
+NR
+R
+NR
+a
+P = 0.17
+P = 0.59
+P = 1.3 × 10–4
+Axi-cel
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1855
+
+Articles
+NATuRE MEDiCinE
+one patient (Tisa-R-22) with a unique CX3CR1+CD27+ phenotype 
+(Fig. 4e and Extended Data Fig. 6b; cluster EM 2).
+We next used our TCR enrichment libraries to track the tem-
+poral evolution of the CAR-T phenotypes. In all tisa-cel respond-
+ers (and several nonresponders), the top CD8+ TCR clones in the 
+IP were found to be increased in frequency at D7 (Extended Data 
+Fig. 6c). In responders, the cluster membership of these clones 
+showed that they originated primarily from CMs in the IP and dif-
+ferentiated into IL7R+ EMs at day 7 (Fig. 4g). Meanwhile, clones 
+with a SLEC phenotype at D7 were inferred to have differentiated 
+from the nonresponse-associated GZMB+PRF1+ EM population. 
+Axi-cel again showed starkly different dynamics, where CM pheno-
+type cells in the IPs exhibited fewer cells in the cell cycle than other 
+IP subsets, and were not observed to be the primary origin of the 
+CAR-T cells present at D7 (Fig. 4g), suggesting a less predominant 
+role, at least initially, of these cells compared with tisa-cel.
+Finally, we identified a population of Treg cells with CAR tran-
+scripts present (CAR-Treg cells) in the IPs, a rare subset of CD4+ 
+circulating lymphocytes that play a critical role in preventing auto-
+immunity30 but facilitate an immunosuppressive tumor micro-
+environment in a variety of tumor types, including aggressive 
+lymphomas31–35. However, CAR-Treg cells have not yet been shown to 
+play a role in clinical relapse after CAR-T cell treatment. Analyzing 
+tisa-cel and axi-cel IPs together with batch correction for interprod-
+uct differences, we found CAR-Treg cells were significantly rarer in 
+tisa-cel IPs than in axi-cel (Fig. 5a; median 0.3% of all CAR+ cells 
+in tisa-cel versus 2.7% in axi-cel, two-tailed t-test P = 1.3 × 10−4). 
+Frequencies of Treg cells at baseline were comparable between 
+patients treated with the two products (Extended Data Fig. 7a; 
+median of 3.1% and 2.6% of axi-cel and tisa-cel respectively, t-test 
+P = 0.21), suggesting this is not due to pre-existing differences in the 
+patient populations. We also observed other classic markers of Treg 
+cells among the top differentially expressed genes including IL2RA 
+(CD25) and CTLA4 (Extended Data Fig. 7b), providing additional 
+evidence these are genuine Treg cells.
+We found that, in axi-cel CAR-Treg cells in IPs, this population 
+had increased frequency in nonresponders (Fig. 5a; two-tailed t-test 
+P = 0.013, median of 5.1% and 2.5% with ranges of 2.2–8% and 
+0–3.7% in nonresponders and responders, respectively). T cells with-
+out a detected CAR had lower fractions of Treg cells (median 0.6%), 
+and they were present at a higher median level in nonresponders 
+(Extended Data Fig. 7a; median 1.5% versus 0.4%, t-test P = 0.082). 
+However, due to the lack of definitive flow cytometric isolation of 
+such CAR-negative cells from our IP samples and the sparsity of 
+scRNA-sequencing data, this increase in nonresponders could be 
+due to contamination by CAR-transduced cells for which we did not 
+detect a CAR transcript. In exploring an external single-cell data-
+set10 of axi-cel IPs, we also found a trend towards higher Treg cells 
+in nonresponders (Fig. 5b; two-tailed t-test P = 0.17). Most striking 
+were several nonresponders with very high CAR-Treg frequencies, 
+up to 26.7% of all CAR+ cells (range 4.5–10.3% for responders, and 
+3.7–26.7% for nonresponders).
+CAR-Treg cells drive lymphoma relapse in vivo. To assess whether 
+CAR-Treg cells could drive resistance in aggressive lymphomas at the 
+proportions observed in the IPs, we pursued in vitro and in vivo 
+modeling. We isolated bulk-CD3+ conventional T cells (Tconv), Treg 
+cells and CD4+ T cells from healthy donor peripheral blood, and 
+Cell type
+Tisa-cel transcript expression
+0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+CD4 CTL
+CD4 T
+CD4 T IP
+CD8 T
+CD8 T IP
+CD16+
+Mono
+Ery
+Mk
+Myeloid
+NK
+NKT
+cDC
+Treatment
+First
+Second
+14.0%
+CD4 V450
+CD8 V500
+28.1%
+Infusion 1
+Infusion 2
+D7 CAR+ cells
+Infusion
+D7
+0
+20
+40
+60
+80
+100
+CD8+ CAR-T cells (%)
+By scRNA-seq
+First infusion
+Second
+infusion
+By flow cytometry
+CTL
+CM
+(MHC II+)
+CM
+EM
+EM
+CTL
+EM
+(GrB+)
+EM
+(CD27+GrK+)
+Infusion product
+D7 treatment
+f
+CAV1
+ADTRP
+IRF8
+AFAP1L2
+FGFBP2
+DTHD1
+CRTAM
+PLS3
+GOLM1
+GZMK
+FABP5
+PLCG2
+LINC02084
+CD38
+GZMB
+GZMH
+TOX
+NDFIP2
+PLEK
+NKG7
+GPR146
+AQP3
+CITED4
+MAL
+MAST4
+LTB
+ADARB1
+LIMS2
+SOCS3
+RAB11FIP5
+RNVU1-27
+JAML
+TNFRSF4
+PTGDS
+IL2RA
+CISH
+OSM
+RARG
+SNED1
+CCR4
+First infusion
+Second infusion
+CD4+ D7 CAR-T cells
+First infusion markers (CD4+ CTL phenotype)
+Second infusion markers (CD4+ Th phenotype)
+Min
+Max
+Expression
+b
+a
+c
+d
+e
+–40
+0
+200
+400
+0
+200
+First tisa-cel
+infusion
+CR
+Relapse
+Second
+tisa-cel
+infusion
+Days after second infusion
+Days after 
+first infusion
+Bridging
+therapy
+CR
+CAR+
+CAR–
+Infusion
+D7
+CAR+
+CAR–
+First infusion
+Second infusion
+First infusion
+Second infusion
+CD4
+CD8
+log(1 + transcripts per 10,000)
+0
+1
+CD4
+CD8
+85.0%
+66.7%
+γδ T
+Fig. 6 | Differential characteristics of tisa-cel expansion in patient with relapse and subsequent retreatment. a, PET scans and illustration of treatment 
+timeline for patient with relapse and subsequent retreatment. b, UMAP representation of cells from patient with second treatment colored by cell type, 
+first or second infusion, and CAR (tisa-cel) expression. c, CAR-T subpopulation frequencies using the same visualization described in Fig. 4b. d, Fraction 
+of CD8+ cells found by scRNA and flow cytometry in different T cell subsets for each treatment. e, Flow cytometric measurements of CD8+ cell fractions 
+in day 7 CAR-T cells. f, Top differentially expressed genes between the two treatments for CD4+CAR-T cells, as determined by a t-test. Plotted expression 
+values for each gene are translated and scaled to a range of [0,1].
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1856
+
+Articles
+NATuRE MEDiCinE
+transduced these populations with either CD28 or 4-1BB costimu-
+lated second-generation CD19-targeted CAR constructs (Fig. 5c 
+and Extended Data Fig. 7c,d). By carboxyfluorescein succinimidyl 
+ester staining of the bulk population, a population of 25% CAR-Treg 
+cells reduced CAR-Tconv expansion compared with CAR-CD4 con-
+trols for both constructs (Extended Data Fig. 7e,f). To assess the 
+contribution of CAR-Treg cells to relapse in an in vivo model of lym-
+phoma, we subjected NSG mice engrafted with JeKo-1 lymphoma 
+cells to injection of CAR-T cells composed of 100% CAR-Tconv, or 
+75% CAR-Tconv with either 25% CAR-CD4 or 25% CAR-Treg cells 
+(Extended Data Fig. 8a; Methods). All mice seemed to rapidly 
+clear tumor by day 3 (Extended Data Fig. 8b,c). However, for both 
+constructs, the overall numbers of CAR-Tconv cells in the periph-
+eral blood at day 14 were suppressed in the CAR-Treg treated mice 
+(Extended Data Fig. 8d,e), and most of the mice treated with prod-
+ucts containing CAR-Treg cells relapsed, whereas none of the con-
+trol mice had at the time of euthansia on day 35 (Extended Data 
+Fig. 8f,g). Quantification of CAR-Tconv cells in the spleen at the time 
+of euthanasia revealed high levels in the CAR-CD4-control mice 
+and minimal levels of CAR-Tconv in the mice treated with injections 
+containing CAR-Treg cells (CD28 median 37.0 versus 2.3, P = 0.007; 
+4-1BB median 54.1 versus 0.6, P = 0.0003, Extended Data Fig. 8h–k).
+After demonstrating that 25% CAR-Treg cells were sufficient to 
+drive relapse, we next wanted to ascertain whether a lower, more 
+physiologically relevant proportion of CAR-Tregs (as seen in our 
+cohort) could also drive relapse. We engrafted NSG mice with 
+JeKo-1 lymphoma cells followed by injection of CAR-T cells 7 days 
+later, composed of 95% CAR-Tconv with either 5% CAR-CD4, or 5% 
+CAR-Treg cells (Fig. 5d). Again, after apparent early tumor clearance 
+in all mice by day 3, all CAR-Treg mice developed frank relapse after 
+extended follow up, whereas no relapses were seen in control mice 
+(Fig. 5e–h). Assessment of peripheral blood CAR-Tconv expansion at 
+day 21 revealed suppression in the CAR-Treg treated mice relative to 
+control mice (CD28 median 8.7 versus 2.0, P = 0.0012; 4-1BB 14.4 
+versus 0.9 P = 0.0091; Fig. 5i,j). At the time of euthansia, splenic 
+CD3 staining was markedly reduced in all CAR-Treg mice by immu-
+nohistochemical staining and flow cytometry (CD28 median 59.8 
+versus 0.68 P = <0.0001, 4-1BB median 57.1 versus 0.12, P < 0.0001; 
+Fig. 5k–n). Thus, CAR-Treg cells making up merely 5% of total 
+infused CAR-T cells were sufficient to drive late tumor relapses and 
+suppress CAR-Tconv expansion.
+Differential CAR-T populations in patient with reinfusion. 
+One of the study subjects (Tisa-N-29) who received tisa-cel had 
+a CD19+ relapse 6 months after treatment. This patient was sub-
+sequently treated with a second infusion of the same IP and then 
+achieved clinical and radiographic complete remission (last follow 
+up 215 days after infusion; Fig. 6a).
+PBMCs collected 7 days after retreatment as well as the read-
+ministered IP were analyzed by scRNA-seq as before (Fig. 6b). As 
+expected, the two IP products lacked any discernible differences 
+in cellular composition (Fig. 6b,c). In contrast, CAR-T cells at D7 
+following each of the treatments exhibited marked differences. 
+While few (5%) CD8+CAR-T cells were detectable 7 days after the 
+initial infusion, around 30% (a sixfold increase) was observed after 
+the second (Fig. 6d)—a finding confirmed by parallel flow cytom-
+etry measurements (Fig. 6d,e). Between the two infusions, no dif-
+ferences in phenotype were found in the postinfusion circulating 
+CD8+CAR-T cells, although statistical power for this comparison 
+was limited by the low frequency of CD8+ T cells after the first treat-
+ment. On the other hand, the phenotype of CD4+CAR-T cells shifted 
+strikingly from one treatment to the other (Fig. 6c,f). The CAR-T cells 
+had a CTL phenotype after the first infusion, with top differen-
+tially expressed genes including markers of cytotoxicity (GZMK, 
+GZMB, GZMH, NGK7), the transcription factor IRF8 and the gene 
+TOX, implicated previously in T cell exhaustion36. In contrast, 
+CD4+ cells after the second infusion instead expressed genes more 
+consistent with a helper phenotype such as TNFRSF4 (encoding the 
+costimulatory molecule OX40) and Th2-marker CCR4.
+Differences were also observed in the non-CAR compartment, 
+with the first post-treatment sample being composed of almost 
+exclusively CD8+ T cells, whereas the second additionally con-
+tained myeloid and natural killer cells (Fig. 6b and Extended Data 
+Fig. 9a,b). The CD8+ non-CAR-T cells exhibited substantial dif-
+ferences in expression between the two timepoints. After the first 
+treatment, these cells expressed CD27 and CXCR3. After the second 
+they expressed higher levels of transcription factor-encoding genes 
+GATA3 and TBX21 (t-bet) and increased levels of GNLY (Extended 
+Data Fig. 9c).
+Discussion
+CD19 CAR-T therapy has provided a cure to roughly 40% of 
+patients with previously incurable lymphomas26,37, but the fail-
+ure modes in the remaining patients remain incompletely under-
+stood38–40. Our study provides important observations of temporal 
+changes in clonal and expression dynamics of the two main CD19 
+CAR-T designs in use for LBCL (Extended Data Fig. 10). Tisa-cel 
+responses were associated with expansion of central-memory CD8 
+populations—a phenomenon not seen in axi-cel. Curiously we did 
+not observe the same associations of CM and exhaustion pheno-
+types with response to axi-cel as found in a previous study10. Larger 
+cohorts will be needed to understand whether this is due to the still 
+relatively small sample sizes attainable with scRNA-seq, or the result 
+of genuine differences in the patient populations or clinical prac-
+tices of our respective hospitals.
+A striking feature of our data is the divergent phenotypes and 
+apparent response mechanisms of the two products. The two 
+products have differing designs (4-1BB versus CD28 costimula-
+tion, CD8 versus CD28 transmembrane for tisa-cel versus axi-cel), 
+are delivered by different vectors and have differing manufactur-
+ing processes41 (fresh versus frozen apheresis products, activation 
+by antibody-coated beads versus soluble antibody and cytokines), 
+although the precise details remain proprietary. Understanding pre-
+dictive molecular features of response specific to each product will 
+give insights to further optimize their design and manufacturing, 
+and may help identify which product is most likely to succeed in a 
+given patient.
+Apart from the CAR-T cells themselves, our case where read-
+ministration of a second infusion of the same tisa-cel IP to a patient 
+resulted in expansion of different immune cell populations after each 
+treatment highlights the importance of CAR-T-extrinsic pheno-
+types in response. How important is the host immunological milieu 
+for CAR-T cell therapy and to what extent can we optimize it? Do 
+the stochastics of infusing individual unique cells matter more than 
+previously thought? Tumor-intrinsic factors such as overall disease 
+burden may also play a role; however, in this case, tumor burden 
+was higher upon the second infusion (Supplementary Table 1; sum 
+of the product diameters values of 37.2 and 58.9 cm2 for the first and 
+second dose, respectively). Retrospective studies of patients who 
+have received multiple infusions suggest that this successful rein-
+duction of remission is rare42.
+Finally, we found that increases in infusional CAR-Treg cells are 
+associated with nonresponse to axi-cel treatment, and demonstrate 
+that similar trends exist in data from a previous study of axi-cel 
+products10. In vivo modeling suggests that this may be sufficient to 
+drive late relapses and suppression of CAR-Tconv expansion in lym-
+phoma, demonstrating that small numbers of CAR-Treg cells are 
+capable of driving clinical relapse. Depletion of Treg cells using CD25 
+selection has been performed at clinical scale in the context of an 
+autologous stem cell transplant for multiple myeloma43, suggesting 
+that such a step could be added to traditional CAR-T manufactur-
+ing pipelines. Additionally, whereas in vivo modeling demonstrated 
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1857
+
+Articles
+NATuRE MEDiCinE
+that CAR-Treg cells incorporating either costimulatory domain could 
+cause relapse, we observed substantially lower numbers of CAR-Treg 
+cells in tisa-cel products. As axi-cel manufacturing begins from 
+fresh apheresis cells whereas tisa-cel is derived from frozen cells, we 
+speculate that cryopreservation may serve as a crude depletion of 
+Treg cells, which are notoriously intolerant of freezing44–46.
+We note several aspects not examined by our current manu-
+script, including the impact of different times of peak expansion 
+(median of 7 and 9 days for axi-cel and tisa-cel), as well as lengths 
+of persistence, with axi-cel rapidly declining while tisa-cel can be 
+detected for months or years after infusion, particularly in respond-
+ers26,37,47. Furthermore our study was limited to blood, and future 
+investigation of lymph node biopsies and analysis of tumor-CAR-T 
+interactions remains a fruitful avenue for research.
+In summary, we have profiled the transcriptomic evolution of 
+immune cells over the course of treating refractory LBCLs with the 
+first two CD19 CAR-T products. It is our hope that through illumi-
+nation of the response-associated characteristics of each treatment 
+we can optimize the design of CAR-T therapies, match patients with 
+the treatments most likely to induce a clinical response and under-
+stand strategies for combating relapse.
+Online content
+Any methods, additional references, Nature Research report-
+ing summaries, source data, extended data, supplementary infor-
+mation, acknowledgements, peer review information; details of 
+author contributions and competing interests; and statements of 
+data and code availability are available at https://doi.org/10.1038/
+s41591-022-01959-0.
+Received: 24 March 2022; Accepted: 19 July 2022;  
+Published online: 12 September 2022
+References
+	1.	 Maude, S. L. et al. Chimeric antigen receptor T cells for sustained remissions 
+in leukemia. N. Engl. J. Med. 371, 1507–1517 (2014).
+	2.	 Schuster, S. J. et al. Chimeric antigen receptor T cells in refractory B-cell 
+lymphomas. N. Engl. J. Med. 377, 2545–2554 (2017).
+	3.	 Singh, N. et al. Impaired death receptor signaling in leukemia causes 
+antigen-independent resistance by inducing CAR T-cell dysfunction. Cancer 
+Discov. 10, 552–567 (2020).
+	4.	 Dufva, O. et al. Integrated drug profiling and CRISPR screening identify 
+essential pathways for CAR T-cell cytotoxicity. Blood 135, 597–609 (2020).
+	5.	 Orlando, E. J. et al. Genetic mechanisms of target antigen loss in  
+CAR19 therapy of acute lymphoblastic leukemia. Nat. Med. 24, 1504–1506 
+(2018).
+	6.	 Das, R. K., Vernau, L., Grupp, S. A. & Barrett, D. M. Naïve T-cell deficits at 
+diagnosis and after chemotherapy impair cell therapy potential in pediatric 
+cancers. Cancer Discov. 9, 492–499 (2019).
+	7.	 Fraietta, J. A. et al. Determinants of response and resistance to CD19 
+chimeric antigen receptor (CAR) T cell therapy of chronic lymphocytic 
+leukemia. Nat. Med. 24, 563–571 (2018).
+	8.	 Cappell, K. M. & Kochenderfer, J. N. A comparison of chimeric antigen 
+receptors containing CD28 versus 4-1BB costimulatory domains. Nat. Rev. 
+Clin. Oncol. 18, 715–727 (2021).
+	9.	 Plaks, V. et al. CD19 target evasion as a mechanism of relapse in large  
+B-cell lymphoma treated with axicabtagene ciloleucel. Blood 138, 1081–1085 
+(2021).
+	10.	Deng, Q. et al. Characteristics of anti-CD19 CAR T cell infusion products 
+associated with efficacy and toxicity in patients with large B cell lymphomas. 
+Nat. Med. 26, 1878–1887 (2020).
+	11.	Squair, J. W. et al. Confronting false discoveries in single-cell differential 
+expression. Nat. Commun. 12, 5692 (2021).
+	12.	Boroughs, A. C. et al. A distinct transcriptional program in human CAR 
+T cells bearing the 4-1BB signaling domain revealed by scRNA-Seq. Mol. 
+Ther. 28, 2577–2592 (2020).
+	13.	Zhao, Z. et al. Structural design of engineered costimulation determines 
+tumor rejection kinetics and persistence of CAR T cells. Cancer Cell 28, 
+415–428 (2015).
+	14.	Salter, A. I. et al. Phosphoproteomic analysis of chimeric antigen receptor 
+signaling reveals kinetic and quantitative differences that affect cell function. 
+Sci. Signal. 11, eaat6753 (2018).
+	15.	Lindner, S. E., Johnson, S. M., Brown, C. E. & Wang, L. D. Chimeric antigen 
+receptor signaling: functional consequences and design implications. Sci. Adv. 
+6, eaaz3223 (2020).
+	16.	Yigit, B. et al. SLAMF6 as a regulator of exhausted CD8+ T cells in cancer. 
+Cancer Immunol. Res. 7, 1485–1496 (2019).
+	17.	Wang, Y. et al. Low-dose decitabine priming endows CAR T cells with 
+enhanced and persistent antitumour potential via epigenetic reprogramming. 
+Nat. Commun. 12, 409 (2021).
+	18.	Yang, D. et al. ZBP1 mediates interferon-induced necroptosis. Cell. Mol. 
+Immunol. 17, 356–368 (2019).
+	19.	Zhan, Y., Carrington, E. M., Zhang, Y., Heinzel, S. & Lew, A. M. Life and 
+death of activated T cells: how are they different from naïve T cells?  
+Front. Immunol. 8, 1809 (2017).
+	20.	Seo, H. et al. BATF and IRF4 cooperate to counter exhaustion in 
+tumor-infiltrating CAR T cells. Nat. Immunol. 22, 983–995 (2021).
+	21.	Palmer, D. C. et al. Cish actively silences TCR signaling in CD8+ T cells to 
+maintain tumor tolerance. J. Exp. Med. 212, 2095–2113 (2015).
+	22.	Büttner, M., Ostner, J., Müller, C. L., Theis, F. J. & Schubert, B. scCODA is a 
+Bayesian model for compositional single-cell data analysis. Nat. Commun. 12, 
+6876 (2021).
+	23.	Jain, M. D. et al. Tumor interferon signaling and suppressive myeloid cells are 
+associated with CAR T-cell failure in large B-cell lymphoma. Blood 137, 
+2621–2633 (2021).
+	24.	Tirosh, I. et al. Dissecting the multicellular ecosystem of metastatic 
+melanoma by single-cell RNA-seq. Science 352, 189–196 (2016).
+	25.	Kafri, R. et al. Dynamics extracted from fixed cells reveal feedback linking 
+cell growth to cell cycle. Nature 494, 480–483 (2013).
+	26.	Neelapu, S. S. et al. Axicabtagene ciloleucel CAR T-cell therapy in refractory 
+large B-cell lymphoma. N. Engl. J. Med. 377, 2531–2544 (2017).
+	27.	Talleur, A. et al. Preferential expansion of CD8+ CD19-CAR T cells 
+postinfusion and the role of disease burden on outcome in pediatric B-ALL. 
+Blood Adv. https://doi.org/10.1182/bloodadvances.2021006293 (2022).
+	28.	Monfrini, C. et al. Phenotypic composition of commercial anti-CD19 
+CAR-T cells affects in vivo expansion and disease response in large B-cell 
+lymphoma patients. Clin. Cancer Res. https://doi.org/10.1158/1078-0432.
+CCR-22-0164 (2022).
+	29.	Martin, M. D. & Badovinac, V. P. Defining memory CD8 T cell. Front. 
+Immunol. 9, 2692 (2018).
+	30.	Sakaguchi, S., Yamaguchi, T., Nomura, T. & Ono, M. Regulatory T cells and 
+immune tolerance. Cell 133, 775–787 (2008).
+	31.	Lee, J. C. et al. In vivo inhibition of human CD19-targeted effector T cells by 
+natural T regulatory cells in a xenotransplant murine model of B cell 
+malignancy. Cancer Res. 71, 2871–2881 (2011).
+	32.	Todo, S. et al. A pilot study of operational tolerance with a regulatory 
+T-cell-based cell therapy in living donor liver transplantation. Hepatology 64, 
+632–643 (2016).
+	33.	Chandran, S. et al. Polyclonal regulatory T cell therapy for control of 
+inflammation in kidney transplants. Am. J. Transpl. 17, 2945–2954 (2017).
+	34.	Boroughs, A. C. et al. Chimeric antigen receptor costimulation domains 
+modulate human regulatory T cell function. JCI Insight 5, e126194 (2019).
+	35.	Togashi, Y., Shitara, K. & Nishikawa, H. Regulatory T cells in cancer 
+immunosuppression—implications for anticancer therapy. Nat. Rev. Clin. 
+Oncol. 16, 356–371 (2019).
+	36.	Khan, O. et al. TOX transcriptionally and epigenetically programs CD8+ 
+T cell exhaustion. Nature 571, 211–218 (2019).
+	37.	Schuster, S. J. et al. Tisagenlecleucel in adult relapsed or refractory diffuse 
+large B-cell lymphoma. N. Engl. J. Med. 380, 45–56 (2019).
+	38.	Shah, N. N. & Fry, T. J. Mechanisms of resistance to CAR T cell therapy.  
+Nat. Rev. Clin. Oncol. 16, 372–385 (2019).
+	39.	Brown, C. E. & Mackall, C. L. CAR T cell therapy: inroads to response and 
+resistance. Nat. Rev. Immunol. 19, 73–74 (2019).
+	40.	Larson, R. C. & Maus, M. V. Recent advances and discoveries in the 
+mechanisms and functions of CAR T cells. Nat. Rev. Cancer 21, 145–161 
+(2021).
+	41.	Zhang, J. et al. A review of two regulatory approved anti-CD19 CAR T-cell 
+therapies in diffuse large B-cell lymphoma: why are indirect treatment 
+comparisons not feasible? Adv. Ther. 37, 3040–3058 (2020).
+	42.	Gauthier, J. et al. Factors associated with outcomes after a second 
+CD19-targeted CAR T-cell infusion for refractory B-cell malignancies. Blood 
+137, 323–335 (2021).
+	43.	Derman, B. A. et al. Regulatory T-cell depletion in the setting of autologous 
+stem cell transplantation for multiple myeloma: pilot study. J. Immunother. 
+Cancer 8, e000286 (2020).
+	44.	Golab, K. et al. Challenges in cryopreservation of regulatory T cells (Tregs) 
+for clinical therapeutic applications. Int. Immunopharmacol. 16, 371–375 
+(2013).
+	45.	Florek, M. et al. Freeze and thaw of CD4+CD25+Foxp3+ regulatory T cells 
+results in loss of CD62L expression and a reduced capacity to protect against 
+graft-versus-host disease. PLoS ONE 10, e0145763 (2015).
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1858
+
+Articles
+NATuRE MEDiCinE
+	46.	Gołąb, K. et al. Cell banking for regulatory T cell-based therapy: strategies to 
+overcome the impact of cryopreservation on the Treg viability and phenotype. 
+Oncotarget 9, 9728–9740 (2018).
+	47.	Melenhorst, J. J. et al. Decade-long leukaemia remissions with persistence of 
+CD4+ CAR T cells. Nature 602, 503–509 (2022).
+	48.	Ritchie, M. E. et al. limma powers differential expression analyses for 
+RNA-sequencing and microarray studies. Nucleic Acids Res. 43,  
+e47 (2015).
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+Springer Nature or its licensor holds exclusive rights to this article under a publishing 
+agreement with the author(s) or other rightsholder(s); author self-archiving of the 
+accepted manuscript version of this article is solely governed by the terms of such 
+publishing agreement and applicable law.
+© The Author(s), under exclusive licence to Springer Nature America, Inc. 2022
+Nature Medicine | VOL 28 | September 2022 | 1848–1859 | www.nature.com/naturemedicine
+1859
+
+Articles
+NATuRE MEDiCinE
+Methods
+Patient samples and cell preparation. All patients were treated with commercial 
+CAR-T cell products; clinical data and blood samples were obtained after written 
+informed consent under an Institutional Review Board-approved protocol at 
+the Dana-Farber/Harvard Cancer Center (DFHCC No. 16-206 and 17-561). We 
+complied with all relevant ethical regulations for human research participants. 
+No compensation was provided for participation. Demographic information (age 
+and gender) are provided in Supplementary Table 1. Responders were defined as 
+those without radiographic relapse by 6 months of follow up. Nonresponders were 
+defined as patients whose disease either did not have an initial response at day 28 
+or who progressed before the 6-month follow up window. Infusion products were 
+collected from the remnants of infusion bags and cryopreserved in a solution of 
+10% dimethylsulfoxide in fetal bovine serum (FBS). Tumor burden was assessed 
+using sum of the product diameters, which is based on revised International 
+Working Group response criteria for malignant lymphoma49,50 and has previously 
+been utilized for tumor burden assessment in lymphoma patients treated with 
+CAR-T cell therapy26,51.
+Cryopreserved PBMC from D7 after CAR-T infusion were thawed and 
+resuspended in flow cytometry staining buffer (FACS) (PBS with 2% FBS); 5 μl 
+of Fc block (BD Bioscience) was added for 5 min followed by addition of the 
+antibodies in BD brilliant stain buffer (BD Bioscience). The cells were stained 
+for 20 min at 4 °C using the following antibody clones: CD45 (BV786 BD HI30 
+563716)) used at dilution of 1 in 167, CD3 (APC BD Biosciences catalog no. 5H9 
+340661) used at dilution of 1 in 83.5, CD4 (V450 BD Bioscience catalog no. SK3 
+651850) used at dilution of 1 in 83.5, CD8 (V500c BD Bioscience catalog no. SK1 
+647458) used at dilution of 1 in 83.5, CD14 (FITC BD Bioscience catalog no. 
+MφP9 347493) used at dilution of 1 in 83.5 and sCD19-PE (BioLegend custom 
+conjugation catalog no. 900002598, lot B324342) used at dilution of 1 in 55.6. Cells 
+were then washed twice and resuspended in FACS buffer followed by addition 
+of 7AAD (BioLegend). Live CAR-T cells and non-CAR-T cells were acquired 
+separately using a BD FACSAria utilizing the gating strategy in Extended Data 
+Fig. 1a with gating based on healthy non-CAR-transduced donor PBMC prepared 
+separately for each batch. Samples were resuspended in 0.04% ultrapure bovine 
+serum albumin in PBS at 1,000 cells μl–1 density before loading on a 10x Genomics 
+Chromium platform. Infusion product and baseline samples were thawed similarly 
+and combined into batches of up to four samples per 10x channel loaded at a 
+density of 3,000 cells μl–1. For some infusion product samples with a poor postthaw 
+viability (<80%), the Miltenyi Dead Cell Removal kit (130-090-101) was used to 
+deplete dead cells before scRNA-seq.
+Single-cell transcriptome sequencing data generation. Viable cells were 
+resuspended in PBS with 0.04% BSA at a cell concentration of 1,000 cells μl−1. A 
+total of 40,000 cells were loaded onto a 10x Genomics Chromium instrument 
+(10x Genomics) according to the manufacturer’s instructions. The scRNA-seq 
+libraries were processed using Chromium single-cell 5′ library and gel bead kit v.2 
+and coupled scTCR-seq libraries were obtained using Chromium single-cell V(D)
+J enrichment kit (human T cell) (10x Genomics). Quality control for amplified 
+cDNA libraries and final sequencing libraries was performed using Bioanalyzer 
+High Sensitivity DNA Kit (Agilent). Both scRNA-seq and scTCR-seq libraries 
+were normalized to 4 nM concentration and pooled in a volume ratio of 4:1. The 
+pooled libraries were sequenced on Illumina NovaSeq S4 platform. The sequencing 
+parameters were: Read 1 of 26 bp, Read 2 of 90 bp, index 1 of 10 bp and index 2  
+of 10 bp.
+Generation of CAR reference. A custom reference was built using GRCh38 and 
+the Ensembl 100 annotation, supplemented with sequences for both the axi-cel 
+and tisa-cel constructs. To determine the sequence of these constructs, we created 
+an initial reference including the sequences of pELPs 19-BBz52 for tisa-cel, and 
+msgv-fmc63-28z53 for axi-cel. We then aligned read two of four of our infusion 
+product samples (Tisa-R-21, Tisa-N-20, Axi-R-1, Axi-N-14) to this supplemented 
+genome using STAR v.2.5.1b. We used the bcftools call tool (v.1.11) to identify 
+variants of the true CAR sequence from our initial reference, and the bcftools 
+consensus tool to create an updated fasta file with refined CAR sequences. This was 
+then added to our GRCh38-based reference and prepared with Cellranger mkref 
+(v.6.0.1) giving the reference genome used for preprocessing of the full dataset.
+Preprocessing of scRNA-seq GEX data. Raw fastq files for all 10x runs were 
+aligned and quantified using Cellranger v.6.0.1 with the ‘expect cells’ parameter set 
+to 5 ×103 per pooled sample (for example a run with five multiplexed samples was 
+set to 2.5 × 104) and using the custom reference described above. Gene expression 
+matrices were further filtered for ambient contamination using cellbender v.0.2.0.
+For all cell multiplexed samples, we ran souporcell v.2020.7 to identify 
+genotype clusters using the 1000 genomes common (>2% allele frequency) single 
+nucleotide polymorphism sites. The genotype of every patient at these sites was 
+identified by running bcftools call on the CAR-sorted D7 samples (since these were 
+not multiplexed). The identity of genotype clusters was the reidentified by finding 
+the patient with the least discordant genotype calls expected to be in the pool. TCR 
+sequencing data for all runs was processed using cellranger vdj (v.6.0.1) and the 
+GRCh38_vdj_v5.0.0 reference package.
+Classification of cell types. An initial clustering of the cells was performed using 
+scanpy54 v.1.8.1 and a standard single-cell workflow. Doublets were filtered by 
+running scrublet55 v.0.2.1 on each 10x channel individually for PBMC samples. 
+Cells were filtered for a minimum of 200 genes and less than 15% mitochondrial 
+RNA transcripts. Data was log-normalized for each cell as ln(1 + 104ng/N) where ng 
+represents the number of UMIs detected in gene g out of N total UMIs detected in 
+the cell. Variable genes were selected using scanpy’s highly_variable_genes process 
+with a minimum dispersion of 0.2 and mean expression values between 0.01 and 3. 
+We further blacklisted from clustering consideration the axi-cel and tisa-cel genes, 
+any TCR or BCR variable genes, as well as sex-biased genes XIST, RPS4Y1 and 
+RPS4Y2. We regressed out the effects of total unique molecular identifiers (UMI) 
+counts and mitochondrial RNA percentages, and then standardized the expression 
+values with a maximum of ten. We performed principal component analysis 
+(PCA), then used Harmony v0.0556 to integrate our data batches. Nearest neighbors 
+were computed using the top 18 Harmony-adjusted principal components (PCs), 
+and uniform manifold approximation and projection (UMAP) was run to produce 
+the global visualizations shown.
+Classification of CD4 and CD8 populations. Due to scRNA sparsity, CD4 and 
+CD8 T cells cannot be classified directly by gene expression, and clustering at 
+reasonable resolutions did not always cleanly separate these populations. To 
+overcome this, we computed a nearest-neighbor graph using k = 100. We then 
+calculated smoothed expression of CD4 and CD8A by taking the mean across the 
+100 nearest neighbors of every cell. We then classified CD4 and CD8 T cells by 
+gating on these expression values (Extended Data Fig. 1c).
+Quantification of CD45 isoform expression. Because the important splicing 
+events to distinguish CD45RA and CD45RO isoforms occur at the 5′ end of 
+the gene (exons 4–7), we were able to develop an isoform quantification model 
+similar to those commonly employed in bulk RNA-sequencing57. First for every 
+read, we calculated a binary matrix of values Cr,i, which are 1 if splicing of read r 
+was compatible with each of the six human isoforms i of CD45 (RO, RA, RAB, 
+RB, RBC, RABC). We then calculated what the implied fragment length of the 
+sequencing molecule (Li
+r
+) would be for each isoform i as the distance from the start 
+of the gene to the 3′ end of the read (counting only exons included in isoform i). 
+The likelihood of a given read r being derived from a fragment of length Li
+r could 
+then be modeled as
+Li
+r ∼N
+(
+μ, σ2)
+,
+where μ and σ2 parameterize the mean and variance of the fragment length 
+distribution for the particular sequencing experiment. Conditioning on these 
+parameters, the likelihood of a particular transcript t being a certain isoform can be 
+calculated by the product rule over all the reads r with that transcript’s UMI (which 
+we define the set Rt)
+f
+({
+Li
+r, Cr,i
+}
+r∈Rt
+|It = i;μ, σ2
+)
+=
+∏
+r∈Rt
+N
+(
+Li
+r;μ, σ2)
+Cr,i.
+The prior probability of a transcript being of a given class was then modeled 
+with a categorical distribution parametrized by the vector π. 
+It ∼Categ(π),
+which allows computation of the posterior probability of a transcript being a 
+particular isoform
+qi
+t = P
+(
+It = i|
+{
+Li
+r, Cr,i
+}
+r∈Rt
+;μ, σ2
+)
+= f
+({
+Li
+r, Cr,i
+}
+r∈Rt
+|It = i
+)
+πi.
+We then applied expectation–maximization by iteratively computing the above 
+quantity (E-step), and applying the following update rules
+μ = 1
+N
+∑
+t∈T
+∑
+i∈S
+qi
+t
+∑
+r∈Rt
+Li
+r,
+σ2 = 1
+N
+∑
+t∈T
+∑
+i∈S
+qi
+t
+∑
+r∈Rt
+(
+Li
+t −μ
+)2
+and
+πi =
+1
+|T|
+∑
+t∈T
+qi
+t,
+where N is the total number of reads covering CD45, T is the set of all CD45 
+transcripts (UMIs) and S is the set of the six CD45 isoforms. In our downstream 
+analyses, we then estimated expression of CD45RO and CD45RA (the classification 
+antibody that detects isoforms RA, RAB and RABC) on the same log-transformed 
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+scale as our gene expression data by computing for every cell c with Nc total 
+transcripts and Tc transcripts in CD45
+exprRO
+c
+= ln
+
+1 + 104
+Nc
+∑
+t∈Tc
+qRO
+t
+
+
+and
+exprRA
+c
+= ln
+
+1 + 104
+Nc
+∑
+t∈Tc
+∑
+i=RA,RAB,RABC
+qi
+t
+
+.
+Supervised classification of T cell subsets. To label cells, in a fashion 
+consistent with FACS-based literature, we annotated cells based on the 
+expression of commonly used marker genes by thresholding knn-smoothed 
+(k = 20) log-normalized expression values as designated in Supplementary 
+Table 6. Conventional T cells were classified by differentiation state as Naive 
+(CCR7+CD45RA+), CM (CCR7+CD45RA–), EM (CCR7–CD45RA–) and TEMRA 
+(CCR7–CD45RA+). We further distinguished two additional T cell subsets: Treg cells 
+(FOXP3+) and CD4+ CTLs (CD4+NKG7+).
+Validation of T cell subtype classification using 10x demonstration dataset. 
+BAM files, gene expression and feature barcode matrices for the dataset ‘PBMCs 
+of a Healthy Donor—5′ Gene Expression with a Panel of TotalSeq-C Antibodies’ 
+were downloaded from the 10x Genomics website. CD45 isoforms were quantified 
+from the BAM files using our tool described above. Gene expression and feature 
+barcoding data were normalized in units of log transcripts per 10,000. T cells were 
+selected as cells with a protein expression of CD3 above 7.5, and then a typical 
+scanpy workflow was used to visualize the data by running PCA followed by 
+UMAP. Subpopulations were defined by drawing gates to best separate clusters 
+of cells with different combinations of CD4/CD8 and CD45RA/CCR7 positivity 
+(Extended Data Fig. 4d). In the feature barcoding data, CD8+ cells had a higher 
+background signal of CD45RA and thus a higher threshold was needed than for 
+CD4+ cells, whereas in the RNA data a single cutoff could be used for both.
+Subclustering of CAR-T populations. We performed subclusterings of 
+CAR-T cells for all eight combinations of CD4/CD8 subtype, IP/D7 timepoint and 
+tisa/axi-cel product. Harmony batch correction was used to adjust four samples 
+that had been run without the FACS sorting procedure, using all other samples as 
+a reference. Cells were considered CAR-T if at least a single CAR transcript was 
+observed, or if they shared a TCR sequence with another CAR+ cell. Cells were 
+then processed using the same pipeline outlined above, with the exception that 
+we used fewer (15) PCs and regressed out S and G2M scores. For each of the eight 
+sets, we performed Leiden clustering58 to define subpopulations and identified top 
+marker genes with a t-test.
+Testing for compositional changes. We tested for changes in PBMC population 
+frequencies between responders and nonresponders by running scCODA22 using 
+T cells as a reference. We fit a model using response and product as predictors, 
+and reported cases found to be credible with over 90% inclusion probability 
+(corresponding to a 10% FDR).
+When testing overall changes in CAR-T cell populations (Fig. 4b), as a suitable 
+and consistent population to use as a reference is not possible, we used a modified 
+approach. We fit a Dirichlet-multinomial model on the cell counts of each patient 
+with parameters αR and αNR for responders and nonresponders, respectively. We 
+then calculated a log likelihood ratio statistic between the maximum likelihood of 
+this model (L1) and that of a null model fixing αR = αNR (L0).
+R = −2log (L0/L1)
+Finally, we permuted our responder/nonresponder labels 100,000 times, 
+computed a null distribution for R then used this to calculate an empirical P value. 
+We reported a Benjamini–Hochberg FDR-corrected Q value, correcting across the 
+eight categories of CAR-T cells analyzed.
+Pseudobulk differential expression analysis. To perform differential expression 
+while controlling for the dependence structure on the cell level introduced by 
+interindividual differences, we applied a pseudobulk method. For each gene, 
+we calculated the total number of UMIs in a given cell population of interest 
+by summing across all cells. Cells from different patients, T cell type (Baseline, 
+Infusion-non-CAR, Infusion-CAR, D7-non-CAR, D7-CAR) and CD4/CD8 
+subtype were given separate pseudobulk samples, yielding an X by Y matrix of 
+UMI counts. We then analyzed this using a limma48 workflow using multilevel 
+modeling to account for multiple pseudobulk samples coming from the same 
+patient. Counts data was voom-transformed, and sample dependency correlations 
+were computed using the patient ID as a blocking variable. The voom transform 
+was then recomputed using a model with the blocking structure. The limma model 
+was then fitted using gender as a covariate, and contrasts of interest were compared 
+between populations of interest.
+IP cell type identification. To identify common cell populations across different 
+types of CAR-T IPs, we reanalyzed just the cells from the IP samples. We used  
+the same workflow as above, with the difference that we performed Harmony  
+batch correction using the patient ID as a batch variable. This removes the  
+(likely biological) differences between the products, but enabled us to identify 
+common populations between the two, more importantly isolating Treg cells in 
+tisa-cel products.
+Independent Treg validation. We downloaded scRNA-seq gene expression matrices 
+of previously published axi-cel infusion products10 from the Gene Expression 
+Omnibus (GEO accession GSE151511). We filtered cells with ≤200 genes and 
+≥10% mitochondrial RNA. Data was processed using the pipeline described 
+above, using 25 PCs and harmony batch correction on the sample level to allow 
+identification of common populations.
+CAR-Treg validation. Lentiviral production. Human embryonic kidney cells 
+(HEK293T) were purchased from ATCC and expanded in RPMI 1640 media with 
+GlutaMAX and HEPES (Thermo Fisher Scientific, catalog no. 72400-120) with 10% 
+FBS (R10). Constructs were synthesized and then cloned into a third-generation 
+lentiviral backbone (GenScript). Replication deficient lentivirus was produced by 
+transfecting plasmids into HEK293T cells. Supernatant was collected at 24 and 48 h 
+after transfection. Virus was filtered and then concentrated by ultracentrifugation 
+followed by storage at −80 °C.
+Bulk T cell isolation and CAR production. Anonymized human healthy donor 
+leukapheresis products were purchased from the Massachusetts General Hospital 
+(MGH) blood bank using an Institutional Review Board-approved protocol. 
+CD3+ T cells were isolated using a T cell rosette-sep isolation kit (STEMCELL 
+Technologies, catalog no. 15061) and then activated using CD3/CD28 Dynabeads 
+at a 3:1 bead:T cell ratio (Life Technologies, catalog no. 40203D) in R10 with 
+penicillin/streptomycin (Thermo Fisher Scientific, catalog no. 15140122), and 
+20 IU ml–1 recombinant human interleukin (IL)-2 (Peprotech, catalog no. 200-02). 
+CARs were transduced with lentivirus at a multiplicity of infection of five on day 1 
+and expanded with media doubling and IL-2 replacement every 2–3 days. After 
+1 week the CARs underwent magnetic debeading, followed by another week  
+of expansion.
+Treg isolation and CAR production. CD4+ T cells were isolated from the autologous 
+donor leukopak (relative to CD3+ cells) using the Rosette-sep Human CD4+ T cell 
+negative selection isolation kit with a Ficoll gradient (STEMCELL Technologies, 
+catalog no. 15062). Isolated CD4+ cells were then enriched for CD25 using 
+CD25-PE antibody staining (BD Bioscience 2A3) and subsequent anti-PE bead 
+selection (Miltenyi Biotec, catalog no.130-048-801). The resultant two populations 
+(CD4+CD25high, and CD4+CD25low) were then stained with CD4 (BV510 BD 
+Biosciences, catalog no. SK3 562970) used at a dilution of 1 in 20, CD8 (APC-H7 
+BD Biosciences, catalog no. SK1 560273) used at a dilution of 1:40, CD127 (BV 
+711 BD Biosciences, catalog no. HIL-7R-M21 561028) used at a dilution of 1 in 
+20 and 4,6-diamidino-2-phenylindole (DAPI) and sorted on a BD FACSAria 
+for the following populations DAPI-CD4+CD8–CD25high127– (Treg cells) and 
+DAPI-CD4+,CD8–,CD25– (Control CD4s).
+Treg cells, CD4-control and bulk-CD3 cells were activated with anti-CD3/
+anti-CD28 human Treg expander beads (Thermo Fisher Scientific 1129D) in CTS 
+OpTmizer T cell expansion Serum Free Media (Thermo Fisher Scientific, catalog 
+no. A1048501) with 2% human serum (Access Cell Culture LLC), 1× GlutaMAX 
+(Thermo Fisher Scientific), 100 U ml–1 penicillin-streptomycin and recombinant 
+human IL-2 (300 IU ml–1 for Treg cells and 20 IU ml–1 for CD4-control). At 1 day 
+after sorting, T cells were transduced at a multiplicity of infection of five with 
+lentivirus. After 1 week, the CARs underwent magnetic debeading, followed by 
+another week of expansion. Transduction efficiency was assessed on day 12–14 
+after transduction, and nontransduced control cells (Treg cells, CD4-control or 
+bulk-CD3) were added to normalize transduction efficiency across the conditions.
+FOXP3 staining. Before activation, samples were drawn from the CD4+CD25high127– 
+(Treg cells), CD4+CD25– (Control CD4s) and CD3+ (Bulk-CD3) groups and stained 
+for FOXP3 (APC Invitrogen PCH101 17-4776-42) using the intracellular staining 
+kit (eBioscience 00-5523-00) used at dilution 1 in 20.
+JeKo-1 lymphoma model. NSG (NOD.Cg-PrkdcscidIl2rgtm1Wjl/SzJ) mice were 
+purchased from the Jackson Laboratory and bred in pathogen-free conditions at 
+the MGH Center for Cancer Research and all care and conducted experiments 
+were carried out with protocols approved by the MGH Institutional Animal Care 
+and Use Committee. Animals were housed at temperatures of 21.1–24.5 °C, 30–
+70% humidity and 12 h:12 h light:dark cycles. On day –7, 6-week-old female NSG 
+mice were engrafted intravenously with 106 JeKo-1-click beetle green luciferase 
+(CBG) lymphoma cells (ATCC). On day 0, a total of 1 × 106 fresh CAR-T cells 
+were injected intravenously at the ratios of bulk-CD3, CD4-control and Treg cells as 
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+indicated. Mice were imaged biweekly using d-Luciferin (Fisher Scientific) in an 
+Ami HT (Spectral Instruments Imaging). Images were analyzed using Aura v. 4.0.0 
+(Spectral Instruments Imaging) software.
+At the time of euthanasia, spleens were collected and sectioned. One section 
+was fixed in 10% neutral buffered formalin and the remainder was pulverized 
+mechanically and filtered. Cells were stained for CD3 and analyzed via flow 
+cytometry. All non-FACS sorting flow cytometry was performed on a BDFortessa 
+X20 utilizing FACSDiva software v.8.0.1.
+Formalin-fixed tissue was transferred to 70% ethanol and underwent human 
+CD3 (BD Bioscience UCHT1) staining at the MGH histopathology core. Scale  
+bars were added utilizing Fiji ImageJ (continuously updated, open source, 
+downloaded 2020).
+All flow cytometry was analyzed utilizing Flowjo v.10.8.1. Validation analyses 
+for in vitro and in vivo experiments utilized GraphPad Prism v.9.0 software.
+The swimmer plot was generated in RStudio (v.2021.09.1) using the package 
+swimplot (v.1.2.0).
+Data visualization. All boxplots presented here show the median, interquartile 
+range, and minima and maxima of underlying samples. Overlaid dotplots show 
+individual samples.
+Reporting summary. Further information on research design is available in the 
+Nature Research Reporting Summary linked to this article.
+Data availability
+Gene expression matrices from the scRNA data have been deposited with the 
+Gene Expression Omnibus (GEO accession GSE197268). Raw sequencing data 
+is available on the database of Genotypes and Phenotypes (phs002922.v1.p1). 
+Data from a previous study of axi-cel infusion products is available on GEO at 
+GSE151511.
+Code availability
+Code for our method for measurement of CD45 isoforms is publicly accessible 
+on GitHub at https://github.com/getzlab/10x-cd45-isoform-quantification. Other 
+code supporting the analyses performed in this paper is available at https://github.
+com/getzlab/Haradhvala_et_al_2022.
+References
+	49.	Cheson, B. D. et al. Revised response criteria for malignant lymphoma.  
+J. Clin. Oncol. 25, 579–586 (2007).
+	50.	Tirkes, T. et al. Response criteria in oncologic imaging: review of traditional 
+and new criteria. Radiographics 33, 1323–1341 (2013).
+	51.	Abramson, J. S. et al. Lisocabtagene maraleucel for patients with relapsed or 
+refractory large B-cell lymphomas (TRANSCEND NHL 001): a multicentre 
+seamless design study. Lancet 396, 839–852 (2020).
+	52.	June, C. H., Levine, B. L., Porter, D. L., Kalos, M. D. & Milone, M. C. Use of 
+chimeric antigen receptor-modified t cells to treat cancer. European Patent 
+EP3214091B1 (2017).
+	53.	Kochenderfer, J. N. et al. Construction and preclinical evaluation of an 
+anti-CD19 chimeric antigen receptor. J. Immunother. 32, 689–702 (2009).
+	54.	Wolf, F. A., Angerer, P. & Theis, F. J. SCANPY: large-scale single-cell gene 
+expression data analysis. Genome Biol. 19, 15 (2018).
+	55.	Wolock, S. L., Lopez, R. & Klein, A. M. Scrublet: computational identification 
+of cell doublets in single-cell transcriptomic data. Cell Syst. 8, 281–291.e9 
+(2019).
+	56.	Ilya, K. N. et al. Fast sensitive and accurate integration of single-cell data with 
+Harmony. Nat. Methods. 16, 1289–1296 (2019).
+	57.	Pachter, L. Models for transcript quantification from RNA-Seq. Preprint at 
+https://arxiv.org/abs/1104.3889 (2011).
+	58.	Traag, V. A., Waltman, L. & van Eck, N. J. From Louvain to Leiden: 
+guaranteeing well-connected communities. Sci. Rep. 9, 5233 (2019).
+Acknowledgements
+We thank E. Berg, M. O’Reilly and the rest of the Broad Institute Patterns team for their 
+contributions to the figure design. This work was partially supported by the Broad/
+IBM Cancer Resistance Research Project (principal investigators (PIs): G.G., L.P.) and 
+by National Institutes of Health (NIH) R01CA252940 (PIs: M.V.M. and G.G.). A special 
+thank you to S. Arrom and D. Oran for their thoughtful donation that helped to support 
+a portion of this work. N.J.H. was partially funded by the Landry Cancer Biology 
+Consortium fellowship. S.L. is supported by the National Cancer Institute Research 
+Specialist Award (R50CA251956). R.C.L. is supported by NIH T32 AI007529. BioRender.
+com was utilized for Extended Data Fig. 6c.
+Author contributions
+N.J.H., M.B.L., K.M., S.H.G., R.C.L., C.J.W., G.G. and M.V.M. conceived and designed 
+the study. M.B.L., K.M., S.H.G., C.J. and J.F. collected patient samples and clinical data. 
+M.B.L., K.M., K.M.E.G., K.K., S.H.G. and R.C.L. processed patient samples. S.L., J.S. 
+and K.J.L. performed the sequencing. N.J.H. analyzed the data. N.J.H., M.B.L., K.M., 
+S.H.G., R.C.L., N.Y., K.R., F.U., C.L., B.P.D., L.P., C.J.W., G.G. and M.V.M. interpreted the 
+data. M.B.L., H.S., M.C.K. and M.J. performed in vitro and in vivo experiments. R.A.J., 
+K.S., M.J.F. and B.P.D. participated in project administration. C.J.W., G.G. and M.V.M. 
+supervised the work. N.J.H., M.B.L., K.M, S.H.G., C.J.W., G.G. and M.V.M. wrote the 
+manuscript. N.J.H., M.B.L., K.M., S.H.G., R.C.L., N.Y., K.M.E.G., S.L., K.R., F.U., C.J.W., 
+G.G. and M.V.M. revised the manuscript.
+Competing interests
+N.J.H. is a consultant for MorphoSys. C.J.W. holds equity in BioNTech Inc. and receives 
+research funding from Pharmacyclics. S.H.G. holds patents related to adoptive cell 
+therapies, held by University College London and Novalgen Limited. S.H.G. provides 
+consultancy to Novalgen Ltd. G.G. receives research funds from IBM and Pharmacyclics, 
+and is an inventor on patent applications related to MSMuTect, MSMutSig, MSIDetect, 
+POLYSOLVER and SignatureAnalyzer-GPU. G.G. is a founder, consultant and holds 
+privately held equity in Scorpion Therapeutics. M.V.M., M.B.L. and R.C.L. are inventors 
+on patents related to adoptive cell therapies, held by MGH. M.V.M. is also an inventor 
+on patents related to CAR-T cell therapies held by the University of Pennsylvania (some 
+licensed to Novartis). M.V.M. is on the Board of Directors of 2SeventyBio, and holds 
+equity in TCR2, Century Therapeutics, Oncternal and Neximmune, and has served as a 
+consultant for multiple companies involved in cell therapies. The other authors declare 
+no competing interests.
+Additional information
+Extended data is available for this paper at https://doi.org/10.1038/s41591-022-01959-0.
+Supplementary information The online version contains supplementary material 
+available at https://doi.org/10.1038/s41591-022-01959-0.
+Correspondence and requests for materials should be addressed to 
+Catherine J. Wu, Gad Getz or Marcela V. Maus.
+Peer review information Nature Medicine thanks Sattva Neelapu and the other, 
+anonymous, reviewer(s) for their contribution to the peer review of this work. Primary 
+Handling Editors: Saheli Sadanand and Joao Monteiro, in collaboration with the Nature 
+Medicine team.
+Reprints and permissions information is available at www.nature.com/reprints.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 1 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 1 | Single-cell isolation and classification. a, Live CD14-CD3+CAR+ cells were isolated as CAR-T cells while CD3+CAR- cells 
+were combined with CD14+CD3- cells as non-CAR-T cells for subsequent scRNA-seq workflows. b, Selected marker genes for PBMC cell population 
+identification in scRNA-seq data. c, Kernel density estimate plots of knn-smoothed (k = 100) CD4 and CD8A expression across cells at day 7 and in the 
+IP. Lines are drawn for thresholds used for classification. d, Fractions of cells of each coarse cell type for every baseline sample sorted by timepoint of 
+sampling, as well as e, baseline tumor volume, measured by SPD (cm2). The same shown for f,g fine-grained T cell subsets.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 2 | PBMC cell composition differences between responders and non-responders pre- and post-infusion. a, Boxplots of the cell type 
+frequencies for each cell type stratified by product and response. The final cell type coefficient (with its posterior 95% high density interval) and FDR 
+value (one minus the inclusion probability) estimated by scCODA are shown. Boxes show the median, interquartile range, and maximum/minimum values. 
+n = 20 and n = 22 biologically independent samples are shown for baseline and D7-CAR-negative samples, respectively. b, Fraction of cells which were 
+CD8+CD4- at baseline, in IPs, and at day 7 in CAR+ and CAR- populations. Boxes show the median, interquartile range, and maximum/minimum values. 
+n = 20 baseline, n = 30 infusion, n = 29 day 7 CAR-negative, and n = 29 day 7 CAR-positive independent samples are shown from 31 patients.  
+c, Flow-cytometric measurements for the mean fraction of CAR positive cells which were CD8+CD4- at day 7 for n = 27 biologically independent samples. 
+Error bars represent standard deviation. P-values represent two-tailed Mann -Whitney U tests. d, Changes in CD8+ frequencies between IP and day 7 
+CAR-T cells as shown in Fig. 3b, colored by CD19 status of relapse. Samples with no relapse, or relapse without a biopsy, are grayed out.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 3 | Expression of previously proposed axi-cel response genes. Pseudobulk expression (z-scored log transcripts per million) of 
+CD8+CAR-T axi-cel IP cells for genes proposed to be response-associated by Deng et al. Fisher Exact test for association between response and denoted 
+two clusters driven by putative memory- and dysfunction-associated genes is p = 1.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 4 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 4 | Detection of CD45 isoforms and T cell subset classification in 5’ RNA-sequencing data. a, Illustration of signal used by CD45 
+isoform detection model. For each read in an illustrative sample, a histogram of the fragment length assuming no splicing (RABC isoform) is shown. The 
+distribution of reads beyond exon 3 become shifted if they come from an isoform lacking an upstream exon. b, A histogram of the expected fragment 
+length after inference of each read is shown for the same sample in blue. The gaussian distribution modeling fragment lengths inferred by EM is plotted in 
+orange. c, U-MAP representation of T cells in 10x healthy PBMC demonstration dataset with both RNA-sequencing and feature-barcoding measurements. 
+Dataset is colored by CD45RA and CD45RO expression measured by RNA (top, with k = 20 knn smoothing as applied in the paper) and feature 
+barcoding (bottom). d, Kernel density estimate plots sorting plots of cells into different memory subsets. Black lines represent cutoff used for gating. e, 
+Confusion matrix showing concordance of cell classification by protein-based and RNA-based approaches. f, Scatterplot showing similarity of cell fraction 
+measurements using either the RNA-based (x-axis) or protein-based (y-axis) measurements. g, Kernel density estimate distributions of knn-smoothed 
+(k = 20) CD45RA (x-axis) and CD45RO (y-axis) expression measurements in our dataset for Baseline T cells, Infusion products, day 7 CAR- cells and day 
+7 CAR+ cells. A plot is shown for each sample, and the CD45RA cutoff used for classification is drawn with a blue line. All plots share x and y axis scales.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 5 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 5 | Classification of T cell subtypes. UMAP representations of all a, CD8 and b, CD4 T cells colored by their subtype assignment. 
+Expression of marker genes used for subtype assignment for c, CD8 and d, CD4 cells. For each a knn-smoothed (k = 25) estimate is shown (right) 
+alongside the raw measurements (left). e, Estimated fractions of CD45 isoforms that are RO (x-axis) or RA (y-axis) in CAR-T cells from infusion products 
+and at day 7. f, Mean expression of genes related to differentiation state averaged across Naive, EM and TEMRA cells for Baseline T cells, day 7 CAR-T 
+cells. Naive cells for day 7 CAR+ were omitted as they were not seen in quantities that could be analyzed. Error bars represent 95% confidence intervals 
+derived from bootstrapping cells for 1000 iterations. Shown are n = 20,361 baseline (12,799 EM, 7,108 TEMRA, and 454 Naive) cells from 20 individuals, 
+as well as n = 46,750 day 7 CAR-negative (24,436 EM, 22,064 TEMRA, and 250 Naive), and n = 10,010 day 7 CAR-positive (8,712 EM and 1,298 TEMRA) 
+T cells from 29 individuals.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 6 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 6 | CAR-T subclusters and clonal dynamics. a, Top differentially expressed genes in each CAR-T subcluster, as determined by a t-test. 
+The expression is shown for the top 10 marker genes of each cluster displayed in Fig. 4a. b, Demonstration of unique tisa-cel responder with CD8+ cells 
+in cluster EM 2. Shown is a scatterplot of the fraction of CD8+ cells in cluster EM 2 (y-axis) vs the fraction of all CAR-T cells that are CD8+ (x-axis). c, For 
+each patient with at least 25T cells in both the IP and at day 7, individual TCR clones are plotted by their frequency in the IP (x-axis) and at day 7 (y-axis). 
+Clones are colored by whether they are CD8+ or CD4+, and denoted with an ‘x’ if the two timepoint frequencies are significantly different by a two-tailed 
+fisher exact test p < 0.05.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 7 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 7 | Regulatory T cells characteristics and in vitro suppression. a, The fraction of T cells that are T-regs in samples of each timepoint, 
+separated by CAR+ and CAR- cells. Only samples with at least 100 T cells of the relevant type are included in the analysis. A total of n = 20 baseline, 
+n = 27 Infusion CAR-negative, n = 27 Infusion CAR-positive, n = 28 day 7 CAR-negative and n = 22 day 7 CAR-positive biologically independent samples 
+are shown. P-values denote a two-tailed t-test without correction for multiple hypotheses. Boxes show the median, interquartile range, and maximum/
+minimum values. b, Average expression in IP T-regs (orange) and all other T cells (T-conv, blue) of the top 10 differentially expressed genes comparing 
+T-regs and T-convs in IP cells. Genes classically associated with T-reg function are highlighted with arrows. c. Schematic for T-reg and CD4 control 
+population isolation from healthy donor PBMC. d, CAR constructs used to identify CAR-Treg/CD4-CAR cells from CAR-Tconv. e,f, CFSE staining of CAR-
+Tconv cells co-cultured with either 25% CAR-Tregs or CD4-CAR control cells and stimulated at a 1:1 ratio with Jeko tumor targets at 72 hours. Dividing cells 
+(red) are identified relative to unstimulated condition (blue). Each histogram represents an individual replicate, summarized in the plot on the right for all 
+n = 3 technical replicates per construct over 1 independent experiment. P-value represents two-tailed unpaired t-test.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 8 | See next page for caption.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 8 | Mediation of relapse by CAR-Tregs at 25%via in vivo validation experiments. a, NSG mice were injected with 1 ×106 Jeko-CBG 
+lymphoma cells on day −7. On day 0 mice were injected with 1 ×106 CAR-T cells representing 100% CAR-T convs or 75% CAR-Tconvs with either 
+25% CAR-Tregs or 25% CD4-CAR-T control cells. Experiment performed with CD19-CD28 (left) or CD19-4-1BB (right) constructs. b, c Time course 
+tumor radiance (photons/sec/cm2/sr). d, e Flow cytometric quantification of CAR-Tconv day 14 after CAR injection for n = 15 biologically independent 
+animals per construct examined over 1 independent experiment. P-value represents two-tailed unpaired t-test. f, g Time course flux (photons/s). 
+Mean ± SEM overlaid on individual subject curves for n = 14 biologically independent animals per construct examined over 1 independent experiment. 
+P-value represents the result of two-way ANOVA. h, i Representative immunohistochemical staining for human CD3 in the spleen. j, k Flow cytometric 
+quantification of CD3 cells from the spleens of the indicated conditions for n = 15 (CD28) and n = 14 (4-1BB) biologically independent animals examined 
+over 1 independent experiment. P-value represents two-tailed unpaired t-test.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 9 | Changes in PBMC populations in patient treated with second infusion of tisa-cel. a, Expression of marker genes for PBMC cell 
+type classification. b, Fractions of day 7 CAR-negative cells falling into each cell type cluster, stratified by first and second infusion. c, Top 20 genes 
+differentially increased and decreased (by Mann-Whitney U test) comparing CD8+CAR-negative T cells between the first and second treatments at day 
+7. Plotted expression values for each gene are log transcripts-per-10,000 translated and scaled to a range of [0,1] based on the minimum and maximum 
+observed values.
+Nature Medicine | www.nature.com/naturemedicine
+
+Articles
+NATuRE MEDiCinE
+Extended Data Fig. 10 | Summary of cellular and transcriptomic changes associated with clinical outcome and timepoint. Graphic depicting the cellular 
+associations of response and temporal changes identified in this study.
+Nature Medicine | www.nature.com/naturemedicine
+
+
+φ
+
+

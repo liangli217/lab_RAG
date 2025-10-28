@@ -1,0 +1,909 @@
+Prevalence of monoclonal gammopathies and clinical outcomes 
+in a high-risk US population screened by mass spectrometry: A 
+prospective cohort study
+Habib El-Khoury, MD*,1,2, David J. Lee, MD*,1,2,3, Jean-Baptiste Alberge, PhD*,1,2,4, Robert 
+Redd, MS5, Christian J. Cea-Curry, BS1,2, Jacqueline Perry, MPH1,2, Hadley Barr, BA1,2, 
+Ciara Murphy, BA1,2, Dhananjay Sakrikar, PhD6, David Barnidge, PhD6, Mark Bustoros, 
+MD7, Houry Leblebjian, PharmD1,8, Anna Cowan, BS9, Maya I. Davis, BA1,2, Julia Amstutz, 
+BA1,2, Cody J. Boehner, BS1,2, Elizabeth D. Lightbody, PhD1,2, Romanos Sklavenitis-
+Pistofidis, MD1,2,4, Mark C. Perkins, PhD10, Stephen Harding, PhD10, Clifton C. Mo, MD1,2, 
+Prashant Kapoor, MD11, Prof Joseph Mikhael, MD12,13, Ivan M. Borrello, MD14, Prof Rafael 
+Correspondence to: Irene M. Ghobrial, MD, Dana-Farber Cancer Institute, 450 Brookline Ave, Boston, MA 02115, Phone: (617) 
+632-4198, irene_ghobrial@dfci.harvard.edu.
+*Drs. El-Khoury, Lee, and Alberge have contributed equally to this article
+#Drs. Getz, Marinac, and Ghobrial contributed equally to this article as senior authors
+Author Contributions
+H.E.K., D.J.L., J.B.A., M.B., E.D.L., R.S.P., T.R.R., G.G., C.R.M., and I.M.G., were in charge of the study design. C.C.M., P.K., 
+J.M., I.M.B., R.F., T.R.R., G.G., C.R.M., and I.M.G., oversaw conceptualization. G.G., C.R.M., and I.M.G., were in charge of funding 
+acquisition. H.E.K., C.J.C., H.B., C.M., and C.J.B., were in charge of sample processing. H.E.K., J.B.A., D.S., D.B., M.C.P., and S.H., 
+acquired and analyzed the mass spectrometry data. J.P., M.B., H. L., A.C., M.I.D., J.A., E.D.L., C.R.M., and I.M.G., were in charge 
+of project management, participants recruitment and acquisition of data for the PROMISE study cohort. D.J.L., J.P., S.T.W., and E.K., 
+were in charge of designing clinical data acquisition and validation from the Mass General Brigham Biobank. H.E.K., D.J.L., J.B.A., 
+R.S.P., L.T., G.G., C.R.M., and I.M.G., interpreted the data. D.J.L., J.B.A., R.R., and L.T. were in charge of formal data analysis, 
+statistical modeling and figure visualization. H.E.K., D.J.L., J.B.A., C.R.M., and I.M.G. had access to and verified the raw data and 
+were responsible for the decision to submit the manuscript. H.E.K., D.J.L., J.B.A., C.R.M., and I.M.G. drafted the manuscript. All 
+authors reviewed, edited, and approved the manuscript.
+Declaration of Interests
+H.E.K., D.J.L., J-B.A., R.R., CJ.C-C., J.P., H.B., C.M., H.L., A.C., M.I.D., J.A., C.J.B., E.D.L., R.S-P., I.M.B., E.K., L.T., T.R.R., 
+declare no conflicts of interest.
+D.S., D.B, M.C.P. are current employees of The Binding Site.
+M.B. is a consultant for Takeda and has received honoraria from Takeda, Janssen and BMS.
+S.H. is a current employee, member of the Board of Directors, and holds patents related to The Binding Site.
+C.C.M. is a consultant for Eli Lilly and Epizyme, is an advisory board member for BMS, has served as a consultant and advisory 
+board member for GSK, has received honoraria Janssen, and received honoraria and served as an advisory board member for 
+Karyopharm and Sanofi.
+P.K. Prashant Kapoor is a PI of studies for which Mayo Clinic has received research funding from AbbVie, Sanofi, Amgen, GSK, 
+Ichnos, Takeda, Regeneron, and Karyopharm and has received honoraria from X4 pharmaceuticals, Beigene, Pharmacyclics, Imidex, 
+Clinical Care Options, GSK, Oncopeptides, Cellectar and Karyopharm.
+J.M. is a consultant for Amgen, BMS, GSK, Janssen, Karyopharm, Sanofi and Takeda.
+R.F. is a consultant for AbbVie, Amgen, Bayer, BMS/Celgene, GSK, H3 Therapeutics, Janssen, Juno, Karyopharm, Kite, Merck, 
+Novartis, Oncopeptides, OncoTracker, Pfizer, Pharmacyclics, Regeneron, Sanofi, Takeda and is on scientific advisory board of 
+Adaptive Biotechnologies, Caris Life Sciences, OncoMyx and OncoTracker
+G.G. receives research funds from IBM and Pharmacyclics and is an inventor on patent applications related to MSMuTect, MSMutSig, 
+MSIDetect, POLYSOLVER, SignatureAnalyzer-GPU and TensorQTL. G.G. is a founder, consultant and holds privately held equity 
+in Scorpion Therapeutics. C.R.M. has serves as a consultant for JBF Legal and received research funding from GRAIL, Inc. I.M.G. 
+has served as a consultant for AbbVie, Adaptive, Aptitude Health, BMS, Cellectar, CurioScience, Genetch, Janssen, Janssen Central 
+American and Caribbean, Karyopharm, Medscape, Oncopeptides, Sanofi, Takeda, The Binding Site, GNS, and GSK. I.M.G.’s spouse, 
+William Savage MD, PhD, is CMO and equity holder of Disc Medicine.
+Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our 
+customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review 
+of the resulting proof before it is published in its final form. Please note that during the production process errors may be discovered 
+which could affect the content, and all legal disclaimers that apply to the journal pertain.
+HHS Public Access
+Author manuscript
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Published in final edited form as:
+Lancet Haematol. 2022 May ; 9(5): e340–e349. doi:10.1016/S2352-3026(22)00069-2.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fonseca, MD15, Prof Scott T. Weiss, MD2,16, Prof Elizabeth Karlson, MD2,17, Lorenzo Trippa, 
+PhD5, Prof Timothy R. Rebbeck, PhD18, Prof Gad Getz, PhD#,2,4,19, Catherine R. Marinac, 
+PhD#,1,2,18, Prof Irene M. Ghobrial, MD#,1,2,18
+1Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA
+2Harvard Medical School, Boston, MA
+3Department of Medicine, Massachusetts General Hospital, Boston MA
+4Broad Institute of MIT and Harvard, Cambridge, MA
+5Biostatistics and Computational Biology, Dana-Farber Cancer Institute, Boston, MA
+6The Binding Site Inc., Rochester, MN
+7Department of Medical Oncology, Weill Cornell Medicine, New York, NY
+8Department of Pharmacy, Dana-Farber Cancer Institute, Boston, MA
+9Alix School of Medicine, The Mayo Clinic, Rochester, MN
+10The Binding Site Group Ltd., Birmingham, United Kingdom
+11The Mayo Clinic, Rochester, MN
+12Translational Genomics Research Institute, City of Hope Cancer Center
+13International Myeloma Foundation
+14Department of Medical Oncology, Johns Hopkins University School of Medicine, Baltimore, MD
+15Department of Medical Oncology, The Mayo Clinic, Phoenix, AZ
+16Channing Division of Network Medicine, Department of Medicine, Brigham and Women’s 
+Hospital, Boston, MA
+17Division of Rheumatology, Inflammation, and Immunity, Department of Medicine, Brigham and 
+Women’s Hospital, Boston, MA
+18The Center for Prevention of Progression of Blood Cancer, Dana-Farber Cancer Institute, 
+Boston MA
+19Center for Cancer Research, Massachusetts General Hospital, Boston, MA
+Abstract
+Background—Monoclonal gammopathy of undetermined significance (MGUS) prevalence 
+estimates are currently based on predominantly White study populations screened by serum 
+protein electrophoresis/immunofixation (SPEP/IFX). A 3% MGUS prevalence is reported in 
+the general population of European ancestry aged ≥50 years. MGUS prevalence is two times 
+higher in individuals of African descent or with a family history of multiple myeloma (MM) 
+related conditions. We aimed to evaluate the prevalence and clinical implications of monoclonal 
+gammopathies (MG) in a high-risk population screened by quantitative mass spectrometry.
+Methods—We used quantitative matrix-assisted laser desorption ionization-time of flight mass 
+spectrometry (MALDI-TOF MS) and EXENT-iQ software to screen for and quantify MG in serum 
+El-Khoury et al.
+Page 2
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+from 7,622 individuals who consented to the prospective PROMISE screening study between 
+February 2019 and November 2021 and the Mass General Brigham Biobank (MGBB) between 
+July 2010 and July 2021. 83% of participants were at high risk for developing an MG, based on 
+Black ancestry or a family history of hematologic malignancies. Participants with a plasma cell 
+malignancy diagnosed prior to screening were excluded. Longitudinal clinical data were available 
+for MGBB participants with a median follow-up time from serum sample screening of 4.5 years 
+(IQR, 2.4 to 6.7 years).
+Findings—In our study cohort, the median age at time of screening was 56 years (range, 18 to 
+95). 5,013 (66%) participants were female and 2,439 (32%) self-identified as Black. Using SPEP/
+IFX, the MGUS prevalence was 6% in high-risk individuals aged ≥50. Using MS, we observed a 
+>40% total MG prevalence in this group. We termed MGs below the current clinical IFX detection 
+level (<0.2g/L) monoclonal gammopathy of indeterminate potential (MGIP), to differentiate them 
+from higher-concentration MGs, termed MS-MGUS, which had a 13% prevalence by MS in high-
+risk individuals aged ≥50. MGIP was predominantly of IgM isotype, and its prevalence increased 
+with age. MS-MGUS prevalence increased with age and was higher in males and high-risk 
+individuals. The monoclonal proteins at the MGIP level were confirmed by liquid chromatography 
+mass spectrometry testing. Screen-detected MGs correlated with increased all-cause mortality 
+(HR, 1.55; 95% CI, 1.16–2.08, P=0.003). All MGs were associated with an increased likelihood 
+of comorbidities, including myocardial infarction (MGIP-High: OR, 1.60; 95% CI, 1.26–2.02, 
+P=0.00016; MS-MGUS: OR, 1.39; 95% CI, 1.07–1.80, P=0.015).
+Interpretation—MS-based screening detected an unprecedented high prevalence of MGs, 
+including age-associated MGIP and more precise estimates of MS-MGUS compared to 
+conventional gel-based methods. Results from our screening study with a novel technology 
+yielded greater absolute prevalence rates with similar relative differences across risk groups 
+compared to conventional methods. The use of MS for the detection and quantification MG 
+including lower-level ones highlighted their potential hidden clinical significance and allowed 
+for novel insight on possible etiologic implications of lower-level MGIP in the development of 
+MGUS. (PROMISE, NCT03689595).
+Funding—This work was supported by a Stand Up To Cancer Dream Team Research Grant 
+(Grant Number: SU2C-AACR-DT-28–18), the Multiple Myeloma Research Foundation (MMRF), 
+and by NIH grants awarded to D.J.L. (R25AI147393) and C.R.M. (K22CA251648). G.G. was 
+partially funded by the Paul C. Zamecnik Chair in Oncology at the Massachusetts General 
+Hospital Cancer Center.
+Introduction
+Monoclonal gammopathy of undetermined significance (MGUS) is a premalignant clonal 
+expansion of plasma cells1,2. It is currently defined as the presence of a serum monoclonal 
+protein (M-protein) concentration less than 30 g/L, less than 10% clonal plasma cells in 
+the bone marrow, and the absence of myeloma-defining events. MGUS carries a 1% per 
+year risk of progression to multiple myeloma (MM) and confers susceptibility to other 
+lymphoproliferative disorders, amyloidosis, or light-chain deposition disease1–3.
+El-Khoury et al.
+Page 3
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+The first studies evaluating MGUS prevalence originated in Sweden over 50 years ago, 
+estimating 3.1% among individuals aged >70 years old4,5. A large prospective screening 
+study in Olmsted County, Minnesota subsequently estimated a 3% and 5.3% prevalence 
+among individuals aged >50 and >70 years4. These studies, however, were in majority White 
+populations and did not consider that MGUS prevalence is two to three times higher in 
+Blacks than Whites6–8, with more pronounced differences at younger ages9. MGUS and 
+MM appear to be two times more prevalent in individuals who have a first-degree relative 
+diagnosed with an MM-related disorder or other lymphoproliferative disease10–13. These 
+data suggest that race and family history are important risk factors in MGUS development 
+and help identify at-risk individuals.
+All MGUS prevalence studies to date have relied on SPEP, a gel-based electrophoretic 
+assay, supplemented by immunofixation (IFX) to identify M-proteins. These conventional 
+methods, however, have limited sensitivity in detecting lower-level MGs where the M-
+protein fades into the polyclonal background. The serum free light chain (sFLC) assay led 
+to improvements in the detection of light chain MGUS (LC-MGUS), which has an estimated 
+0.8% prevalence in the general population14. Later, mass spectrometry (MS) emerged as a 
+more sensitive approach to measure M-proteins, enabling detection of low disease burden, 
+including minimal residual disease following therapy15,16. Analyses based on stratified 
+quantification of M-proteins for early disease stages of monoclonal gammopathies (MG) 
+have not yet been reported.
+Our study evaluated the prevalence and association with clinical endpoints of screen-
+detected MGs in individuals at higher-than-average risk for MM based on race and family 
+history, using a high-throughput quantitative MS approach.
+Methods
+We performed a cohort study to evaluate the prevalence of screen-detected MGs by MS, in 
+a population at high risk for MM and their clinical implications. We screened and analyzed 
+serum from participants in two prospectively followed cohorts. Written informed consent 
+was obtained from participants in both study cohorts upon recruitment. This study was 
+conducted upon approval of protocols 18–370 and 2021P001703 by the institutional review 
+boards of Dana-Farber Cancer Institute and the Mass General Brigham, respectively.
+Study participants
+PROMISE Study—Predicting Progression of Developing Myeloma in a High-Risk 
+Screened Population (PROMISE, NCT03689595) was initiated as the first nationwide 
+screening study for individuals at high risk for MM, including those who self-identify 
+as Black or with a family history of hematological malignancy (HM). Individuals with a 
+prior diagnosis of MGUS, Smoldering Multiple Myeloma (SMM), MM, Waldenström’s 
+Macroglobulinemia, or other malignancies requiring active therapy were excluded. A total of 
+5,037 participants consented to the PROMISE study between February 2019 and November 
+2021. Of those, 2,211 provided blood samples during that time. No participants who met the 
+study criteria and provided samples were excluded (Appendix P3).
+El-Khoury et al.
+Page 4
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Mass General Brigham Biobank—We identified individuals from the Mass 
+General Brigham Biobank (MGBB, https://biobank.massgeneralbrigham.org/) who met the 
+PROMISE eligibility criteria and had serum available. We also identified a group of low-risk 
+individuals (non-Black, no family history of HM) to serve as negative controls, and a group 
+of non-Black, mostly White individuals with unknown family history. Participants from the 
+MGBB selected for our study were initially recruited between July 2010 and July 2021 
+and their banked serum was screened retrospectively. All participants with a MM diagnosis 
+before serum draw date were excluded. Access to participant-level data was conditional 
+upon IRB approval (2021P001703). We extracted and identified clinical diagnoses utilizing 
+PheCodes and hierarchical groupings of International Classification of Diseases, Ninth and 
+Tenth Versions (ICD-9/ICD-10) codes. For all screened participants; we extracted vital 
+status, recorded as alive or deceased; last date of encounter filed in the EHR; and diagnoses, 
+including coronary artery disease (CAD), myocardial infarction (MI), ischemic strokes 
+(ISTR), systemic lupus erythematosus (SLE), rheumatoid arthritis (RA), Crohn’s disease, 
+ulcerative colitis (UC), celiac disease, and lymphoid hematologic malignancies (lymphoid 
+HM) (Appendix P4).
+Mass Spectrometry testing
+Serum (500μL) was tested using the EXENT® system and immunoglobulin isotype assay, 
+which uses matrix-assisted laser desorption ionization-time of flight (MALDI-TOF) MS to 
+quantify M-proteins (Binding Site Group Ltd.) and Optilite® free light assay to quantify 
+IgG, IgA, IgM, and sFLC. EXENT-iQ software was used for quantitative analysis of 
+detected M-proteins. The lower limit of accurate M-protein quantification by MALDI-TOF 
+MS was 0.015 g/L. More sensitive liquid chromatography-mass spectrometry (LC-MS) was 
+performed on a subset of samples to confirm the presence of M-proteins detected at low 
+concentration by MALDI-TOF MS. Raw LC-MS data were analyzed using PeakView® 
+version 2.2.0.11391 (AB SCIEX). LC-MS results were reviewed and interpreted by 
+scientists from the Binding Site Group Ltd., who were blinded to the initial MALDI-TOF 
+MS observations, who confirmed the monoclonality of all observations (Appendix P5–8).
+Comparing the performance of MALDI-TOF MS to conventional testing methods
+Serial dilution sensitivity testing results provided by the manufacturer showed MALDI-TOF 
+MS detected all conventional gel-based assays’ positive calls. The lower limit of detection 
+for capillary zone electrophoresis, when supplemented with IFX in MS-positive samples, 
+was around 0.2 g/L (0.02 g/dL) Further, in a subset of PROMISE study participants 
+that had SPEP/IFX results available at the time of analysis, the vast majority (96.3%) of 
+isotype-matched M-proteins detected by MALDI-TOF MS and SPEP/IFX had an M-protein 
+concentration of >0.2 g/L (>0.02 g/dL) as estimated by MALDI-TOF MS (Appendix P9–
+12).
+Statistical analyses and missing data
+All calculations were done using R (version 4.4.1). Quantitative bio-clinical variables were 
+described with median, interquartile range (IQR), and median absolute deviation (MAD), 
+or mean and standard deviation. Significance of average difference between groups was 
+El-Khoury et al.
+Page 5
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+assessed with Kruskal-Wallis method for multiple group testing, and/or Wilcoxon test for 
+2 groups. Multiple group testing was followed by Dunn’s post hoc tests when the result 
+was significant. Qualitative variables were described using the frequency of their respective 
+modalities. The significance of difference between frequencies between groups was assessed 
+with Pearson’s test (or Fisher’s exact test if appropriate) and followed by pairwise Fisher’s 
+exact test when significant. For survival analysis, time-to-event was calculated from the 
+serum draw date to the event date, i.e., death from any cause for overall survival, date 
+of initial clinical diagnosis for diseases, or date of the most recent encounter for patients 
+reported as alive when extracted from the MGBB. Hazard ratios (HR) were calculated using 
+univariable and multivariable Cox models (with adjusted covariates listed when appropriate). 
+HRs were reported with 95% confidence intervals (CI). Survival curves were calculated 
+using the Kaplan-Meier method and groups were compared using a Log-rank test. P values 
+were corrected for multiple testing with the Benjamini-Hochberg method. Adjusted p values 
+<0.05 were considered significant (Appendix P13).
+One aim of the PROMISE study is to identify clinical and genomic risk factors that 
+predispose high-risk individuals to progress from asymptomatic MM precursor stages to 
+overt malignancy, for this the PROMISE study plans to recruit up to 30,000 participants for 
+screening and prospective follow-up. MS results were available for all participants included 
+in our study. When variables with missing data were included in multivariable models, the 
+few participants with missing data points for those variables included in the model were 
+excluded from the analysis.
+Funders had no role in study design, data collection, data analysis, data interpretation, or 
+writing of the report. H.E.K., D.J.L., J.B.A., R.R., L.T., C.R.M., and I.M.G. had access to 
+the raw data.
+Results
+We analyzed serum from 7,622 individuals. Of those, 6,305 (2,211 from PROMISE, 4,094 
+from MGBB) had high-risk features for MM: 2,439 self-identified as Black (henceforth, 
+referred to as Black group) and 3,866 reported a family history of HM or MM precursor (FH 
+group). 631 individuals were non-Black with no family history (Control group), and 686 
+were non-Black with missing family history (Unknown group) (Figure 1). Median age at 
+time of screening was 56 years (IQR: 45.8–64.1, range, 18 to 95). 5,013/7,622 (66%) were 
+female. Demographic data, including race, gender, and date of birth, was self-reported by 
+participants. Table 1 and Appendix P14–15 show demographic distributions by study cohort 
+and risk group.
+We identified the lower limit of detection for conventional gel-based methods (SPEP/IFX) 
+by serial dilution sensitivity testing as 0.2g/L, below which MALDI-TOF MS still detected 
+and quantified the M-proteins (Methods and Appendix P9–12). Accordingly, M-proteins 
+quantified by MS at ≥0.2 g/L are hereafter referred to as MGUS detected by mass 
+spectrometry (MS-MGUS). In contrast, we refer to M-proteins detected by MS at <0.2 
+g/L as monoclonal gammopathy of indeterminate potential (MGIP) to better preserve the 
+clinical associations with MGUS previously described by Kyle et al.3. Hereon, MGIP cases 
+El-Khoury et al.
+Page 6
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+include participants with an MG detected and quantified <0.2g/L and ≥0.015g/L (lowest 
+limit of quantification), while MS-MGUS cases include participants with a MG detected 
+and quantified ≥0.2 g/L. MS negative cases include participants with no MG detected above 
+0.015g/L. 75 samples from participants with MGIP were tested by LC-MS. M-protein 
+detection and monoclonality were confirmed in 75/75 (100%) (Appendix P6–8).
+MG was detected in 36% (2,740/7,622) of our total screened cohort, MS-MGUS was 
+detected in 10% (755/7,622), and MGIP in 26% (1,952/7,622). The most common 
+immunoglobulin isotype detected in MS-MGUS was IgG (62%, 469/755), followed by IgA 
+(13%, 97/755), IgM (13%, 98/755), and biclonal gammopathy (12%, 91/755). The most 
+common isotype in MGIP was IgM (60%, 1,172/1,952), followed by IgA (10%, 190/1,952) 
+and IgG (6%, 117/1,952). The remaining 24% (473/1,952) of MGIP cases had multiple M-
+protein peaks (median 2, IQR 2 to 3, range, 2 to 6) (Appendix P16–19). The isotype-specific 
+prevalence of MS-MGUS and MGIP is described by age groups, gender, and risk groups in 
+Appendix P20.
+The MS-MGUS and MGIP prevalence increased with age in the entire cohort (P<0.0001) 
+(Figures 2A,B). For age groups ≤50, ≥50, and ≥70 years, MS-MGUS prevalence was 5% 
+(127/2,564), 13% (678/5,058), and 18% (173/946), respectively, and MGIP prevalence was 
+19% (488/2,564), 29% (1,464/5,058), and 37% (347/946), respectively. MS-MGUS was 
+more common in males (P<0.00018), while MGIP did not differ significantly by gender 
+(Appendix P21).
+MG was detected in 36% (2,269/6,305) of high-risk individuals. The prevalence was 
+43% (1,788/4,207) in high-risk participants age ≥50. In this age group, the prevalence of 
+MS-MGUS was higher in Black (17%, 224/1,356) and FH (13%, 368/2,851), compared 
+to Control (10%, 38/384), following the expected relative trends although not reaching 
+statistical significance for the latter. (P=0.0012 and P=0.1008, respectively). MGIP 
+prevalence in each high-risk group was not significantly different from that in Control, 
+for participants aged≥50 and all ages (Appendix P21). There were no significant differences 
+in MS-MGUS and MGIP prevalence between the MGBB and PROMISE study cohorts 
+(Appendix P22).
+2,192 high-risk PROMISE participants were screened by SPEP/IFX and MS. The MGUS 
+prevalence by SPEP/IFX was 5% (112/2,192) (95% CI, 4.3 to 6.2) and 11% (242/2,192) by 
+MS (95% CI, 9.5 to 12). Among PROMISE participants aged ≥50 years, MGUS prevalence 
+was 6% (101/1,714) (95% CI, 4.7 to 7.0) by SPEP/IFX and 13% (217/1,714) (95% CI, 10.9 
+to 14.0), which are both higher than the 3% prevalence reported for the general population 
+age ≥50 in the Olmsted County study4 (Appendix P23).
+A summary of prevalence rates in our study is presented in Appendix P23–24.
+Multivariable logistic regression models evaluated the associations of age, gender, and risk 
+groups with screening positive for MGs. Screening positive for any MG was associated with 
+age (odds ratio [OR], 1.49; 95% CI, 1.43 to 1.55) and Black (OR, 1.44; 95% CI, 1.18 to 
+1.75). MS-MGUS was associated with age (OR, 1.73; 95% CI, 1.62 to 1.85) and Black (OR, 
+1.79; 95% CI, 1.29 to 2.52). There was a moderate association between MS-MGUS and 
+El-Khoury et al.
+Page 7
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+male gender (OR, 1.16; 95% CI 0.99 to 1.36), which did not reach statistical significance. 
+Age, male gender, Black group, and FH were all significantly associated with MS-MGUS on 
+univariable analysis. MGIP was associated with age (OR, 1.41; 95% CI, 1.31 to 1.47) and 
+Black group (OR, 1.31; 95% CI, 1.06 to 163) (Appendix P25).
+Longitudinal clinical data were available for MGBB participants. The median follow-up 
+from serum sample screening was 4.5 years (IQR, 2.4 to 6.7 years; range, 0 to 11 years). 
+In a multivariable Cox proportiona-lhazards model adjusting for age, gender, risk group, and 
+Charlson comorbidity Index (CCI), having any MG detected by MS at any concentration 
+was associated with increased all-cause mortality (hazard ratio [HR], 1.55; 95% CI, 1.16 to 
+2.08, Figure 3A). When restricted to participants aged≥50, the HR for all-cause mortality 
+for MG detected by MS was 1.68 (95% CI, 1.22 to 2.31) (Figure 3B). After stratifying 
+MGs by concentration, MS-MGUS was significantly associated with increased all-cause 
+mortality (HR, 2.17; 95% CI, 1.51 to 3.13), compared to having no MG. In participants 
+aged ≥50, the HR of MS-MGUS for all-cause mortality was 2.34 (95% CI, 1.59 to 3.47). 
+We next examined whether high-concentration MGIP mimicked the behavior of MGUS 
+in this cohort. Using median concentration of all MGIPs (0.04g/L), we divided MGIP 
+into MGIP-Low (L) <0.04g/L and MGIP-High (H) ≥0.04 g/L. MGIP-H was significantly 
+associated with increased all-cause mortality (HR, 1.65; 95% CI, 1.13 to 2.43) compared 
+to having no MG, while MGIP-L was not significantly associated with increased all-cause 
+mortality. In participants aged>50, HR for MGIP-H for all-cause mortality was 1.80 (95% 
+CI, 1.20 to 2.71) (Appendix P26–28).
+For the MGBB cohort, age-adjusted logistic regression models evaluated the associations of 
+MG with various comorbidities diagnosed at any point in the participants’ lifetimes (Figure 
+4). MS-MGUS was associated with MI, SLE, UC, and lymphoid HMs, including chronic 
+lymphocytic leukemia, all lymphoid leukemias, Hodgkin lymphoma, and non-Hodgkin 
+lymphoma. MGIP-H was associated with CAD, MI, RA, UC, and Hodgkin lymphoma. 
+Clinical comorbidities associated with MGs did not differ significantly when comparing our 
+high-risk group to controls in the MGBB cohort (Appendix P29).
+In age-adjusted logistic regression models, having any MG was associated with being 
+diagnosed with lymphoid HM ≥6 months after the screening date (OR, 3.03; 95% CI, 1.95 to 
+4.79). MS-MGUS had nearly 8 times greater odds of being diagnosed with a lymphoid HM 
+≥6 months after screening (OR, 8.31; 95% CI, 5.10 to 13.66), compared to no MG. MGIP 
+was not associated with such outcomes (Appendix P30–31). When evaluating the incidence 
+of clinical comorbidities diagnosed ≥6 months after the screening date, MS-MGUS was 
+associated with MI (OR, 1.75; 95% CI, 1.03 to 2.88) and systemic lupus erythematosus (OR, 
+4.14; 95% CI, 1.12 to 13.54) (Appendix P32).
+Serial samples were available for 58 participants who screened positive for MG. The median 
+time from baseline screening to the latest sample available was 300 days for MGIP cases 
+(IQR, 130 to 573, range, 86 to 864 days) and 235 days for MS-MGUS cases (IQR, 130 to 
+573, range, 36 to 905 days). Despite a limited number of events, higher concentration of 
+the MG detected at baseline screening was associated with the persistence of the MG over 
+time (P<0.0001). Among the 26 baseline MGIP cases, 13 (50%) screened positive upon any 
+El-Khoury et al.
+Page 8
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+serial sampling, and 10 (38%) were positive on the latest sample available, with a maximum 
+follow-up time of 2.5 years. One baseline MGIP case screened negative on days +589 and 
++689 and subsequently screened positive at +864. Two MGIP cases exhibited an increase 
+in M-protein concentration that reached 0.2 g/L (i.e., to MS-MGUS). Among 32 baseline 
+MS-MGUS cases, 30 (94%) screened positive upon any serial sampling. Most baseline 
+MS-MGUS cases (23, 72%) exhibited a consistent increase in M-protein concentration, 
+including one that progressed to SMM, defined as >30 g/L (Appendix P33).
+Discussion
+Prior estimates of MGUS prevalence are based on SPEP/IFX and predominantly White 
+study populations. We present the largest screening study for serum monoclonal proteins 
+across concentrations in high-risk individuals examined to date. Our study identifies a very 
+high prevalence of all MGs, >40%, in high-risk individuals aged ≥50. Compared to the 
+prevalence of 3% detected by SPEP/IFX in the general population aged ≥50 years, we 
+found that high-risk individuals in our cohort from the same age group had an MS-MGUS 
+prevalence over four times higher (13%). Prior studies showed that MS detects higher rates 
+of monoclonal proteins for the diagnosis of MGUS; however, they were limited to a few 
+hundred participants from the Olmsted County study and measured an MGUS prevalence 
+of around 5% only, using a non-quantitative MS approach. Here, the same relative increase 
+in MS-MGUS prevalence is maintained for at-risk individuals compared to controls, with 
+MS detecting more cases than before in non-high-risk controls. Such rates of MS-MGUS 
+may have been detected in our study due to the nature of the cohorts, however, we have 
+shown that there was no difference in the prevalence of MGs across study cohorts and 
+that the recorded comorbidities did not significantly differ across risk groups, hence not 
+acting as a driver for the difference in prevalence rates. In our study, MG quantification 
+allowed for stratification of outcomes, risk estimates, and clinical associations based on 
+concentration cut points and accurate comparison to the currently widely available methods. 
+MS-MGUS patients identified by our targeted screening approach had significantly worse 
+survival compared to individuals with no MGs, after accounting for age, gender, risk group, 
+and CCI. This finding builds on prior studies of more racially homogeneous populations in 
+Sweden and southeastern Minnesota. These results, therefore, continue to motivate efforts 
+to prospectively follow and screen a high-risk population to explore the clinical benefit of 
+active, targeted screening strategies.
+MS allowed for MG quantification at lower concentrations than was previously possible by 
+SPEP/IFX, providing a new opportunity to explore their significance to the malignant and 
+non-malignant clonal expansion of plasma cells. Unlike in MS-MGUS, where the prevalence 
+was expectedly greater in high-risk groups, the prevalence of these low-level MGs, which 
+we have termed MGIP, did not differ significantly across the defined race and family history 
+risk groups, suggesting that these host factors may be permissive of further clonal expansion 
+from MGIP to MGUS. The association of MGIP with increasing age may be analogous to 
+age-associated clonal hematopoiesis of indeterminate potential (CHIP) and somatic clonal 
+expansion in other normal tissues and may motivate future sequencing of plasma cells of 
+study participants17–20. Indeed, we hypothesize that in a subset of individuals MGIP may 
+have etiologic implications for MGUS development in combination with certain host and 
+El-Khoury et al.
+Page 9
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+environmental factors, such as race, inflammation, and genetic predisposition. However, we 
+do not believe that all MGIP cases are premalignant as transient M-proteins have been 
+described in the setting of immune-related disorders, infections, allogeneic hematopoietic 
+stem cell transplant, and solid organ transplant21–26. Also, the oligoclonality of some MGIP 
+cases may support future studies to test the hypothesis that an oligoclonal to monoclonal 
+transition occurs during the development of some plasma cell disorders. Further, similar to 
+MS-MGUS, MGIP-H was associated with worse OS, highlighting the biological continuum 
+of MGs, with the MGs at the upper limit of MGIP (MGIP-H) potentially sharing biologic 
+similarities with MS-MGUS. It remains unknown whether MGIP is an earlier precursor 
+state along the MGUS-to-MM continuum. We acknowledge that by excluding patients with 
+a diagnosis of MM prior to screening date, and the short follow-up time available for 
+participants in the MGBB cohort, the association of MGIP with plasma cell dyscrasias could 
+not be assessed in this study. Longer follow-up time is required to test the hypothesis that 
+some lower-level MGIP cases carry an increased risk of developing plasma cell disorders, 
+specifically.
+Our results, from a study cohort enriched for participants of Black ancestry, necessitated an 
+adjusted reference range for sFLC ratio for the diagnosis of LC-MGUS. After adjusting for 
+kidney function, our analysis provides a proof-of-concept for defining population-specific 
+reference ranges when evaluating sFLC. Further studies are needed to define appropriate 
+reference ranges for specific patient populations, especially when using sFLC ratio for 
+diagnosis or prognostication of patients with more advanced disease27,28 (Appendix P35–
+37).
+The assay used in our study is not yet available commercially or clinically across healthcare 
+centers. However, we show data that helps establish the clinical utility and interpretation 
+of results for clinical use of quantitative MALDI-TOF MS to screen populations at risk for 
+myeloma. We present the first results of quantitative MS using artificial-intelligence-based 
+software, which standardizes clinical interpretation and allow for accurate longitudinal 
+follow-up per patient.
+Our data begin to highlight the need for myeloma screening in high-risk populations using 
+high-sensitivity methods. In summary, we found a high >40% MG prevalence using MS to 
+screen a predominantly high-risk population, defined by self-reported Black race and family 
+history of HM. Our study demonstrates that MGs are significantly associated with worse 
+OS and the development of HMs. We define a new clinical entity of low-concentration MG 
+(i.e., MGIP) that had a high prevalence of approximately 25%, a notably different risk factor 
+profile than MGUS, and associations with age and MI. This study highlights the clinical 
+significance of MGs, which we now have an expanded opportunity to explore with MS 
+and may ultimately be translated to beneficial clinical and public health strategies. Future 
+directions will include screening participants serially to determine long-term MG outcomes 
+and next-generation sequencing to explore the molecular drivers of clonal expansion.
+Limitations of our study include the lack of precise associations of MGIP detected by 
+mass spectrometry with plasma cell disorders due to the prospective nature of the study 
+and the immaturity of the data at this time. In our study, females exhibited a higher 
+El-Khoury et al.
+Page 10
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+propensity to participate in the PROMISE screening program and the MGBB than males. 
+We did not conduct analyses for races or ethnicities, such as Asian and Hispanic, and 
+relied on self-reported race rather than genetic ancestry. Also, the MGBB subgroup is 
+not a population-based cohort and the associations drawn with overall survival and other 
+clinical phenotypes remain to be investigated in larger studies. The prevalences described 
+in our study were not impacted by the nature of the cohort, but remain to be generalized 
+cautiously. Finally, the clinical implications of MGIP should be investigated in larger and 
+more homogeneous cohorts.
+Supplementary Material
+Refer to Web version on PubMed Central for supplementary material.
+Acknowledgments
+This work was supported by a Stand Up To Cancer Dream Team Research Grant (Grant Number: SU2C-
+AACR-DT-28–18), the Multiple Myeloma Research Foundation (MMRF), and by NIH grants awarded to D.J.L 
+(R25AI147393) and C.R.M. (K22CA251648). G.G. was partially funded by the Paul C. Zamecnik Chair in 
+Oncology at the Massachusetts General Hospital Cancer Center.
+Anna V. Justis, PhD, a medical writer funded by Dana-Farber Cancer Institute, assisted in drafting the manuscript 
+under the authors’ direction.
+The authors would like to thank the patients who participated in this study and made this work possible. The 
+authors would like to thank Ms. Alexandra Savell, Ms. Allison Higgins, Ms. Vidhi Patel and Mr. Nader Shayegh for 
+their contributions to this study.
+References
+1. Landgren O, Kyle RA, Pfeiffer RM, et al. Monoclonal gammopathy of undetermined significance 
+(MGUS) consistently precedes multiple myeloma: a prospective study. Blood. 2009;113(22):5412–
+5417. doi:10.1182/blood-2008-12-194241 [PubMed: 19179464] 
+2. Kyle RA, Therneau TM, Rajkumar SV, et al. A long-term study of prognosis in monoclonal 
+gammopathy of undetermined significance. N Engl J Med. 2002;346(8):564–569. doi:10.1056/
+NEJMoa01133202 [PubMed: 11856795] 
+3. Kyle RA, Therneau TM, Rajkumar SV, et al. Prevalence of monoclonal gammopathy of 
+undetermined significance. N Engl J Med. 2006;354(13):1362–1369. doi:10.1056/NEJMoa054494 
+[PubMed: 16571879] 
+4. Hallen J Frequency of “abnormal” serum globulins (M-components) in the aged. Acta Med Scand. 
+1963;173:737–744. [PubMed: 13952159] 
+5. Axelsson U, Bachmann R, Hällén J. Frequency of pathological proteins (M-components) 
+om 6,995 sera from an adult population. Acta Med Scand. 1966;179(2):235–247. doi:10.1111/
+j.0954-6820.1966.tb05453.x [PubMed: 4160039] 
+6. Landgren O, Gridley G, Turesson I, et al. Risk of monoclonal gammopathy of undetermined 
+significance (MGUS) and subsequent multiple myeloma among African American and white 
+veterans in the United States. Blood. 2006;107(3):904–906. doi:10.1182/blood-2005-08-3449 
+[PubMed: 16210333] 
+7. Landgren O, Rajkumar SV, Pfeiffer RM, et al. Obesity is associated with an increased risk of 
+monoclonal gammopathy of undetermined significance among black and white women. Blood. 
+2010;116(7):1056–1059. doi:10.1182/blood-2010-01-262394 [PubMed: 20421448] 
+8. Landgren O, Katzmann JA, Hsing AW, et al. Prevalence of monoclonal gammopathy of 
+undetermined significance among men in Ghana. Mayo Clin Proc. 2007;82(12):1468–1473. 
+doi:10.1016/S0025-6196(11)61089-6 [PubMed: 18053453] 
+El-Khoury et al.
+Page 11
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+9. Landgren O, Graubard BI, Kumar S, et al. Prevalence of myeloma precursor state monoclonal 
+gammopathy of undetermined significance in 12372 individuals 10–49 years old: a population-
+based study from the National Health and Nutrition Examination Survey. Blood Cancer J. 
+2017;7(10):e618. doi:10.1038/bcj.2017.97 [PubMed: 29053158] 
+10. Landgren O, Kristinsson SY, Goldin LR, et al. Risk of plasma cell and lymphoproliferative 
+disorders among 14621 first-degree relatives of 4458 patients with monoclonal 
+gammopathy of undetermined significance in Sweden. Blood. 2009;114(4):791–795. doi:10.1182/
+blood-2008-12-191676 [PubMed: 19182202] 
+11. Vachon CM, Kyle RA, Therneau TM, et al. Increased risk of monoclonal gammopathy 
+in first-degree relatives of patients with multiple myeloma or monoclonal gammopathy of 
+undetermined significance. Blood. 2009;114(4):785–790. doi:10.1182/blood-2008-12-192575 
+[PubMed: 19179466] 
+12. Schinasi L, Brown E, Camp N, et al. Multiple myeloma and family history of 
+lymphohaematopoietic cancers: Results from the International Multiple Myeloma Consortium. 
+Br J Haematol. 2016;175(1):87–101. doi:10.1111/bjh.14199 [PubMed: 27330041] 
+13. Lynch HT, Ferrara K, Barlogie B, et al. Familial Myeloma: Study of a Unique Family. N Engl J 
+Med. 2008;359(2):152–157. doi:10.1056/NEJMoa0708704 [PubMed: 18614782] 
+14. Dispenzieri A, Katzmann JA, Kyle RA, et al. Prevalence and risk of progression of light-chain 
+monoclonal gammopathy of undetermined significance: a retrospective population-based cohort 
+study. Lancet Lond Engl. 2010;375(9727):1721–1728. doi:10.1016/S0140-6736(10)60482-5
+15. Murray D, Kumar SK, Kyle RA, et al. Detection and prevalence of monoclonal 
+gammopathy of undetermined significance: a study utilizing mass spectrometry-based monoclonal 
+immunoglobulin rapid accurate mass measurement. Blood Cancer J. 2019;9(12):102. doi:10.1038/
+s41408-019-0263-z [PubMed: 31836698] 
+16. Derman BA, Stefka AT, Jiang K, et al. Measurable residual disease assessed by mass spectrometry 
+in peripheral blood in multiple myeloma in a phase II trial of carfilzomib, lenalidomide, 
+dexamethasone and autologous stem cell transplantation. Blood Cancer J. 2021;11(2):19. 
+doi:10.1038/s41408-021-00418-2 [PubMed: 33563912] 
+17. McKerrell T, Park N, Moreno T, et al. Leukemia-Associated Somatic Mutations Drive Distinct 
+Patterns of Age-Related Clonal Hemopoiesis. Cell Rep. 2015;10(8):1239–1245. doi:10.1016/
+j.celrep.2015.02.005 [PubMed: 25732814] 
+18. Jaiswal S, Fontanillas P, Flannick J, et al. Age-Related Clonal Hematopoiesis Associated with 
+Adverse Outcomes. N Engl J Med. 2014;371(26):2488–2498. doi:10.1056/NEJMoa1408617 
+[PubMed: 25426837] 
+19. Yizhak K, Aguet F, Kim J, et al. RNA sequence analysis reveals macroscopic somatic 
+clonal expansion across normal tissues. Science. 2019;364(6444):eaaw0726. doi:10.1126/
+science.aaw0726 [PubMed: 31171663] 
+20. Jaiswal S, Natarajan P, Silver AJ, et al. Clonal Hematopoiesis and Risk of Atherosclerotic 
+Cardiovascular Disease. N Engl J Med. 2017;377(2):111–121. doi:10.1056/NEJMoa1701719 
+[PubMed: 28636844] 
+21. Murray DL, Seningen JL, Dispenzieri A, et al. Laboratory Persistence and Clinical Progression 
+of Small Monoclonal Abnormalities. Am J Clin Pathol. 2012;138(4):609–613. doi:10.1309/
+AJCPT6OWWMHITA1Y [PubMed: 23010717] 
+22. Widmer CC, Balabanov S, Schanz U, Theocharides APA. Transient paraproteinemia 
+after allogeneic hematopoietic stem cell transplantation is an underexplored phenomenon 
+associated with graft versus host disease. Oncotarget. 2017;8(63):106333–106341. doi:10.18632/
+oncotarget.22462 [PubMed: 29290952] 
+23. Conant JL, Rabinowitz I, Zhang QY. Transient monoclonal gammopathy induced by 
+Candida fungemia. Hum Pathol. 2018;75:154–158. doi:10.1016/j.humpath.2017.11.012 [PubMed: 
+29180248] 
+24. Vodopick H, Chaskes SJ, Solomon A, Stewart JA. Transient monoclonal gammopathy associated 
+with cytomegalovirus infection. Blood. 1974;44(2):189–195. [PubMed: 4369394] 
+El-Khoury et al.
+Page 12
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+25. Gagnon MF, Cardinal H, Emond JP, Latour M, Lemieux B. The Evolution of Monoclonal 
+Gammopathy of Undetermined Significance in Kidney Transplant Recipients. Transplant Direct. 
+2019;5(10):e489. doi:10.1097/TXD.0000000000000937 [PubMed: 31723584] 
+26. Stoimenis D, Spyridonidou C, Papaioannou N. Transient Monoclonal Gammopathy Induced 
+by Disseminated Staphylococcus aureus Infection. Case Rep Med. 2012;2012:607104. 
+doi:10.1155/2012/607104 [PubMed: 23304158] 
+27. Weiss BM, Minter A, Abadie J, et al. Patterns of monoclonal immunoglobulins and serum free 
+light chains are significantly different in black compared to white monoclonal gammopathy of 
+undetermined significance (MGUS) patients. Am J Hematol. 2011;86(6):475–478. doi:10.1002/
+ajh.22025 [PubMed: 21544856] 
+28. Lakshman A, Rajkumar SV, Buadi FK, et al. Risk stratification of smoldering multiple myeloma 
+incorporating revised IMWG diagnostic criteria. Blood Cancer J. 2018;8(6):59. doi:10.1038/
+s41408-018-0077-4 [PubMed: 29895887] 
+El-Khoury et al.
+Page 13
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Research in context
+Evidence before this study
+Databases searched by the authors for prior evidence of the subject studied included 
+Medline, PubMed, and Google Scholar. The search terms used included Monoclonal 
+gammopathies, MGUS, monoclonal gammopathy of undetermined significance, 
+prevalence, predisposition, risk factors, comorbidities, multiple myeloma, and cancer 
+screening. Prior evidence of the prevalence of monoclonal gammopathies mainly relied 
+on the use of conventional gel-based methods (SPEP and IFX). The prevalence of 
+monoclonal gammopathy of undetermined significance (MGUS) was shown to be around 
+3–5% in the general population above the age of 50, in individuals of mostly White 
+ancestry. MGUS was shown to be more prevalent in those who identified as being Black 
+or had a family history of a plasma cell malignancy. There was no prior evidence of 
+a quantitative high-sensitivity mass spectrometry assay to evaluate the prevalence of 
+monoclonal gammopathies in general in a prospectively followed high-risk cohort.
+Added value of this study
+Our findings address the gap in the literature relating to the benefits of screening and 
+early detection of monoclonal gammopathies using a novel high sensitivity quantitative 
+mass spectrometry approach and evaluate for the first time the clinical implications of 
+lower-level monoclonal gammopathies detected and quantified by screening.
+Implications of all the available evidence
+Together with future work, this will allow improved delineation of the benefits 
+of screening, the use of a high sensitivity assay for the detection of monoclonal 
+gammopathies and further investigate the clinical implications proposed for lower-
+level monoclonal gammopathies detected by this assay. In future work, we plan to 
+further investigate the etiology of MGIP, its relation to plasma cell disorders, other 
+comorbidities, and overall survival. We also plan to leverage germline genomic and 
+health record data from participants in our study to further investigate factors that may 
+predispose high-risk individuals to develop a monoclonal gammopathy.
+Individual participant data, including data dictionaries, are not available for sharing, in 
+accordance with the PROMISE study protocol (PROMISE, NCT03689595).
+El-Khoury et al.
+Page 14
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Figure 1. Study cohort composition.
+Numbers reflect total participants who consented and screened from each study cohort 
+and across risk groups until the time of analysis. Detailed methodology on recruitment of 
+participants from both study cohorts is presented in the methods section of the manuscript 
+and in appendix P3–4. MM: Multiple Myeloma; HM: Hematologic Malignancies
+El-Khoury et al.
+Page 15
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Figure 2. Description of all monoclonal gammopathies detected in our study cohort.
+(A) Prevalence of MGs by age binned in 2-year intervals, modeled by local regression with 
+95% confidence intervals reported. (Left) Prevalence of MS-MGUS only. (Right) Prevalence 
+of MS-MGUS and MGIP. (B) Left to right: Prevalence of all three sub-types of MGs by age, 
+gender, and MM risk group.
+El-Khoury et al.
+Page 16
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+El-Khoury et al.
+Page 17
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Figure 3. Association of monoclonal gammopathies with all-cause mortality.
+(A) Multivariable Cox proportional-hazards model for any monoclonal gammopathy 
+detected in all screened participants from the MGBB on overall survival adjusted for age, 
+gender, risk group, and Charlson Comorbidiy Index. (B) Multivariable Cox proportional-
+hazards model for any monoclonal gammopathy detected in screened participants age ≥50, 
+on overall survival, adjusted for age, gender, risk group, and Charlson Comorbidiy Index. 
+CI: Confidence interval, HR: Hazard ratio, MS: Mass spectrometry.
+El-Khoury et al.
+Page 18
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Figure 4. Association of monoclonal gammopathies with comorbidities.
+Age-adjusted logistic regression models evaluating associations of monoclonal 
+gammopathies with comorbidities diagnosed at any point in a participant’s lifetime. Includes 
+participants from MGBB only. CAD: coronary artery disease, CI: confidence interval, 
+CLL: chronic lymphocytic leukemia, ISTR: ischemic stroke, Lymphoid HM: Lymphoid 
+hematologic malignancies, Lymphoid Leuk: lymphoid leukemia, MI: myocardial infarction, 
+NHL: Non-Hodgkin lymphoma, OR: odds ratio, RA: rheumatoid arthritis, SLE: systemic 
+lupus erythematosus, UC: ulcerative colitis
+El-Khoury et al.
+Page 19
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+*Lymphoid Leuk includes CLL and acute lymphoblastic leukemia **Lymphoid HM 
+includes lymphoid leuk, Hodgkin lymphoma, and NHL
+El-Khoury et al.
+Page 20
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+El-Khoury et al.
+Page 21
+Table 1.
+Population demographics by cohort
+All (Full cohort)
+(n=7622)
+N (column %)
+PROMISE
+(n=2211)
+MGB BB
+(n=5411)
+Race
+Black
+2439 (32%)
+187 (8%)
+2252 (42%)
+White
+4986 (65%)
+1941 (88%)
+3045 (56%)
+Other
+119 (2%)
+64 (3%)
+55 (1%)
+Unknown
+78 (1%)
+19 (1%)
+59 (1%)
+Gender
+Female
+5013 (66%)
+1594 (72%)
+3419 (63%)
+Male
+2570 (34%)
+578 (26%)
+1992 (37%)
+Unknown
+39 (<1%)
+39 (2%)
+0 (0%)
+Age at screening
+Median (IQR)
+56.0 years (IQR: 45.8–64.1)
+58.8 years (IQR: 51.1–65.0)
+54 years (IQR: 42–64)
+Age class at 
+screening
+18–29
+373 (5%)
+2 (<1%)
+371 (7%)
+30–39
+774 (10%)
+10 (<1%)
+764 (14%)
+40–49
+1417 (19%)
+466 (21%)
+951 (18%)
+50–59
+2086 (27%)
+710 (32%)
+1376 (25%)
+60–69
+2026 (27%)
+772 (35%)
+1254 (23%)
+70–79
+774 (10%)
+215 (10%)
+559 (10%)
+80–89
+130 (2%)
+2 (<1)
+128 (2%)
+90+
+8 (<1%)
+0 (0%)
+8 (<1%)
+Unknown
+34 (<1%)
+34 (2%)
+0 (0%)
+Charlson 
+Comorbidity 
+Index*
+0
+558 (10%)
+N/A
+558 (10%)
+1
+542 (10%)
+N/A
+542 (10%)
+2
+537 (10%)
+N/A
+537 (10%)
+3
+599 (11%)
+N/A
+599 (11%)
+4
+533 (10%)
+N/A
+533 (10%)
+5
+474 (9%)
+N/A
+474 (9%)
+6
+405 (8%)
+N/A
+405 (8%)
+7+
+1746 (32%)
+N/A
+1746 (32%)
+Missing
+2228
+2211
+17
+*Charlson index is missing for the PROMISE cohort
+Risk Category
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.
+
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+El-Khoury et al.
+Page 22
+All (Full cohort)
+(n=7622)
+N (column %)
+PROMISE
+(n=2211)
+MGB BB
+(n=5411)
+Black or African-American
+2439 (32%)
+187 (8%)
+2252 (42%)
+Non-Black w/ + Family 
+History
+3866 (51%)
+2024 (92%)
+1842 (34%)
+Non-Black w/ no Family 
+History
+631 (8%)
+0 (0%)
+631 (12%)
+Non-Black, Unknown if 
+family history
+686 (9%)
+0 (0%)
+686 (13%)
+Lancet Haematol. Author manuscript; available in PMC 2023 May 01.

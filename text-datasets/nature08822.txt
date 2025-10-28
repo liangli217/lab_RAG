@@ -1,0 +1,1188 @@
+ARTICLES
+The landscape of somatic copy-number
+alteration across human cancers
+Rameen Beroukhim1,3,4,5*, Craig H. Mermel1,3*, Dale Porter8, Guo Wei1, Soumya Raychaudhuri1,4, Jerry Donovan8,
+Jordi Barretina1,3, Jesse S. Boehm1, Jennifer Dobson1,3, Mitsuyoshi Urashima9, Kevin T. Mc Henry8,
+Reid M. Pinchback1, Azra H. Ligon4, Yoon-Jae Cho6, Leila Haery1,3, Heidi Greulich1,3,4,5, Michael Reich1,
+Wendy Winckler1, Michael S. Lawrence1, Barbara A. Weir1,3, Kumiko E. Tanaka1,3, Derek Y. Chiang1,3,13,
+Adam J. Bass1,3,4, Alice Loo8, Carter Hoffman1,3, John Prensner1,3, Ted Liefeld1, Qing Gao1, Derek Yecies3,
+SabinaSignoretti3,4,ElizabethMaher10,FredericJ. Kaye11,HidefumiSasaki12,JoelE. Tepper13,JonathanA. Fletcher4,
+Josep Tabernero14, Jose´ Baselga14, Ming-Sound Tsao15, Francesca Demichelis16, Mark A. Rubin16, Pasi A. Janne3,4,
+Mark J. Daly1,17, Carmelo Nucera7, Ross L. Levine18, Benjamin L. Ebert1,4,5, Stacey Gabriel1, Anil K. Rustgi19,
+Cristina R. Antonescu18, Marc Ladanyi18, Anthony Letai3, Levi A. Garraway1,3, Massimo Loda3,4, David G. Beer20,
+Lawrence D. True21, Aikou Okamoto22, Scott L. Pomeroy6, Samuel Singer18, Todd R. Golub1,3,23, Eric S. Lander1,2,5,
+Gad Getz1, William R. Sellers8 & Matthew Meyerson1,3,5
+A powerful way to discover key genes with causal roles in oncogenesis is to identify genomic regions that undergo frequent
+alteration in human cancers. Here we present high-resolution analyses of somatic copy-number alterations (SCNAs) from
+3,131 cancer specimens, belonging largely to 26 histological types. We identify 158 regions of focal SCNA that are altered at
+significant frequency across several cancer types, of which 122 cannot be explained by the presence of a known cancer target
+gene located within these regions. Several gene families are enriched among these regions of focal SCNA, including the BCL2
+family of apoptosis regulators and the NF-kB pathway. We show that cancer cells containing amplifications surrounding the
+MCL1 and BCL2L1 anti-apoptotic genes depend on the expression of these genes for survival. Finally, we demonstrate that a
+large majority of SCNAs identified in individual cancer types are present in several cancer types.
+The development of cancer is driven by the acquisition of somatic
+genetic alterations, including single base substitutions, transloca-
+tions, infections, and copy-number alterations1,2. Recent advances
+in genome characterization technologies have enabled increasingly
+systematic efforts to characterize these alterations in human cancer
+samples3. Identification of these genome alterations can provide
+important insights into the cellular defects that cause cancer and
+suggest potential therapeutic strategies2.
+Somaticcopy-numberalterations(SCNAs,distinguishedfromgerm-
+line copy-number variations, CNVs; see Supplementary Note 1a)
+are extremely common in cancer4–6. Genomic analyses of cancer
+samples, by cytogenetic studies and more recently by array-based
+profiling, have identified recurrent alterations associated with par-
+ticular cancer types4–6. In some cases, focal SCNAs have led to the
+identification of cancer-causing genes and suggested specific thera-
+peutic approaches7–14.
+A critical challenge in the genome-wide analysis of SCNAs is distin-
+guishing the alterations that drive cancer growth from the numerous,
+apparently random alterations that accumulate during tumorigenesis
+(see Supplementary Note 1b). By studying a sufficiently large collection
+of cancer samples, it should ultimately be possible to create a com-
+prehensive, high-resolution catalogue of all SCNAs consistently assoc-
+iated with the development of all major types of cancer. Key open
+questions include: the extent to which significant SCNAs are associated
+withknowncancer-relatedgenesorindicatethepresenceofnewcancer-
+related genes in particular cancer types; theextent to which largesample
+collections can be used to pinpoint the precise ‘targets’ of recurrent
+amplifications or deletions and thereby to identify cancer-related genes
+*These authors contributed equally to this work.
+1Cancer Program and Medical and Population Genetics Group, The Broad Institute of M.I.T. and Harvard, 7 Cambridge Center, 2Whitehead Institute for Biomedical Research, 9
+Cambridge Center, Cambridge, Massachusetts 02142, USA. 3Departments of Medical Oncology, Pediatric Oncology, and Cancer Biology, and Center for Cancer Genome Discovery,
+Dana-Farber Cancer Institute, 44 Binney Street, 4Departments of Medicine and Pathology, Brigham and Women’s Hospital, 75 Francis Street, 5Departments of Medicine, Pathology,
+Pediatrics, and Systems Biology, Harvard Medical School, 25 Shattuck Street, 6Department of Neurology, Children’s Hospital Boston, 300 Longwood Avenue, 7Department of Pathology,
+Beth Israel Deaconess Medical Center, 3 Blackfan Circle, Boston, Massachusetts 02115, USA. 8Novartis Institutes for BioMedical Research, 250 Massachusetts Avenue, Cambridge,
+Massachusetts 02139, USA. 9Division of Molecular Epidemiology, Jikei University School of Medicine, 3-25-8 Nishi-shimbashi, Minato-ku, Tokyo 105-8461, Japan. 10Department of
+Internal Medicine, UT Southwestern Medical Center, Dallas, Texas 75390-9186, USA. 11Genetics Branch, Center for Cancer Research, National Cancer Institute and National Naval
+Medical Center, Bethesda,Maryland 20889, USA. 12Departmentof Surgery II, Nagoya CityUniversity MedicalSchool, Nagoya467-8601,Japan. 13Department of Genetics and Radiation
+Oncology, UNC/Lineberger Comprehensive Cancer Center, University of North Carolina, School of Medicine, Chapel Hill, North Carolina 27599, USA. 14Medical Oncology Program, Vall
+d’Hebron University Hospital Research Institute, Vall d’Hebron Institute of Oncology, and Autonomous University of Barcelona, 08035 Barcelona, Spain. 15Department of Pathology and
+Division of Applied Molecular Oncology, University Health Network, Princess Margaret Hospital and Ontario Cancer Institute, Toronto, Ontario M5G 2M9, Canada. 16Department of
+Pathologyand LaboratoryMedicine, Weill CornellMedicalCollege,NewYork,NewYork10065, USA. 17Centerfor HumanGeneticResearch,Massachusetts GeneralHospital,RichardB.
+Simches Research Center, Boston, Massachusetts 02114, USA. 18Departments of Medicine and Pathology, Memorial Sloan Kettering Cancer Center, 1275 York Avenue, New York, New
+York 10065, USA. 19Departments of Medicine (GI Division) and Genetics, and Abramson Cancer Center, University of Pennsylvania, 415 Curie Boulevard, Philadelphia, Pennsylvania
+19104, USA. 20Section of Thoracic Surgery, Department of Surgery, University of Michigan, Ann Arbor, Ann Arbor, Michigan 48109, USA. 21Department of Pathology, University of
+Washington Medical Center, 1959 North East Pacific Street, Seattle, Washington 98195-6100, USA. 22Department of Obstetrics and Gynecology, Jikei University School of Medicine,
+3-25-8 Nishi-shimbashi, Minato-ku, Tokyo 105-8461, Japan. 23Howard Hughes Medical Institute, Chevy Chase, Maryland 20815, USA.
+Vol 463 |18 February 2010 |doi:10.1038/nature08822
+899
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+(see Supplementary Note 2); and the extent to which SCNAs are
+restricted to particular types or shared across many cancer types, sug-
+gesting common biological pathways.
+In this paper, we explore these issues by studying copy-number
+profiles from 3,131 cancers across more than two dozen cancer types,
+with the data all derived from a single experimental platform and
+analysed with a common, rigorous statistical methodology.
+A collection of 3,131 copy-number profiles across cancer
+The 3,131 cancer copy-number profiles consisted of 2,509 profiles
+determined by our laboratory (see references in Supplementary
+Note 3), including more than 800 previously unpublished profiles,
+and 622profiles determined by other groups11,15,16. Most (2,965) come
+from 26 cancer types, each represented by more than 20 specimens.
+Seventeen cancer types are represented by at least 40 specimens each
+(Supplementary Table 1). Most profiles (2,520) were obtained from
+tissue specimens, with the remainder from cancer cell lines (541) and
+melanoma short-term cultures (70).
+Copy-number measurements were obtained on the Affymetrix
+250 K Sty array, containing probes for 238,270 single nucleotide poly-
+morphisms (SNPs). We compared the signal intensities from each
+cancer specimen to array data from 1,480 normal tissue specimens
+(of which 1,140 were paired with cancer specimens from the same
+individual) to identify regions of somatically generated SCNA. We
+recorded the genomic position, length and amplitude of change in
+normalizedcopy-numberforevery SCNA (SupplementaryFig. 1aand
+Supplementary Methods).
+We observed a total of 75,700 gains and 55,101 losses across the
+3,131 cancers, for a mean of 24 gains (median 5 12) and 18 losses
+(median 5 12) per sample. For most (17 out of 26) cancer types, the
+mean number of SCNAs per sample was within twofold of these
+overall means (Supplementary Fig. 1b). Across all samples, 8.3% of
+amplification and 8.7% of deletion breakpoints (excluding those
+occurring within centromeres or telomeres) occurred in regions of
+segmental duplication, which is enriched relative to the proportion of
+the genome in such regions (5.1% of SNPs; P , 10220 in each case)
+and probably reflects a predisposition to SCNA formation17. An
+average of 17% of the genome was amplified and 16% deleted in a
+typical cancer sample, compared to averages of 0.35% and less than
+0.1% in normal samples (representing germline CNVs and occa-
+sional analytic artefacts).
+Background rates of focal and arm-level SCNAs
+Across the entire genome, the most prevalent SCNAs are either very
+short (focal) or almost exactly the length of a chromosome arm or
+whole chromosome (arm-level) (Fig. 1a). The focal SCNAs occur at a
+a
+0
+0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0
+0
+0.05
+0.10
+0.15
+0.20
+0.25
+Frequency
+(as fraction of all SCNAs)
+Length of SCNA
+(normalized to chromosome arms)
+Few gains
+Many losses
+Many gains
+Many losses
+Many gains
+Few losses
+Few gains 
+Few losses
+Z-score (losses)
+Z-score (gains)
+–10
+–5
+0
+5
+10
+15
+20
+–20
+–15
+–10
+10
+30
+20
+–20
+0
+b
+Significance thresholds
+Significance thresholds
+1p
+1q
+2p
+2q
+3p
+3q
+4p
+4q
+5p
+5q
+6p
+6q
+7p
+7q
+8p
+8q
+9p
+9q
+10p
+10q
+11q
+11q
+12p
+12q
+13q
+15q
+16p
+16q
+17p
+17q
+18p
+18q
+19p
+19q
+20p
+20q
+21q
+22q
+14q
+Arm-level
+SCNAs
+Focal
+SCNAs
+MYCL1 (4)
+MCL1 (9)
+PRKCI (22)
+TERT (3)
+EGFR (1)
+FGFR1 (3)
+IKBKB (6)
+MYC (1)
+CCND1 (3)
+KRAS (2)
+CDK4 (7)
+HMGA2 (1)
+MDM2 (1)
+CCT2 (2)
+NKX2-1 (3)
+IGF1R (4)
+ERBB2 (6)
+CCNE1 (1)
+CRKL (11)
+IRAK1 (53)
+×10–100
+×10–100
+×10–80
+×10–80
+×10–60
+×10–60
+×10–40
+×10–40
+×10–20
+×10–20
+1.0
+1.0
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+X
+DFFB (23)
+LRP1B (3)
+BOK (19)
+FHIT (2)
+TMSL3 (2)
+FAT1 (15)
+PLK2 (5)
+PARK2 (1)
+TRB@* (3)
+CSMD1 (1)
+PTPRD (3)
+CDKN2A/B (5)
+PTEN (4)
+ETV6 (2)
+RB1 (8)
+A2BP1 (2)
+WWOX (2)
+PPAP2C (10)
+MACROD2 (2)
+PPM1F (3)
+Amplifications
+Deletions
+Chr
+FDR q-value
+FDR q-value
+c
+Figure 1 | Identification of significant arm-level and focal SCNAs across
+cancer. a, Length distribution of SCNAs. b, The significance of arm-level
+SCNAs. The length-adjusted Z-scores for gains (x-axis) and losses (y-axis) of
+indicated chromosome arms are shown. Arms in red, blue, purple and black
+show significantgain, loss,both,or neither,respectively. c, Thesignificance of
+focal SCNAs. GISTIC q-values (x-axis) for deletions (left, blue) and
+amplifications (right, red) are plotted across the genome (y-axis). Known or
+putative gene targets within the peak regions(TRB@, indicated by an asterisk,
+is immediately adjacent) are indicated for the 20 most significant peaks;
+values in parentheses represent the number of genes in the peak region.
+ARTICLES
+NATURE |Vol 463 |18 February 2010
+900
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+frequency inversely related to their lengths, with a median length of
+1.8 megabases (Mb) (range 0.5 kilobases (kb)–85 Mb).
+Arm-level SCNAs occur approximately 30 times more frequently
+than would be expected by the inverse-length distribution associated
+with focal SCNAs (Fig. 1a). This observation is seen across all cancer
+types (Supplementary Fig. 2), and applies to both copy gains and
+losses (data not shown). As a result, in a typical cancer sample, 25% of
+the genome is affected by arm-level SCNAs and 10% by focal SCNAs,
+with 2% overlap. All arm-level (and most focal) SCNAs are of low
+amplitude (usually single-copy changes), but some focal SCNAs can
+range to very high amplitude. When analysing SCNAs for evidence of
+significant alteration in cancer, we accounted for the difference in
+background rates between arm-level and focal SCNAs by considering
+them separately.
+Several studies have analysed patterns of arm-level SCNAs across
+large numbers of cancer specimens4–6, and our results are mainly in
+agreement with theirs. We also observed that the frequency of arm-
+level SCNAs decreases with the length of chromosome arms. Adjusted
+for this trend, most chromosome arms show strong evidence of pref-
+erential gain or loss, but rarely both, across many cancer lineages (see
+Fig. 1b and Supplementary Note 4).
+The large size of arm-level SCNAs makes it difficult to determine
+the specific target gene or genes. By contrast, mapping of focal SCNAs
+has great power to pinpoint the important genes targeted by these
+events7–14.
+Pooled analysis of focal SCNAs
+We determined the regions in which SCNAs occur at a significantly
+high frequency. For this purpose, we calculated the genome-average
+‘background’ratesforSCNAsinourdatasetasafunctionoflengthand
+amplitude, and used the GISTIC (genomic identification of significant
+targets in cancer) algorithm18 with improvements as described in
+Supplementary Methods.
+We identified 158 independent regions of significant focal SCNAs,
+including 76 amplifications and 82 deletions, in the pooled analysis of
+all our data (Fig. 1c and Supplementary Table 2). This number was
+relatively robust to changes in the number of samples (Supplemen-
+tary Fig. 3a) and removal of individual cancer types from the pooled
+analysis (Supplementary Fig. 3b). Indeed, a stratified analysis of 680
+samples distributed evenly across the 17 most highly represented
+cancer types identified 76% of these significant SCNAs, similar to
+the number expected based on the reduced power of this smaller
+sample set (Supplementary Fig. 3a).
+The most frequent of these significant focal SCNAs (MYC ampli-
+fications and CDKN2A/B deletions) involve 14% of samples, whereas
+the least frequent are observed in 2.3% of samples for amplifications
+and 1.5% for deletions. The frequency of significant arm-level SCNAs
+is higher (15–29% of samples; Supplementary Fig. 3c). These fre-
+quencies are likely to be underestimates, as some SCNAs are not
+detected owing to contamination of cancer samples with DNA from
+adjacent normal cells, technical error, and the incomplete spatial
+resolution afforded by the SNP array platform.
+For each of the 158 significant focal SCNAs, we determined a
+confidence interval (‘peak region’) that has a 95% likelihood of con-
+taining the targeted gene (Supplementary Fig. 3d). Our large data set
+enables more sensitive and high-resolution detection of peak regions
+than previous copy-number analyses (see Supplementary Note 5 and
+Supplementary Table 3). An even larger data set would be desirable,
+on the basis of analyses showing that the increase in resolution with
+sample size has not reached a plateau (Supplementary Fig. 3e).
+The 76 focal amplification peak regions contain a median of 6.5
+genes each (range 0–143, including microRNAs). Sixteen regions con-
+tain more than 25 genes each; the remaining 60 regions contain in
+aggregate 364 potential target genes. We found that 25 of the 76
+regions (33%) contain functionally validated oncogenes documented
+to be activated by amplification (Supplementary Table 2), including
+nine of the top ten regions (MYC, CCND1, ERBB2, CDK4, NKX2-1,
+MDM2,EGFR,FGFR1andKRAS;Fig.1candSupplementary Table2).
+The tenth region, on 1q, contains nine genes; we present evidence later
+that the target gene in this region is the anti-apoptotic BCL2 family
+member, MCL1.
+The 82 focal deletion peaks contain a median of seven genes each
+(range 1–173). Nineteen regions contain at least 25 genes each; the
+remaining 63 regions contain in aggregate 474 potential target genes.
+Nine of the 82 regions (11%) contain functionally validated tumour
+suppressor genes documented to be inactivated by deletion
+(Supplementary Table 2). Two other deletions (involving ETV6
+and the span from TMPRSS2 to ERG) are associated with transloca-
+tion events that create oncogenes. Another deletion adjacent to the
+T-cell-receptor-b locus occurs in acute lymphoblastic leukaemia and
+likely is not associated with cancer, as it occurs during normal T-cell
+development.
+The remaining 70 deletion peaks do not contain known tumour
+suppressor genes, translocation sites, or somatic rearrangements.
+More than one-third (26) contain large genes, the genomic loci of
+which span more than 750 kilobases (kb); none of these genes has
+been convincingly demonstrated to be a tumour suppressor gene.
+Conversely, 19 of the 40 largest genes in the genome occur in deletion
+peaks (Fig. 2a; P 5 3 3 1029). This association between deletions and
+large genes could be due to a propensity for both to occur in regions
+of low gene density. Indeed, large genes tend to occur in gene-poor
+regions (Fig. 2a, bottom), and an analysis of all SCNAs in the data set
+shows that deletions (but not amplifications) show a bias towards
+regions of low gene density (up to 30% below the genome average;
+Fig. 2b). Even after removing the 26 SCNAs containing large genes,
+the gene density among the remaining deletions is still 25% below the
+genome average. These observations suggest that some of the dele-
+tions may not be related to cancer aetiology, but rather may reflect a
+high frequency of deletion or low levels of selection against deletion
+in these regions.
+c
+5×10–10
+5×10–8
+5×10–6
+5×10–4
+5×10–2
+0.5
+0.5
+0
+Median
+(P = 0.04)
+Median
+(P = 0.38)
+Deletion peaks
+Amplification peaks
+Permuted
+controls
+Frequency
+observed
+P value
+Actual
+results
+Actual
+results
+0
+2
+4
+6
+8
+10
+12
+14
+Gene rank
+(by size of genomic footprint)
+Amplification peaks
+Deletion peaks
+Local gene
+density:
+0.33
+0.45
+0.44
+0.43
+1.00
+a
+b
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+<1
+Copy number
+1–1.5
+1.5–1.75
+1.75–2.3
+2.3–3
+3–4
+>4
+Significance
+thresholds
+(P = 0.01)
+d
+Deletions
+Tubulin
+Suppressor
+Zinc
+Methylation
+Finger
+Adhesion
+Amplifications
+Kinase
+Apoptosis
+MYC
+BCL
+Growth
+Phosphorylation
+All peaks
+Deletions
+Tubulin
+Prostate
+Zinc
+Microtubule
+Finger
+Nervous
+Amplifications
+Apoptosis
+Polymerase
+Kinase
+Helicase
+Kappab
+Laminin
+Excluding peaks with known targets
+Amplifications
+Deletions Neutral
+Number of these genes
+in peak regions
+Gene density (normalized
+to genome-wide level)
+1–20
+21–40 41–60 61–80 Random
+20
+Figure 2 | Characteristics of significant focal SCNAs. a, Enrichment of
+large genes in deletion peaks. Genes are ranked by the amount of genome
+occupied. Local gene density is normalized against the genome-wide average.
+b, Average gene density among genomic regions as a function of their copy
+number. c, GRAIL analysis20 P-values, plotted for each peak region, reflect
+the similarity between genes in that region compared to genes in all other
+regions. Increasing significance is plotted towards the top and reflects greater
+similarity. Histograms of P-values are shown for randomly placed regions
+(‘permuted controls’). d, The literature terms most associated with genes in
+either deletion or amplification peaks, but not both.
+NATURE |Vol 463 |18 February 2010
+ARTICLES
+901
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+Most known amplified oncogenes reside within the 76 amplified
+regions, although there are exceptions. For example, MITF19 is prob-
+ably undetected because it is a lineage-specific oncogene restricted to
+melanoma.Atleasttenknowndeletedtumoursuppressor genesdonot
+reside in the deleted regions in the pooled analysis (BRCA2, FBXW7,
+NF2, PTCH1, SMARCB1, STK11, SUFU, VHL, WT1 and WTX (also
+known as FAM123B)). Some of these are specific to cancer types not
+represented in our data set (for example, NF2, WT1 and WTX),
+whereas others (for example, BRCA2, FBXW7, STK11 and VHL)
+primarily suffer arm-level deletions (with possible further deletions
+beyondtheresolutionofthearrayplatform).Othertumoursuppressor
+genes may be missed if they lie within regions in which the background
+deletion rates are lower than the genome-wide average, or if they are
+adjacentto genes inwhich deletion ispoorlytolerated (which would be
+expected to occur more readily in regions of high gene density; see
+Supplementary Note 1b). Such tumour suppressors might be inacti-
+vated by point mutations more often than SCNAs.
+Over-represented gene families and pathways
+We assessed potential cancer-causing genes in the SCNAs using
+GRAIL (gene relationships among implicated loci)20, an algorithm
+that searches for functional relationships among genomic regions.
+GRAIL scores each gene in a collection of genomic regions for its
+‘relatedness’ to genes in other regions based on textual similarity
+between published abstracts for all papers citing the genes, on the
+notion that some target genes will function in common pathways.
+We found that 47 of the 158 peak regions (34 of the 76 amplifica-
+tion peaks and 13 of the 82 deletion peaks) contain genes significantly
+related to genes in other peak regions (Fig. 2c). In 21 of these regions,
+the highest-scoring gene was a previously validated target of SCNA in
+human cancer (Supplementary Table 2). Across all peak regions, the
+literature terms most significantly enriched refer to gene families
+important in cancer pathogenesis, such as kinases, cell cycle regula-
+tors, and MYC family members (Fig. 2d, top and Supplementary
+Table 4).
+To discover new genes, we next examined the 122 regions without
+previously documented SCNA targets. The most significantly
+enriched literature term associated with the amplification peaks
+was ‘apoptosis’ (Fig. 2d, bottom and Supplementary Table 4). Two
+of the five known anti-apoptotic members of the BCL2 family21
+(MCL1 and BCL2L1) are in amplification peaks. Two of eleven
+pro-apoptotic members (BOK and BBC3) were also found among
+deletion peaks, for a total of four of the 16 known BCL2 family
+members, with anti-apoptotic genes amplified but not deleted and
+vice versa for pro-apoptotic genes (Fig. 3a; P 5 3 3 10210). Although
+some BCL2 family members are known to be translocation and point
+mutation targets22–26, pathway dysregulation by copy-number
+change has not been well-described. Later, we describe functional
+validation that MCL1 and BCL2L1 are targets of amplifications that
+encompass them.
+The second-ranking term among amplification peaks without
+known targets was ‘NF-kB’, reflecting a preponderance of members
+b
+d
+f
+Anti-apoptotic
+BCL2 family
+members
+(n = 5)
+Non-
+BCL2 family
+members
+(n = 19,131)
+Pro-apoptotic
+BCL2 family
+members
+(n = 11)
+Amplified
+Deleted
+No
+MCL1
+BCL2L1
+(2/5; 40%)
+None
+(0/11; 0%)
+BCL2
+BCL2A1
+BCL2L2
+(3/5; 60%)
+BAX, BAK
+BIK, BIM
+BAD, BIK, BMF
+NOXA, HRK
+(9/11; 85%)
+—
+(362/19,131;
+1.9%)
+—
+(18,293/19,131;
+95.6%)
+BOK
+BBC3
+(2/11; 15%)
+—
+(474/19,131;
+2.5%)
+P = 3×10–10
+None
+(0/5; 0%)
+a
+c
+MCL1 amplified
+MCL1 unamplified
+P = 0.05
+P = 0.006
+e
+SKLU1
+H647
+Calu6
+H1792
+16 4.9 3.4
+9.2
+H520
+3.9
+H2228
+3.8
+LCLC-97TM1
+H2110
+PC9
+H3122
+1.6 1.3
+2.1
+1.9
+A549
+2.0
+H1437
+1.9
+BCL2L1 amplified
+BCL2L1 unamplified
+HCC 1954
+1.6
+0
+100
+200
+300
+400
+500
+600
+700
+11
+15
+18
+22
+Non-target shRNA, not induced
+Non-target shRNA, induced
+MCL1 shRNA, not induced
+MCL1 shRNA, induced
+Days after implant
+Tumour volume (mm3)
+P = 6 × 10–7
+MCL1
+ADAMTSL4
+CTSK
+CTSS
+ECM1
+ENSA
+GOLPH3L
+Control
+siRNA v:
+Candidate genes in 1q21.2 amplified region
+–40
+–20
+0
+20
+40
+60
+80
+100
+120
+140
+–40
+–20
+0
+20
+40
+60
+80
+100
+120
+–40
+–60
+–20
+0
+20
+40
+60
+80
+100
+120
+140
+Proliferation rate (% of control)
+Proliferation rate (% of control)
+Proliferation rate (% of control)
+Amplified
+Deleted
+Neutral
+Chromosome 1 (Mb)
+140
+160
+150
+MCL1
+145
+155
+Lung
+Breast Neural GI
+Misc.
+Sarcomas
+H2110
+H1568
+H332
+H1792
+SKLU1
+HCC 1954
+HCC 1171
+5.9
+MCL1 copies:
+Cell line:
+BCL2L1 copies:
+Cell line:
+3.9
+6.6
+4.1
+2.0
+1.7
+1.7
+Figure 3 | Dependency of cancer cell lines on the amplified BCL2 family
+members, MCL1 and BCL2L1. a, Enrichment of pro- and anti-apoptotic
+BCL2 family members deletion and amplification peaks. b, Copy-number
+profiles among 50 cancer samples around MCL1 (lineages are across the top;
+genomic locations are on the left). c, Changes in cell number after MCL1
+knockdown relative to controls. d, Proliferation rates in NCI-H2110 cells
+after siRNA transfection against the listed genes. e, Effect of MCL1
+knockdown on growth of NCI-H2110 xenografts. f, Changes in cell number
+after BCL2L1 knockdown relative to controls. Error bars represent s.e.m.
+across three experiments.
+ARTICLES
+NATURE |Vol 463 |18 February 2010
+902
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+of this pathway (TRAF6, IKBKB, IKBKG, IRAK1 and RIPK1;
+P 5 0.001 for pathway enrichment27) and consistent with an emer-
+ging recognition of its importance in several cancer types28–30.
+Because some gene families may have been missed by GRAIL, we
+separately analysed gene ontology (GO) terms for association with
+amplification peaks (data not shown). We identified significant
+enrichment of genes associated with ‘molecular adaptor activity’
+(GO: 0060090, P 5 4 3 10210), including IRS2, GRB2, GRB7,
+GAB2, GRAP, TRAF2, TRAF6 and CRKL. IRS2 and GAB2 are known
+to be transforming when overexpressed31,32, and CRKL has been
+reported as an essential gene among cells in which it is amplified33.
+Amplifications of MCL1 and BCL2L1
+MCL1 is one of nine genes in an amplification peak in cytoband
+1q21.2 (Fig. 3b and Supplementary Table 2) with focal amplifications
+observed in 10.9% of cancers across multiple tissue types. Fluor-
+escence in situ hybridization (FISH) of the MCL1 region in lung
+and breast cancers showed much higher rates of focal amplification
+(Supplementary Fig. 4a–b). Amplifications of 1q21.2 were previously
+reported in two studies of lung adenocarcinoma7,34 and one of mel-
+anoma35, but the peak regions in these studies contained 86, 36 and 53
+genes respectively.
+Weexaminedwhether cellgrowthdependsonMCL1 inthepresence
+of gene amplification by measuring the rate of change in cell number
+after activating an inducible short hairpin RNA (shRNA) against
+MCL1 in cells with and without 1q21.2 amplification. We observed a
+more pronounced reduction in proliferation rates among four MCL1-
+amplified cell lines, compared to three MCL1-unamplified control cell
+lines (P 5 0.05; Fig. 3c) (all achieved .70% knockdown; Supplemen-
+tary Fig. 4c). Reducing the expression of six of the other genes (all
+by .70%; Supplementary Fig. 4d) within the 1q21.2 amplicon in
+NCI-H2110 cells produced no significant effects (Fig. 3d). Similar
+effects were observed after MCL1 depletion with many shRNAs and
+short interfering RNAs (siRNAs) (Supplementary Fig. 4e). Growth of
+NCI-H2110 xenografts were also inhibited by induction of anti-MCL1
+shRNA (Fig. 3e).
+BCL2L1 is one of five genes in a peak region of amplification on
+20q11.21 (Supplementary Fig. 5a). Amplifications of this region have
+been previously noted in lung cancer36, giant-cell tumour of bone37,
+and embryonic stem cell lines (the latter also amplifying a region
+including BCL2)38,39, but functional validation of BCL2L1 as a gene
+targeted by these amplifications has not been reported. We examined
+BCL2L1 dependency using shRNA against BCL2L1 in cells with and
+without 20q11.21 amplification. We observed a more pronounced
+reduction in proliferation rates among six BCL2L1-amplified lines
+(including SKLU1, which was MCL1-independent), compared to
+seven BCL2L1-unamplified lines (P 5 0.006; Fig. 3f). These decreased
+proliferative rates were associated with increased apoptosis (Sup-
+plementary Fig. 5b).
+We then sought to explore how amplification of these BCL2 family
+members might act in cancer by examining other SCNAs found in
+cancers carrying MCL1 or BCL2L1 amplifications. The most frequent
+other focal SCNA in these cancers was amplification of the region
+carrying MYC (observed in approximately two-thirds of these cases).
+BCL2 has previously been shown to reduce MYC-induced apoptosis
+in lymphoid cells40. We found that overexpression of MCL1 and
+BCL2L1 in immortalized bronchial epithelial cells also reduces
+MYC-induced apoptosis (Supplementary Fig. 5c, d). Oncogenic roles
+for MCL1and BCL2L1 have been previously suggested by reports of
+increased rates of lymphoma and leukaemia in transgenic mice41,42.
+Somatic amplification of MCL1 and BCL2L1 may therefore be a
+common mechanism for cancers, including carcinomas, to increase
+cell survival.
+Sharing of focal SCNAs across cancer types
+Our analysis of a large number of cancer types with a high-resolution
+platform afforded an opportunity to quantify the degree to which
+significant focal SCNAs are shared across cancer types. We performed
+separate analyses of each of the 17 cancer types represented by at least
+40 samples and compared the significant SCNAs to those from a
+pooled analysis of the remaining samples, excluding the cancer type
+in question.
+Most focal SCNAs identified in any one of these 17 cancer types are
+also found in the pooled analysis excluding that cancer type (median
+79% overlap, versus 10% for randomly permuted regions, P , 0.001;
+Fig. 4) and, indeed, in the 158 regions from the overall pool.
+Nonetheless, cancer-type-restricted analyses identified a further
+199 significant SCNAs (145 regions of amplification, 54 regions of
+deletion; Supplementary Table 5). (These exclude 79 regions of amp-
+lification on chromosome 12 found only in dedifferentiated liposar-
+comas that are probably related to the ring chromosomes in that
+disease43). However, many of these regions were even found to occur
+in more than one cancer type (median two). As would be expected,
+the 158 regions in the pooled analysis were found in more cancer
+types (median five) and were better localized (median size 1.5 Mb
+versus 11 Mb in the lineage-restricted analyses).
+Arm-level alterations, like focal SCNAs, tend to be shared among
+several cancer types (Supplementary Note 4). Previous studies have
+demonstrated a tendency for cancers of similar developmental
+lineages to exhibit similar recurrent arm-level SCNAs44. We found
+that this tendency was much more apparent for arm-level than focal
+SCNAs (see Supplementary Note 6), suggesting that arm-level
+SCNAs are shaped to a greater extent by developmental context.
+Portal for cancer genomics
+The raw data and analyses from this study are available at http://
+www.broadinstitute.org/tumorscape, including segmented copy-
+number data (viewable using the Integrative Genomics Viewer; J.
+Robinson et al., manuscript in preparation) and profiles describing
+the significance of copy-number changes. The portal also supports
+gene copy-number queries across and within individual cancer types
+(instructions are in Supplementary Note 7).
+20%
+80%
+22%
+78%
+P < 0.001
+P < 0.001
+Lineage-restricted
+focal regions
+Focal regions common
+to multiple types
+20
+3
+21
+(19%)
+(81%)
+21
+6
+25
+(13%) (87%)
+Non-small cell lung
+carcinoma
+10
+4
+46
+(19%)
+(81%)
+40
+3
+13
+(29%) (71%)
+Oesophageal
+adenocarcinoma
+Focal peaks in
+cancer type
+Focal peaks in all
+other cancers
+Focal peaks
+present in both
+10
+15
+32
+(50%) (50%)
+50
+3
+3
+(60%) (40%)
+Acute lymphoblastic
+leukaemia
+P = 0.01
+P = 0.02
+P < 0.001
+P < 0.001
+P < 0.001
+P < 0.001
+Median proportions across 17 most-represented cancer types
+Focal peaks in
+cancer type
+Focal peaks in all
+other cancers
+Focal peaks
+present in both
+Focal peaks in
+cancer type
+Focal peaks in all
+other cancers
+Focal peaks
+present in both
+Amplification
+peaks
+Deletion
+peaks
+Figure 4 | Most significant focal SCNA peaks identified in any one cancer
+type are also identified in the rest of the data set (its complement). The top
+Venn diagram represents median results across the 17 cancer types
+represented by .40 samples. Venn diagrams representing the specific
+examples of non-small cell lung cancer, oesophageal adenocarcinoma, and
+acute lymphoblastic leukaemia are shown along the bottom. The three dots
+indicate similar analyses were performed on the remaining 14 cancer types.
+Diagrams are not drawn to scale.
+NATURE |Vol 463 |18 February 2010
+ARTICLES
+903
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+Discussion
+This study represents the largest analysis so far of high-resolution
+copy-number profiles of cancer specimens. Several features of the
+copy-number landscape apply to the vast majority of cancer types.
+There is a notably high prevalence of arm-level SCNAs4–6, which
+probably reflects the ease with which such mutational events occur
+compared to focal events45,46. The analysis also shows a strong
+tendency for significant focal SCNAs in one cancer type to be also
+found in several others.
+We identified a total of 357 significant regions of focal SCNA,
+including 158 regions in the pooled analysis and 199 regions in ana-
+lyses of individual cancer types. These are surely underestimates of
+the number of regions that are significantly altered in cancer. Many
+cancer types were represented by relatively few samples; others were
+not represented at all. Some SCNAs were missed owing to the reso-
+lution limit of the array platform. Further efforts will be needed to
+characterize larger numbers of cancer genomes at higher resolution
+to create a comprehensive catalogue of the significant SCNAs and
+define their occurrence in difference cancer types.
+An important challenge is to identify the cancer gene targets of each
+of these SCNAs. Less than one-quarter of the 158 common peak
+regions are associated with previously validated targets of SCNAs in
+human cancer. Although a subset of the SCNAs may represent dele-
+tion events that are tolerated but not causally involved in cancer (as
+suggested by the correlation with gene-poor regions) or frequent
+owing tomechanistic bias (for example, associated withfragile sites)47,
+many more cancer-causing genes are likely to be found through ana-
+lysis ofSCNAs.TheGRAIL analysisof ourpeak regions pointstomore
+than a dozen probable candidates, and the functional analysis of
+MCL1 and BCL2L1 strongly implicates these genes as amplification
+targets. Moreover, some SCNAs may contain several functional
+targets10.
+Identification of the target genes will require both genomic and
+functional studies. For focal events, the copy-number profiles of
+further samples at higher resolution can help narrow the lists of
+candidates. Nucleotide sequencing may identify point mutations,
+especially in the case of heterozygous deletions. Because overlapping
+SCNAs in different cancer types may target different genes, all can-
+didates should be functionally tested separately in each cancer type in
+appropriate model systems.
+Although many canonical oncogenes and tumour suppressor
+genes are known to be altered across several cancer types and func-
+tionally relevant in model systems of diverse tissue origins1, it has not
+been clear whether these genes are typical or represent a discovery
+bias towards genes relevant to many cancer types. By studying a large
+number of cancers of multiple types, we have found that most of the
+significant SCNAs within any single cancer type tend to be found in
+other cancer types as well. Similar findings for point mutations and
+translocations would suggest that the appearance of tremendous
+diversity across cancer genomes may reflect the combinations of a
+limited number of functionally relevant events.
+METHODS SUMMARY
+DNA extracted from cancer specimens and normal tissue was labelled and hybri-
+dized to the Affymetrix 250K Sty I array to obtain signal intensities and genotype
+calls. Signal intensities were normalized against data from 1,480 normal samples.
+Copy-number profiles were inferred using GLAD48 and changes of .0.1 copies in
+either direction were called SCNAs. The significance of focal SCNAs (covering
+,0.5 chromosome arms) was determined using GISTIC18, with modifications to
+score SCNAs directly proportional to amplitude and to allow summation of non-
+overlapping deletions affecting the same gene. Peak region boundaries were deter-
+mined so that the change in the GISTIC score from peak to boundary had ,5%
+likelihood of occurring by random fluctuation. P-values for Figs 2b and 4 were
+determined by comparing the gene densities of SCNAs and fraction overlap of
+peak regions, respectively, to the same quantities calculated from random permu-
+tations of the locations of these SCNAs and peak regions. RNA interference was
+performed by inducible and stable expression of shRNA lentiviral vectors and by
+siRNA transfection. Proliferation in inducible shRNA experiments was measured
+in triplicate every half-hour on 96-well plates by a real-time electric sensing system
+(ACEA Bioscience), and in stable shRNA expression and siRNA transfection
+experiments byCellTiterGlo(Promega).Apoptosis wasmeasuredbyimmunoblot
+against cleaved PARP, and FACS analysis of cells stained with antibody to annexin
+V and propidium iodide. Tumour growth in nude mice was measured by caliper
+twice weekly. Expression of MYC, MCL1 and BCL2L1 was performed with retro-
+viral vectors in lung epithelial cells immortalized by introduction of SV40 and
+hTERT49.
+Received 2 June; accepted 23 December 2009.
+1.
+Futreal, P. A. et al. A census of human cancer genes. Nature Rev. Cancer 4, 177–183
+(2004).
+2.
+Stuart, D. & Sellers, W. R. Linking somatic genetic alterations in cancer to
+therapeutics. Curr. Opin. Cell Biol. 21, 304–310 (2009).
+3.
+Stratton, M. R., Campbell, P. J. & Futreal, P. A. The cancer genome. Nature 458,
+719–724 (2009).
+4.
+Baudis, M. Genomic imbalances in 5918 malignant epithelial tumors: an
+explorative meta-analysis of chromosomal CGH data. BMC Cancer 7, 226 (2007).
+5.
+Mitelman Database of Chromosome Aberrations in Cancer (eds Mitelman, F.
+Johansson, B. and Mertens, F. ) Æhttp://cgap.nci.nih.gov/Chromosomes/
+Mitelmanæ (2009).
+6.
+NCI and NCBI’s SKY/M-FISH and CGH Database Æhttp://www.ncbi.nlm.nih.gov/
+sky/skyweb.cgiæ (2001).
+7.
+Weir, B. A. et al. Characterizing the cancer genome in lung adenocarcinoma.
+Nature 450, 893–898 (2007).
+8.
+Eder, A. M. et al. Atypical PKCiota contributes to poor prognosis through loss of
+apical-basal polarity and cyclin E overexpression in ovarian cancer. Proc. Natl
+Acad. Sci. USA 102, 12519–12524 (2005).
+9.
+Lahortiga, I. et al. Duplication of the MYB oncogene in T cell acute lymphoblastic
+leukemia. Nature Genet. 39, 593–595 (2007).
+10. Zender, L. et al. Identification and validation of oncogenes in liver cancer using an
+integrative oncogenomic approach. Cell 125, 1253–1267 (2006).
+11.
+Mullighan, C. G. et al. Genome-wide analysis of genetic alterations in acute
+lymphoblastic leukaemia. Nature 446, 758–764 (2007).
+12.
+Wiedemeyer, R. et al. Feedback circuit among INK4 tumor suppressors constrains
+human glioblastoma development. Cancer Cell 13, 355–364 (2008).
+13.
+Cancer_Genome_Atlas_Research_Network. Comprehensive genomic
+characterization defines human glioblastoma genes and core pathways. Nature
+455, 1061–1068 (2008).
+14. Chitale, D. et al. An integrated genomic analysis of lung cancer reveals loss of
+DUSP4 in EGFR-mutant tumors. Oncogene 28, 2773–2783 (2009).
+15.
+GlaxoSmithKline. GSK Cancer Cell Line Genomic Profiling Data Æhttps://
+cabig.nci.nih.gov/tools/caArray_GSKdataæ (2008).
+16. Mullighan, C. G. et al. BCR-ABL1 lymphoblastic leukaemia is characterized by the
+deletion of Ikaros. Nature 453, 110–114 (2008).
+17.
+Mazzarella, R. & Schlessinger, D. Pathological consequences of sequence
+duplications in the human genome. Genome Res. 8, 1007 (1998).
+18. Beroukhim, R. et al. Assessing the significance of chromosomal aberrations in
+cancer: methodology and application to glioma. Proc. Natl Acad. Sci. USA 104,
+20007–20012 (2007).
+19. Garraway, L. A. et al. Integrative genomic analyses identify MITF as a lineage
+survival oncogene amplified in malignant melanoma. Nature 436, 117–122 (2005).
+20. Raychaudhuri, S. et al. Identifying relationships among genomic disease regions:
+predicting genes at pathogenic SNP associations and rare deletions. PLoS Genet. 5,
+e1000534 (2009).
+21.
+Letai, A. G. Diagnosing and exploiting cancer’s addiction to blocks in apoptosis.
+Nature Rev. Cancer 8, 121–132 (2008).
+22. Tsujimoto, Y., Gorham, J., Cossman, J., Jaffe, E. & Croce, C. M. The t(14;18)
+chromosome translocations involved in B-cell neoplasms result from mistakes in
+VDJ joining. Science 229, 1390–1393 (1985).
+23. Cleary, M. L. & Sklar, J. Nucleotide sequence of a t(14;18) chromosomal
+breakpoint in follicular lymphoma and demonstration of a breakpoint-cluster
+region near a transcriptionally active locus on chromosome 18. Proc. Natl Acad. Sci.
+USA 82, 7439–7443 (1985).
+24. Bakhshi, A. et al. Cloning the chromosomal breakpoint of t(14;18) human
+lymphomas: clustering around JH on chromosome 14 and near a transcriptional
+unit on 18. Cell 41, 899–906 (1985).
+25. Rampino, N. et al. Somatic frameshift mutations in the BAX gene in colon cancers
+of the microsatellite mutator phenotype. Science 275, 967–969 (1997).
+26. Arena, V., Martini, M., Luongo, M., Capelli, A. & Larocca, L. M. Mutations of the
+BIK gene in human peripheral B-cell lymphomas. Genes Chromosom. Cancer 38,
+91–96 (2003).
+27. Wu, C. & Ponnappan, U. NF-kB Signaling Pathway Æhttp://www.biocarta.com/
+pathfiles/h_nfkbPathway.asp#contributorsæ (2009).
+28. Boehm, J. S. et al. Integrative genomic approaches identify IKBKE as a breast
+cancer oncogene. Cell 129, 1065–1079 (2007).
+29. Barbie, D. A. et al. Systematic RNA interference reveals that oncogenic KRAS-
+driven cancers require TBK1. Nature 462, 108–112 (2009).
+30. Scholl, C. et al. Synthetic lethal interaction between oncogenic KRAS dependency
+and suppression of STK33 in human cancer cells. Cell 137, 821–834 (2009).
+ARTICLES
+NATURE |Vol 463 |18 February 2010
+904
+Macmillan Publishers Limited. All rights reserved
+©2010
+
+31.
+Nishida, K. & Hirano, T. The role of Gab family scaffolding adapter proteins in the
+signal transduction of cytokine and growth factor receptors. Cancer Sci. 94,
+1029–1033 (2003).
+32. Dearth, R. K., Cui, X., Kim, H. J., Hadsell, D. L. & Lee, A. V. Oncogenic
+transformation by the signaling adaptor proteins insulin receptor substrate (IRS)-
+1 and IRS-2. Cell Cycle 6, 705–713 (2007).
+33. Luo, B. et al. Highly parallel identification of essential genes in cancer cells. Proc.
+Natl Acad. Sci. USA 105, 20380–20385 (2008).
+34. Kendall, J. et al. Oncogenic cooperation and coamplification of developmental
+transcription factor genes in lung cancer. Proc. Natl Acad. Sci. USA 104,
+16663–16668 (2007).
+35. Lin, W. M. et al. Modeling genomic diversity and tumor dependency in malignant
+melanoma. Cancer Res. 68, 664–673 (2008).
+36. Tonon, G. et al. High-resolution genomic profiles of human lung cancer. Proc. Natl
+Acad. Sci. USA 102, 9625–9630 (2005).
+37. Smith, L. T. et al. 20q11.1 amplification in giant-cell tumor of bone: Array CGH,
+FISH, and association with outcome. Genes Chromosom. Cancer 45, 957–966
+(2006).
+38. Spits, C. et al. Recurrent chromosomal abnormalities in human embryonic stem
+cells. Nature Biotechnol. 26, 1361–1363 (2008).
+39. Lefort, N. et al. Human embryonic stem cells reveal recurrent genomic instability
+at 20q11.21. Nature Biotechnol. 26, 1364–1366 (2008).
+40. Fanidi, A., Harrington, E. A. & Evan, G. I. Cooperative interaction between c-myc
+and bcl-2 proto-oncogenes. Nature 359, 554–556 (1992).
+41. Zhou, P. et al. MCL1 transgenic mice exhibit a high incidence of B-cell lymphoma
+manifested as a spectrum of histologic subtypes. Blood 97, 3902–3909 (2001).
+42. Beverly, L. J. & Varmus, H. E. MYC-induced myeloid leukemogenesis is
+accelerated by all six members of the antiapoptotic BCL family. Oncogene 28,
+1274–1279 (2009).
+43. Dal Cin, P. et al. Cytogenetic and fluorescence in situ hybridization investigation of
+ring chromosomes characterizing a specific pathologic subgroup of adipose
+tissue tumors. Cancer Genet. Cytogenet. 68, 85–90 (1993).
+44. Myllykangas, S., Bohling, T. & Knuutila, S. Specificity, selection and significance of
+gene amplifications in cancer. Semin. Cancer Biol. 17, 42–55 (2007).
+45. Albertson, D. G. Gene amplification in cancer. Trends Genet. 22, 447–455 (2006).
+46. Fukasawa, K. Centrosome amplification, chromosome instability and cancer
+development. Cancer Lett. 230, 6–19 (2005).
+47. Smith, D. I., Zhu, Y., McAvoy, S. & Kuhn, R. Common fragile sites, extremely large
+genes, neural development and cancer. Cancer Lett. 232, 48–57 (2006).
+48. Hupe´, P., Stransky, N., Thiery, J.-P., Radvanyi, F. & Barillot, E. Analysis of array
+CGH data: from signal ratio to gain and loss of DNA regions. Bioinformatics 20,
+3413–3422 (2004).
+49. Lundberg, A. S. et al. Immortalization and transformation of primary human
+airway epithelial cells by gene transfer. Oncogene 21, 4577–4586 (2002).
+Supplementary Information is linked to the online version of the paper at
+www.nature.com/nature.
+Acknowledgements This work was supported by grants from the National
+Institutes of Health (NIH) (Dana-Farber/Harvard Cancer Center and Pacific
+Northwest Prostate Cancer SPOREs, P50CA90578, R01CA109038,
+R01CA109467, P01CA085859, P01CA 098101 and K08CA122833), the Doris
+Duke Charitable Foundation, the Sarah Thomas Monopoli Lung Cancer Research
+Fund, the Seaman Corporation Fund for Lung Cancer Research, and the Lucas
+Foundation. Medulloblastoma samples were obtained in collaboration with the
+Children’s Oncology Group. N. Vena provided technical assistance with FISH, and
+I. Mellinghoff, P. S. Mischel, L. Liau and T. F. Cloughesy provided DNA samples. We
+thank T. Ried, R. Weinberg and B. Vogelstein for critical review of the manuscript
+and for comments about its context in the field of cancer genetics.
+Author Contributions R.B., C.H.M., E.S.L., G.G., W.R.S. and M.M. conceived and
+designed the study; R.B., J.B., M.U., A.H.L., Y.-J.C., W.W., B.A.W., D.Y.C., A.J.B., J.P.,
+S.S., E.M., F.J.K., H.S., J.E.T., J.A.F., J.T., J.B., M.-S.T., F.D., M.A.R., P.A.J., C.N., R.L.L.,
+B.L.E., S.G., A.K.R., C.R.A., M.L., L.A.G., M.L., D.G.B., L.D.T., A.O., S.L.P., S.S. and
+M.M. contributed primary samples and/or assisted in the generation of the data;
+R.B., C.H.M., S.R., J.Dob., M.S.L., B.A.W., M.J.D. and G.G. performed the data
+analysis; R.B., D.P., G.W., J.Don., J.S.B., K.T.M., L.H., H.G., K.E.T., A.L., C.H., D.Y.,
+A.L., L.A.G., T.R.G. and M.M. designed and performed the functional experiments
+on BCL2 family member genes; R.B., C.H.M., R.M.P., M.R., T.L. and Q.G. designed
+and built the cancer copy-number portal; R.B., C.H.M., E.S.L. and M.M. wrote, and
+all other authors have critically read and commented on, the manuscript.
+Author Information The SNP array data have been deposited to the Gene
+Expression Omnibus (GEO) under accession number GSE19399. Reprints and
+permissions information is available at www.nature.com/reprints. The authors
+declare no competing financial interests. Correspondence and requests for
+materials should be addressed to E.S.L. (lander@broadinstitute.org), G.G.
+(gadgetz@broadinstitute.org), W.R.S. (william.sellers@novartis.com) or M.M.
+(matthew_meyerson@dfci.harvard.edu).
+NATURE |Vol 463 |18 February 2010
+ARTICLES
+905
+Macmillan Publishers Limited. All rights reserved
+©2010

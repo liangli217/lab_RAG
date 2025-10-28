@@ -1,0 +1,2106 @@
+Pirtobrutinib targets BTK C481S in ibrutinib-resistant CLL but
+second-site BTK mutations lead to resistance
+Aishath Naeem,1,2 Filippo Utro,3,† Qing Wang,4,† Justin Cha,2,† Mauno Vihinen,5 Stephen Martindale,1 Yinglu Zhou,6 Yue Ren,6
+Svitlana Tyekucheva,6 Annette S. Kim,7 Stacey M. Fernandes,1 Gordon Saksena,2 Kahn Rhrissorrakrai,3 Chaya Levovitz,3
+Brian P. Danysh,2 Kara Slowik,2 Raquel A. Jacobs,2 Matthew S. Davids,1,8 James A. Lederer,9 Rula Zain,4,10,* C. I. Edvard Smith,4,*
+Ignaty Leshchiner,2,* Laxmi Parida,3,* Gad Getz,2,11,12,* and Jennifer R. Brown1,2,8,*
+1Department of Medical Oncology, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA; 2Cancer Program, Broad Institute of Massachusetts Institute of
+Technology and Harvard, Cambridge, MA; 3IBM Research, Yorktown Heights, New York, NY; 4Department of Laboratory Medicine, Biomolecular and Cellular Medicine,
+Karolinska Institutet, Karolinska University Hospital Huddinge, SE-141 86, Huddinge, Sweden; 5Department of Experimental Medical Science, Lund University, SE-221 84,
+Lund, Sweden; 6Department of Data Sciences, Dana-Farber Cancer Institute, Harvard T.H. Chan School of Public Health, Harvard University, Boston, MA; 7Department of
+Pathology, 8Department of Medicine, and 9Department of Surgery, Brigham and Women’s Hospital, Boston, MA; 10Centre for Rare Diseases, Department of Clinical
+Genetics, Karolinska University Hospital, SE-171 76, Stockholm, Sweden; 11Department of Pathology, Harvard Medical School, Boston, MA; and 12Cancer Center and
+Department of Pathology, Massachusetts General Hospital, Boston, MA
+Key Points
+• BCR signaling is
+inhibited by
+pirtobrutinib in vitro
+and in vivo regardless
+of BTK C481S
+mutation but is
+reactivated in vivo at
+progression.
+• BTK mutations at the
+gatekeeper site T474
+and second-site
+kinase-dead mutations
+lead to resistance to
+pirtobrutinib.
+Covalent inhibitors of Bruton tyrosine kinase (BTK) have transformed the therapy of
+chronic lymphocytic leukemia (CLL), but continuous therapy has been complicated by the
+development of resistance. The most common resistance mechanism in patients whose
+disease progresses on covalent BTK inhibitors (BTKis) is a mutation in the BTK 481 cysteine
+residue to which the inhibitors bind covalently. Pirtobrutinib is a highly selective,
+noncovalent BTKi with substantial clinical activity in patients whose disease has progressed
+on covalent BTKi, regardless of BTK mutation status. Using in vitro ibrutinib-resistant
+models and cells from patients with CLL, we show that pirtobrutinib potently inhibits BTK-
+mediated functions including B-cell receptor (BCR) signaling, cell viability, and CCL3/CCL4
+chemokine production in both BTK wild-type and C481S mutant CLL cells. We demonstrate
+that primary CLL cells from responding patients on the pirtobrutinib trial show reduced
+BCR signaling, cell survival, and CCL3/CCL4 chemokine secretion. At time of progression,
+these primary CLL cells show increasing resistance to pirtobrutinib in signaling inhibition,
+cell viability, and cytokine production. We employed longitudinal whole-exome sequencing
+on 2 patients whose disease progressed on pirtobrutinib and identiﬁed selection of
+alternative-site BTK mutations, providing clinical evidence that secondary BTK mutations
+lead to resistance to noncovalent BTKis.
+Introduction
+Covalent Bruton tyrosine kinase (BTK) inhibitors (BTKis) revolutionized the treatment landscape of
+chronic lymphocytic leukemia (CLL). However, most patients who remain on therapy develop resistance,
+Submitted 27 June 2022; accepted 9 October 2022; prepublished online on Blood
+Advances First Edition 26 October 2022; final version published online 9 May 2023.
+https://doi.org/10.1182/bloodadvances.2022008447.
+*R.Z., C.I.E.S., I.L., L.P., G.G., and J.R.B. contributed equally to this study.
+†F.U., Q.W., and J.C. contributed equally to this study.
+Data are available on request from corresponding author, Jennifer R. Brown (jennifer_
+brown@dfci.harvard.edu).
+The full-text version of this article contains a data supplement.
+© 2023 by The American Society of Hematology. Licensed under Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0),
+permitting only noncommercial, nonderivative use with attribution. All other rights
+reserved.
+REGULAR ARTICLE
+9 MAY 2023 • VOLUME 7, NUMBER 9
+1929
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+most commonly (50%-75%) from substitution of Cys481 by Ser at
+the adenosine triphosphate–binding pocket of BTK, thereby abro-
+gating covalent binding of irreversible BTKis.1-4 Other less common
+substitutions
+at
+this
+same
+site
+(p.C481R/F/Y/G),
+and
+gain-
+of-function mutations in PLCγ2, occur at lower frequency than
+p.C481S but also confer resistance to covalent BTKis.5-8
+B
+0.01
+0.1
+1
+10
+100
+1000
+0
+1
+2
+3
+Drug Conc. (nM)
+pBTK / BTK
+Pirto
+IC50: Pirto   1.10 nM
+lbr      0.70 nM
+lbr
+BTK WT CLL patient
+pBTK (Y223)
+DMSO
+DMSO
+1.2
+3.7
+11.1
+33.3
+100
+300
+Pirto
+Ibr
+Anti-IgM
+1.2
+3.7
+11.1
+33.3
+100
+300
+nM
+BTK
+pPLC2 (Y1217)
+PLC2
+GAPDH
+(Representative image from n = 7)
+A
+DMSO 22%
+Pirto 9%
+Ibr 6%
+Acala 9%
+DMSO 47%
+Pirto 41%
+Ibr 37%
+Acala 45%
+DMSO 21%
+Pirto 15%
+Ibr 5%
+Acala 13%
+DMSO 12%
+Pirto 4%
+Ibr 2%
+Acala 4%
+D
+CTV
+BTK WT Pt 1
+BTK WT Pt 2
+BTK WT Pt 3
+BTK WT Pt 4
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+100
+200
+300
+400
+500
+0
+100
+200
+300
+400
+500
+0
+50
+100
+150
+200
+250
+100
+200
+300
+400
+500
+Undivided
+Undivided
+Undivided
+Undivided
+C
+0.0
+0.5
+1.0
+1.5
+2.0
+* ** *** **
+* *** ** ***
+Pirto nM
+Ibr nM
+DMSO
+1.2
+3.7
+11.1
+33.3
+100
+300
+1.2
+3.7
+11.1
+33.3
+100
+300
+pPLC2 / PLC2
+E
+F
+Pirto 1 M
+lbr 1 M
+Acala 1 M
+0
+10
+20
+30
+40
+50
+0
+10
+20
+30
+40
+Annexin V + cells %
+% proliferation inhibition
+Pirto 1 M
+lbr 1 M
+Acala 1 M
+DMSO
+*
+*
+P = .0583
+BTK WT Pt 1
+BTK WT Pt 2
+BTK WT Pt 3
+BTK WT Pt 4
+BTK WT Pt 1
+BTK WT Pt 5
+BTK WT Pt 6
+BTK WT Pt 7
+Figure 1. Pirtobrutinib reduced BCR signaling and induced apoptosis in cells from patients with BTK WT CLL. (A-C) BTK WT CLL cells were treated with either
+pirtobrutinib or ibrutinib with a dose range of 1.2 to 300 nM. Data shown are representative results from n = 7. (A) Representative western blot. (B) BTK Y223 phosphorylation
+was normalized to total BTK and IC50 values were calculated using a 4-parameter ﬁt in GraphPad Prism 9.3 software. (C) Densitometry plots for phospho-PLCγ2 (Y1217),
+normalized to total PLCγ2. Boxes represent median values with the ﬁrst and third quartiles; whiskers represent the maximum and minimum values. P values shown are for drug vs
+dimethyl sulfoxide (control). *P ≤.05, **P ≤.01, and ***P ≤.001 by mixed effect analysis of variance, Holm- ˇSid´ak test. (D-E) CellTrace Violet–labeled BTK WT CLL cells from
+patients with CLL were incubated with growth stimulants as indicated in “Methods” and treated with 1 μM of either pirtobrutinib, ibrutinib, or acalabrutinib, and cell proliferation
+was assayed by ﬂow cytometry after a 10-day culture. (D) Histograms showing CTV proﬁles of 4 patients with BTK WT. Divided cells as a percent of total cells are automatically
+calculated by the FlowJo software and included in the upper left of each panel. (E) Inhibition of CLL cell proliferation by the indicated drug treatment, normalized to dimethyl
+sulfoxide, based on data in panel D. (F) Cells from patients with BTK WT CLL were treated with 1 μM of either pirtobrutinib, ibrutinib, or acalabrutinib for 48 hours. Apoptosis was
+measured with Annexin V propidium iodide staining. Statistics were performed by one-way analysis of variance with Dunnett posttest; *P ≤.05. Graphs generated using GraphPad
+Prism software version 9.3. The data points for panels E and F are color coded by patient. Acala, acalabrutinib; Conc., concentration; CTV, CellTrace Violet; DMSO, dimethyl
+sulfoxide; GAPDH, glyceraldehyde-3-phosphate dehydrogenase; Ibr, ibrutinib; IgM, immunoglobulin M; Pirto, pirtobrutinib; Pt, patient.
+1930
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+H
+0
+20
+40
+60
+80
+100
+C481S Pt 3 (VAF 9%)
+pBTK / BTK
+(normalised to DMSO)
+Pirto
+Ibr
+Acala
+0.6 μM
+1.7 μM
+5.0 μM
+I
+0
+20
+40
+60
+80
+100
+pBTK / BTK
+(normalised to DMSO)
+C481S Pts 1 & 2 (VAFs 88% and 89%)
+Pirto
+Ibr
+Acala
+0.6 μM
+1.7 μM
+5.0 μM
+A
+HEK293 BTK WT
+Pirto
+(Representative image from n = 3)
+nM
+DMSO
+1.2
+3.7
+11.7
+33.3
+100
+300
+1.2
+3.7
+11.7
+33.3
+100
+300
+DMSO
+1.2
+3.7
+11.1
+33.3
+100
+300
+1.2
+3.7
+11.1
+33.3
+100
+300
+Ibr
+Pirto
+Ibr
+HEK293 BTK C481S
+pBTK
+(Y223)
+BTK
+pPLCγ2
+(Y1217)
+PLCγ2
+GAPDH 
+pERK
+ERK
+B
+HEK293 BTK WT
+0.01 0.1
+1
+10
+100 1000
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+Drug Conc. (nM)
+pBTK / BTK
+IC50:
+Pirto
+Pirto   4.20 nM
+Ibr      2.30 nM
+Ibr
+Drug Conc. (nM)
+pBTK / BTK
+Pirto
+Ibr
+HEK293 BTK C481S
+C
+0.01 0.1
+1
+10
+100 1000
+0.0
+0.5
+1.0
+1.5
+2.0
+IC50: Pirto   16.3 nM
+Ibr        NR
+pERK / ERK
+Pirto 1.7 μM
+Ibr 1.7 μM
+Acala 1.7 μM
+DMSO stim
+DMSO unstim
+0.0
+1.0
+2.0
+3.0
+**
+NS
+NS
+C481S Pt 1 
+C481S Pt 2 
+C481S Pt 3 
+G
+E
+0.0
+1.0
+2.0
+3.0
+4.0
+pBTK (Y223) / BTK
+**
+NS
+NS
+Pirto 0.6 μM
+Ibr 0.6 μM
+Acala 0.6 μM
+DMSO stim
+DMSO unstim
+C481S Pt 1 
+C481S Pt 2 
+C481S Pt 3 
+pPLCγ2 (Y1217) / PLCγ2
+Pirto 0.6 μM
+Ibr 0.6 μM
+Acala 0.6 μM
+DMSO stim
+DMSO unstim
+0.0
+0.5
+1.0
+1.5
+2.0
+*
+NS
+NS
+F
+C481S Pt 1 
+C481S Pt 2 
+C481S Pt 3 
+pERK
+ERK
+GAPDH 
+1.7 μM
+Anti-IgM
+(Representative image from n = 3)
+C481S Pt 1 
+DMSO
+DMSO
+Pirto
+Ibr
+Acala
+    –      +     +     +      +
+DMSO
+DMSO
+Pirto
+Ibr
+Acala
+0.6 μM
+D
+pBTK (Y223)
+BTK
+pPLCγ2 (Y1217)
+PLCγ2
+GAPDH 
+   –      +     +     +      +
+(Representative image from n = 3)
+Anti-IgM
+C481S Pt 1 
+Figure 2.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1931
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+Reversible or noncovalent BTKis have been developed to inhibit
+BTK regardless of C481S mutation and offer a therapeutic alter-
+native for patients who have experienced covalent BTKi treatment
+failure.9,10 Noncovalent BTKis do not require binding to C481, and
+they are designed to maintain activity against both wild-type (WT)
+and C481 mutations. Noncovalent BTKis such as XMU-MP-3, CGI-
+1746, fenebrutinib (GDC-0853), and nemtabrutinib (Arq-531/
+MK-1026) have demonstrated potent activity against both WT and
+C481S BTK in preclinical studies.11-14 Nemtabrutinib and pirto-
+brutinib (LOXO-305) are currently in clinical trials in B-cell
+malignancies and have demonstrated excellent antitumor efﬁcacy;
+pirtobrutinib in particular is very well tolerated.10,15
+In this study we demonstrate the preclinical efﬁcacy of pirtobrutinib
+against WT and C481S BTK by evaluating its impact on viability,
+proliferation, and chemokine production in CLL cells. We further
+demonstrate that this ex vivo activity of pirtobrutinib declines as
+patients develop clinical progression. Resistance mechanisms for
+reversible BTKis are only starting to be described.16 To investigate
+molecular mechanisms underlying disease progression, we per-
+formed whole-exome sequencing on 2 patients whose disease
+progressed on pirtobrutinib and show evidence that multiclonal
+alternative-site BTK mutations confer resistance to noncovalent
+BTKis.
+Methods
+Clinical samples
+Samples were collected from patients enrolled in our CLL tissue
+bank approved by the Dana-Farber/Harvard Cancer Center Insti-
+tutional Review Board, and written informed consent was obtained
+before sample collection. For the patients with disease progression
+on pirtobrutinib, serial peripheral blood (tumor) and saliva (normal)
+samples were collected before and at relapse during each suc-
+cessive therapy including pirtobrutinib.
+Cell culture and transfections
+The B7.10 cell line, which lacks endogenous BTK, was generated
+from the DT40 chicken lymphoma in T. Kurosaki’s laboratory as
+previously detailed.17,18 Site-directed mutagenesis was used to
+generate 6 single and 3 double BTK mutants as described previ-
+ously.19,20 Single mutants were T474I, T474L, M477I, C481R,
+C481S, and L528W; and double mutants were M477I/C481S,
+M477I/L528W, and C481S/L528W. WT BTK was used as
+control.
+Clonality estimation using ABSOLUTE
+Copy number analysis and estimation of tumor purity, ploidy, and
+cancer cell fraction (CCF) of mutations were determined using
+the computational method, ABSOLUTE.21 Phylogenetics and
+subclonal dynamics associated with resistance were modeled
+using the PhylogicNDT and Concerti tools.22-24
+For additional information, please refer to the supplemental
+Methods.
+Results
+Pirtobrutinib is cytotoxic and inhibits BCR
+signaling in cells from patients with CLL
+To conﬁrm that pirtobrutinib is active and inhibits the B-cell
+receptor (BCR) pathway, we ﬁrst investigated its activity in CLL-like
+cell lines, MEC1 and OSU-CLL. We compared the effects of pir-
+tobrutinib with the covalent inhibitors ibrutinib and acalabrutinib on
+cell viability and BCR signaling. All 3 drugs demonstrated similar
+inhibition of viability with comparable 50% inhibitory concentration
+(IC50) values and similar inhibitory effects on the BCR pathway
+(supplemental Figure 1A-D).
+To evaluate inhibition of BCR signaling in cells from patients with
+CLL with WT BTK, we treated the cells with increasing doses of
+pirtobrutinib and ibrutinib for 1 hour. Ibrutinib has been shown to
+inhibit phosphorylation of BTK, PLCγ2, and extracellular signal-
+regulated kinase (ERK).25 As expected, our data show that ibruti-
+nib inhibits phospho-BTK with an IC50 of 0.7 nM. Similarly,
+pirtobrutinib also potently inhibits phospho-BTK with an IC50 of
+1.1 nM (Figure 1A-B; supplemental Figure 2). Both drugs also
+inhibited phosphorylation of PLCγ2, the immediate downstream
+substrate of BTK, at concentrations as low as 11.1 nM (Figure 1C).
+We then evaluated the effect of pirtobrutinib on proliferation of CLL
+cells. To achieve this, CellTrace Violet–labeled CLL cells were
+stimulated to proliferate with stimulants and HS-5 stroma cocul-
+ture, and treated with 1 μM of either pirtobrutinib, ibrutinib, or
+acalabrutinib for 10 days before assessment of proliferation by ﬂow
+cytometry. All 3 drugs demonstrated similar inhibitory effects on
+proliferation (Figure 1D-E; supplemental Figure 3).
+We then compared the cytotoxicity of pirtobrutinib with ibrutinib
+and acalabrutinib in primary CLL cells from patients by exposing
+the cells to 1 μM drug concentrations. After 48 hours, we observed
+a signiﬁcant induction of apoptosis with pirtobrutinib and ibrutinib
+compared with control (Figure 1F).
+Pirtobrutinib inhibits BCR signaling mediated by
+BTK C481S
+Pirtobrutinib was designed to maintain activity despite C481
+mutation. To test this, we used an in vitro BTK C481S model of
+stably transfected HEK293 cells expressing either BTK WT or
+C481S BTK. Cells were treated with a dose range of 1.2 to
+300 nM of either pirtobrutinib or ibrutinib for 2 hours. In BTK
+Figure 2. Pirtobrutinib inhibits BCR signaling in a BTK C481S in vitro model and in cells from patients with BTK C481S CLL. (A-C) HEK293 BTK WT and HEK293
+BTK C481S cells were treated with either pirtobrutinib or ibrutinib with a dose range of 1.2 to 300 nM for 2 hours. (A) Representative western blot image from 3 independent
+experiments. BTK Y223 phosphorylation was normalized to total BTK in HEK293 BTK WT (B) and HEK293 BTK C481S (C) cells. IC50 values were calculated using a 4-
+parameter ﬁt in GraphPad Prism software version 9.3. (D-G) Cells from patients with BTK C481S CLL (n = 3) were pretreated with indicated dosages of pirtobrutinib, ibrutinib, or
+acalabrutinib for 1 hour followed by anti-IgM stimulation (10 μg/mL) for 30 minutes. (D) Representative western blot images. Quantiﬁcation of phospho-BTK (E), phospho-PLCγ2
+(F), and phospho-ERK (G). The data points are color coded by patient. P values shown are for drug vs DMSO stimulated (ie, IgM stimulated). Differences assessed using linear
+mixed effect models. *P ≤.05 and **P ≤.01. (H,I) Densitometry plots for phospho-BTK normalized to total BTK. Graphs generated using GraphPad Prism software version 9.3.
+VAF, variant allele frequency.
+1932
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+E
+Day 0
+3 mo
+6 mo
+0
+200
+400
+600
+CCL3 pg/ml
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S
+VAF 47%)
+CLL Pt 1 (WT)
+CLL Pt 4 (C481S
+VAF 4.5%)
+F
+0
+200
+400
+600
+CCL4 (pg/ml)
+Day 0
+3 mo
+6 mo
+14 mo
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S
+VAF 47%)
+CLL Pt 1 (WT)
+CLL Pt 4 (C481S
+VAF 4.5%)
+D
+pERK / ERK
+0
+1
+2
+3
+Day 0
+3 mo
+8 mo
+14 mo
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S VAF 47%)
+CLL Pt 1 (WT)
+A
+pBTK
+(Y223)
+BTK 
+GAPDH
+CLL Pt 1 (WT)
+CLL Pt 2 (WT)
+CLL Pt 3
+(C481S VAF 47%)
+pPLC2
+(Y1217) 
+PLC2
+pERK 
+ERK
+Day 0
+3 mo
+8 mo
+14 mo
+Day 0
+3 mo
+8 mo
+14 mo
+Day 0
+3 mo
+8 mo
+14 mo
+B
+0
+1
+2
+3
+pBTK(Y223)/BTK
+Day 0
+3 mo
+8 mo
+14 mo
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S VAF 47%)
+CLL Pt 1 (WT)
+**
+C
+pPLC2 (Y1217) / PLC2
+0
+1
+2
+3
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S VAF 47%)
+CLL Pt 1 (WT)
+Day 0
+3 mo
+8 mo
+14 mo
+*
+Undivided
+G
+DMSO 80%
+Pirto 58%
+DMSO 48%
+Pirto 36%
+DMSO 76%
+Pirto 52%
+DMSO 76%
+CTV
+DMSO 15%
+Pirto 5%
+DMSO 31%
+Pirto 10%
+DMSO 25%
+Pirto 0.2%
+DMSO 10%
+Pirto 1%
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S
+VAF 47%)
+CLL Pt 2 (WT)
+CLL Pt 3 (C481S
+VAF 47%)
+0
+100
+200
+300
+Undivided
+0
+30
+60
+90
+120
+Undivided
+Day 0
+0
+100
+200
+300
+Undivided
+3 mo
+8 mo
+14 mo
+0
+50
+100
+150
+Undivided
+0
+100
+200
+300
+Undivided
+0
+20
+40
+60
+80
+100
+Undivided
+0
+50
+100
+150
+200
+Undivided
+–103
+0
+20
+40
+60
+80
+100
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+–103
+103
+104
+105
+0
+Pirto 52%
+Figure 3.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1933
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+WT–expressing cells, for both pirtobrutinib and ibrutinib, we
+observed similar inhibition of phosphorylated BTK (phospho-BTK)
+at low nanomolar potency, IC50 of 4.2 nM and 2.3 nM, respectively;
+however, against the C481S mutation, ibrutinib lost its efﬁcacy
+completely whereas pirtobrutinib maintained potency with an IC50
+of 16 nM (Figure 2A-C; supplemental Figure 4). A similar inhibition
+pattern was observed in phospho-PLCγ2 with pirtobrutinib main-
+taining the same inhibition efﬁciency against both WT and mutant
+BTK (Figure 2A).
+We then treated CLL cells from 3 patients with C481S mutation
+with 0.6 μM pirtobrutinib, ibrutinib, or acalabrutinib and saw sig-
+niﬁcant decrease in phosphorylation of BTK and PLCγ2 in
+pirtobrutinib-treated cells. Although phospho-BTK was slightly
+decreased in ibrutinib-treated cells, the overall inhibitory effect of
+the covalent BTKi was greatly reduced (Figure 2D-F). Furthermore,
+we also observed a signiﬁcant reduction in phosphorylation of the
+downstream signaling molecule ERK at 1.7 μM of pirtobrutinib,
+whereas ibrutinib and acalabrutinib showed no signiﬁcant change
+(Figure 2D,G). When we grouped the 3 patients with the C481S
+BTK mutation according to their C481S VAFs, in the patient with a
+low C481S VAF of 9%, phospho-BTK inhibition with 0.6 μM pir-
+tobrutinib was ≥80%, whereas ibrutinib and acalabrutinib achieved
+60% inhibition (Figure 2H). In the other 2 patients with VAFs of
+89% and 88%, respectively, at 0.6 μM, pirtobrutinib maintained an
+inhibitory effect of ≥80% on phospho-BTK. Phospho-BTK inhibi-
+tion of ibrutinib was only ~50% and acalabrutinib had an inhibitory
+effect of <10%, consistent with the known lack of acalabrutinib
+activity against C481S, whereas ibrutinib retains some noncovalent
+inhibition, particularly at higher concentrations (Figure 2I).2,26
+Pirtobrutinib is cytotoxic and reduces cytokine
+secretion in cells from patients with BTK C481S CLL
+CCL3 and CCL4 are associated with tumor burden in CLL and
+have proven to be an excellent biomarker of response to
+BTKis.27,28 To evaluate the effect of pirtobrutinib on cytokine
+secretion, CLL cells from patients with either BTK WT or BTK
+C481S were treated with 1 μM pirtobrutinib, ibrutinib, or acalab-
+rutinib for 24 hours, and the levels of CCL3 and CCL4 in the
+supernatants were analyzed by enzyme-linked immunosorbent
+assay. Although pirtobrutinib, ibrutinib, and acalabrutinib inhibited
+CCL3 and CCL4 at similar levels in BTK WT cells, only pirto-
+brutinib signiﬁcantly inhibited both cytokines in C481S cells
+(supplemental Figure 5A-B).
+Pirtobrutinib inhibits BCR signaling and cytokine
+secretion and proliferation in responding patients
+with CLL
+We evaluated the effect of pirtobrutinib on BCR signaling and
+cytokine secretion and proliferation in CLL cells from responding
+patients currently enrolled in the pirtobrutinib phase 1 trial. We
+looked at 3 responding patients in total (2 with BTK WT and 1 with
+BTK C481S). Although phospho-BTK was initially increased in 1
+patient with WT BTK at 3 months, densitometry analysis from all 3
+patients showed a signiﬁcant decrease in phospho-BTK and
+phospho-PLCγ2 at 14 months compared with baseline, irre-
+spective of BTK mutation status (Figure 3A-C). Similarly, although
+elevated phospho-ERK was observed in cells from 2 patients at 3
+months, all 3 patients showed an overall decrease in phospho-ERK
+in their CLL cells by 14 months (Figure 3D).
+All responding patients tested showed steady plasma CCL3 levels
+across all time points tested (Figure 3E). Similarly, all patients
+tested maintained CCL4 at low levels up to 14 months (Figure 3F).
+To assay the effect of pirtobrutinib on proliferation, CellTrace
+Violet–labeled cells were treated with 1 μM pirtobrutinib, and cell
+proliferation was assayed by ﬂow cytometry after 10-day culture.
+We observed steady inhibition of proliferation across all time points
+in both BTK WT and C481S cells (Figure 3G).
+At progression on pirtobrutinib, CLL cells show
+reactivated BCR signaling, cytokine secretion, and
+increased cell viability
+We looked at 3 patients whose disease progressed during pirto-
+brutinib therapy and found an increase in BCR signaling pathway
+activation, as evidenced by increased phosphorylation of BTK, AKT,
+and ERK at progression (Figure 4A-C). Both CCL3 and CCL4
+levels rapidly declined in all 3 patients at 3 months while responding
+and then sharply increased at progression (Figure 4D-E). Further-
+more, the CLL cells from all 3 patients at progression were more
+resistant to pirtobrutinib in vitro, with signiﬁcantly less reduction in
+viability with in vitro drug treatment (Figure 4F).
+We further evaluated the effect of pirtobrutinib in vitro, comparing
+cells from 2 patients at progression vs baseline. At the progression
+time points, the CLL cells demonstrated reduced induction of
+apoptosis compared with cells at baseline, after in vitro pirto-
+brutinib treatment (Figure 4G-H). Similarly, for both patients, cells
+at progression showed increased resistance to inhibition of prolif-
+eration in vitro by pirtobrutinib (Figure 4I-J).
+Pirtobrutinib resistance is associated with
+second-site BTK mutations
+For 2 patients whose disease progressed on pirtobrutinib, serial
+peripheral blood and matched normal samples were collected for
+whole-exome and RNA sequencing, including before and at relapse
+on pirtobrutinib (Table 1). One patient with CLL (patient-identifying
+code, CLL Pt 6) had 16 samples including pretreatment, on-
+treatment, and at relapse on acalabrutinib, vecabrutinib, and pirto-
+brutinib (Table 1). The phylogenetic tree shows a truncal clone
+Figure 3. Pirtobrutinib inhibits BCR signaling and cytokine secretion and proliferation in responding cells from patients with BTK WT and C481S CLL. (A-D)
+Proteins were evaluated in defrosted lysates, without in vitro treatment, from cells from 2 patients with BTK WT and 1 patient with BTK C481S CLL, and levels of phospho-BTK,
+phospho-PLCγ2, and phospho-ERK were analyzed by immunoblotting. (A) Western blots for each patient. (B-D) Densitometry plots for phospho-BTK, phospho-PLCγ2, and
+phospho-ERK normalized to the corresponding total protein. Differences assessed by analysis of variance followed by Tukey test. (E-F) Plasma CCL3 and CCL4 levels measured
+by Luminex multiplex assay and enzyme-linked immunosorbent assay, respectively. Graphs generated using GraphPad Prism software version 9.3. Data points in panels B-F are
+color coded by patient. (G) CellTrace Violet–labeled BTK WT and BTK C481S CLL cells were cocultured with HS-5 green ﬂuorescent protein stroma cells, incubated with
+growth stimulants as indicated in “Methods” and treated in vitro with 1 μM pirtobrutinib. Cell proliferation was assayed by ﬂow cytometry after a 10-day culture. Divided cells as a
+percent of total cells are automatically calculated by the FlowJo software and included in the upper left of each panel. *P ≤.05 and **P ≤.01.
+1934
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+I
+20
+% proliferation inhibition
+0
+5
+10
+15
+Day 0
+3 mo (resp)
+9 mo (prog)
+13 mo (prog)
+CLL Pt 6
+G
+2.0
+0.0
+0.5
+1.0
+1.5
+Annexin V +
+(Fold change vs DMSO)
+Day 0
+3 mo (resp)
+9 mo (prog)
+13 mo (prog)
+CLL Pt 6
+H
+Annexin V +
+(Fold change vs DMSO)
+CLL Pt 7
+0
+1
+2
+3
+2 mo (resp)
+3 mo (resp)
+8 mo (prog)
+8.5 mo (prog)
+Day 0
+2 mo (resp)
+3 mo (resp)
+8 mo (prog)
+8.5 mo (prog)
+Day 0
+CLL Pt 7
+0
+5
+10
+15
+% proliferation inhibition
+J
+F
+Viability %
+(norm. to DMSO)
+0.01
+0.1
+1
+0
+50
+100
+Resp
+Prog
+IC50: 0.4 ± 0.09 M
+** *** ***
+*
+Pirto (M)
+N = 3
+D
+0
+500
+1000
+1500
+CCL3 pg/ml
+CLL  Pt 7
+CLL  Pt 5
+CLL  Pt 6
+3 mo (resp)
+Prog
+Day 0
+*
+E
+0
+500
+1000
+1500
+CCL4 (pg/ml)
+CLL  Pt 7
+CLL  Pt 5
+CLL  Pt 6
+3 mo (resp)
+Prog
+Day 0
+*
+A
+Day 0
+1 mo (resp)
+3 mo (resp)
+6 mo (resp)
+9 mo (prog)
+12 mo (prog)
+13 mo (prog)
+pBTK (Y223)
+BTK 
+GAPDH
+pERK 
+ERK
+pAKT (S473)
+AKT
+1 week (resp)
+Day 0
+2 mo (resp)
+3 mo (resp)
+8 mo (prog)
+8.5 mo (prog)
+3 mo (resp)
+4 mo (prog)
+4.5 mo (prog)
+CLL Pt 5
+(BTK C481S)
+(PLC2 R665W) 
+CLL Pt 6 
+(BTK C481S/T474I)
+CLL Pt 7 
+(BTK C481S/L528W)
+B
+0
+1
+2
+3
+4
+pBTK (Y223)/BTK
+CLL  Pt 7
+CLL  Pt 5
+CLL  Pt 6
+Resp 1
+Resp 2
+Prog 1
+Prog 2
+C
+0
+1
+2
+3
+4
+5
+phosphoprotein/total protein
+pERK/ERK
+pAKT/AKT
+Resp
+Prog
+Resp
+Prog
+CLL  Pt 7
+CLL  Pt 5
+CLL  Pt 6
+**
+P = .0518
+Figure 4. CLL cells from patients with disease progression on pirtobrutinib show increased BCR signaling, increased cytokine secretion, reduced inhibition of
+proliferation, reduced in vitro cell death, and increased cell viability. (A-J) Primary CLL cells obtained at baseline (day 0), responding, and progression time points during
+pirtobrutinib treatment were used in the analysis. (A) Western blots of lysates from CLL cells of 3 patients whose disease progressed, looking at total and phospho-BTK, total and
+phospho-ERK, total and phospho-AKT, and GAPDH without additional in vitro drug treatment. (B-C) Densitometry plots for phospho-BTK, phospho-ERK, and phospho-AKT
+normalized to the corresponding total protein. (D-E) Plasma CCL3 and CCL4 levels measured by Luminex multiplex assay and enzyme-linked immunosorbent assay, respectively.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1935
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+(green) in all samples, carrying mutations in known CLL cancer
+driver genes (Figure 5A-B; supplemental Tables 1 and 3). Clonal
+analysis of samples during acalabrutinib treatment shows steady
+selection of a subclone (orange) harboring BTK p.C481S mutation,
+a known mechanism of acalabrutinib resistance, with CCF of 92%
+(95% conﬁdence interval, 87-98) at relapse. This clone maintained
+this CCF level during therapy with vecabrutinib, a noncovalent BTKi
+with lower clinical effectiveness that is no longer in development in
+CLL,29 but then steadily decreased during effective therapy with
+pirtobrutinib. Concerti’s time-scaled phylogenetic tree shows the
+birth of a new clone containing the BTK gatekeeper mutation,
+p.T474I, during acalabrutinib treatment, which then grows rapidly
+under pirtobrutinib treatment, dominating nearly the entire cancer
+cell population and replacing the prior p.C481S clone (Figure 5A-C;
+supplemental Table 5). This complete clonal shift during pirtobrutinib
+treatment suggests that pirtobrutinib effectively inhibits the p.C481S
+clone, whereas the p.T474I gatekeeper clone is likely driving resis-
+tance in this patient. In support of this, we also observed an addi-
+tional gatekeeper clone at low CCF, BTK p.T474L, as well as
+another BTK mutation, p.M477I (Figure 5A-C; Table 1). Manual
+inspection of variant calls using Integrative Genomics Viewer30 (IGV)
+showed that BTK p.M477I was in cis with the dominant p.T474I
+clone, indicating that they co-occur in the same cells. In contrast, the
+p.T474L is in trans to p.M477I, that is, in different alleles
+(supplemental Figure 6A). Inspection of RNA sequencing reads on
+IGV conﬁrmed these resistance mutations in similar clonal pro-
+portions to the DNA (supplemental Figure 7A; Table 1). Treatment
+with pirtobrutinib also led to the development of another subclone
+from the p.T474I-containing clone, carrying acquired mutations in the
+known cancer-related genes, RAC1 and TP53BP2 (Figure 5A-C;
+supplemental Table 1).
+Another patient with CLL (CLL Pt 7) had 10 samples evaluated
+before, during, and at relapse on ibrutinib and pirtobrutinib
+(Table 1). During ibrutinib therapy, we observed a steady increase
+in a clone (cyan) harboring mutations in known CLL driver genes,
+TP53 p.S240G and SF3B1 p.K666N, reaching CCFs of >40% at
+relapse on ibrutinib (Figure 5D-E; supplemental Tables 2 and 4).
+We also noted a signiﬁcant increase (>25%) in a clone (purple)
+carrying the BTK p.C481R mutation (CCF, 28%) and a 5%
+increase in a clone (black; CCF, 14%) harboring the mutations
+BTK p.C481S and TP53 p.R196*. All clones remained roughly
+stable during chimeric antigen receptor T-cell therapy between
+ibrutinib and pirtobrutinib. During pirtobrutinib treatment, the purple
+and black clones in the phylogenetic plot displayed different
+dynamics, both shifting their CCFs. The purple clone, that harbors
+BTK p.C481R, decreased to a CCF of 15%, whereas the black
+clone, which carries the BTK p.C481S and TP53 p.R196* muta-
+tions, increased its CCF to 31% at relapse on pirtobrutinib
+(Figure 5D; supplemental Tables 2 and 4). Concerti’s phylogenetic
+tree also captures the birth of a resistant clone harboring BTK
+p.L528W, which increased during pirtobrutinib therapy, reaching a
+CCF of 30% at time of progression (Figure 5F; supplemental
+Figure 6B; supplemental Table 6). BTK p.L528W has been
+described as conferring resistance to ibrutinib and zanubrutinib in
+CLL and has recently been associated with resistance to pirto-
+brutinib.16 The rapid increase of BTK p.L528W CCF from 2% to
+30% with disease progression during pirtobrutinib suggests that
+BTK p.L528W mutation may be contributing to resistance in 1
+patient with CLL (CLL Pt 7). Furthermore, this mutation is prefer-
+entially expressed in our RNA sequencing data, rising from 1% VAF
+at pirtobrutinib initiation to 43% at 3 months and 82% at pro-
+gression (supplemental Figure 7B). This clone also carries a TP53
+p.Q317* at low levels (CCF, 6%), which may also be contributing
+to disease progression (Figure 5C-F; supplemental Tables 2
+and 6).
+Docking pirtobrutinib on BTK
+We sought to understand pirtobrutinib binding to BTK to under-
+stand the effect of these mutations. Covalent and noncovalent
+BTKis bind predominantly in different orientations. Analysis of
+residues related to binding distance in the structures indicated that
+many of the binding residues are still shared, although there are
+also type-speciﬁc interactions.31 Wang et al reported that pirto-
+brutinib would bind similarly to ibrutinib.16 We combined our
+experimental evidence with that of Wang et al and conclude that
+pirtobrutinib likely binds in a mode more similar to other non-
+covalent inhibitors. Our analysis of the binding sites was based on
+4 experimental inhibitor structures: 2 covalent (ibrutinib and zanu-
+brutinib) and 2 noncovalent inhibitors (fenebrutinib and RN486).31
+Combined, the 2 studies indicate variations at positions likely to
+affect pirtobrutinib binding. Wang et al indicated 5 such residues:
+V416, A428, M437, T474, and L528. M437 has not been found to
+interact with inhibitors of either class. V416 interacts with ibrutinib
+but not with the other covalent inhibitor, zanubrutinib, whereas it
+binds to both noncovalent inhibitors. A428 binds to zanubrutinib
+and interacts with both noncovalently binding molecules. T474
+binds to all 4 investigated inhibitors. L528 binds to 1 representative
+from each category. Combined, these results suggest that residues
+that affect pirtobrutinib binding may be in common with other
+noncovalent inhibitors. When we combine our results for variants
+M477 and C481, which bind equally well to both types of inhibitors,
+the binding data support a noncovalent inhibitor binding mode. The
+likely binding mode was obtained by docking pirtobrutinib to the
+structure of BTK with CGI-1746. Pirtobrutinib includes highly polar
+residues, with 3 and 1 ﬂuoride residues, respectively, located at
+opposite ends of the molecule. The single ﬂuoride group was
+docked to enable interaction with the CGI-1746 isopropyl group.
+The opposite end could interact with the sulfhydryl group of C481
+and orient the molecule (Figure 6A). Pirtobrutinib is a ﬂexible
+Figure 4 (continued) Data points in panels B to E are color coded by patient. (F) CLL cells at responding and progression time points for each of the 3 patients were incubated
+with indicated doses of pirtobrutinib for 48 hours and effect on viability was analyzed using CellTitre-Glo reagent. Data reported as mean ± standard error of the mean from n = 3.
+(G-J) Cells were cocultured with HS-5 green ﬂuorescent protein stroma cells. (G-H) Apoptosis was induced by 1 μM pirtobrutinib for 48 hours and analyzed by ﬂow cytometry. (I-J)
+CTV-labeled cells were stimulated to proliferate as described in “Methods” and incubated with or without 1 μM pirtobrutinib with proliferation analyzed by ﬂow cytometry. Data in
+panels G-J represent mean from 3 technical replicates. Graphs generated using GraphPad Prism software version 9.3. Analysis of variance and paired t test were used to
+calculate signiﬁcance. *P ≤.05 and **P ≤.01. Prog, progression; resp, responding.
+1936
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+Table 1. Time points and genetic characteristics of patients with CLL and disease progression
+Patient-
+identifying
+code
+Time point*
+Sample ID
+Drug
+Days from Dx
+WBC count
+Absolute
+lymphocyte count
+BTK mutations, CCF (%)
+(whole-exome sequencing)
+BTK mutations, VAF (%) (RNA)
+CLL Pt 6
+CLL Pt 6 #1
+Pretreatment
+97
+139.6
+Not available
+No BTK mutation detected
+No BTK mutation detected
+CLL Pt 6 #2
+After BR+L, before Acala
+868
+181.45
+163.31
+No BTK mutation detected
+No BTK mutation detected
+CLL Pt 6 #3
+Acala
+1184
+64.46
+59.95
+No BTK mutation detected
+No BTK mutation detected
+CLL Pt 6 #4
+Acala
+1533
+19.48
+14.81
+No BTK mutation detected
+No BTK mutation detected
+CLL Pt 6 #5
+Acala
+1878
+21.42
+16.06
+p.C481S, 16
+p.C481S, 8
+CLL Pt 6 #6
+Acala
+2037
+20.14
+13.89
+p.C481S, 47; p.T474I, 3
+p.C481S, 64; p.T474I, 2
+CLL Pt 6 #7
+Acala
+2212
+51.4
+40.61
+p.C481S, 92; p.T474I, 4
+CLL Pt 6 #8
+Veca
+2261
+102.61
+96.46
+p.C481S, 100; p.T474I, 9
+p.C481S, 93; p.T474I, 3
+CLL Pt 6 #9
+Veca
+2345
+237.38
+227.88
+p.C481S, 93; p.T474I, 3
+p.C481S, 91; p.T474I, 2
+CLL Pt 6 #10
+Veca
+2429
+356.2
+338.39
+p.C481S, 97; p.T474I, 2
+p.C481S, 91; p.T474I, 2
+CLL Pt 6 #11
+Veca
+2492
+359.32
+341.36
+p.C481S, 97; p.T474I, 3
+p.C481S, 86; p.T474I, 6
+D 0
+CLL Pt 6 #12
+Pirto
+2599
+363.47
+341.66
+p.C481S, 95; p.T474I, 5
+p.C481S, 87; p.T474I, 7
+3 mo
+CLL Pt 6 #13
+Pirto
+2681
+148.37
+139.47
+p.C481S, 69; p.T474I, 24
+p.C481S, 40; p.T474I, 32
+6 mo
+CLL Pt 6 #14
+Pirto
+2765
+74.81
+65.08
+p.C481S, 31; p.T474I, 62; p.T474L, 3
+p.C481S, 12; p.T474I, 71; p.T474L, 2
+9 mo
+CLL Pt 6 #15
+Pirto
+2856
+61.58
+54.81
+p.C481S, 6; p.T474I, 89; p.T474L,
+4; p.M477I, 2
+p.C481S, <1; p.T474I, 85; p.T474L, 6
+12 mo
+CLL Pt 6 #16
+Pirto
+2941
+105.72
+97.26
+p.C481S, 2; p.T474I, 99; p.T474L,
+5; p.M477I, 2
+p.C481S, <1; p.T474I, 87; p.T474L, 8
+CLL Pt 7
+CLL Pt 7 #1
+After FCR
+2109
+9.5
+4.93
+No BTK mutation detected
+CLL Pt 7 #2
+Ibr
+3266
+4.48
+2.52
+No BTK mutation detected
+CLL Pt 7 #3
+Ibr
+4484
+21.32
+17.51
+p.C481S, 6; p.C481R, 33
+p.C481S, 7; p.C481R, 18
+CLL Pt 7 #4
+Ibr after progression
+4532
+70.97
+38.32
+p.C481S, 11; p.C481R, 34
+p.C481S, 14; p.C481R, 40
+CLL Pt 7 #5
+KTE-X19 CAR-T therapy
+4800
+12.86
+8.33
+p.C481S, 16; p.C481R, 31; p.L528W, 1
+p.C481S, 25; p.C481R, 24; p.L528W, 2
+CLL Pt 7 #6
+KTE-X19 CAR-T
+4813
+27.53
+23.18
+p.C481S, 4; p.C481R, 29; p.L528W, 1
+p.C481S, 21; p.C481R, 27; p.L528W, 2
+D 0
+CLL Pt 7 #7
+Pirto
+4918
+26.71
+21.9
+p.C481S, 18; p.C481R, 25; p.L528W, 2
+p.C481S, 23; p.C481R, 51
+3 mo
+CLL Pt 7 #8
+Pirto
+5009
+54.04
+50.69
+p.C481S, 37; p.C481R, 28; p.L528W, 4
+p.C481S, 22; p.C481R, 11; p.L528W, 43
+5.8 mo
+CLL Pt 7 #9
+Pirto
+5094
+27.2
+19.72
+p.C481S, 41; p.C481R, 22; p.L528W, 7
+p.C481S, 7; p.C481R, 5; p.L528W, 82
+8 mo
+CLL Pt 7 #10
+Pirto after progression
+5161
+30.85
+26.99
+p.C481S, 28; p.C481R, 20; p.L528W, 30
+p.C481S, 5; p.C481R, 2; p.L528W, 91
+p.C481S (c.1442G>C); p.C481R (c.1441T>C).
+p.T474I (c.1421C>T); p.T474L (two nucleotide changes c.1420A>C; c.1421C>T).
+p.M477I (c.1431G>C).
+p.L528W (c.1583T>G).
+BR + L, bendamustine, rituximab, and lenalidomide; KTE-X19 CAR-T, experimental anti-CD19 chimeric antigen receptor T-cell therapy (Kite); FCR, ﬂudarabine, cyclophosphamide, and rituximab; Veca, vecabrutinib.
+*Time point indicates the sample time points (months after pirtobrutinib treatment), which correspond to those used in Figure 4.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1937
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+A
+97
+868
+1184
+1533
+1878
+2037
+2212
+2261
+2345
+2429
+2492
+2599
+2681
+2765
+2856
+2941
+BTK p.C481S
+BTK p.T474I
+RAC1 p.K153E
+BTK p.M477I
+BTK p.T474L
+CCF
+1.0
+0.8
+0.6
+0.4
+0.2
+0.0
+BR+L
+Pirto
+Acala
+Veca
+CLL Pt 6
+Days from diagnosis
+TP53 p.Y126C
+DDX3X p.Y104*
+POT1 p.H245L
+D
+CCF
+1.0
+0.8
+0.6
+0.4
+0.2
+0.0
+TP53 p.S240G
+SF3B1 p.K666N
+TP53 p.H179Y
+TP53 p.Q317*
+BTK p.C481R
+TP53 p.R196*
+BTK p.C481S
+SF3B1 p.K666T
+Speb
+Ven
+Ibr
+CAR-T
+Pirto
+BTK p.L528W
+SF3B1 p.K666N
+CLL Pt 7
+Days from diagnosis
+2109
+3266
+4484
+4532
+4800
+4813
+4918
+5009
+5161
+5094
+IKZF3 p.L162R
+E
+BTK p.C481R
+1
+2
+3
+4
+5
+6
+7
+8
+normal
+18
+4
+10
+19
+5
+16
+1
+12
+TP53 p.Q317*
+BTK p.L528W
+TP53 p.R196*
+BTK p.C481S
+TP53 p.S240G
+SF3B1 p.K666N
+SF3B1 p.K666N
+TP53 p.H179Y
+CLL Pt 7
+IKZF3 p.L162R
+F
+BTK p.C481R
+Speb
+Ven
+Ibr
+BTK p.L528W
+TP53 p.Q317*
+SF3B1 p.K666N
+TP53 p.S240G
+SF3B1 p.K666N
+SF3B1 p.K666T
+TP53 p.R196*
+TP53 p.H179Y
+CAR-T
+Pirto
+Clone Size 
+by CCF Interval
+[0.05, 0.1]  
+[0.5, 0.7]  
+[0.7, 0.9] 
+[0.3, 0.5]  
+[0.1, 0.3]   
+[0.9, 1.0] 
+[0.0, 0.05]   
+CLL Pt 7
+IKZF3 p.L162R
+BTK p.C481S
+B
+1
+2
+3
+4
+6
+**BTK p.T474L and
+BTK p.M477I in trans
+24
+7
+1
+1
+1
+1
+36
+BTK p.C481S
+BTK p.T474I
+RAC1 p.K153E
+BTK p.T474L**
+BTK p.M477I**
+CLL Pt 6
+TP53 p.Y126C
+DDX3X p.Y104*
+POT1 p.H245L
+normal
+C
+Clone Size 
+by CCF Interval
+[0.05, 0.1]  
+[0.5, 0.7]  
+[0.7, 0.9] 
+[0.3, 0.5]  
+[0.1, 0.3]   
+[0.9, 1.0] 
+[0.0, 0.05]   
+TP53 p.Y126C
+DDX3X p.Y104*
+BTK p.T474L
+BTK p.C481S
+BTK p.T474I
+BR+L
+Pirto
+Acala
+Veca
+BTK p.M477I
+RAC1 p.K153E
+POT1 p.H245L
+CLL Pt 6
+Figure 5.
+1938
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+molecule, thus, bond angles were adjusted and rotated to make it
+ﬁt into the binding pocket.
+BTK gatekeeper mutations T474I and T474L, but
+not other observed BTK mutations, can activate
+proximal BCR signaling
+To investigate the impact of the mutations on BCR activation, we
+generated 6 single and 3 double mutants using site-directed
+mutagenesis and expressed them in the BTK-null DT40 B-cell
+line. Supplemental Table 7 summarizes the results obtained for the
+9 variants and Figure 6B-E depicts representative results. Only
+T474I, T474L, and C481S mutants showed adequate kinase
+activity, whereas all the other single or double mutants (M477I,
+M477I/C481S, M477I/L528W, C481R, L528W, and C481S/
+L528W) essentially lacked kinase activity as judged by phosphor-
+ylation of BTK at Y22319,20 and PLCγ2 at Y753 (Figure 6B-E;
+supplemental Table 7). Mutations that lack kinase activity are
+intrinsically resistant to inhibitors of kinase activity, thus, drug
+sensitivity could only be assessed for mutations that activate
+proximal BCR signaling. The C481S variant was resistant to
+0.5 μM ibrutinib, as expected, but not to 0.1 μM pirtobrutinib
+(Figure 6B). Conversely, the T474I and T474L variants were sen-
+sitive to 0.5 μM ibrutinib but resistant to 0.1 μM pirtobrutinib
+(Figure 6E). Interestingly, phosphorylation of AKT and ERK were
+retained downstream, even with mutations that failed to activate
+proximal BCR signaling (Figure 6B-E; supplemental Figure 8A-D).
+Although a slight inhibition of phosphorylation of AKT and ERK was
+observed in pirtobrutinib-treated cells with the C481S variant,
+these pathways were not inhibited by ibrutinib or pirtobrutinib in
+cells expressing any of the other mutations. Furthermore, phos-
+phorylation of AKT and ERK was also observed in the WT B7.10
+cell line, which lacks endogenous BTK, demonstrating signiﬁcant
+activation of these pathways independent of BTK (Figure 6F).
+Discussion
+Emergent resistance against covalent BTKis is a growing problem
+in CLL, from 50% to 75% of patients developing mutation of the
+target Cys481 residue at the adenosine triphosphate–binding
+pocket of BTK, thereby abrogating covalent BTKi binding.1-4
+Here, we characterize the activity of the noncovalent BTKi pirto-
+brutinib against WT and C481S-mutant BTK, using both an in vitro
+C481S BTK model system and primary CLL cells from patients
+with CLL. We demonstrate that pirtobrutinib maintains activity
+against C481S and inhibits the BCR pathway similarly to C481
+WT CLL, providing rationale for its study in patients refractory to
+covalent BTKis, where signiﬁcant clinical activity, and, in fact,
+comparable clinical activity, to that seen against C481 WT CLL,
+has already been demonstrated.10 Furthermore, we demonstrate
+that patients responding to pirtobrutinib on clinical trial show
+sustained inhibition of BCR signaling, whereas patients in whom
+disease progression had started show reactivation of BCR
+signaling. This reactivation is associated with the development of
+multiclonal second-site BTK mutations, many of which lack the
+ability to activate proximal BCR signaling in a heterologous cell line
+model. The convergent evolution and oligoclonality of these BTK
+mutations are striking, and consistent with prior observations with
+BTK mutations occurring during therapy with covalent inhibitors.
+Also striking is the reactivation of phosphorylation of AKT and ERK
+further downstream of the BCR, even in the absence of proximal
+signaling and indeed in the absence of BTK in a heterologous cell
+line.
+Consistent with a recent report,32 our data show that pirtobrutinib
+inhibits BCR signaling downstream of both WT and C481S CLL in a
+heterologous cell line model and in patient cells.32 Although Aslan
+et al32 observed no clear difference in response between pirto-
+brutinib and ibrutinib, in vitro incubations of CLL C481S cells in this
+study demonstrated a noticeably greater sensitivity to pirtobrutinib
+compared with ibrutinib or acalabrutinib, an observation that is likely
+attributable to the high C481S VAFs in samples in this study
+compared with samples in the aforementioned study.32 In cells of
+patients with CLL, pirtobrutinib signiﬁcantly reduces secretion of
+CCL3 and CCL4 in vitro, regardless of C481S. Similarly, CLL cells
+from patients responding to pirtobrutinib on the clinical trial show
+inhibited BCR signaling and cytokine secretion and proliferation
+in vitro. The increase in phospho-BTK and phospho-ERK observed
+after 2 cycles of therapy in some responding patients is consistent
+with recently published data, which showed that the initial decrease
+in BCR signaling in CLL cells from patients after pirtobrutinib
+treatment was reversed after 2 cycles of therapy.32 Our analysis,
+however, shows that prolonged treatment up to 14 months in
+responding patients leads to an overall decrease in BCR signaling.
+At time of progression, however, we see reactivated phospho-BTK,
+phospho-ERK, and phospho-AKT as well as decreased cellular
+responsiveness to pirtobrutinib treatment in vitro, as measured by
+inhibition of proliferation, induction of apoptosis, and secretion of
+CCL3 and CCL4.
+We evaluated the genetic mechanisms of resistance in 2 patients
+whose disease initially responded but then progressed on pirto-
+brutinib. Our data provide clinical evidence that gatekeeper and
+alternative-site BTK mutations lead to resistance to noncovalent
+BTKis, similar to a recent report.16 The BTK gatekeeper mutation
+p.T474I identiﬁed in a patient with CLL (CLL Pt 6) showed strong
+clonal selection during pirtobrutinib therapy, effectively replacing
+the prior C481S clone and demonstrating that mutation of this
+gatekeeper residue leads to clinical resistance to this noncovalent
+inhibitor. This rapid selection contrasts with the ﬁndings during
+treatment with vecabrutinib, a noncovalent BTKi with lesser clinical
+activity, when the p.C481S mutation remained largely unchanged.
+During pirtobrutinib therapy, the same clone that contains p.T474I
+Figure 5. BTK gatekeeper and alternate-site mutation selected during pirtobrutinib therapy for CLL. (A-F) Subclonal structure and clonal evolution of somatic
+mutations for 2 patients with CLL (CLL Pt 6 and CLL Pt 7) that progressed on pirtobrutinib derived using PhylogicNDT and Concerti. (A,D) Clonal evolution of somatic mutations
+derived using PhylogicNDT for 2 patients (CLL Pt 6 and CLL Pt 7). Each line represents the CCF distribution dynamics of mutation clusters, generated using the PhylogicNDT
+Cluster tool, at different time points. Shading represents the 95% conﬁdence interval. (B,E) Phylogenetic tree (built by the PhylogicNDT BuildTree tool) represents the
+clonal and subclonal architecture. (C,F) Time-scaled Concerti ﬁsh plot and tumor evolution tree where width of the ﬁsh plot corresponds to absolute lymphocyte counts for
+the 2 patients (CLL Pt 6 and CLL Pt 7). Clones are sized proportionally to their prevalence and the tree is aligned by sample time point. Subclones are matched in color across the
+panels for each patient. Speb, spebrutinib; Ven, venetoclax.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1939
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+B
+pBTK (Y223)
+pBTK (Y551)
+BTK
+Actin
+Anti-IgM/Perv
+ERK
+AKT
+PLC2
+pPLC2 (Y753)
+pAKT (S473)
+pERK (Y204)
+BTK C481R
+BTK C481S
++
+–
++
++
++
+–
++
++
+Pirto 0.1M
+Ibr 0.5 M
+Pirto 0.1M
+Ibr 0.5 M
+DMSO
+DMSO
+DMSO
+DMSO
+A
+Ibrutinib pirtobrutinib
+M437
+A428
+V416
+T474
+L528
+M477
+C481
+C
++
+–
++
++
++
+–
++
++
+BTK M477I
+BTK WT
+Pirto 0.1M
+Ibr 0.5 M
+Pirto 0.1M
+Ibr 0.5 M
+DMSO
+DMSO
+DMSO
+DMSO
+pBTK (Y223)
+pBTK (Y551)
+BTK
+Actin
+Anti-IgM/Perv
+ERK
+AKT
+PLC2
+pPLC2 (Y753)
+pAKT (S473)
+pERK (Y204)
+D
+BTK L528W
+Pirto 0.1M
+Ibr 0.5 M
+DMSO
+DMSO
++
+–
++
++
+pBTK (Y223)
+pBTK (Y551)
+BTK
+Actin
+Anti-IgM/Perv
+ERK
+AKT
+PLC2
+pPLC2 (Y753)
+pAKT (S473)
+pERK (Y204)
+E
+BTK T474I
+BTK T474L
++
+–
++
++
++
+–
++
++
+Pirto 0.1M
+Ibr 0.5 M
+Pirto 0.1M
+Ibr 0.5 M
+DMSO
+DMSO
+DMSO
+DMSO
+pBTK (Y223)
+pBTK (Y551)
+BTK
+Actin
+Anti-IgM/Perv
+ERK
+AKT
+PLC2
+pPLC2 (Y753)
+pAKT (S473)
+pERK (Y204)
+F
+Wild-Type B7.10 (BTK null)
++
+–
++
++
++
+–
++
++
+Pirto 0.1M
+Ibr 0.5 M
+Pirto 0.1M
+Ibr 0.5 M
+DMSO
+DMSO
+DMSO
+DMSO
+pBTK (Y223)
+pBTK (Y551)
+BTK
+Actin
+Anti-IgM/Perv
+ERK
+AKT
+PLC2
+pPLC2 (Y753)
+pAKT (S473)
+pERK (Y204)
+Figure 6. BTK gatekeeper mutations T474I and T474L, but not other observed BTK mutations, can activate proximal BCR signaling. (A) Model of human BTK kinase
+domain binding modes of covalent inhibitor ibrutinib (orange) and noncovalent inhibitor pirtobrutinib (cyan). Upper domain is in light gray and lower domain is in dark gray. (B-E)
+B7.10 cells (DT40 cells lacking endogenous BTK) were transfected with BTK C481R, BTK M477I, BTK L528W, T474I BTK, T474L BTK, or C481S BTK, or WT BTK as a
+control. Cells were starved in medium not supplemented with serum 36 hours after transfection, and treated with 0.1 μM pirtobrutinib for 2.5 hours, or 0.5 μM ibrutinib or DMSO
+1940
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+also harbors a novel previously undescribed BTK mutation identi-
+ﬁed as p.M477I that is present at very low CCF (2%) in the same
+cells as p.T474I, and that we show to be inactivating and is only
+acquired at progression on pirtobrutinib. Furthermore, we observed
+convergent evolution affecting p.T474, with a subclone containing
+a p.T474L mutation, a novel mutation we, to the best of our
+knowledge, report clinically for the ﬁrst time, and which leads to an
+active kinase, similar to T474I. This mutation is present at very low
+CCF but was conﬁrmed by manual review using 3 orthogonal
+methods (supplemental Figures 6, 7, and 9). The clinical signiﬁ-
+cance of multiclonal BTK mutations at very low CCF remains to be
+determined but is common in patients who are progressing on
+covalent BTKis, and suggests strong selection pressure leading to
+convergent evolution. The predominance of 2 T474 mutations that
+retain BTK activity in this patient suggest that the mechanism of
+resistance here is associated with reactivation of the proximal BCR.
+The BTK p.L528W mutation selected in 1 patient with CLL (CLL Pt 7)
+during pirtobrutinib therapy has previously been reported at a
+low CCF of 8% in a patient relapsing on ibrutinib, in patients on
+zanubrutinib at progression (median VAF, 35%), and recently in 4
+patients who progressed on pirtobrutinib.16,33,34 Computational
+structural modeling has shown that the p.L528W mutation causes
+steric hindrance and interferes with the binding of the covalent
+inhibitors ibrutinib and zanubrutinib to BTK.16,35 Functional char-
+acterization of this mutation by us and by Wang et al16 demon-
+strates that this mutation inactivates BTK. We also see a p.C481R
+clone persisting at a similar VAF at time of resistance; this mutation
+is also inactivating. In a patient with CLL (CLL Pt 7), a third clone
+carrying BTK p.C481S was observed at progression, which is
+unexpected because pirtobrutinib maintains activity against BTK
+p.C481S.36,37 Inspection of variants on IGV shows that p.L528W
+and p.C481S do not appear on the same sequencing reads
+(supplemental Figure 10A-B), indicating that they are not in the
+same clone. The increase in the clone carrying BTK p.C481S
+could be driven by another mutation, in particular the TP53
+p.R196* mutation (supplemental Table 2). In this patient, we saw
+striking multiclonality of TP53 mutations increasing over time,
+consistent with clinical data that TP53 aberrancy also contributes
+to BTKi resistance.38 Despite the predominance of the inactivating
+mutations p.L528W and p.C481R in this patient, and similar to the
+ﬁndings by Wang et al,16 the patient (CLL Pt 7) showed evidence
+of intact and increased distal BCR signaling with elevated phos-
+phorylation of AKT and ERK, suggesting an alternative mechanism
+of activation, perhaps related to proximal bypass of BTK or the
+scaffolding functions of BTK. Although very few patients have
+progressed on pirtobrutinib to date, the identiﬁcation of kinase-
+dead BTK mutations suggests a novel mechanism of resistance
+that needs to be elucidated to improve future therapeutic strate-
+gies in CLL.20 Previous work has demonstrated that the SRC family
+kinase HCK can induce BTK, phosphatidylinositol 3-kinase/AKT,
+and
+MAPK/ERK
+signaling.39
+Furthermore,
+kinase-dead
+BTK
+p.C481F/Y mutants have been reported to activate BCR signaling
+by uniquely recruiting HCK and forming BTK/HCK heterodimers
+leading to phosphorylation of PLCγ2 and downstream BCR
+signaling.40 Rationale therefore exists to determine whether a
+similar mechanism is operative with the BTK mutants p.L528W and
+p.M477I and this is currently under investigation.
+In summary, we show that pirtobrutinib is a potent BTKi in vitro and
+in vivo, regardless of mutations at C481, with novel multiclonal
+second-site BTK mutations leading to resistance among patients
+with preexisting BTK C481 mutations. Interestingly, many of the
+second-site BTK mutations fail to activate BTK phosphorylation but
+are still associated with downstream activation of pAKT and pERK;
+the mechanism of this activation remains to be elucidated.
+Furthermore, these mutations have occurred predominantly among
+patients with preexisting C481X mutations; whether patients naïve
+to covalent BTKis, or those exposed but without preexisting BTK
+mutations, will demonstrate similar mechanisms of resistance
+remains to be determined.
+Acknowledgments
+The authors thank the patients and their families who participated
+in the pirtobrutinib clinical trial and who were willing to donate
+samples for this study, Loxo Oncology for providing the authors
+with pirtobrutinib and HEK293 BTK WT / BTK C481S–transfected
+cell lines, and the chronic lymphocytic leukemia group at The
+Ohio State University for gifting the authors with the novel chronic
+lymphocytic leukemia cell line, OSU-CLL. The authors also thank
+Karin E. Lundin at the Karolinska Institutet for skillful technical
+assistance.
+This work was supported by a grant from the National Cancer
+Institute, National Institutes of Health (R01 CA 213442) (J.R.B.),
+Loxo Oncology (J.R.B.), Broad/IBM Cancer Resistance Research
+Project (G.G. and L.P.), Cancerfonden and the Center for Medical
+Innovation, Region Stockholm (C.I.E.S. and R.Z.), and Cancer-
+fonden and Vetenskaprådet (M.V.).
+Authorship
+Contribution: J.R.B., G.G., I.L., F.U., C.I.E.S., R.Z., M.V., and A.N.
+designed the research; A.N., I.L., F.U., Q.W., S.M., J.A.L., and J.C.
+performed research and collected data; J.R.B., J.A.L., I.L., G.G.,
+L.P., K.R., C.L., M.S.D., C.I.E.S., R.Z., and M.V. contributed vital new
+reagents and analytical tools; J.R.B., I.L., A.N., F.U., Q.W., J.C., M.V.,
+G.S., A.S.K., Y.Z., Y.R., and S.T. analyzed and interpreted the data
+and performed statistical analyses; A.N., F.U., Q.W., M.V., C.I.E.S.,
+R.Z., and J.R.B. wrote the manuscript; S.M.F., B.P.D., K.S., and
+R.A.J. provided administrative support (ie, biobanking, managing,
+and organizing samples); and J.R.B. supervised the study.
+Conﬂict-of-interest disclosure: F.U., K.R., C.L., and L.P. are lis-
+ted as coinventors of US patent 11189361, a patent related to
+Concerti. I.L. serves as a consultant for PACT Pharma Inc. and has
+stock, is on the board, and serves as a consultant for ennov1 LLC.,
+is on the board and holds equity in Nord Bio, Inc. A.S.K. has served
+as a consultant for LabCorp Inc. and receives research funding
+from the Multiple Myeloma Research Foundation. M.S.D. has
+Figure 6 (continued) for 1 hour. Subsequently, the samples were washed with medium not supplemented with serum 3 times and activated with medium containing pervanadate
+and mouse antichicken IgM. Representative western blots are shown in panels B-E. Quantiﬁcation of phospho-BTK, phospho-PLCγ2, phospho-AKT, and phospho-ERK is in
+supplemental Figure 8. (F) Untransfected (WT B7.10) cells were treated with the indicated doses of the drugs for 1 hour and activated with pervanadate and mouse antichicken
+IgM–containing medium. Results from duplicate experiments are shown in panel F.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1941
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+served as a consultant for AbbVie, Adaptive Biotechnologies,
+Ascentage Pharma, AstraZeneca, BeiGene, Bristol Myers Squibb,
+Celgene, Eli Lilly, Genentech, Janssen, MEI Pharma, Pharmacy-
+clics, Research to Practice, Takeda, TG Therapeutics, Verastem,
+and Zentalis and receives research support from AbbVie, Ascent-
+age Pharma, AstraZeneca, Genentech, MEI Pharma, Novartis,
+Pharmacyclics, Surface Oncology, TG Therapeutics, and Vera-
+stem. G.G. receives research funds from IBM and Pharmacyclics;
+is an inventor on patent applications related to MSMuTect,
+MSMutSig, POLYSOLVER, and TensorQTL; is also a founder,
+consultant, and holds privately held equity in Scorpion Therapeu-
+tics. J.A.L. consults for Alloplex Biotherapeutics. J.R.B. has served
+as a consultant for AbbVie, Acerta/AstraZeneca, BeiGene, Bristol
+Myers Squibb/Juno/Celgene, Catapult, Dynamo, Eli Lilly, Gen-
+entech/Roche, Hutchmed, Janssen, Kite, Loxo, MEI Pharma,
+Morphosys AG, Nextcea, Novartis, Octapharma, Pﬁzer, Pharma-
+cyclics, Rigel, TG Therapeutics, and Verastem; received honoraria
+from Janssen; received research funding from Gilead, Loxo/Lilly,
+Sun, Verastem/SecuraBio, and TG Therapeutics; and served on
+data safety monitoring committees for Invectys and Morphosys.
+The remaining authors declare no competing ﬁnancial interests.
+ORCID proﬁles: F.U., 0000-0003-3226-7642; Y.Z., 0000-
+0001-6276-635X; S.T., 0000-0002-3119-6507; A.S.K., 0000-
+0002-8699-2439;
+G.S.,
+0000-0001-6630-7935;
+K.R.,
+0000-
+0002-1567-9090; R.Z., 0000-0001-8327-846X; C.I.E.S., 0000-
+0003-1907-3392; J.R.B., 0000-0003-2040-4961.
+Correspondence: Jennifer R. Brown, Dana-Farber Cancer
+Institute, 450 Brookline Ave, Boston, MA 02215; email: jennifer_
+brown@dfci.harvard.edu.
+References
+1.
+Lampson BL, Brown JR. Are BTK and PLCG2 mutations necessary and sufﬁcient for ibrutinib resistance in chronic lymphocytic leukemia? Expet Rev
+Hematol. 2018;11(3):185-194.
+2.
+Woyach JA, Ruppert AS, Guinn D, et al. BTK(C481S)-mediated resistance to ibrutinib in chronic lymphocytic leukemia. J Clin Oncol. 2017;35(13):
+1437-1443.
+3.
+Woyach JA, Furman RR, Liu TM, et al. Resistance mechanisms for the Bruton’s tyrosine kinase inhibitor ibrutinib. N Engl J Med. 2014;370(24):
+2286-2294.
+4.
+Furman RR, Cheng S, Lu P, et al. Ibrutinib resistance in chronic lymphocytic leukemia. N Engl J Med. 2014;370(24):2352-2354.
+5.
+Jones D, Woyach JA, Zhao W, et al. PLCG2 C2 domain mutations co-occur with BTK and PLCG2 resistance mutations in chronic lymphocytic leukemia
+undergoing ibrutinib treatment. Leukemia. 2017;31(7):1645-1647.
+6.
+Byrd JC, Harrington B, O’Brien S, et al. Acalabrutinib (ACP-196) in relapsed chronic lymphocytic leukemia. N Engl J Med. 2016;374(4):323-332.
+7.
+Johnson AR, Kohli PB, Katewa A, et al. Battling Btk mutants with noncovalent inhibitors that overcome Cys481 and Thr474 mutations. ACS Chem Biol.
+2016;11(10):2897-2907.
+8.
+Quinquenel A, Fornecker LM, Letestu R, et al. Prevalence of BTK and PLCG2 mutations in a real-life CLL cohort still on ibrutinib after 3 years: a FILO
+group study. Blood. 2019;134(7):641-644.
+9.
+Woyach J, Stephens DM, Flinn IW, et al. Final results of phase 1, dose escalation study evaluating ARQ 531 in patients with relapsed or refractory B-cell
+lymphoid malignancies. Blood. 2019;134(suppl 1):4298-4298.
+10.
+Mato AR, Shah NN, Jurczak W, et al. Pirtobrutinib in relapsed or refractory B-cell malignancies (BRUIN): a phase 1/2 study. Lancet. 2021;397(10277):
+892-901.
+11.
+Gui F, Jiang J, He Z, et al. A non-covalent inhibitor XMU-MP-3 overrides ibrutinib-resistant Btk(C481S) mutation in B-cell malignancies. Br J Pharmacol.
+2019;176(23):4491-4509.
+12.
+Zhao X, Huang W, Wang Y, et al. Discovery of novel Bruton’s tyrosine kinase (BTK) inhibitors bearing a pyrrolo[2,3-d]pyrimidine scaffold. Bioorg Med
+Chem. 2015;23(4):891-901.
+13.
+Reiff SD, Mantel R, Smith LL, et al. The BTK inhibitor ARQ 531 targets ibrutinib-resistant CLL and Richter transformation. Cancer Discov. 2018;8(10):
+1300-1315.
+14.
+Reiff SD, Muhowski EM, Guinn D, et al. Noncovalent inhibition of C481S Bruton tyrosine kinase by GDC-0853: a new treatment strategy for ibrutinib-
+resistant CLL. Blood. 2018;132(10):1039-1049.
+15.
+Woyach JA, Flinn IW, Awan FT, et al. Preliminary efﬁcacy and safety of MK-1026, a non-covalent inhibitor of wild-type and C481S mutated Bruton
+tyrosine kinase, in B-cell malignancies: a phase 2 dose expansion study. Blood. 2021;138(suppl 1):392.
+16.
+Wang E, Mi X, Thompson MC, et al. Mechanisms of resistance to noncovalent Bruton’s tyrosine kinase inhibitors. N Engl J Med. 2022;386(8):735-743.
+17.
+Takata M, Kurosaki T. A role for Bruton’s tyrosine kinase in B cell antigen receptor-mediated activation of phospholipase C-gamma 2. J Exp Med. 1996;
+184(1):31-40.
+18.
+Nawaz HM, Blomberg KEM, Lindvall JM, Kurosaki T, Smith CIE. Expression proﬁling of chicken DT40 lymphoma cells indicates clonal selection of
+knockout and gene reconstituted cells. Biochem Biophys Res Commun. 2008;377(2):584-588.
+19.
+Estupinan HY, Wang Q, Berglof A, et al. BTK gatekeeper residue variation combined with cysteine 481 substitution causes super-resistance to
+irreversible inhibitors acalabrutinib, ibrutinib and zanubrutinib. Leukemia. 2021;35(5):1317-1329.
+1942
+NAEEM et al
+9 MAY 2023 • VOLUME 7, NUMBER 9
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024
+
+20.
+Hamasy A, Wang Q, Blomberg KE, et al. Substitution scanning identiﬁes a novel, catalytically active ibrutinib-resistant BTK cysteine 481 to threonine
+(C481T) variant. Leukemia. 2017;31(1):177-185.
+21.
+Carter SL, Cibulskis K, Helman E, et al. Absolute quantiﬁcation of somatic DNA alterations in human cancer. Nat Biotechnol. 2012;30(5):413-421.
+22.
+Kasar S, Kim J, Improgo R, et al. Whole-genome sequencing reveals activation-induced cytidine deaminase signatures during indolent chronic
+lymphocytic leukaemia evolution. Nat Commun. 2015;6:8866.
+23.
+Leshchiner I, Livitz D, Gainor JF, et al. Comprehensive analysis of tumour initiation, spatial and temporal progression under multiple lines of treatment.
+bioRxiv. Preprint posted online 16 February 2019.
+24.
+Utro F, Levovitz C, Rhrissorrakrai K, Parida L. A common methodological phylogenomics framework for intra-patient heteroplasmies to infer SARS-CoV-2
+sublineages and tumor clones. BMC Genom. 2021;22(suppl 5):518.
+25.
+Honigberg LA, Smith AM, Sirisawad M, et al. The Bruton tyrosine kinase inhibitor PCI-32765 blocks B-cell activation and is efﬁcacious in models of
+autoimmune disease and B-cell malignancy. Proc Natl Acad Sci U S A. 2010;107(29):13075-13080.
+26.
+Woyach J, Huang Y, Rogers K, et al. Resistance to acalabrutinib in CLL is mediated primarily by BTK mutations. Blood. 2019;134(suppl 1):504.
+27.
+Burger JA, Quiroga MP, Hartmann E, et al. High-level expression of the T-cell chemokines CCL3 and CCL4 by chronic lymphocytic leukemia B cells in
+nurselike cell cocultures and after BCR stimulation. Blood. 2009;113(13):3050-3058.
+28.
+Ponader S, Chen SS, Buggy JJ, et al. The Bruton tyrosine kinase inhibitor PCI-32765 thwarts chronic lymphocytic leukemia cell survival and tissue
+homing in vitro and in vivo. Blood. 2012;119(5):1182-1189.
+29.
+Allan JN, Pinilla-Ibarz J, Gladstone DE, et al. Phase Ib dose-escalation study of the selective, non-covalent, reversible Bruton’s tyrosine kinase inhibitor
+vecabrutinib in B-cell malignancies. Haematologica. 2022;107(4):984-987.
+30.
+Robinson JT, Thorvaldsdottir H, Winckler W, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29(1):24-26.
+31.
+Zain R, Vihinen M. Structure-function relationships of covalent and non-covalent BTK inhibitors. Front Immunol. 2021;12:694853.
+32.
+Aslan B, Kismali G, Iles LR, et al. Pirtobrutinib inhibits wild-type and mutant Bruton’s tyrosine kinase-mediated signaling in chronic lymphocytic leukemia.
+Blood Cancer J. 2022;12(5):80.
+33.
+Maddocks KJ, Ruppert AS, Lozanski G, et al. Etiology of ibrutinib therapy discontinuation and outcomes in patients with chronic lymphocytic leukemia.
+JAMA Oncol. 2015;1(1):80-87.
+34.
+Blombery P, Thompson ER, Lew TE, et al. Enrichment of BTK Leu528Trp mutations in patients with CLL on zanubrutinib: potential for pirtobrutinib cross
+resistance. Blood Adv. 2022;6(20):5589-5592.
+35.
+Blombery P, Tam CS, Yeh PS-H, et al. BTK Leu528Trp - a potential secondary resistance mechanism speciﬁc for patients with chronic lymphocytic
+leukemia treated with the next generation BTK inhibitor zanubrutinib. Blood. 2019;134(suppl 1):170.
+36.
+Gomez EB, Isabel L, Rosendahal MS, Rothenberg SM, Andrews SW, Brandhuber BJ. Loxo-305, a highly selective and non-covalent next generation
+BTK inhibitor, inhibits diverse BTK C481 substitution mutations. Blood. 2019;134(suppl 1):4644.
+37.
+Naeem AS, Nguy WI, Tyekucheva S, et al. LOXO-305: targeting C481S Bruton tyrosine kinase in patients with ibrutinib-resistant CLL. Blood. 2019;
+134(suppl 1), 478-478.
+38.
+Ahn IE, Tian X, Ipe D, et al. Prediction of outcome in patients with chronic lymphocytic leukemia treated with ibrutinib: development and validation of a
+four-factor prognostic model. J Clin Oncol. 2021;39(6):576-585.
+39.
+Yang G, Buhrlage SJ, Tan L, et al. HCK is a survival determinant transactivated by mutated MYD88, and a direct target of ibrutinib. Blood. 2016;
+127(25):3237-3252.
+40.
+Dhami K, Chakraborty A, Gururaja TL, et al. Kinase-deﬁcient BTK mutants confer ibrutinib resistance through activation of the kinase HCK. Sci Signal.
+2022;15(736):eabg5216.
+9 MAY 2023 • VOLUME 7, NUMBER 9
+PIRTOBRUTINIB IN CLL
+1943
+Downloaded from http://ashpublications.org/bloodadvances/article-pdf/7/9/1929/2048984/blooda_adv-2022-008447-main.pdf by guest on 17 May 2024

@@ -1,0 +1,1490 @@
+KDM4A Lysine Demethylase Induces
+Site-Speciﬁc Copy Gain and Rereplication
+of Regions Ampliﬁed in Tumors
+Joshua C. Black,1,8 Amity L. Manning,1,8 Capucine Van Rechem,1,8 Jaegil Kim,3,8 Brendon Ladd,1 Juok Cho,3
+Cristiana M. Pineda,1 Nancy Murphy,4 Danette L. Daniels,4 Cristina Montagna,5 Peter W. Lewis,6 Kimberly Glass,7
+C. David Allis,6 Nicholas J. Dyson,1 Gad Getz,2,3,* and Johnathan R. Whetstine1,*
+1Massachusetts General Hospital Cancer Center and Department of Medicine
+2Massachusetts General Hospital Cancer Center and Pathology Department
+Harvard Medical School, 13th Street, Charlestown, MA 02129, USA
+3Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA
+4Promega Corporation, 2800 Woods Hollow Road, Madison, WI 53711, USA
+5Department of Genetics, Pathology, Albert Einstein College of Medicine, Yeshiva University, Bronx, NY 10461, USA
+6Laboratory of Chromatin Biology and Epigenetics, The Rockefeller University, New York, NY 10065, USA
+7Department of Biostatistics and Computational Biology, Dana Farber Cancer Institute and Harvard School of Public Health,
+Boston, MA 02115, USA
+8These authors contributed equally to this work
+*Correspondence: gadgetz@broadinstitute.org (G.G.), jwhetstine@hms.harvard.edu (J.R.W.)
+http://dx.doi.org/10.1016/j.cell.2013.06.051
+SUMMARY
+Acquired chromosomal instability and copy number
+alterations
+are
+hallmarks
+of
+cancer.
+Enzymes
+capable of promoting site-speciﬁc copy number
+changes
+have
+yet
+to
+be
+identiﬁed.
+Here,
+we
+demonstrate that H3K9/36me3 lysine demethylase
+KDM4A/JMJD2A overexpression leads to localized
+copy gain of 1q12, 1q21, and Xq13.1 without global
+chromosome instability. KDM4A-ampliﬁed tumors
+have increased copy gains for these same regions.
+1q12h copy gain occurs within a single cell cycle,
+requires S phase, and is not stable but is regenerated
+each cell division. Sites with increased copy number
+are rereplicated and have increased KDM4A, MCM,
+and DNA polymerase occupancy. Suv39h1/KMT1A
+or HP1g overexpression suppresses the copy gain,
+whereas H3K9/K36 methylation interference pro-
+motes gain. Our results demonstrate that overex-
+pression of a chromatin modiﬁer results in site-spe-
+ciﬁc copy gains. This begins to establish how copy
+number changes could originate during tumorigen-
+esis and demonstrates that transient overexpression
+of speciﬁc chromatin modulators could promote
+these events.
+INTRODUCTION
+Genomic instability is a major contributing factor to the develop-
+ment and onset of age-related diseases such as cancer (Maslov
+and Vijg, 2009; Negrini et al., 2010). Cancer cells are often char-
+acterized by copy number alterations: gains or losses of chromo-
+some arms and/or whole chromosomes as well as ampliﬁcations
+of smaller genomic fragments (Beroukhim et al., 2010; Hook
+et al., 2007; Stratton et al., 2009). Genome-wide analysis of
+copy number changes in cancer has identiﬁed chromosomal re-
+gions with higher frequencies of ampliﬁcation, which often
+contain putative oncogenes (Beroukhim et al., 2010). In some
+cases, the oncogenes have been shown to impact cellular
+behavior (e.g., MYC and MCL1), whereas other genes within
+these regions do not have clear connections with tumorigenesis.
+The lack of obvious connection does not preclude the gene’s
+involvement. For example, cellular stresses can select for gene
+ampliﬁcation that will promote cancer cell survival, as exempli-
+ﬁed by the ampliﬁcation of dihydrofolate reductase when cells
+are treated with methotrexate (Schimke, 1984). Even though
+cancer genomes frequently have altered chromosomal regions,
+there is little knowledge about the regulatory mechanisms or fac-
+tors that are involved in promoting copy number alterations at
+speciﬁc regions of the genome.
+Several mechanisms have been proposed for generating copy
+number variation (CNV). For example, many models for DNA
+ampliﬁcation incorporate stalled replication forks and DNA
+double-strand breaks that are generated during replication. It
+has been proposed that these stalled/collapsed replication
+forks are associated with and can cause tandem duplications.
+A second mechanism proposed to contribute to CNV involves
+the use of breaks or repair intermediates as primers for rereplica-
+tion of speciﬁc stretches of DNA, which can reincorporate into
+the genome, resulting in gene duplications or deletions. Alterna-
+tively, it is also possible that these events will not integrate in the
+genome (Hastings et al., 2009). A third mechanism that could
+generate rereplicated fragments and copy number alteration is
+the head-to-tail collision of elongating DNA polymerases (David-
+son et al., 2006; Hook et al., 2007). Because chromatin structure
+impacts replication initiation and elongation efﬁciency as well as
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+541
+
+DNA damage response and repair (Alabert and Groth, 2012;
+Papamichos-Chronakis and Peterson, 2013), the chromatin
+state or modifying enzyme(s) could have a signiﬁcant impact
+on each of these possible mechanisms.
+Recently, Kiang and colleagues demonstrated that local DNA
+fragment ampliﬁcation occurs during S phase (Kiang et al., 2010)
+and that the chromatin context or chromosome microenviron-
+ments play a major role in this process. Consistent with an impor-
+tant role for the chromatin context, misregulation of the histone 4
+lysine 20 monomethyltransferase KMT5A (H4K20me1, PR-Set7/
+Set8) promotes rereplication, at least in part, by increasing
+H4K20me2/3 levels and promoting ORC recruitment through
+binding of H4K20me2 (Beck et al., 2012; Kuo et al., 2012; Tardat
+et al., 2010). However, the role of methylation in modulating repli-
+cation is not limited to the direct recruitment of DNA replication
+factors. For example, we have previously demonstrated that
+the H3K9me3 demethylase KDM4A/JMJD2A was able to in-
+crease accessibility and alter the replication timing at speciﬁc
+heterochromatic regions (Black et al., 2010). The regulation of
+KDM4A protein levels is also important in modulating its chro-
+matin occupancy, replication initiation, and S-phase progression
+(Van Rechem et al., 2011). Furthermore, Mallette and colleagues
+demonstrate that increased KDM4A expression abrogates
+53BP1 recruitment to DNA damage sites, suggesting a role for
+KDM4A in DNA damage response (Mallette et al., 2012). There-
+fore, we hypothesize that overexpression of catalytically active
+KDM4A may provide a potential enzymatic link to the proposed
+methods for generating copy number alterations through replica-
+tion abnormalities, which may contribute to copy number
+changes in cancer.
+In this study, we analyzed The Cancer Genome Atlas (TCGA)
+data and observed that KDM4A is ampliﬁed and overexpressed
+in several tumor types. KDM4A overexpression in transgenic
+cells was sufﬁcient to promote copy gain of speciﬁc chromo-
+somal domains (e.g., 1q12). KDM4A-dependent copy gain
+was induced in less than 24 hr and required S phase. These
+copy gains were not stably inherited but were generated tran-
+siently in each subsequent S phase and cleared by late G2.
+KDM4A was the only KDM4 family member that generated the
+gains in a catalytically dependent manner. These copy gains
+were antagonized by coexpression of Suv39h1/KMT1A or
+HP1g, and H3K9 or H3K36 methylation interference promoted
+gain. Furthermore, KDM4A associated with replication machin-
+ery and promoted rereplication of regions exhibiting copy gain.
+KDM4A overexpression increased KDM4A, MCM, and DNA po-
+lymerase association as well as decreased HP1g occupancy at
+regions that undergo KDM4A-dependent rereplication. Interest-
+ingly, focal ampliﬁcations of 1q21 and Xq13.1 were correlated
+with KDM4A ampliﬁcation in tumors, which was recapitulated
+in KDM4A-overexpressing cell lines. Our ﬁndings demonstrate
+that KDM4A overexpression results in site-speciﬁc copy gain
+of regions ampliﬁed in human tumors.
+RESULTS
+KDM4A Is Ampliﬁed and Overexpressed in Cancer
+KDM4A has previously been demonstrated to be overexpressed
+in breast and lung cancer (Berry et al., 2012; Mallette and
+Richard, 2012). However, a comprehensive proﬁle of primary
+tumors for alterations in KDM4A expression levels has yet to be
+established. There are few insights into the mechanisms that
+promote increased expression in tumors. Therefore, we conduct-
+ed a comprehensive analysis of KDM4A copy number and ex-
+pression level in 1,770 primary tumor samples from eight different
+cancer types (Figure S1 available online) represented in TCGA
+(Beroukhim et al., 2010). We found evidence of increased
+KDM4A copy number (GISTIC annotation of +1 or +2; Mermel
+et al., 2011) in 18.9% of tumors (335 out of 1,770 samples;
+Figure 1A) and copy loss in 22.1% of tumors (392 out of 1,770
+samples; Figure 1A). Furthermore, ampliﬁcation or deletion of
+KDM4A resulted in increased or decreased KDM4A expression,
+respectively (Figures 1B and Figure S1A). KDM4A was both
+ampliﬁed and deleted across many disparate cancer types, and
+KDM4A expression correlated with copy number in these sam-
+ples (Figures S1E–S1L). We also observed ampliﬁcation and
+deletion of KDM4B-D in cancer, which correlated with expression
+(Figures S1B–S1D). These data provide a molecular basis for the
+elevated KDM4A levels observed in different tumor samples.
+Ovarian cancer was signiﬁcantly enriched for KDM4A ampliﬁ-
+cation, which was ampliﬁed in 46% of the tumors (94 out of 204,
+p = 1.4 3 1021 for gain versus no change and loss by Fisher’s
+exact test), with relatively few examples of deletion (9.8%; 20
+out of 204, samples) (Figures 1C and S1I). The ampliﬁcation of
+KDM4A in ovarian cancer also correlated with increased expres-
+sion (Figures 1D and S1I). In addition, KDM4A focal ampliﬁcation
+(GISTIC +2) was signiﬁcantly associated with the time to death in
+the ovarian cancer patient data set, with a median time to death
+of 691 days compared to 1,052 days without KDM4A ampliﬁca-
+tion (Figure 1E, p = 0.02); however, KDM4A loss (GISTIC 2 or
+1) was not signiﬁcantly different from patients without changes
+in KDM4A copy number (p = 0.85). In sharp contrast to KDM4A,
+few cases of focal ampliﬁcations were observed for KDM4B-D,
+and no statistical signiﬁcance was associated with their focal
+ampliﬁcations and time to death (Figures 1F–1H). However, focal
+deletion of KDM4C (GISTIC 2) and broad loss or gain (GISTIC
+1 or +1) of KDM4D modestly associated with poor outcome
+(p = 0.014, p = 0.013, and p = 0.018, respectively). These data
+highlight the differences between the KDM4 family and cancer
+outcome, which suggests nonoverlapping functions in certain
+cancer types. These data also suggest that KDM4A levels could
+function as a biomarker in ovarian cancer.
+KDM4A Overexpression Promotes Copy Gain of 1q12
+We previously
+demonstrated
+that
+KDM4A overexpression
+promoted faster S-phase progression, increased chromatin
+accessibility, and altered replication timing (Black et al., 2010).
+KDM4A was also shown to impact the DNA damage response
+(Mallette et al., 2012). For these reasons, we hypothesized that
+KDM4A overexpression may promote genomic instability, which
+is a hallmark of cancer (Luo et al., 2009; Hanahan and Weinberg,
+2011). Therefore, we stably overexpressed KDM4A in the
+karyotypically stable and immortalized, but not transformed,
+RPE1-hTERT (RPE) cell line (GFP, referred to as control or
+CTRL; GFP-KDM4A, referred to as KDM4A) (Jiang et al., 1999).
+Similar to our previously reported 293T stable cells (Figure S2A),
+RPE stable cell lines expressed KDM4A about 2- to 3-fold over
+542
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+endogenous level (Figure S2B). Upon spectral karyotyping these
+cell lines, we did not observe major genomic events that were
+speciﬁc to the KDM4A cell lines when compared to CTRL cell
+lines (SKY; Figures 2A and 2B and Table S1). Similarly, G-band
+analysis of a 293T KDM4A-overexpressing stable cell line did
+not document any ampliﬁcation, deletion, or translocation spe-
+ciﬁc to GFP-KDM4A cells (data not shown). These data support
+the notion that modest KDM4A overexpression does not pro-
+mote large-scale genomic instability.
+We reasoned that KDM4A might promote instability at speciﬁc
+genomic loci that could be below the detection threshold of SKY.
+In order to identify these candidate regions, we reanalyzed our
+chromatin immunoprecipitation (ChIP) on chip analysis of
+KDM4A binding in 293T cells (Figure S2C) (Van Rechem et al.,
+2011) for KDM4A enrichment by cytogenetic band. Of the top
+ten enriched cytogenetic bands, only 1q12 was speciﬁcally en-
+riched in KDM4A-overexpressing cells when compared to con-
+trol cells (Figure S2C). 1q12/21 is a region with frequent CNV in
+lung cancer, multiple myeloma, and congenital heart abnormal-
+ities and has been described as a susceptibility locus for schizo-
+phrenia and autism (Brunet et al., 2009; Brzustowicz et al., 2000;
+Inoue et al., 2004; Yakut et al., 2006). To determine whether the
+copy number of 1q12 was altered following manipulation of
+KDM4A protein levels, we performed ﬂuorescent in situ hybridi-
+zation (FISH) in CTRL and KDM4A-overexpressing 293T cells
+(Figures 2C–2K and S2D). KDM4A overexpression resulted in
+increased copy number of 1q12h in 14% of cells (Figure 2K),
+which was not due to a gain of the entire 1q chromosome arm,
+as the 1q telomere did not have an increase in copy number (Fig-
+ure 2K; 1qTel). Furthermore, no other gains occurred at addi-
+tional pericentric regions (Figure 2K). We further validated these
+results in the RPE stable cell lines used in the SKY analysis (Fig-
+ures 2A, 2B, S2B). Similar to the 293T cells, 17% of KDM4A-
+overexpressing RPE cells showed an increase in copy of
+1q12h, whereas no signiﬁcant changes in copy number were
+observed for the 1q telomere or other centromeres on chromo-
+somes 2, 6, 8, or X (Figures 2L–2T; Chr 2, 6, 8, X).
+To eliminate the possibility that KDM4A promoted chromatin
+accessibility so that there was increased 1q12h detection, con-
+densin 1 (CapD2) or condensin 2 (CapD3) were depleted from
+cells (Figure S2F). Depletion of either condensin did not increase
+detection of 1q12h ampliﬁcation in CTRL or KDM4A cells (Fig-
+ure S2G). Therefore, the increased copy number of 1q12h in
+KDM4A cells is most likely not an artifact of increased chromatin
+accessibility. Furthermore, 1q12h copy gain was not due to alter-
+ations in p53 activity, as doxorubicin treatment resulted in p53
+stabilization and target gene activation in CTRL and KDM4A cells
+(Figures S2H and S2I).
+KDM4A-Dependent 1q12h Copy Gain Is Dose
+Dependent and Requires Catalytic Activity and Tudor
+Domains
+In order to determine whether the expression level and catalytic
+activity of KDM4A are required for 1q12h copy gain, we overex-
+pressed catalytically active and inactive KDM4A (H188A; Whets-
+tine et al., 2006) with and without KDM4A depletion by shRNA
+(Figures 3A and S3A). Transient overexpression of KDM4A was
+sufﬁcient to promote 1q12h copy gain but not alter copy number
+of Chr 8. However, concomitant depletion of KDM4A sup-
+pressed 1q12h gain, which demonstrates the importance of
+increasing KDM4A levels in order to observe 1q12h gain (Figures
+3A and S3A). Importantly, neither catalytically dead KDM4A
+Figure 1. KDM4A Is Ampliﬁed and Overexpressed in Cancer and
+Correlates with Poor Outcome in Ovarian Cancer
+(A) Distribution of gain (GISTIC annotation +1 or +2) or loss (GISTIC annotation
+1 or 2) of copy of KDM4A in 1,770 cancer samples.
+(B) Ampliﬁcation of KDM4A correlates with increased expression of KDM4A in
+TCGA.
+(C) KDM4A is frequently ampliﬁed in ovarian cancer (p = 1.4 3 1021 for gain
+versus no change and loss by Fisher’s exact test).
+(D) Ampliﬁcation of KDM4A in ovarian cancer correlates with increased
+expression of KDM4A.
+(E)
+Focal
+ampliﬁcation
+of
+KDM4A
+in
+ovarian
+cancer
+correlates
+with
+poor outcome in 285 deceased ovarian cancer samples (p = 0.02 by one-
+tailed Student’s t test and 0.048 by one-tailed, Wilcoxon rank sum test for +2
+versus 0).
+(F) Copy number of KDM4B does not correlate with outcome in ovarian cancer.
+(G) Deletion of KDM4C in ovarian cancer correlates with outcome (p = 0.014 for
+loss versus none).
+(H) Copy number loss and gain of KDM4D correlate with outcome in ovarian
+cancer (p = 0.018 for gain versus none and 0.013 for loss versus none by
+Student’s t test).
+Asterisk indicates signiﬁcant difference from no change samples (p < 0.05).
+RPKM denotes reads per kilobase exon model per million reads of RNA-seq
+data (see the Extended Experimental Procedures). See also Figure S1.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+543
+
+overexpression (Figures 3A and 3B; H188A) nor KDM4A deple-
+tion promoted 1q12h copy gain, which emphasizes that the
+gain
+is
+not
+a
+dominant-negative
+effect
+due
+to
+KDM4A
+overexpression.
+We further demonstrated that 1q12h gain occurred in less than
+24 hr of KDM4A transient overexpression in RPE cells (Figures
+3C, 3D, S3B, and S3C) while not altering copy gain at other re-
+gions (Figure 3D). Interestingly, KDM4B, KDM4C, or KDM4D
+overexpression for 24 hr did not alter 1q12h copy number (Fig-
+ures 3E and S3C). The copy gain required KDM4A catalytic ac-
+tivity (H188A) and enzymatic domains (JmjC and JmjN; referred
+to as DNC) in RPE cells (Figures 3B, 3C, and S3B). However, the
+KDM4A catalytic domain alone was insufﬁcient to generate
+1q12h gain (Figures 3B and 3C; referred to as NC). Interestingly,
+the loss of the Tudor domains alone was sufﬁcient to block the
+1q12h gain (Figures 3B and 3C; referred to as NCMP). Taken
+Figure 2. KDM4A Overexpression Results in 1q12h Copy Gain
+(A and B) SKY analysis of RPE GFP-CTRL and GFP-KDM4A cells.
+(C–J) FISH of stable 293T cells overexpressing GFP-CTRL or GFP-KDM4A, respectively. DAPI, (C) and (G); 1q12h (green), (D) and (H); Chr 8 centromere (red), (E)
+and (I); merged images in (F) and (J).
+(K) Quantiﬁcation of FISH experiments in stable 293T GFP-CTRL (black bars) and GFP-KDM4A cells (red bars) with the indicated FISH probes.
+(L–S) FISH of stable RPE cells overexpressing GFP-CTRL or GFP-KDM4A, respectively. DAPI, (L) and (P); 1q12h (green), (M) and (Q); Chr 8 (red), (N) and (R);
+merged images in (O) and (S).
+(T) Quantitation of RPE FISH experiments.
+Arrowheads indicate foci in FISH images. Error bars represent the SEM. Asterisk indicates signiﬁcant difference from GFP-CTRL (p < 0.05) by two-tailed Stu-
+dent’s t test. Scale bars, 2 mm. See also Figure S2 and Table S1.
+544
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+together, these data emphasize that transient exposure to
+increased KDM4A levels is sufﬁcient to promote 1q12h copy
+gain, but this can only occur with a catalytically active enzyme
+and functional Tudor domains.
+Interfering with H3K9 or H3K36 Methylation Promotes
+1q12 Copy Gain
+The requirement for KDM4A catalytic activity to promote 1q12
+copy gain suggests that demethylation of chromatin or a nonhis-
+tone target is important for proper regulation of 1q12h ploidy.
+Recently, Lewis and colleagues demonstrated that H3.3 variants
+with a methionine in place of the lysine (i.e., H3K27M, H3K9M,
+and H3K36M) can inhibit EZH2 (K27M), G9a (K9M), and
+Suv39h1 (K9M), as well as reduce H3K36me3 levels (K36M)
+(Lewis et al., 2013). Therefore, these H3.3 variants were used
+to ascertain whether interfering with methylation at any one of
+these lysines could promote 1q12h copy gain. Each variant
+was expressed and successfully incorporated into chromatin in
+24 hr and reduced the corresponding trimethylation (Figures
+S3D and S3E). Expression of H3.3 WT, G34V, and H3K27M failed
+to promote 1q12h copy gain; however, expression of either
+H3.3K9M or H3.3K36M was sufﬁcient to promote 1q12h gain
+(Figure 3F; p = 0.026 for K9M and p = 0.006 for K36M). Further-
+Figure 3. 1q12h Copy Gain Can Be Induced
+Transiently, Depends on KDM4A Catalytic
+Activity,
+and
+Can
+Be
+Antagonized
+by
+Suv39h1 and HP1g
+(A) Quantiﬁcation of FISH experiments in 293T
+cells overexpressing CTRL, KDM4A, or catalyti-
+cally inactive KDM4A (H188A) with (+) and without
+(–) depletion of endogenous KDM4A (sh4A.1) with
+the indicated FISH probes.
+(B) Schematic of NHF-tagged KDM4A constructs.
+The subcellular localization (‘‘location’’) occurred
+in >80% of assayed cells, and catalytic activity
+(‘‘+’’) indicates strong reduction in total nuclear
+H3K36me3.
+(C and D) Quantiﬁcation of FISH experiments with
+indicated probes in RPE cells transfected for 24 hr
+with the indicated constructs. (C) NHF-KDM4A
+constructs. (D) GFP-CTRL (black bars) or GFP-
+KDM4A (red bars).
+(E) 1q12h copy gain is speciﬁc to KDM4A over-
+expression and not other KDM4 family members.
+(F) Overexpression of H3.3 histone variants for
+H3K9 or H3K36 promotes 1q12h gain.
+(G and H) Coexpression of Suv39h1 (G) or HP1g
+(H) abrogates KDM4A-dependent 1q12h gain.
+Error bars represent the SEM. Asterisk indicates
+signiﬁcant difference from GFP-CTRL or NHF-
+CTRL, or H3.3 WT, or comparison indicated by
+brackets (p < 0.05) by two-tailed Student’s t test.
+See also Figure S3.
+more, the 1q12h gain was not caused by
+a gain of chromosome 1, as there was not
+an increase in 1q Tel or in the 1q23.3 cy-
+togenetic band midway down the 1q arm
+(Figure 3F). Because H3.3K9M promoted
+copy gain at 1q12h and inhibits Suv39h1
+(Lewis et al., 2013), we reasoned that overexpression of the
+H3K9me3 methyltransferase Suv39h1 may suppress KDM4A-
+dependent copy gain. Consistent with this prediction, coexpres-
+sion of Halo-Suv39h1 was sufﬁcient to abrogate KDM4A-depen-
+dent 1q12h copy gain (p = 0.0003 for KDM4A vs NHF; p = 0.0055
+for KDM4A + Suv39h1 vs KDM4A; and p = 0.47 for KDM4A+
+Suv39h1 vs NHF) (Figures 3G and S3F). These results highlight
+the importance of methylation in modulating site-speciﬁc copy
+gain, especially the lysines that are substrates for KDM4A.
+HP1g Antagonizes KDM4A-Dependent Increased 1q12
+Copy Number
+KDM4A-dependent changes in cell-cycle progression and
+replication timing at Chr1 sat2 are antagonized by HP1g over-
+expression (Black et al., 2010). Therefore, we hypothesized that
+HP1g overexpression could antagonize the increased copy
+number of 1q12 in KDM4A-overexpressing cells. Cotransfection
+of HP1g reduced the 1q12h copy gain to levels comparable
+to that seen in control cells (p = 0.29 for KDM4A + HP1g vs
+GFP-CTRL+ HP1g; and p = 0.009 for KDM4A + HP1g vs
+KDM4A + RFP-CTRL) (Figures 3H and S3G). Surprisingly, trans-
+fection of HP1g into RPE cells stably overexpressing KDM4A
+or stably co-overexpressing HP1g and KDM4A did not reverse
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+545
+
+the increased copy number of 1q12h (data not shown). These
+results imply that, once an altered chromatin conformation is
+established, HP1g is insufﬁcient to restore proper regulation of
+1q12 copy number in KDM4A overexpressing cells.
+1q12 Copy Gain Is Not Stably Inherited and Requires
+S Phase
+Because KDM4A overexpression promotes 1q12 gain, we asked
+whether the increased copy number was stably inherited or was
+regenerated during subsequent cell cycles. First, single-cell
+clones
+were
+established
+from
+our
+stably
+overexpressing
+KDM4A RPE cell line and were assayed by 1q12h FISH (Fig-
+ure 4A). If the copy number of 1q12h was stably inherited,
+some clones should have 100% of cells with 1q12h copy gain.
+Instead, we observed a distribution of copy gain between 1.5%
+and 37%, which supports the model that 1q12 gain is most likely
+not stably inherited (Figures 4A and S4A). The clones lacking
+increased copy of 1q12h (below black dashed line) no longer
+overexpressed KDM4A (Figure S4A). Furthermore, the average
+of all clones assayed was 17.0%, agreeing with our analysis of
+the starting stable population (Figures 4B and 2T, respectively).
+We next investigated whether stably overexpressing KDM4A
+RPE cells gain extra copies of 1q12h during each cell division.
+The 1q12h copy gain was eliminated in KDM4A overexpressing
+RPE cells arrested in G1/S with HU (Figures 4C and S4B).
+Because apoptosis was not increased in asynchronous or HU-
+arrested KDM4A cells, the lack of copy gain was not due to
+Figure 4. 1q12h Copy Gain Is Not Stably
+Inherited and Requires S Phase Each Cell
+Cycle
+(A) Increased 1q12h copy number in GFP-KDM4A
+RPE cells is not inherited. FISH of single-cell
+clones derived from RPE KDM4A cells.
+(B) Average copy gain for 27 single-cell clones
+from (A) is graphically depicted.
+(C) Increased copy number of 1q12h requires
+S phase.
+(D) 1q12h gain is lost by the end of G2.
+(E and F) 1q12h copy gain is generated in S phase.
+Stable GFP-CTRL (E) and GFP-KDM4A (F) RPE
+cells were arrested in hydroxyurea (HU) for 20 hr
+and released for the time indicated prior to FISH
+analysis.
+Error bars represent the SEM. Asterisk indicates
+signiﬁcant difference from GFP-CTRL or com-
+parison indicated by bracket (p < 0.05) by two-
+tailed Student’s t test. For the HU release, p values
+are based on the comparison of KDM4A to CTRL
+at each individual time point (F and E, respec-
+tively). See also Figure S4.
+increased apoptosis removing cells with
+extra
+1q12h
+(Figure
+S4C).
+However,
+doxorubicin
+treatment
+could
+induce
+apoptosis in both CTRL and KDM4A
+cells, which was signiﬁcantly reduced
+in KDM4A-overexpressing cells (Figure
+S4C). We then tested whether 1q12h
+gain persisted through G2 by arresting
+cells in late G2 with the CDK1 inhibitor
+R03306 (Figure S4B; Vassilev, 2006). KDM4A cells arrested in
+late G2 and did not display 1q12h copy gain (Figure 4D).
+Given that KDM4A-dependent 1q12h copy gain did not
+occur during G1/S or G2 arrest, we hypothesized that KDM4A
+promotes copy gain during S phase. In agreement with this
+hypothesis, GFP-KDM4A cells, but not GFP-CTRL cells, were
+able to promote additional copies of 1q12h, but not Chr 8 cen-
+tromere following HU release (Figures 4E and 4F). The additional
+copies occurred between 2 and 6 hr post-HU release and were
+lost between 8 and 10 hr following release. Taken together, our
+data support a model whereby KDM4A promotes copy gain of
+speciﬁc chromosomal regions during S phase, which are then
+eliminated by the end of the G2 phase of cell cycle.
+KDM4A Associates with Replication Machinery and
+Promotes Rereplication of 1q12
+In order to gain molecular insight into how KDM4A is involved in
+generating 1q12h copy gain, we identiﬁed KDM4A-interacting
+proteins by performing mass spectrometry analysis of proteins
+interacting with Halo-KDM4A. We observed a signiﬁcant enrich-
+ment for proteins involved in replication using IPA (Figure 5A; p =
+0.00000795). Interestingly, many of these proteins are required
+for rereplication (e.g., MCMs and DNA polymerases; Arias and
+Walter, 2007; Snaith and Forsburg, 1999).
+Previous work veriﬁed KDM4A associations with cullin 1 (Van
+Rechem et al., 2011) and p53 (Kim et al., 2012). We further vali-
+dated
+additional
+interactions
+by
+conducting
+endogenous
+546
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+KDM4A coimmunoprecipitation with MCM2, MCM3, and MCM7
+or Halo-tagged DNA polymerase subunits (Figures 5B and S5A).
+Although MCM2 was not identiﬁed in our mass spectrometry
+analysis, it associated with KDM4A, suggesting that the entire
+MCM complex interacts with KDM4A.
+Because KDM4A overexpression promoted copy gain in a
+replication-dependent manner and interacted with DNA poly-
+merases and the replication licensing machinery, we hypothe-
+sized that KDM4A overexpression was promoting rereplication
+within 1q12. To test this hypothesis, we utilized cesium chloride
+density gradient centrifugation (Figure S5B). Our labeling proce-
+dure was performed for less than one complete cell cycle, pro-
+ducing an enrichment in heavy-light (H:L)-replicated DNA while
+still maintaining an unreplicated light-light fraction (L:L). We did
+not detect a peak of enrichment of H:H DNA, indicating that
+KDM4A overexpression does not promote widespread rerepli-
+cation, as seen with other chromatin regulators (KMT5A; Tardat
+et al., 2010). We pooled and puriﬁed the fractions in which the
+H:H DNA should separate and then assayed the rereplicated
+DNA for speciﬁc regions. Because Chr1 sat2 resides in 1q12
+(Wong et al., 2001) and is bound and modulated by KDM4A,
+we reasoned that it could be a rereplicated target. We observed
+a 7-fold enrichment of Chr1 sat2 in the rereplicated fraction from
+KDM4A-overexpressing cells, whereas the b-actin locus and a
+region near the X centromere, which we previously reported as
+a KDM4A target (Black et al., 2010), were not enriched (Figures
+Figure 5. KDM4A Interacts with Replication Machinery, and KDM4A Overexpression Promotes Rereplication
+(A) Table depicting mass spectrometry analysis of KDM4A-interacting proteins related to replication.
+(B) Western blots of coimmunoprecipitation of endogenous KDM4A and the indicated licensing and replication machinery in RPE Cells.
+(C) KDM4A overexpression in RPE cells leads to rereplication of Chr1 sat2.
+(D) KDM4A is enriched at Chr1 sat2 (1q12) in HU-arrested KDM4A-overexpressing RPE cells.
+(E) H3K9me3, but not H3K36me3, decreases at Chr1 sat2 in HU-arrested cells.
+(F) HP1g enrichment decreases at Chr1 sat2 (1q12) in HU-arrested KDM4A-overexpressing cells.
+(G and H) MCM7 and DNA polymerase a (Pol a) are enriched at Chr1 sat2 (1q12) in HU-arrested KDM4A-overexpressing cells.
+Error bars represent the SEM. Asterisk indicates signiﬁcant difference from GFP-CTRL or comparison indicated by bracket (p < 0.05) by two-tailed Student’s
+t test. See also Figure S5.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+547
+
+(legend on next page)
+548
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+5C and S5C). The enrichment in Chr1 sat2 rereplication repre-
+sented a small amount of the input DNA and was consistent
+with a subpopulation of cells generating and losing the 1q12h
+copy gain (Figure S5C). Taken together, our data demonstrate
+that KDM4A associates with replication proteins and promotes
+rereplication at a speciﬁc locus that exhibits copy gains.
+KDM4A Overexpression Promotes Chromatin State
+Changes and Recruitment of Replication Machinery
+Our data support a model whereby KDM4A overexpression
+promotes methylation changes, displacement of HP1g, and
+recruitment of replication machinery to speciﬁc genomic re-
+gions, resulting in rereplication. To test this model, we performed
+ChIP experiments to evaluate methylation levels, HP1g enrich-
+ment, and replication machinery occupancy at Chr1 sat2. As a
+negative control, we identiﬁed an intergenic region on chromo-
+some 10 (Chr10) that is acetylated at H3K9 in numerous cell
+types (according to UCSC browser; data not shown) that should
+not be enriched for H3K9me3 or KDM4A. KDM4A overexpres-
+sion increased KDM4A recruitment to Chr1 sat2, but not Chr10
+(Figure 5D), which corresponded to a loss of H3K9me3 and
+HP1g depletion (Figures 5E and 5F). We did not observe any
+change in H3K36me3 at Chr1 sat2, which was consistent with
+our previous ﬁndings in 293T cells (Black et al., 2010). Finally,
+both MCM7 and Pola were enriched at Chr1 sat2, but not at
+Chr10, upon KDM4A overexpression (Figures 5G and 5H,
+respectively). Our data demonstrate that KDM4A overexpres-
+sion promotes H3K9me3 and HP1g loss, increased replication
+machinery recruitment, and rereplication.
+Identiﬁcation of Regions Coampliﬁed with KDM4A in
+Cancer
+To identify additional regions that have copy gains upon KDM4A
+overexpression, we determined whether KDM4A focal ampliﬁca-
+tion (1p34.2) in primary tumors was correlated with copy gains of
+any of the 807 cytogenetic bands in 4,420 tumor samples (Fig-
+ure 6A, which represents 19 tumor types, including the 8
+analyzed in Figure S1). We observed correlated copy gains
+from 1p11.2 through 1q21.3 on chromosome 1 in two indepen-
+dent statistical tests (Figures 6A and S6A, blue shading; see
+Experimental Procedures). Due to the minimal sequence annota-
+tion and repetitive nature of 1q12, we did not calculate a corre-
+lation for this cytogenetic band. However, the cytogenetic bands
+immediately ﬂanking 1q12 (1p11.2 and 1q21.1) exhibited co-
+gain with KDM4A ampliﬁcation, which suggests that 1q12 is
+likely coampliﬁed in these tumors. These coampliﬁed regions
+were speciﬁc to KDM4A because there was not a strong cor-
+relation when the identical analysis was performed with respect
+to KDM4B coampliﬁcation (Figures 6B and S6B). We ob-
+served that individual coampliﬁed regions could universally be
+observed, whereas others could be differentially regulated in
+a tumor- and/or tissue-speciﬁc manner. For example, the
+ovarian cancer data sets demonstrated coampliﬁcation with
+1p11.2-1q21.3, whereas some KDM4A-coampliﬁed regions
+were lost (e.g., the region on 17q positions 17q24.2 to
+17q25.3) and others were enhanced (e.g., the region on X chro-
+mosome positions Xp11.2 to Xq13.2) in the ovarian cancer pro-
+ﬁle (Figures 6C and S6C).
+Next, we tested whether gains in 1q21.1-1q21.3 were affected
+by the ampliﬁcation level of KDM4A (Figures 6D–6F and S6D–
+S6F). Indeed, when KDM4A had a high-level focal ampliﬁcation
+(GISTIC +2), a signiﬁcantly greater fraction of samples were
+ampliﬁed in 1q21.1-1q21.3 compared to cases in which KDM4A
+was not ampliﬁed (GISTIC 0; Fisher’s exact test; p = 2 3 109
+in 1q21.1, 1.9 3 109 in 1q21.2, and 1.02 3 1010 in 1q21.3)
+(Figures 6D–6F). When comparing lower-level ampliﬁcation of
+KDM4A (GISTIC +1) to the KDM4A-unampliﬁed cases, we
+observed a reduced sample fraction but still highly signiﬁcant
+ampliﬁcation of 1q21.1-1q21.3 (p = 2.04 3 1025 in 1q21.1,
+6.28 3 1022 in 1q21.2, and 3 3 1024 in 1q21.3). In contrast,
+when stratifying the samples based on KDM4B ampliﬁcation
+status (Figures 6G–6I and S6G–S6I), the differences are not sig-
+niﬁcant (all p values > 0.1 by Fisher’s exact test), although a
+minimal trend in the same direction is observed. These results
+demonstrate that KDM4A ampliﬁcation in tumors correlated
+with ampliﬁcation of speciﬁc cytogenetic bands, which suggests
+that KDM4A may promote site-speciﬁc copy gains in vivo.
+Copy Gain and Rereplication Occur in Regions
+Coampliﬁed in Tumors
+Because 1q21.1-1q21.3 ampliﬁcation correlated with KDM4A
+ampliﬁcation, we assessed whether these regions were gained
+by FISH and rereplicated by density gradient centrifugation in
+transgenic cell lines. We observed increased copy number of
+1q12 through 1q21.2 in our KDM4A-overexpressing cells, but
+not in control cells (Figures 7A and 7B). Our coampliﬁcation
+Figure 6. Identiﬁcation of Cytogenetic Bands Coampliﬁed with KDM4A in Cancer
+(A) Focal ampliﬁcation of cytogenetic bands correlates with ampliﬁcation of KDM4A in cancer. The blue line represents the locus of KDM4A, and its gene-speciﬁc
+signiﬁcance is p = 1.5 3 1037.
+(B) Focal ampliﬁcation of cytogenetic bands with ampliﬁcation of KDM4B. The blue dot represents the gene-speciﬁc signiﬁcance of KDM4B.
+(C) Focal ampliﬁcation of cytogenetic bands correlates with ampliﬁcation of KDM4A in 547 ovarian cancer samples. The blue line represents the locus of KDM4A,
+and its gene-speciﬁc signiﬁcance is p = 1.1 3 1019. For each coampliﬁcation plot, blue shaded regions indicate 1p11.2 through 1q21.3, and red dashed lines
+indicate Xp11.2 through Xq13.2.
+(D) Increased copy of KDM4A is associated with increased mean focal copy of 1q21.1 p = 2 3 109 for +2 versus 0 and p = 2.04 3 1025 for +1 versus 0 by Fisher’s
+exact test.
+(E) Increased copy of KDM4A is associated with increased copy of 1q21.2 (p = 1.9 3 109 for +2 versus 0 and p = 6.28 3 1022 for +1 versus 0).
+(F) Increased copy of KDM4A is associated with increased copy of 1q21.3 (p = 1.02 3 1010 for +2 versus 0 and 3 3 1024 for +1 versus 0).
+(G) Increased copy number of KDM4B is not associated with increased copy of 1q21.1 (p = 0.18 for +2 versus 0).
+(H) Increased copy number of KDM4B is not associated with increased copy of 1q21.2 (p = 0.22 for +2 versus 0).
+(I) Increased copy number of KDM4B is not associated with increased copy number of 1q21.3 (p = 0.24 for +2 versus 0).
+Asterisk indicates signiﬁcant difference of +1 or +2 versus 0 by Fisher’s exact test. NS, not signiﬁcantly different than 0. See also Figure S6.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+549
+
+(legend on next page)
+550
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+analysis of all tumors indicated that the correlation with KDM4A
+copy number diminished at 1q23.3, suggesting that 1q23.3 is not
+ampliﬁed in KDM4A-overexpressing cells, which was in fact the
+case in KDM4A-overexpressing RPE cells (Figures 7A and 7B).
+We then evaluated copy gain of other chromosomal domains
+identiﬁed through our coampliﬁcation analysis. We chose to
+examine the small focal peak on the X chromosome (Xp11.2-
+Xq13.2), which was speciﬁc to coampliﬁcation with KDM4A
+across all cancers and was even more enriched in ovarian cancer
+(Figures 6A and 6C, respectively). KDM4A-overexpressing RPE
+cells exhibited Xq13.1 copy gains, but not the X centromere or
+Xq13.2 (Figures 7C and 7D). Xq13.1 as well as 1q12/21 and
+1q21.2 copy gains were also observed in 293T cells overex-
+pressing KDM4A (Figure S6J). These data demonstrate that
+KDM4A-coampliﬁed regions in primary tumors are generated
+by KDM4A overexpression in transgenic cell lines.
+The coampliﬁcation analysis of tumor data sets does not
+distinguish whether the entire intervening sequence between
+1q12h and 1q21.3 was ampliﬁed in the same tumor cells. There-
+fore, we scored the 1q12/21 or 1q21.2 FISH probes with the
+1q12h probe in the same KDM4A-overexpressing cells (Figures
+7A and 7E–7U). We observed that approximately two-thirds of
+the KDM4A-overexpressing cells with 1q12h ampliﬁcation also
+had 1q12/21.1 ampliﬁcation, whereas approximately one-third
+had only 1q12/21.1 copy gain but lacked 1q12h gain (Figure 7U).
+In the case of 1q12h or 1q21.2 ampliﬁcation, the majority of cells
+had gains in one or the other cytogenetic band (Figures 7M–7U).
+Taken together, these data demonstrate that the entire region
+between 1q12h and 1q21.3 is not contiguously ampliﬁed but
+that KDM4A is directing copy gain within these cytogenetic
+bands. The ability to detect nonoverlapping foci also suggests
+that the additional copies may exist as extrachromosomal
+pieces. This possibility was further supported by the fact that
+1q12/21 FISH marked the additional 1q12/21 copy adjacent to
+or physically distinct from the chromosome 1 painted territory
+(Figures S7A–S7L).
+To address whether these gained regions were through rere-
+plication, we assayed our CsCl gradient H:H fraction for regions
+under our FISH probes in the indicated cytogenetic bands (Fig-
+ure 7V). We observed rereplication at 1q12h (indicated by Chr1
+sat2), 1q12/21.1, 1q21.2, and 1q21.3, but not in 1q23.3 or on
+Chr10. Rereplication was detected inside Xq13.1, but not near
+the X centromere. In addition, the rereplicated regions were
+bound by KDM4A, which was further enriched upon KDM4A
+overexpression (Figures 7W and S6K). As with Chr1 sat2,
+KDM4A overexpression promoted loss of HP1g (Figure 7X) and
+recruitment of MCM7 and Pola to 1q21.2 and Xq13.1 (Figures
+7Y and 7Z, respectively). Taken together, our data are consistent
+with the model that KDM4A overexpression promotes copy gain
+and rereplication at speciﬁc sites within the genome in vivo (tu-
+mors) and in vitro (transgenic cell lines).
+DISCUSSION
+Genomic instability is a major contributing factor to the develop-
+ment and onset of age-related diseases. Cancer cells often
+contain alterations in copy number of genes, speciﬁc genomic
+regions, chromosome arms, and entire chromosomes. However,
+the underlying molecular mechanisms that lead to these copy
+number alterations are poorly understood. Here, we report that
+overexpression
+of a single
+chromatin
+modifying
+enzyme,
+KDM4A, is sufﬁcient to promote rereplication and copy gain of
+speciﬁc chromosomal domains. Furthermore, KDM4A-depen-
+dent ampliﬁed regions are found coampliﬁed with KDM4A in pri-
+mary tumors. Our results support a model in which increased
+expression of KDM4A promotes recruitment of KDM4A to spe-
+ciﬁc genomic regions and promotes rereplication (Figure S7M).
+KDM4 Members and Cancer
+Our results demonstrate that KDM4A is ampliﬁed in different
+tumor types and correlates with increased KDM4A expression.
+Intriguingly, when compared to other tumor types, ovarian can-
+cer is enriched for ampliﬁcations of KDM4A, which correlate
+with poor outcome in these cases. Levels of KDM4A may there-
+fore represent a good biomarker for ovarian cancer, especially
+with respect to novel therapies that target this lysine demethy-
+lase. In addition, ovarian patients with increased levels of
+KDM4A may respond more poorly to S-phase chemotherapeu-
+tics, as KDM4A overexpression resulted in better recovery
+from HU (Black et al., 2010). Consistent with this possibility,
+ovarian cell lines with 1q12-21 ampliﬁcation are often more resis-
+tant to cisplatin treatment (Kudoh et al., 1999; Takano et al.,
+2001). Interestingly, drug resistance in multiple myeloma is
+also associated with 1q12-21 ampliﬁcation (Inoue et al., 2004).
+Addressing the relationship between KDM4A, 1q12-21 coampli-
+ﬁcation, and drug responses will be important in future studies.
+Figure 7. KDM4A Overexpression Leads to Copy Gains and Rereplication of Regions Coampliﬁed in Tumors
+(A) Chromosome arm schematic depicting location of FISH probes used on chromosome 1.
+(B) KDM4A overexpression increased copy number of 1q12h, 1q12/21.1, and 1q21.2, but not 1q23.3.
+(C) Chromosome arm schematic depicting location of FISH probes used on chromosome X.
+(D) KDM4A overexpression increases copy number of Xq13.1, but not X cen or Xq13.2 in RPE cells.
+(E–T) FISH of stable RPE cells overexpressing GFP-CTRL or GFP-KDM4A with indicated FISH probes.
+(U) Table summarizing coampliﬁcation of 1q12h, 1q12/21.1, and 1q21.2 in (E)–(T). Data are presented as percentage of ampliﬁed cells having 2 or 3+ copies of the
+indicated FISH probes.
+(V) KDM4A-dependent rereplication of chromosomal domains.
+(W) KDM4A ChIP in HU-arrested cells. KDM4A is enriched in rereplicated regions in KDM4A-overexpressing RPE cells.
+(X) HP1g enrichment decreases at rereplicated regions in KDM4A-overexpressing cells following 1 hr release from HU arrest.
+(Y and Z) MCM7 and DNA polymerase a (Pol a) are enriched at rereplicated regions in HU-arrested KDM4A-overexpressing cells, respectively.
+Error bars represent the SEM. Asterisk indicates signiﬁcant difference from GFP-CTRL or comparison indicated by bracket (p < 0.05) by two-tailed Student’s
+t test. For rereplication (V) and ChIP experiments (W–Z), Chr1 sat2 and Chr10 are the data presented in Figure 5 for reference. Scale bars, 2 mm.
+See also Figures S6 and S7.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+551
+
+Even though KDM4 family members have a high degree of
+homology, they have different distribution of genomic anomalies
+in cancer. We observed focal deletions in KDM4B-D, whereas
+none were observed in KDM4A across the eight different tumor
+types (Figures S1A–S1D). We also found that KDM4A was the
+only family member that had a correlation between focal ampli-
+ﬁcation and poor outcome for ovarian cancer patients. Thus, it
+is intriguing to speculate that KDM4 family enzymes may play
+different roles in ovarian cancer and other tumor types. Overall,
+our data highlight the idea that these family members are not
+created equal but, most likely, have their own speciﬁc roles in
+cancer and in other diseases.
+Chromatin Environment and KDM4A-Dependent
+Copy Gain
+Work in yeast demonstrates that speciﬁc genomic regions can
+generate extra DNA fragments in S phase, which depends on
+the chromatin environment (Kiang et al., 2010). These observa-
+tions are consistent with our KDM4A-dependent rereplication
+of speciﬁc chromosomal regions. These regions are enriched
+for KDM4A binding upon overexpression of KDM4A, rereplicate,
+and have increased copy number during S phase. Interestingly,
+not all KDM4A-occupied sites are rereplicating in the cell lines
+tested (Figure 7V). However, this could reﬂect the chromatin
+environment in these particular cells or distinct chromatin states
+inﬂuenced by other chromatin modiﬁers. This would be consis-
+tent with our ability to see Xq13.1 and X centromere copy gain
+in KDM4A focally ampliﬁed tumors while only seeing the copy
+gain and rereplication of Xq13.1 in our transgenic cell lines.
+Thus,
+different
+genomic
+regions
+may
+be
+susceptible
+to
+KDM4A-dependent rereplication in speciﬁc tissue types.
+Consistent with the model that chromatin state impacts copy
+gain, we demonstrated that interfering with H3K9 or K36 methyl-
+ation resulted in the site-speciﬁc gain of 1q12h in 24 hr, whereas
+overexpression of Suv39h1 or HP1g was able to suppress the
+1q12h gain. Surprisingly, we were unable to reverse KDM4A-
+dependent copy gains in cells stably overexpressing KDM4A
+by overexpressing HP1g even though these copy gains are re-
+generated each cell cycle. This observation supports a model
+whereby KDM4A may establish a chromatin state that promotes
+rereplication and increased copy number of speciﬁc chromo-
+somal regions. Formation of this chromatin state could be antag-
+onized by HP1g, but not reversed once established. Taken
+together, these data strongly suggest that the reader, the lysine,
+and the KDM/KMT balance are required to maintain regulation at
+these regions. Therefore, we hypothesize that the local chro-
+matin environment will be an important determinant in desig-
+nating whether certain regions are more susceptible to copy
+gains and rereplication (see Figure S7M). Based on our observa-
+tions, we also believe that other methyltransferases or chromatin
+modulators (e.g., readers or remodelers) may be able to block or
+reset the established chromatin state in KDM4A-overexpressing
+cells or that these modulators may have their own independent
+roles in regulating site-speciﬁc copy gains.
+KDM4A and Rereplication
+Increased KDM4A occupancy promotes a more open chromatin
+environment through decreasing H3K9me3 and HP1g occu-
+pancy (Figure S7M; Black et al., 2010). KDM4A overexpression
+also promotes recruitment of the replication licensing machinery
+and DNA polymerases to sites of rereplication and copy gain
+(Figure S7M, model). Because copy gains require the KDM4A
+Tudor domains, we favor the model that KDM4A directly
+increased chromatin accessibility and, in turn, loading of the
+MCM and replication complex on chromatin (Figure S7M). This
+loading and rereplication could occur in the absence of CDT1,
+CDC6, and ORC, as they are not necessary for replication after
+MCMs have been successfully loaded (Arias and Walter, 2007).
+However, the more open chromatin could independently pro-
+mote inappropriate recruitment of MCMs and DNA polymerases
+to unused or reused origins, thus promoting rereplication (Fig-
+ure S7M). This later model would be consistent with the observa-
+tion that interfering with H3K9 or K36 methylation can promote
+the site-speciﬁc gain in cells with wild-type KDM4A levels.
+Regardless of the exact details, the data presented in this study
+support the model that alterations of heterochromatin and
+methylation at speciﬁc regions are more prone to rereplication
+and, in turn, copy gain.
+KDM4A and Extrachromosomal DNA
+Because the extra copies of 1q12 are not inherited but are
+removed prior to completion of G2, it is likely that such regions
+exist as extrachromosomal DNA (Figures S7H and S7L). As
+such, it is possible that KDM4A is promoting rereplication at re-
+gions that promote head-to-tail collision of one replication fork
+chasing another (Figure S7M). This model ﬁts a previous study
+showing that deregulation of replication licensing promotes
+DNA fragmentation and was consistent with fork collision (Da-
+vidson et al., 2006). The presence of these fragments could
+also explain why KDM4A-overexpressing cells exhibit a moder-
+ate increase in p53 stabilization (Figure S2H); that remains
+below the threshold required to elicit the p53 checkpoint (Kraci-
+kova et al., 2013). It is also possible that site-speciﬁc rereplica-
+tion may not be restricted to cancer cells. Transiently upregulat-
+ing enzymes that direct site-speciﬁc rereplication to increase
+copy number of speciﬁc genes may be a general mechanism
+to allow cells the plasticity to respond to developmental, envi-
+ronmental, or stress conditions without altering their genetic
+makeup.
+KDM4A-Dependent Transient Copy Gain
+Because transient KDM4A overexpression was sufﬁcient to
+promote localized changes in copy number in a single cell cycle,
+the ampliﬁcation of speciﬁc regions may precede genetic
+changes in tumors. For instance, transient misregulation of chro-
+matin regulators by altered environmental factors, metabolic
+changes, hypoxia, or miRNAs could lead to temporary changes
+in copy number of small genomic regions. If these regions
+contain oncogenes, this could create a feedback loop that pro-
+motes tumorigenesis while masking the originating event (e.g.,
+transient upregulation of KDM4A). Of note, several putative
+oncogenes reside in the 1q12 and 1q21 cytogenetic bands,
+including BCL9 and MCL1. In fact, KDM4A binds the BCL9 locus
+and causes both copy gain and rereplication of this site (1q21.2
+region, Figures 7W and 7V, respectively). However, we do not
+observe increased expression of Bcl9, which likely reﬂects the
+552
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+lack of additional stimulus, transcription factors, or the low per-
+centage of cells with this particular copy gain (data not shown).
+It remains unclear how the rereplicated regions are removed
+as cells exit S phase and enter G2/M. It is possible that cells
+possess an active method for degradation or removal of these
+regions. Understanding the events leading to removal of inap-
+propriately ampliﬁed regions could be critical to helping to iden-
+tify pathways that may be misregulated in cancer and lead to the
+accumulation and inheritance of copy number changes. We
+hypothesize that other events could then promote incorporation
+of these transiently ampliﬁed regions and, in turn, inﬂuence
+tumorigenesis.
+Conclusions
+It is clear that the chromatin context inﬂuences replication timing
+and initiation choices. However, chromatin may additionally play
+an important role in ensuring replication ﬁdelity and preventing
+rereplication. Distinct chromatin domains may have increased
+propensity for rereplication under different circumstances and
+cell types. This is supported by work in Drosophila that demon-
+strates that heterochromatic regions rereplicate upon loss of
+geminin (Ding and MacAlpine, 2010). Additionally, some chro-
+matin modiﬁers such as KMT5A/B/C regulate rereplication on a
+more global scale (Beck et al., 2012; Tardat et al., 2010). Taken
+together, these results suggest that proper regulation of chro-
+matin state is critical for suppressing rereplication. Therefore, a
+‘‘chromatin checkpoint’’ may be intimately associated with the
+timing of replication and the propensity to undergo rereplication
+and copy gain.
+Although we have uncovered a single enzyme that can regu-
+late site-speciﬁc copy gain, several additional questions remain
+to be answered (Figure S7M). How does the chromatin environ-
+ment regulate CNV? Is regulation of methylation of nonhistone
+substrates involved in modulating copy number (e.g., replication
+machinery and/or HP1)? Do additional chromatin modiﬁers regu-
+late CNV and contribute to tumor heterogeneity? What events
+could promote transient copy gains to be inherited? Future
+studies that identify additional factors and/or stimuli that address
+these questions will allow for a more complete picture surround-
+ing copy number variation, rereplication, genome stability, and
+cancer to emerge.
+EXPERIMENTAL PROCEDURES
+Extended Experimental Procedures are included in the Supplemental
+Information.
+Cell Culture
+Generation of stable cell lines, constructs, and antibodies used can be found in
+the Extended Experimental Procedures. Transient H3.3 variant RPE cells were
+transduced with lentiviral stocks provided from the Allis lab in the presence of
+8 mg/ml polybrene for 8 hr (Lewis et al., 2013).
+Subcellular Localization and Catalytic Activity of KDM4A Deletion
+Fragments
+H3K36me3 and subcellular localization were assayed by examining trans-
+fected cells (positive for HA staining; HA.11 Covance) following ﬁxation in
+3.7% PFA in PBS (Whetstine et al., 2006).
+Immunoprecipitation and Chromatin Immunoprecipitation
+HaloTag-puriﬁed KDM4A complexes were analyzed and processed by MS
+Bioworks (Ann Arbor, Michigan), with details in the Extended Experimental
+Procedures.
+Immunoprecipitations
+(IP)
+were
+performed
+essentially
+as
+described in Van Rechem et al. (2011).
+Chromatin IPs were performed as in Black et al. (2010) with some
+minor
+changes.
+Sonication
+was
+performed
+using
+a
+Qsonica
+Q800R
+system with a constant chiller. RPE cells were arrested in 2 mM HU for
+20 hr prior to crosslinking to assess enrichment in KDM4A, HP1g,
+H3K9me3, H3K36me3, and DNA polymerase a at G1/S transition. Data
+presented are averages from the two independently prepared polyclonal
+RPE cell lines from at least two independent chromatin preparations per
+cell line.
+Fluorescent In Situ Hybridization
+Fluorescent in situ hybridization (FISH) was performed as described in Mann-
+ing et al. (2010). Probes for 1q12h, 1q telomere, 6p21/chr 14 IGH translocation,
+and chromosomes 2, 6, 8, and X alpha satellite were purchased from Rainbow
+Scientiﬁc. Probes for 1q12/21.1 (RP11-17L12), Xq13.2 (RP11-451A22), and
+Xq13.1 (RP11-177A4) were purchased as BAC clones from Children’s Hospital
+Oakland Research Institute (CHORI BacPac) FISH veriﬁed clone repository.
+Probes for 1q21.2 (BCL9) and 1q23.3 were purchased from Agilent (SureFISH).
+For RPE cells, copy gain was scored as any cell with three or more distinct foci.
+For 293T cells, copy gain was scored for any cell with ﬁve or more distinct foci.
+Comprehensive methods can be found in the Extended Experimental
+Procedures.
+Cesium Chloride Gradient Centrifugation
+RPE cells were treated with 100 mM BrdU 14 hr prior to harvest. DNA was
+puriﬁed, digested with RNase A, EcoRI, and BamHI (NEB), and resuspended
+in TE. 100 mg of DNA was mixed with CsCl in TE (refractive index of 1.4015–
+1.4031). The CsCl gradient was centrifuged at 44,400 RPM in a VTi-65 rotor
+for 72 hr at 25C. Fractions were collected in 200 ml aliquots, and DNA con-
+centration was measured by Nanodrop. Appropriate fractions were pooled,
+dialyzed, concentrated, and ethanol precipitated. Each rereplicated pool
+was diluted to 15 ng/ul stock, and 7.5 ng of rereplicated DNA pool was
+analyzed by qPCR. Each sample was normalized to its own input prior to
+determination of fold change in rereplication. Primers used in this study will
+be provided upon request.
+Determination of Cytoband Copy Number and Correlation with
+KDM4A
+Sample-speciﬁc mean focal copy numbers for 807 cytobands including X
+chromosome were annotated by taking an average of GISTIC annotated
+focal copy numbers for every gene within the same cytoband. The p values
+for the mean focal copy number changes between KDM4A copy-gained
+samples (GISTIC annotation = +1 or +2) and KDM4A copy-neutral samples
+(GISTIC annotation = 0) across 807 cytobands were annotated by two inde-
+pendent statistical tests (Figures 6A–6C and S6A–S6C; see the Extended
+Experimental Procedures for details). As positive controls, we also calculated
+the signiﬁcance using the gene-speciﬁc copy number for KDM4A and
+KDM4B. The empirical cumulative distribution functions (the fraction of sam-
+ples below the given mean focal copy) were determined by enumerating
+samples having the mean focal copy number less than or equal to the value
+on the x axis in Figures S6D–S6I for KDM4A- and KDM4B-ampliﬁed (+2),
+copy-gained (+1), and copy-neutral samples (0). Procedures for RNA-seq
+and ovarian cancer outcome can be found in the Extended Experimental
+Procedures.
+SUPPLEMENTAL INFORMATION
+Supplemental Information includes Extended Experimental Procedures, seven
+ﬁgures, and one table and can be found with this article online at http://dx.doi.
+org/10.1016/j.cell.2013.06.051.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+553
+
+ACKNOWLEDGMENTS
+We are grateful to Ravi Mylvaganam and the MGH Flow Cytometry core for
+assistance with the cell sorting. We thank Mo Motamedi for helpful comments
+on the manuscript. This work was supported by funding to J.R.W. from the
+Ellison Medical Foundation, CA059267 and R01GM097360. G.G. and J.K.
+are supported by NIH U24CA143845. J.C.B. was a Fellow of The Jane Cofﬁn
+Childs Memorial Fund for Medical Research. This investigation has been
+aided by a grant from The Jane Cofﬁn Childs Memorial Fund for Medical
+Research. N.J.D. is supported by R01CA155202. A.L.M. is supported by
+MGH ECOR Tosteson Postdoctoral Fellowship. C.M. is supported by CCSG
+P30CA013330.
+Received: March 6, 2013
+Revised: May 8, 2013
+Accepted: June 28, 2013
+Published: July 18, 2013
+REFERENCES
+Alabert, C., and Groth, A. (2012). Chromatin replication and epigenome main-
+tenance. Nat. Rev. Mol. Cell Biol. 13, 153–167.
+Arias, E.E., and Walter, J.C. (2007). Strength in numbers: preventing rereplica-
+tion via multiple mechanisms in eukaryotic cells. Genes Dev. 21, 497–518.
+Beck, D.B., Burton, A., Oda, H., Ziegler-Birling, C., Torres-Padilla, M.E., and
+Reinberg, D. (2012). The role of PR-Set7 in replication licensing depends on
+Suv4-20h. Genes Dev. 26, 2580–2589.
+Beroukhim, R., Mermel, C.H., Porter, D., Wei, G., Raychaudhuri, S., Donovan,
+J., Barretina, J., Boehm, J.S., Dobson, J., Urashima, M., et al. (2010). The land-
+scape of somatic copy-number alteration across human cancers. Nature 463,
+899–905.
+Berry, W.L., Shin, S., Lightfoot, S.A., and Janknecht, R. (2012). Oncogenic fea-
+tures of the JMJD2A histone demethylase in breast cancer. Int. J. Oncol. 41,
+1701–1706.
+Black, J.C., Allen, A., Van Rechem, C., Forbes, E., Longworth, M., Tscho¨ p, K.,
+Rinehart, C., Quiton, J., Walsh, R., Smallwood, A., et al. (2010). Conserved
+antagonism between JMJD2A/KDM4A and HP1g during cell cycle progres-
+sion. Mol. Cell 40, 736–748.
+Brunet, A., Armengol, L., Heine, D., Rosell, J., Garcı´a-Aragone´ s, M., Gabau, E.,
+Estivill, X., and Guitart, M. (2009). BAC array CGH in patients with Velocardio-
+facial syndrome-like features reveals genomic aberrations on chromosome re-
+gion 1q21.1. BMC Med. Genet. 10, 144.
+Brzustowicz, L.M., Hodgkinson, K.A., Chow, E.W., Honer, W.G., and Bassett,
+A.S. (2000). Location of a major susceptibility locus for familial schizophrenia
+on chromosome 1q21-q22. Science 288, 678–682.
+Davidson, I.F., Li, A., and Blow, J.J. (2006). Deregulated replication licensing
+causes DNA fragmentation consistent with head-to-tail fork collision. Mol.
+Cell 24, 433–443.
+Ding, Q., and MacAlpine, D.M. (2010). Preferential re-replication of Drosophila
+heterochromatin in the absence of geminin. PLoS Genet. 6, e1001112.
+Hanahan, D., and Weinberg, R.A. (2011). Hallmarks of cancer: the next
+generation. Cell 144, 646–674.
+Hastings, P.J., Lupski, J.R., Rosenberg, S.M., and Ira, G. (2009). Mechanisms
+of change in gene copy number. Nat. Rev. Genet. 10, 551–564.
+Hook, S.S., Lin, J.J., and Dutta, A. (2007). Mechanisms to control rereplication
+and implications for cancer. Curr. Opin. Cell Biol. 19, 663–671.
+Inoue, J., Otsuki, T., Hirasawa, A., Imoto, I., Matsuo, Y., Shimizu, S., Taniwaki,
+M., and Inazawa, J. (2004). Overexpression of PDZK1 within the 1q12-q22 am-
+plicon is likely to be associated with drug-resistance phenotype in multiple
+myeloma. Am. J. Pathol. 165, 71–81.
+Jiang, X.R., Jimenez, G., Chang, E., Frolkis, M., Kusler, B., Sage, M., Beeche,
+M., Bodnar, A.G., Wahl, G.M., Tlsty, T.D., and Chiu, C.P. (1999). Telomerase
+expression in human somatic cells does not induce changes associated with
+a transformed phenotype. Nat. Genet. 21, 111–114.
+Kiang, L., Heichinger, C., Watt, S., Ba¨ hler, J., and Nurse, P. (2010). Speciﬁc
+replication origins promote DNA ampliﬁcation in ﬁssion yeast. J. Cell Sci.
+123, 3047–3051.
+Kim, T.D., Shin, S., Berry, W.L., Oh, S., and Janknecht, R. (2012). The JMJD2A
+demethylase regulates apoptosis and proliferation in colon cancer cells.
+J. Cell. Biochem. 113, 1368–1376.
+Kracikova, M., Akiri, G., George, A., Sachidanandam, R., and Aaronson, S.A.
+(2013). A threshold mechanism mediates p53 cell fate decision between
+growth arrest and apoptosis. Cell Death Differ. 20, 576–588.
+Kudoh, K., Takano, M., Koshikawa, T., Hirai, M., Yoshida, S., Mano, Y., Yama-
+moto, K., Ishii, K., Kita, T., Kikuchi, Y., et al. (1999). Gains of 1q21-q22 and
+13q12-q14 are potential indicators for resistance to cisplatin-based chemo-
+therapy in ovarian cancer patients. Clin. Cancer Res. 5, 2526–2531.
+Kuo, A.J., Song, J., Cheung, P., Ishibe-Murakami, S., Yamazoe, S., Chen,
+J.K., Patel, D.J., and Gozani, O. (2012). The BAH domain of ORC1 links
+H4K20me2 to DNA replication licensing and Meier-Gorlin syndrome. Nature
+484, 115–119.
+Lewis, P.W., Muller, M.M., Koletsky, M.S., Cordero, F., Lin, S., Banaszynski,
+L.A., Garcia, B.A., Muir, T.W., Becher, O.J., and Allis, C.D. (2013). Inhibition
+of PRC2 activity by a gain-of-function H3 mutation found in pediatric glioblas-
+toma. Science 340, 857–861.
+Luo, J., Solimini, N.L., and Elledge, S.J. (2009). Principles of cancer therapy:
+oncogene and non-oncogene addiction. Cell 136, 823–837.
+Mallette, F.A., and Richard, S. (2012). JMJD2A promotes cellular transforma-
+tion by blocking cellular senescence through transcriptional repression of the
+tumor suppressor CHD5. Cell Rep. 2, 1233–1243.
+Mallette, F.A., Mattiroli, F., Cui, G., Young, L.C., Hendzel, M.J., Mer, G., Sixma,
+T.K., and Richard, S. (2012). RNF8- and RNF168-dependent degradation of
+KDM4A/JMJD2A triggers 53BP1 recruitment to DNA damage sites. EMBO
+J. 31, 1865–1878.
+Manning, A.L., Longworth, M.S., and Dyson, N.J. (2010). Loss of pRB causes
+centromere dysfunction and chromosomal instability. Genes Dev. 24, 1364–
+1376.
+Maslov, A.Y., and Vijg, J. (2009). Genome instability, cancer and aging. Bio-
+chim. Biophys. Acta 1790, 963–969.
+Mermel, C.H., Schumacher, S.E., Hill, B., Meyerson, M.L., Beroukhim, R., and
+Getz, G. (2011). GISTIC2.0 facilitates sensitive and conﬁdent localization of the
+targets of focal somatic copy-number alteration in human cancers. Genome
+Biol. 12, R41.
+Negrini, S., Gorgoulis, V.G., and Halazonetis, T.D. (2010). Genomic insta-
+bility—an evolving hallmark of cancer. Nat. Rev. Mol. Cell Biol. 11,
+220–228.
+Papamichos-Chronakis, M., and Peterson, C.L. (2013). Chromatin and the
+genome integrity network. Nat. Rev. Genet. 14, 62–75.
+Schimke, R.T. (1984). Gene ampliﬁcation, drug resistance, and cancer. Cancer
+Res. 44, 1735–1742.
+Snaith, H.A., and Forsburg, S.L. (1999). Rereplication phenomenon in ﬁssion
+yeast requires MCM proteins and other S phase genes. Genetics 152,
+839–851.
+Stratton, M.R., Campbell, P.J., and Futreal, P.A. (2009). The cancer genome.
+Nature 458, 719–724.
+Takano, M., Kudo, K., Goto, T., Yamamoto, K., Kita, T., and Kikuchi, Y. (2001).
+Analyses by comparative genomic hybridization of genes relating with
+cisplatin-resistance in ovarian cancer. Hum. Cell 14, 267–271.
+Tardat, M., Brustel, J., Kirsh, O., Lefevbre, C., Callanan, M., Sardet, C., and
+Julien, E. (2010). The histone H4 Lys 20 methyltransferase PR-Set7 regulates
+replication origins in mammalian cells. Nat. Cell Biol. 12, 1086–1093.
+Van Rechem, C., Black, J.C., Abbas, T., Allen, A., Rinehart, C.A., Yuan, G.C.,
+Dutta, A., and Whetstine, J.R. (2011). The SKP1-Cul1-F-box and leucine-rich
+repeat protein 4 (SCF-FbxL4) ubiquitin ligase regulates lysine demethylase
+4A (KDM4A)/Jumonji domain-containing 2A (JMJD2A) protein. J. Biol.
+Chem. 286, 30462–30470.
+554
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+Vassilev, L.T. (2006). Cell cycle synchronization at the G2/M phase border by
+reversible inhibition of CDK1. Cell Cycle 5, 2555–2556.
+Whetstine, J.R., Nottke, A., Lan, F., Huarte, M., Smolikov, S., Chen, Z., Spoo-
+ner, E., Li, E., Zhang, G., Colaiacovo, M., and Shi, Y. (2006). Reversal of histone
+lysine trimethylation by the JMJD2 family of histone demethylases. Cell 125,
+467–481.
+Wong, N., Lam, W.C., Lai, P.B., Pang, E., Lau, W.Y., and Johnson, P.J. (2001).
+Hypomethylationofchromosome1heterochromatinDNAcorrelateswithq-arm
+copy gain in human hepatocellular carcinoma. Am. J. Pathol. 159, 465–471.
+Yakut, T., Schulten, H.J., Demir, A., Frank, D., Danner, B., Egeli, U., Gebitekin,
+C., Kahler, E., Gunawan, B., Urer, N., et al. (2006). Assessment of molecular
+events in squamous and non-squamous cell lung carcinoma. Lung Cancer
+54, 293–301.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+555
+
+Supplemental Information
+EXTENDED EXPERIMENTAL PROCEDURES
+Cell Culture
+HEK293T (called 293T throughout) and hTERT-RPE-1 (called RPE throughout) cells were maintained in DMEM with 10% fetal bovine
+serum, 1% penicillin/streptomycin, and L-glutamine. Stable 293T cell lines were generated as in (Black et al., 2010). Stable RPE cell
+lines were generated by retroviral transduction of MSCV-GFP or MSCV-GFP-KDM4A. Cells were selected for 96 hr with puromycin.
+All experiments on stable cells were performed after two months of culture post infection with KDM4A. Transient transfection exper-
+iments were performed using Roche X-tremeGENE 9 DNA transfection reagent in OPTI-MEM I media (GIBCO) for four hours. Media
+was then replaced with standard DMEM. For concomitant overexpression and depletion in 293T cells, shRNA was transfected for
+4 hr, cells recovered in DMEM for 20 hr and cells were transfected a second time with additional shRNA and KDM4A expression
+plasmid. Cells were harvested for FISH 48 hr following the second transfection. No selection was used in transient transfection
+experiments.
+Expression Plasmids
+The pFN21A clone expressing an N-Terminal HaloTag fusion of human full-length KDM4A or Suv39h1 (NM_014663) was obtained
+from Kazusa DNA Research Institute (Kisarazu, Japan). HaloTag (ADN27525.1) control vector (Promega) was used for expression
+of the HaloTag protein alone. MSCV-GFP-KDM4A, MSCV-GFP-H188A, MSCV-RFP-HP1, pSuper and pSuper sh2A.1 constructs
+were made as described (Black et al., 2010). N-terminal HA-FLAG (NHF) deletion constructs were generated using primers at the
+indicated amino acid residues and cloned into pEntry using Gateway technology (Invitrogen). Fragments were transferred to N-ter-
+minal HA-FLAG (NHF) destination vector following the manufacturer’s instructions. H188A contains two point mutations to eliminate
+catalytic activity H188A and W208R (Black et al., 2010). All clones were sequence veriﬁed.
+Western Blots
+Western blots were performed as in (Black et al., 2010). Antibodies used were: KDM4A (Neuro mAB, 75-189), b-actin (Millipore), GFP
+(Neuro mAB, 73-131), RFP (Abcam, ab62341), p53 (Santa Cruz, sc-126), MCM2 (Cell Signaling, #3619S), MCM3 (Cell Signaling,
+#4012S), MCM7 (Cell Signaling, #3735S), Halo (Promega), Actinin (Santa Cruz, sc-17829), HA 12CA5 (Roche), FLAG M2 (Sigma),
+DNA Pol a (Abcam, ab31777).
+G-Band and Spectral Karyotyping
+G-Band analysis was performed and analyzed by WiCell Cytogenetics Institute (Wisconsin). SKY and corresponding analysis was
+performed by Cristina Montagna in the Molecular Cytogenetic Core at Albert Einstein College of Medicine. The RPE stable cell lines
+were analyzed by SKY two independent times: once after six months in culture and a second time after an additional three months of
+culture.
+Subcellular Localization and Catalytic Activity of KDM4A Deletion Fragments
+The indicated NHF-tagged KDM4A deletion constructs were transfected into RPE cells grown on coverslips in 10 cm dishes using X-
+tremeGENE 9 DNA transfection reagent (Roche). H3K36me3 and subcellular localization were assayed by examining transfected
+cells (positive for HA staining; HA.11 Covance) following ﬁxation in 3.7% PFA in PBS (Whetstine et al., 2006).
+Immunoprecipitation and Chromatin Immunoprecipitation
+Immunoprecipitations were performed essentially as described in (Van Rechem et al., 2011). Brieﬂy, cells were lysed in cellular lysis
+buffer (5mM PIPES, 85mM KCl, 0.5% NP40) and nuclei were collected following centrifugation. Nuclei were lysed in IPH buffer with
+sonication, lysates were cleared and immunoprecipitations were performed in the presence of 100ug/ml ethidium bromide and di-
+gested with 0.25ul benzonase to eliminate protein-nucleic acid interactions. Immunoprecipitation from 293T cells were carried out in
+IPH with 150mM NaCl and from RPE cells in 300mM NaCl. Immunoprecipitation of HaloTag polymerase subunits with endogenous
+KDM4A was performed according to the manufacturers protocol (Promega) with minor modiﬁcation. Whole cell lysates were pre-
+pared using sonication of cells in Halo lysis buffer. Immunoprecipitations were performed with ethidium bromide overnight at
+4þC. Elution was performed using SDS sample loading buffer.
+Chromatin immunoprecipitations were performed as in (Black et al., 2010) with some minor changes. Sonication was performed
+using a Qsonica Q800R system with a constant chiller. For ChIP, RPE cells were arrested in 2mM HU for 20 hr prior to crosslinking to
+assess enrichment in KDM4A, HP1g, H3K9me3, H3K36me3, and DNA polymerase a at G1/S transition. For release from HU (as indi-
+cated in ﬁgures), HU containing media was removed by aspiration, and cells were rinsed twice with fresh DMEM prior to addition of
+fresh DMEM for release for the indicated times. 1 to 10ug of chromatin was used for each IP, which was dependent on the antibody
+used. For HP1g, chromatin was prepared and sonicated in TE with 1%SDS, diluted to 0.2% SDS prior to dilution for the immuno-
+precipitation. Chromatin for histone ChIP was prepared and sonicated in TE with 1% SDS. Chromatin for KDM4A, Pola, and
+MCM7 was prepared and sonicated in TE with 0.2% SDS. Prior to ChIP, RPE chromatin was precleared for one hour with protein
+A agarose, and for one hour with magnetic protein A or G beads (Invitrogen; to match antibody type). Immunoprecipitated DNA
+was puriﬁed using either PCR Puriﬁcation Columns (Promega) or AMPureXP. Data presented are averages from the two
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S1
+
+independently prepared polyclonal RPE cell lines from at least two independent chromatin preparations per cell line. Antibodies used
+for ChIP are as follows: DNA Pola (Abcam, ab31777 lot 290601), MCM7 (Cell Signaling, #3735S lots 02/2013 and 03/2013), KDM4A
+(Black et al., 2010), HP1g (Millipore, 05-690 lot DAM1501782), H3K9me3 (Abcam, ab8898 lot GR30928-1), H3K36me3 (Abcam,
+ab9050 lot GR10860-1), H3 (Abcam, ab1791 lot GR63387-1).
+KDM4A Cytogentic Band Enrichment
+KDM4A ChIP-chip on chromosome 1–4 was reported previously (Van Rechem et al., 2011). Raw data was re-analyzed as follows.
+ChIP signals were log-transformed (base 2) and normalized by using quantile normalization then averaged over replicates. Input
+signals were also quantile normalized and the results were subtracted from the normalized ChIP signals, and the results were referred
+to as log-ratio. Cytogenetic band locations were downloaded from UCSC Genome Browser using HG18. The probe-level log-ratio
+values were averaged over each cytogenetic band and then each cytogenetic band was transformed to z-scores. Raw data are
+deposited under GSE48765.
+Fluorescent In Situ Hybridization
+Fluorescent in situ hybridization (FISH) was performed as described in (Manning et al., 2010). Probes for 1q12h, 1q telomere, 6p21/
+chr14 IGH translocation and chromosome 2, 6, 8, and X alpha satellite were purchased from Rainbow Scientiﬁc. Probes for 1q12/
+21.1 (RP11-17L12), Xq13.2 (RP11-451A22), Xq13.1 (RP11-177A4) were purchased as BAC clones from Children’s Hospital Oakland
+Research Institute (CHORI BacPac) FISH veriﬁed clone repository. Oligonucleotide probes for 1q21.2 (BCL9) and 1q23.3 were pur-
+chased from Agilent (SureFISH). BACS were prepared utilizing PureLink HiPure Plasmid Filter Maxiprep kit (Life Technologies) using
+the recommended modiﬁed wash buffer. Probes were nick translated (Abbot Molecular Kit) in the presence of ﬂuorescently labeled
+dTTP (Enzo Life Science). Images of multiple planes of ﬁelds of nuclei were acquired on an Olympus IX81 Spinning Disk Microscope
+and analyzed using Slidebook 5.0 software. We used a conservative scoring metric for copy gain. Any foci that were touching were
+scored as a single foci to prevent increased numbers due to normally replicated foci. For RPE cells, copy gain was scored as any cell
+with 3 or more distinct foci. For 293T cells, copy gain was scored for any cell with 5 or more distinct foci. For RPE cells each exper-
+iment includes at least one replicate from the two different polyclonal stable cell preparations. At least 100 cells for each replicate
+were scored for all experiments except analysis of single cell clones.
+Infection with Histone H3.3 Variants
+Lentiviral stocks provided from the Allis lab were used to infect RPE cells in the presence of 8 mg/ml polybrene for 8 hr (Lewis et al.,
+2013). Cells were washed 2 times with DMEM. Cells were collected 24 hr later for analysis by FISH and Western blot. Incorporation of
+histone variants was conﬁrmed by subcellular fractionation and Western blotting.
+Fluorescent In Situ Hybridization Coupled to Chromosome 1 Paint
+FISH/Paint was performed using the 1q12/21 probe labeled in Spectrum Orange combined with a chromosome 1 painting probe
+labeled in Spectrum Green. The chromosome paint probe was generated using standard protocols (Montagna et al., 2002). Equal
+volumes of locus speciﬁc and paint probe resuspended in hybridization solution (50% dextran sulfate/2 3 SSC) were combined
+and denatured at 85C for 5 min, applied to the slides and incubated overnight at 37C in a humidiﬁed chamber. Before hybridization
+the slides with interphase nuclei were denatured with 50% formamide/2 3 SSC at 80C for 1.5 min and then dehydrated with serial
+ethanol washing steps (ice cold 70%, 90% and 100% for 3 min each). After hybridization the slides were washed three times for 5 min
+with 50% formamide/2 3 SSC, 1 3 SSC and 4 3 SSC/0.1%Tween. Slides were dehydrated with serial ethanol washing steps (as
+above) and mounted with ProLong Gold antifade reagent with DAPI (Invitrogen) for imaging. FISH/Paint images were acquired
+with a manual inverted ﬂuorescence microscope (Axiovert 200, Zeiss) with ﬁne focusing oil immersion lens ( 3 40, NA 1.3 oil and
+3 60, NA 1.35 oil). Multiple focal planes were acquired for each channel to ensure that signals on different focal planes were included.
+The resulting ﬂuorescence emissions were collected using 425–475 nm (for DAPI), 546–600 nm (for spectrum orange), and 500–
+550 nm (for AlexaFluor488) ﬁlters. The microscope was equipped with a Camera Hall 100 and the Applied Spectral Imaging software.
+Cesium Chloride Gradient Centrifugation
+RPE cells were treated with 100 mM BrdU 14 hr prior to harvest. Cells were lysed in RIPA supplemented with 100mg of RNase A
+(Fisher) for 2 hr at 37C. Buffer was supplemented to 1% SDS and 20 mg of proteinase K was added and digested overnight at
+55C. DNA was extracted three times with phenol:chloroform:isoamyl alcohol and ethanol precipitated. Precipitated DNA (approx-
+imately 300 mg) was resuspended in NEB buffer 2 supplemented with RNase A and digested with 200U of EcoRI and BamHI (NEB)
+overnight at 37C. Digests were supplemented to 1% SDS and digested with 10 mg of proteinase K for 1 hr at 55C. DNA was ex-
+tracted with phenol:chloroform:isoamyl alcohol and ethanol precipitated. Precipitated DNA was resuspended in TE and concentra-
+tion determined by Nanodrop. 100 mg of DNA was mixed with 1g/ml CsCl in TE (refractive index of 1.4015-1.4031) in Quick-Seal ul-
+tracentrifuge tubes (Beckman). The CsCl gradient was centrifuged at 44,400 RPM in a VTi-65 rotor for 72 hr at 25C. Fractions were
+collected from the bottom of the gradient in 200 ml aliquots. DNA concentration of each fraction was measured by Nanodrop.
+Appropriate fractions were pooled, dialyzed against 0.1X TE and concentrated by dialysis against 0.1XTE with 40% glycerol.
+Concentrated pools were ethanol precipitated and resuspended in ddH2O prior to analysis by quantitative PCR (qPCR). Each
+S2
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+re-replicated fraction was diluted to 15ng/ul stock and 7.5ng of re-replicated DNA pool was analyzed by qPCR on a Roche LC480
+using FastStart Universal SYBR Green Master Mix (Roche) following the manufacturer’s instructions. 7.5ng of input DNA was
+analyzed by qPCR at the same time. Each sample was normalized to its own input prior to determination of fold-change in re-repli-
+cation. Primers used in this study will be provided upon request.
+HaloTag Mammalian Pull-Down Assay for Mass Spectrometry
+HEK293T cells (12 3 106 cells) were plated in a 150 mm dish and grown to 70%–80% conﬂuence (approximately 18 hr). The cells
+were then transfected with 30mg of plasmid DNA using FuGENE HD Transfection Reagent (Promega) for 24 hr, according to manu-
+facturer’s protocol. Cells expressing Halo-KDM4A or Halo-CTRL were incubated in mammalian lysis buffer (50mM Tris-HCl, pH 7.5,
+150mM NaCl, 1% Triton X-100, and 0.1% sodium deoxycholate) supplemented with Protease Inhibitor cocktail (Promega) and RQ1
+RNase-Free DNase (Promega) for 10 min on ice. Lysate was then homogenized with a syringe and centrifuged at 14.000 x g for 5 min
+to pellet cellular debris. Clariﬁed lysate was incubated with HaloLink Resin (Promega) that had been pre-equilibrated in resin wash
+buffer (TBS and 0.05% IGEPAL CA-640 [Sigma]) for 15 min at 22C with rotation. Resin was then washed 5 times with wash buffer,
+and protein interactors were eluted with SDS elution buffer (50mM Tris-HCl, pH 7.5, and 1% SDS).
+Mass Spectrometry Analysis
+HaloTag pulldown puriﬁed complexes were analyzed and processed by MS Bioworks, LLC (Ann Arbor, Michigan). The samples were
+separated on a SDS-PAGE gel, which was then Coomassie stained and cut into 10 fragments. Each gel piece was processed with the
+Progest Protein Digestion Station (Digilab). Brieﬂy, gel slices were washed using 25 mM ammonium bicarbonate and acetonitrile,
+followed by reduction with 10 mM dithiothreitol, and alkylation with 50 mM iodoacetamide. Proteins were digested with trypsin
+(Promega) for 4 hr and digestion was quenched with formic acid. Gel digests were analyzed directly by nano LC/MS/MS with a Nano-
+Acquity HPLC (Waters) interfaced with an Orbitrap Velos Pro (Thermo Scientiﬁc) tandem mass spectrometer. Digested peptides were
+loaded on a trapping column and eluted over a 75 mm analytical column packed with Jupiter Proteo Resin (Phenomenex) at 350nl/
+min. The mass spectrometer was operated in data-dependent mode, with MS performed in the Orbitrap at 60.000 full width at half
+maximum (FWHM) resolution, and MS/MS performed in the LTQ. The 15 most abundant ions were selected for MS/MS. The data
+were searched with Mascot (Matrix Science) against the concatenated forward/decoy UniProt Human Database, and Mascot
+DAT ﬁles were visualized and ﬁltered by Scaffold (Proteome Software). Data were ﬁltered using a minimum protein value of 90%,
+a minimum peptide value of 50% (Protein and Peptide Prophet scores), and required at least two unique peptides per protein. Spec-
+tral counting was performed and normalized spectral abundance factors determined. Data were reported at less than 1% false dis-
+covery rate (FDR) at the protein level based on counting the number of forward and decoy matches. Interacting proteins were
+analyzed using IPA for pathway analysis (Ingenuity Systems).
+Flow Cytometry Analysis of Cell Cycle and Apoptosis
+Asynchronously growing, or G1/S or G2 arrested cells were prepared and ﬁxed as in (Black et al., 2010). Cell cycle was analyzed by PI
+staining and analyzed using a BD FACS ARIA II. Apoptosis was determined using Annexin V and PI staining following the manufac-
+turer’s instructions (Life Technologies).
+KDM4A Copy Number Determination in TCGA Data Set
+The somatic copy number alterations (SCNAs) for 24,176 genes of the pan-cancer data set including 4,420 samples across multiple
+tumor types are annotated by GISTIC2.0 (Beroukhim et al., 2007; Beroukhim et al., 2010; Network, 2008). The copy number change in
+each gene is deﬁned as possessing deep deletion (2), shallow deletions (1), neutral copy number (0), low gain (+1), and high gain
+(+2) in each sample using sample-speciﬁc thresholds. High gains are segments with copy number that exceed the maximum median
+chromosomal arm copy number for that sample by at least 0.1; low gains are segments with copy numbers from 2.1 to the high gain
+threshold; neutral segments have copy numbers between 1.9 and 2.1; shallow losses have copy numbers between 1.9 and the deep
+deletion threshold; and deep deletion have copy numbers that are below the minimum median chromosomal arm copy number for
+that sample by at least 0.1.
+KDM4A mRNA expression from RNA-Seq in TCGA Data Set
+Reads per kilobase of exon model per million mapped reads (RPKM) were annotated for 16,407 genes in 1,953 samples across
+multiple tumor types. 1770 samples having both copy number and RPKM data were used to quantify an association between
+copy number alterations and the mRNA expression levels in KDM4A in Figure 1B and 1D, and Figure S1. The ‘‘Gain’’ group
+corresponds to the sample set with KDM4A GISTIC annotation = +1 or +2, the ‘‘No change’’ group corresponds to the
+samples set with KDM4A GISTIC annotation = 0, and the ‘‘Loss’’ group is associated to the sample set with KDM4A GISTIC
+annotation = 1 or 2.
+Clinical Data in TCGA Data Set
+Overall survival in 541 Ovarian Cancer samples (256 alive and 285 deceased) was deﬁned as the interval from the date of initial sur-
+gical resection to the date of last known contact or death. The association of the KDM4A copy number status, Del (2), Loss (1),
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S3
+
+None (0), Gain (+1), Amp (+2) to the clinical outcome in Figure 1E through 1H was tested for 285 deceased patients by Student’s t test
+(one-tailed) and statistical signiﬁcance was considered when p < 0.05.
+Determination of Cytoband Copy Number and Correlation with KDM4A in TCGA Data Set
+In addition to the copy number annotation for each gene, the mean focal copy number for 807 cytobands including X chromosome
+were annotated in each sample by taking an average of focal copy numbers of every genes within the same cytoband. Arm-level
+SCNA contributions to the mean focal copy number in each cytoband were removed by only considering GISTIC annotated focal
+copy numbers much smaller than a chromosome arm or entire chromosome. Detecting chromosomal regions signiﬁcantly co-ampli-
+ﬁed with KDM4A copy gains or ampliﬁcations was ﬁrst performed by the one-tailed Student’s t test for the mean focal copy number
+changes between KDM4A copy-gained samples (GISTIC annotation = +1 or +2) and KDM4A copy-neutral samples (GISTIC anno-
+tation = 0) across 807 cytobands. We also calculated the signiﬁcance using the gene-speciﬁc copy-number for KDM4A and
+KDM4B as positive controls (Figure 6A-C). We also performed the second independent test (Figure S6A-S6C) by approximating a
+null distribution of mean cytoband copy differences by a normal function Nðm12  m0; s2
+0=n0 + s2
+12=n12Þ where m0and m12are samples
+means across all cytobands, s2
+0 and s2
+12are mean sample-speciﬁc variances within each group, and n0and n12are the number of sam-
+ples in KDM4A copy-neutral and KDM4A copy-gained groups, respectively. This test is based on comparing the means of the two
+sets while permuting values within each of the samples (and using a Gaussian approximation). The p-values across 807 cytobands
+were annotated by computing the probability of more extreme differences than the corresponding cytoband copy difference in
+the null distribution. The empirical cumulative distribution functions (the fraction of samples below the given mean focal copy)
+were determined by enumerating samples having the mean focal copy number less than or equal to the value on the x axis in
+Figure S6D-S6I for KDM4A and KDM4B ampliﬁed (+2), copy-gained (+1), and copy-neutral samples (0).
+SUPPLEMENTAL REFERENCES
+Beroukhim, R., Getz, G., Nghiemphu, L., Barretina, J., Hsueh, T., Linhart, D., Vivanco, I., Lee, J.C., Huang, J.H., Alexander, S., et al. (2007). Assessing the sig-
+niﬁcance of chromosomal aberrations in cancer: methodology and application to glioma. Proc. Natl. Acad. Sci. USA 104, 20007–20012.
+Montagna, C., Andrechek, E.R., Padilla-Nash, H., Muller, W.J., and Ried, T. (2002). Centrosome abnormalities, recurring deletions of chromosome 4, and
+genomic ampliﬁcation of HER2/neu deﬁne mouse mammary gland adenocarcinomas induced by mutant HER2/neu. Oncogene 21, 890–898.
+Network, C.G.A.R.; Cancer Genome Atlas Research Network. (2008). Comprehensive genomic characterization deﬁnes human glioblastoma genes and core
+pathways. Nature 455, 1061–1068.
+S4
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+Figure S1. Ampliﬁcation and Overexpression of KDM4A in Cancer, Related to Figure 1
+(A) Analysis of RNaseq data from all cancer types indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(B) Analysis of RNaseq data from all cancer types indicating expression level of KDM4B relative to KDM4B copy number binned by GISTIC annotation.
+(C) Analysis of RNaseq data from all cancer types indicating expression level of KDM4C relative to KDM4C copy number binned by GISTIC annotation.
+(D) Analysis of RNaseq data from all cancer types indicating expression level of KDM4D relative to KDM4D copy number binned by GISTIC annotation.
+(E) Analysis of RNaseq data from Breast Cancer indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(F) Analysis of RNaseq data from Head and Neck squamous cell carcinoma indicating expression level of KDM4A relative to KDM4A copy number binned by
+GISTIC annotation.
+(G) Analysis of RNaseq data from lung adenocarcinoma indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(H) Analysis of RNaseq data from lung squamous cell carcinoma indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC
+annotation.
+(I) Analysis of RNaseq data from ovarian cancer indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(J) Analysis of RNaseq data from renal adenocarcinoma indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(K) Analysis of RNaseq data from stomach adenocarcinoma indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC annotation.
+(L) Analysis of RNaseq data from uterine and endometrial cancer indicating expression level of KDM4A relative to KDM4A copy number binned by GISTIC
+annotation.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S5
+
+Figure S2. Enrichment of KDM4A in a Speciﬁc Cytogenetic Band that Has Altered Copy Number, Related to Figure 2
+(A) Western blot depicting expression of GFP-KDM4A in a stable 293T cell line.
+(B) Western blot depicting expression of GFP-KDM4A in two different polyclonal stable RPE cells.
+(C) Table depicting increased binding of KDM4A in chr1 q12 cytogenetic band in 293T cells overexpressing KDM4A. Enrichment in ChIP-chip data is depicted as
+the Z-score for the average KDM4A/Input level for each probe in the cytogenetic band.
+(D) FISH analysis of 293T cells stably overexpressing GFP-CTRL or GFP-KDM4A. Data are presented as percent of cells with foci number different from the mean
+(not 3 or 4 foci in 293T cells).
+(E) FISH analysis of RPE cells stably overexpressing GFP-CTRL or GFP-KDM4A. Data are presented as percent of cells with foci number different from the mean
+(not 2 foci in RPE cells).
+(F) Western blot demonstrating siRNA depletion of CapD2 and CapD3 in CTRL and KDM4A cells. GFP-CTRL and GFP-KDM4A panels for CapD2 are the same
+exposure from a different, non-adjacent section of the same Western blot.
+(G) FISH analysis for 1q12h in RPE cells stably overexpressing GFP-CTRL or GFP-KDM4A treated with siRNA against condensin 1 (CAPD2) and condensing 2
+(CAPD3).
+(H) Western analysis of p53 induction following DNA damage by Doxorubicin (1uM for 16 hr) in GFP-CTRL (C1 and C2) or GFP-KDM4A cells (A1 and A2).
+(I) Induction of p53 target genes analyzed by quantitative PCR after reverse transcription from doxorubicin damaged GFP-CTRL or GFP-KDM4A cells. Data are
+presented as fold induction relative to its own uninduced stable cell and normalized to expression of b-actin. Error bars represent the SEM. Asterisk indicates
+p < 0.05 for comparison indicated by bracket using two-tailed students t test.
+S6
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+Figure S3. Veriﬁcation of KDM4A Expression and H3.3 Incorporation, Related to Figure 3
+(A) Expression of KDM4A following depletion and overexpression of GFP-CTRL or GFP-KDM4A in 293T cells.
+(B) Expression of NHF-tagged KDM4A deletion constructs in RPE cells. Since the NC constructs lacks the KDM4A antibody epitope we show the HA Western blot
+for this fragment.
+(C) Expression of GFP-KDM4A, GFP-KDM4B, GFP-KDM4C, and GFP-KDM4D in transiently transfected RPE cells. * indicates a non-speciﬁc band.
+(D) Expression and incorporation into chromatin of FLAG-tagged H3.3 variants.
+(E) Expression of HA-FLAG-tagged H3.3 K-to-M variants reduced the corresponding tri-methylation.
+(F) Expression of KDM4A and Halo-Suv39h1 in transiently transfected RPE cells.
+(G) Expression of KDM4A and RFP-HP1g in transiently transfected RPE cells. Panels were assembled from the same exposure from non-adjacent lanes on
+different sections of the same blot.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S7
+
+Figure S4. Veriﬁcation of KDM4A Expression, Cell-Cycle Proﬁle, and Apoptosis
+(A) Expression of KDM4A and GFP-KDM4A in RPE stable clones.
+(B) FACS analysis demonstrating HU and G2 arrest of CTRL and KDM4A RPE stable cells. Total DNA content as measured using propidium iodide is depicted on
+the x axis.
+(C) KDM4A overexpressing RPE cells are not more apoptotic following treatment with hydroxyurea (HU) as measured by percent Annexin V positive cells.
+However, 12 hr of doxorubicin treatment induces apoptosis. Asterisk indicates p < 0.05 compated to CTRL + DOX using two-tailed Student’s t test.
+S8
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+Figure S5. KDM4A Associates with Replication Machinery and Promotes Rereplication of KDM4A Target Regions, Related to Figure 5
+(A) Western blots of co-immunoprecipitation of endogenous KDM4A with the indicated licensing and replication machinery in 293T Cells.
+(B) A representative CsCl density gradient curve used for determining re-replication of KDM4A target regions. Data are presented as the DNA concentration of the
+indicated fraction (x axis) taken from the bottom of the CsCl gradient. The positions of the light:light (L:L) and heavy:light (H:L) peaks and the heavy:heavy (H:H)
+region taken for analysis are indicated.
+(C) A graph depicting the KDM4A-dependent Chr1 sat2 rereplication plotted as a percent of input DNA loaded onto the CsCl gradient. Error bars represent the
+SEM. Asterisk indicates p < 0.05 compared to GFP-CTRL.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S9
+
+Figure S6. Identiﬁcation of Cytogenetic Bands Coampliﬁed with KDM4A in Cancer, Related to Figures 6 and 7
+(A) Focal ampliﬁcation of speciﬁc cytogenetic bands determined by the statistical test based on the null distribution of mean cytoband copy differences correlated
+with ampliﬁcation of KDM4A in 4,420 samples across all cancers from the TCGA data set. Graph depicts the –log(10) P-value for correlation of the copy number of
+each cytogenetic band with the copy number of KDM4A. The blue line represents the locus of KDM4A (gene-speciﬁc signiﬁcance of p = 2x10142).
+(B) Focal ampliﬁcation of speciﬁc cytogenetic bands determined by the statistical test based on the null distribution of mean cytoband copy differences correlated
+with ampliﬁcation of KDM4B in 4,420 samples across all cancers from the TCGA data set. The blue dot represents the gene-speciﬁc signiﬁcance of KDM4B.
+(C) Focal ampliﬁcation of speciﬁc cytogenetic bands determined by the statistical test based on the null distribution of mean cytoband copy differences
+correlated with ampliﬁcation of KDM4A in 547 ovarian cancer samples. The blue line represents the locus of KDM4A (gene-speciﬁc signiﬁcance of p = 1.4x1042).
+For each co-ampliﬁcation plot, blue shaded regions indicate 1p11.2 through 1q21.3 and red dashed lines indicate Xp11.2 through Xq13.2.
+(D–F) Empirical cumulative distribution function (% of samples possessing mean focal copy number less than or equal to the value on the x axis) in 1q21.1-1q21.3
+with unaltered (0) copy number of KDM4A, copy Gain of KDM4A (+1), or focally ampliﬁed KDM4A (+2). The blue dashed lines at 0.3 is a cutoff to deﬁne the fraction
+of co-ampliﬁed samples with KDM4A ampliﬁcation in Figure 6D-I.
+(G–I) Same as in (D-F) but for KDM4B.
+(J) KDM4A overexpression increased copy number of 1q12h, 1q12/21.1 and 1q21.2 and Xq13.1 but not X cen or Xq13.2 in 293T cells. Copy number was as-
+sessed using the indicated FISH probes.
+(K) KDM4A-dependent rereplicated regions are bound by KDM4A. KDM4A ChIP was conducted in 293T cells at regions of re-replication. Error bars represent the
+SEM. Asterisk indicates p < 0.05 compared to CTRL using two-tailed Student’s t test.
+S10
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+
+Figure S7. Extra Copies of 1q12/21 Can Be Found Outside of the Chromosome 1 Domain in Interphase Cells, Related to Figure 7
+(A–L) Combined Chromosome 1 Paint (Green) and 1q12/21 FISH (Red) demonstrates that extra copies of 1q12/21 can be found adjacent to or outside chro-
+mosome 1 domains. Scale bar represents 5 mm.
+(M) Schematic depicting the model by which KDM4A could promote copy number gain. Our results support a model where increased expression of KDM4A
+promotes recruitment of KDM4A to speciﬁc genomic regions and promotes rereplication. Increased KDM4A at these loci promotes a more open chromatin
+environment through removal of H3K9me3 and eviction of HP1g. Increasing levels of Suv39h1 or HP1g is sufﬁcient to block this altered chromatin state. These
+altered chromatin domains could then support rereplication through increased recruitment of MCMs and DNA polymerases, which could be facilitated directly
+through interactions with KDM4A. Alternatively, the more open chromatin generated by KDM4A could indirectly promote inappropriate recruitment of MCMs and
+DNA polymerases to unused or reused origins, thus promoting rereplication. The inappropriate rereplication within these regions could then result in head-to-tail
+collision of one replication fork chasing another. These collisions would then generate extrachromosomal DNA fragments. The ‘‘?’’ represent possibilities that
+need further testing.
+Cell 154, 541–555, August 1, 2013 ª2013 Elsevier Inc.
+S11

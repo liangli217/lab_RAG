@@ -1,0 +1,1337 @@
+Letters
+https://doi.org/10.1038/s41591-019-0561-9
+1Cancer Center, Massachusetts General Hospital, Boston, MA, USA. 2Department of Medicine, Harvard Medical School, Boston, MA, USA. 3Broad Institute 
+of MIT and Harvard, Cambridge, MA, USA. 4IBM Research, Yorktown Heights, NY, USA. 5Candiolo Cancer Institute, FPO-IRCCS, Turin, Italy. 6Department 
+of Oncology, University of Torino, Turin, Italy. 7Dana-Farber Cancer Institute, Boston, MA, USA. 8Howard Hughes Medical Institute, Boston, MA, USA. 
+9Department of Pathology, Massachusetts General Hospital, Boston, MA, USA. 10These authors contributed equally: Aparna R. Parikh, Ignaty Leshchiner, 
+Liudmila Elagina. *e-mail: gadgetz@broadinstitute.org; rbcorcoran@partners.org
+During cancer therapy, tumor heterogeneity can drive the 
+evolution of multiple tumor subclones harboring unique 
+resistance mechanisms in an individual patient1–3. Previous 
+case reports and small case series have suggested that liquid 
+biopsy (specifically, cell-free DNA (cfDNA)) may better cap-
+ture the heterogeneity of acquired resistance4–8. However, the 
+effectiveness of cfDNA versus standard single-lesion tumor 
+biopsies has not been directly compared in larger-scale pro-
+spective cohorts of patients following progression on targeted 
+therapy. Here, in a prospective cohort of 42 patients with 
+molecularly defined gastrointestinal cancers and acquired 
+resistance to targeted therapy, direct comparison of post-
+progression cfDNA versus tumor biopsy revealed that cfDNA 
+more frequently identified clinically relevant resistance 
+alterations and multiple resistance mechanisms, detect-
+ing resistance alterations not found in the matched tumor 
+biopsy in 78% of cases. Whole-exome sequencing of serial 
+cfDNA, tumor biopsies and rapid autopsy specimens eluci-
+dated substantial geographic and evolutionary differences 
+across lesions. Our data suggest that acquired resistance is 
+frequently characterized by profound tumor heterogeneity, 
+and that the emergence of multiple resistance alterations in 
+an individual patient may represent the ‘rule’ rather than the 
+‘exception’. These findings have profound therapeutic impli-
+cations and highlight the potential advantages of cfDNA over 
+tissue biopsy in the setting of acquired resistance.
+The inevitable emergence of acquired resistance is a major limita-
+tion of current targeted therapies9. Several key studies highlight the 
+potential role that tumor heterogeneity plays in the emergence of 
+resistance3,4,7,10–14. In acquired resistance, the evolutionary pressure 
+of therapy can drive outgrowth of distinct tumor subclones harbor-
+ing independent resistance mechanisms in an individual patient, 
+within different metastatic lesions or within the same lesion1,5,7,10,13. 
+Genomic analysis of standard single-lesion tumor biopsies on dis-
+ease progression has been the mainstay of identifying mechanisms 
+of acquired resistance, but recent studies suggest that tumor biop-
+sies may vastly under-represent the heterogeneity of resistance in a 
+single patient5,7,10,15,16. In particular, analyzing a core biopsy from one 
+region of a single metastatic lesion may fail to detect clinically rel-
+evant resistance mechanisms, leading to mixed responses or failure 
+of subsequent therapy3,7,17.
+Liquid biopsy—specifically, cell-free DNA (cfDNA)—may offer 
+advantages for assessing tumor heterogeneity4,18,19. Tumor-derived 
+cfDNA (also termed circulating tumor DNA) is shed from tumor 
+cells throughout the body. Therefore, cfDNA analysis can poten-
+tially identify multiple concurrent heterogeneous resistance mecha-
+nisms in individual patients that single-lesion tumor biopsies may 
+miss8,20–22. While case reports and small case series have suggested 
+advantages of cfDNA4,5,7,23, cfDNA and tumor biopsy have not been 
+directly compared in larger-scale prospective patient cohorts fol-
+lowing progression on targeted therapy.
+Therefore, we evaluated a prospective cohort of molecularly 
+defined gastrointestinal cancer patients who developed acquired 
+resistance to targeted therapy. Through a systematic, disease center-
+wide liquid biopsy program, 42 patients who achieved stable disease 
+or partial response to targeted therapy underwent liquid biopsy. 
+Liquid versus tissue biopsy for detecting  
+acquired resistance and tumor heterogeneity  
+in gastrointestinal cancers
+Aparna R. Parikh1,2,10, Ignaty Leshchiner   3,10, Liudmila Elagina3,10, Lipika Goyal1,2, Chaya Levovitz4,  
+Giulia Siravegna5,6, Dimitri Livitz   3, Kahn Rhrissorrakrai4, Elizabeth E. Martin3,  
+Emily E. Van Seventer1,2, Megan Hanna3, Kara Slowik3, Filippo Utro   4, Christopher J. Pinto1,2,  
+Alicia Wong3, Brian P. Danysh3, Ferran Fece de la Cruz   1,2, Isobel J. Fetter1,2, Brandon Nadres   1,2,  
+Heather A. Shahzade1,2, Jill N. Allen1,2, Lawrence S. Blaszkowsky1,2, Jeffrey W. Clark1,2, 
+Bruce Giantonio1,2, Janet E. Murphy1,2, Ryan D. Nipp1,2, Eric Roeland1,2, David P. Ryan1,2, 
+Colin D. Weekes1,2, Eunice L. Kwak1,2, Jason E. Faris1,2, Jennifer Y. Wo1,2, François Aguet   3, 
+Ipsita Dey-Guha1,2, Mehlika Hazar-Rethinam1,2, Dora Dias-Santagata1,2, David T. Ting   1,2, 
+Andrew X. Zhu1,2, Theodore S. Hong1,2, Todd R. Golub   3,7,8, A. John Iafrate1,2,  
+Viktor A. Adalsteinsson3, Alberto Bardelli5,6, Laxmi Parida   4, Dejan Juric   1,2, Gad Getz   1,2,3,9*  
+and Ryan B. Corcoran   1,2*
+Corrected: Author Correction
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1415
+
+Letters
+NATurE MEDicinE
+When possible, a matched tumor biopsy at the time of eventual dis-
+ease progression was obtained (23 patients). Patients encompassed 
+seven molecular subtypes across three tumor types (Supplementary 
+Table 1), offering a general assessment of cfDNA on acquired 
+resistance. To identify candidate-acquired resistance mechanisms, 
+cfDNA isolated from postprogression plasma was analyzed by 
+next-generation sequencing (NGS) to identify emergent altera-
+tions not detected in pretreatment tumor or cfDNA. Targeted NGS 
+was performed in all cases, with parallel whole-exome sequencing 
+(WES) when the tumor fraction in cfDNA was sufficient (>5%). 
+Only previously reported and functionally validated resistance 
+alterations were counted as resistance mechanisms5,7,8,12,13,15,21–35 
+(Supplementary Table 2).
+Postprogression cfDNA identified at least one previously vali-
+dated resistance alteration in 32 out of 42 (76%) patients. Notably, 
+17 (53%) of these 32 patients (40% of all patients) exhibited >1 
+detectable resistance alteration (range: 2–9; median: 3 per patient), 
+suggesting frequent and profound tumor heterogeneity associ-
+ated with acquired resistance (Fig. 1 and Supplementary Table 3). 
+In total, 78 clinically relevant resistance alterations were found in 
+cfDNA across multiple molecularly defined tumor types receiving 
+various targeted therapies.
+To compare the effectiveness of cfDNA versus standard tumor 
+biopsy, we analyzed matched postprogression tumor biopsies from 
+23 patients by WES and/or targeted NGS, and compared them 
+with pretreatment tumor tissue. Tumor biopsy identified resistance 
+alterations less frequently than cfDNA in only 11 out of 23 (48%) 
+patients (Fig. 1 and Extended Data Fig. 1), whereas cfDNA identi-
+fied at least one resistance alteration in 20 out of 23 (87%) patients, 
+and in 76% of all patients. Moreover, multiple resistance alterations 
+were identified in the postprogression biopsy in only two of the 23 
+cases (9%). This contrasts with cfDNA, where 40% of patients har-
+bored multiple resistance alterations, with up to nine alterations in a 
+single patient. Overall, postprogression cfDNA identified additional 
+clinically relevant resistance alterations not detected in the postpro-
+gression tumor biopsies in 18 out of 23 (78%) cases.
+Conversely, only one of the 23 (4%) postprogression tumor 
+biopsies identified a resistance alteration that was not detected in 
+matched postprogression cfDNA by NGS. In TPS125—a patient 
+with RAS wild type colorectal cancer (CRC) treated with the 
+TPS015
+TPS037
+TPS023
+TPS028
+TPS007
+TPS014
+TPS026
+TPS027
+TPS177
+TPS012
+TPS123
+TPS005
+TPS148
+TPS030
+TPS021
+TPS372
+TPS363
+TPS019
+TPS320
+TPS011
+TPS001
+TPS164
+TPS017
+TPS002
+TPS098
+TPS125
+TPS437
+TPS884
+TPS042
+TPS1059
+TPS240
+TPS184
+TPS1006
+TPS432
+GCS0307
+GCS2336
+TPS287
+TPS492
+GCS0233
+TPS029
+TPS130
+TPS093
+Alteration found in both plasma and tumor biopsy
+Alteration found in plasma but not in matched tumor
+biopsy, then later found in a subsequent tumor biopsy
+Alteration found in plasma only
+Alteration found in tumor biopsy only
+Tumor biopsy not available
+Alteration not found
+Tumor
+biopsy
+cfDNA
+Multiple resistance mechanisms identified
+Single resistance mechanism identified
+CRC
+Biliary
+GE
+GE
+GE
+CRC
+CRC
+BRAF
+V600E
+FGFR2
+MET
+HER2
+RAS WT
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+5
+10
+15
+Number of resistance alterations
+cfDNA
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+5
+10
+15
+Number of resistance alterations
+Number of patients
+Tumor biopsy
+17
+10
+15
+2
+9
+12
+No alterations
+1 alteration
+≥ 2 alterations
+Number of patients
+BRAF V600E
+BRAF amp
+EGFR G465E
+EGFR K489E
+EGFR S464L
+EGFR S492R
+EGFR V441D
+EGFR V441G
+EGFR amp
+ERBB2 amp
+FGFR2 E565A
+FGFR2 K641R
+FGFR2 K659M
+FGFR2 L617V
+FGFR2 N549H
+FGFR2 N549K
+FGFR2 V564F
+FGFR2 V564L
+KRAS G12A
+KRAS G12C
+KRAS G12D
+KRAS G12S
+KRAS G12V
+KRAS Q61H
+KRAS Q61L
+KRAS amp
+MAP2K1 K57E
+MAP2K1 K57N
+MAP2K1 K57T
+MAP2K2 C125S
+MET D1228H
+MET D1228N
+MET Y1230H
+MET amp
+NRAS Q61K
+NRAS Q61R
+Fig. 1 | Identification of acquired resistance mechanisms in liquid versus tumor biopsy. Comparison of specific resistance alterations identified in plasma 
+cfDNA (n = 42) versus tumor biopsy (n = 23) for each patient. Patients are grouped according to tumor type (n = 3; CRC, gastroesophageal (GE) or biliary) 
+and molecular subtype (n = 5; FGFR2 fusion (FGFR2), MET amplification (MET), HER2 amplification (HER2), BRAFV600E or RAS wild type (RAS WT)). Red 
+represents alterations identified in the plasma but not in the tissue biopsies. Green represents alterations identified in tissue biopsies but not in plasma. 
+Purple represents alterations identified in both plasma and tissue biopsies. Pale purple represents alterations identified in plasma that were not detected 
+in the postprogression tissue biopsy but were eventually detected in subsequent tissue biopsies from the same patient. The alterations detected in cfDNA 
+versus tumor biopsy are quantified in a histogram across the top of the panel and summarized graphically to the right. The graphs on the right depict 
+specifically the percentage of patients with one, more than one or no experimentally validated resistance alterations identified by cfDNA (top) or tumor 
+biopsy (bottom). amp, amplification.
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1416
+
+Letters
+NATurE MEDicinE
+Brain lesion
+Liver biopsy 1
+Liver biopsy 2
+Subcutaneous lesion
+cfDNA
+BRAF p.V600E 54.7% a.f.
+EGFR amp
+KRAS p.G12S not detected
+NRAS p.Q61R not detected
+BRAF p.V600E 36.4% a.f.
+KRAS p.G12S 6.4% a.f.
+NRAS p.Q61R 3.1% a.f.
+EGFR amp not detected
+BRAF p.V600E 61.6% a.f.
+KRAS p.G12S 22.4% a.f.
+NRAS p.Q61R not detected
+EGFR amp not detected
+BRAF p.V600E 45.4% a.f.
+KRAS p.G12S 0.2% a.f.
+NRAS p.Q61R not detected
+EGFR amp not detected
+BRAF p.V600E 24% a.f.
+KRAS p.G12S 2.1% a.f.
+NRAS p.Q61R 0.6% a.f.
+EGFR amp
+Liver biopsy 1 (post)
+Liver biopsy 2 (post)
+Brain lesion (post)
+Subcutaneous (post)
+cfDNA (post)
+APC p.K1462fs
+TP53 p.C242F
+BRAF p.V600E
+ELF3 p.S229R
+KRAS p.G12S
+BCLAF1 p.S496L
+CL. 1
+CL. 2
+CL. 5
+CL. 10
+CL. 4
+CL. 7
+CL. 8
+CL. 11
+CL. 9
+CL. 13
+CL. 12
+CL. 6
+CL. 3
+137
+8
+64
+154
+64
+9
+8
+29
+19
+15
+30
+26
+4
+KEL p.T416M
+UMOD p.D166N
+PLXNC1 p.V430I
+LIMS1 p.E201K
+DLC1 p.T615I
+CSMD3 p.R1889G
+BCLAF1 p.S496L
+TEKT1 p.S41I
+FIG4 p.E792A
+BEND3 p.K228T
+EYA2 p.R60H
+MCC p.G0S
+LRRCC1 p.A6V
+SP8 p.G138S
+DNAJC1 p.V543G
+CPAMD8 p.A43V
+VCL p.Q1134R
+SDK2 p.G1794W
+PIK3R5 p.L484R
+NUP210L p.G360D
+KLHL32 p.E255D
+FGFRL1 p.P419T
+PLB1 p.R1454C
+CSMD1 p.I626V
+KRAS p.G12S
+ANK3 p.P3687L
+CHD2 p.G975R
+EYA2 p.F123V
+ATP8B4 p.L215P
+MAMDC2 p.S110N
+GOLGA1 p.F726V
+SCG2 p.A0T
+MGAT5 p.S102L
+ELF3 p.S229R
+XPO5 p.Q304*
+EML5 p.A1069V
+CLTCL1 p.R758C
+USH2A p.S4842A
+CENPB p.A263T
+SP140L p.L303R
+ECEL1 p.E327A
+DTX1 p.A617T
+TAOK3 p.K53T
+KCNN2 p.R240W
+TIAM1 p.R1449W
+MCIDAS p.A228G
+MAP3K19 p.K770M
+LRRCC1 p.L581R
+OR52N1 p.V196G
+ADCK3 p.K417R
+TRIM54 p.N2I
+YAE1D1 p.R0W
+ZMAT4 p.E34K
+APC p.K1462fs
+NSUN2 p.P674S
+DAAM2 p.P566S
+PCK2 p.E324D
+EPHB1 p.V551M
+MC4R p.C319F
+TP53 p.C242F
+ALPP p.A427T
+FOXD3 p.G269E
+BRAF p.V600E
+BRIP1 p.R965K
+a
+b
+c
+Fig. 2 | Comparison of multiple tumor biopsies versus liquid biopsy in a BRAF-mutant colorectal cancer patient. a, cfDNA (n = 1) and tumor tissue 
+biopsy specimens (n = 4) included in the analysis for patient TPS037. For each specimen, the alterations and associated allelic fractions as determined 
+by either ddPCR, targeted NGS or WES are shown (Supplementary Tables 3–5). All ddPCR analyses were performed to a minimum coverage depth of 
+300×. Layered pie charts represent the likely clonal composition of each specimen, with the color of each subclone matching the color of the respective 
+gene and branch in the phylogenetic tree in b. a.f., allele frequency. b, Phylogenetic tree representing the clonal architecture present in the specimens 
+(using PhylogicNDT36). The numbers of somatic alterations assigned to each clone (or cluster; CL) and detected events in known cancer genes appear on 
+the branches. c, Representative clonal and subclonal coding of somatic alterations detected in each plasma or tissue specimen. The size of each square 
+represents the estimated CCF of each alteration, with an empty box indicating no detection. Events in known cancer genes are highlighted in blue.
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1417
+
+Letters
+NATurE MEDicinE
+anti-epidermal growth factor receptor (EGFR) antibody cetux-
+imab—an EGFRK489E mutation affecting the receptor’s antibody-
+binding domain was identified in a postprogression biopsy at 11.9% 
+allele frequency (cancer cell fraction (CCF): 78%). EGFRK489E was 
+not detected by clinical NGS in postprogression cfDNA, but was 
+detected on reanalysis using high-sensitivity droplet digital PCR 
+(ddPCR) at 0.53% allele frequency (near the lower detection limit 
+of clinical NGS assays for cfDNA; Supplementary Table 4). Thus, 
+some low-level resistance alterations in rare tumor subclones may 
+exist below the detection level in cfDNA with current technologies. 
+Still, remarkably, every resistance alteration identified in a postpro-
+gression tumor biopsy was also detectable in matched cfDNA, sug-
+gesting that, while possible, missing resistance alterations by cfDNA 
+analysis may be infrequent.
+Interestingly, five cases with postprogression tumor biopsies had 
+subsequent tumor specimens available for analysis, obtained dur-
+ing standard clinical care or through an institutional rapid autopsy 
+program. In all cases, additional resistance mechanisms detected 
+in postprogression cfDNA were later found in distinct metastatic 
+lesions (Extended Data Fig. 2).
+TPS037—a 53-year-old male with metastatic BRAFV600E CRC—
+was treated with a combination of EGFR, BRAF and phosphoinosit-
+ide 3-kinase inhibitor-α inhibitors (cetuximab, encorafenib and 
+alpelisib; NCT01719380) for 16 months before tumor progres-
+sion15. Biopsy of a progressing liver lesion revealed the original 
+BRAFV600E mutation and an emergent KRASG12S mutation (Fig. 2a). 
+Postprogression cfDNA analysis by clinical NGS (Guardant360) 
+showed not only the original BRAFV600E and the emergent KRASG12S 
+mutations, but also NRASQ61R and low-level EGFR amplifica-
+tion—all known resistance mechanisms in BRAFV600E CRC15,24,32. 
+Subsequently, the patient underwent: (1) resection of a brain metas-
+tasis; (2) a second protocol-related liver biopsy; and (3) biopsy of a 
+symptomatic subcutaneous soft-tissue lesion.
+To better understand the subclonal architecture of resistance, 
+postprogression tumor specimens and cfDNA were analyzed by 
+WES. Consistent with previous reports, the original, likely clonal, 
+BRAFV600E mutation persisted in all specimens (Fig. 2a). KRASG12S 
+was detected by WES in both liver biopsies, but not in the brain 
+or soft-tissue metastases. Interestingly, the brain lesion harbored an 
+EGFR amplification not detected in any other tumor specimen but 
+detected at low levels in cfDNA by clinical NGS. High-sensitivity 
+ddPCR analysis of each tumor specimen also identified KRASG12S 
+(allele frequency: 0.17%) in the subcutaneous lesion and NRASQ61R 
+(allele frequency: 3.1%) in one liver biopsy (Supplementary Table 4). 
+Thus, all three resistance alterations identified in cfDNA were 
+identified in at least one of the postprogression tumor samples, 
+although no single biopsy harbored all alterations. The clonal archi-
+tecture and phylogenetic relationship of the four postprogression 
+tumor biopsies and cfDNA by WES (Fig. 2b,c and Supplementary 
+Table 5) showed shared clonal (truncal), private clonal and 
+subclonal alterations present across various samples. Consistent 
+with the detectability in cfDNA of all resistance alterations pres-
+ent in the individual tumor biopsies, each clonal alteration and the 
+majority of subclonal mutation clusters found in different tumor 
+biopsies were represented (at clonal or subclonal frequencies) in 
+cfDNA, again highlighting the ability of cfDNA to capture hetero-
+geneous molecular alterations present in distinct tumor lesions in 
+an individual patient.
+Similarly, TPS177—a 58-year-old woman with metastatic gas-
+tric adenocarcinoma harboring a fusion between CD44 (exons 1–8) 
+and FGFR2 (exons 3–18)—received the FGFR inhibitor Debio1347 
+(NCT01948297), achieving stable disease for 4 months before pro-
+gression. Serial cfDNA analysis (Fig. 3a and Supplementary Table 4) 
+revealed an initial decrease in the abundance of a clonal founder 
+mutation RHOAY42C (representative of the overall tumor burden), 
+which rebounded rapidly on progression and was accompanied by 
+the emergence of four FGFR2 mutations: (1) FGFR2V564L, affecting 
+the gatekeeper residue in the inhibitor binding site; (2) FGFR2L617V; 
+and (3) FGFR2E565A (all known mechanisms of resistance to FGFR 
+inhibition); and (4) FGFR2S780L, which resides outside the kinase 
+domain and may not represent a true resistance alteration7. As high-
+level FGFR2 fusion amplification was present (>50–150 copies), the 
+existence of a potential passenger mutation would not be surprising. 
+The patient underwent biopsy of a progressing para-aortic lymph 
+node, but unfortunately expired due to disease complications. Rapid 
+autopsy yielded 17 tumor lesions from various anatomic sites.
+We analyzed WES data from pretreatment and postprogression 
+cfDNA, postprogression biopsy and 17 autopsy specimens (Fig. 3b–d 
+and Supplementary Table 5), and studied the clones and their phy-
+logenetic structure with PhylogicNDT36. Interestingly, FGFR2V564L 
+(detected in postprogression cfDNA) was found predominantly 
+in liver metastases, whereas FGFR2L617V (also in postprogression 
+cfDNA) had an anticorrelated pattern, predominantly detected in 
+other metastatic sites, suggesting that these alterations confer resis-
+tance in different cell populations. FGFR2E565A, detected in cfDNA, 
+was identified at low levels in a single liver lesion (D). Interestingly, 
+autopsy specimens from the stomach (M, N and O)—the primary 
+tumor site—harbored only low levels of either resistance alteration. 
+WES and RNA sequencing (RNA-Seq) of stomach lesions also did 
+not detect clear evidence of the CD44–FGFR2 fusion, and showed 
+markedly reduced FGFR2 expression levels and local copy num-
+bers relative to other lesions (Fig. 3c). Phylogenetic analysis sug-
+gested that subclones present in these lesions likely represent early 
+ancestors (Fig. 3b, upper right branch) that may have existed before 
+development of the CD44–FGFR2 fusion-containing clone that later 
+seeded the majority of metastases. Thus, in these stomach lesions, 
+resistance to FGFR inhibition may have occurred primarily due to 
+outgrowth of an early fusion-negative clone. FGFR2 fusion as a late 
+event is consistent with the biology of gastric cancer, where receptor 
+tyrosine kinase amplifications (for example, ERBB2 or MET) can 
+Fig. 3 | Serial liquid biopsy and autopsy in a patient with FGFR2 fusion-positive gastric cancer (TPS177). a, The allele fractions of specific alterations 
+in cfDNA isolated from serial plasma specimens during therapy with FGFR inhibitor were assessed by ddPCR to a minimum coverage depth of 300×. 
+A truncal RHOAY42C mutation is shown in green. Emergent candidate resistance alterations are also shown. b, Phylogenetic tree representing the clonal 
+architecture across all specimens. The numbers of somatic alterations assigned to each clone (or cluster; CL) and detected events in known cancer genes 
+appear on the branches. FGFR2 fusion and amplification events likely occurred in the cyan subclone 2 (based on expression and copy-number patterns). 
+FGFR2L617V mutations were found at high levels in subclones 4 and 9. c, Clonal and subclonal alterations detected in each plasma (n = 2), tumor biopsy 
+(n = 1) and autopsy specimen (n = 17). The size of each square represents the estimated CCF of each alteration, with an empty box indicating no detection. 
+FGFR2 expression (transcripts per million (TPM)), copy number and the presence of supporting CD44–FGFR2 fusion reads, as determined by WES and 
+RNA-Seq, are shown, along with the number of reads for the two major FGFR2 resistance mutations (blue, mutant; green, wild type). Boxes with diagonal 
+lines indicate that no RNA-Seq data were available. FGFR2 fusions were confirmed in the cfDNA samples based on off-target WES reads. d, Diagram of the 
+locations of the autopsy specimens included in the analysis, along with the likely clonal migration patterns across lesions. Layered pie charts represent the 
+estimated clonal composition of each specimen, with the color of each subclone matching the respective gene color in the branches of the phylogenetic 
+tree. Tx, treatment.
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1418
+
+Letters
+NATurE MEDicinE
+occur as late events, leading to outgrowth of nonamplified clones 
+during targeted therapy30,37–39. However, the presence of FGFR2 
+resistance alterations at low levels suggests that some fusion-pos-
+itive subclones may have remained in these lesions, but at levels 
+too low to detect by WES or RNA-Seq. Overall, all three FGFR2  
+mutations, and the majority of private alterations present in indi-
+vidual tumors, were detected in postprogression cfDNA (Fig. 3c,d).
+Our data illustrate that acquired resistance to targeted therapy 
+in gastrointestinal cancers is highly heterogeneous, often with mul-
+tiple resistance alterations per patient, and that liquid biopsy can 
+CL. 6
+CL. 4
+SACS
+p.F1284V
+CL. 11
+CL. 8
+FGFR2 p.V564L
+EZH1 p.L422P
+TET2 p.L1229R
+CL. 3
+CL. 2
+CL. 7
+CL. 5
+CL. 10
+CL.1
+RHOA p.Y42C
+NF2 p.R160W
+TP53 p.V73fs
+A
+Post-biopsy
+K L
+J
+I
+H
+G
+F
+E
+D
+C
+B
+R
+Q
+P
+Autopsies
+Omentum
+Liver
+Pancreas
+Days
+% variant allele
+RHOA Y42C
+FGFR2 L617V
+FGFR2 V564L
+FGFR2 E565A
+FGFR2 S780L
+125
+100
+75
+50
+25
+0
+0.1
+10
+100
+1
+a
+FGFR2 p.E565A
+GIMAP6 p.Y6N
+SYT9 p.I170M
+NOTCH1 p.L107F
+NRG3 p.T135M
+ZIK1 p.T130K
+FLG p.S891R
+TACO1 p.H51Y
+EDEM3 p.L259F
+ZNF277 p.C35F
+PARK2 p.C59F
+GSG1L p.A68P
+RIN3 p.H325P
+LILRA4 p.L275P
+EPAS1 p.S478C
+PAXIP1 p.Q542H
+KRT9 p.S502R
+FMN2 p.K82N
+SEC31B p.L622R
+EZH1 p.L422P
+TET2 p.L1229R
+SPTAN1 p.E2370G
+FGFR2 p.V564L
+FGFR2 p.L617V
+MAP2 p.Q145R
+OR4C3 p.F70L
+NPY4R p.W205C
+HHLA1 p.L308V
+CCDC39 p.K153N
+MCMBP p.R306G
+LMBRD2 p.K259R
+SACS p.F1284V
+WDR45B p.E101D
+LGI2 p.V379G
+CENPF p.E2263D
+DCAF4L2 p.K31R
+SEPT14 p.T300P
+NEK11 p.K85R
+NBAS p.E1070D
+AHNAK p.K2250R
+CUBN p.Q2385R
+VLDLR p.K238R
+ZNF763 p.K338T
+ORMDL3 p.K118T
+FAM76A p.L130H
+ZNF416 p.Q125K
+TEKT3 p.E298G
+CEP112 p.R744Q
+BIRC6 p.QLL2455fs
+RFC5 p.I40S
+ZNF99 p.L28fs
+ATP2A1 p.N330I
+KIF19 p.L812R
+HIST1H2AL p.I80N
+TLR4 p.T151S
+LRRTM4 p.A53T
+NF2 p.R160W
+NFKBIA p.G194A
+SEC14L3 p.L237P
+TNPO2 p.R189W
+TSSK3 p.I256T
+TP53 p.V73fs
+RHOA p.Y42C
+FGFR2 expression
+FGFR2 copy number
+CD44–FGFR2 fusion
+c
+O
+N
+M
+Pre-tx
+Post-tx
+cfDNA
+Stomach
+Mesenteric
+Peripancreatic
+CD44–FGFR2 fusion
+FGFR2 amp
+FGFR2
+p.L617V
+Stomach
+Pancreas
+Liver
+D
+Post-biopsy
+(para-aortic
+node)
+Omentum nodes
+Mesenteric
+nodes
+E
+B
+C
+A
+P
+Q
+R
+I
+J
+F
+G
+M
+N
+O
+b
+K
+L
+Peripancreatic
+nodes
+Autopsy B
+Autopsy C
+Autopsy D
+Autopsy E
+Autopsy F
+Autopsy G
+Autopsy H
+Autopsy J
+Autopsy I
+Autopsy K
+Autopsy L
+Autopsy M
+Autopsy N
+Autopsy O
+cfDNA pre-tx
+cfDNA post-tx
+Post biopsy (A)
+Autopsy P
+Autopsy Q
+Autopsy R
+5
+73
+36
+5
+16
+56
+76
+14
+10
+49
+CL. 9
+32
+d
+H
+50
+250
+450
+20
+60
+100
+Expression (TPM)
+Copy number (total)
+10
+1,000
+10
+1,000
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1419
+
+Letters
+NATurE MEDicinE
+effectively detect multiple resistance alterations residing concur-
+rently in distinct tumor subclones and different metastatic lesions. 
+Remarkably, a resistance alteration detected in a tumor biopsy but 
+not in the matched cfDNA by clinical NGS occurred in only one out 
+of 23 cases. However, this alteration indeed existed in cfDNA and was 
+detected using a higher-sensitivity method. Thus, while cfDNA anal-
+ysis may miss rare tumor subclones, our study suggests effective rep-
+resentation of alterations from multiple lesions in cfDNA. However, 
+cfDNA detection effectiveness may differ by tumor type or metastatic 
+site, or in tumors with low rates of circulating tumor DNA shedding.
+This study has several potential limitations. Although it repre-
+sents one of the largest direct comparisons of postprogression cfDNA 
+and matched tumor biopsy to date, overall patient numbers remain 
+limited. Thus, additional studies may further define the degree of 
+heterogeneity on acquired resistance and its relevance beyond gas-
+trointestinal cancers. Additionally, in some cases, multiple biopsies 
+and rapid autopsy confirmed that the multiple resistance alterations 
+detected in cfDNA were derived from specific tumor lesions, but 
+multiple tumor specimens were not available for most patients. 
+However, in a comparator cohort of patients with similar clinical 
+characteristics (Supplementary Table 6) with cfDNA analysis after 
+progression on standard cytotoxic chemotherapy alone, without 
+targeted therapy, we did not observe emergence of any of the clini-
+cally relevant resistance alterations listed in Supplementary Table 2, 
+suggesting that resistance alterations detected in cfDNA in our 
+study represent tumor-derived alterations emerging under selective 
+pressure from targeted therapy. Finally, cfDNA analysis is unlikely 
+to detect nongenetic resistance mechanisms; in 24% of cases, no 
+resistance mechanisms were detected by cfDNA or tumor biopsy. 
+Although analysis of alterations in these patients revealed shared 
+patterns between copy-number alterations and tumors having a 
+known mechanism, a clear genomic driver of resistance could not 
+be identified (Extended Data Fig. 3 and Supplementary Table 7). 
+Thus, tumor biopsy will still be key in assessing acquired resistance, 
+particularly for novel or nongenetic resistance mechanisms.
+In conclusion, direct comparison of cfDNA versus tumor biopsy 
+illustrates how single-lesion tumor biopsies in the setting of acquired 
+resistance frequently fail to identify the presence of multiple clini-
+cally relevant resistance mechanisms, with cfDNA identifying addi-
+tional concurrent resistance mechanisms in 78% of cases. Thus, our 
+data suggest that single-lesion tumor biopsy alone is inadequate for 
+characterizing acquired resistance, and that cfDNA regularly iden-
+tifies heterogeneous clinically relevant resistance alterations that 
+are critical to the selection of subsequent therapy. This finding has 
+important clinical implications: a treatment strategy aiming to over-
+come resistance will need to address the fact that a patient probably 
+harbors multiple subclones with different resistance mechanisms. 
+A recent study showed the effectiveness of cfDNA analysis for select-
+ing initial molecularly directed therapy40. Similarly, our results support 
+that clinical incorporation of postprogression liquid biopsy may have 
+a valuable role in efforts to assess and overcome acquired resistance.
+Online content
+Any methods, additional references, Nature Research reporting 
+summaries, source data, statements of code and data availability and 
+associated accession codes are available at https://doi.org/10.1038/
+s41591-019-0561-9.
+Received: 28 February 2019; Accepted: 25 July 2019;  
+Published online: 9 September 2019
+References
+	1.	 Burrell, R. A. & Swanton, C. Tumour heterogeneity and the evolution of 
+polyclonal drug resistance. Mol. Oncol. 8, 1095–1111 (2014).
+	2.	 Gerlinger, M. et al. Genomic architecture and evolution of clear cell  
+renal cell carcinomas defined by multiregion sequencing. Nat. Genet. 46, 
+225–233 (2014).
+	3.	 McGranahan, N. & Swanton, C. Biological and therapeutic impact of 
+intratumor heterogeneity in cancer evolution. Cancer Cell 27, 15–26 (2015).
+	4.	 Bettegowda, C. et al. Detection of circulating tumor DNA in early- and 
+late-stage human malignancies. Sci. Transl. Med. 6, 224ra24 (2014).
+	5.	 Goyal, L. et al. Polyclonal secondary mutations drive acquired resistance to 
+FGFR inhibition in patients with FGFR2 fusion-positive cholangiocarcinoma. 
+Cancer Discov. 7, 252–263 (2017).
+	6.	 Piotrowska, Z. et al. Heterogeneity underlies the emergence of EGFR T790 
+wild-type clones following treatment of T790M-positive cancers with a 
+third-generation EGFR inhibitor. Cancer Discov. 5, 713–722 (2015).
+	7.	 Russo, M. et al. Tumor heterogeneity and lesion-specific response to targeted 
+therapy in colorectal cancer. Cancer Discov. 6, 147–153 (2016).
+	8.	 Siravegna, G. et al. Clonal evolution and resistance to EGFR blockade in the 
+blood of colorectal cancer patients. Nat. Med. 21, 795–801 (2015).
+	9.	 Garraway, L. A. & Jänne, P. A. Circumventing cancer drug resistance in the 
+era of personalized medicine. Cancer Discov. 2, 214–226 (2012).
+	10.	Gerlinger, M. et al. Intratumor heterogeneity and branched evolution revealed 
+by multiregion sequencing. N. Engl. J. Med. 366, 883–892 (2012).
+	11.	Jamal-Hanjani, M. et al. Tracking the evolution of non-small-cell lung cancer. 
+N. Engl. J. Med. 376, 2109–2121 (2017).
+	12.	Misale, S., Di Nicolantonio, F., Sartore-Bianchi, A., Siena, S. & Bardelli, A. 
+Resistance to anti-EGFR therapy in colorectal cancer: from heterogeneity to 
+convergent evolution. Cancer Discov. 4, 1269–1280 (2014).
+	13.	Misale, S. et al. Emergence of KRAS mutations and acquired resistance to 
+anti-EGFR therapy in colorectal cancer. Nature 486, 532–536 (2012).
+	14.	Turajlic, S. et al. Deterministic evolutionary trajectories influence primary 
+tumor growth: TRACERx Renal. Cell 173, 595–610.e11 (2018).
+	15.	Hazar-Rethinam, M. et al. Convergent therapeutic strategies to overcome  
+the heterogeneity of acquired resistance in BRAFV600E colorectal cancer. 
+Cancer Discov. 8, 417–427 (2018).
+	16.	Morelli, M. P. et al. Characterizing the patterns of clonal selection in 
+circulating tumor DNA from patients with colorectal cancer refractory to 
+anti-EGFR treatment. Ann. Oncol. 26, 731–736 (2015).
+	17.	Piotrowska, Z. et al. Heterogeneity and coexistence of T790M and T790 
+wild-type resistant subclones drive mixed response to third-generation 
+epidermal growth factor receptor inhibitors in lung cancer. JCO Precis. Oncol. 
+https://doi.org/10.1200/PO.17.00263 (2018).
+	18.	Blakely, C. M. et al. Evolution and clinical impact of co-occurring genetic 
+alterations in advanced-stage EGFR-mutant lung cancers. Nat. Genet. 49, 
+1693–1704 (2017).
+	19.	Haber, D. A. & Velculescu, V. E. Blood-based analyses of cancer: circulating 
+tumor cells and circulating tumor DNA. Cancer Discov. 4, 650–661 (2014).
+	20.	Chabon, J. J. et al. Circulating tumour DNA profiling reveals heterogeneity of 
+EGFR inhibitor resistance mechanisms in lung cancer patients. Nat. Commun. 
+7, 11815 (2016).
+	21.	Diaz, L. A. Jr. et al. The molecular evolution of acquired resistance to targeted 
+EGFR blockade in colorectal cancers. Nature 486, 537–540 (2012).
+	22.	Strickler, J. H. et al. Genomic landscape of cell-free DNA in patients with 
+colorectal cancer. Cancer Discov. 8, 164–173 (2018).
+	23.	Thierry, A. R. et al. Circulating DNA demonstrates convergent evolution  
+and common resistance mechanisms during treatment of colorectal cancer. 
+Clin. Cancer Res. 23, 4578–4591 (2017).
+	24.	Ahronian, L. G. et al. Clinical acquired resistance to RAF inhibitor 
+combinations in BRAF-mutant colorectal cancer through MAPK pathway 
+alterations. Cancer Discov. 5, 358–367 (2015).
+	25.	Arena, S. et al. MM-151 overcomes acquired resistance to cetuximab and 
+panitumumab in colorectal cancers harboring EGFR extracellular domain 
+mutations. Sci. Transl. Med. 8, 324ra14 (2016).
+	26.	Bahcall, M. et al. Acquired MET D1228V mutation and resistance to MET 
+inhibition in lung cancer. Cancer Discov. 6, 1334–1341 (2016).
+	27.	Bertotti, A. et al. A molecularly annotated platform of patient-derived 
+xenografts (“xenopatients”) identifies HER2 as an effective therapeutic target 
+in cetuximab-resistant colorectal cancer. Cancer Discov. 1, 508–523 (2011).
+	28.	Bertotti, A. et al. The genomic landscape of response to EGFR blockade in 
+colorectal cancer. Nature 526, 263–267 (2015).
+	29.	Heist, R. S. et al. Acquired resistance to crizotinib in NSCLC with MET exon 
+14 skipping. J. Thorac. Oncol. 11, 1242–1245 (2016).
+	30.	Kwak, E. L. et al. Molecular heterogeneity and receptor coamplification drive 
+resistance to targeted therapy in MET-amplified esophagogastric cancer. 
+Cancer Discov. 5, 1271–1281 (2015).
+	31.	Montagut, C. et al. Identification of a mutation in the extracellular domain of 
+the epidermal growth factor receptor conferring cetuximab resistance in 
+colorectal cancer. Nat. Med. 18, 221–223 (2012).
+	32.	Oddo, D. et al. Molecular landscape of acquired resistance to targeted  
+therapy combinations in BRAF-mutant colorectal cancer. Cancer Res. 76, 
+4504–4515 (2016).
+	33.	Siravegna, G. et al. Radiologic and genomic evolution of individual 
+metastases during HER2 blockade in colorectal cancer. Cancer Cell 34, 
+148–162.e7 (2018).
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1420
+
+Letters
+NATurE MEDicinE
+	34.	Tan, L. et al. Development of covalent inhibitors that can overcome resistance 
+to first-generation FGFR kinase inhibitors. Proc. Natl Acad. Sci. USA 111, 
+E4869–E4877 (2014).
+	35.	Yaeger, R. et al. Mechanisms of acquired resistance to BRAF V600E inhibition 
+in colon cancers converge on RAF dimerization and are sensitive to its 
+inhibition. Cancer Res. 77, 6513–6523 (2017).
+	36.	Leshchiner, I., et al. Comprehensive analysis of tumour initiation, spatial and 
+temporal progression under multiple lines of treatment. Preprint at bioRxiv 
+https://www.biorxiv.org/content/10.1101/508127v1(2018).
+	37.	Janjigian, Y. Y. et al. Genetic predictors of response to systemic therapy in 
+esophagogastric cancer. Cancer Discov. 8, 49–58 (2018).
+	38.	Kim, S. T. et al. Impact of genomic alterations on lapatinib treatment 
+outcome and cell-free genomic landscape during HER2 therapy in HER2+ 
+gastric cancer patients. Ann. Oncol. 29, 1037–1048 (2018).
+	39.	Pectasides, E. et al. Genomic heterogeneity as a barrier to precision medicine 
+in gastroesophageal adenocarcinoma. Cancer Discov. 8, 37–48 (2018).
+	40.	Rothwell, D. G. et al. Utility of ctDNA to support patient selection  
+for early phase clinical trials: the TARGET study. Nat. Med. 25,  
+738–743 (2019).
+Acknowledgements
+Grant Support: This work is partially supported by the NIH/NCI Gastrointestinal 
+Cancer Specialized Program of Research Excellence P50 (CA127003, R01CA208437, 
+K08CA166510 and U54CA224068), a Damon Runyon Clinical Investigator Award and 
+a Stand Up To Cancer Colorectal Dream Team Translational Research Grant (grant 
+number SU2C-AACR-DT22-17 to R.B.C.). Research grants are administered by the 
+American Association of Cancer Research, the scientific partners of Stand Up To Cancer. 
+The work is partially supported by the Broad/IBM Cancer Resistance Research Project 
+(G.G. and L.P.) and the Susan Eid Tumor Heterogeneity Initiative (D.J.). The research 
+leading to these results has received funding from FONDAZIONE AIRC under 5 per 
+Mille 2018 ID. 21091 program – P. I. Bardelli Alberto. The research leading to these 
+results has received funding from FONDAZIONE AIRC: AIRC Investigator Grant 
+2015 – ID. 16788; AIRC Investigator Grant 2018 – ID. 21923; AIRC–CRUK–FC AECC 
+Accelerator Award – contract 22795. This work was also supported by the European 
+Community’s Seventh Framework Programme (grant agreement number 602901 
+MErCuRIC), H2020 (grant agreement number 635342-2 MoTriColor), IMI (contract 
+number 115749 CANCER-ID), Ministero della Salute (project NET-2011-02352137) and 
+Fondazione Piemontese per la Ricerca sul Cancro–ONLUS 5 per Mille 2014 and 2015 
+Ministero della Salute. G.S. was funded by a Roche per la Ricerca grant (2017) and AIRC 
+three-year fellowship (2017).
+Author contributions
+A.R.P., I.L., L.G., D.J., G.G. and R.B.C. conceived of the study; A.R.P., I.L., L.E., L.G., C.L., 
+G.S., D.L., K.R., E.E.M., E.E.V.S., F.U., F.F.d.l.C., I.J.F., B.N., H.A.S., F.A., I.D.-G., M.H.-R., 
+D.D.-S., D.T.T., A.J.I., A.B., L.P., D.J., G.G. and R.B.C. performed data analysis and 
+interpretation; I.L., L.E., C.L., D.L., K.R., E.E.M., F.U., L.P. and G.G. performed analysis 
+of whole exome sequencing and subclonal reconstruction; A.R.P., I.L., L.G., G.S., D.D.-S., 
+D.T.T., A.J.I., A.B., L.P., D.J., G.G. and R.B.C. supervised the data analysis; A.R.P., I.L., 
+L.E., C.L., K.R., E.E.V.S., F.U., K.S., B.P.D., L.P., G.G. and R.B.C. participated in writing 
+of the manuscript and generated figures; M.H., B.P.D., T.R.G., and V.A.A. suggested 
+manuscript edits; A.R.P., L.G., E.E.V.S., C.J.P., J.N.A., L.S.B., J.W.C., B.G., J.E.M., R.D.N., 
+E.R., D.P.R., C.D.W., E.L.K., J.E.F., D.D.-S., D.T.T., A.X.Z., J.Y.W., T.S.H., A.J.I., D.J., 
+R.B.C., M.H., A.W., V.A. performed sample and data collection; funding was obtained by 
+T.R.G. and G.G.; and A.R.P., I.L., E.E.V.S., C.J.P., M.H., K.S., A.W., B.P.D., and G.G. and 
+R.B.C. participated in project administration.
+Competing interests
+A.R.P. is a consultant/advisory board member for PureTech, Driver, Foundation Medicine 
+and Eisai, and has institutional research funding from Array, Plexxikon, Guardant, BMS, 
+MacroGenics, Genentech, Novartis, OncoMed and Tolero. L.G. is a consultant/advisory 
+board member for Debiopharm, H3 Biomedicine and Pieris Pharmaceuticals, and a 
+steering committee member for Agios Pharmaceuticals, Taiho Pharmaceuticals and 
+Debiopharm. E.R. is an advisory board member/consultant for Helsinn, Heron, BASF, 
+American Imaging Management, Napo, Immuneering and Vector Oncology. D.P.R. 
+serves on advisory boards for MPM Capital, Gritstone Oncology, Oncorus and TCR2, 
+has equity in MPM Capital and Acworth Pharmaceuticals, and serves as an author for 
+Johns Hopkins University Press, UpToDate and McGraw Hill. C.D.W. is a consultant 
+for Celgene. J.E.F. is an employee at Novartis, has served as an advisory board member/
+consultant for Merrimack and N-of-One, and received research funding from Novartis, 
+Roche/Genentech, Agios, Takeda, Sanofi, Celgene and Exelixis, as well as travel support 
+from Roche/Genentech. E.L.K. is an employee of Novartis. M.H.-R. is an employee of 
+Forma Therapeutics. D.T.T. is a consultant/advisory board member for Merrimack, Roche 
+Ventana and EMD Millipore–Sigma, is a founder and has equity in PanTher Therapeutics, 
+and receives research funding from ACD-Biotechne. A.X.Z. is a consultant/advisor for 
+AstraZeneca, Bayer, Bristol-Myers Squibb, Eisai, Eli Lilly, Exelixis, Merck, Novartis and 
+Roche/Genentech, and received research funding from Bayer, Bristol-Myers Squibb,  
+Eli Lilly, Merck and Novartis. T.S.H. is a consultant/advisory board member for Merck 
+and EMD Serono, and received research support from Taiho, AstraZeneca, Bristol-Myers 
+Squibb, Mobetron and Ipsen. A.J.I. is a consultant for DebioPharm, Chugai and Roche, 
+received research support from Sanofi and has equity in ArcherDX. T.R.G. is or has been  
+a consultant/advisor for Foundation Medicine, GlaxoSmithKline, Sherlock Biosciences and 
+Forma Therapeutics, and holds equity in Sherlock Biosciences and Forma Therapeutics. 
+R.B.C. is a consultant/advisory board member for Amgen, Array Biopharma, Astex 
+Pharmaceuticals, Avidity Biosciences, BMS, C4 Therapeutics, Chugai, Elicio, Fog Pharma, 
+Fount Therapeutics, Genentech, LOXO, Merrimack, N-of-One, Novartis, nRichDX, 
+Revolution Medicines, Roche, Roivant, Shionogi, Shire, Spectrum Pharmaceuticals, 
+Symphogen, Taiho and Warp Drive Bio, holds equity in Avidity Biosciences, C4 
+Therapeutics, Fount Therapeutics, nRichDX and Revolution Medicines, and has received 
+research funding from Asana, AstraZeneca and Sanofi. D.J. is an advisor/consultant for 
+Novartis, Genentech, Eisai, Ipsen and EMD Serono, and receives research support from 
+Novartis, Genentech, Eisai, EMD Serono, Takeda, Celgene and Placon. G.G. receives 
+research funds from IBM and Pharmacyclics, and is an inventor on patent applications 
+related to MuTect, ABSOLUTE, and POLYSOLVER. K.R., F.U., C.L. and L.P. are listed as 
+co-inventors on a patent application currently pending review at the USPTO. I.L. L.E., D.L., 
+E.E.V.S., E.E.M., M.H., K.S., C.J.P., A.W., B.P.D., F.F.d.l.C., I.J.F., B.N., H.A.S., J.N.A., L.S.B., 
+J.W.C., B.G., J.E.M., R.D.N., F.A., I.D.-G., D.D.-S. and V.A.A. declare no competing interests.
+Additional information
+Extended data is available for this paper at https://doi.org/10.1038/s41591-019-0561-9.
+Supplementary information is available for this paper at https://doi.org/10.1038/
+s41591-019-0561-9.
+Reprints and permissions information is available at www.nature.com/reprints.
+Correspondence and requests for materials should be addressed to G.G. or R.B.C.
+Peer review information: Javier Carmona was the primary editor on this article and 
+managed its editorial process and peer review in collaboration with the rest of the 
+editorial team.
+Publisher’s note: Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature America, Inc. 2019
+Nature Medicine | VOL 25 | SEPTEMBER 2019 | 1415–1421 | www.nature.com/naturemedicine
+1421
+
+Letters
+NATurE MEDicinE
+Methods
+Patients and specimen collection. All biopsies, tumor specimens and peripheral 
+blood draws for plasma isolation were collected in accordance with institutional 
+review board-approved protocols. Patients provided written informed consent, 
+and all studies were conducted in accordance with the Declaration of Helsinki. 
+Patients provided informed written consent for blood and tissue collection as well 
+as for genomic analysis of these specimens. Through a systematic liquid biopsy 
+program in the Center for Gastrointestinal Cancers at the Massachusetts General 
+Hospital Cancer Center, plasma collection for postprogression cfDNA analysis 
+was attempted for all patients receiving targeted therapy for molecularly defined 
+gastrointestinal cancer subtypes who achieved radiologic response or stable disease 
+between September 2014 and March 2018. In total, 42 patients were studied. 
+Peripheral blood was collected in two 10-ml Streck tubes on disease progression 
+for cfDNA analysis. When possible, postprogression tumor biopsies (solid and 
+blood) were obtained in parallel at the time of progression. These were obtained 
+in 23 of the 42 patients. Pretreatment tumor tissue was available for analysis in all 
+42 cases, and pretreatment cfDNA was available in 19 cases. Rapid autopsies were 
+performed within the first 3 h postmortem. Targeted exome sequencing on clinical 
+tissue specimens using a Clinical Laboratory Improvement Amendments-certified 
+clinical NGS assay was performed in the Department of Molecular Pathology at 
+the Massachusetts General Hospital. A subset of patients for whom tumor and 
+cfDNA specimens harbored sufficient tumor DNA content were analyzed by WES, 
+as described below. Imaging studies, including CT and MRI scans, were obtained 
+as part of routine clinical care. A comparator cohort of consecutive gastrointestinal 
+cancer patients who did not receive targeted therapy, who underwent clinical 
+NGS analysis of cfDNA (Guardant360) as part of routine clinical care after disease 
+progression on standard cytotoxic chemotherapy (including patients who received 
+antiangiogenic therapy, such as bevacizumab, and two patients with no previous 
+therapy), and who had comprehensive baseline clinical tumor NGS testing and 
+provided informed written consent as above, were also evaluated.
+cfDNA isolation and analysis. Whole blood was collected by routine phlebotomy 
+in two 10-ml Streck tubes. Plasma was separated within 1–4 d of collection through 
+two different centrifugation steps (the first at room temperature for 10 min at 1,600g 
+and the second at 3,000g for the same time and temperature). Plasma was stored at 
+−80 °C until cfDNA extraction. cfDNA was extracted from plasma using the QIAamp 
+Circulating Nucleic Acid Kit (Qiagen) according to the manufacturer’s instructions.
+Clinical NGS analysis of cfDNA was conducted using the Guardant360 
+assay. Peripheral blood was collected in two 10-ml Streck tubes and shipped for 
+centralized processing and testing (Guardant Health) in accordance with standard 
+clinical testing procedures. Sequencing libraries were prepared from up to 30 ng 
+cfDNA with custom in-line barcode molecular tagging, and complete sequencing 
+at 15,000× read depth of the critical exons in a targeted panel of 70+ genes was 
+performed at a Clinical Laboratory Improvement Amendments-certified and 
+College of American Pathologists-accredited laboratory (Guardant Health)41. 
+Targeted NGS of cfDNA for 226 cancer-related genes using the IRCC (Instituto 
+per la Ricerca e Cura del Cancro)-Target panel was performed as previously 
+reported7,8. To identify candidate mechanisms of acquired resistance, in each case, 
+cfDNA sequencing data from plasma obtained postprogression were compared 
+with sequencing data from pretreatment tumor or cfDNA, as available, to identify 
+emergent alterations not detected in the pretreatment specimens.
+For the ddPCR experiments, DNA template (8–10 μl) was added to 10 μl ddPCR 
+Supermix for Probes (Bio-Rad) and 2 μl of the custom primer/probe mixture. 
+This reaction mix was added to a DG8 cartridge, together with 60 μl Droplet 
+Generation Oil for Probes (Bio-Rad), and used for droplet generation. Droplets 
+were then transferred to a 96-well plate (Eppendorf) and then thermal cycled 
+under the following conditions: 5 min at 95 °C, 40 cycles of 94 °C for 30 s, 55 °C for 
+1 min and then 98 °C for 10 min (ramp rate: 2 °C s−1). Droplets were analyzed with 
+the QX200 Droplet Reader (Bio-Rad) for fluorescent measurement of fluorescein 
+amidite and hexachloro-fluorescein probes. Gating was performed based on positive 
+and negative controls, and mutant populations were identified. The ddPCR data 
+were analyzed with QuantaSoft analysis software (Bio-Rad) to obtain fractional 
+abundances of the mutant DNA alleles in the wild-type/normal background. The 
+quantification of the target molecule was presented as the number of total copies 
+(mutant plus wild type) per sample in each reaction. Allelic fractions were calculated 
+as follows: allelic fraction (%) = (Nmut/(Nmut + NWT)) × 100), where Nmut is the 
+number of mutant alleles and NWT is the number of wild-type alleles per reaction. A 
+minimum coverage depth of 300× was achieved for each analysis. ddPCR analysis of 
+normal control plasma DNA (from cell lines) and no-DNA template controls were 
+always included. Probe and primer sequences are available on request.
+WES data. For WES, the AllPrep DNA/RNA Mini Kit (Qiagen) was used for dual 
+extraction of both genomic DNA and RNA. DNA was quantified in triplicate using 
+a standardized PicoGreen dsDNA Quantitation Reagent (Invitrogen) assay. The 
+quality control identification check was performed using fingerprint genotyping of 
+95 common single nucleotide polymorphisms by Fluidigm Genotyping (Fluidigm). 
+Library construction from double-stranded DNA was performed using the 
+KAPA Library Prep Kit with palindromic forked adapters from Integrated DNA 
+Technologies. Libraries were pooled before hybridization. Hybridization and 
+capture were performed using the relevant components of Illumina’s Rapid Capture 
+Enrichment Kit, with a 37-Mb target. All library construction, hybridization 
+and capture steps were automated on the Agilent Bravo liquid handling system. 
+After postcapture enrichment, library pools were denatured using 0.1 N NaOH 
+on the Hamilton STARlet. Cluster amplification of DNA libraries was performed 
+according to the manufacturer’s protocol (Illumina) using HiSeq 4000 exclusion 
+amplification chemistry and HiSeq 4000 flow cells. Flow cells were sequenced 
+utilizing sequencing-by-synthesis chemistry for HiSeq 4000 flow cells. The flow 
+cells were then analyzed using RTA version 2.7.3 or later. Each pool of whole-exome 
+libraries was sequenced on paired 76-cycle runs with two eight-cycle index reads 
+across the number of lanes needed to meet coverage for all libraries in the pool.
+Phylogenetic analysis of multiple samples from the same patient. WES data were 
+analyzed on the FireCloud cloud-based analysis platform (https://portal.firecloud.org/). 
+Somatic mutations for each tumor/normal pair were detected using the Cancer 
+Genome Analysis WES Characterization Pipeline available on FireCloud. The WES 
+Characterization Pipeline includes multiple steps, including MuTect42 (for detection 
+of somatic single nucleotide variants), Strelka43 (for detecting small insertions and 
+deletions), deTiN44 (estimates potential tumor-in-normal contamination), ContEst45 
+(for detecting cross-patient contamination), AllelicCapSeg46 (for assessing allele-
+specific copy-number alterations) and ABSOLUTE46 (for estimating tumor purity, 
+ploidy, absolute allelic copy number and CCFs). The data for this study consisted of 
+multiple samples collected from each patient (pre- and post-treatment), as well as 
+autopsy samples. Phylogenetic analysis, subclonal reconstruction and tree building 
+were done with the PhylogicNDT package36.
+Tumor clustering based on patterns of commonly acquired alterations. To 
+better characterize patients with an unknown mechanism of resistance, we wanted 
+to identify groups of patients that share similar patterns of alterations that were 
+acquired between the pretreatment and postprogression samples. We define, for 
+each patient with pre- and post-treatment samples, a set of features that reflect the 
+changes in their somatic alterations between the pretreatment and postprogression 
+samples, which we call δ (Extended Data Fig. 3a). We focused the analysis on either 
+a list of 609 known cancer genes (Cancer Gene Census; downloaded October 
+2017) or a set of 5,144 genesets (MSigDB classes c2.cp and c5.bp; version 6 with at 
+most 200 genes). We considered both point mutations (somatic single nucleotide 
+variants, and insertions and deletions) and somatic copy-number alterations. 
+When analyzing point mutations, we set δgene = 1 to reflect a significant change in 
+CCF (that is, a change in CCF of the mutation in the gene of at least two standard 
+deviations above the mean CCF change across all mutations, and a postprogression 
+sample with a CCF > 0.2). Similarly, when analyzing copy number, we set δgene = 1 
+to reflect a significant copy-number change (that is, a change greater than two 
+standard deviations above or below the mean change in copy-number levels, 
+and amplification (copy-number level > 4) or deletion of the gene (copy-number 
+level < 1) in the postprogression sample, respectively). To study genesets, we set 
+δgeneset to reflect the fraction of genes in the geneset that have a significant change in 
+either copy number or mutation CCF, accounting for the size of the geneset and the 
+total number of significant genes in the patient.
+Next, to find groups of patients that have similar changes in their somatic 
+alterations, we applied the BiMax biclustering algorithm47 to each of the four δ 
+matrices (δcopy number
+cancer gene , δmutation
+geneset , δcopy number
+geneset
+ and δcopy number and mutation
+geneset
+). This analysis 
+yielded between three and 11 biclusters (Extended Data Figs. 3b–e). To evaluate the 
+significance of the resulting biclusters, we used a two-sided t-test to compare the 
+mean size of biclusters observed in the matrix against the results from n = 10,000 
+permuted matrices, where the values of the matrix were shuffled and biclustered.
+Reporting Summary. Further information on research design is available in the 
+Nature Research Reporting Summary linked to this article.
+Data availability
+Sequencing data from WES and RNA-Seq are available in the database of 
+Genotypes and Phenotypes with the accession number phs001853.v1.p1.
+References
+	41.	Lanman, R. B. et al. Analytical and clinical validation of a digital sequencing 
+panel for quantitative, highly accurate evaluation of cell-free circulating 
+tumor DNA. PLoS ONE 10, e0140712 (2015).
+	42.	Cibulskis, K. et al. Sensitive detection of somatic point mutations in impure 
+and heterogeneous cancer samples. Nat. Biotechnol. 31, 213–219 (2013).
+	43.	Kim, S. et al. Strelka2: fast and accurate calling of germline and somatic 
+variants. Nat. Methods 15, 591–594 (2018).
+	44.	Taylor-Weiner, A. et al. DeTiN: overcoming tumor-in-normal contamination. 
+Nat. Methods 15, 531–534 (2018).
+	45.	Cibulskis, K. et al. ContEst: estimating cross-contamination of human samples 
+in next-generation sequencing data. Bioinformatics 27, 2601–2602 (2011).
+	46.	Carter, S. L. et al. Absolute quantification of somatic DNA alterations in 
+human cancer. Nat. Biotechnol. 30, 413–421 (2012).
+	47.	Prelić, A. et al. A systematic comparison and evaluation of biclustering 
+methods for gene expression data. Bioinformatics 22, 1122–1129 (2006).
+Nature Medicine | www.nature.com/naturemedicine
+
+Letters
+NATurE MEDicinE
+Extended Data Fig. 1 | Phylogenetic trees for paired tumor biopsies. Phylogenetic trees for patients with WES for pre- and post-treatment samples. The 
+numbers of somatic alterations assigned to each cluster and detected events in known cancer genes appear on the branches. Two-dimensional plots show 
+the CCF distributions of subclones in the pre- and post-treatment samples. Events in known cancers are shown next to their subclonal cluster.
+Nature Medicine | www.nature.com/naturemedicine
+
+Letters
+NATurE MEDicinE
+Extended Data Fig. 2 | Patients with multiple postprogression tumor biopsies. Three of five patients with multiple postprogression tumor biopsies are 
+shown. The other two patients (TPS037 and TPS177) are shown in Figs. 2 and 3, respectively. For each patient, the location of each tumor biopsy, as well 
+as the resistance alterations (blue) and truncal alterations (orange) detected in cfDNA and in each tumor specimen, are shown. TPS001 is a patient with 
+RAS wild type colorectal cancer who developed resistance to an anti-EGFR antibody8. Biopsy of one liver lesion revealed an activating MEK1 (MAP2K1) 
+mutation, and biopsy of a second liver lesion identified a KRAS mutation. Both resistance alterations were detected in postprogression cfDNA. TPS007 
+is an FGFR2 fusion-positive cholangiocarcinoma patient who developed resistance to an FGFR inhibitor5. Five FGFR2 resistance mutations were identified 
+in postprogression cfDNA, and three of these alterations were identified in distinct liver lesions harvested through a rapid autopsy program, with one 
+lesion harboring two FGFR2 alterations. TPS011 is a patient with RAS wild type colorectal cancer who developed resistance to an anti-EGFR antibody. A 
+recurrent colon tumor harbored a KRAS mutation, and an EGFR extracellular domain mutation known to interfere with antibody binding was identified in an 
+ovarian metastasis, whereas both alterations were detected in cfDNA. Importantly, in all patients, individual resistance mechanisms emerging in distinct 
+metastatic lesions were detectable in cfDNA.
+Nature Medicine | www.nature.com/naturemedicine
+
+Letters
+NATurE MEDicinE
+Extended Data Fig. 3 | Biclusters of patients based on similar changes (δ) in somatic alteration. Biclustering of four δ matrices, reflecting changes 
+in CCF of mutations or copy number in known cancer genes or genesets, yielded significant biclusters (all empirical P values < 0.0001; Methods). The 
+biclusters from all four δ matrices included at least one bicluster with patient TPS130 (a patient with an unknown mechanism of resistance). Patient 
+TPS130 consistently biclustered together with TPS021 and TPS037 (patients with known mechanisms of resistance) across all matrices, highlighting the 
+possibility that additional genomic alterations contribute to resistance beyond the identified resistance alterations. a, The change in somatic alterations, δ, 
+was calculated based on WES data of the samples closest to the start and end of therapy. We biclustered four δ matrices (δcopy number
+cancer gene , δmutation
+geneset , δcopy number
+geneset
+ 
+and δcopy number and mutation
+geneset
+) and assessed their significance by comparing the size of biclusters against n = 10,000 permuted matrices with a two-sided t-test 
+(Methods). b–e, Illustration of the biclustering results (using BiMax) of the four δ matrices (biclusters are listed in Supplementary Table 6). Outlined in red 
+are biclusters containing TPS130 observed in all four δ matrices.
+Nature Medicine | www.nature.com/naturemedicine
+
+1
+nature research  |  reporting summary
+October 2018
+Corresponding author(s):
+DBPR NMED-96218
+Last updated by author(s): 7/23/2019
+Reporting Summary
+Nature Research wishes to improve the reproducibility of the work that we publish. This form provides structure for consistency and transparency 
+in reporting. For further information on Nature Research policies, see Authors & Referees and the Editorial Policy Checklist.
+Statistics
+For all statistical analyses, confirm that the following items are present in the figure legend, table legend, main text, or Methods section.
+n/a Confirmed
+The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement
+A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly
+The statistical test(s) used AND whether they are one- or two-sided 
+Only common tests should be described solely by name; describe more complex techniques in the Methods section.
+A description of all covariates tested
+A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons
+A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient) 
+AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)
+For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees of freedom and P value noted 
+Give P values as exact values whenever suitable.
+For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings
+For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes
+Estimates of effect sizes (e.g. Cohen's d, Pearson's r), indicating how they were calculated
+Our web collection on statistics for biologists contains articles on many of the points above.
+Software and code
+Policy information about availability of computer code
+Data collection
+Only publicly available tools were used to collect and analyze the data, as referenced in the Methods.
+Data analysis
+Only publicly available tools were used to collect and analyze the data, as referenced in the Methods.
+For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors/reviewers. 
+We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Research guidelines for submitting code & software for further information.
+Data
+Policy information about availability of data
+All manuscripts must include a data availability statement. This statement should provide the following information, where applicable: 
+- Accession codes, unique identifiers, or web links for publicly available datasets 
+- A list of figures that have associated raw data 
+- A description of any restrictions on data availability
+Manuscript contains the following data availability statement: 
+Sequencing data from WES and RNA-seq will be available in dbGaP in accession number phs001853.v1.p1. 
+dbGaP upload is in process and data will be publicly available prior to publication.
+
+2
+nature research  |  reporting summary
+October 2018
+Field-specific reporting
+Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
+Life sciences
+Behavioural & social sciences
+ Ecological, evolutionary & environmental sciences
+For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
+Life sciences study design
+All studies must disclose on these points even when the disclosure is negative.
+Sample size
+Through a systematic liquid biopsy program in the Center for Gastrointestinal Cancers at the Massachusetts General Hospital Cancer Center, 
+42 patients receiving targeted therapy for molecularly-defined GI cancer subtypes who achieved radiologic response or stable disease were 
+enrolled between September 2014 and March 2018.  
+Data exclusions
+Only patients who had a response or stable disease on targeted therapy were included. 
+Replication
+These were 42 unique patients.
+Randomization
+N/A
+Blinding
+N/A
+Reporting for specific materials, systems and methods
+We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material, 
+system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response. 
+Materials & experimental systems
+n/a Involved in the study
+Antibodies
+Eukaryotic cell lines
+Palaeontology
+Animals and other organisms
+Human research participants
+Clinical data
+Methods
+n/a Involved in the study
+ChIP-seq
+Flow cytometry
+MRI-based neuroimaging
+Human research participants
+Policy information about studies involving human research participants
+Population characteristics
+42 patients receiving targeted therapy for molecularly-defined GI cancer subtypes who achieved radiologic response or stable 
+disease were enrolled between September 2014 and March 2018.  
+Recruitment
+Patients were recruited through a systematic liquid biopsy program in the Center for Gastrointestinal Cancers at the 
+Massachusetts General Hospital Cancer Center. 
+Ethics oversight
+All biopsies, tumor specimens, and peripheral blood draws for plasma isolation were collected in accordance with Institutional 
+Review Board–approved protocols, approved by the Dana-Farber/Harvard Cancer Center IRB, to which patients provided written 
+informed consent, and all studies were conducted in accordance with the Declaration of Helsinki. 
+Note that full information on the approval of the study protocol must also be provided in the manuscript.
+Clinical data
+Policy information about clinical studies
+All manuscripts should comply with the ICMJE guidelines for publication of clinical research and a completed CONSORT checklist must be included with all submissions.
+Clinical trial registration
+N/A
+Study protocol
+N/A
+
+3
+nature research  |  reporting summary
+October 2018
+Data collection
+N/A
+Outcomes
+N/A

@@ -1,0 +1,1557 @@
+RESEARCH ARTICLE SUMMARY
+◥
+CANCER
+Radiation-related genomic profile of papillary thyroid
+carcinoma after the Chernobyl accident
+Lindsay M. Morton*†, Danielle M. Karyadi†, Chip Stewart†, Tetiana I. Bogdanova‡, Eric T. Dawson‡,
+Mia K. Steinberg‡, Jieqiong Dai, Stephen W. Hartley, Sara J. Schonfeld, Joshua N. Sampson,
+Yosef E. Maruvka, Vidushi Kapoor, Dale A. Ramsden, Juan Carvajal-Garcia, Charles M. Perou,
+Joel S. Parker, Marko Krznaric, Meredith Yeager, Joseph F. Boland, Amy Hutchinson, Belynda D. Hicks,
+Casey L. Dagnall, Julie M. Gastier-Foster, Jay Bowen, Olivia Lee, Mitchell J. Machiela,
+Elizabeth K. Cahoon, Alina V. Brenner, Kiyohiko Mabuchi, Vladimir Drozdovitch, Sergii Masiuk,
+Mykola Chepurny, Liudmyla Yu. Zurnadzhy, Maureen Hatch, Amy Berrington de Gonzalez,
+Gerry A. Thomas§, Mykola D. Tronko§, Gad Getz§, Stephen J. Chanock*§
+INTRODUCTION: The1986Chernobyl (Chornobyl
+in Ukrainian) nuclear power plant accident ex-
+posed millions of individuals in the surrounding
+region to radioactive contaminants, resulting
+in increased papillary thyroid carcinoma (PTC)
+incidence in radioactive iodine (131I)–exposed
+children. Currently, no reliable biomarkers for
+radiation-induced cancers have been identified,
+and large-scale genomic characterizations of hu-
+man tumors after radiation exposure are lacking.
+RATIONALE: To investigate the contribution of
+environmental radiation to the genomic char-
+acteristics of PTC and gain further insight into
+radiation-induced carcinogenesis, we analyzed
+440 pathologically confirmed fresh-frozen PTCs
+from Ukraine (359 with estimated childhood
+or in utero 131I exposure, 81 from unexposed
+children born after March 1987; mean age at
+PTC = 28.0 years, range 10.0 to 45.6) and
+matched normal tissue (nontumor thyroid
+tissue and/or blood). Our genomic charac-
+terization included whole-genome, mRNA,
+and microRNA sequencing; DNA methylation
+profiling; and genotyping arrays.
+RESULTS: The mean estimated radiation dose
+among 131I-exposed individuals was 250 mGy
+(range, 11.0 to 8800). In multivariable models
+adjusted for age at PTC and sex, we observed
+radiation dose–dependent increases in small
+deletions (P = 8.0 × 10–9) and simple/balanced
+structural variants (P = 1.2 × 10–14) but no
+association with single-nucleotide variants
+or insertions. Further analyses demonstrated
+stronger radiation-related associations for clonal—
+but not subclonal—small deletions and simple/
+balancedstructuralvariantsthatborehallmarksof
+nonhomologous end-joining repair (deletions, P =
+4.9×10–31;simple/balanced structural variants,
+P = 5.5 × 10–19). In contrast, radiation dose was
+not associated with locally templated insertions
+characteristic of alternative end-joining repair.
+Candidate drivers were identified for 433
+tumors (98.4%), of which 401 had only a single
+candidate driver, illustrating the parsimonious
+nature of PTC carcinogenesis. More than half
+of the drivers (n = 253) were mutations, oc-
+curring commonly (n = 194) in BRAF. Fusions
+accounted for the remaining drivers, frequently
+involving RET (n = 73) or other receptor
+tyrosine kinase genes (n = 64). In total, 401
+PTCs had drivers in the mitogen-activated
+protein kinase (MAPK) pathway. In multi-
+variable models adjusted for age at PTC and sex,
+we observed radiation dose–dependent enrich-
+ment of fusion versus mutation drivers (P =
+6.6 × 10–8), whereas the radiation dose dis-
+tribution did not differ substantially by driver.
+The effects of radiation on genomic alter-
+ations (fusion drivers, deletions, or structural
+variants) were more pronounced for individ-
+uals who were younger at exposure. Analyses
+were consistent with a linear dose response
+for most radiation-associated molecular char-
+acteristics. Individuals with PTC who were
+unexposed to 131I or had lower doses had
+higher genetic risk (P = 4.7 × 10–4) according
+to a 12-locus polygenic risk score. Analyses of
+transcriptomic and epigenomic features dem-
+onstrated strong associations with the PTC
+driver gene but not with radiation dose.
+CONCLUSION: Our large-scale integrated gen-
+omic landscape analysis of PTCs after the
+Chernobyl accident with detailed dose estima-
+tion points to DNA double-strand breaks as
+early carcinogenic events that subsequently
+enable PTC growth after environmental radi-
+ation exposure. Tumor epigenomic and tran-
+scriptomic profiles reflected the PTC driver and
+did not identify a reliable set of biomarkers
+for radiation-induced carcinogenesis. Non-
+homologous end-joining was consistently
+implicated as the key repair mechanism for
+the observed radiation dose–associated DNA
+double-strand breaks, leading to more fusion
+drivers as a result of increasing radiation dose.
+Linear increases in radiation-associated dam-
+age, especially for exposure at younger ages,
+underscore the potential deleterious conse-
+quences of ionizing radiation exposure.▪
+RESEARCH
+Morton et al., Science 372, 705 (2021)
+14 May 2021
+1 of 1
+The list of author affiliations is available in the full article online.
+†These authors contributed equally to this work.
+‡These authors contributed equally to this work.
+§These authors contributed equally to this work.
+*Corresponding author. Email: chanocks@mail.nih.gov (S.J.C.);
+mortonli@mail.nih.gov (L.M.M.)
+Cite this article as L. M. Morton et al., Science 372, eabg2538
+(2021). DOI: 10.1126/science.abg2538
+READ THE FULL ARTICLE AT
+https://doi.org/10.1126/science.abg2538
+DNA DSB
+Radiation dose
+Genomic landscape analysis 
+according to radiation dose
+26 April 1986
+Thyroid cancer
+DNA double-strand break (DSB)
+Genomic profiling of post-Chernobyl thyroid cancers reveals clonal DNA double-strand breaks repaired by nonhomologous end-joining. Radioactive iodine
+deposited on surrounding pastures after the Chernobyl nuclear power plant explosion increased thyroid cancer risk, particularly for childhood exposure.
+Comprehensive genomic profiling of post-Chernobyl thyroid tumors revealed radiation dose–dependent increases in clonal DNA double-strand breaks but no dose
+relationship with transcriptomic or epigenomic characteristics, highlighting environmental radiation exposure as an early carcinogenic event.
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+RESEARCH ARTICLE
+◥
+CANCER
+Radiation-related genomic profile of papillary thyroid
+carcinoma after the Chernobyl accident
+Lindsay M. Morton1*†, Danielle M. Karyadi2†, Chip Stewart3†, Tetiana I. Bogdanova4‡,
+Eric T. Dawson2,5‡, Mia K. Steinberg6‡, Jieqiong Dai6, Stephen W. Hartley2, Sara J. Schonfeld1,
+Joshua N. Sampson7, Yosef E. Maruvka3, Vidushi Kapoor6, Dale A. Ramsden8, Juan Carvajal-Garcia9,
+Charles M. Perou10,11, Joel S. Parker11, Marko Krznaric12, Meredith Yeager6, Joseph F. Boland6,
+Amy Hutchinson6, Belynda D. Hicks6, Casey L. Dagnall6, Julie M. Gastier-Foster13,14, Jay Bowen13,
+Olivia Lee2, Mitchell J. Machiela15, Elizabeth K. Cahoon1, Alina V. Brenner16, Kiyohiko Mabuchi1,
+Vladimir Drozdovitch1, Sergii Masiuk17, Mykola Chepurny17, Liudmyla Yu. Zurnadzhy4, Maureen Hatch1,
+Amy Berrington de Gonzalez1, Gerry A. Thomas12§, Mykola D. Tronko18§,
+Gad Getz3,19,20§, Stephen J. Chanock2*§
+The 1986 Chernobyl nuclear power plant accident increased papillary thyroid carcinoma (PTC) incidence
+in surrounding regions, particularly for radioactive iodine (131I)–exposed children. We analyzed genomic,
+transcriptomic, and epigenomic characteristics of 440 PTCs from Ukraine (from 359 individuals
+with estimated childhood 131I exposure and 81 unexposed children born after 1986). PTCs displayed
+radiation dose–dependent enrichment of fusion drivers, nearly all in the mitogen-activated protein
+kinase pathway, and increases in small deletions and simple/balanced structural variants that
+were clonal and bore hallmarks of nonhomologous end-joining repair. Radiation-related genomic
+alterations were more pronounced for individuals who were younger at exposure. Transcriptomic and
+epigenomic features were strongly associated with driver events but not radiation dose. Our results
+point to DNA double-strand breaks as early carcinogenic events that subsequently enable PTC
+growth after environmental radiation exposure.
+T
+he accidental explosion in reactor 4 at
+the Chernobyl (Chornobyl in Ukrainian)
+nuclear power plant in April 1986 re-
+sulted in the exposure of millions of
+inhabitants of Ukraine, Belarus, and the
+Russian Federation to radioactive contaminants
+(1). Epidemiologic and clinical research in the
+ensuing decades has demonstrated an increased
+risk of papillary thyroid carcinoma (PTC) with
+increasing thyroid gland exposure to radioactive
+iodine (131I) from fallout, which was deposited
+on pastures with grazing cows and ingested
+through milk and leafy greens, particularly
+during early childhood (2). Together with data
+from populations exposed to other types of ra-
+diation, compelling evidence indicates that PTC
+risk increases after childhood exposure to ioniz-
+ing radiation, a recognized carcinogen (2–5).
+Currently, there are no established molecu-
+lar biomarkers for cancers induced by radia-
+tion, nor have there been large-scale analyses
+of the genomic landscape of human cancers
+occurring after a well-quantified radiation ex-
+posure. Classical cytogenetic studies have dem-
+onstrated radiation dose–associated increases
+in large chromosomal aberrations (such as
+inversions and translocations) that reflect
+DNA double-strand breaks and are the cur-
+rent standard for biodosimetry; however, these
+assays are typically performed in peripheral
+blood lymphocytes from individuals exposed
+to whole-body irradiation and have not been
+directly linked to tumor characteristics (6, 7).
+Next-generationsequencingof12 secondprimary
+tumors of various types that occurred within
+the field of previous therapeutic ionizing radia-
+tion suggested an excess of small deletions
+and balanced inversions (8), but radiation
+dose estimates were not available. RNA se-
+quencing (RNA-seq) analyses of 65 PTCs (mean
+age at diagnosis = 24.7 years) occurring after
+the Chernobyl accident revealed that higher
+doses were associated with an increased like-
+lihood of gene fusion drivers (9). In a genomic
+landscape analysis of 496 primarily unexposed
+PTCs (mean age at diagnosis = 46.8 years;
+16 patients with known prior radiation expo-
+sure), The Cancer Genome Atlas (TCGA) re-
+ported a low density of somatic point mutations,
+especially for PTCs in younger patients, and
+a high frequency of activating somatic alter-
+ations in the mitogen-activated protein kinase
+(MAPK) pathway, including point mutations
+inBRAF(61.7%) and NRAS/HRAS/KRAS (12.9%)
+as well as fusions with RET (6.8%), BRAF (2.7%),
+and other MAPK-related genes (5.0%) (10).
+Here, we report a comprehensive character-
+ization of the genomic, transcriptomic, and
+epigenomic profile of PTC as well as nontumor
+thyroid tissue and/or blood for 440 individ-
+uals from Ukraine who developed PTC after the
+Chernobyl accident (mean age at diagnosis =
+28.0 years), affording an opportunity to in-
+vestigate the contribution of environmental
+radiation to PTC characteristics. The study ana-
+lyzed a collection of pretreatment fresh-frozen
+tumor tissues with pathological confirmation
+of first primary PTC by an international panel
+of experts through the Chernobyl Tissue Bank
+(CTB) (11, 12). Our study included 359 individ-
+uals with PTC with well-quantified 131I expo-
+sure before adulthood (≤18 years of age; mean =
+7.3 years) and, as controls, 81 131I-unexposed
+individuals with PTC born >9 months after
+the Chernobyl accident (all were born after
+1 March 1987) (13).
+Samples, clinical data, and analytic approach
+On the basis of the availability of sufficient
+DNA and RNA extracted from CTB samples,
+we analyzed up to 440 individuals with whole-
+genome sequencing (WGS) and/or mRNA-seq
+of pathologically confirmed tumor (374, both;
+57, mRNA-seq only; 9, WGS only) (figs. S1 and
+S2) (13). Matched normal tissue with WGS
+and/or mRNA-seq included nontumor thyroid
+RESEARCH
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+1 of 10
+1Radiation Epidemiology Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, Bethesda, MD 20892, USA. 2Laboratory of Genetic Susceptibility, Division of Cancer
+Epidemiology and Genetics, National Cancer Institute, Bethesda, MD 20892, USA. 3Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA. 4Laboratory of Morphology of the Endocrine
+System, V. P. Komisarenko Institute of Endocrinology and Metabolism of the National Academy of Medical Sciences of Ukraine, Kyiv 04114, Ukraine. 5Nvidia Corporation, Santa Clara, CA 95051,
+USA. 6Cancer Genomics Research Laboratory, Leidos Biomedical Research Inc., Frederick National Laboratory for Cancer Research, Bethesda, MD 20892, USA. 7Biostatistics Branch, Division of
+Cancer Epidemiology and Genetics, National Cancer Institute, Bethesda, MD 20892, USA. 8Department of Biochemistry and Biophysics, Lineberger Comprehensive Cancer Center, University of
+North Carolina, Chapel Hill, NC 27599, USA. 9Curriculum in Genetics and Molecular Biology, University of North Carolina, Chapel Hill, NC 27599, USA. 10Lineberger Comprehensive Cancer Center,
+University of North Carolina, Chapel Hill, NC 27599, USA. 11Department of Genetics, University of North Carolina, Chapel Hill, NC 27599, USA. 12Department of Surgery and Cancer, Imperial
+College London, Charing Cross Hospital, London W6 8RF, UK. 13Nationwide Children’s Hospital, Biospecimen Core Resource, Columbus, OH 43205, USA. 14Departments of Pathology and
+Pediatrics, Ohio State University College of Medicine, Columbus, OH 43210, USA. 15Integrative Tumor Epidemiology Branch, Division of Cancer Epidemiology and Genetics, National Cancer
+Institute, Bethesda, MD 20892, USA. 16Radiation Effects Research Foundation, Hiroshima 732-0815, Japan. 17Radiological Protection Laboratory, Institute of Radiation Hygiene and Epidemiology,
+National Research Center for Radiation Medicine of the National Academy of Medical Sciences of Ukraine, Kyiv 04050, Ukraine. 18Department of Fundamental and Applied Problems of
+Endocrinology, V. P. Komisarenko Institute of Endocrinology and Metabolism of the National Academy of Medical Sciences of Ukraine, Kyiv 04114, Ukraine. 19Center for Cancer Research and
+Department of Pathology, Massachusetts General Hospital, Boston, MA 02114, USA. 20Harvard Medical School, Boston, MA 02115, USA.
+*Corresponding author. Email: chanocks@mail.nih.gov (S.J.C.); mortonli@mail.nih.gov (L.M.M.)
+†These authors contributed equally to this work.
+‡These authors contributed equally to this work.
+§These authors contributed equally to this work.
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+tissue and/or blood (233, both; 182, nontumor
+tissue only; 16, blood only; 9, normal tissue not
+available). The genomic landscape character-
+ization was augmented by single-nucleotide
+polymorphism (SNP) microarray genotyping
+(Illumina Infinium HumanOmniExpress-24
+array) and relative telomere length quantifi-
+cation on all samples, and DNA methylation
+profiling (Illumina Infinium MethylationEPIC
+array) and microRNA (miRNA)–seq for PTC
+and nontumor thyroid tissue (fig. S3). A total
+of 357 individuals had tumor sample data
+across all platforms.
+The majority of individuals with PTC were
+female [n = 335 (76.1%)], resided in the Kiev
+(Kyiv in Ukrainian) region at the time of the
+accident [n = 286 (65.0%)], and were diagnosed
+during young adulthood (mean = 28.0 years;
+range, 10.0 to 45.6). 131I-unexposed individuals
+with PTC were born at least 9 months after
+the accident and thus had a younger average
+age than the exposed individuals (mean: un-
+exposed = 20.7 years, exposed = 29.7 years)
+(table S1 and fig. S4). For 131I-exposed individ-
+uals, mean age at exposure was 7.3 years (range,
+in utero to 18.9 years) and mean time from
+the accident to PTC diagnosis was 22.4 years
+(range, 12.5 to 29.9). Radiation doses to the
+thyroid were reconstructed by an international
+team of dosimetry experts (14–16). For 53 indi-
+viduals, doses were estimated using detailed
+information derived from individual direct
+thyroid radioactivity measurements taken
+within 8 weeks of the accident, with (n = 49)
+or without (n = 4) personal interviews regard-
+ing residential history and dietary patterns.
+For the remaining individuals, dose estimates
+were derived from direct measurements taken
+for other individuals who lived in the same
+residential area (n = 249), neighboring area
+(n = 9), or other areas (n = 39), or were based on
+dose estimates to the mother for individuals
+who were in utero at the time of the accident
+(n = 9). The mean estimated radiation dose was
+250 mGy (range, 11 to 8800) (figs. S4 and S5).
+Our primary analyses investigated the rela-
+tionship between 131I dose and 68 PTC molecular
+characteristics derived from a comprehensive
+genomic landscape analysis (Fig. 1) using mul-
+tivariable linear, proportional odds, or logistic
+regression models adjusted for sex and age
+at PTC diagnosis (13). For associated variables
+(defined as P < 7.4 × 10–4 based on a Bonferroni
+correction for 68 tests), further analyses were
+conducted by specific molecular characteristics,
+as well as by age at PTC, age at exposure, and
+time since exposure (latency) because these fac-
+tors influence radiation-related thyroid cancer
+risk (17). In addition, we conducted sensitiv-
+ity analyses to assess whether the results were
+consistent when we restricted the population
+to 131I-exposed individuals with lower radia-
+tion dose (<500 mGy, resulting in n = 326 with
+mean dose = 110 mGy) (18, 19).
+Simple somatic variants
+WGS analysis of tumor/normal pairs (n = 383;
+mean sequencing depth, tumor = 89×, non-
+tumor thyroid tissue = 33×, blood = 33×; table
+S2) revealed a low burden of simple somatic
+variants (SSVs) (mean = 0.27 nonsynonymous
+mutations per Mb) (Fig. 1 and figs. S6 and S7),
+which was lower than in older TCGA PTC
+cases (0.41 nonsynonymous mutations per Mb)
+(10) and comparable to mutationally quiet
+tumors typically reported for pediatric cancers
+(20). A total of 318,956 SSVs were identified,
+the majority (93.3%) of which were single-
+nucleotide variants (SNVs) (n = 297,512 in
+383 tumors; mean per tumor = 776.8), whereas
+small insertions and deletions (indels) were less
+common [insertions: n = 5842 (1.8%), mean =
+37.2; deletions: n = 14,231 (4.5%), mean = 15.3],
+and doublet and triplet base substitutions
+were rare [dinucleotide polymorphism (DNP)
+or doublet: n = 1351 (0.4%), mean = 3.5; tri-
+nucleotide polymorphism (TNP) or triplet:
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+2 of 10
+Fig. 1. Landscape of somatic alterations in 440 papillary thyroid
+carcinomas by radiation dose from 131I exposure. Blank (white) spaces
+represent lack of data from a specific platform (figs. S1 to S3). Signature
+analyses were restricted to high-purity samples, defined as those with tumor
+purity of >20% and no evidence of tumor contamination in normal tissue.
+Abbreviations: BRS, BRAFV600E-RAS score; CNLOH, copy-neutral loss of
+heterozygosity; DEL, deletion; DNP, dinucleotide polymorphism (i.e., doublet);
+ERK, ERK-activity score; ID, indel; INS, insertion; ms, microsatellite; POC,
+probability of causation; PTC, papillary thyroid carcinoma; SBS, single-base
+substitution; SCNA, somatic copy number alteration; SNV, single-nucleotide
+variant; SV, structural variant; TDS, thyroid differentiation score; TNP,
+trinucleotide polymorphism (i.e., triplet).
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+n = 20 (0.006%)] (table S3). Among the 3886
+coding mutations (1.2% of total; 0.35/Mb),
+most were nonsynonymous (3023/3886 = 77.8%).
+About one-third of mutations [n = 114,898
+(36.0%)] were clonal (cancer cell fraction ≥0.9),
+regardless of mutation type (SNVs = 35.9%,
+insertions = 36.7%, deletions = 38.0%) (table
+S3 and fig. S8) (13).
+In multivariable analyses restricted to n =
+356 samples with both high tumor purity and
+normal tissue purity (Fig. 1 and fig. S9) (13),
+increased radiation dose was associated with
+an increase in small deletions (P = 8.0 × 10–9)
+as well as in the deletion:SNV ratio (P = 4.9 ×
+10–21), but not in other SSV types (Fig. 2, A and
+D, and table S4). In addition, we observed the
+expected increase in the burden of SNVs (P =
+3.2 × 10–6), doublet mutations (P = 2.7 × 10–5),
+insertions (P = 1.5 × 10–6), and deletions (P =
+7.4 × 10–16) with increasing age at PTC diagnosis
+(table S4) (10). Few of these mutations were
+clustered [22 clusters (>2 mutations within 150
+base pairs) in 18 cases; 83 clusters (>2 muta-
+tions within 1 kb) in 36 cases] and were not
+associated with radiation dose (P > 0.3). In an
+analysis of the frequency and types of micro-
+satellite indels in the tumors, detected using
+MSMuTect (21), all tumors were microsatellite
+stable [mean per tumor, insertions = 1.8 (range,
+0 to 7), deletions = 7.3 (range, 0 to 24)], and
+radiation dose was not significantly associated
+with the number of microsatellite insertions
+or deletions (table S4).
+An investigation of mutational processes
+in PTC was conducted using SigProfiler to
+determine both single-base substitution (SBS)
+and small indel (ID) mutational signatures
+(20, 22). Comparing the PTC mutations with
+known signatures from the Catalogue of
+Somatic Mutations in Cancer (COSMIC v3,
+https://cancer.sanger.ac.uk/cosmic/signatures)
+(20), the majority of the SBS signatures (69.9%)
+were attributable to clock-like signatures (SBS1 =
+9.8%, SBS5 = 60.2%), with smaller fractions due
+to APOBEC (apolipoprotein B mRNA editing
+enzyme, catalytic polypeptide-like) cytidine
+deaminase DNA-editing activity (SBS2 = 6.2%,
+SBS13 = 6.4%), damage from reactive oxygen
+species (SBS18 = 0.9%), and two signatures of
+unknown etiology (SBS8 = 15.1%, SBS23 = 1.6%)
+(mean cosine similarity between actual muta-
+tions and attributed patterns = 0.94) (Fig. 1,
+table S5, and figs. S10 to S12). In multivariable
+analyses, no SBS signatures were significantly
+associatedwithradiationdose,whereasincreased
+age at PTC diagnosis was associated with an
+increase in clock-like SBS mutations (PSBS1 =
+1.9 × 10–7; PSBS5 = 6.8 × 10–17) as well as SBS8
+(P = 4.3 × 10–11) and SBS18 (P = 2.0 × 10–8)
+(table S4).
+The majority (54.0%) of indels were at-
+tributed to clock-like signatures (ID1 = 14.2%,
+ID5 = 39.8%), 21.2% to ID3 (tobacco smoking,
+which is not a major risk factor for PTC), 19.0%
+to repair of DNA double-strand breaks by end-
+joining mechanisms (ID6 = 3.3%, ID8 = 15.8%),
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+3 of 10
+Fig. 2. Relationship between
+radiation dose from 131I expo-
+sure and small deletions. (A to
+C) Total small deletion count (A)
+and clonal (B) and subclonal (C)
+small deletions. (D to F) Total
+deletion:SNV ratio (D) and clonal
+(E) and subclonal (F) deletion:SNV
+ratios. (G to I) Total ID5 count (G)
+and clonal (H) and subclonal (I)
+ID5 counts. (J to L) Total ID8
+count (J) and clonal (K) and
+subclonal (L) ID8 counts. b (per
+100 mGy) and P values were
+derived from multivariable linear
+regression models adjusting
+for age at PTC and sex. Gray
+shading indicates 95% confidence
+interval (CI). See table S18 for
+full model results.
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+and 5.8% to ID4 (unknown etiology) (mean
+cosine similarity = 0.77) (Fig. 1, table S5, and
+figs. S10 to S12). In multivariable analyses,
+radiation dose was strongly associated with
+end joining–related indel mutational patterns
+(P = 1.5 × 10–10), particularly ID8 (P = 7.3 × 10–9),
+and more weakly with the clock signature
+ID5 (P = 1.3 × 10–4) (Fig. 2, G and J, and table
+S4). In comparison, increased age at PTC
+diagnosis was associated with significantly
+increased numbers of ID3 (P = 1.9 × 10–7),
+ID5 (P = 1.9 × 10–9), and ID8 (P = 6.6 × 10–4)
+mutational patterns (table S4). De novo sig-
+nature extraction did not reveal a novel sig-
+nature related to environmental exposure to
+ionizing radiation but identified four SBS
+signatures (mean cosine similarity = 0.96) and
+two ID signatures (mean cosine similarity =
+0.83) that were highly correlated with the
+COSMIC signatures described above (tables S4
+and S5 and figs. S10 to S12). Similarly, no novel
+signature was identified when we restricted
+the analysis to PTCs in individuals who
+received ≥200 mGy (table S5).
+Structural variation
+Overall, 479 structural variants (SVs) were
+identified in 356 tumors; about one-quarter
+of SVs (n = 132, 27.6%) were simple/balanced
+events (balanced interchromosomal transloca-
+tions and inversions), one-half (n = 253, 52.8%)
+were simple/unbalanced (such as deletions and
+unbalanced interchromosomal translocations),
+and the remainder (n = 94, 19.6%) were com-
+plex (such as >2 breaks repaired together in
+a cluster) (table S6 and figs. S13 and S14) (13).
+About one-third of tumors (n = 113, 31.7%) had
+no SV, one-third (n = 126, 35.4%) had one SV,
+and the remaining one-third had two (n = 61,
+17.1%) or more (n = 56, 15.7%) SVs. Two tumors
+had >10 SV events (fig. S15), one of which
+was the only tumor with evidence for chromo-
+thripsis (age at PTC = 30.2 years, age at expo-
+sure = 1.3 years, dose = 1000 mGy).
+Multivariable analyses (n = 354, excluding
+the two outliers) demonstrated that increasing
+radiation dose was significantly associated with
+increased SV count (P = 1.4 × 10–8), particularly
+simple/balanced SVs (P = 1.2 × 10–14) but not
+those classified as complex (P = 0.52) or simple/
+unbalanced (P = 5.6 × 10–3) (Fig. 3A and table
+S4). Increasing radiation dose also was not
+associated with occurrence of chromoplexy
+(P = 0.70) (table S4), which was identified in
+19 tumors (n = 15, single event; n = 4, two
+events) (13, 23), nearly all in the unexposed or
+lower-dose groups (nunexposed = 7, n1–99 mGy = 8,
+n100–199 mGy = 2, n≥500 mGy = 2).
+Somatic copy number alteration
+A total of 40.3% (n = 143/355) of the tumors
+evaluated for somatic copy number alterations
+(SCNAs) had one [n = 96 (27.0%)] or more
+[n = 47 (13.2%)] such events (fig. S16) (13).
+Four tumors had ≥20 SCNAs each (fig. S17):
+the tumor with chromothripsis and three addi-
+tional tumors (age at PTC = 19.0 to 29.3 years,
+age at exposure = 1.3 to 2.3 years, dose = 125
+to 175 mGy). These three tumors predomi-
+nantly had gains or copy-neutral loss of hete-
+rozygosity (CNLOH) and were the only tumors
+with ploidy >2.5, with one of the three dis-
+playing extensive CNLOH (>20 arms), similar
+to previous reports for the rare thyroid Hürthle
+cell carcinoma (24, 25). Exclusion of the four
+tumors with ≥20 SCNAs each yielded 239 total
+SCNAs: 69 (28.9%) at the chromosome level,
+of which 48 were deletions, and 170 (71.1%)
+subchromosomal, of which 106 were dele-
+tions (table S6).
+In multivariable models, radiation dose was
+related to the number of subchromosomal
+SCNAs (P = 3.5 × 10–5), particularly deletions
+(P = 7.0 × 10–4) but not gains (P = 0.32) or
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+4 of 10
+Fig. 3. Relationship between radiation dose from 131I exposure and selected SV and small deletion metrics. (A) Number of simple/balanced SVs. (B) Likelihood of
+having a fusion versus mutation driver. (C) Number of clonal end-joining small deletions ≥5 bp. (D) Number of confirmed clonal simple/balanced/end-joining SVs.
+(E) Number of confirmed clonal other SVs. Different scales are used for each panel to reflect the distributions and uncertainties of the excess odds ratio (EOR) estimates.
+Referent group for categorical analyses: EOR = 0 (which is equivalent to odds ratio = 1). EOR per 100 mGy and P values were derived from multivariable proportional
+odds or logistic regression models adjusting for age at PTC and sex. See table S18 for full model results for (B) to (E).
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+CNLOH (P = 0.52); radiation dose also was
+not related to the number of chromosomal
+SCNAs (P = 0.20) (table S4). The most fre-
+quent recurrent event was loss of 22q [n = 47/
+353 (13.3%)] (figs. S18 and S19), but occurrence
+of 22q deletions was not associated with ra-
+diation dose (P = 0.37) (table S4).
+Drivers of PTC
+We identified at least one candidate driver for
+433 of 440 (98.4%) tumors (fig. S20 and table
+S7) (13), with the majority [n = 401 (92.6%)]
+having a single candidate driver, underscoring
+the parsimony of events driving PTC carcino-
+genesis. We designated 429 (97.5%) drivers
+for analysis (Fig. 1). More than half of the
+designated driver events [n = 253 (59.0%)]
+were mutations (SSVs; table S8), predominantly
+activating point mutations in genes previ-
+ously implicated in PTC. The most commonly
+mutated gene was BRAF [n = 194 (45.2%)],
+where all the mutations either were canonical
+BRAFV600E substitutions (n = 190) or disrupted
+the V600 sequence context (n = 4). RAS genes
+were the next most commonly mutated [n =
+44 (10.3%)], specifically NRAS [n = 20 (4.7%)],
+HRAS [n = 15 (3.5%)], and KRAS [n = 9 (2.1%)].
+Additional mutation drivers were identified in
+TSHR [n = 6 (1.4%)], DICER1 [n = 3 (0.7%)],
+APC [n = 2 (0.5%)], TSC1/TSC2 [n = 2 (0.5%)],
+and NFE2L2 [n = 2 (0.5%)]. In TCGA, 9.4% of
+PTC harbored TERT promoter mutations, often
+in older individuals (10), but only one individual
+with a TERT promoter mutation was observed
+in our study (age at PTC diagnosis = 40.7 years,
+designated driver = BRAFV600E).
+Fusion drivers accounted for 176 (41.0%)
+PTC cases (table S9). The most frequently
+involved genes were RET [n = 73 (17.0%)] as
+well as other receptor tyrosine kinase (RTK)
+genes, specifically NTRK3 [n = 36 (8.4%)],
+NTRK1 [n = 13 (3.0%)], ALK [n = 12 (2.8%)],
+and LTK [n = 3 (0.7%)]. Additional fusion
+drivers included BRAF [n = 20 (4.7%)] and
+PPARG [n = 13 (3.0%)], as well as SVs that
+resulted in overexpression of IGF2 or IGF2BP3
+[n = 6 (1.4%)]. Of the 23 chromoplexy events
+described above, 16 generated driver fusions.
+All 22q deletions co-occurred with known
+driver mutations, most frequently RAS muta-
+tions (Pheterogeneity = 2.8 × 10–10; n = 22/38,
+56.4%) (table S10).
+In multivariable analyses, fusion drivers in
+PTC were more common in individuals ex-
+posed to higher radiation dose (P = 6.6 × 10–8)
+and in those diagnosed at younger ages (P =
+5.4 × 10–9) relative to those with mutation
+drivers (Fig. 3B and table S4). There was a
+suggestion of a heterogeneous effect of dose
+by specific gene fusion (Pheterogeneity = 0.020),
+with higher doses on average for PTCs with
+IGF2/IGF2BP3 orBRAFfusiondrivers,whereas
+the dose distribution did not differ significantly
+among mutation drivers (BRAF, RAS, other;
+Pheterogeneity = 0.17) (Fig. 4). We extended our
+observations by inclusion of 45 nonoverlap-
+ping individuals with PTC (excluding the 20
+individuals already in our analyses) drawn
+from a previous Chernobyl study with known
+drivers identified with RNA-seq (9); more than
+half had doses of ≥500 mGy (mean age at
+PTC = 24.2 years, mean age at exposure =
+7.2 years, mean dose = 1050 mGy) (table S1).
+That smaller sample set also suggested a ra-
+diation dose-related increase in fusion drivers
+(P = 0.069), which was consistent with the
+results from our study (Pheterogeneity = 0.90;
+pooled analysis of fusion versus mutation
+driver, adjusting for age at PTC, sex, and study:
+P = 4.6 × 10–9).
+Gene expression and methylation patterns
+Weconducted severalanalysestoassesswhether
+gene expression and methylation patterns were
+related to radiation dose. First, unsupervised
+clustering analyses restricted to PTC tumor
+tissue yielded five mRNA clusters, five miRNA
+clusters, and three methylation clusters (figs.
+S21 and S22) (13). None of these clusterings
+were associated with radiation dose (PmRNA =
+0.85; PmiRNA = 0.38; Pmethylation = 0.10), but
+each closely correlated with the driver gene
+pathway (PmRNA = 1.6 × 10–64; PmiRNA = 1.0 ×
+10–9; Pmethylation = 6.4 × 10–43) (Fig. 5A, tables
+S4 and S11, and fig. S23), supporting the
+overriding importance of the driver for RNA
+expression patterns (10). Second, we identified
+three transcriptional patterns important in
+PTC on the basis of the TCGA analysis (10): (i)
+the BRAFV600E-RAS score (BRS), estimating
+the degree to which the mRNA, miRNA, and
+methylation profiles resemble either BRAFV600E
+or RAS-mutated PTC; (ii) the thyroid differ-
+entiation score (TDS), based on expression of
+16 thyroid metabolism and function genes;
+and (iii) the ERK-activity score of 52 expressed
+genes responsive to MEK inhibition (13). As
+expected, the mRNA, miRNA, and methyla-
+tion BRS scores were highly correlated with
+one another (r = 0.78 to 0.92) (table S12).
+Consistent with TCGA (10), the three different
+mRNA-based scores also were significantly cor-
+related, particularly the BRS with both the TDS
+(r = 0.69) and the ERK score (r = –0.66). None
+of the scores were associated with radia-
+tion dose after correction for multiple testing
+(PmRNA-BRS = 2.1 × 10–3; PmiRNA-BRS = 5.5 × 10–3;
+Pmethylation-BRS = 0.082; PTDS = 7.8 × 10–3; PERK =
+0.011) (table S4 and fig. S24A), whereas each
+was strongly related to driver gene pathway
+(P < 1.0 × 10–30 for all scores) (fig. S24B).
+To confirm the lack of association between
+radiation exposure and gene expression pat-
+terns, we conducted exploratory analyses of the
+differential expression of specific genes and
+gene sets by dose (13). In multivariable linear
+regression models adjusted for age at PTC, sex,
+and batch, the Padjusted for dose was <0.05 for
+five genes (Fig. 5B and table S13), with the
+smallest P value (Padjusted = 8.0 × 10–3; log10-fold
+expression change per 100 mGy = 0.059) for
+transfer RNA asparagine (anticodon GUU)
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+5 of 10
+Fusion, RET (n=73)
+Fusion, Other RTK (n=64)
+Fusion, BRAF (n=20)
+Fusion, PPARG (n=13)
+Fusion, IGF2/IGF2BP3 (n=6)
+Mutation, BRAF (n=194)
+Mutation, RAS (n=45)
+Mutation, Other (n=15)
+0
+500
+1000
+Dose (mGy)
+Fusion
+Pheterogeneity=0.020
+Mutation
+Pheterogeneity=0.17
+Fig. 4. Distribution of radiation dose from 131I exposure by driver type and pathway.
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+(TRNAN-GUU-2), which is a target of the
+transcription factor MYBL2, a key regulator of
+cell cycle progression and apoptosis (26, 27).
+However, each of these associations was at-
+tenuated when the model was further adjusted
+for the driver gene pathway (table S13). In
+contrast, more than half of the genes were dif-
+ferentially expressed (Padjusted < 0.05) among
+the different driver gene pathways (table S13).
+Despite previous reports suggesting that radia-
+tion dose could be linked to CLIP2 expression
+(28–30), no such relationship was observed in
+our substantively larger study, which included
+33 overlapping samples from the previously
+published analyses (29) (fig. S25), either in
+the overall set of PTC cases (P = 0.42, Fig. 5C)
+or in subsets defined by early age at radiation
+exposure (fig. S26). An exploration of expres-
+sion signatures through gene set enrichment
+analyses was pursued in the Molecular Signa-
+tures Database (MSigDB; www.gsea-msigdb.
+org/gsea/msigdb) (31). For 3213 gene sets
+(those related to hallmark biological processes,
+thyroid, radiation, and the genes included in
+germline analyses below) (13), multivariable
+regression models adjusting for age at PTC,
+sex, and batch revealed results similar to those
+above for single-gene differential expression
+analyses; that is, no gene set expression pat-
+terns were significantly associated with radia-
+tion dose (Padjusted < 0.05), whereas more than
+half were strongly associated with the driver
+gene pathway (fig. S27 and table S14).
+Germline genetic variation
+The possible contribution of germline genetic
+variation to radiation-related PTC was inves-
+tigated in individuals of comparable Ukrainian
+ancestry (n = 383 individuals, including 305
+exposed, 78 unexposed) (fig. S28). Twelve pre-
+viously reported risk SNPs for sporadic PTC
+were used to generate a polygenic risk score
+(PRS) (32). Multivariable analyses adjusting
+for population substructure revealed that un-
+exposed individuals with PTC and those who
+received lower radiation doses were more likely
+to have higher genetic risk (P = 4.7 × 10–4) (Fig.
+6 and table S4). Analyses of the 12 individual
+SNPs, albeit underpowered, yielded three pos-
+sible associations with radiation dose: rs1588635
+(9q22.33; P = 0.012), rs2289261 (15q22.33,
+SMAD3; P = 0.030), and rs10069690 (5p15.33,
+TERT; P = 0.054) (table S15).
+Investigation of rare potentially protein-
+damaging variants in genes and pathways re-
+lated to thyroid or other cancer predisposition,
+clinical radiation sensitivity syndromes, and
+DNA damage response revealed no major
+differences in the burden of these variants
+among individuals who developed PTC after
+different radiation doses (tables S4, S16, and
+S17). Only four individuals [n = 2 (2.6%)
+unexposed; n = 2 (1.2%) <100 mGy; 0 (0%)
+≥100 mGy] carried potentially protein-damaging
+variants in known thyroid cancer susceptibility
+genes (tables S16 and S17).
+Detailed analyses of molecular characteristics
+associated with radiation dose
+Analyses by clonality for each of the deletion
+metrics (total deletion count, deletion:SNV ratio,
+and ID5 and ID8 mutational patterns) revealed
+that the radiation dose–related associations
+were consistently restricted to clonal rather
+than subclonal deletions (Fig. 2 and table S18).
+Similarly, analyses of SCNAs also demonstrated
+associations only with clonal but not subclonal
+subchromosomal deletions (table S18). Because
+distinct repair mechanisms can generate dele-
+tions of different lengths (33–35), we further
+stratified the clonal deletion count by length
+(fig. S29) and found the strongest association
+between radiation dose and clonal deletions
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+6 of 10
+1
+0.1
+0.01
+10–3
+10–1
+1
+Fold change (Log scale)
+10
+10–4
+10–5
+10–6
+p-value (-Log scale)
+A
+B
+C
+Fig. 5. Selected RNA-seq results. (A) Differential expression by driver and cluster based on principal
+components analysis. (B) Differential expression for all genes by radiation dose from 131I exposure.
+(C) Differential expression of CLIP2 by radiation dose from 131I exposure.
+Fig. 6. Relationship between radiation dose
+from 131I exposure and PRS. See table S15 for data
+on the 12 single-nucleotide polymorphisms that
+constitute the PRS.
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+of at least five base pairs (≥5 bp) with patterns
+characteristic of end-joining repair (P = 4.9 ×
+10–31) (Fig. 3C and table S18). These results are
+consistent with the ID8 mutational associa-
+tion and suggest a key role for end-joining
+mechanisms in repairing radiation-induced
+DNA double-strand breaks. Analyses of the
+≥5-bp clonal deletions with respect to the
+amount of microhomology at the deletion
+boundary revealed consistent associations be-
+tween radiation dose and deletions with 0- to
+1-bp microhomology as well as those with ≥2-bp
+microhomology (table S18). These results impli-
+cate nonhomologous end-joining (NHEJ) re-
+pair mechanisms, which are used regardless
+of the amount of microhomology, whereas
+alternative end-joining (alt-EJ) repair mech-
+anisms such as theta-mediated end-joining
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+7 of 10
+Fig. 7. Relationship between
+radiation dose from 131I expo-
+sure and selected genomic
+characteristics by age at
+exposure. (A to C) Clonal
+deletion:SNV ratio for <5 years
+at exposure (A), 5 to 9 years at
+exposure (B), and ≥10 years
+at exposure (C). (D to F) Number
+of clonal ID8 mutations for
+<5 years at exposure (D), 5
+to 9 years at exposure (E), and
+≥10 years at exposure (F).
+(G to I) Number of clonal end-
+joining small deletions ≥5 bp
+for <5 years at exposure (G),
+5 to 9 years at exposure (H),
+and ≥10 years at exposure (I).
+(J and K) Likelihood of having
+a fusion versus mutation driver
+for <10 years at exposure
+(J) and ≥10 years at exposure
+(K). All analyses exclude
+131I-unexposed individuals. b or
+EOR per 100 mGy and P values
+were derived from multi-
+variable linear, proportional
+odds, or logistic regression
+models adjusting for age
+at PTC and sex. See table S22
+for full model results. Models
+evaluating the effect of dose on
+driver type restricted to
+<5 years of age at exposure
+did not converge, so individuals
+exposed at <5 and 5 to 9 years
+were combined in (J). EOR/
+100 mGy for 5 to 9 years
+alone = 1.78, 95% CI = 0.12 to
+226. In (H), ^^ indicates that
+the upper 95% CI exceeds the
+y-axis maximum value.
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+(TMEJ) typically generate deletions with ≥2-bp
+microhomology (33–35). In an ancillary anal-
+ysis, we quantified in the small insertions the
+number of TINS (locally templated insertions),
+which are characteristic of TMEJ repair (34),
+and found that TINS were not associated with
+radiation dose (P = 0.69) (fig. S30). Further
+exploration of insertions and deletions by
+genomic sequence context (8) revealed only
+weak correlations for radiation dose with oc-
+currence of deletions classified by flanking
+GC content (P = 0.015), proximity to CPG islands
+(P = 0.014), and the mean replication timing
+at the variant locus (P = 0.010); in each case,
+deletions in the higher–radiation dose groups
+were more similar to a random background
+distribution (table S19) (13). No such correla-
+tions between radiation dose and genomic
+sequence context were observed for insertions.
+We undertook similar analyses of SVs after
+confirming each event (table S6) (13), identify-
+ing those SVs with <20 bp of intervening loss/
+gain at the breakpoint, which indicates repair
+by end-joining mechanisms (33–35). Increased
+radiation dose was strongly associated with
+simple/balanced SVs that were clonal (P =
+1.4 × 10–16) but not subclonal (P = 0.91), with
+a pronounced association for clonal simple/
+balanced SVs enriched for patterns characte-
+ristic of end-joining mechanisms (P = 5.5 × 10–19)
+(Fig. 3D) versus other clonal SVs (P = 0.41, Fig.
+3E) (table S18). Further analyses demonstra-
+ted consistent associations for radiation dose
+with clonal simple/balanced/end-joining SVs
+with <4 bp and 4 to <20 bp of intervening
+loss/gain (table S18). Similar to our observa-
+tionsforsmalldeletions,theseresultsspecifically
+implicate the importance of NHEJ repair, which
+accounts for almost all <4-bp events but which
+could contribute regardless of the amount of
+intervening loss/gain. By comparison, alt-EJ
+repair mechanisms primarily give rise to events
+with ≥4 bp of intervening loss/gain (33–35).
+Additional analyses of clonal simple/balanced/
+end-joining SVs by type revealed a strong as-
+sociation between radiation dose and inversions
+(P = 3.6 × 10–14), consistent with a previous
+report (8), but also an association with trans-
+locations (P = 4.4 × 10–4) (table S18).
+For each of the radiation dose–associated
+variables, the results were similar when we
+restricted the study population to exposed
+individuals (table S20). Albeit based on limited
+statistical power, further restriction to individ-
+uals with exposures of 1 to <500 mGy revealed
+consistent associations for dose only with
+the clonal deletion:SNV ratio, enrichment of
+fusion drivers, and presence of clonal simple/
+balanced/EJ SVs (table S20). Linear-quadratic
+and linear-exponential models of radiation
+dose generally did not improve the model fit
+relative to a linear model for any of the variables,
+except for clonal small deletions (total and
+restricted to ≥5-bp EJ deletions) (table S20).
+Notably, radiation dose–related increases in
+clonal deletions (particularly the deletion:SNV
+ratio, ID8, and the number of clonal ≥5 bp EJ
+small deletions), as well as fusion PTC drivers,
+were substantially more pronounced for in-
+dividuals exposed at younger ages (Fig. 7 and
+tables S21 and S22), albeit based on small
+numbers for certain analyses. In contrast, the
+radiation dose–related increase in SCNA clonal
+subchromosomal deletions was most pronounced
+at longer latencies (table S21).
+Radiation-related acceleration of
+PTC development
+Exploratory analyses to address previous re-
+ports that ionizing radiation exposure accel-
+erates aging and cancer development (36, 37)
+revealed no such evidence in our study popu-
+lation. First, we stratified analyses of the rela-
+tionship of clock-like SBS and ID signatures
+with age at PTC and latency but found no
+effect modification by radiation dose (age at
+PTC: PSBS = 0.63, PID = 0.93; latency: PSBS =
+0.28, PID = 0.21) (figs. S31 and S32). Addition-
+ally, radiation dose–dependent associations
+with key molecular characteristics did not ap-
+pear to be strongly modified by latency after
+accounting for age at exposure and age at PTC
+(table S21). Analyses of relative telomere length
+demonstrated the expected association be-
+tween decreased telomere length and increased
+age at PTC in blood (P = 3.2 × 10–5) but not in
+normal thyroid tissue (P = 0.99) or PTC (P =
+0.81), and there was no association between
+relative telomere length and thyroid radiation
+dose (P > 0.4 for all tissues). Methylation
+profiles were evaluated to estimate epige-
+netic age acceleration using two established
+metrics (38, 39). Regressing epigenetic age
+against chronological age in the nontumor
+thyroid tissue and then comparing the resid-
+uals from this predicted age in the PTC tissue
+(13) revealed no association between age ac-
+celerationandradiationdoseusingeithermetric
+(P > 0.1).
+Discussion
+Our large-scale integrated analyses of the
+genomic landscape of PTC that developed
+after the 1986 Chernobyl nuclear power plant
+accident provide consistent evidence that ion-
+izing radiation–induced DNA damage, partic-
+ularly double-strand breaks, represents an early
+carcinogenic event in thyroid tumorigenesis
+after radiation exposure. These findings subs-
+tantially extend preliminary reportsof radiation-
+related human tumor characteristics (8, 9) by
+integrating data from multiple platforms with
+large sample size and detailed radiation dose
+data. Increased radiation dose was strongly
+associated with increased likelihood of fusion
+versus point mutation drivers as well as simple/
+balanced SVs and small deletions, particularly
+those that bore hallmarks of NHEJ repair and
+were clonal, with stronger associations for
+individuals exposed at a young age. How-
+ever, no unique radiation-related biomarker
+was identified. Together, our results indicate
+that thyroid tumorigenesis after radiation
+exposure results from DNA double-strand
+breaks in the genome that have an impact on
+key thyroid cell growth and differentiation
+genes, which in turn drive the expression
+and epigenetic characteristics of individ-
+ual PTCs.
+Most tumors had evidence for only a single,
+known oncogenic driver, which involved the
+MAPK pathway in nearly all cases; this is con-
+sistent with previously published studies of
+sporadic PTCs (10, 40, 41). These findings,
+combined with the low mutational burden
+in thyroid tumors, emphasize the efficiency
+of driver mutations in thyroid tumorigenesis
+even after ionizing radiation exposure; in con-
+trast, other environmentally driven cancers,
+such as cigarette smoking and lung adeno-
+carcinoma or ultraviolet light and melanoma,
+often require multiple drivers and have multi-
+ple subclones together with substantial somatic
+burden (23).
+Our study, based on multiple lines of evi-
+dence, demonstrates striking radiation dose–
+related increases in DNA double-strand breaks
+in human thyroid cancers developing after the
+Chernobyl accident, extending results from
+in vitro and animal radiobiological experiments
+(33–35). In contrast, the PTCs did not have evi-
+dence of radiation-related specific base muta-
+tions or clustered mutations (42). Cells with
+DNA double-strand breaks can recruit various
+repair mechanisms, each of which leaves cha-
+racteristic evidence in the repaired sequence.
+A series of analyses consistently implicated
+NHEJ as the most important repair mecha-
+nism for the radiation dose–associated DNA
+double-strand breaks observed in the PTCs.
+Although the importance of end-joining re-
+pair in human tumors has been reported
+previously (8), our detailed examination of the
+local sequence context for the SVs (including
+fusion drivers) and small deletions enabled us
+to clarify that radiation dose was most clearly
+associated with NHEJ rather than alt-EJ or
+other repair mechanisms. The lack of associa-
+tion between radiation dose and TINS further
+demonstrated the lack of importance of alt-EJ
+mechanisms. The importance of NHEJ repair
+also was supported by the lack of significant
+association between radiation dose and muta-
+tional signatures associated with APOBEC,
+which preferentially targets intermediates in
+replication and repair by homologous recom-
+bination (43). Our results necessitate further
+research, such as the use of genetically modified
+organoids (44, 45), to establish the causal role
+of radiation-related DNA double-strand breaks
+predominantly repaired by NHEJ in human
+carcinogenesis.
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+8 of 10
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+The role of radiation-related DNA damage
+as an early step in PTC carcinogenesis after
+the Chernobyl accident is further supported
+by the lack of association between radiation
+dose and PTC transcriptomic and epigenomic
+features, despite the use of various analytic
+approaches, including clustering, differential
+expression by gene or miRNA, and gene set
+enrichment analyses. With our large sample
+size, we did not confirm the previously reported
+association between radiation dose and CLIP2
+expression (28–30), even when we restricted
+our analyses to individuals exposed at younger
+ages. Notably, however, the PTC transcriptomic
+and epigenomic features differed strikingly
+by driver gene/pathway, supporting the im-
+portance of the specific driver in shaping the
+tumor profile (10, 40, 41). Use of both WGS
+and RNA-seq enabled us to identify a driver
+in 98% of the PTCs in our study. Deletion of
+chromosome 22q has been suggested as a
+driver for PTC, but all cases in our study with
+22q deletions also had other known PTC drivers,
+which suggests that 22q did not act indepen-
+dently in our set of individuals who developed
+PTC during young adulthood. Intriguingly,
+however, 22q deletions were strongly related to
+the driver pathway, occurring most commonly
+in RAS-mutated PTCs; hence, 22q deletion
+could provide a growth advantage or otherwise
+enhance the effect of certain MAPK drivers.
+With our large sample size, we were able to
+explore the independent effects of radiation
+dose, age at PTC, age at exposure, and latency
+on PTC molecular characteristics. The pro-
+nounced evidence of radiation-related damage
+that we observed for individuals exposed at
+younger ages is consistent with epidemiologic
+analyses that have identified higher thyroid
+cancer risks with radiation exposure at youn-
+ger ages (17). The relationship of a number of
+molecular characteristics, particularly total
+mutational burden and driver type, with age
+at PTC warrants further investigation across
+a broader age range (10). Additional studies
+with detailed dose data are needed to under-
+stand whether our findings extend across a
+broader dose range, to other types of radiation,
+as well as to other tumor types, and whether
+radiation-related genomic characteristics have
+an impact on histopathological parameters
+(46–48). It has been hypothesized that ioniz-
+ing radiation exposure could accelerate tumor
+development, and substantial evidence dem-
+onstrates that cancer survivors exposed to high-
+dose radiotherapy exhibit an aging phenotype
+(36, 37). However, exploratory analyses within
+our data did not support this hypothesis.
+Our results have important implications for
+radiation protection and public health, particu-
+larly for low-dose exposure, from two perspec-
+tives. First, the lack of a unique radiation-related
+pattern of molecular characteristics in the PTCs
+in our study, due in part to the random nature
+of ionizing radiation–related damage across the
+genome as well as the fact that other mutagens
+can cause DNA double-strand breaks, suggests
+that we are yet to establish a reliable biomarker
+to distinguish tumors induced by radiation ver-
+sus other causes. Nonetheless, further investiga-
+tion is warranted to consider how the radiation
+dose–associated characteristics we identified
+could be incorporated into estimates of the
+probability that a specific PTC was caused by
+131I exposure [probability of causation (POC)
+(fig. S5) (49, 50)], which is currently based on
+prior epidemiologic studies (17). Second, our
+data are consistent with a linear dose re-
+sponse for the key molecular characteristics
+associated with radiation dose in the range
+examined in our analysis (≤1 Gy), which aligns
+with the extensive radiobiological literature
+and other epidemiologic evidence regarding
+DNA damage and cancer risk after ionizing
+radiation exposure (51, 52).
+Our study population included a substantial
+number of PTCs occurring after exposure to
+less than 100 mGy, likely reflecting the avail-
+ability of samples from the Chernobyl Tissue
+Bank as well as the increased detection of
+preexisting PTC in the population that may
+not become clinically evident until later, if at
+all,becauseofintensivescreeningandheightened
+awareness of thyroid cancer risk in Ukraine.
+The increased genetic risk based on the PRS
+was notable among PTCs that occurred after
+lower doses despite limited statistical power
+to investigate germline genetic variants. The
+low overall mutational burden of early adult-
+hood PTC, small sample sizes in certain popula-
+tion subgroups, and uncertainties in radiation
+dose estimates also limited our statistical power
+to thoroughly investigate the shape of the dose-
+response curve, precisely identify the magni-
+tude of radiation-related effects (as reflected
+by the wide confidence intervals for many ef-
+fect estimates), or reliably identify new radia-
+tion signatures.
+This study has characterized the genomic
+landscape of PTC, the most frequent cancer
+observed after the Chernobyl nuclear accident.
+Our results demonstrate a dose-dependent
+carcinogenic effect of radiation derived primar-
+ily from DNA double-strand breaks repaired by
+NHEJ that initiate subsequent thyroid tumor
+growth, the patterns of which are shaped not
+by radiation exposure but rather by the specific
+driver gene. The consistency of the spectrum
+of PTC drivers in our study population relative
+to previous PTC series suggests that current
+therapeutic approaches for PTC are appropri-
+ate even for tumors that arise after radiation
+exposure (53). Our work provides a foundation
+for further investigation of radiation-induced
+cancer, particularly with respect to differences
+in risk as a function of both dose and age, and
+underscores the deleterious consequences of
+ionizing radiation exposure.
+REFERENCES AND NOTES
+1.
+United Nations Scientific Committee on the Effects of Atomic
+Radiation (UNSCEAR), Sources and Effects of Ionizing
+Radiation: UNSCEAR 2008 Report to the General Assembly,
+with Scientific Annexes (2010).
+2.
+M. Tronko et al., Thyroid neoplasia risk is increased nearly
+30 years after the Chernobyl accident. Int. J. Cancer 141,
+1585–1588 (2017). doi: 10.1002/ijc.30857; pmid: 28662277
+3.
+K. Furukawa et al., Long-term trend of thyroid cancer risk
+among Japanese atomic-bomb survivors: 60 years after
+exposure. Int. J. Cancer 132, 1222–1226 (2013). doi: 10.1002/
+ijc.27749; pmid: 22847218
+4.
+L. H. Veiga et al., Thyroid cancer after childhood exposure to
+external radiation: An updated pooled analysis of 12 studies.
+Radiat. Res. 185, 473–484 (2016). doi: 10.1667/RR14213.1;
+pmid: 27128740
+5.
+International Agency for Research on Cancer, IARC
+Monographs on the Evaluation of Carcinogenic Risks to Humans,
+vol. 100D: Radiation (2012).
+6.
+V. S. T. Goh et al., Construction of fluorescence in situ
+hybridization (FISH) translocation dose-response calibration
+curve with multiple donor data sets using R, based on ISO
+20046:2019 recommendations. Int. J. Radiat. Biol. 95,
+1668–1684 (2019). doi: 10.1080/09553002.2019.1664788;
+pmid: 31550191
+7.
+Q. J. Liu et al., Assessment of retrospective dose estimation,
+with fluorescence in situ hybridization (FISH), of six victims
+previously exposed to accidental ionizing radiation. Mutat. Res.
+Genet. Toxicol. Environ. Mutagen. 759, 1–8 (2014).
+doi: 10.1016/j.mrgentox.2013.07.016; pmid: 24246721
+8.
+S. Behjati et al., Mutational signatures of ionizing radiation in
+second malignancies. Nat. Commun. 7, 12605 (2016).
+doi: 10.1038/ncomms12605; pmid: 27615322
+9.
+A. A. Efanov et al., Investigation of the relationship between
+radiation dose and gene mutations and fusions in post-
+Chernobyl thyroid cancer. J. Natl. Cancer Inst. 110, 371–378
+(2018). doi: 10.1093/jnci/djx209; pmid: 29165687
+10. Cancer Genome Atlas Research Network, Integrated genomic
+characterization of papillary thyroid carcinoma. Cell 159,
+676–690 (2014). doi: 10.1016/j.cell.2014.09.050;
+pmid: 25417114
+11. G. A. Thomas, The Chernobyl Tissue Bank: Integrating research
+on radiation-induced thyroid cancer. J. Radiol. Prot. 32,
+N77–N80 (2012). doi: 10.1088/0952-4746/32/1/N77;
+pmid: 22394998
+12. G. A. Thomas, E. D. Williams, Thyroid tumor banks. Science
+289, 2283a (2000). doi: 10.1126/science.289.5488.2283a;
+pmid: 11041794
+13. See supplementary materials.
+14. I. Likhtarov et al., Thyroid cancer study among Ukrainian
+children exposed to radiation after the Chornobyl accident:
+Improved estimates of the thyroid doses to the cohort
+members. Health Phys. 106, 370–396 (2014). doi: 10.1097/
+HP.0b013e31829f3096; pmid: 25208014
+15. I. Likhtarov et al., Reconstruction of individual thyroid doses to
+the Ukrainian subjects enrolled in the Chernobyl Tissue Bank.
+Radiat. Prot. Dosimetry 156, 407–423 (2013). doi: 10.1093/
+rpd/nct096; pmid: 23595409
+16. I. Likhtarov et al., Estimation of the thyroid doses for Ukrainian
+children exposed in utero after the chernobyl accident.
+Health Phys. 100, 583–593 (2011). doi: 10.1097/
+HP.0b013e3181ff391a; pmid: 22004928
+17. E. Ron et al., Thyroid cancer after exposure to external
+radiation: A pooled analysis of seven studies. Radiat. Res. 141,
+259–277 (1995). doi: 10.2307/3579003; pmid: 7871153
+18. A. Berrington de Gonzalez et al., Epidemiological studies of
+low-dose ionizing radiation and cancer: Rationale and
+framework for the monograph and overview of eligible studies.
+J. Natl. Cancer Inst. Monogr. 2020, 97–113 (2020).
+doi: 10.1093/jncimonographs/lgaa009; pmid: 32657348
+19. M. Hauptmann et al., Epidemiological studies of low-dose
+ionizing radiation and cancer: Summary bias assessment and
+meta-analysis. J. Natl. Cancer Inst. Monogr. 2020, 188–200
+(2020). doi: 10.1093/jncimonographs/lgaa010;
+pmid: 32657347
+20. L. B. Alexandrov et al., The repertoire of mutational signatures
+in human cancer. Nature 578, 94–101 (2020). doi: 10.1038/
+s41586-020-1943-3; pmid: 32025018
+21. Y. E. Maruvka et al., Analysis of somatic microsatellite indels
+identifies driver events in human tumors. Nat. Biotechnol. 35,
+951–959 (2017). doi: 10.1038/nbt.3966; pmid: 28892075
+22. L. B. Alexandrov, S. Nik-Zainal, D. C. Wedge, P. J. Campbell,
+M. R. Stratton, Deciphering signatures of mutational processes
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+9 of 10
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024
+
+operative in human cancer. Cell Rep. 3, 246–259 (2013).
+doi: 10.1016/j.celrep.2012.12.008; pmid: 23318258
+23. ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium,
+Pan-cancer analysis of whole genomes. Nature 578, 82–93
+(2020). doi: 10.1038/s41586-020-1969-6; pmid: 32025007
+24. R. K. Gopal et al., Widespread chromosomal losses and
+mitochondrial DNA alterations as genetic drivers in Hürthle cell
+carcinoma. Cancer Cell 34, 242–255.e5 (2018). doi: 10.1016/
+j.ccell.2018.06.013; pmid: 30107175
+25. I. Ganly et al., Integrated genomic analysis of Hürthle cell cancer
+reveals oncogenic drivers, recurrent mitochondrial mutations, and
+unique chromosomal landscapes. Cancer Cell 34, 256–270.e5
+(2018). doi: 10.1016/j.ccell.2018.07.002; pmid: 30107176
+26. T. M. Lowe, S. R. Eddy, tRNAscan-SE: A program for improved
+detection of transfer RNA genes in genomic sequence. Nucleic
+Acids Res. 25, 955–964 (1997). doi: 10.1093/nar/25.5.955;
+pmid: 9023104
+27. A. Lachmann et al., ChEA: Transcription factor regulation
+inferred from integrating genome-wide ChIP-X experiments.
+Bioinformatics 26, 2438–2444 (2010). doi: 10.1093/
+bioinformatics/btq466; pmid: 20709693
+28. J. Hess et al., Gain of chromosome band 7q11 in papillary
+thyroid carcinomas of young patients is associated with
+exposure to low-dose irradiation. Proc. Natl. Acad. Sci. U.S.A.
+108, 9595–9600 (2011). doi: 10.1073/pnas.1017137108;
+pmid: 21606360
+29. M. Selmansberger et al., CLIP2 as radiation biomarker in
+papillary thyroid carcinoma. Oncogene 34, 3917–3925 (2015).
+doi: 10.1038/onc.2014.311; pmid: 25284583
+30. M. Selmansberger et al., Dose-dependent expression of CLIP2
+in post-Chernobyl papillary thyroid carcinomas. Carcinogenesis
+36, 748–756 (2015). doi: 10.1093/carcin/bgv043;
+pmid: 25957251
+31. A. Subramanian et al., Gene set enrichment analysis: A knowledge-
+based approach for interpreting genome-wide expression profiles.
+Proc. Natl. Acad. Sci. U.S.A. 102, 15545–15550 (2005).
+doi: 10.1073/pnas.0506580102; pmid: 16199517
+32. J. Gudmundsson et al., A genome-wide association study yields
+five novel thyroid cancer risk loci. Nat. Commun. 8, 14517
+(2017). doi: 10.1038/ncomms14517; pmid: 28195142
+33. H. H. Y. Chang, N. R. Pannunzio, N. Adachi, M. R. Lieber,
+Non-homologous DNA end joining and alternative pathways to
+double-strand break repair. Nat. Rev. Mol. Cell Biol. 18,
+495–506 (2017). doi: 10.1038/nrm.2017.48; pmid: 28512351
+34. J. Carvajal-Garcia et al., Mechanistic basis for microhomology
+identification and genome scarring by polymerase theta.
+Proc. Natl. Acad. Sci. U.S.A. 117, 8476–8485 (2020).
+doi: 10.1073/pnas.1921791117; pmid: 32234782
+35. B. Zhao, E. Rothenberg, D. A. Ramsden, M. R. Lieber, The
+molecular basis and disease relevance of non-homologous DNA
+end joining. Nat. Rev. Mol. Cell Biol. 21, 765–781 (2020).
+doi: 10.1038/s41580-020-00297-8; pmid: 33077885
+36. M. E. Sehl, J. E. Carroll, S. Horvath, J. E. Bower, The acute
+effects of adjuvant radiation and chemotherapy on peripheral
+blood epigenetic age in early stage breast cancer patients. NPJ
+Breast Cancer 6, 23 (2020). doi: 10.1038/s41523-020-0161-3;
+pmid: 32566744
+37. J. Tong, T. K. Hei, Aging and age-related health effects of
+ionizing radiation. Radiat. Med. Protect. 1, 15–23 (2020).
+doi: 10.1016/j.radmp.2020.01.005
+38. S. Horvath, DNA methylation age of human tissues and cell
+types. Genome Biol. 14, R115 (2013). doi: 10.1186/gb-2013-14-
+10-r115; pmid: 24138928
+39. G. Hannum et al., Genome-wide methylation profiles reveal
+quantitative views of human aging rates. Mol. Cell 49, 359–367
+(2013). doi: 10.1016/j.molcel.2012.10.016; pmid: 23177740
+40. R. P. Tufano, G. V. Teixeira, J. Bishop, K. A. Carson, M. Xing,
+BRAF mutation in papillary thyroid cancer and its value in
+tailoring initial treatment: A systematic review and
+meta-analysis. Medicine 91, 274–286 (2012). doi: 10.1097/
+MD.0b013e31826a9c71; pmid: 22932786
+41. J. Liang et al., Genetic landscape of papillary thyroid carcinoma
+in the Chinese population. J. Pathol. 244, 215–226 (2018).
+doi: 10.1002/path.5005; pmid: 29144541
+42. C. Turner et al., Human genetic disease caused by de novo
+mitochondrial-nuclear DNA transfer. Hum. Genet. 112,
+303–309 (2003). doi: 10.1007/s00439-002-0892-2;
+pmid: 12545275
+43. S. A. Roberts et al., Clustered mutations in yeast and in human
+cancers can arise from damaged long single-strand DNA
+regions. Mol. Cell 46, 424–435 (2012). doi: 10.1016/
+j.molcel.2012.03.030; pmid: 22607975
+44. J. Drost, H. Clevers, Organoids in cancer research. Nat. Rev.
+Cancer 18, 407–418 (2018). doi: 10.1038/s41568-018-0007-6;
+pmid: 29692415
+45. J. Drost et al., Use of CRISPR-modified human stem cell
+organoids to study the origin of mutational signatures in
+cancer. Science 358, 234–238 (2017). doi: 10.1126/science.
+aao3130; pmid: 28912133
+46. V. A. LiVolsi et al., The Chernobyl thyroid cancer experience:
+Pathology. Clin. Oncol. 23, 261–267 (2011). doi: 10.1016/
+j.clon.2011.01.160; pmid: 21333507
+47. T. I. Bogdanova et al., Papillary thyroid carcinoma in Ukraine
+after Chernobyl and in Japan after Fukushima: Different
+histopathological scenarios. Thyroid thy.2020.0308 (2020).
+doi: 10.1089/thy.2020.0308; pmid: 33143557
+48. E. D. Williams et al., Thyroid carcinoma after Chernobyl latent
+period, morphology and aggressiveness. Br. J. Cancer 90,
+2219–2224 (2004). doi: 10.1038/sj.bjc.6601860;
+pmid: 15150580
+49. D. C. Kocher et al., Interactive RadioEpidemiological Program
+(IREP): A web-based tool for estimating probability of
+causation/assigned share of radiogenic cancers. Health Phys.
+95, 119–147 (2008). doi: 10.1097/01.HP.0000291191.49583.f7;
+pmid: 18545036
+50. Interactive RadioEpidemiological Program Information, Version
+5.7 (2020); https://radiationcalculators.cancer.gov/irep/.
+51. National Research Council, Health Risks from Exposure to Low
+Levels of Ionizing Radiation: BEIR VII Phase 2 (National
+Academies Press, 2006).
+52. S. Barnard, S. Bouffler, K. Rothkamm, The shape of the
+radiation dose response for DNA double-strand break
+induction and repair. Genome Integr. 4, 1 (2013). doi: 10.1186/
+2041-9414-4-1; pmid: 23522792
+53. M. Schlumberger, S. Leboulleux, Current practice in patients
+with differentiated thyroid cancer. Nat. Rev. Endocrinol. 17,
+176–188 (2021). doi: 10.1038/s41574-020-00448-z;
+pmid: 33339988
+ACKNOWLEDGMENTS
+The authors gratefully acknowledge the commitment of the staff
+of the Laboratory of Morphology of Endocrine System and the
+staff of the Department of Surgery of Endocrine System of
+the Institute of Endocrinology and Metabolism of the National
+Academy of Medical Sciences of Ukraine, who prepared the
+pathological material for the study and operated on the patients;
+the confirmation of thyroid tumor diagnoses provided by the
+International Pathology Panel of the Chernobyl Tissue Bank,
+including A. Abrosimov, T. Bogdanova, G. Fadda, J. Hunt, M. Ito,
+V. Livolsi, J. Rosai, E. D. Williams, and N. Dvinskyh; N. Appel
+(Information Management Services Inc., Calverton, MD) for
+programming support; E. C. Sasse (Radiation Epidemiology
+Branch, Division of Cancer Epidemiology and Genetics, National
+Cancer Institute) for support in creating figures and editorial
+review of the manuscript; C. Bodelon (Integrative Tumor
+Epidemiology Branch, Division of Cancer Epidemiology and
+Genetics, National Cancer Institute) for consultation regarding
+methylation age calculations; J. Liu (Cancer Genomics Research
+Laboratory, Leidos Biomedical Research Inc., Frederick National
+Laboratory for Cancer Research) for consultation regarding
+analyses of mRNA expression and assessment of cross-platform
+concordance; B. Zhu (Biostatistics Branch, Division of Cancer
+Epidemiology and Genetics, National Cancer Institute) for
+consultation regarding analyses of mRNA expression; C. Palmer
+(Cancer Genomics Research Laboratory, Leidos Biomedical
+Research Inc., Frederick National Laboratory for Cancer Research)
+for assistance computing principal components for ancestry
+analyses; T. Myers (Laboratory of Genetic Susceptibility, Division of
+Cancer Epidemiology and Genetics, National Cancer Institute) for
+independent review of SV sequence context; and the leadership
+of The Cancer Genome Atlas for conduct of an initial pilot study.
+This work utilized the computational resources of the NIH HPC
+Biowulf cluster (http://hpc.nih.gov). The opinions expressed by the
+authors are their own, and this material should not be interpreted
+as representing the official viewpoint of the US Department of
+Health and Human Services, the National Institutes of Health, or
+the National Cancer Institute. Funding: This project was supported
+by the Intramural Program of the National Cancer Institute,
+National Institutes of Health. The Chernobyl Tissue Bank is
+supported by the National Cancer Institute (U24CA082102).
+Author contributions: L.M.M., D.M.K., C.S., T.I.B., E.T.D., A.V.B.,
+A.B.d.G., G.A.T., M.D.T., G.G., and S.J.C. conceptualized the study;
+L.M.M., D.M.K., C.S., T.I.B., E.T.D., M.K.S., J.D., S.W.H., S.J.S.,
+J.N.S., Y.M., V.K., D.A.R., J.C.G., C.M.P., J.S.P., M.Y., O.L., M.J.M.,
+A.V.B., V.D., S.M., M.C., L.Y.Z., G.A.T., G.G., and S.J.C. designed
+the study methodology; L.M.M., D.M.K., C.S., E.T.D., M.K.S., J.D.,
+S.W.H., S.J.S., Y.M., V.K., M.Y., O.L., M.J.M., V.D., A.B.d.G., G.A.T.,
+G.G., and S.J.C. analyzed and synthesized the data; C.S., T.I.B.,
+E.T.D., M.K.S., J.D., M.Y., J.F.B., A.H., B.D.H., C.L.D., J.M.G.F., J.B.,
+E.K.C., S.M., M.C., L.Y.Z., G.A.T., and M.D.T. collected or generated
+the study data; T.I.B., M.K.S., J.D., M.K., A.V.B., K.M., V.D., M.H.,
+A.B.d.G., G.A.T., M.D.T., G.G., and S.J.C. contributed resources
+(study materials, patients, computing resources, or other analysis
+tools); L.M.M., D.M.K., C.S., T.I.B., E.T.D., V.K., M.K., A.H., C.L.D.,
+J.M.G.F., and J.B. curated the research data; L.M.M., D.M.K., C.S.,
+E.T.D., M.K.S., J.D., S.W.H., S.J.S., M.Y., G.A.T., G.G., and S.J.C.
+wrote the original draft; L.M.M., D.M.K., C.S., T.I.B., E.T.D., M.K.S.,
+J.D., V.K., O.L., and G.G. visualized the data; L.M.M., D.M.K., C.S.,
+G.A.T., M.D.T., G.G., and S.J.C. supervised or managed the
+research; L.M.M., D.M.K., C.S., T.I.B., E.T.D., E.K.C., A.B.d.G., G.A.T.,
+M.D.T., G.G., and S.J.C. had responsibility for managing and
+coordinating the research activity; G.A.T., M.D.T., and S.J.C.
+acquired funding for the study. All authors edited the final
+manuscript. G.A.T., M.D.T., G.G., and S.J.C. jointly directed this
+work. Competing interests: E.T.D. is an employee of Nvidia
+Corporation and owns stock in Nvidia, Illumina, and Pacific
+Biosciences. G.G. receives research funds from IBM and
+Pharmacyclics and is an inventor on patent applications related to
+MuTect, ABSOLUTE, MutSig, MSMuTect, MSMutSig, MSIdetect,
+POLYSOLVER, and TensorQTL. G.G. is a founder and consultant of,
+and holds privately held equity in, Scorpion Therapeutics. All other
+authors declare no competing interests. Data and materials
+availability: Analytic data are available in data S1 to S3. The
+supplementary materials text specifies code that has been posted to
+GitHub and is archived on Zenodo (13). Raw molecular data are
+available from the Genomic Data Commons, accessed through the
+database of Genotypes and Phenotypes (dbGaP, accession phs001134;
+www.ncbi.nlm.nih.gov/gap/). Samples are available from G.A.T. under a
+material agreement with the Chernobyl Tissue Bank.
+SUPPLEMENTARY MATERIALS
+science.sciencemag.org/content/372/6543/eabg2538/suppl/DC1
+Materials and Methods
+Figs. S1 to S32
+Tables S1 to S22
+References (54–123)
+Data S1 to S3
+MDAR Reproducibility Checklist
+22 December 2020; accepted 25 March 2021
+Published online 22 April 2021
+10.1126/science.abg2538
+Morton et al., Science 372, eabg2538 (2021)
+14 May 2021
+10 of 10
+RESEARCH
+|
+RESEARCH ARTICLE
+Downloaded from https://www.science.org at Massachusetts Institute of Technology on May 16, 2024

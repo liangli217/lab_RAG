@@ -1,0 +1,1126 @@
+Cancer Cell
+Article
+Widespread Genetic Heterogeneity in Multiple
+Myeloma: Implications for Targeted Therapy
+Jens G. Lohr,1,2,10 Petar Stojanov,1,2,10 Scott L. Carter,1,10 Peter Cruz-Gordillo,1 Michael S. Lawrence,1 Daniel Auclair,1
+Carrie Sougnez,1 Birgit Knoechel,1,2,3 Joshua Gould,1 Gordon Saksena,1 Kristian Cibulskis,1 Aaron McKenna,1
+Michael A. Chapman,4 Ravid Straussman,1 Joan Levy,5 Louise M. Perkins,5 Jonathan J. Keats,6 Steven E. Schumacher,1,2
+Mara Rosenberg,1 The Multiple Myeloma Research Consortium,11 Gad Getz,1,7,12 and Todd R. Golub1,2,8,9,12,*
+1Broad Institute of MIT and Harvard, 7 Cambridge Center, Cambridge, MA 02412, USA
+2Dana-Farber Cancer Institute, 450 Brookline Avenue, Boston, MA 02215, USA
+3Boston Children’s Hospital, 350 Longwood Avenue, Boston, MA 02115, USA
+4Cambridge Institute for Medical Research, Addenbrooke’s Hospital, Hills Road, Cambridge CB2 0XY, UK
+5The Multiple Myeloma Research Foundation, 383 Main Avenue, Fifth Floor, Norwalk, CT 06581, USA
+6Translational Genomics Research Institute (TGen), 445 N. Fifth Street, Phoenix, AZ 85004, USA
+7Massachusetts General Hospital Cancer Center and Department of Pathology, Massachusetts General Hospital and Harvard Medical
+School, Boston, MA 02114, USA
+8Harvard Medical School, Boston, MA 02115, USA
+9Howard Hughes Medical Institute, Chevy Chase, MD 20815, USA
+10These authors contributed equally to this work
+11Participants who contributed patient samples to this effort are listed at the end of the manuscript
+12These authors contributed equally to this work
+*Correspondence: golub@broadinstitute.org
+http://dx.doi.org/10.1016/j.ccr.2013.12.015
+SUMMARY
+We performed massively parallel sequencing of paired tumor/normal samples from 203 multiple myeloma
+(MM) patients and identiﬁed signiﬁcantly mutated genes and copy number alterations and discovered puta-
+tive tumor suppressor genes by determining homozygous deletions and loss of heterozygosity. We observed
+frequent mutations in KRAS (particularly in previously treated patients), NRAS, BRAF, FAM46C, TP53, and
+DIS3 (particularly in nonhyperdiploid MM). Mutations were often present in subclonal populations, and mul-
+tiple mutations within the same pathway (e.g., KRAS, NRAS, and BRAF) were observed in the same patient.
+In vitro modeling predicts only partial treatment efﬁcacy of targeting subclonal mutations, and even growth
+promotion of nonmutated subclones in some cases. These results emphasize the importance of heterogene-
+ity analysis for treatment decisions.
+INTRODUCTION
+We previously reported the sequencing of 38 matched tumor/
+normal multiple myeloma (MM) pairs, and that report of the
+genomic landscape of MM pointed to a number of recurrently
+mutated genes (e.g., FAM46C and DIS3) that are likely causal
+drivers of the disease (Chapman et al., 2011). However, that
+study design was only powered to detect commonly mutated
+genes, not less commonly mutated genes, due to the weak sta-
+tistical power provided by the small sample size. It also did not
+examine copy number alterations, leading to homozygous dele-
+tions or loss of heterozygosity (LOH), or clonal heterogeneity due
+to the modest sequence coverage (303) of those whole
+genome sequences.
+The identiﬁcation of driver mutations in MM holds great prom-
+ise for personalized medicine, whereby patients with particular
+mutations would be treated with the appropriate targeted ther-
+apy (Fonseca et al., 2009; Mahindra et al., 2012; Palumbo and
+Anderson, 2011). However, if the mutation is present in only a
+fraction of the cells, one might doubt whether such targeted
+Signiﬁcance
+A vision for precision cancer medicine calls for the deployment of molecularly targeted therapeutics in genetically deﬁned
+patient populations. A ﬁrst step in that process involves a description of the genetic landscape of cancer. We describe here a
+more comprehensive characterization of the MM genome, identifying recurrently mutated genes, copy number alterations,
+and signaling pathways. We ﬁnd evidence for extensive clonal heterogeneity in the disease, a ﬁnding that may complicate
+the interpretation of genome-inspired clinical trials for MM. More generally, our ﬁndings indicate a need for the delineation of
+clonal heterogeneity in genome-based diagnostic approaches to cancer.
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+91
+
+therapy would be clinically efﬁcacious. Recent studies have
+documented the existence of clonal heterogeneity in solid
+tumors and acute myeloid leukemia, albeit in small numbers of
+patients (Campbell et al., 2010; Carter et al., 2012; Ding et al.,
+2012; Gerlinger et al., 2012; Nik-Zainal et al., 2012; Shah et al.,
+2012; Walter et al., 2012). These studies demonstrated how
+acquisition of genetic alterations over time leads to clonal evolu-
+tion. Systemic treatment with chemotherapy may affect the
+ﬁtness of some subclones more than others, and thus may alter
+the tumor composition by promoting particular subclones
+(Landau et al., 2013b). Consequently, the full breadth of tumor
+heterogeneity, particularly in solid malignancies, may not be
+captured in a single biopsy, which represents a challenge for
+cancer therapy (Gerlinger et al., 2012). Clonal heterogeneity
+and clonal evolution have also been observed in MM by either
+whole-exome sequencing or array comparative genomic hybrid-
+ization (CGH), albeit in a modest number of patients (Egan et al.,
+2012; Keats et al., 2012; Walker et al., 2012).
+We therefore sought to estimate the extent of clonal heteroge-
+neity in MM in a large-scale MM genome sequencing data set
+capturing a breadth of untreated and previously treated patients
+and to infer the timing of genetic events in MM. In the work pre-
+sented here, we address several important questions: (1) can we
+identify signiﬁcantly mutated genes by integrating evidence from
+both point mutations and copy number analysis, (2) how do the
+mutation proﬁle and the clonal and subclonal composition of
+MM differ between hyperdiploid and nonhyperdiploid and
+between treated and untreated MM, and (3) can the contribution
+of subclones in a patient be reconstructed from a single biopsy to
+inform targeted therapy?
+RESULTS
+We ﬁrst set out to create a MM genome data set that would be
+sufﬁciently powered to comprehensively assess the genetic
+diversity of the disease and the extent to which subclonal hetero-
+geneity is observed within patients. Approval for this study was
+obtained as outlined in the Experimental Procedures, and a total
+of 203 tumor-normal pairs were analyzed: 177 by whole-exome
+sequencing and 26 by whole-genome sequencing (16 and 23,
+respectively, have been previously reported [Chapman et al.,
+2011]). The average depth of coverage for the whole exomes
+and whole genomes was 893 and 303, respectively. To esti-
+mate the statistical signiﬁcance of mutation frequency (as a mea-
+sure of positive selection), we used a new version of the MutSig
+algorithm (MutSigCV) that compares observed mutation fre-
+quencies against sequence context-speciﬁc, tumor-speciﬁc,
+and gene-speciﬁc background mutation frequencies (Lawrence
+et al., 2013). Additionally, we developed analytical tools to
+further prioritize homozygous somatic single-nucleotide variants
+(SSNVs), or genes which harbor mutations that are positionally
+clustered or preferentially affecting highly conserved amino
+acids (see the Supplemental Experimental Procedures available
+online). Analysis of the 203 tumor-normal pairs showed that 11
+genes were recurrently mutated using a standard signiﬁcance
+threshold of q < 0.1 (Figures 1 and S1). The individual and
+combined p and q values for these prioritization procedures
+are shown in Tables S1 and S2. Mutation validation studies
+were performed on 140 mutations, with a validation rate of
+90.4%, in line with other large-scale cancer genome sequencing
+studies (Table S2).
+Among the 11 signiﬁcantly mutated genes were ﬁve genes
+(KRAS, NRAS, FAM46C, DIS3, and TP53) previously identiﬁed
+as the most commonly mutated genes in our 38-patient pilot
+MM genome study (Chapman et al., 2011). An additional four
+genes (BRAF, TRAF3, CYLD, and RB1) have been implicated
+in the pathogenesis of MM (Annunziata et al., 2007; Chapman
+et al., 2011; Demchenko et al., 2010; Keats et al., 2007; Walker
+et al., 2012). PRDM1 is a transcriptional repressor that is involved
+in plasmacytic differentiation, and it acts as a tumor suppressor
+gene in activated B cell-like diffuse large B cell lymphoma
+(DLBCL). Mutations that disrupt its function have been described
+in DLBCL (Mandelbaum et al., 2010), but are not known to play a
+role in MM. PRDM1 has been shown to promote survival of trans-
+formed plasma cells (Lin et al., 2007), and transgenic mice prone
+to plasmacytoma development show reduced plasmacytoma
+incidence if one or two PRDM1 alleles are knocked out (D’Costa
+et al., 2009). We ﬁnd a recurrent missense mutation (S552C) in
+two patients, with two additional patients harboring closely clus-
+tered missense mutations (S605R and S606I), and an additional
+ﬁve patients with truncating frame shift or splice site mutations,
+supporting a role of PRDM1 as a tumor suppressor (Figures 1
+and S1; Tables S1 and S2).
+Additionally, several recurrently mutated and biologically rele-
+vant genes fall just below the signiﬁcance threshold (Table S1).
+For example, EGR1 was previously shown to abrogate JUN-
+induced MM growth inhibition and cell death when knocked
+down in MM cells and has been reported as a mechanism of
+resistance to MM therapy (Chen et al., 2010). We found that
+EGR1 mutations were clustered toward the 50 end of the gene
+(Tables S1 and S2; Figure S1), a pattern of mutation often asso-
+ciated with somatic hypermutation (Pasqualucci et al., 2001). To
+further explore this possibility, we asked whether the observed
+mutations occurred within WRCY motifs known to be the targets
+of activation-induced cytidine deaminase (AID), a key enzyme
+that catalyzes somatic hypermutation. This analysis revealed
+that EGR1 indeed had signiﬁcant enrichment of mutations in
+WRCY motifs (q < 0.1; Table S3), consistent with a somatic
+hypermutation mechanism. Whether these mutations act as
+‘‘drivers’’ and are positively selected or merely constitute ‘‘pas-
+sengers’’ remains to be seen.
+We also found four missense mutations in the interferon regu-
+latory factor IRF4, with three of the mutations being identical
+(K123R) (Chapman et al., 2011), establishing K123R as a recur-
+rent, ‘‘hot spot’’ mutation in IRF4 (Figure S1; Table S2). IRF4
+has previously been reported as a MM survival factor, wherein
+a loss-of-function RNAi screen showed that IRF4 inhibition
+results in loss of viability of MM cell lines (Shaffer et al., 2008).
+SP140 is the lymphoid-restricted homolog of SP100, expressed
+in plasma cells, and a genome-wide association study identiﬁed
+SP140 as a susceptibility locus for chronic lymphocytic leukemia
+(Di Bernardo et al., 2008), with risk alleles being associated with
+reduced levels of SP140 mRNA. We identiﬁed missense,
+nonsense, frame shift, and splice site alterations in eight pa-
+tients, with LOH observed for two of these alterations, consistent
+with its possible role as a tumor suppressor in MM.
+The available clinical characteristics of the patients in the
+study are shown in Figure 2 and Table S4. Identiﬁcation of
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+92
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+
+signiﬁcantly mutated genes exclusively in patients with t(4;14)
+and t(11;14), as obtained for 50 patients subjected to routine clin-
+ical ﬂuorescence in situ hybridization (FISH) testing, did not
+reveal additional signiﬁcantly mutated genes (Table S1). In
+general, there was no strong statistically signiﬁcant association
+between particular mutations and clinical features, tumor
+ploidy, or history of prior treatment, but hypothesis-generating
+trends could be observed (Figure 2; Tables S1 and S5). The
+sample size might need to be larger to deﬁnitively address
+such associations.
+Tumor suppressor genes can be inactivated not only by point
+mutation, but also by biallelic deletion. We therefore searched for
+genes with a statistically signiﬁcant excess of homozygous dele-
+tion (using a modiﬁcation of the GISTIC algorithm [Beroukhim
+et al., 2007; Mermel et al., 2011]) across the 153 patients in our
+study for whom high-density copy number array data were avail-
+able. Deletions were identiﬁed as being homozygous using the
+ABSOLUTE algorithm (Carter et al., 2012). We identiﬁed seven
+signiﬁcant regions, containing 32 genes, including known tumor
+suppressor genes such as CDKN2C, as well as genes associ-
+ated with the regulation of the NF-kB signaling pathway,
+including TRAF3, BIRC2, BIRC3, and CYLD (Figure 2; Table
+S6). CYLD was also found to be signiﬁcantly mutated in ﬁve
+patients (Figures 1 and 2), and its inactivation through deletions
+and mutations has been described in MM (Demchenko et al.,
+2010; Keats et al., 2007). Similarly, the exonuclease-encoding
+DIS3 gene is subject to point mutations with LOH (as determined
+by ABSOLUTE [Carter et al., 2012]), strongly implicating DIS3 as
+a tumor suppressor in 11% of MM patients (Figure 2). In order to
+designate samples as either hyperdiploid or nonhyperdiploid
+with high resolution, we developed and validated a classiﬁcation
+method using WES and WGS (Figure S2A; Supplemental Exper-
+imental Procedures). Interestingly, DIS3 aberration was more
+commonly seen among the 86 nonhyperdiploid MM cases
+compared to the 116 hyperdiploid cases (Fisher’s exact test,
+p = 0.00013; Table S5), with a nonsigniﬁcant trend toward a
+greater fraction of LOH in DIS3-mutated nonhyperdiploid
+patients compared to hyperdiploid samples (Fisher’s exact
+test, p = 0.13). We also found an excess of homozygous dele-
+tions in the gene encoding the tyrosine phosphatase PTPRD,
+which has recently been implicated as a tumor suppressor in
+MM, glioblastoma, and other cancers (Kamada et al., 2012).
+PTPRD dephosphorylates STAT3, which promotes signaling
+from
+interleukin-6,
+a well-recognized
+MM
+survival
+factor.
+Whether interleukin-6 signaling is indeed the mechanistic target
+of PTPRD deletion remains to be established. We also found
+homozygous deletions with a peak at 8p23.1 (with 18 genes)
+containing several candidate tumor suppressor genes (BLK,
+MSRA, PINX1, and SOX7) for which a connection to MM has
+not been previously established.
+We next asked whether there was evidence to support
+pathway-level patterns of mutation, whereby mutations in indi-
+vidual genes may lack statistical signiﬁcance but when multiple
+members of a pathway or functionally related gene set are
+2%
+3%
+2%
+5%
+5%
+6%
+11%
+11%
+8%
+20%
+23%
+50
+40
+30
+20
+10
+0
+mutations
+0.5
+2.0
+3.5
+ACTG1
+RB1
+CYLD
+PRDM1
+TRAF3
+BRAF
+FAM46C
+DIS3
+TP53
+NRAS
+KRAS
+−log10(q−value)
+0
+5
+10
+15
+ mutations/Mb
+0
+20
+40
+60
+80
+100
+%
+Syn.
+Non syn.
+Syn.
+Missense
+Splice site
+Nonsense
+Frame shift
+In frame indel
+Other non syn.
+double_null
+indel+null
+transver
+A−>G
+*Cp(A/C/T)−>T
+*CpG−>T
+0
+20
+40
+60
+80
+100
+Allelic
+fraction
+A
+B
+C
+Figure 1. Determining Signiﬁcantly Mutated Genes in 203 Patients with MM
+(A) The rate of synonymous and nonsynonymous mutations is displayed as mutations per megabase (of exome), with individual MM samples ranked by total
+number of mutations.
+(B) The heatmap represents individual mutations in 203 patient samples, color-coded by type of mutation. Only one mutation per gene is shown if multiple
+mutations were found in a sample. Left: the histogram shows the number of mutations in each gene. Percentages represent the fraction of tumors with at least one
+mutation in the speciﬁed gene. Right: the 11 genes with the lowest q value (q combined in Table S1), ranked by level of signiﬁcance, are shown.
+(C) Base substitution and allelic fraction distribution of individual samples, ranked in the same order as in (A).
+See also Figure S1 and Tables S1, S2, and S3.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+93
+
+Figure 2. Mutational Proﬁle, LOH, and Copy Number
+Proﬁle in Subtypes of MM
+Data for all 203 patient samples for which whole-genome or
+whole-exome sequencing was performed are displayed in
+columns. The ﬁrst panel from the top displays patient charac-
+teristics (‘‘NA,’’ if information on a characteristic was unavai-
+lable). Classiﬁcation into hyperdiploid versus nonhyperdiploid
+samples was performed as described in the Experimental
+Procedures. The second panel displays the 11 signiﬁcantly
+mutated genes and IRF4 (which harbors K123R mutations in
+three patients), color-coded by the cancer cell fraction in which
+these mutations occur; circles within symbols represent LOH. p
+value HD and p value Tx represent differences in the prevalence
+of mutations in the indicated gene between hyperdiploid and
+nonhyperdiploid and between previously treated and untreated
+samples, respectively. The third panel highlights samples
+harboring homozygous deletions at the most-signiﬁcant loci.
+Only selected genes within those loci are displayed. Gray
+symbols denote samples with unavailable high-density copy
+number array or ABSOLUTE data. The lower two panels display
+focal deletions and ampliﬁcations in the q value peaks across
+153 patients with high-density copy number arrays, as deter-
+mined by GISTIC analysis. Gray symbols denote samples
+without high-density copy number array. See also Figure S2 and
+Tables S4, S5, S6, S7, S8, and S9.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+94
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+
+mutated (albeit rarely), signiﬁcance is observed. We ﬁrst tested
+the three gene set hypotheses that emerged from a pilot analysis
+of the MM genome, namely the NF-kB pathway, histone-modi-
+fying enzymes, and the coagulation cascade (Chapman et al.,
+2011). Indeed, we ﬁnd that all three gene sets retain statistical
+signiﬁcance across our collection of 203 patients (p < 0.05), if
+tested as individual hypotheses (Table S7). Next, we tested a
+collection of 612 curated gene sets (taken from MSigDB [Subra-
+manian et al., 2005]) and found that six gene sets reached statis-
+tical signiﬁcance after correction for multiple-hypothesis testing
+(Table S7). These gene sets primarily include mutated compo-
+nents of the cell-cycle machinery (including CDKN1B and
+CCND1) and serve to highlight genes that are only borderline sig-
+niﬁcant when analyzed individually, but reach signiﬁcance as
+part of these gene sets. For example, we observed three coding
+mutations (accompanied by LOH) in the transcription factor
+MAX, as part of a signiﬁcantly mutated gene set, which functions
+as a heterodimerization partner for MYC, which is well known to
+A
+B
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Minimum number of subclonal populations
+Fraction of patients
+0.0
+0.1
+0.2
+0.3
+0.4
+Multiple myeloma
+Ovarian cancer
+C
+D
+  MM-0337
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+BRAF V600E
+NRAS Q61K 
+NRAS Q61K 
+KRAS Q61H
+KRAS G12A
+NRAS Q61H
+BRAF V600E 
+NRAS Y64D 
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+MM−0284
+MM-0591
+MM-0473
+CCF
+Mean SSNVs per patient
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Untreated
+Treated
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+MM-0364
+NRAS Q61H
+KRAS G12V
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Fraction of cancer cells with alteration
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+BRAF G466E 
+KRAS Y64N 
+MM-0525
+Figure 3. Clonal Heterogeneity of Signiﬁcantly Mutated Genes in MM
+(A) The numbers of predicted subclones by clustering of cancer cell fractions are shown, as described in the Supplemental Experimental Procedures. As a
+comparison, the predicted distribution of the number of subclones is also shown for a cohort of patients with ovarian cancer. Error bars represent the SD.
+(B) The CCF, i.e., the expected fraction of MM cells that harbor a coding mutation in the indicated gene, is shown. Each symbol represents a somatic mutation in
+an individual patient. The most signiﬁcantly mutated genes are shown. On the basis of the probability distribution, mutations were determined to be either clonal
+(red circles, upper bound of CCF conﬁdence interval R0.95) or subclonal (blue circles, upper bound of CCF conﬁdence interval <0.95). Error bars represent the
+95% conﬁdence interval.
+(C) Co-occurrence of signiﬁcant mutations in the same patient is depicted. Results of the Bayesian clustering procedure were applied to SSNV CCF distributions
+for KRAS, NRAS, and BRAF in samples that harbor mutations in at least two of these three oncogenes. Probability distributions over CCF for the co-occurring
+SSNV in the indicated oncogenes before clustering (black curves) and after clustering (ﬁlled red bars) are shown.
+(D) The fraction of somatic mutations that are present at the indicated CCF are shown for the 11 most signiﬁcantly mutated genes. Mutations in signiﬁcantly
+mutated genes occur at signiﬁcantly higher CCFs in previously treated patients compared to untreated patients (p = 0.007, Wilcoxon rank-sum test).
+See also Figure S3.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+95
+
+be dysregulated in MM (Shou et al., 2000). Interestingly, MAX has
+been implicated as a tumor suppressor susceptibility gene in
+pheochromocytoma (Comino-Me´ ndez et al., 2011), and a
+small-molecule inhibitor of MYC-MAX heterodimerization has
+been reported to result in myeloma cell death (Holien et al.,
+2012).
+Of the 203 patients in the study, 131 (65%) had evidence of
+mutations in one or more of the 11 recurrently mutated genes,
+and 103 (51%) had mutations of a gene within a statistically sig-
+niﬁcant gene set (new and previously published in Table S8,
+excluding signiﬁcantly mutated genes), accounting for a total
+of 166 patients (82%). Of the remaining 18% of tumors lacking
+such obviously functionally important mutations, some are likely
+to be driven by rare mutations in bona ﬁde driver genes (e.g., the
+tumors with mutations in MYD88 or CARD11, previously re-
+ported to be recurrently mutated in the B cell malignancy DLBCL
+[Lohr et al., 2012; Morin et al., 2011]; Tables S1 and S2). Tumors
+lacking such mutations might alternatively be driven by focal
+copy number alterations or chromosomal rearrangements. Of
+the 153 patients from whom copy number array data were avail-
+able, 119 patients (including 40 of the 60 patients lacking SSNV
+in the most signiﬁcantly mutated genes) had evidence of at least
+one focal gene copy number gain or loss within a signiﬁcant peak
+(Figures 2 and S2B; Table S8). Twenty-one patients (of 139 pa-
+tients with high-density copy number array and ABSOLUTE
+data) harbored homozygous deletions in signiﬁcant peaks (Fig-
+ure 2). Similarly, structural variants were found in all of the 26 pa-
+tients from whom whole-genome sequencing was available
+(Chapman et al., 2011), including three previously unpublished
+patients (Table S9). Whether such gene rearrangements are
+indeed causal of MM in these patients remains to be proven.
+We next addressed the extent to which clonal heterogeneity
+exists in MM. To do this, we computed the allelic fraction of
+each SSNV. The allelic fraction estimation alone (Figure 1),
+however, cannot be used to assess the fraction of cancer cells
+harboring the mutation because it does not take into account
+(1) the copy number at that locus or (2) tumor purity (whereby
+normal cell contamination can lead to the spurious impression
+of mutation subclonality). We therefore used the ABSOLUTE
+algorithm (Carter et al., 2012) to estimate the cancer cell frac-
+tion (CCF) of each SSNV by modeling the observed wild-type
+and mutated allele counts, taking into account local somatic
+copy number and sample purity, calculated from high-density
+SNP array or sequencing data (Figure S3) (Landau et al.,
+2013a). The CCF estimates for all SSNVs in a given sample
+were then analyzed with a Bayesian clustering algorithm
+(Landau et al., 2013b) to estimate the number of subclonal
+cell populations present in each tumor (Figure S3; Experimental
+Procedures).
+Looking across the entire coding region, we found that sam-
+ples with a purity greater than 0.7, nearly all had evidence of
+clonal heterogeneity (Figure 3A). Most patients harbored at least
+three detectable subclones (beyond the major clone), with some
+patients having as many as seven. For comparison, the same
+analysis applied to ovarian cancer (Cancer Genome Atlas
+Research Network, 2011) (sequenced to similar depth and with
+similar purities) showed that a lower proportion of MM patients
+(8%) had one or no subclones compared to ovarian cancer
+(19%; Fisher’s exact test, p = 0.0047; Figure 3A).
+We next asked whether certain types of mutations tend to be
+clonal (consistent with early events) whereas others might tend
+to be subclonal (consistent with later events). It was conceivable
+that true driver mutations (e.g., those reaching statistical signiﬁ-
+cance based on mutation frequency or those with strong con-
+nections to MM biology) might be exclusively clonal events.
+This, however, was not the case. Mutations in most of these
+genes were found to be clonal in some patients and subclonal
+in others, including some cases with subclonal coding mutations
+occurring on segments with subclonal copy number change
+(Figure 3B; Table S2). For example, of the 44 coding KRAS
+mutations that were analyzed for clonality, 32 (73%) were clonal,
+whereas for 12 (27%) were subclonal, detectable in as few as
+13% of cells in some patients.
+In some cases, we observed multiple signiﬁcant mutations in
+the same tumor sample, including mutations in oncogenes
+whose function might be expected to be redundant. For
+example, some patients had mutations in two of three onco-
+genes (NRAS, BRAF, and KRAS) (Figure 3C), or two mutations
+in KRAS (Table S2), despite the fact that these mutations simi-
+larly activate the MAP kinase pathway and therefore seemed
+unlikely to occur in the same tumor. We therefore asked whether
+there was evidence to support these mutations being present in
+the same clones, or rather in different subclones within the tu-
+mor. We reasoned that if they occurred in the same cell, we
+should ﬁnd some cases in which both mutations were clonal.
+This analysis indicated that, consistent with their biological func-
+tion, KRAS, NRAS, and BRAF mutations were rarely simulta-
+neously clonal in our patient samples (one sample); instead,
+they were mostly either both subclonal within the tumor or they
+occurred in a nested fashion (i.e., one clone being the subclone
+of another; nine samples). While these data indicate that muta-
+tions in KRAS, NRAS, and BRAF can coexist in the same cell,
+such subclones often did not appear to have sufﬁcient selective
+advantage to grow to clonality. In contrast, we found that DIS3
+and KRAS mutations were often simultaneously clonal (Table
+S2). DIS3 is known to encode a ribonuclease involved in RNA
+processing, but how loss-of-function DIS3 mutations are onco-
+genic and how they interact with KRAS in cellular transformation
+remain to be determined. Interestingly, we found that in general,
+signiﬁcantly recurrent mutations were more often clonal in previ-
+ously treated compared to untreated patients and occurred at
+higher CCFs (p = 0.007, Wilcoxon rank-sum test) (Figure 3D).
+This suggests that treatment might accelerate the ﬁxation of
+certain subclones by eliminating less ﬁt clones.
+We next explored the therapeutic implications of the observed
+clonal
+heterogeneity.
+Speciﬁcally,
+we
+focused
+on
+BRAF,
+because the observation of BRAF activating mutations in MM
+has stimulated clinical exploration of BRAF inhibitors in this
+disease. Indeed, a recent report of a single BRAF-mutant MM
+patient showing durable response to a BRAF inhibitor is encour-
+aging (Andrulis et al., 2013). Consistent with that clinical
+response, we found that U266 cells, which express the BRAF-
+K601N mutant (COSMIC database, http://cancer.sanger.ac.uk/
+cancergenome/projects/cosmic/) that has been shown to cause
+elevated phospho-MEK and phospho-ERK levels in other malig-
+nancies (Dahlman et al., 2012), were more sensitive to treatment
+with the BRAF inhibitor PLX4720 compared to BRAF-wild-type
+cell lines (Figure 4A and 4B). In addition, BRAF inhibition
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+96
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+
+downregulated MAP kinase pathway activity only in BRAF-
+mutant MM cells, whereas in BRAF-wild-type cells, the pathway
+was paradoxically upregulated (Figure 4A), similar to reports in
+melanoma (Poulikakos et al., 2010). Strikingly, paradoxical
+pathway activation was even more pronounced in the presence
+of KRAS or NRAS mutations, and this increased MAP kinase ac-
+tivity was associated with BRAF-inhibitor-induced growth stimu-
+lation of KRAS- or NRAS-mutant MM cell lines (Figure 4B). Taken
+together, these results suggest that treatment of patients
+harboring subclonal BRAF mutations may at best have only par-
+tial responses when treated with BRAF inhibitors.
+The presence of MAP kinase pathway activation in MM has
+similarly increased interest in the clinical testing of MEK inhibi-
+tors in MM (Annunziata et al., 2011; Tai et al., 2007). In mela-
+noma, the combination of MEK and BRAF inhibitors appears
+to be efﬁcacious with a favorable toxicity proﬁle, and the
+A
+B
+C
+Figure 4. Heterogeneity Composition Determines the Response to Targeted Therapy
+(A) The BRAF-wild-type MM cell lines OPM2 (NRAS and KRAS WT, FGFR3 K650E), MM1S (KRAS G12A), and SKMM1 (NRAS G12D) and the BRAF-mutant MM
+cell line U266 (BRAF K601N) were treated with the BRAF inhibitor PLX4720 at the indicated concentrations. Phosphorylated and total MEK and ERK were
+detected by western blot at the indicated time points.
+(B) The indicated cell lines were cultured for 5 days in the absence or presence of increasing concentrations of the BRAF inhibitor dabrafenib. Cell numbers were
+determined by ﬂow cytometry on day 5 of culture and normalized to the cell number at a dabrafenib concentration of 0 mM (100%). Error bars represent the SD.
+(C) The indicated MM cell lines were cultured in the presence of the MEK inhibitor trametinib with or without dabrafenib at varying doses. The cell number on day 5
+of culture was determined by cell titer glo. Curves with darker shades of gray represent higher concentrations of dabrafenib.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+97
+
+combination appears to abrogate the paradoxical activation of
+the MAP kinase pathway in BRAF-wild-type cells (Flaherty
+et al., 2012). In MM cell lines, we found that combination
+treatment resulted in increased killing of BRAF-mutant cells,
+whereas a combination beneﬁt was not observed in BRAF-
+wild-type cell lines (Figure 4C). These results support the clinical
+exploration of combination BRAF/MEK inhibitors in clonal,
+BRAF-mutant MM.
+DISCUSSION
+The modern oncology paradigm holds that the characterization
+of tumor genomes will reveal a coherent view of the pathogen-
+esis of cancer and that this in turn will lead to the development
+of targeted therapies. Our characterization of 203 MM genomes
+represents by far the most comprehensive effort reported to
+date, elucidating with statistical conﬁdence the recurrent point
+mutations and copy number alterations associated with the dis-
+ease. In particular, the integration of copy number and mutation
+analysis led to the identiﬁcation of genes whose recurrent muta-
+tion is also accompanied by loss of heterozygosity (LOH), a hall-
+mark of loss-of-function of tumor suppressor genes. On the
+basis of these methods, biologically important driver genes
+may be prioritized, even though they occur at a low frequency.
+Also of interest were mutations in EGR1 (seen in seven of 203
+patients). The 50 bias of the mutations and their occurring within
+a WRCY motif all suggest that they occur as a result of somatic
+hypermutation as a consequence of AID activity that is most
+commonly associated with the normal process of immunoglob-
+ulin gene rearrangement in B cells (Lenz and Staudt, 2010). We
+recently reported in the B cell malignancy DLBCL that somatic
+hypermutation of the BCL2 gene occurred as a result of chromo-
+somal translocations that bring the immunoglobulin heavy chain
+enhancer in proximity to the BCL2 locus (Lohr et al., 2012). Simi-
+larly, somatic hypermutation may occur when genes are dysre-
+gulated by IGH translocations in MM. For example, we identiﬁed
+39 coding and noncoding mutations in the CCND1 locus, with
+some samples harboring multiple mutations. In at least four
+of these patients, t(11;14) translocations were also detected,
+suggesting the possibility that these mutations might also result
+from somatic hypermutation.
+Interestingly, several genes, while not reaching statistical sig-
+niﬁcance on their own, were part of frequently mutated pathways
+or processes that have been causally implicated in MM
+(including the NF-kB pathway, chromatin-modifying enzymes,
+and RNA-processing molecules). Mutations in the RNA-binding
+proteins DIS3 and FAM46C were collectively observed in 21%
+of patients. It remains unknown why these mutations occur at
+such high frequency in MM and yet are seen only rarely, if
+ever, in other types of cancer. DIS3 mutations were often accom-
+panied by LOH and were most commonly seen in nonhyperdi-
+ploid MM.
+Additionally, we observed an accumulation of mutations in
+components of the cell-cycle machinery, as well as in members
+of the MAPK pathway. A key opportunity for the future will be to
+relate these mutations to the promising preclinical and clinical
+results that have recently been reported in MM using cyclin-
+dependent kinase inhibitors and RAF kinase inhibitors (Andrulis
+et al., 2013; Cirstea et al., 2013).
+Perhaps the most striking ﬁnding of our study was that MM
+tumors are highly heterogenous. Lower-resolution genetic ana-
+lyses (e.g., cytogenetics, FISH, and array CGH) have pointed
+to the existence of clonal heterogeneity in MM, and recent
+studies using exome sequencing and copy number analyses in
+a small number of samples similarly documented clonal diversity
+(Egan et al., 2012; Keats et al., 2012; Walker et al., 2012). The
+present study of 203 patients is unprecedented in its compre-
+hensiveness, and the analytical approach allowed us to (1) iden-
+tify subclonal mutations, (2) estimate the cancer cell fraction in
+which these mutations occur, and (3) estimate the minimum
+number of subclones. Our method is statistically powered to
+detect subclones representing at least 10% of the overall tumor
+sample. It is therefore likely that our ﬁnding that MM tumor sam-
+ples contain on average at least ﬁve subclones underestimates
+the clonal diversity of the disease. It is conceivable that a
+much larger number of additional subclones may also exist,
+either below our detection sensitivity or in nonsampled MM tis-
+sues. More comprehensive characterization of MM tissue will
+likely be required to resolve these questions.
+Interestingly, point mutations in the most signiﬁcantly mutated
+genes were found to be clonal in some patients but subclonal in
+others. That is, these mutated genes appear to be able to func-
+tion both as initiators of MM and also as potentiators of the
+disease. For example, BRAF mutations were often subclonal
+and, in some cases, coexistent with NRAS or KRAS mutations.
+In our cohort, these mutations did not co-occur clonally. Rather,
+at least one of them was always subclonal. With increasing
+numbers of samples and greater depth of sequencing, many
+more such cases, including many different genes, may be iden-
+tiﬁed. Other examples of such evolution in cancer have been
+reported (Campbell et al., 2010; Ding et al., 2012; Gerlinger
+et al., 2012; Jovanovic et al., 2010; Nik-Zainal et al., 2012;
+Shah et al., 2012; Walter et al., 2012; Wilmott et al., 2012).
+These results also have important clinical implications for MM
+clinical trials. For example, BRAF inhibitors are being explored in
+MM harboring a BRAF mutation, and the ﬁrst patient with BRAF
+V600E-positive MM who experienced a durable response to
+BRAF inhibition has just been reported (Andrulis et al., 2013).
+However, if a BRAF mutation is not clonal, suboptimal clinical
+beneﬁt would be expected. In principle, treating patients
+harboring subclonal BRAF mutations with BRAF inhibitors may
+stimulate the growth of BRAF-wild-type tumor cells. Combined
+BRAF and MEK inhibition might mitigate this effect, but this re-
+mains to be demonstrated in vivo.
+The clonal heterogeneity observed in this study offers a gener-
+ally sobering view of prospects for predicting the effects of tar-
+geted therapy for cancer in general. Therapy targeting a mutation
+present in only a fraction of tumor cells would be expected to
+affect only that subclone, leading to limited clinical beneﬁt. At
+worst, targeted therapy might have a paradoxically stimulatory
+effect on the subclones lacking the relevant mutation. At a min-
+imum, we suggest that it will not be sufﬁcient to simply document
+the presence or absence of mutations in the diagnostic setting.
+Rather, it will be important to enumerate the extent of clonal het-
+erogeneity in patients being evaluated for targeted therapy and
+to interpret the results of subsequent therapy in light of such
+genetic heterogeneity. Effective targeted therapy will require
+either drug combinations targeting distinct subclones or, more
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+98
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+
+likely, deployment of targeted therapies only in patients for
+whom the drug target is entirely clonal.
+EXPERIMENTAL PROCEDURES
+Sample Selection and Quality Assessment of DNA
+Bone marrow aspirates and peripheral blood samples were collected at
+Multiple Myeloma Research Consortium (MMRC) institutions from patients
+diagnosed with MM or related diseases and then shipped to the MMRC Tissue
+Bank for processing as previously described (Ahmann et al., 2008). The studies
+were approved by the Committee on the Use of Humans as Experimental
+Subjects of MIT, protocol no. 0803002647. All patients provided written
+informed consent under institutional review board approval. Sample process-
+ing was slightly modiﬁed from previous reports (Salhia et al., 2010) as
+described in the Supplemental Experimental Procedures.
+Whole-Exome Sequencing, Whole-Genome Sequencing, and
+Detection of Copy Number Variations
+Whole-exome capture libraries were constructed from 100 ng of tumor and
+normal DNA after shearing, end repair, phosphorylation, and ligation to bar-
+coded sequencing adapters (Fisher et al., 2011; Gnirke et al., 2009). Ligated
+DNA was size-selected for lengths between 200 and 350 bp and subjected
+to exonic hybrid capture using SureSelect v2 Exome bait (Agilent). Samples
+were multiplexed and sequenced on multiple Illumina HiSeq ﬂow cells
+(paired-end 76 bp reads) to an average depth of coverage of 893 and 883
+for tumor and normal, respectively. For whole-genome sequencing, library
+construction was done with 1–3 mg of native DNA from primary tumor and
+germline samples for each patient. The DNA was sheared to a range of 101–
+700 bp using the Covaris E210 Instrument and was then phosphorylated
+and adenylated according to the Illumina protocol. Adaptor ligated puriﬁcation
+was done by preparatory gel electrophoresis, and size was selected by exci-
+sion of two bands (500–520 bp and 520–540 bp, respectively), yielding two
+libraries per sample with average of 380 bp and 400 bp, respectively. The
+libraries were then sequenced with the Illumina GA-II or Illumina HiSeq
+sequencer with 76 or 101 bp reads, achieving an average of 303 coverage
+depth. The resulting data were analyzed with the current Illumina pipeline,
+which generates data ﬁles (BAM ﬁles) that contain the reads and quality
+parameters. Copy number variations of 153 patients of the sequencing cohort
+were determined by Affymetrix SNP 6.0 array. Sequencing data are available
+in the dbGaP database (http://www.ncbi.nlm.nih.gov/gap) under accession
+number phs000348.
+Analysis of Whole-Genome and Whole-Exome Sequencing Data
+For a detailed description, see the Supplemental Experimental Procedures.
+Myeloma Cell Lines, MM Cell Proliferation, and BRAF Inhibition
+A human-derived BRAF-mutant cell line (U266) and three BRAF-wild-type
+cell lines (OPM2, MM1S, and SKMM1) were plated at 1.0 3 106 cells/ml (total
+2.0 3 106 in 2 ml) in 6-well plates. For western blotting, cells were then treated
+with concentrations of 0 mM, 2.5 mM, or 10 mM BRAF inhibitor PLX4720 for 1 hr
+or 24 hr. After treatment, cells were harvested and lysed on ice for 5 min with
+300 ml of a modiﬁed NP40 lysis buffer (1% NP-40, 50 mM Tris [pH 7.5], 150 mM
+NaCl, 2 mM EDTA [pH 8], 1 mg/ml NaF, and deuterium depleted water) for
+western blot analysis. For determination of the proliferation of MM cell lines
+in the presence of the BRAF inhibitor dabrafenib and the MEK inhibitor trame-
+tinib, 3,000 cells per well were plated in quadruplicate in a 384-well plate in the
+presence of the indicated drug concentrations.
+Western Blot Analysis of MAPK Pathway after PLX4720 Treatment
+Lysate protein concentrations were obtained using the BIO-RAD DC Protein
+Assay kit, and concentrations were subsequently adjusted to 1 mg/ml ﬁnal
+concentrations. Twelve micrograms of protein from each cell lysate was
+run per well on NuPAGE 4%–12% Bis-Tris Midi Gels (Life Technologies
+WG1403BX10). The gel was blotted onto nitrocellulose membrane paper
+(Invitrogen LC2001) using the iBlot gel transfer device (Life Technologies
+IB1001). The membrane was subsequently blocked (Li-Cor Blocking Buffer
+927-40000) for 1 hr and stained as described in the Supplemental Experi-
+mental Procedures.
+ACCESSION NUMBERS
+Sequencing data are available in the dbGaP database (http://www.ncbi.nlm.
+nih.gov/gap) under accession number phs000348.
+SUPPLEMENTAL INFORMATION
+Supplemental Information includes Supplemental Experimental Procedures,
+three ﬁgures, and nine tables and can be found with this article online at
+http://dx.doi.org/10.1016/j.ccr.2013.12.015.
+CONSORTIA
+The investigators of the Multiple Myeloma Research Consortium are Kenneth
+C. Anderson, Paul Richardson, Amrita Krishnan, Sagar Lonial, Jonathan
+Kaufman, David S. Siegel, David H. Vesole, Vivek Roy, Candido E. Rivera,
+S. Vincent Rajkumar, Shaji Kumar, Rafael Fonseca, Greg J. Ahmann, P. Leif
+Bergsagel, A. Keith Stewart, Craig C. Hofmeister, Yvonne A. Efebera, Sundar
+Jagannath, Ajai Chari, Suzanne Trudel, Donna Reece, Jeffrey Wolf, Thomas
+Martin, Todd Zimmerman, Cara Rosenbaum, Andrzej J. Jakubowiak, Daniel
+Lebovic, Ravi Vij, and Keith Stockerl-Goldstein.
+AUTHOR CONTRIBUTIONS
+J.G.L. designed and performed experiments and analyzed the data. P.S.
+and S.L.C. conceived and implemented computational methods for data
+analysis. J.G., G.S., K.C., A.M., S.E.S., M.R., and M.S.L. provided analytical
+support. J.G.L., S.L.C., P.S., G.G., and T.R.G. wrote the manuscript. P.C.G.
+performed experiments and analyzed data. D.A. and C.S. performed sample
+and data management and gave conceptual advice. B.K. designed experi-
+ments and analyzed data. M.A.C. and R.S. designed experiments. J.L.,
+L.M.P performed analysis of clinical data. J.J.K. performed sequencing anal-
+ysis. The Multiple Myeloma Research Consortium contributed patient sam-
+ples. G.G. and T.R.G. designed the experimental strategy and supervised
+the analysis. All authors discussed the results and implications and reviewed
+the manuscript.
+ACKNOWLEDGMENTS
+This project was funded by a grant from the Multiple Myeloma Research Foun-
+dation. This work was also supported by NIH grant 5P50CA100707-09 (DF/
+HCC SPORE in Multiple Myeloma) and a Conquer Cancer Foundation Young
+Investigator Award (J.G.L.). We are grateful to members of the Broad Insti-
+tute’s Genomics Platform, without whom this work would not have been
+possible, and to Jadwiga Grabarek and the members of the Golub lab for help-
+ful discussions and critical review of the manuscript.
+Received: March 3, 2013
+Revised: October 9, 2013
+Accepted: December 23, 2013
+Published: January 13, 2014
+REFERENCES
+Ahmann, G.J., Chng, W.J., Henderson, K.J., Price-Troska, T.L., DeGoey, R.W.,
+Timm, M.M., Dispenzieri, A., Greipp, P.R., Sable-Hunt, A., Bergsagel, L., and
+Fonseca, R. (2008). Effect of tissue shipping on plasma cell isolation, viability,
+and RNA integrity in the context of a centralized good laboratory practice-
+certiﬁed tissue banking facility. Cancer Epidemiol. Biomarkers Prev. 17,
+666–673.
+Andrulis, M., Lehners, N., Capper, D., Penzel, R., Heining, C., Huellein, J.,
+Zenz, T., von Deimling, A., Schirmacher, P., Ho, A.D., et al. (2013). Targeting
+the BRAF V600E mutation in multiple myeloma. Cancer Discov. 3, 862–869.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+99
+
+Annunziata, C.M., Davis, R.E., Demchenko, Y., Bellamy, W., Gabrea, A., Zhan,
+F., Lenz, G., Hanamura, I., Wright, G., Xiao, W., et al. (2007). Frequent engage-
+ment of the classical and alternative NF-kappaB pathways by diverse genetic
+abnormalities in multiple myeloma. Cancer Cell 12, 115–130.
+Annunziata, C.M., Hernandez, L., Davis, R.E., Zingone, A., Lamy, L., Lam, L.T.,
+Hurt, E.M., Shaffer, A.L., Kuehl, W.M., and Staudt, L.M. (2011). A mechanistic
+rationale for MEK inhibitor therapy in myeloma based on blockade of MAF
+oncogene expression. Blood 117, 2396–2404.
+Beroukhim, R., Getz, G., Nghiemphu, L., Barretina, J., Hsueh, T., Linhart, D.,
+Vivanco, I., Lee, J.C., Huang, J.H., Alexander, S., et al. (2007). Assessing the
+signiﬁcance of chromosomal aberrations in cancer: methodology and applica-
+tion to glioma. Proc. Natl. Acad. Sci. USA 104, 20007–20012.
+Campbell, P.J., Yachida, S., Mudie, L.J., Stephens, P.J., Pleasance, E.D.,
+Stebbings, L.A., Morsberger, L.A., Latimer, C., McLaren, S., Lin, M.L., et al.
+(2010). The patterns and dynamics of genomic instability in metastatic pancre-
+atic cancer. Nature 467, 1109–1113.
+Cancer Genome Atlas Research Network (2011). Integrated genomic analyses
+of ovarian carcinoma. Nature 474, 609–615.
+Carter, S.L., Cibulskis, K., Helman, E., McKenna, A., Shen, H., Zack, T., Laird,
+P.W., Onofrio, R.C., Winckler, W., Weir, B.A., et al. (2012). Absolute quantiﬁca-
+tion of somatic DNA alterations in human cancer. Nat. Biotechnol. 30,
+413–421.
+Chapman, M.A., Lawrence, M.S., Keats, J.J., Cibulskis, K., Sougnez, C.,
+Schinzel, A.C., Harview, C.L., Brunet, J.P., Ahmann, G.J., Adli, M., et al.
+(2011). Initial genome sequencing and analysis of multiple myeloma. Nature
+471, 467–472.
+Chen, L., Wang, S., Zhou, Y., Wu, X., Entin, I., Epstein, J., Yaccoby, S., Xiong,
+W., Barlogie, B., Shaughnessy, J.D., Jr., and Zhan, F. (2010). Identiﬁcation of
+early growth response protein 1 (EGR-1) as a novel target for JUN-induced
+apoptosis in multiple myeloma. Blood 115, 61–70.
+Cirstea, D., Hideshima, T., Santo, L., Eda, H., Mishima, Y., Nemani, N., Hu, Y.,
+Mimura, N., Cottini, F., Gorgun, G., et al. (2013). Small-molecule multi-targeted
+kinase inhibitor RGB-286638 triggers P53-dependent and -independent anti-
+multiple myeloma activity through inhibition of transcriptional CDKs. Leukemia
+27, 2366–2375.
+Comino-Me´ ndez, I., Gracia-Azna´ rez, F.J., Schiavi, F., Landa, I., Leandro-
+Garcı´a, L.J., Leto´ n, R., Honrado, E., Ramos-Medina, R., Caronia, D., Pita,
+G., et al. (2011). Exome sequencing identiﬁes MAX mutations as a cause of
+hereditary pheochromocytoma. Nat. Genet. 43, 663–667.
+D’Costa, K., Emslie, D., Metcalf, D., Smyth, G.K., Karnowski, A., Kallies, A.,
+Nutt, S.L., and Corcoran, L.M. (2009). Blimp1 is limiting for transformation in
+a mouse plasmacytoma model. Blood 113, 5911–5919.
+Dahlman, K.B., Xia, J., Hutchinson, K., Ng, C., Hucks, D., Jia, P., Ateﬁ, M., Su,
+Z., Branch, S., Lyle, P.L., et al. (2012). BRAF(L597) mutations in melanoma are
+associated with sensitivity to MEK inhibitors. Cancer Discov. 2, 791–797.
+Demchenko, Y.N., Glebov, O.K., Zingone, A., Keats, J.J., Bergsagel, P.L., and
+Kuehl, W.M. (2010). Classical and/or alternative NF-kappaB pathway activa-
+tion in multiple myeloma. Blood 115, 3541–3552.
+Di Bernardo, M.C., Crowther-Swanepoel, D., Broderick, P., Webb, E., Sellick,
+G., Wild, R., Sullivan, K., Vijayakrishnan, J., Wang, Y., Pittman, A.M., et al.
+(2008). A genome-wide association study identiﬁes six susceptibility loci for
+chronic lymphocytic leukemia. Nat. Genet. 40, 1204–1210.
+Ding, L., Ley, T.J., Larson, D.E., Miller, C.A., Koboldt, D.C., Welch, J.S.,
+Ritchey, J.K., Young, M.A., Lamprecht, T., McLellan, M.D., et al. (2012).
+Clonal evolution in relapsed acute myeloid leukaemia revealed by whole-
+genome sequencing. Nature 481, 506–510.
+Egan, J.B., Shi, C.X., Tembe, W., Christoforides, A., Kurdoglu, A., Sinari, S.,
+Middha, S., Asmann, Y., Schmidt, J., Braggio, E., et al. (2012). Whole-genome
+sequencing of multiple myeloma from diagnosis to plasma cell leukemia re-
+veals genomic initiating events, evolution, and clonal tides. Blood 120,
+1060–1066.
+Fisher, S., Barry, A., Abreu, J., Minie, B., Nolan, J., Delorey, T.M., Young, G.,
+Fennell, T.J., Allen, A., Ambrogio, L., et al. (2011). A scalable, fully automated
+process for construction of sequence-ready human exome targeted capture
+libraries. Genome Biol. 12, R1.
+Flaherty, K.T., Infante, J.R., Daud, A., Gonzalez, R., Kefford, R.F., Sosman, J.,
+Hamid, O., Schuchter, L., Cebon, J., Ibrahim, N., et al. (2012). Combined BRAF
+and MEK inhibition in melanoma with BRAF V600 mutations. N. Engl. J. Med.
+367, 1694–1703.
+Fonseca, R., Bergsagel, P.L., Drach, J., Shaughnessy, J., Gutierrez, N.,
+Stewart, A.K., Morgan, G., Van Ness, B., Chesi, M., Minvielle, S., et al.;
+International
+Myeloma
+Working
+Group
+(2009).
+International
+Myeloma
+Working Group molecular classiﬁcation of multiple myeloma: spotlight review.
+Leukemia 23, 2210–2221.
+Gerlinger, M., Rowan, A.J., Horswell, S., Larkin, J., Endesfelder, D., Gronroos,
+E., Martinez, P., Matthews, N., Stewart, A., Tarpey, P., et al. (2012). Intratumor
+heterogeneity and branched evolution revealed by multiregion sequencing.
+N. Engl. J. Med. 366, 883–892.
+Gnirke, A., Melnikov, A., Maguire, J., Rogov, P., LeProust, E.M., Brockman,
+W., Fennell, T., Giannoukos, G., Fisher, S., Russ, C., et al. (2009). Solution
+hybrid selection with ultra-long oligonucleotides for massively parallel targeted
+sequencing. Nat. Biotechnol. 27, 182–189.
+Holien, T., Va˚ tsveen, T.K., Hella, H., Waage, A., and Sundan, A. (2012).
+Addiction to c-MYC in multiple myeloma. Blood 120, 2450–2453.
+Jovanovic, B., Egyhazi, S., Eskandarpour, M., Ghiorzo, P., Palmer, J.M.,
+Bianchi Scarra` , G., Hayward, N.K., and Hansson, J. (2010). Coexisting
+NRAS and BRAF mutations in primary familial melanomas with speciﬁc
+CDKN2A germline alterations. J. Invest. Dermatol. 130, 618–620.
+Kamada, Y., Sakata-Yanagimoto, M., Sanada, M., Sato-Otsubo, A., Enami, T.,
+Suzukawa, K., Kurita, N., Nishikii, H., Yokoyama, Y., Okoshi, Y., et al. (2012).
+Identiﬁcation of unbalanced genome copy number abnormalities in patients
+with multiple myeloma by single-nucleotide polymorphism genotyping micro-
+array analysis. Int. J. Hematol. 96, 492–500.
+Keats, J.J., Fonseca, R., Chesi, M., Schop, R., Baker, A., Chng, W.J., Van Wier,
+S., Tiedemann, R., Shi, C.X., Sebag, M., et al. (2007). Promiscuous mutations
+activate the noncanonical NF-kappaB pathway in multiple myeloma. Cancer
+Cell 12, 131–144.
+Keats, J.J., Chesi, M., Egan, J.B., Garbitt, V.M., Palmer, S.E., Braggio, E., Van
+Wier, S., Blackburn, P.R., Baker, A.S., Dispenzieri, A., et al. (2012). Clonal
+competition with alternating dominance in multiple myeloma. Blood 120,
+1067–1076.
+Landau, D.A., Carter, S.L., Getz, G., and Wu, C.J. (2013a). Clonal evolution
+in hematological malignancies and therapeutic implications. Leukemia.
+Published online August 27, 2013. http://dx.doi.org/10.1038/leu.2013.248.
+Landau, D.A., Carter, S.L., Stojanov, P., McKenna, A., Stevenson, K.,
+Lawrence, M.S., Sougnez, C., Stewart, C., Sivachenko, A., Wang, L., et al.
+(2013b). Evolution and impact of subclonal mutations in chronic lymphocytic
+leukemia. Cell 152, 714–726.
+Lawrence, M.S., Stojanov, P., Polak, P., Kryukov, G.V., Cibulskis, K.,
+Sivachenko, A., Carter, S.L., Stewart, C., Mermel, C.H., Roberts, S.A., et al.
+(2013). Mutational heterogeneity in cancer and the search for new cancer-
+associated genes. Nature 499, 214–218.
+Lenz, G., and Staudt, L.M. (2010). Aggressive lymphomas. N. Engl. J. Med.
+362, 1417–1429.
+Lin, F.R., Kuo, H.K., Ying, H.Y., Yang, F.H., and Lin, K.I. (2007). Induction of
+apoptosis in plasma cells by B lymphocyte-induced maturation protein-1
+knockdown. Cancer Res. 67, 11914–11923.
+Lohr, J.G., Stojanov, P., Lawrence, M.S., Auclair, D., Chapuy, B., Sougnez, C.,
+Cruz-Gordillo, P., Knoechel, B., Asmann, Y.W., Slager, S.L., et al. (2012).
+Discovery and prioritization of somatic mutations in diffuse large B-cell lym-
+phoma (DLBCL) by whole-exome sequencing. Proc. Natl. Acad. Sci. USA
+109, 3879–3884.
+Mahindra, A., Laubach, J., Raje, N., Munshi, N., Richardson, P.G., and
+Anderson, K. (2012). Latest advances and current challenges in the treatment
+of multiple myeloma. Nat. Rev. Clin. Oncol. 9, 135–143.
+Mandelbaum, J., Bhagat, G., Tang, H., Mo, T., Brahmachary, M., Shen, Q.,
+Chadburn, A., Rajewsky, K., Tarakhovsky, A., Pasqualucci, L., and Dalla-
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+100
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+
+Favera, R. (2010). BLIMP1 is a tumor suppressor gene frequently disrupted in
+activated B cell-like diffuse large B cell lymphoma. Cancer Cell 18, 568–579.
+Mermel, C.H., Schumacher, S.E., Hill, B., Meyerson, M.L., Beroukhim, R., and
+Getz, G. (2011). GISTIC2.0 facilitates sensitive and conﬁdent localization of the
+targets of focal somatic copy-number alteration in human cancers. Genome
+Biol. 12, R41.
+Morin, R.D., Mendez-Lago, M., Mungall, A.J., Goya, R., Mungall, K.L., Corbett,
+R.D., Johnson, N.A., Severson, T.M., Chiu, R., Field, M., et al. (2011). Frequent
+mutation of histone-modifying genes in non-Hodgkin lymphoma. Nature 476,
+298–303.
+Nik-Zainal, S., Van Loo, P., Wedge, D.C., Alexandrov, L.B., Greenman, C.D.,
+Lau, K.W., Raine, K., Jones, D., Marshall, J., Ramakrishna, M., et al.; Breast
+Cancer Working Group of the International Cancer Genome Consortium
+(2012). The life history of 21 breast cancers. Cell 149, 994–1007.
+Palumbo, A., and Anderson, K. (2011). Multiple myeloma. N. Engl. J. Med. 364,
+1046–1060.
+Pasqualucci, L., Neumeister, P., Goossens, T., Nanjangud, G., Chaganti, R.S.,
+Ku¨ ppers, R., and Dalla-Favera, R. (2001). Hypermutation of multiple proto-
+oncogenes in B-cell diffuse large-cell lymphomas. Nature 412, 341–346.
+Poulikakos, P.I., Zhang, C., Bollag, G., Shokat, K.M., and Rosen, N. (2010).
+RAF inhibitors transactivate RAF dimers and ERK signalling in cells with
+wild-type BRAF. Nature 464, 427–430.
+Salhia, B., Baker, A., Ahmann, G., Auclair, D., Fonseca, R., and Carpten, J.
+(2010). DNA methylation analysis determines the high frequency of genic
+hypomethylation and low frequency of hypermethylation events in plasma
+cell tumors. Cancer Res. 70, 6934–6944.
+Shaffer, A.L., Emre, N.C., Lamy, L., Ngo, V.N., Wright, G., Xiao, W., Powell, J.,
+Dave, S., Yu, X., Zhao, H., et al. (2008). IRF4 addiction in multiple myeloma.
+Nature 454, 226–231.
+Shah, S.P., Roth, A., Goya, R., Oloumi, A., Ha, G., Zhao, Y., Turashvili, G., Ding,
+J., Tse, K., Haffari, G., et al. (2012). The clonal and mutational evolution spec-
+trum of primary triple-negative breast cancers. Nature 486, 395–399.
+Shou, Y., Martelli, M.L., Gabrea, A., Qi, Y., Brents, L.A., Roschke, A., Dewald,
+G., Kirsch, I.R., Bergsagel, P.L., and Kuehl, W.M. (2000). Diverse karyotypic
+abnormalities of the c-myc locus associated with c-myc dysregulation and
+tumor progression in multiple myeloma. Proc. Natl. Acad. Sci. USA 97,
+228–233.
+Subramanian, A., Tamayo, P., Mootha, V.K., Mukherjee, S., Ebert, B.L.,
+Gillette, M.A., Paulovich, A., Pomeroy, S.L., Golub, T.R., Lander, E.S., and
+Mesirov, J.P. (2005). Gene set enrichment analysis: a knowledge-based
+approach for interpreting genome-wide expression proﬁles. Proc. Natl.
+Acad. Sci. USA 102, 15545–15550.
+Tai, Y.T., Fulciniti, M., Hideshima, T., Song, W., Leiba, M., Li, X.F., Rumizen,
+M., Burger, P., Morrison, A., Podar, K., et al. (2007). Targeting MEK induces
+myeloma-cell cytotoxicity and inhibits osteoclastogenesis. Blood 110, 1656–
+1663.
+Walker, B.A., Wardell, C.P., Melchor, L., Hulkki, S., Potter, N.E., Johnson, D.C.,
+Fenwick, K., Kozarewa, I., Gonzalez, D., Lord, C.J., et al. (2012). Intraclonal
+heterogeneity and distinct molecular mechanisms characterize the develop-
+ment of t(4;14) and t(11;14) myeloma. Blood 120, 1077–1086.
+Walter, M.J., Shen, D., Ding, L., Shao, J., Koboldt, D.C., Chen, K., Larson, D.E.,
+McLellan, M.D., Dooling, D., Abbott, R., et al. (2012). Clonal architecture of
+secondary acute myeloid leukemia. N. Engl. J. Med. 366, 1090–1098.
+Wilmott, J.S., Tembe, V., Howle, J.R., Sharma, R., Thompson, J.F., Rizos, H.,
+Lo, R.S., Kefford, R.F., Scolyer, R.A., and Long, G.V. (2012). Intratumoral
+molecular heterogeneity in a BRAF-mutant, BRAF inhibitor-resistant mela-
+noma: a case illustrating the challenges for personalized medicine. Mol.
+Cancer Ther. 11, 2704–2708.
+Cancer Cell
+Genetic Heterogeneity in Multiple Myeloma
+Cancer Cell 25, 91–101, January 13, 2014 ª2014 Elsevier Inc.
+101

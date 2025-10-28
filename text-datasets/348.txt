@@ -1,0 +1,2129 @@
+RESEARCH ARTICLE
+MinimuMM-seq: Genome Sequencing of 
+Circulating Tumor Cells for Minimally 
+Invasive Molecular Characterization of 
+Multiple Myeloma Pathology 
+Ankit K. Dutta1,2,3, Jean-Baptiste Alberge1,2,3, Elizabeth D. Lightbody1,2,3, Cody J. Boehner1,2,3, 
+Andrew Dunford3, Romanos Sklavenitis-Pistofidis1,2,3, Tarek H. Mouhieddine1,2,3, Annie N. Cowan1,2, 
+Nang Kham Su1,2,3, Erica M. Horowitz1,2, Hadley Barr1,2, Laura Hevenor1,2, Jenna B. Beckwith1,2, 
+Jacqueline Perry1,2, Amanda Cao1,2, Ziao Lin3, Frank K. Kuhr4, Richard G. Del Mastro4, Omar Nadeem1,2, 
+Patricia T. Greipp5, Chip Stewart3, Daniel Auclair6, Gad Getz3,7, and Irene M. Ghobrial1,2,3
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+	
+FEBRUARY  2023 CANCER DISCOVERY | 349 
+INTRODUCTION
+Multiple myeloma (MM) is a largely incurable hemato-
+logic malignancy characterized by the aberrant proliferation 
+of clonal plasma cells (PC) within the bone marrow (BM), 
+which develops from the asymptomatic disease stages known 
+as monoclonal gammopathy of undetermined significance 
+(MGUS) and smoldering multiple myeloma (SMM). The 
+initial diagnosis of MGUS or SMM remains an incidental 
+process depending on the identification of increased mono-
+clonal protein in the blood, yet BM biopsy is the gold stand-
+ard for diagnosis and monitoring of progression to MM. 
+BM biopsy is an intrusive and painful procedure for patients 
+having an asymptomatic condition and does not allow for 
+multiple samples to be acquired frequently over the course 
+of disease development to monitor tumor dynamics. Moreo-
+ver, next-generation sequencing (NGS) studies of MM have 
+established a complex clonal architecture with the existence 
+of genetic heterogeneity (1–7) and spatial heterogeneity (8, 9) 
+characterizing disease. Thus, localized BM biopsy alone is not 
+able to represent the full pathology of disease. This presents a 
+need for improvement in robust early detection methods that 
+are tumor biology based, are able to capture the full temporal 
+and spatial nature of disease and, ideally, are minimally inva-
+sive for patients.
+Circulating tumor cells (CTC) are malignant cells that 
+extravasate from the primary BM site to the peripheral blood 
+(PB) and therefore are amenable to enrichment, enumera-
+tion, and molecular characterization of genetic biomarkers. 
+They present an opportunity to assess the representation 
+of BM tumor biology and are an emerging area of research 
+as a marker of MM disease. As blood draws are readily pos-
+sible and repeatable, there are many potential advantages for 
+clinical use in settings of early detection, real-time monitor-
+ing, and assessment of treatment response and clonal evo-
+lution. Early investigations in the field have demonstrated 
+the promise of liquid biopsy in all stages throughout MM, 
+with enumeration studies highlighting the prognostic value 
+of CTCs (10–15). Due to the rare nature of CTCs, low cell 
+numbers can be recovered using enrichment strategies for 
+downstream genomic profiling. In most cases, whole-genome 
+amplification (WGA) is required to increase DNA template 
+for input into library construction protocols. WGA has inher-
+ent issues such as allelic distortion/dropout and nonuni-
+formity of coverage that can affect reliable mutation calling 
+across the genome, thus limiting analyses of these samples 
+to targeted approaches and considerations of multiple rep-
+licates and census-based mutation calling. Notwithstanding, 
+targeted NGS studies using whole-exome or custom panels 
+have demonstrated the ability of CTCs to successfully capture 
+clonal driver mutations and copy-number variants of MM, 
+similar to matched BM sample analyses (16–19), but fail to 
+capture translocations. These findings suggest that not only 
+enumeration but quantitative disease monitoring of patients 
+may be possible at regular intervals. However, the reliability 
+of genome-wide methods that can capture chromosomal 
+ABSTRACT
+Multiple myeloma (MM) develops from well-defined precursor stages; however, 
+invasive bone marrow (BM) biopsy limits screening and monitoring strategies for 
+patients. We enumerated circulating tumor cells (CTC) from 261 patients (84 monoclonal gammopa-
+thy of undetermined significance, 155 smoldering multiple myeloma, and 22 MM), with neoplastic 
+cells detected in 84%. We developed a novel approach, MinimuMM-seq, which enables the detection 
+of translocations and copy-number abnormalities through whole-genome sequencing of highly pure 
+CTCs. Application to CTCs in a cohort of 51 patients, 24 with paired BM, was able to detect 100% of 
+clinically reported BM biopsy events and could replace molecular cytogenetics for diagnostic yield and 
+risk classification. Longitudinal sampling of CTCs in 8 patients revealed major clones could be tracked 
+in the blood, with clonal evolution and shifting dynamics of subclones over time. Our findings provide 
+proof of concept that CTC detection and genomic profiling could be used clinically for monitoring and 
+managing disease in MM.
+SIGNIFICANCE: In this study, we established an approach enabling the enumeration and sequencing of 
+CTCs to replace standard molecular cytogenetics. CTCs harbored the same pathognomonic MM abnor-
+malities as BM plasma cells. Longitudinal sampling of serial CTCs was able to track clonal dynamics 
+over time and detect the emergence of high-risk genetic subclones.
+1Center for Prevention of Progression of Blood Cancers, Dana-Farber 
+Cancer Institute, Boston, Massachusetts. 2Department of Medical Oncology, 
+Harvard Medical School, Boston, Massachusetts. 3Cancer Program, Broad 
+Institute of MIT and Harvard, Cambridge, Massachusetts. 4Menarini Silicon 
+Biosystems, Huntingdon Valley, Pennsylvania. 5Department of Laboratory 
+Medicine and Pathology, Mayo Clinic Comprehensive Cancer Center, 
+Rochester, Minnesota. 6Multiple Myeloma Research Foundation, Norwalk, 
+Connecticut. 7Cancer Center and Department of Pathology, Massachusetts 
+General Hospital, Harvard Medical School, Boston, Massachusetts.
+Note: A.K. Dutta and J.-B. Alberge contributed equally to this work.
+Corresponding Authors: Irene M. Ghobrial, Dana-Farber Cancer Institute, 
+450 Brookline Avenue, Boston, MA 02215-5450. Phone: 617-632-4198; 
+Fax: 617-582-8608; E-mail: irene_ghobrial@dfci.harvard.edu; and Gad 
+Getz, Broad Institute, 75 Ames Street, Cambridge, MA 02142. Phone: 
+617-714-7471; E-mail: gadgetz@broadinstitute.org
+Cancer Discov 2023;13:348–63
+doi: 10.1158/2159-8290.CD-22-0482
+©2022 American Association for Cancer Research
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+350 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+translocations together with copy-number variants and 
+mutations in a single unbiased assay has yet to be shown, 
+and previous studies have been largely limited by low tumor 
+purity and high DNA template input requirements.
+Here, we describe a novel technique, minimally invasive 
+multiple myeloma sequencing (MinimuMM-seq), which lev-
+erages advancements in tumor cell enrichment strategies, 
+low input library construction, and tailored cancer genomics 
+analyses to enable whole-genome sequencing (WGS) of CTCs 
+for systematic genomic profiling of pathognomonic MM 
+events. First, we establish the concordance of MinimuMM-seq 
+results in paired BM and CTC samples from 24 patients. Sub-
+sequently, the clinical utility and performance are demon-
+strated in a cohort of PB-only CTC samples from 27 patients. 
+We show that longitudinal serial sampling is able to unravel 
+the clonal architecture and dynamics of CTC expansion 
+and extinction over time for 8 patients. Finally, our method 
+enables WGS-based risk classification of patients. This study 
+provides proof of principle for a minimally invasive liquid 
+biopsy–based screening method for the early detection and 
+monitoring of MM.
+RESULTS
+Detection and Enumeration of CTCs Correlate with 
+Precursor Disease Pathology
+To evaluate the frequency of CTCs in precursor disease 
+stages, PB was collected from 239 untreated patients across 
+asymptomatic stages of MM, including 84 MGUS and 155 
+SMM, for the enrichment and capture of CTCs using the 
+CellSearch platform with the Circulating Multiple Myeloma 
+Cell Assay (Menarini Silicon Biosystems), which requires 
+4 mL of blood per test (Fig. 1A). The majority of precursor 
+patients showed evidence of CTCs, with one or more CTCs 
+detected in 82% of enrolled patients, with 75% of MGUS (63 
+patients) and 86% of SMM (134 patients) having successful 
+enumeration (Fig. 1B). An increase in the number of CTCs 
+was observed between MGUS and SMM disease stages, with a 
+median count of 3 (range, 0–1,328) and 23 (range, 0–43,836), 
+respectively (P  <  0.0001; Fig.  1C). Peripheral blood from a 
+cohort of newly diagnosed MM patients was also collected 
+(n = 22), with a median enumeration of 324 (range, 1–32,071) 
+at the overt disease stage (Supplementary Fig. S1A).
+We next assessed whether CTC counts correlated with clini-
+cal parameters that are monitored for signs of progression or 
+risk stratification in SMM to determine whether an associa-
+tion with current staging or disease risk is evident. A moderate 
+positive correlation was observed between the number of CTCs 
+enumerated from patients and their bone marrow PC (BMPC) 
+percentage [r  =  0.47; 95% confidence interval (CI): 0.29–0.61; 
+P  <  0.0001; Supplementary Fig.  S1B], and to a lesser extent 
+with the M-spike concentration (r  =  0.32; 95% CI: 0.11–0.50; 
+P = 0.003; Supplementary Fig. S1C). A proportion of patients 
+with SMM in the cohort had clinical BM biopsy performed 
+(n = 94) with results available for the assessment of risk clas-
+sification using the International Myeloma Working Group 
+2/20/20 model (20). Enumeration of CTCs correlated with this 
+model, in which a higher CTC count was associated with an 
+increased risk group based on the three-risk factor model, with 
+a median of 5, 24, and 170 CTCs detected in low-, intermediate-, 
+and high-risk SMM groups, respectively (Fig. 1D). We note that 
+the median CTC count in low-risk SMM was similar to that 
+found in MGUS, fittingly reflective of early disease categori-
+zation. CTC counts were found to be significantly increased 
+at intermediate-risk (P < 0.01) and high-risk (P < 0.01) stages 
+compared with the low-risk group. Survival analysis using the 
+Kaplan–Meier method showed that SMM patients with detected 
+CTCs have higher chances of progression (CTC count ≥ 1/4 mL 
+of blood, likelihood ratio test statistic 4.57, P = 0.03; Fig. 1E) 
+over a median follow-up time of 27 months [interquartile range 
+(IQR), 21–32 months]. The association remained true when 
+comparing quartiles of CTC counts (P = 0.04; Supplementary 
+Fig. S1D), and more specifically the lowest, Q1 (0–2 CTC/4 mL 
+of blood), against Q2, Q3, and Q4 (P = 0.005; Supplementary 
+Fig.  S1E). Taken together, these data illustrate that as the 
+tumor burden of disease increases, there is an increase in the 
+release and trafficking of tumor cells from the BM to the PB, 
+which may be predictive of disease staging and monitored by 
+enumeration of CTCs.
+MinimuMM-seq Reveals that CTCs Reflect the 
+Major BM Clone and Could Replace Molecular 
+Cytogenetics
+Enumeration of CTCs provides a correlative measure of 
+disease burden; however, molecular characterization can con-
+firm tumor biology and MM-associated genetic alterations. 
+We first characterized enriched CTCs that were isolated in 
+our workflow to confirm they were malignant cells of good 
+quality and morphology through imaging and ultralow pass 
+(ULP) WGS and ichorCNA. CTCs were found to be intact 
+and to harbor arm-level somatic copy-number abnormalities, 
+in concordance with matched BM results (Supplementary 
+Fig. S2A and S2B; Supplementary Materials and Methods). 
+We next set to establish the minimum number of CTCs that 
+could be recovered and sequenced, without loss of sensitivity 
+for the detection of initiating events of MM, when the ground 
+truth of BM fluorescence in situ hybridization (FISH) was 
+known. Our quantitative evaluation revealed the lowest limit 
+of detection when 50 CTCs were recovered (Supplementary 
+Fig. S2C; Supplementary Materials and Methods).
+With this foundation, we then investigated the clinical 
+utility of genomic profiling of CTCs using standard WGS 
+without WGA as an unbiased method to detect abnormalities 
+present in CTCs. The clinical characteristics of all participants 
+are highlighted in Supplementary Table S1, and sequencing 
+metrics are summarized in Supplementary Table S2. Overall, 
+a median of 394 CTCs (range, 41–75,000) and 11,700 BMPCs 
+(range, 124–49,000 for matched sample patients) were iso-
+lated and sequenced (Fig. 2A) with paired germline samples 
+as a reference normal comparison. Our enrichment approach 
+yielded a median tumor purity of 99% (range, 48%–100%) and 
+98% (range, 45%–100%) for both BMPCs and CTCs, respec-
+tively, with quantification by ABSOLUTE (ref. 21; Fig. 2B).
+To first illustrate that CTCs could deliver equivalent 
+genomic yield compared with clinical BM testing, we col-
+lected matched PB and BM research samples at the same time 
+point of clinic visit from 24 patients (2 MGUS, 15 SMM, and 
+7 MM). All patients with a BM biopsy had routine molecular 
+cytogenetics performed at clinical pathology, and FISH analy-
+sis was recorded (Supplementary Materials and Methods). 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 351 
+A
+Peripheral blood
+Bone marrow
+CTCs
+Bone marrow
+plasma cells
+(BMPC)
+MGUS
+SMM
+PB and BM
+collection
+CTC/PC
+staining
+CD138+CD38+
+CellSearch
+CD138+
+enrichment
+CTC
+enumeration
+WBC
+staining
+CD45+CD19+
+WGS and
+mutation
+analyses
+n = 51
+Cell sorting
+CD138+CD38+
+CD45– (FACS)
+MGUS n = 84
+SMM n = 155
+MM n = 22
+B
+100,000
+10,000
+1,000
+100
+10
+CTC count
+1
+0
+C
+100,000
+10,000
+1,000
+100
+10
+CTC count
+1
+0
+Stage
+MGUS
+SMM
+n = 84
+Median = 3
+Participant (n = 239)
+18%
+without
+cells
+MGUS
+SMM
+D
+100,000
+10,000
+1,000
+100
+10
+CTC count
+1
+0
+E
+1.00
+0.75
+0.50
+0.25
+0
+Progression-free survival
+No CTC
+CTC ≥ 1
+Likelihood ratio test = 4.57, P = 0.03
+0
+10
+20
+Time in months
+30
+40
+0
+10
+20
+Time in months
+30
+40
+17 (100)
+92 (100)
+16 (94)
+81 (88)
+16 (94)
+68 (74)
+ 7 (41)
+30 (33)
+1 (6)
+1 (1)
+Number at risk: n (%)
+Strata
+High
+Low
+Intermediate
+2/20/20 stage
+**
+ns
+***
+n = 41
+Median = 5
+n = 34
+Median = 24
+n = 19
+Median = 170
+n = 155
+Median = 23
+****
+Figure 1.  Detection and enumeration of CTCs correlate with MM disease pathology. A, Overview of the experimental workflow used to enumerate 
+CTCs (n = 261) and characterize their genomic abnormalities (n = 51). FACS, fluorescence-activated cell sorting; WBC, white blood cell. B, Distribution of 
+CTC counts across precursor disease stages of MM. Text indicates the proportion of participants with no CTCs detected. C, Box plot and density graphs 
+of CTCs enumerated between disease precursor stages MGUS and SMM. D, Box plot and density graphs showing CTC counts associated with 2/20/20 
+SMM risk classification when available. E, Kaplan–Meier curves depicting probability of progression from SMM to overt myeloma or death based on CTC 
+enumeration. ns, not significant; **, P < 0.01; ***, P < 0.001; ****, P < 0.0001.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+352 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+Clinical FISH reported that 11 patients (46%) harbored 
+translocations, 9 patients (37%) had trisomies/copy-number 
+changes, and 4 patients (17%) had inconclusive results, with 
+BM biopsies showing PC infiltrations in the range of 5% to 
+80% (Supplementary Table S3). Head-to-head comparison of 
+WGS with FISH probes that were tested showed sequencing 
+of CTCs was able to detect 100% (N = 44) of abnormalities 
+identified in clinical testing with copy-number and structural 
+variant probes (Fig.  2C). Notably, new clinically reportable 
+high-risk events of IGH–MYC [t(8;14)] translocations and 
+1q gain were distinguished in 3 patients by WGS, with con-
+cordance between CTC and BM compartments, but were 
+not found by FISH (n  =  3, over 97 successful probes with 
+negative results).
+Overall comparison of large-scale events across all patients 
+showed a high concordance of genetic profile between WGS 
+and FISH. Matched CTCs and BMPCs were confirmed to orig-
+inate from the same clonal expansion through B-cell recep-
+tor repertoire characterization (Supplementary Table  S4). 
+Genomic results demonstrate that CTCs are able to faithfully 
+recapitulate all results obtained from ground truth BM, 
+including translocations [t(11;14), t(14;16), t(14;20), t(4;14), 
+and t(8;14)] and copy-number abnormalities (chromosomal 
+trisomies, 1q gain, deletion 13q, and deletion 16q; Fig. 2D). 
+CTCs
+CTF001
+CTF002
+CTF003
+CTF012
+CTF013
+CTF015
+CTF016
+CTF017
+CTF018
+CTF019
+CTF021
+CTF023
+CTF025
+CTF034
+CTF036
+CTF046
+CTF047
+CTF048
+CTF050
+CTF052
+CTF053
+CTF054
+CTF055
+CTF058
+BMPCs
+gain(1q)
+not found
+by FISH
+Copy-number
+probes
+gain(1q)
+IGH–MYC
+translocation
+×2
+Structural variant
+probes
+Intersection size
+Tumor purity
+n = 16
+Median
+11,700
+n = 60
+Median 394
+n = 16
+Median
+99%
+n = 60
+Median
+98%
+BMPCs
+ns
+100%
+75%
+50%
+25%
+0%
+100,000
+10,000
+1,000
+100
+***
+CTCs
+BMPCs
+CTCs
+Cells sequenced
+   CTC
+   BMPC
+   FISH
+   CTC
+   BMPC
+   FISH
+34
+1
+10
+20
+30
+10
+2
+3
+6
+9
+A
+C
+B
+D
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14 15 16 17 18 19202122
+FISH
+WGS
+t(11;14), monosomy 13, trisomy 15, deletion 20
+1q gain, trisomy 9, deletion 14
+t(14;16), deletion 13,14,22
+Trisomy 3,5,9,11,15,19, deletion 1p
+Trisomy 5,7,9, deletion 13
+1q gain, trisomy 3,5,9,15,18,19,21
+t(8;14), 1q gain, trisomy 3,5,7,9,15,19,21
+t(8;14), trisomy 3,5,9,11,15,18,19,21
+t(14;20), 1q gain, trisomy 9,19,
+1q gain, trisomy 5,9,19, deletion 13
+t(4;14), trisomy 3,4, deletion 13,16q,20q
+t(14;16)
+t(14;16)
+t(14;16), monosomy 13
+t(14;16)
+t(4;14)
+t(11;14)
+1q gain
+1q gain, trisomy 9
+IGH sep,
+Trisomy 3,9,11,15
+Trisomy 3,7,9,11,15
+Trisomy 3,9,15
+Trisomy 3,9,11,15
+t(14;16)
+t(4;14)
+t(14;20)
+t(14;16), 1q gain
+t(4;14), monosomy 13,
+1q gain, trisomy 3,9,15
+t(11;14), monosomy 13
+1q gain
+IGH sep, 1q gain
+Trisomy 3,7,9,15
+1q gain, monosomy 13,
+trisomy 9,11,15
+Insufficient cells
+Insufficient cells
+Insufficient cells
+Normal
+t(14;16), monosomy 13, deletion 16q,22
+t(14;16), 1q gain, deletion 13
+1q gain, monosomy 13,
+trisomy 9,11,15,18,19,21
+t(14;16)
+t(11;14)
+t(14;20), deletion 13
+Trisomy 3,5,7,9,11,15,19,21
+Trisomy 3,5,7,11,15,15,15,deletion 6q,8p
+t(4;14), deletion 1p, 14, trisomy 3,4,8,9,15,21
+t(4;14), monosomy 13, deletion 1p, 18,
+1q gain, trisomy 3,9,15,21
+t(14;16), t(12;14), 1q gain, trisomy 3,21,
+deletion 6q,13,20p
+t(14;20)
+t(11;14)
+t(14;16)
+t(14;20)
+t(4;14)
+t(8;14)
+1
+1
+2
+3 ≥4
+FISH + WGS
+WGS only
+Copy number
+0
+Figure 2.  MinimuMM-seq reveals CTCs reflect the major BM clone and could replace molecular cytogenetics. A, Box plot of the number of cells 
+sequenced for BMPCs (gray, left) versus CTCs (right, light blue) from this study. In 8 cases, selected CD138+ BMPC bulk genomic DNA was used. B, Tumor 
+purity in BMPCs and CTCs assessed by the ABSOLUTE algorithm and based on copy-number abnormalities, and single-nucleotide variant multiplicity and 
+fraction of alternate reads. C, Categorical classification of successful FISH probes by their presence or absence in the WGS data of BMPCs and CTCs. 
+FISH failures and untested FISH probes are excluded from this graph. D, Genome-wide copy-number abnormalities heat map and translocation discovery 
+(right) in participants with matched CTC and BM samples (n = 24), with comparison with clinical FISH report results. Each row is split into a top panel 
+dedicated to CTC profiling and a bottom for BMPCs. Key differences between compartments are highlighted by an arrow or green text in the table. FISH 
+failures/within normal limits are represented in red text in the table. ns, nonsignificant; ***, P < 0.001.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 353 
+Moreover, WGS of CTCs was able to identify additional 
+genetic events in 20 patients (83%; Fig.  2D, green text). In 
+particular, 4 patients with SMM (CTF001, CTF017, CTF036, 
+and CTF048) had FISH within normal limits or failure due 
+to insufficient PC during clinical testing; however, analysis of 
+CTCs was able to detect and recover cytogenetic abnormality 
+results. In CTF001, we detected MAF translocation t(14;16), 
+1q gain, and copy-loss events on chromosomes 13 and 22. 
+Interestingly, this patient had a BM biopsy with clinical FISH 
+performed again 1 year after this sampling time point, being 
+successful and reporting t(14;16), deletion 17p, monosomy 
+13, and 1q gain. In CTF017, a novel IGH–MAFB [t(14;20)] 
+translocation and deletion 13q were detected. In CTF036, tri-
+somies and deletion 13q were found, whereas in CTF048 tri-
+somies and deletion 6q and 8p were identified. These results 
+highlight that blood-based screening of CTCs can reliably 
+detect alterations to replace BM, even when routine clinical 
+BM fails, to assist with tumor classification.
+MinimuMM-seq Enables Genomic Profiling of CTCs 
+for Unbiased WGS-Based Molecular Analyses
+As the characterization of CTCs proved feasible, we next 
+explored the utility of PB sampling and WGS of CTCs as a 
+diagnostic tool for minimally invasive detection of molecu-
+lar events in patients in the absence of a BM reference. To 
+extend our assessment and demonstrate the applicability of 
+MinimuMM-seq as a clinical tool, we collected a validation 
+cohort of prospective PB-only samples from 27 patients 
+(3 MGUS, 22 SMM, and 2 MM).
+We demonstrate comprehensive detection of chromosomal 
+abnormalities, with the ability to detect key translocations 
+and copy-number variants of MM across all patients using 
+CTCs (Fig.  3A). Sixteen patients (59%) harbored transloca-
+tions, including frequent and infrequent translocations such 
+as t(11;14), t(4;14), t(14;16), t(14;20), t(6;14), and t(8;14). 
+Eleven patients (41%) showed trisomies and copy-number 
+changes including 1q gain, 1p deletion, odd chromosomal 
+trisomies, and deletion 13q. Due to the asymptomatic nature 
+of precursor patients, all were under careful clinical observa-
+tion and most patients had a BM biopsy and FISH analyses 
+performed at one time point during their ongoing monitor-
+ing, which was used as a known reference (Supplementary 
+Table S5). Evaluation of WGS of CTCs in comparison with 
+FISH probes that were tested on BM firmly showed that CTCs 
+were able to detect 100% of abnormalities identified in clinical 
+testing (Fig. 3B). In 6 patients (CTF022, 026, 027, 029, 040, 
+and 044), no clinical FISH data were available (normal or 
+insufficient cells); however, genomic characterization of CTCs 
+revealed the presence of trisomies, t(14;16), rare IGH–MAFA 
+translocation [t(8;14)], and deletion 1p and 13q, which are 
+important cytogenetic abnormalities with a predictive value 
+for the clinical understanding of a premalignant patient.
+As such, we highlight two key examples of the application in 
+blood sampling of SMM finding high-risk events. Participant 
+CTF031’s clinical testing showed t(14;16) and deletion of 8q, 
+13q, and 17p. Additionally, we found a sensitivity of WGS 
+to layer in mutations with the detection of single-nucleotide 
+variants (SNV) in TP53, inducing a likely pathogenic variant 
+p.E285K (22). Notably, this result confers a biallelic double-hit 
+event, which is a high-risk category for patients with MM that 
+conventional testing would not be able to uncover (Fig. 3C). 
+From clinical reports, participant CTF025 harbored an IGH 
+separation, a 1q gain, and trisomies. WGS of CTCs revealed the 
+unknown translocation with chromosome 14 to be IGH–MYC 
+[t(8;14)], with additional trisomies and NRAS hotspot muta-
+tion p.Q61H. Studies have shown MYC–IGH translocations as 
+high-risk events compared with non-IgH MYC translocations, 
+indicating an increased potential for progression from SMM 
+to MM within 2 years (refs. 23, 24; Fig. 3D). Taken together, 
+these results exemplify the resolution afforded by sequencing-
+based methods to characterize tumor biology for improved 
+clinical decisions on early intervention strategies.
+Longitudinal Liquid Biopsy and Serial WGS 
+of CTCs Reveal Clonal Architecture and 
+Evolutionary History
+As PB continuously circulates, liquid biopsy sampling may 
+be affected by the phenomena of spatial and temporal het-
+erogeneity in CTC burden. In patients with matched samples, 
+we investigated whether the major BM clone possessed the 
+potential to extravasate and circulate or whether the pref-
+erential circulation of subclones occurred. We showed that 
+large-scale copy-number and IgH translocations are shared 
+between both BM and CTCs (Fig. 2D). We then calculated the 
+sensitivity to detect point mutations in CTCs and BM given 
+purity, ploidy, and sequencing depth of coverage (Supple-
+mentary Fig. S3A–S3C). Sensitivity was 99% (IQR, 92%–100%) 
+for clonal events [cancer cell fraction (CCF)  =  1], and 75% 
+(IQR, 43%–94%) for mutations occurring  ≥  50% CCF. Two 
+patients with matched BMPCs fell below an average detection 
+power of 80% for clonal events due to their low number of 
+captured CTCs (Supplementary Fig. S3D). Total mutational 
+load across all samples was in the range of 1,000 to 9,000 
+SNVs and short insertions or deletions (indels), in line with 
+the expected burden from previous genome studies of MM 
+PCs (refs. 2, 3, 25; Supplementary Fig. S3D). At the genome-
+wide scale, mutations were more likely to be shared between 
+both compartments (Supplementary Fig.  S3D), indicating 
+the shared clonal history of BMPCs and CTCs. In participant 
+CTF013, this is exemplified by a high mutation density at the 
+upper diagonal (100% CCF), with t(14;16) and the first KRAS 
+hotspot mutant (p.G12S) cluster (Fig. 4A, part i). A second 
+high-density cluster was found with the second KRAS hotspot 
+(p.G13D), having a vertical shift from the diagonal suggest-
+ing it is preferentially found in the PB compartment. Next, we 
+used PhylogicNDT (26) to cluster mutations and copy-num-
+ber abnormalities into branching subclones and found that 
+KRAS p.G12S is indeed predicted to be a shared clonal event 
+(green), whereas KRAS p.G13D belongs to a subclonal branch 
+(blue, Fig. 4A, part ii; Supplementary Fig. S3E). This suggests 
+that KRAS p.G13D confers an additional fitness advantage 
+to tumor cells and indeed is more common than the p.G12S 
+mutation in the MM disease setting (27).
+As clonal complexity is not limited to spatial heterogene-
+ity, but also temporal changes over time, we analyzed serial 
+samples from 8 cases of SMM (CTF004, 013, 017, 019, 024, 
+027, 031, and 032), of which 7 patients remained under care-
+ful clinical observation without treatment (time range, 2–33 
+months). In all cases, we validated the stability of the major 
+clone, with the clonal evolution and shifting dynamics of 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+354 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+CTC subclones over time (Supplementary Fig. S4A). Expan-
+sion of subclones harboring MM driver mutations such as 
+KRAS (both G12 and G13 hotspots) and DIS3 was observed, 
+indicating their potential to confer a selective advantage for 
+clonal fitness and independence for circulation (Supplemen-
+tary Fig. S4B). In an example case of CTF004, longitudinal 
+sampling over 28 months demonstrated the reliability of our 
+approach for diagnostic sampling based on liquid biopsy, 
+with stability of mutation presence with clonal t(11;14) and 
+gain of 11q validated at both time points (Fig.  4B, part i). 
+Additionally, over time, an emergent subclone with increased 
+clonal fitness appeared harboring an additional deletion of 
+13q, growing from a CCF of 8% (blue; CI: 8%–9%) at T0 to 
+CCF of 80% at T1 (CI: 75%–84%), whereas simultaneous 
+extinction of the orange subclone was observed (Fig. 4B, part 
+ii). These data demonstrate the use of CTCs to successfully 
+track both acquisition of mutations and clonal dynamics of 
+MM disease over time in a minimally invasive manner.
+Of the 8 patients with serial blood collection, one SMM 
+(CTF032) received early interventional treatment following 
+first blood collection and CTC sequencing. After 4 months of 
+therapy, the patient achieved a partial response with serum 
+CTF025
+SMM
+CTF031
+SMM
+A
+C
+D
+1
+2
+3
+≥4
+Translocation by sequencing
+Copy number
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13 14 15 16 17 18
+19202122
+4
+3
+3
+2
+2
+1
+1
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18 19202122
+t(11;14)
+t(14;16)
+t(14;20)
+t(4;14)
+t(6;14)
+t(8;14)
+0
+CCF
+Nonsilent SNV
+Silent SNV
+Translocation
+Intra-chr. SV
+Copy
+number
+0
+1
+0
+2
+≥4
+FISH
+t(14;16), deletion 8, 13, 17p
+t(14;16), deletion 8, 13, 17p, TP53
+WGS
+B
+8
+0
+0
+5
+10
+Intersection size
+Intersection size
+22
+0
+0
+5
+10
+15
+20
+25
+FISH
+Copy-number
+probes
+Structural variant
+probes
+del(17p)
+TP53 E285K
+NRAS
+Q61H
+IGH–MAF
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18192021 22
+IGH–MYC
+CTC
+FISH
+CTC
+CTF004
+CTF005
+CTF010
+CTF011
+CTF022
+CTF024
+CTF026
+CTF027
+CTF028
+CTF029
+CTF030
+CTF031
+CTF032
+CTF033
+CTF035
+CTF038
+CTF039
+CTF040
+CTF041
+CTF042
+CTF043
+CTF044
+CTF045
+CTF049
+CTF051
+CTF056
+CTF057
+FISH
+IGH Sep, 1q gain, Trisomy 3, 7, 9, 15
+t(8;14), 1q gain, Trisomy 3, 5, 7, 9, 15,
+19, 21, NRAS
+WGS
+Figure 3.  MinimuMM-seq enables the genomic profiling of CTCs for unbiased WGS-based molecular analyses. A, Copy-number heat map and transloca-
+tion matrix from the discovery cohort of CTC-only sequencing (n = 27). B, For patients with longitudinal follow-up, concordance of previous FISH reports with 
+this study's WGS results. FISH failures and untested FISH probes are excluded from this graph. C and D, Two examples of clinical relevance depicting muta-
+tions detected by MinimuMM-seq on CTCs. Both participants are clinically diagnosed as SMM, and our assay characterizes novel translocation (CTF025: 
+IGH–MYC), gains and losses of chromosomes (CTF025: trisomies), as well as driver point mutations (CTF031: TP53 resulting in biallelic hit; CTF025: NRAS) 
+using CTCs, which may refine patient tumor classification using blood-based sampling only. Intra-chr. SV, intrachromosomal structural variant.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 355 
+M-spike concentration decreased by 70% (1.16–0.37 g/dL) and 
+CTC counts decreased by 86% (12,769–1,803); however, serial 
+CTC profiling was able to give a readout of clonal tiding (i.e., 
+switching of clones) with potential drug-related dynamics 
+evident in real-time, described here as an example. Within this 
+period, an abundance of myeloma cells with BRAF p.D594H 
+kinase-dead mutation (28) decreased from 51% (CI: 50%–52%) 
+to 5% (CI: 4%–5%; Fig. 4C, parts i–ii). Simultaneously, a minor 
+A
+i
+KRAS
+p.G13D
+t(14;16)
+KRAS p.G12S
+NCOR1
+p.Q1953R
+del(13q)
+t(11;14)
+(836)
+KRAS G13D
+(3784)
+t(14;16)
+KRAS G12S
+1
+3
+4
+(72)
+(119)
+2
+CCF in CTCs
+CTF013
+CTF004
+CTF032 7
+BRAF
+p.D594H
+USH2A
+p.I362T
+KRAS p.G12S
+DIS3
+p.E126KCBL
+p.R96H
+SETD2
+p.Q1545*
+4
+5
+6
+3
+1
+2
+2
+1
+1
+2
+3
+3
+CCF in BMPCs
+0%
+25%
+50%
+75%
+100%
+CTF013
+CTF004
+CTF032
+1
+3
+2
+BMPCs
+CTCs
+Normal
+Normal
+Normal
+4
+ii
+ii
+B
+i
+C
+i
+ii
+100%
+75%
+50%
+25%
+0%
+CCF in CTCs
+ at T0 + 2.3 years
+CCF in CTCs
+ at T0 + 4 months
+0%
+25%
+50%
+75%
+100%
+100%
+75%
+50%
+25%
+0%
+0%
+25%
+50%
+75%
+100%
+100%
+75%
+50%
+25%
+0%
+1: 100% (CI: 100–100)
+2: 12% (CI: 12–13)
+3: 36% (CI: 33–40)
+4: 38% (CI: 35–40)
+1: 100% (CI: 100–100)
+2: 81% (CI: 79–83)
+3: 20% (CI: 16–24)
+4: 3% (CI: 2–3)
+CCF in CTCs at T0
+CCF in CTCs at T0
+(5121)
+SETD2 Q1545*
+t(14;16)
+(539)
+NCOR1 Q1953R
+del(13q)
+(2387)
+t(11;14)
+(124)
+CCF(x)
+CCF(x)
+(1009)
+KRAS G12S
+DIS3 E126K
+CBL R96H
+(254)
+USH2A I362T
+(72)
+(27)
+7
+3
+6
+2
+5
+1
+4
+(151)
+(1044)
+BRAF D594H
+1.0
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0 1
+0.0
+1.0
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0 1
+0.0
+T0 + 4 months
+Time points
+T0
+T0 + 2.3 years
+Time points
+T0
+Figure 4.  Serial WGS of CTCs reveals disease clonal architecture and evolutionary history. A, (i), Comparison of mutation density occurring between 
+BMPC (x-axis) and PB (CTCs, y-axis) compartments in SMM participant CTF013 estimated by ABSOLUTE. Recurrent mutations in MM are annotated. (ii), 
+Phylogenetic reconstruction of tumor architecture between BMPCs and CTCs of participant CTF013 after mutation clustering with PhylogicNDT shows 
+the preferential circulation of subclones. B and C, (i), Comparison of mutational density from longitudinal sampling of CTCs in SMM. In the example of 
+participant CTF004 (B), serial blood was sampled at initial screening (x-axis) and at follow-up 2.3 years later (y-axis). For participant CTF032 (C), serial 
+blood was sampled before (x-axis) and 4 months after start of treatment (y-axis). B and C, (ii), Longitudinal reconstruction of CTC clonal evolution for 
+participants CTF004 (B) and CTF032 (C).
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+356 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+clone (blue) present at baseline with an oncogenic KRAS 
+p.G12S activating hotspot mutation showed a relative CCF 
+increase from 41% (CI: 40%–42%) to 92% (CI: 91%–93%). The 
+patient progressed to overt MM after the end of treatment, 
+whereas PhylogicNDT modeling predicted that clones bear-
+ing KRAS p.G12S were selected in combination with other 
+mutants that are part of the dark red branch also bearing 
+USH2A p.I362T, a gene recurrently mutated in POEMS syn-
+drome (29). Selection of the new fittest clone under treatment 
+is revealed by our minimally invasive method before any 
+potential resistance is clinically observed.
+Genomic Profiling of CTCs Can Replace Clinical BM 
+FISH for Risk Classification of Patients
+In the genomics era, implementation of clinical sequencing 
+to improve the stratification of patients based on genomic bio-
+markers has high potential, going beyond the use of correla-
+tive clinical markers alone in models such as the International 
+Myeloma Working Group 2/20/20 for SMM (20) and Interna-
+tional Staging System (ISS) for MM (30). Detection of chro-
+mosomal abnormalities has been implemented to extend both 
+systems [which became the four-factor model and the Revised 
+ISS (ref. 31), respectively]. The ability to use genomic profiling 
+of CTCs for this stratification would provide a minimally inva-
+sive and repeatable solution to refine patient classification.
+Sequencing of CTCs was able to detect all reported high-risk 
+prognostic factors including t(4;14), t(14;16) 1q gain, 
+del(13q), and del(17)p. Risk stratification carried out with 
+WGS of CTCs, using available cytogenetic-based risk models 
+(31, 32), showed matched patients would have been assigned 
+to the correct risk group when BM FISH was successful. 
+Additionally, the recovery of FISH failures (due to insuffi-
+cient cells for testing) or additional diagnostic yield enabled 
+attribution of clinical risk (Fig. 5A). Moreover, the detection 
+of novel driver mutations (KRAS, NRAS, FAM46C), MYC rear-
+rangements, and signatures (APOBEC activity) by NGS is 
+also shown and could help in predicting which patients are 
+at high risk of transformation. Similarly, in SMM patients 
+in whom only CTCs were sampled, diagnostic yield was 
+obtained from MinimuMM-seq, allowing for the assignment 
+of risk classification (Fig. 5B). In 5 cases of MGUS (CTF026, 
+CTF029, CTF044, CTF048, and CTF054), CTCs could also 
+be used to obtain a genetic result. Usually, clinical BM is not 
+performed at this very early stage due to low disease burden; 
+as such, minimally invasive blood testing may be a rapid solu-
+tion to overcome limitations of both sampling and patient 
+discomfort for a closer observation of patients with MGUS. 
+We note no cytogenetic risk association models for MGUS 
+are present, but we observed trisomies, t(14;20), 1q gain, 
+and deletion of 13q, potentially detailing high-risk patients. 
+Taken together, these data show that genomic assessment 
+of CTCs provides demonstrable results that match BM sam-
+pling and the potential of the power of their clinical applica-
+tion for cytogenetic assessment of patients.
+CTC Sequencing Enables Cohort-Level Genomic 
+Study of Mutational Signatures and Complex 
+Structural Events
+As WGS is an NGS technology that can sequence the entire 
+genome, we reasoned that its application in CTCs may also 
+provide more comprehensive mutation data across all scales 
+without prior knowledge. Mutation and structural variant 
+counts are summarized in Supplementary Tables S6 and S7. 
+Mutations in the RAS–MAPK pathway are the most preva-
+lent and significantly mutated drivers in MM, with KRAS 
+and NRAS mutated in 21% and 19.5% of patients with MM 
+(1, 5, 6), respectively. We found clonal and subclonal MAPK 
+mutations of KRAS and NRAS in 12 patients out of 51 (24%), 
+including hotspot mutations of G12, G13, and Q61 (Sup-
+plementary Fig. S4C). We also found mutations in 6 driver 
+genes of MM (BRAF, DIS3, FAM46C, KRAS, NRAS, and TP53) 
+in 17 patients (33%; Supplementary Fig. S4D), with concord-
+ance between CTCs and matched BM. All mutations found in 
+CTCs in driver genes were validated in the BM compartment 
+by specifically looking for sequencing reads that support the 
+mutant allele (Supplementary Fig. S4D and S4E).
+In addition to the detection of somatic mutations, muta-
+tional processes and their distinctive signatures are impor-
+tant features in MM. Previous studies have revealed the 
+contribution of AID, APOBEC, and aging signatures to the 
+mutational spectrum of MM (2, 33, 34). Recent studies 
+highlighted that they may have clinical importance in SMM 
+(35, 36), with APOBEC shown to be enriched in those 
+patients who progress or have a shorter time to progression. 
+Mutation spectra and signature activity analysis reveals a 
+comparable overlap of mutation types found between BM 
+and CTCs (median cosine similarity 98%; IQR, 94%–99%; 
+Supplementary Fig. S5A). Signatures extracted in our dataset 
+comprised APOBEC, clock-like, and SBS9 as annotated by 
+SignatureAnalyzer (Fig. 6A), with the comparable contribu-
+tion of mutational processes to the CTC and BM compart-
+ments (Supplementary Fig. S5B). In line with the literature, 
+we show all participants with APOBEC contribution of more 
+than 25% to the mutation spectrum were of MAF subtype 
+(n = 7/51, either IGH–MAF, MAFA, or MAFB). Finally, because 
+WGS is not biased toward coding regions of the genome, 
+we could decipher more complex structural events such as 
+chromothripsis of chromosome 3 in CTF033 (Fig. 6B and C) 
+and chromoplexy of chromosomes 7, 8, and 18 involving the 
+MYC locus in matched BM and PB of CTF034 (Fig. 6D and E). 
+Overall, we showed that additional novel information not 
+found by routine clinical tests can be gained from CTCs that 
+could be layered into patient assessment.
+DISCUSSION
+Liquid biopsy studies in MM have demonstrated the 
+clinical potential of CTC assessment (37, 38) similar to that 
+of CTCs in solid tumors. However, these early investiga-
+tions focused on the predictive value of enumeration in 
+disease staging and risk of progression or targeted genomics 
+(16–19). As such, the full potential of genomic profiling of 
+CTCs has yet to be realized, with no study implementing 
+unbiased genome-wide methods that could capture any 
+mutation type without prior knowledge. Here, we show 
+proof of principle that both enumeration and molecular 
+analyses of CTCs using WGS have clinical utility in MM. We 
+demonstrate MinimuMM-seq for comprehensive genomic 
+characterization of CTCs, which robustly matches data 
+derived from BM samples, could be used as a surrogate 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 357 
+to accompany and possibly replace BM biopsies for the 
+diagnosis and longitudinal monitoring of MM patients 
+through pathognomonic variant detection (translocations 
+and hyperdiploidy), supplanting the need for clinical vari-
+ables or close observational monitoring of patients who are 
+viewed as high risk.
+The role of PB is well established in the clinical workup 
+of precursor MM with the assessment of markers such as 
+monoclonal protein, serum albumin, and light chain concen-
+trations; however, it does not take into consideration tumor 
+biology analytes. Enriching and selecting CTCs from a large 
+background of mononuclear cells and subsequent extraction 
+t(11;14)
+t(4;14)
+t(14;16)
+t(14;20)
+t(8;14)
+Trisomies
+1q gain
+17p del
+13/13q del
+KRAS
+NRAS
+FAM46C
+TP53
+APOBEC
+t(6;14)
+IGH–MAFA
+IGL–MYC
+1p del
+t(11;14)
+t(4;14)
+t(14;16)
+t(14;20)
+t(8;14)
+Trisomies
+1q gain
+17p del
+13/13q del
+Risk group (Clinical FISH)
+Risk group (MinimuMM-seq)
+Risk group (MinimuMM-seq)
+Novel prognostic
+from NGS studies
+Clinical FISH probes
+Novel prognostic
+from NGS studies
+Clinical FISH probes
+Disease stage
+Disease stage
+Risk classification
+MGUS
+SMM
+MM
+A
+B
+MGUS
+SMM
+MM
+MinimuMM-seq results
+CTCs
+(MinimuMM-seq)
+CTCs
+(MinimuMM-seq)
+High
+Intermediate
+Standard
+Risk classification
+High
+Intermediate
+Standard
+FISH failure
+Head-to-head results
+Clinical BM
+(FISH)
+Abnormality detected
+(both FISH and WGS test)
+Failed FISH test
+Additional yield (WGS test)
+KRAS
+NRAS
+FAM46C
+TP53
+APOBEC
+t(6;14)
+IGH–MAFA
+1p del
+CTF048
+CTF054
+CTF001
+CTF017
+CTF036
+CTF012
+CTF015
+CTF018
+CTF023
+CTF025
+CTF046
+CTF003
+CTF013
+CTF002
+CTF016
+CTF050
+CTF052
+CTF026 
+CTF029
+CTF044
+CTF049
+CTF057
+CTF004 
+CTF028
+CTF039 
+CTF041
+CTF043
+CTF045 
+CTF030
+CTF005
+CTF031
+CTF032
+CTF010
+CTF011
+CTF022
+CTF027
+CTF033
+CTF035
+CTF038
+CTF024
+CTF040
+CTF042
+CTF051
+CTF056
+CTF019
+CTF021
+CTF034
+CTF047
+CTF053
+CTF055
+CTF058
+Additional yield (WGS test)
+Figure 5.  Genomic profiling of CTCs can be used to replace BM FISH for risk classification of patients. Matrix plots highlighting the diagnostic yield 
+of MinimuMM-seq for 51 patients across the disease stages of MGUS, SMM, and MM. Each row is a participant from this study, and each column is a 
+genomic abnormality with potential clinical significance in MM. A, In 24 patients who had matched CTCs at the time of BM, head-to-head results detected 
+by both FISH and WGS are highlighted in black, whereas additional yield detected by WGS is represented in green. The bottom rows show risk stratifica-
+tion enabled by results of CTC sequencing compared with standard clinical FISH. B, Abnormality detection and risk classification in the CTC-only cohort 
+when only PB was sampled from 27 patients.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+358 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+A
+B
+E
+D
+C
+CCF
+Nonsilent SNV
+Silent SNV
+Translocation
+Intra-chr. SV
+Copy
+number
+0
+1
+0
+2
+≥4
+CTF058
+CTF027
+CTF018
+CTF031
+CTF032
+CTF034
+CTF016
+CTF033
+CTF035
+CTF057
+CTF023
+CTF055
+CTF050
+CTF030
+CTF029
+CTF047
+CTF013
+CTF048
+CTF012
+CTF025
+CTF038
+CTF042
+CTF053
+CTF026
+CTF015
+CTF049
+CTF041
+CTF046
+CTF052
+CTF019
+CTF002
+CTF036
+CTF011
+CTF024
+CTF054
+CTF010
+CTF044
+CTF021
+CTF043
+CTF039
+CTF045
+CTF056
+CTF017
+CTF003
+CTF051
+CTF004
+CTF028
+CTF014
+CTF022
+CTF005
+CTF001
+CTF040
+CTF058
+CTF027
+CTF018
+CTF031
+CTF032
+CTF034
+CTF016
+CTF033
+CTF035
+CTF057
+CTF023
+CTF055
+CTF050
+CTF030
+CTF029
+CTF047
+CTF013
+CTF048
+CTF012
+CTF025
+CTF038
+CTF042
+CTF053
+CTF026
+CTF015
+CTF049
+CTF041
+CTF046
+CTF052
+CTF019
+CTF002
+CTF036
+CTF011
+CTF024
+CTF054
+CTF010
+CTF044
+CTF021
+CTF043
+CTF039
+CTF045
+CTF056
+CTF017
+CTF003
+CTF051
+CTF004
+CTF028
+CTF014
+CTF022
+CTF005
+CTF001
+CTF040
+CTCs
+CTCs
+10,000
+Clock-like
+*
+*
+*
+*
+* *
+*
+*
+*
+*
+*
+* * * *
+* *
+*+
+APOBEC
+Clock-like
+SBS9 Pol eta
+MAF
+Truncated
+7,500
+5,000
+Weight
+(mean ± SD)
+2,500
+0
+100%
+75%
+50%
+25%
+0%
+1-norm. weight
+(mean ± SD)
+4
+3
+2
+1
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19 20 21 22
+0 Mb
+100 Mb
+50 Mb
+150 Mb
+3
+0 Mb
+0 Mb
+0 Mb
+0 Mb
+18
+18
+0 Mb
+0 Mb
+50 Mb
+50 Mb
+50 Mb
+50 Mb
+50 Mb
+150 Mb
+150 Mb
+100 Mb
+100 Mb
+100 Mb
+8
+8
+7
+7
+0 Mb
+50 Mb
+100 Mb
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 359 
+of nucleic acids from this minute cell fraction pose significant 
+technical challenges, precluding their extensive molecular 
+characterization. Our study is the first to show intact CTCs 
+can be purified and used to detect complex structural events 
+and chromosomal abnormalities that are hallmarks of MM 
+disease. This is a substantial advance demonstrating that ini-
+tiating events of MM can be detected upon genomic profiling 
+of CTCs a priori with similar sensitivity and specificity to clini-
+cal BM FISH. Importantly, our method can be the basis for 
+clinical applications that use liquid biopsies to assay genomic 
+biomarkers for diagnostic and prognostic purposes, in which 
+screening and monitoring of MM clones can be achieved 
+using blood sampling only.
+The prevalence of MGUS in the general population is esti-
+mated to be 3% to 5% of individuals aged over 50 years, and 
+SMM to be 0.53% of individuals aged over 40 years old (39–42). 
+Screening may be especially important for the SMM stage, 
+which is heterogeneous and captures multiple clinical trajec-
+tories of disease including “MGUS-like,” indolent, or “early 
+MM–like” (43). Capturing high-risk patients before end-organ 
+damage occurs is of especially high importance for decisions 
+on clinical management strategies. Using MinimuMM-seq, 
+we observed CTCs indeed represent the major BM clone upon 
+blood sampling, with a high concordance of genomic pro-
+file between both compartments, illustrating that dominant 
+clones in the BM possess the fitness to circulate and define 
+the current tumors’ biology. Initiating mutational profiles 
+included primary translocations of t(11;14), t(4;14), t(14;16), 
+and t(14;20). A similar representation of the overall clonal com-
+plexity in PB compared with BM was observed in matched sam-
+ple patients. Notably, in few cases we observed subclones with 
+preferential circulation in the PB compartment, harboring 
+driver mutations such as KRAS conferring improved fitness. 
+This shows that blood sampling and screening of CTCs are suf-
+ficient to reliably identify mutations of the BM to screen and 
+monitor patients for initiating clones and potentially emerging 
+high-risk clones that may have more aggressive characteristics. 
+Although genomic analyses of MM have not yielded targeted 
+therapies to date [with the exception of venetoclax in t(11;14) 
+patients], improved molecular profiling using CTCs and BM 
+could indeed help to better stratify patients for clinical deci-
+sions using current models such as the four-risk factor 2/20/20 
+model (for SMM; ref.  20) or Revised ISS (31) or mSMART 
+models (for MM; ref. 44). Targeting actionable mutations such 
+as CDK, RAS/RAF, and t(11;14) is currently being investigated 
+within the MyDRUG trial (NCT03732703).
+Although BM remains the gold standard for diagnosis, 
+recent studies have highlighted the importance of spatial het-
+erogeneity in MM disease, a feature that is well known from 
+functional imaging (9, 45, 46). As such, current methods of 
+BM biopsy at a single iliac crest or sternal site may not accu-
+rately represent the full picture of tumor biology, potentially 
+missing high-risk genomic events of prognostic interest such 
+as TP53 mutations (9). In this study, we showed that high-risk 
+arm-level abnormalities of 1q gain and deletion of chromo-
+some 13 could be found at a higher CCF in blood-derived 
+CTCs than in BM biopsy samples of the same time point. 
+Conversely, we did not detect any high-risk events occurring 
+exclusively in BM. Furthermore, similar observations applied 
+to driver mutations detected in KRAS and NRAS, which were 
+all found to be of equal or higher clonality in the blood com-
+pared with BM. Thus, CTCs may assist in defining spatial 
+genomic architecture and systemic disease through the detec-
+tion of private mutations upon PB sampling not found in the 
+standard BM biopsy site. This suggests that capturing CTCs 
+could give us a major unexpected advantage over BM biopsies 
+in that CTCs harboring such abnormalities lose dependence 
+and diffuse into the blood from proliferative niches through-
+out the body before they settle and induce a clonal sweep 
+and fixation at a primary or secondary regional site. Further 
+studies of longitudinal abnormalities in matched BM and PB 
+compartments will help elucidate this hypothesis.
+MinimuMM-seq for CTCs also addresses the current chal-
+lenge of repeated sampling of patients for the continuous 
+monitoring of disease development and tumor evolution. 
+CTCs at a single time point can provide an assessment of 
+genomic profile and actionable mutations, whereas longitu-
+dinal blood collection at multiple time points can track muta-
+tion architecture and clonal dynamics through CTCs, similar 
+to that of the major BM clone, in a minimally invasive man-
+ner. In particular, we showed a serial sampling of blood from 
+untreated patients with SMM can be used to identify the 
+clonal complexity, phylogeny, and evolution of CTCs, where 
+emergence (of high-risk subclones with selective advantage) 
+and extinction (of passenger subclones) are observed over time. 
+Conceivably, this approach could also be applied in a treat-
+ment setting to provide evidence for response or resistance, 
+restaging, and end-of-trial assessment in which BM is unable 
+to be collected, and measure how the fitness landscape changes 
+with treatment pressure. Indeed, in one patient with SMM who 
+began receiving early interventional therapy, we show that lon-
+gitudinal liquid biopsies monitoring CTCs provide informa-
+tion on clonal dynamics and selection of high-risk subclones 
+that emerge in real time. This observation illustrates that 
+dense sampling of blood for genomic profiling may assist in 
+closely tracking patient response and tailoring changes given a 
+patient's specific evolving biology and clonal composition. As 
+WGS becomes less expensive, we believe that this approach will 
+be easily accessible and may become more affordable than tra-
+ditional FISH for clinical application. Many tests using NGS, 
+including germline WGS, have been introduced in recent years, 
+and this category will likely continue to expand. Furthermore, 
+at MRD testing time points, we observed CTCs are rarely pre-
+sent in the PB when patients were either MRD positive or MRD 
+negative by NGS evaluation. This is similar to previous studies 
+showing high false negativity of noninvasive MRD assessment 
+Figure 6.  CTC sequencing enables the cohort-level genomic study of mutational signatures and complex structural events. A, Estimation of weight of 
+mutational processes in the CTC sorted by known mutational signatures and represented in absolute (top) and 1-normalized values (bottom). Asterisks 
+represent MAF-rearranged tumors. Plus (+) sign represents truncation for participant CTF058 (APOBEC weight 30,828 ± 71). SBS, single-base substitu-
+tion. B–E, Characterization of complex structural variants from WGS data. Intra-chr. SV, intrachromosomal structural variant. B and C, CTF033 chromoth-
+ripsis of the long arm of chromosome 3 at the genome scale (B) and zoomed on chromosome 3 only (C). D and E, Chromoplexy of chromosomes 7, 8, and 
+18 involving MYC on chromosome 8 in matched BM (D) and PB (E) from CTF034.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+360 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+by monitoring CTCs as a measure of MRD burden after treat-
+ment compared with BM (15).
+We also consider the limitations present in our study. Com-
+pared with higher burden SMM and overt MM, a minority 
+of MGUS, lower risk SMM, and MRD status patients may be 
+eligible for genomic characterization by MinimuMM-seq at 
+the first sampling date; however, monitoring by enumeration 
+and moving to genomic characterization when CTC numbers 
+increase could coincide with the time at which such an assay is 
+relevant in the disease course. In particular, patients on treat-
+ment and being assessed for MRD may benefit from a regular 
+serial sampling of PB for CTC burden as an assessment of 
+the duration of MRD status. Our current results suggest 
+copy-number abnormalities face no lower limit of detection, 
+whereas translocations could be detected in samples down 
+to 50 CTCs and clonal mutations were reliably detected from 
+around 300 CTCs. In this study, we relied on affinity-based 
+selection of PCs (CD138+38+), and we note CTCs could be 
+missed due to potential dynamic surface protein expression 
+or clonogenic potential of CD138− cells (47–49). Whether the 
+physical properties of PCs such as morphology could be a sen-
+sitive way to purify CTCs of premalignant disease remains to 
+be tested. Although we focused on genetic alterations, future 
+transcriptomics studies using single-cell RNA sequencing may 
+also define phenotypic characteristics and traits that allow 
+CTCs to extravasate, and whether high-risk or rare clones pos-
+sess circulating specific functional features (17, 50–52).
+MinimuMM-seq provides a foundation for minimally inva-
+sive detection, enumeration, and genomic interrogation of 
+rare CTCs from the PB, illustrating the clinical potential of 
+using liquid biopsies for monitoring and managing disease 
+in MM. Addressing costs and strategies to bring WGS into 
+the clinical standard of care will consequently provide an 
+unbiased test to improve on and refine genomic biomarker 
+assessment for patient diagnostics. Ultimately, CTCs possess 
+great potential to enable precision oncology and prevention 
+in MM and its precursor conditions.
+METHODS
+Patient Sample Collection
+Blood samples from a cohort of 261 patients (84 MGUS, 155 
+SMM, and 22 MM) were prospectively collected from the Dana-
+Farber Cancer Institute Observational Precursor Crowd (PCROWD) 
+study (NCT02269592) and the Plasma Cell Dyscrasias study. All 
+patients provided written informed consent for the research use col-
+lection of PB and BM samples (Institutional Review Board #14-174 
+and #07-150). Research studies were carried out in accordance with 
+the Declaration of Helsinki. PB was drawn into CellRescue Preserva-
+tive Tubes (Menarini Silicon Biosystems) and kept at room tempera-
+ture before processing on the CellSearch instrument. Samples were 
+all processed within 96 hours from the time of collection. Patients 
+with matched BM biopsies had routine clinical cytogenetics and 
+FISH analysis performed at a molecular pathology laboratory (Sup-
+plementary Materials and Methods).
+Enrichment and Enumeration of CTCs
+From each patient, PB was collected in CellRescue Preservation 
+Tubes (Menarini Silicon Biosystems) and processed on the CellSearch 
+System (Menarini Silicon Biosystems) composed of the CELLTRACKS 
+AUTOPREP System and the CELLTRACKS ANALYZER II using the 
+CELLSEARCH Circulating Multiple Myeloma Cell (CMMC) Assay 
+(Menarini Silicon Biosystems) for the enrichment and enumeration 
+of circulating MM cells. The sensitivity and linearity of circulating 
+MM cells using the CellSearch System have previously been reported 
+(11). Briefly, 4 mL of blood was removed from the CellRescue Pres-
+ervation tube and processed on the CELLTRACKS AUTOPREP Sys-
+tem using the CELLSEARCH CMMC Assay to enrich for myeloma 
+cells following the manufacturer's recommendations. Myeloma cells 
+were immunomagnetically captured using an anti-CD138 antibody 
+conjugated with ferrofluid. All captured cells were stained with an 
+anti-CD38 antibody conjugated with phycoerythrin (PE), an anti-
+CD19/CD45 antibody cocktail conjugated with allophycocyanin 
+(APC), to differentiate leukocytes from the circulating myeloma cells. 
+All cell nuclei were stained with DAPI and then fixed with para-
+formaldehyde. The cartridges containing the enriched myeloma cells 
+were placed in the CELLTRACKS ANALYZER II, a semiautomated 
+fluorescence microscope. The sample was then exported from CELL-
+TRACKS ANALYZER II and imported into GateWorks software. The 
+GateWorks software segmented the objects in the browser images, 
+extracted object features, and “gated” those events that were most 
+likely to be CMMCs for review by the user. The myeloma phenotype 
+was CD138+/CD38+/DAPI+/CD19−/CD45−. Any background cells 
+such as leukocytes, which had the phenotype CD138−/CD38−/DAPI+/
+CD19+/CD45+, were not counted as myeloma cells. Samples were then 
+removed from the cartridges and stored in glycerol stocks at −20°C 
+for subsequent downstream molecular characterization.
+Sorting of CTCs
+Upon enrichment of PB samples using The CellSearch Sys-
+tem, ∼100–10,000 leukocytes may remain in the background of the 
+extracted sample; therefore, methods of cell sorting were used for 
+sorting of pure CTCs to obtain high tumor fraction pools of CTCs. 
+High-sensitivity fluorescence-activated cell sorting (FACS; BD Bio-
+sciences Aria II) was used to sort pure populations of tumor PCs and 
+germline white blood cells based on immunophenotypic gating of 
+CD138+38+45− and CD45+CD138−CD38−, respectively.
+DNA Library Construction
+Sorted samples underwent DNA purification (Thermo Fisher 
+PicoPure DNA Isolation Kit) and library preparation using the 
+NEBNext Ultra II FS DNA Library Prep Kit (New England Biolabs) 
+with unique dual index adapters (NEBNext Multiplex Oligos) accord-
+ing to the manufacturer's instructions. Final library fragment sizes 
+were assessed using the BioAnalyzer 2100 (Agilent Technologies), 
+with yields quantified by a Qubit 3.0 fluorometer (Thermo Fisher 
+Scientific) and qPCR (KAPA Library Quantification Kit).
+DNA Sequencing and Genomic Data Analysis
+Final sample libraries were normalized and pooled before WGS was 
+performed on Illumina NovaSeq 6000 S4 flow cells, 300 cycles paired-
+end reads, at the Genomics Platform of the Broad Institute of MIT 
+and Harvard. WGS analysis was performed on an in-house cloud-
+based HPC system for copy-number, mutation, and structural vari-
+ant analyses, and detailed steps are described in the Supplementary 
+Materials and Methods. Briefly, sequencing reads were aligned to the 
+hg19 reference genome with the bwa mem v0.7.7 algorithm, duplicate 
+reads were marked with MarkDuplicates from picard v1.457, indels 
+were realigned with GATK 3.4 IndelRealigner, and base qualities were 
+recalibrated with GATK 3.4 BaseRecalibrator software. Mutations 
+were called with MuTect1 (53) and small indels with Strelka2 (ref. 54; 
+for SNVs and indels) and were filtered (i) against a panel of normals 
+(PoN), (ii) for potential technical artifacts (oxoG), and (iii) for mul-
+tiple alignment with BLAT (Supplementary Materials and Methods). 
+After copy-number normalization with AllelicCapSeg, ABSOLUTE 
+(21) solutions were manually reviewed to estimate mutation CCF, 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 361 
+purity, and ploidy of tumor samples. Phylogeny reconstruction was 
+performed with the PhylogicNDT (26) suite of tools with the follow-
+ing parameters: minimum CCF: 20%, minimum coverage: 10, number 
+of iterations: 1,000. Mutational signatures were quantified with the 
+SignatureAnalyzer (55, 56) method and n = 100 runs. Structural vari-
+ants were detected and filtered as previously described (57).
+Statistical Analyses
+Quantitative bioclinical variables were described with median and 
+IQR or absolute range or with mean and SD. The average difference 
+between groups was assessed with the Kruskal–Wallis method for mul-
+tiple group testing followed by Dunn post hoc tests and/or Wilcoxon test 
+for two groups. When the mean is estimated from a random process, it 
+is given with its 95% CI. Qualitative variables were described using the 
+frequency of their respective modalities. Distinct distribution between 
+groups was assessed with χ2 Pearson test (or Fisher exact test if appro-
+priate). Patients were stratified for progression-free survival by the 
+presence of CTCs and by quartiles of CTC enumeration. Time to event 
+was calculated from screening to clinical progression to MM, or death 
+of any cause, whichever occurred first. The likelihood ratio test statis-
+tic is reported in the absence of an event in the nonprogressor group. 
+P values were corrected for multiple testing with the Benjamini– 
+Hochberg method. Adjusted P values under 0.05 were considered sig-
+nificant. All calculations were done using R 4.1.1 software.
+Data Availability
+Data and code used in the analysis are available at https://github 
+.com/jalberge/ms-cmmcs/ or in the Supplementary Materials and 
+Methods. The sequencing data presented in the current publication 
+have been deposited in and are available from the database of Geno-
+types and Phenotypes (dbGAP) under accession number phs003084.v1.
+Authors' Disclosures
+A.K. Dutta reports a patent for methods for characterization of 
+CTCs pending and honoraria from Menarini Silicon Biosystems for 
+a speaking engagement. J.-B. Alberge reports grants from the Interna-
+tional Myeloma Society during the conduct of the study, as well as a 
+patent for MinimuMM-seq pending. T.H. Mouhieddine reports other 
+support from Legend Biotech outside the submitted work. F.K. Kuhr 
+reports employment with Menarini Silicon Biosystems. R.G. Del 
+Mastro reports employment with Menarini Silicon Biosystems. O. 
+Nadeem reports personal fees from Janssen, Bristol Myers Squibb, 
+Takeda, Adaptive Biotechnologies, and GPCR Therapeutics outside 
+the submitted work. D. Auclair reports no conflict at the time of 
+data generation and manuscript production and recent employment 
+with AstraZeneca. G. Getz reports grants from the Adelson Medical 
+Research Foundation and the SU2C Dream Team during the conduct 
+of the study; grants from IBM and Pharmacyclics, and personal fees 
+and other support from Scorpion Therapeutics outside the submit-
+ted work; a patent for MinimuMM-seq pending; and is an inventor 
+on patent applications related to MSMuTect, MSMutSig, MSIDetect, 
+Polysolver, and SignatureAnalyzer-GPU. I.M. Ghobrial reports grants 
+from the Dr. Miriam and Sheldon G. Adelson Medical Research 
+Foundation, the NIH, and Stand Up To Cancer, personal fees from 
+Aptitude, GSK, Sanofi, Janssen, Takeda, Karyopharm, AbbVie, GNS, 
+Cellecter, Medscape, Menarini Silicon Biosystems, Genentech, Adap-
+tive, Bristol Myers Squibb, Curio Science, and Oncopeptides outside 
+the submitted work, as well as a patent for MinimuMM-seq pending. 
+No disclosures were reported by the other authors.
+Disclaimer
+Opinions, interpretations, conclusions, and recommendations are 
+those of the authors and are not necessarily endorsed by Stand Up 
+To Cancer, the Entertainment Industry Foundation, or the American 
+Association for Cancer Research.
+Authors' Contributions
+A.K. Dutta: Conceptualization, funding acquisition, investigation, 
+visualization, methodology, writing–original draft, writing–review 
+and editing. J.-B. Alberge: Conceptualization, investigation, visu-
+alization, methodology, writing–original draft, writing–review and 
+editing. E.D. Lightbody: Investigation, methodology, writing–review 
+and editing. C.J. Boehner: Methodology, writing–review and editing. 
+A. Dunford: Investigation, visualization, methodology, writing–
+review and editing. R. Sklavenitis-Pistofidis: Methodology, writing–
+review and editing. T.H. Mouhieddine: Methodology, writing–review 
+and editing. A.N. Cowan: Methodology, writing–review and editing. 
+N.K. Su: Methodology, writing–review and editing. E.M. Horowitz: 
+Methodology, writing–review and editing. H. Barr: Methodology, 
+writing–review and editing. L. Hevenor: Methodology, writing–review 
+and editing. J.B. Beckwith: Methodology, writing–review and editing. 
+J. Perry: Methodology, writing–review and editing. A. Cao: Visualiza-
+tion, methodology, writing–review and editing. Z. Lin: Methodology, 
+writing–review and editing. F.K. Kuhr: Methodology, writing–review 
+and editing. R.G. Del Mastro: Methodology, writing–review and edit-
+ing. O. Nadeem: Funding acquisition, methodology, writing–review 
+and editing. P.T. Greipp: Methodology, writing–review and editing. 
+C. Stewart: Investigation, visualization, methodology, writing–review 
+and editing. D. Auclair: Methodology, writing–review and editing. 
+G. Getz: Conceptualization, supervision, investigation, visualization, 
+methodology, writing–review and editing. I.M. Ghobrial: Conceptu-
+alization, supervision, funding acquisition, investigation, visualiza-
+tion, methodology, writing–review and editing.
+Acknowledgments
+We thank Anna V. Justis, PhD, for providing writing and edit-
+ing support during the preparation of this article; Julian Hess, Liz 
+Martin, Yo Akiyama, and Nicholas Haradhvala, PhD, for providing 
+support and critical review of WGS data analysis; and Frances Tan-
+ney and the clinical laboratory team at Menarini Silicon Biosystems 
+for processing the recovery of a batch of CellSearch samples. We 
+acknowledge funding support from the Dr. Miriam and Sheldon 
+G. Adelson Medical Research Foundation, the NIH (R01CA205954 
+and R35CA263817-01A1), an International Myeloma Society Career 
+Development Award (J.-B. Alberge), and a Dana-Farber Cancer Insti-
+tute Medical Oncology Grant Award (A.K. Dutta). This research was 
+also supported by a Stand Up To Cancer Dream Team Research Grant 
+(grant number: SU2C-AACR-DT-28-18). Stand Up To Cancer is a 
+division of the Entertainment Industry Foundation. The indicated 
+SU2C grant is administered by the American Association for Cancer 
+Research, the scientific partner of Stand Up To Cancer.
+The publication costs of this article were defrayed in part by the 
+payment of publication fees. Therefore, and solely to indicate this 
+fact, this article is hereby marked “advertisement” in accordance with 
+18 USC section 1734.
+Note 
+Supplementary data for this article are available at Cancer Discovery 
+Online (http://cancerdiscovery.aacrjournals.org/).
+Received April 27, 2022; revised September 20, 2022; accepted 
+November 9, 2022; published first December 7, 2022.
+REFERENCES
+	 1.	 Bolli N, Avet-Loiseau H, Wedge DC, Van Loo P, Alexandrov LB, 
+Martincorena I, et al. Heterogeneity of genomic evolution and muta-
+tional profiles in multiple myeloma. Nat Commun 2014;5:2997.
+	 2.	 Bolli N, Maura F, Minvielle S, Gloznik D, Szalat R, Fullam A, et al. 
+Genomic patterns of progression in smoldering multiple myeloma. 
+Nat Commun 2018;9:3363.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Dutta et al.
+RESEARCH ARTICLE
+362 | CANCER DISCOVERY FEBRUARY  2023	
+AACRJournals.org
+	 3.	 Chapman MA, Lawrence MS, Keats JJ, Cibulskis K, Sougnez C, 
+Schinzel AC, et al. Initial genome sequencing and analysis of multiple 
+myeloma. Nature 2011;471:467–72.
+	 4.	 Dutta AK, Fink JL, Grady JP, Morgan GJ, Mullighan CG, To LB, 
+et al. Subclonal evolution in disease progression from MGUS/SMM 
+to multiple myeloma is characterised by clonal stability. Leukemia 
+2019;33:457–68.
+	 5.	 Lohr JG, Stojanov P, Carter SL, Cruz-Gordillo P, Lawrence MS, 
+Auclair D, et al. Widespread genetic heterogeneity in multiple mye-
+loma: implications for targeted therapy. Cancer Cell 2014;25:91–101.
+	 6.	 Walker BA, Boyle EM, Wardell CP, Murison A, Begum DB, Dahir NM, 
+et  al. Mutational spectrum, copy number changes, and outcome: 
+results of a sequencing study of patients with newly diagnosed 
+myeloma. J Clin Oncol 2015;33:3911–20.
+	 7.	 Walker BA, Wardell CP, Melchor L, Brioli A, Johnson DC, Kaiser MF, 
+et al. Intraclonal heterogeneity is a critical early event in the develop-
+ment of myeloma and precedes the development of clinical symp-
+toms. Leukemia 2014;28:384–90.
+	 8.	 Merz M, Merz AMA, Wang J, Wei L, Hu Q, Hutson N, et al. Decipher-
+ing spatial genomic heterogeneity at a single cell resolution in multi-
+ple myeloma. Nat Commun 2022;13:807.
+	 9.	 Rasche L, Chavan SS, Stephens OW, Patel PH, Tytarenko R, Ashby C, 
+et al. Spatial genomic heterogeneity in multiple myeloma revealed by 
+multi-region sequencing. Nat Commun 2017;8:268.
+	10.	 Bianchi G, Kyle RA, Larson DR, Witzig TE, Kumar S, Dispenzieri A, 
+et  al. High levels of peripheral blood circulating plasma cells as a 
+specific risk factor for progression of smoldering multiple myeloma. 
+Leukemia 2013;27:680–5.
+	11.	 Foulk B, Schaffer M, Gross S, Rao C, Smirnov D, Connelly MC, et al. Enu-
+meration and characterization of circulating multiple myeloma cells 
+in patients with plasma cell disorders. Br J Haematol 2018;180:71–81.
+	12.	 Gonsalves WI, Morice WG, Rajkumar V, Gupta V, Timm MM, 
+Dispenzieri A, et al. Quantification of clonal circulating plasma cells 
+in relapsed multiple myeloma. Br J Haematol 2014;167:500–5.
+	13.	 Kumar S, Rajkumar SV, Kyle RA, Lacy MQ, Dispenzieri A, Fonseca R, 
+et al. Prognostic value of circulating plasma cells in monoclonal gam-
+mopathy of undetermined significance. J Clin Oncol 2005;23:5668–74.
+	14.	 Nowakowski GS, Witzig TE, Dingli D, Tracz MJ, Gertz MA, Lacy MQ, 
+et al. Circulating plasma cells detected by flow cytometry as a pre-
+dictor of survival in 302 patients with newly diagnosed multiple 
+myeloma. Blood 2005;106:2276–9.
+	15.	 Sanoja-Flores L, Flores-Montero J, Puig N, Contreras-Sanfeliciano T, 
+Pontes R, Corral-Mateos A, et  al. Blood monitoring of circulating 
+tumor plasma cells by next generation flow in multiple myeloma after 
+therapy. Blood 2019;134:2218–22.
+	16.	 Garces JJ, Bretones G, Burgos L, Valdes-Mas R, Puig N, Cedena MT, 
+et al. Circulating tumor cells for comprehensive and multiregional 
+non-invasive genetic characterization of multiple myeloma. Leukemia 
+2020;34:3007–18.
+	17.	 Lohr JG, Kim S, Gould J, Knoechel B, Drier Y, Cotton MJ, et  al. 
+Genetic interrogation of circulating multiple myeloma cells at single-
+cell resolution. Sci Transl Med 2016;8:363ra147.
+	18.	 Manier S, Park J, Capelletti M, Bustoros M, Freeman SS, Ha G, et al. 
+Whole-exome sequencing of cell-free DNA and circulating tumor 
+cells in multiple myeloma. Nat Commun 2018;9:1691.
+	19.	 Mishima Y, Paiva B, Shi J, Park J, Manier S, Takagi S, et al. The muta-
+tional landscape of circulating tumor cells in multiple myeloma. Cell 
+Rep 2017;19:218–24.
+	20.	 Mateos MV, Kumar S, Dimopoulos MA, Gonzalez-Calle V, Kastritis E, 
+Hajek R, et al. International Myeloma Working Group risk stratifica-
+tion model for smoldering multiple myeloma (SMM). Blood Cancer J 
+2020;10:102.
+	21.	 Carter SL, Cibulskis K, Helman E, McKenna A, Shen H, Zack T, et al. 
+Absolute quantification of somatic DNA alterations in human can-
+cer. Nat Biotechnol 2012;30:413–21.
+	22.	 Jordan JJ, Inga A, Conway K, Edmiston S, Carey LA, Wu L, et  al. 
+Altered-function p53 missense mutations identified in breast can-
+cers can have subtle effects on transactivation. Mol Cancer Res 
+2010;8:701–16.
+	23.	 Misund K, Keane N, Stein CK, Asmann YW, Day G, Welsh S, et al. MYC 
+dysregulation in the progression of multiple myeloma. Leukemia  
+2020;34:322–6.
+	24.	 Walker BA, Wardell CP, Brioli A, Boyle E, Kaiser MF, Begum DB, 
+et al. Translocations at 8q24 juxtapose MYC with genes that harbor 
+superenhancers resulting in overexpression and poor prognosis in 
+myeloma patients. Blood Cancer J 2014;4:e191.
+	25.	 Oben B, Froyen G, Maclachlan KH, Leongamornlert D, Abascal F, 
+Zheng-Lin B, et al. Whole-genome sequencing reveals progressive ver-
+sus stable myeloma precursor conditions as two distinct entities. Nat 
+Commun 2021;12:1861.
+	26.	 Leshchiner I, Livitz D, Gainor JF, Rosebrock D, Spiro O, Martinez A, 
+et al. Comprehensive analysis of tumour initiation, spatial and tem-
+poral progression under multiple lines of treatment. BioRxiv 508127 
+[Preprint]. 2019. Available from: https://doi.org/10.1101/508127.
+	27.	 Walker BA, Mavrommatis K, Wardell CP, Ashby TC, Bauer M, 
+Davies FE, et  al. Identification of novel mutational drivers reveals 
+oncogene dependencies in multiple myeloma. Blood 2018;132:587–97.
+	28.	 Yao Z, Yaeger R, Rodrik-Outmezguine VS, Tao A, Torres NM, 
+Chang MT, et al. Tumours with class 3 BRAF mutants are sensitive to 
+the inhibition of activated RAS. Nature 2017;548:234–8.
+	29.	 Chen J, Gao XM, Zhao H, Cai H, Zhang L, Cao XX, et al. A highly 
+heterogeneous mutational pattern in POEMS syndrome. Leukemia 
+2021;35:1100–7.
+	30.	 Greipp PR, San Miguel J, Durie BG, Crowley JJ, Barlogie B, Blade J, 
+et al. International staging system for multiple myeloma. J Clin Oncol 
+2005;23:3412–20.
+	31.	 Palumbo A, Avet-Loiseau H, Oliva S, Lokhorst HM, Goldschmidt H, 
+Rosinol L, et  al. Revised international staging system for multiple 
+myeloma: a report from international myeloma working group. J Clin 
+Oncol 2015;33:2863–9.
+	32.	 Rajkumar SV, Gupta V, Fonseca R, Dispenzieri A, Gonsalves WI, 
+Larson D, et  al. Impact of primary molecular cytogenetic abnor-
+malities and risk of progression in smoldering multiple myeloma. 
+Leukemia 2013;27:1738–44.
+	33.	 Maura F, Petljak M, Lionetti M, Cifola I, Liang W, Pinatel E, et al. Bio-
+logical and prognostic impact of APOBEC-induced mutations in the 
+spectrum of plasma cell dyscrasias and multiple myeloma cell lines. 
+Leukemia 2018;32:1044–8.
+	34.	 Walker BA, Wardell CP, Murison A, Boyle EM, Begum DB, Dahir NM, 
+et  al. APOBEC family mutational signatures are associated with 
+poor prognosis translocations in multiple myeloma. Nat Commun 
+2015;6:6997.
+	35.	 Bustoros M, Sklavenitis-Pistofidis R, Park J, Redd R, Zhitomirsky B, 
+Dunford AJ, et  al. Genomic profiling of smoldering multiple mye-
+loma identifies patients at a high risk of disease progression. J Clin 
+Oncol 2020;38:2380–9.
+	36.	 Boyle EM, Williams L, Blaney P, Ashby C, Bauer M, Walker BA, 
+et al. Improving prognostic assignment in older adults with multiple 
+myeloma using acquired genetic features, clonal hemopoiesis and 
+telomere length. Leukemia 2022;36:221–4.
+	37.	 Bertamini L, Oliva S, Rota-Scalabrini D, Paris L, More S, Corradini P, 
+et al. High levels of circulating tumor plasma cells as a key hallmark 
+of aggressive disease in transplant-eligible patients with newly diag-
+nosed multiple myeloma. J Clin Oncol 2022;40:3120–31.
+	38.	 Garces JJ, Cedena MT, Puig N, Burgos L, Perez JJ, Cordon L, et al. 
+Circulating tumor cells for the staging of patients with newly diag-
+nosed transplant-eligible multiple myeloma. J Clin Oncol 2022;40: 
+3151–61.
+	39.	 El-Khoury H, Lee DJ, Alberge JB, Redd R, Cea-Curry CJ, Perry J, et al. 
+Prevalence of monoclonal gammopathies and clinical outcomes in a 
+high-risk US population screened by mass spectrometry: a multicen-
+tre cohort study. Lancet Haematol 2022;9:e340–e9.
+	40.	 Kyle RA, Therneau TM, Rajkumar SV, Larson DR, Plevak MF, 
+Offord JR, et al. Prevalence of monoclonal gammopathy of undeter-
+mined significance. N Engl J Med 2006;354:1362–9.
+	41.	 Murray D, Kumar SK, Kyle RA, Dispenzieri A, Dasari S, Larson DR, 
+et al. Detection and prevalence of monoclonal gammopathy of unde-
+termined significance: a study utilizing mass spectrometry-based 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024
+
+Genomic Profiling of Circulating Multiple Myeloma Cells
+RESEARCH ARTICLE
+	
+FEBRUARY  2023 CANCER DISCOVERY | 363 
+monoclonal immunoglobulin rapid accurate mass measurement. 
+Blood Cancer J 2019;9:102.
+	42.	 Thorsteinsdottir S, Gislason GK, Aspelund T, Rögnvaldsson S, 
+Oskarsson JTT, Petursdottir I, et al. Prevalence of smoldering mul-
+tiple myeloma: results from the Iceland Screens, Treats, or Prevents 
+Multiple Myeloma (iStopMM) study. Blood 2021;138 Suppl 1:151. 
+Abstract nr 652.
+	43.	 Landgren O. Shall we treat smoldering multiple myeloma in the 
+near future? Hematology Am Soc Hematol Educ Program 2017; 
+2017:194–204.
+	44.	 Mikhael JR, Dingli D, Roy V, Reeder CB, Buadi FK, Hayman SR, 
+et al. Management of newly diagnosed symptomatic multiple mye-
+loma: updated Mayo Stratification of Myeloma and Risk-Adapted 
+Therapy (mSMART) consensus guidelines 2013. Mayo Clin Proc 
+2013;88:360–76.
+	45.	 Alberge JB, Kraeber-Bodere F, Jamet B, Touzeau C, Caillon H, 
+Wuilleme S, et al. Molecular signature of (18)F-FDG PET biomarkers 
+in newly diagnosed multiple myeloma patients: a genome-wide tran-
+scriptome analysis from the CASSIOPET study. J Nucl Med 2022;63: 
+1008–13.
+	46.	 Cavo M, Terpos E, Nanni C, Moreau P, Lentzsch S, Zweegman S, et al. 
+Role of (18)F-FDG PET/CT in the diagnosis and management of 
+multiple myeloma and other plasma cell disorders: a consensus state-
+ment by the International Myeloma Working Group. Lancet Oncol 
+2017;18:e206–e17.
+	47.	 Hosen N, Matsuoka Y, Kishida S, Nakata J, Mizutani Y, Hasegawa K, 
+et al. CD138-negative clonogenic cells are plasma cells but not B cells 
+in some multiple myeloma patients. Leukemia 2012;26:2135–41.
+	48.	 Matsui W, Huff CA, Wang Q, Malehorn MT, Barber J, Tanhehco Y, 
+et al. Characterization of clonogenic multiple myeloma cells. Blood 
+2004;103:2332–6.
+	49.	 Paiva B, Paino T, Sayagues JM, Garayoa M, San-Segundo L, Martin M, 
+et al. Detailed characterization of multiple myeloma circulating tumor 
+cells shows unique phenotypic, cytogenetic, functional, and circadian 
+distribution profile. Blood 2013;122:3591–8.
+	50.	 Dutta AK, Alberge JB, Sklavenitis-Pistofidis R, Lightbody ED, Getz G, 
+Ghobrial IM. Single-cell profiling of tumour evolution in multiple 
+myeloma—opportunities for precision medicine. Nat Rev Clin Oncol 
+2022;19:223–36.
+	51.	 Garces JJ, Simicek M, Vicari M, Brozova L, Burgos L, Bezdekova R, et al. 
+Transcriptional profiling of circulating tumor cells in multiple mye-
+loma: a new model to understand disease dissemination. Leukemia 
+2020;34:589–603.
+	52.	 Ledergor G, Weiner A, Zada M, Wang SY, Cohen YC, Gatt ME, et al. 
+Single cell dissection of plasma cell heterogeneity in symptomatic 
+and asymptomatic myeloma. Nat Med 2018;24:1867–76.
+	53.	 Cibulskis K, Lawrence MS, Carter SL, Sivachenko A, Jaffe D, Sougnez C, 
+et al. Sensitive detection of somatic point mutations in impure and 
+heterogeneous cancer samples. Nat Biotechnol 2013;31:213–9.
+	54.	 Kim S, Scheffler K, Halpern AL, Bekritsky MA, Noh E, Kallberg M, 
+et al. Strelka2: fast and accurate calling of germline and somatic vari-
+ants. Nat Methods 2018;15:591–4.
+	55.	 Kim J, Mouw KW, Polak P, Braunstein LZ, Kamburov A, Kwiatkowski DJ, 
+et al. Somatic ERCC2 mutations are associated with a distinct genomic 
+signature in urothelial tumors. Nat Genet 2016;48:600–6.
+	56.	 Kasar S, Kim J, Improgo R, Tiao G, Polak P, Haradhvala N, et  al. 
+Whole-genome sequencing reveals activation-induced cytidine deam-
+inase signatures during indolent chronic lymphocytic leukaemia 
+evolution. Nat Commun 2015;6:8866.
+	57.	 Morton LM, Karyadi DM, Stewart C, Bogdanova TI, Dawson ET, 
+Steinberg MK, et al. Radiation-related genomic profile of papillary thy-
+roid carcinoma after the Chernobyl accident. Science 2021;372:eabg2538.
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/13/2/348/3380986/348.pdf by Massachusetts Institute of Technology user on 17 May 2024

@@ -1,0 +1,1172 @@
+The new engl and jour nal of medicine
+n engl j med 365;26  nejm.org  december 29, 2011
+2497
+original article
+SF3B1 and Other Novel Cancer Genes 
+in Chronic Lymphocytic Leukemia
+Lili Wang, M.D., Ph.D., Michael S. Lawrence, Ph.D., Youzhong Wan, Ph.D.,  
+Petar Stojanov, B.A., Carrie Sougnez, B.S., Kristen Stevenson, M.S.,  
+Lillian Werner, M.S., Andrey Sivachenko, Ph.D., David S. DeLuca, Ph.D.,  
+Li Zhang, Ph.D., Wandi Zhang, M.D., Alexander R. Vartanov, B.A.,  
+Stacey M. Fernandes, B.S., Natalie R. Goldstein, B.A., Eric G. Folco, Ph.D.,  
+Kristian Cibulskis, B.S., Bethany Tesar, M.S., Quinlan L. Sievers, B.A.,  
+Erica Shefler, B.S., Stacey Gabriel, Ph.D., Nir Hacohen, Ph.D., Robin Reed, Ph.D.,  
+Matthew Meyerson, M.D., Ph.D., Todd R. Golub, M.D., Eric S. Lander, Ph.D.,  
+Donna Neuberg, Sc.D., Jennifer R. Brown, M.D., Ph.D.,  
+Gad Getz, Ph.D., and Catherine J. Wu, M.D.
+From the Cancer Vaccine Center (L.W., Y.W., 
+L.Z., W.Z., Q.L.S., C.J.W.) and the Depart-
+ments of Medical Oncology (L.W., Y.W., L.Z., 
+W.Z., A.R.V., S.M.F., N.R.G., B.T., Q.L.S., 
+M.M., J.R.B., C.J.W.), Biostatistics and 
+Computational Biology (K.S., L.W., D.N.), 
+and Pediatric Oncology (E.G.F., R.R., 
+T.R.G.), Dana–Farber Cancer Institute; the 
+Departments of Cell Biology (E.G.F., R.R., 
+T.R.G.) and Medicine (J.R.B., C.J.W.), Har-
+vard Medical School; the Division of Al-
+lergy, Immunology, and Rheumatology, 
+Department of Medicine, Massachusetts 
+General Hospital (N.H.); and the Depart-
+ment of Medicine, Brigham and Women’s 
+Hospital (J.R.B., C.J.W.) — all in Boston; 
+the Broad Institute, Cambridge, MA 
+(M.S.L., P.S., C.S., A.S., D.S.D., K.C., E.S., 
+S.G., N.H., M.M., T.R.G., E.S.L., G.G.); 
+and the Howard Hughes Medical Insti-
+tute, Chevy Chase, MD (T.R.G.). Address 
+reprint requests to Dr. Wu at the Dana–
+Farber Cancer Institute, Harvard Insti-
+tutes of Medicine, Rm. 416B, 77 Ave. 
+Louis Pasteur, Boston, MA 02115, or at 
+cwu@partners.org.
+Drs. Wang, Lawrence, and Wan and Drs. 
+Brown, Getz, and Wu contributed equally 
+to this article.
+This article (10.1056/NEJMoa1109016) was 
+published on December 12, 2011, at NEJM 
+.org.
+N Engl J Med 2011;365:2497-506.
+Copyright © 2011 Massachusetts Medical Society.
+ABSTR ACT
+Background
+The somatic genetic basis of chronic lymphocytic leukemia, a common and clinically 
+heterogeneous leukemia occurring in adults, remains poorly understood.
+Methods
+We obtained DNA samples from leukemia cells in 91 patients with chronic lympho-
+cytic leukemia and performed massively parallel sequencing of 88 whole exomes and 
+whole genomes, together with sequencing of matched germline DNA, to characterize 
+the spectrum of somatic mutations in this disease.
+Results
+Nine genes that are mutated at significant frequencies were identified, including 
+four with established roles in chronic lymphocytic leukemia (TP53 in 15% of patients, 
+ATM in 9%, MYD88 in 10%, and NOTCH1 in 4%) and five with unestablished roles 
+(SF3B1, ZMYM3, MAPK1, FBXW7, and DDX3X). SF3B1, which functions at the catalytic 
+core of the spliceosome, was the second most frequently mutated gene (with muta-
+tions occurring in 15% of patients). SF3B1 mutations occurred primarily in tumors 
+with deletions in chromosome 11q, which are associated with a poor prognosis in 
+patients with chronic lymphocytic leukemia. We further discovered that tumor sam-
+ples with mutations in SF3B1 had alterations in pre–messenger RNA (mRNA) splicing.
+Conclusions
+Our study defines the landscape of somatic mutations in chronic lymphocytic leuke-
+mia and highlights pre-mRNA splicing as a critical cellular process contributing to 
+chronic lymphocytic leukemia.
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+The new engl and jour nal of medicine
+n engl j med 365;26  nejm.org  december 29, 2011
+2498
+C
+hronic lymphocytic leukemia is an 
+incurable disease characterized by exten-
+sive clinical heterogeneity despite a com-
+mon diagnostic immunophenotype (surface ex-
+pression of CD19+, CD20+dim, CD5+, CD23+, and 
+sIgMdim). Whereas the course of disease is indo-
+lent in some patients, it is steadily progressive in 
+approximately half of patients, leading to sub-
+stantial morbidity and mortality.1 Our ability to 
+predict a more aggressive disease course has im-
+proved with the use of tests for biologic markers 
+(degree of somatic hypermutation in the variable 
+region of the immunoglobulin heavy chain [IGHV] 
+gene and expression of ZAP70) and the detection 
+of cytogenetic abnormalities (deletions in chromo-
+somes 11q, 13q, or 17p and trisomy 12).2,3 Still, 
+even with these advances, prediction of the dis-
+ease course is not highly reliable.
+Massively parallel sequencing technology now 
+provides a means of systematically discovering 
+the genetic alterations that underlie disease and 
+identifying new therapeutic targets and clini-
+cally predictive biomarkers. To date, most stud-
+ies designed to discover tumor-associated muta-
+tions have relied on sequencing the genome or 
+exome of only a few tumors; the newly discov-
+ered mutations detected are then further studied 
+in an expanded cohort. These efforts have led to 
+the identification of several important disease-
+associated mutations.4-6 A more powerful ap-
+proach to the process of initial discovery is to 
+sequence a much larger set of samples.7,8 This 
+approach increases the chances that the full 
+range of mutated genes will be detected, allows 
+reconstruction of the genetic pathways underly-
+ing disease pathogenesis, and reveals associa-
+tions between genetic events and the clinically 
+important features of a disease. We therefore 
+sequenced DNA samples of leukemia cells from 
+91 patients with chronic lymphocytic leukemia 
+(88 exomes and 3 genomes), representing the 
+broad clinical spectrum of the disease.
+Methods
+Study Design
+Samples of DNA were obtained from normal tis-
+sues and tumors in 91 patients (discovery cohort) 
+and 101 patients (extension cohort) with chronic 
+lymphocytic leukemia, all of whom provided 
+written informed consent before sample collec-
+tion. DNA was extracted from blood- or marrow-
+derived lymphocytes in tumors and from autolo-
+gous epithelial cells, fibroblasts, or granulocytes 
+in normal tissue. 
+Genome and Exome Sequencing
+Libraries were constructed and sequenced on an 
+Illumina Genome Analyzer II with the use of 
+101-bp paired-end reads for whole-genome se-
+quencing and 76-bp paired-end reads for whole-
+exome sequencing. Output from Illumina software 
+was processed by the PICARD data-processing 
+pipeline to yield BAM files containing well-cali-
+brated, aligned reads.7,9 BAM files were pro-
+cessed by the Broad Institute’s Firehose Pipeline, 
+which provides quality control and identifies so-
+matic point mutations, insertions or deletions, 
+and other structural chromosomal rearrange-
+ments. Pre–messenger RNA (pre-mRNA) splicing 
+alteration in leukemic samples was identified 
+with the use of quantitative reverse-transcriptase–
+polymerase-chain-reaction assays to detect spliced 
+and unspliced forms of representative spliceosome 
+targets BRD2 and RIOK3.10 Associations between 
+mutation rate and clinical features were assessed 
+with the use of the Wilcoxon rank-sum test, Fisher’s 
+exact test, or the Kruskal–Wallis test, as appro-
+priate. A stepwise Cox proportional-hazards 
+model was used to identify features with a sig-
+nificant effect on time to initial treatment. The 
+materials and methods used in the study are 
+more fully described in the Supplementary Ap-
+pendix, available with the full text of this article 
+at NEJM.org.
+Results
+Somatic Mutation Rate
+We sequenced DNA derived from CD19+CD5+ 
+leukemia cells and matched germline DNA de-
+rived from autologous skin fibroblasts, epithelial 
+cells in saliva, or blood granulocytes. Samples 
+were obtained from patients with a broad range 
+of clinical characteristics, including those with 
+del(11q) and del(17p) (indicating a poor progno-
+sis) and with either unmutated or mutated IGHV 
+status (Fig. 1A in the Supplementary Appendix). 
+Deep sequence coverage was obtained to provide 
+high sensitivity in identifying mutations (Table 1). 
+To detect point mutations and insertions or dele-
+tions, we compared sequences in each tumor 
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+Novel Cancer Genes in Chronic Lymphocytic Leukemia
+n engl j med 365;26  nejm.org  december 29, 2011
+2499
+sample with corresponding normal sequences by 
+means of well-validated algorithms.7,8,11,12
+We detected 1838 nonsynonymous and 539 syn-
+onymous mutations in protein-coding sequences, 
+corresponding to a mean (±SD) somatic mutation 
+rate of 0.72±0.36 per megabase (range, 0.08 to 
+2.70), and an average of 20 nonsynonymous mu-
+tations per patient (range, 2 to 76) (Table 1, and 
+Table 1 in the Supplementary Appendix). This rate 
+is similar to that previously reported in chronic 
+lymphocytic leukemia and other hematologic can-
+cers.5-7,13,14 We observed no significant difference 
+in the rates of nonsynonymous mutation between 
+tumors with mutated genes and those with un-
+mutated genes or in tumors in different clinical 
+stages of disease (Table 2 in the Supplementary 
+Appendix). Prior exposure to chemotherapy (in 
+30 of 91 patients) was not associated with an in-
+creased rate of nonsynonymous mutation (P = 0.14) 
+(Fig. 1B in the Supplementary Appendix).15
+Identification of Genes with Significant 
+Mutation Frequencies
+To identify genes whose mutations were associ-
+ated with leukemic tumorigenesis (“driver” mu-
+tations), we examined all 91 leukemic and nor-
+mal pairs with the use of the MutSig algorithm 
+for genes that were mutated at a rate signifi-
+cantly higher than the background rate, given their 
+sequence composition (see the Supplementary 
+Appendix). Nine such genes were identified (Q≤0.1 
+after correction for multiple-hypothesis testing): 
+TP53, SF3B1, MYD88, ATM, FBXW7, NOTCH1, ZMYM3, 
+DDX3X, and MAPK1 (Fig. 1). Whereas the overall 
+ratio of nonsynonymous to synonymous muta-
+tions was 3.1:1, the mutations in these nine genes 
+were exclusively nonsynonymous (65:0, P<5×10−6) 
+(Table 1 in the Supplementary Appendix), a find-
+ing that further supports their functional impor-
+tance. Moreover, these mutations occurred exclu-
+sively in conserved sites across species (Fig. 2 in 
+the Supplementary Appendix).
+Four of the genes with significant mutation 
+frequencies, TP53, ATM, MYD88, and NOTCH1, 
+have been described previously in chronic lym-
+phocytic leukemia.6,16-18 We found 15 TP53 mu-
+tations in 14 of 91 patients (15%; Q≤6.3×10−8), 
+most of which were localized to the DNA-bind-
+ing domain that is critical for its tumor-suppres-
+sor activity17 (Fig. 3A in the Supplementary Ap-
+pendix). In 8 patients (9%), we detected 9 ATM 
+mutations (Q≤1.1×10−5) scattered across this large 
+gene, including in regions where mutation has 
+been associated with defective DNA repair in 
+patients with chronic lymphocytic leukemia.16 
+MYD88, a critical adaptor molecule of the inter-
+leukin-1 receptor–toll-like receptor (TLR) signal-
+ing pathway, harbored missense mutations in 
+9 patients (10%) at three sites localized within 
+40 amino acids of the interleukin-1 receptor–
+TLR domain. One site was novel (P258L), where-
+as the other two were identical to those recently 
+described as activating mutations of the nuclear 
+factor κB (NF-κB)–TLR pathway in patients with 
+diffuse large B-cell lymphoma (M232T and L265P) 
+(Fig. 3C in the Supplementary Appendix).19 Fi-
+nally, we detected a recurrent frameshift muta-
+tion (P2514fs) in the C-terminal PEST domain of 
+NOTCH1 in 4 patients (4%) that was identical to 
+that recently reported in other investigations of 
+chronic lymphocytic leukemia.5,6 This mutation is 
+associated with unmutated IGHV and a poor prog-
+Table 1. Summary Metrics of Whole-Genome 
+and Whole-Exome Sequencing Studies.*
+Variable
+Value†
+Whole genomes
+No.
+3
+Bases covered per genome — %
+70
+Genome coverage
+CLL samples
+38x
+Normal samples
+33x
+Whole exomes
+No.
+88
+Bases covered per exome — %
+81
+Exome coverage
+CLL samples
+132x
+Normal samples
+146x
+Nonsynonymous mutations
+No. of mutations per megabase
+0.7±0.36
+Coding mutations — no. (range)
+20 (2–76)
+Synonymous mutations
+No. of mutations per megabase
+0.2±0.16
+Coding mutations — no. (range)
+5.8 (0–31)
+*	Plus–minus values are means ±SD. CLL denotes chronic 
+lymphocytic leukemia.
+†	In 38x, 33x, 132x, and 146x, “x” denotes the average 
+number of reads covering each nucleotide base that was 
+sequenced.
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+The new engl and jour nal of medicine
+n engl j med 365;26 nejm.org december 29, 2011
+2500
+nosis,5,6 and it is predicted to cause impaired deg-
+radation of NOTCH1, leading to pathway activation.
+Five of the genes with significant mutation 
+frequencies (SF3B1, FBXW7, DDX3X, MAPK1, and 
+ZMYM3) do not have established roles in chronic 
+lymphocytic leukemia. Strikingly, the second most 
+frequently mutated gene in our cohort was splic-
+ing factor 3b, subunit 1 (SF3B1), with missense 
+mutations occurring in 14 of 91 patients (15%). 
+SF3B1 is a component of the SF3b complex, which 
+is associated with the U2 small nuclear ribonu-
+cleoprotein (snRNP) at the catalytic center of the 
+spliceosome.20 SF3B1, other U2 snRNP compo-
+nents, and defects in splicing are not typically 
+implicated in the biology of chronic lymphocytic 
+leukemia. Remarkably, all 14 mutations were lo-
+calized within C-terminal PP2A-repeat regions 
+5 through 8, which are highly conserved from 
+humans to yeasts (Fig. 2 and 3 in the Supplemen-
+tary Appendix), and in 7 instances, an identical 
+amino acid change was produced (by the K700E 
+mutation). The clustering of heterozygous muta-
+tions within specific domains and at identical 
+sites suggests that mutations in SF3B1, like those 
+in MYD88 and NOTCH1, cause specific functional 
+changes. Whereas the N-terminal domain of 
+SF3B1 is known to interact directly with other 
+spliceosome components,20 the precise role of 
+its C-terminal domain remains unknown. Only 
+6 mutations have been reported in SF3B1, all in 
+solid tumors and in the PP2A-repeat region 
+(Table 4 in the Supplementary Appendix).
+The four remaining genes with significant 
+mutation frequencies have not, to our knowledge, 
+been reported in previous studies of chronic lym-
+phocytic leukemia and appear to have functions 
+that interact with the five commonly mutated 
+genes cited above (Fig. 3 in the Supplementary 
+Appendix). FBXW7 (four distinct mutations) is a 
+ubiquitin ligase that is known to be a tumor-
+suppressor gene, with loss of expression in a 
+wide range of cancers.21,22 Its targets include 
+important oncoproteins such as Notch1, c-Myc, 
+c-Jun, cyclin E1, and MCL1.21,22 Two of the four 
+mutations in FBXW7 cause constitutive Notch 
+signaling in T-cell acute lymphoblastic leuke-
+mia.23 DDX3X (three distinct mutations) is an 
+RNA helicase that functions at multiple levels of 
+RNA processing, including RNA splicing, trans-
+port, and translation initiation as well as regu-
+lation of an RNA-sensing proinflammatory 
+pathway.24 DDX3X interacts directly with XPO1,24
+which was recently reported as being mutated in 
+2.4% of patients with chronic lymphocytic leuke-
+Genes with Significant
+Mutation Frequency
+SF3B1
+TP53
+MYD88
+ATM
+NOTCH1
+ZMYM3
+MAPK1
+FBXW7
+DDX3X
+SF3B1
+TP53
+15 (15)
+14 (15)
+9 (10)
+9 (9)
+4 (4)
+4 (4)
+4 (4)
+3 (3)
+3 (3)
+119,041
+359,856
+73,805
+837,986
+225,671
+306,968
+314,226
+181,343
+89,405
+<1.0×10−11
+<1.0×10−11
+<1.0×10−11
+2.4×10−9  
+2.0×10−6  
+3.3×10−6  
+3.5×10−5  
+1.6×10−5  
+1.9×10−5  
+<6.3×10−8
+<6.3×10−8
+<6.3×10−8
+1.1×10−5
+7.4×10−3
+1.0×10−2
+7.4×10−2
+4.3×10−2
+4.4×10−2
+MYD88
+ATM
+NOTCH1
+ZMYM3
+MAPK1
+FBXW7
+DDX3X
+0
+4
+8
+12
+16
+No. of Mutations per 91 Patients
+No. of
+Mutations
+(%)
+No. of
+Base
+Pairs
+P Value
+Q Value
+Figure 1. Genes with Significant Mutation Frequencies in 91 Patients with Chronic Lymphocytic Leukemia.
+The figure shows the number of mutations per gene that were found at a significant frequency, the percentage of 
+patients who had each mutated gene, and for each gene, the total territory in numbers of base pairs with sufficient 
+sequencing coverage across normal and malignant samples from the 91 patients. The P values and Q values were 
+calculated by comparing the probability of the observed constellation of mutations with the background mutation 
+rates across the data set.
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+Novel Cancer Genes in Chronic Lymphocytic Leukemia
+n engl j med 365;26  nejm.org  december 29, 2011
+2501
+mia.6 MAPK1 (three distinct mutations), also known 
+as ERK, is a kinase that is involved in core cellular 
+processes, such as proliferation, differentiation, 
+transcription regulation, and development, and 
+is a key signaling component of the TLR path-
+way.25,26 Two of three distinct MAPK1 mutations 
+localize to the protein kinase domain; these mu-
+tations, to our knowledge, are the first reported 
+examples of somatic mutations within the pro-
+tein kinase domain of an ERK family member in 
+a human cancer. Finally, we identified four dis-
+tinct mutations in ZMYM3, a component of mul-
+tiprotein complexes containing histone deacety-
+lase that function to silence genes by modifying 
+chromatin structure.27
+We validated the three most frequently recur-
+ring mutations — SF3B1–K700E, MYD88–L265P, 
+and NOTCH1–P2514fs — in 101 independent paired 
+tumor and germline DNA samples, with similar 
+detection frequencies in the discovery and exten-
+sion cohorts (P = 0.20, P = 0.58, and P = 0.38, respec-
+tively) (Table 5 in the Supplementary Appendix).
+The nine genes with mutations at significant 
+frequencies appear in five core signaling path-
+ways, in which the genes play well-established 
+roles: DNA repair and cell-cycle control (TP53 and 
+ATM), Notch signaling (FBXW7 and NOTCH123), 
+inflammatory pathways (MYD88, DDX3X, and 
+MAPK1), and RNA splicing and processing (SF3B1 
+and DDX3X) (Fig. 2). We also noticed that addi-
+tional genes are mutated in these pathways28 
+(Fig. 2, and Fig. 4 and Table 6 in the Supplemen-
+tary Appendix). Although the frequency of muta-
+tions in these genes does not reach statistical 
+significance, whether they are considered alone 
+or as a set, it might do so in a larger collection 
+of samples. On the other hand, in our cohort, 
+19 of 59 genes classified as members of the Wnt 
+signaling pathway, which has been implicated in 
+chronic lymphocytic leukemia in gene-expression 
+studies,29,30 were mutated. Although no individual 
+gene had a frequency of mutation that reached 
+significance, the genes involved in the Wnt path-
+way, as a set, had a high mutation frequency 
+(P = 0.048) (Fig. 2).
+Association of Driver Mutations  
+with Distinct Clinical Groups
+To examine the association between driver muta-
+tions and particular clinical features, we as-
+sessed the cytogenetic aberrations associated 
+with chronic lymphocytic leukemia and IGHV 
+mutation status in samples harboring mutations 
+in the nine genes with significant mutation fre-
+quencies. We ordered the samples in accordance 
+with their cytogenetic features on fluorescence 
+in situ hybridization (FISH), using an established 
+model of hierarchical risk3; del(13q) was associ-
+ated with the most favorable prognosis when 
+present alone, trisomy 12 was associated with a 
+less-favorable prognosis, and del(11q) and del(17p) 
+were both associated with aggressive disease that 
+was refractory to chemotherapy (Fig. 3, and Tables 
+7 and 8 in the Supplementary Appendix).
+The distinct prognostic implications of these 
+cytogenetic abnormalities suggest that each ab-
+normality may reflect a distinct pathogenesis. 
+Our data show that different driver mutations 
+are associated with different key abnormalities 
+detected on FISH, providing support for this hy-
+pothesis. Most of the TP53 mutations (11 of 17) 
+were present in samples that also harbored del(17p) 
+(P<0.001), resulting in homozygous p53 inactiva-
+tion; this finding is consistent with previous ob-
+servations.17 Mutations in ATM, which lies in the 
+minimally deleted region of chromosome 11q, 
+were marginally associated with del(11q) — that 
+is, in 4 of 22 del(11q) samples (P = 0.09). Strikingly, 
+mutations in SF3B1 were associated with del(11q) 
+— in 8 of 22 del(11q) samples (36%, P = 0.004). 
+Of the 6 leukemic samples with mutated SF3B1 
+and without del(11q), 2 also harbored a hetero-
+zygous mutation in ATM. These findings strongly 
+suggest that there is an interaction between del(11q) 
+and SF3B1 mutation in the pathogenesis of this 
+clinical subgroup of chronic lymphocytic leukemia.
+We further observed that the mutations in 
+NOTCH1 and FBXW7 were associated with triso-
+my 12 (P = 0.009 and P = 0.05, respectively). As in 
+previous studies,5,6 NOTCH1 mutations were con-
+sistently associated with unmutated IGHV. The 
+NOTCH1 and FBXW7 mutations were present in 
+independent samples, suggesting that they may 
+lead to aberrant Notch signaling in patients with 
+trisomy 12 and unmutated IGHV.
+All MYD88 mutations were present in samples 
+that were heterozygous for del(13q) (P = 0.009). 
+As indicated in recent reports,5,6 we found that 
+the MYD88 mutation was always associated with 
+mutations in the IGHV region (P = 0.001), which 
+suggests a postgerminal-center origin. We spec-
+ulate that in chronic lymphocytic leukemia, as in 
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+The new engl and jour nal of medicine
+n engl j med 365;26  nejm.org  december 29, 2011
+2502
+diffuse large B-cell lymphoma, in which MYD88 
+is frequently mutated,19 the constitutive activa-
+tion of the NF-κB pathway may have its greatest 
+effect in the germinal center.
+SF3B1 Mutations
+In the 192 leukemic samples in the discovery and 
+extension sets, mutations in NOTCH1 were asso-
+ciated with unmutated IGHV status and muta-
+tions in MYD88 were associated with mutated 
+IGHV status. The mutation SF3B1–K700E was as-
+sociated with unmutated IGHV status (P = 0.048), 
+but it was also detected in samples with mutat-
+ed IGHV, which suggests that it is an indepen-
+dent risk factor for chronic lymphocytic leuke-
+mia (Fig. 5A in the Supplementary Appendix). 
+Indeed, a Cox multivariable regression model 
+designed to test for clinical factors contributing 
+to an earlier initiation of treatment in the 91 
+patients in the study revealed that an SF3B1 mu-
+tation was predictive of an earlier need for treat-
+ment (hazard ratio, 2.20; P = 0.03), independent-
+ly of other established predictive markers, such 
+as IGHV mutation status, del(17p), or an ATM mu-
+tation (Fig. 4A).
+Consistent with the results of these analyses 
+was the finding that the time to initial treat-
+ment for patients with the SF3B1 mutation 
+alone — without del(11q) — was similar to that 
+for patients with del(11q) alone or with both 
+del(11q) and an SF3B1 mutation. All three groups 
+had significantly shorter times to initial treat-
+ment than patients without an SF3B1 mutation 
+or without del(11q) (Fig. 5B in the Supplemen-
+tary Appendix) (P<0.001). Similarly, shorter times 
+to initial treatment were observed among 3 pa-
+tients in the extension cohort whose tumors 
+harbored the SF3B1–K700E mutation as com-
+pared with those whose tumors did not show 
+this mutation. Because SF3B1 encodes a splicing 
+factor that lies at the catalytic core of the splice­
+osome, we looked for functional evidence of 
+alterations in splicing associated with an SF3B1 
+mutation. Kotake et al. previously used intron 
+retention in the endogenous genes BRD2 and 
+RIOK3 to test the function of the SF3b com-
+plex.10 We confirmed that E7107, which targets 
+this complex, inhibits the splicing of BRD2 and 
+RIOK3 in both normal cells and chronic lym-
+phocytic leukemia cells (Fig. 6A in the Supple-
+mentary Appendix). Using this assay, we found 
+aberrant endogenous splicing activity in tumor 
+samples from 13 patients with mutated SF3B1 
+as compared with 17 patients with wild-type 
+SF3B1, and the ratio of unspliced to spliced 
+mRNA forms of BRD2 and RIOK3 was signifi-
+cantly higher in patients with SF3B1 mutations 
+(median ratio, 2.0:1 vs. 0.55:1 [P<0.001], and 
+4.6:1 vs. 2.1:1 [P = 0.006], respectively) (Fig. 4B). 
+In contrast, no splicing defects were detected in 
+samples with the del(11q) defect and wild-type 
+SF3B1 as compared with samples with the 
+del(11q) defect and mutated SF3B1 (Fig. 6 in the 
+Supplementary Appendix). These studies indi-
+cate that splicing function in chronic lympho-
+cytic leukemia is altered as a result of a muta-
+tion in SF3B1 rather than del(11q).
+Discussion
+Massively parallel sequencing technology has 
+dramatically accelerated the discovery of genetic 
+alterations in cancer.5,6,14 Our analysis of sam-
+ples from 91 patients with chronic lymphocytic 
+leukemia provided the statistical power to iden-
+tify the involvement of nine driver genes and to 
+suggest the involvement of six distinct pathways 
+in the pathogenesis of this disease. Moreover, we 
+discovered novel associations with prognostic 
+markers that shed light on the biology underly-
+ing this clinically heterogeneous disease.
+The data led us to several general conclu-
+sions. First, like other hematologic cancers,14 
+chronic lymphocytic leukemia has a lower rate 
+of somatic mutation than most solid tumors.5,6 
+Second, the rate of nonsynonymous mutation 
+was not strongly affected by therapy. Third, in 
+addition to finding the expected mutations in 
+cell-cycle and DNA-repair pathways, we found 
+Figure 2 (facing page). Core Signaling Pathways 
+in Chronic Lymphocytic Leukemia.
+The nine genes with significant mutation frequencies 
+fall into five core signaling pathways, in which the genes 
+play well-established roles: DNA damage repair and cell-
+cycle control (Panel A), Notch signaling (Panel B), in-
+flammatory pathways (Panel C), Wnt signaling (Panel D), 
+and RNA splicing and processing (Panel E). Genes with 
+significant mutation frequencies are shown in red, and 
+genes with mutations that are in a signaling pathway 
+­related to chronic lymphocytic leukemia are shown in 
+pink. A list of additional pathway-associated genes with 
+mutations is provided in Table 6 in the Supplementary 
+Appendix. Co-A denotes coenzyme A, TLR toll-like re-
+ceptor, and TNFR tumor necrosis factor receptor.
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+Novel Cancer Genes in Chronic Lymphocytic Leukemia
+n engl j med 365;26 nejm.org december 29, 2011
+2503
+genetic alterations in Notch signaling, inflam-
+matory pathways, and RNA splicing and process-
+ing. Fourth, driver mutations showed striking as-
+sociations with standard prognostic markers, 
+suggesting that particular combinations of genetic 
+alterations may act in concert to drive cancer.
+CHD8
+MYC
+Wnt
+MYD88
+DNA Damage and
+Cell-Cycle Control
+Notch Signaling
+Extracellular
+space
+Delta/Jagged
+IC
+Notch
+Target
+genes
+Proinflammatory
+cytokines
+Transcription
+Inflammatory Pathways
+Cell
+membrane
+Cell
+membrane
+TLR8
+CD14
+MYD88
+TLRs
+Interleukin-
+1R
+TNFR1
+RIPK1
+RYK
+FZD5
+Wnt Pathway
+DKK2
+LRP5/6
+Frizzled
+Dishevelled
+WNT1
+CSNK1E
+PRICKLE1
+Multiprotein
+destruction
+complex
+β-Catenin
+Proteosomal
+degradation
+β-Catenin
+β
+P
+P
+β-Catenin
+LEF/TCF
+β-Catenin
+RNA Splicing and Processing
+Nucleus
+5'
+Intron 3'
+3'-End
+processing
+Exon
+Exon
+Exon
+Exon
+Splicing
+Spliceosome
+mRNA
+export
+mRNA
+Pre-mRNA
+Translation
+initiation
+Protein
+Nucleus
+Intracellular
+space
+DNA
+damage
+ATM
+ATM
+FBXW7
+IC-Notch
+TP53
+DNA
+damage repair
+PTTG1
+ESPL1
+HDAC4
+E2F3
+CCNB3
+Genes with significant
+mutation frequency
+Other pathway-associated
+genes
+SMC1A
+ERCC4
+BRCA1
+FANCA
+MSH4
+CREBBP
+MAPK8
+IRAK4
+TRAF3
+PPM1A
+PPM1A
+SPOP
+CPSF2
+RBM39
+PRPF8
+U2AF2
+XPO1
+IKBα
+MAP3K14/
+NIK
+MAPK1
+(ERK)
+DDX3X
+A
+E
+B
+C
+D
+Cell-cycle
+control
+CDC14B
+ANAPC4
+Co-A
+CSL
+C-Notch
+SF3B1
+DDX3X
+β-Catenin
+Metalloprotease
+γ-Secretase
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+The new engl and jour nal of medicine
+n engl j med 365;26 nejm.org december 29, 2011
+2504
+A major surprise was the finding that a core 
+spliceosome component, SF3B1, was mutated in 
+about 15% of the study patients. Further analysis 
+revealed that samples with SF3B1 mutations had 
+enhanced intron retention within two specific 
+transcripts previously shown to be affected by 
+compounds that disrupt SF3b spliceosome func-
+tion.10,31 Studies of these compounds have sug-
+gested that rather than inducing a global change 
+in splicing, SF3b inhibitors alter the splicing of 
+a narrow spectrum of transcripts derived from 
+genes involved in cancer-related processes, in-
+cluding cell-cycle control (p27, CCA2, STK6, and 
+MDM2),31-33 angiogenesis, and apoptosis.34 Our 
+results suggest that SF3B1 mutations lead to mis-
+takes in the splicing of these and other specific 
+transcripts that affect the pathogenesis of 
+chronic lymphocytic leukemia. Ongoing studies 
+will focus on determining how mutations in 
+SF3B1 alter its function in the processing of criti-
+cal mRNAs.
+Since mutations in SF3B1 are highly enriched 
+in patients with del(11q), these mutations may 
+be synergistic with loss of ATM, a hypothesis 
+that is supported by the observation that two 
+patients had point mutations in both ATM and 
+SF3B1 but did not have del(11q). Providing fur-
+ther support for this hypothesis, a recent unbi-
+ased functional screen showed that core spliceo-
+some components were required for DNA repair 
+in mammalian cells.35
+As illustrated by our findings regarding SF3B1
+mutations, identification of coding mutations in 
+chronic lymphocytic leukemia can lead to the 
+development of mechanistic hypotheses, novel 
+prognostic markers, and potential therapeutic 
+P=0.009
+P=0.009
+P=0.001
+P=0.004
+P<0.001
+TP53
+ATM
+SF3B1
+DDX3X
+NOTCH1
+FBXW7
+MYD88
+MAPK1
+ZMYM3
+Additional
+Additional
+Additional
+1
+91
+del(13q)
+del(11q)
+del(17p)
+Trisomy 12
+Cell cycle or
+DNA damage
+RNA
+processing
+Notch1
+signaling
+Inflammatory
+pathway
+Genes with Significant Mutation Frequency
+and Related Pathways
+IGHV
+Mutation
+Status
+FISH Cytogenetic
+Features
+Figure 3. Associations between Gene Mutations and Clinical Characteristics.
+Samples from the 91 patients in the study were sorted by means of fluorescence in situ hybridization (FISH), with the use of a model of 
+hierarchical risk established by Döhner et al.3 Samples were scored for the presence or absence of mutations in the nine genes with sig-
+nificant mutation frequencies (darker colors), as well as for mutations in additional pathway-associated genes (lighter colors) and in the 
+immunoglobulin heavy-chain variable (IGHV) mutation status (blue indicates mutation, white no mutation, and hatched unknown sta-
+tus). (A list of additional mutated pathway-associated genes is provided in Table 6 in the Supplementary Appendix.) Associations be-
+tween gene mutation status and FISH cytogenetic features or IGHV status were calculated with the use of Fisher’s exact test and cor-
+rected for multiple hypothesis testing (Q≤0.1 for all comparisons shown).
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+Novel Cancer Genes in Chronic Lymphocytic Leukemia
+n engl j med 365;26 nejm.org december 29, 2011
+2505
+targets. In addition, this information provides a 
+starting point for the systematic analyses needed 
+to address several fundamental questions con-
+cerning chronic lymphocytic leukemia, includ-
+ing which genes within chromosomal deletions 
+and amplifications are essential, how each mu-
+tation alters cellular networks and phenotypes, 
+which combinations of mutations are critical in 
+the development of cancer, and how genetic 
+events in the host may affect the importance of 
+specific mutations and their combinations.
+Supported by the Broad Institute through a grant from the 
+National Human Genome Research Institute at the National In-
+stitutes of Health (U54HG003067) and by grants from the Na-
+tional Institutes of Health (GM43375, to Drs. Folco and Reed, 
+and K23 CA115682, to Dr. Brown), the National Cancer Institute 
+(5R21CA115043-2), the Melton and Rosenbach Funds (to Dr. 
+Brown), the Blavatnik Family Foundation (to Dr. Wu), the Early 
+Career Physician-Scientist Award of the Howard Hughes Medical 
+Institute (to Dr. Wu), and the Damon Runyon Cancer Research 
+Foundation (CI-38-07, to Dr. Wu). Dr. Brown is a Scholar of the 
+American Society of Hematology and a Scholar in Clinical Re-
+search of the Leukemia and Lymphoma Society.
+Disclosure forms provided by the authors are available with 
+the full text of this article at NEJM.org.
+We thank all members of the Biological Samples Platform, 
+Genetic Analysis Platform, and Genome Sequencing Platform at 
+the Broad Institute, without whom this work would not have 
+been possible; Dan-Avi Landau and Jerome Ritz for their critical 
+reading of an earlier draft of the manuscript; James Rheinwald 
+and Patricia Barron of the Cell Culture Core at the Harvard Skin 
+Disease Research Center for initiating the primary human der-
+mal fibroblast cell lines used in this study; and the Chronic 
+Lymphocytic Leukemia Research Consortium Biorepository for 
+providing information on some of our samples.
+8
+6
+4
+2
+0
+Normal CD19+
+B Cells
+(N=6)
+SF3B1
+Wild Type
+(N=17)
+RIOK3
+SF3B1
+Mutation
+(N=13)
+B
+A
+8
+6
+4
+2
+Ratio of Unspliced to Spliced mRNA
+10
+0
+BRD2
+Variable
+Hazard Ratio (95% CI)
+P Value
+IGHV
+Unmutated vs. mutated
+Missing vs. mutated
+del(17p)
+Present vs. absent
+SF3B1
+Mutation vs. wild type
+ATM
+Mutation vs. wild type
+5.07 (2.62–9.81)
+1.38 (0.53–3.58)
+2.85 (1.45–5.59)
+2.20 (1.07–4.54)
+3.77 (1.48–9.58)
+<0.001  
+0.51  
+  0.002  
+  0.03    
+0.005
+P=0.006
+P=0.009
+P<0.0001
+P<0.0003
+Figure 4. Mutations in SF3B1 and Altered mRNA Splicing.
+In Panel A, a Cox multivariable regression model de-
+signed to test for clinical factors contributing to the need 
+for earlier initiation of treatment showed that an SF3B1 
+mutation was an independent predictor of a shorter time 
+to treatment, regardless of the status of several other in-
+dependent predictive markers. Panel B shows the rela-
+tive amounts of spliced and unspliced spliceosome tar-
+get messenger RNA (mRNA) in BRD2 and RIOK3 in 
+normal CD19+ B cells and chronic lymphocytic leukemia 
+B cells with wild-type or mutated SF3B1, as measured by 
+means of a quantitative polymerase-chain-reaction assay. 
+The ratios of unspliced to spliced mRNA were normal-
+ized to the percentage of leukemia cells per sample, and 
+comparisons were calculated with the use of the Wilcox-
+on rank-sum test. CI denotes confidence interval.
+References
+1. Zenz T, Mertens D, Küppers R, Döh-
+ner H, Stilgenbauer S. From pathogene-
+sis to treatment of chronic lymphocytic 
+leukaemia. Nat Rev Cancer 2010;10:37-
+50.
+2. Rassenti LZ, Huynh L, Toy TL, et al. 
+ZAP-70 compared with immunoglobulin 
+heavy-chain gene mutation status as a 
+predictor of disease progression in chron-
+ic lymphocytic leukemia. N Engl J Med 
+2004;351:893-901.
+3. Döhner H, Stilgenbauer S, Benner A, 
+et al. Genomic aberrations and survival in 
+chronic lymphocytic leukemia. N Engl J 
+Med 2000;343:1910-6.
+4. Tiacci E, Trifonov V, Schiavoni G, et 
+al. BRAF mutations in hairy-cell leuke-
+mia. N Engl J Med 2011;364:2305-15.
+5. Fabbri G, Rasi S, Rossi D, et al. Analy-
+sis of the chronic lymphocytic leukemia 
+coding genome: role of NOTCH1 muta-
+tional activation. J Exp Med 2011;208:
+1389-401.
+6. Puente XS, Pinyol M, Quesada V, et al. 
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.
+
+n engl j med 365;26  nejm.org  december 29, 2011
+2506
+Novel Cancer Genes in Chronic Lymphocytic Leukemia
+Whole-genome sequencing identifies re-
+current mutations in chronic lymphocytic 
+leukaemia. Nature 2011;475:101-5.
+7.	 Chapman MA, Lawrence MS, Keats JJ, 
+et al. Initial genome sequencing and anal-
+ysis of multiple myeloma. Nature 2011; 
+471:467-72.
+8.	 Cancer Genome Atlas Research Net-
+work. Integrated genomic analyses of ovar-
+ian carcinoma. Nature 2011;474:609-15.
+9.	 DePristo MA, Banks E, Poplin R, et al. 
+A framework for variation discovery and 
+genotyping using next-generation DNA se-
+quencing data. Nat Genet 2011;43:491-8.
+10.	 Kotake Y, Sagane K, Owa T, et al. 
+Splicing factor SF3b as a target of the an-
+titumor natural product pladienolide. Nat 
+Chem Biol 2007;3:570-5.
+11.	 Berger MF, Lawrence MS, Demichelis 
+F, et al. The genomic complexity of pri-
+mary human prostate cancer. Nature 2011; 
+470:214-20.
+12.	 Robinson JT, Thorvaldsdóttir H, Winck­
+ler W, et al. Integrative genomics viewer. Nat 
+Biotechnol 2011;29:24-6.
+13.	 Mardis ER, Ding L, Dooling DJ, et al. 
+Recurring mutations found by sequencing 
+an acute myeloid leukemia genome. N Engl 
+J Med 2009;361:1058-66.
+14.	 Ley TJ, Mardis ER, Ding L, et al. DNA 
+sequencing of a cytogenetically normal 
+acute myeloid leukaemia genome. Nature 
+2008;456:66-72.
+15.	 Cancer Genome Atlas Research Net-
+work. Comprehensive genomic character-
+ization defines human glioblastoma 
+genes and core pathways. Nature 2008; 
+455:1061-8.
+16.	 Austen B, Powell JE, Alvi A, et al. Mu-
+tations in the ATM gene lead to impaired 
+overall and treatment-free survival that 
+is independent of IGVH mutation status 
+in patients with B-CLL. Blood 2005;106: 
+3175-82.
+17.	 Zenz T, Eichhorst B, Busch R, et al. 
+TP53 mutation and survival in chronic 
+lymphocytic leukemia. J Clin Oncol 2010; 
+28:4473-9.
+18.	 Trbusek M, Smardova J, Malcikova J, 
+et al. Missense mutations located in struc-
+tural p53 DNA-binding motifs are associ-
+ated with extremely poor survival in chronic 
+lymphocytic leukemia. J Clin Oncol 2011; 
+29:2703-8.
+19.	 Ngo VN, Young RM, Schmitz R, et al. 
+Oncogenically active MYD88 mutations in 
+human lymphoma. Nature 2011;470:115-9.
+20.	 Wahl MC, Will CL, Lührmann R. The 
+spliceosome: design principles of a dynam-
+ic RNP machine. Cell 2009;136:701-18.
+21.	 Yada M, Hatakeyama S, Kamura T, et al. 
+Phosphorylation-dependent degradation of 
+c-Myc is mediated by the F-box protein 
+Fbw7. EMBO J 2004;23:2116-25.
+22.	 Babaei-Jadidi R, Li N, Saadeddin A, et 
+al. FBXW7 influences murine intestinal 
+homeostasis and cancer, targeting Notch, 
+Jun, and DEK for degradation. J Exp Med 
+2011;208:295-312.
+23.	 O’Neil J, Grim J, Strack P, et al. FBW7 
+mutations in leukemic cells mediate 
+NOTCH pathway activation and resistance 
+to gamma-secretase inhibitors. J Exp Med 
+2007;204:1813-24.
+24.	 Rosner A, Rinkevich B. The DDX3 
+subfamily of the DEAD box helicases: di-
+vergent roles as unveiled by studying dif-
+ferent organisms and in vitro assays. Curr 
+Med Chem 2007;14:2517-25.
+25.	 Pepper C, Thomas A, Hoy T, Milligan 
+D, Bentley P, Fegan C. The vitamin D3 
+analog EB1089 induces apoptosis via a 
+p53-independent mechanism involving p38 
+MAP kinase activation and suppression of 
+ERK activity in B-cell chronic lymphocytic 
+leukemia cells in vitro. Blood 2003;101: 
+2454-60.
+26.	 Muzio M, Apollonio B, Scielzo C, et 
+al. Constitutive activation of distinct BCR-
+signaling pathways in a subset of CLL pa-
+tients: a molecular signature of anergy. 
+Blood 2008;112:188-95.
+27.	 Lee MG, Wynder C, Cooch N, Shie­
+khattar R. An essential role for CoREST in 
+nucleosomal histone 3 lysine 4 demethyl-
+ation. Nature 2005;437:432-5.
+28.	 Subramanian A, Tamayo P, Mootha 
+VK, et al. Gene set enrichment analysis: a 
+knowledge-based approach for interpret-
+ing genome-wide expression profiles. Proc 
+Natl Acad Sci U S A 2005;102:15545-50.
+29.	 Gutierrez A Jr, Tschumper RC, Wu X, 
+et al. LEF-1 is a prosurvival factor in 
+chronic lymphocytic leukemia and is ex-
+pressed in the preleukemic state of mono-
+clonal B-cell lymphocytosis. Blood 2010; 
+116:2975-83.
+30.	 Klein U, Tu Y, Stolovitzky GA, et al. 
+Gene expression profiling of B cell chron-
+ic lymphocytic leukemia reveals a homo-
+geneous phenotype related to memory 
+B cells. J Exp Med 2001;194:1625-38.
+31.	 Kaida D, Motoyoshi H, Tashiro E, et 
+al. Spliceostatin A targets SF3b and inhib-
+its both splicing and nuclear retention of 
+pre-mRNA. Nat Chem Biol 2007;3:576-83.
+32.	 Corrionero A, Miñana B, Valcárcel J. 
+Reduced fidelity of branch point recogni-
+tion and alternative splicing induced by the 
+anti-tumor drug spliceostatin A. Genes Dev 
+2011;25:445-59.
+33.	 Fan L, Lagisetti C, Edwards CC, Webb 
+TR, Potter PM. Sudemycins, novel small 
+molecule analogues of FR901464, induce 
+alternative gene splicing. ACS Chem Biol 
+2011;6:582-9.
+34.	 Massiello A, Roesser JR, Chalfant CE. 
+SAP155 binds to ceramide-responsive RNA 
+cis-element 1 and regulates the alternative 
+5′ splice site selection of Bcl-x pre-mRNA. 
+FASEB J 2006;20:1680-2.
+35.	 Paulsen RD, Soni DV, Wollman R, et 
+al. A genome-wide siRNA screen reveals 
+diverse cellular processes and pathways 
+that mediate genome stability. Mol Cell 
+2009;35:228-39.
+Copyright © 2011 Massachusetts Medical Society.
+an nejm app for iphone
+The NEJM Image Challenge app brings a popular online feature to the smartphone. 
+Optimized for viewing on the iPhone and iPod Touch, the Image Challenge app lets 
+you test your diagnostic skills anytime, anywhere. The Image Challenge app 
+randomly selects from 300 challenging clinical photos published in NEJM,  
+with a new image added each week. View an image, choose your answer,  
+get immediate feedback, and see how others answered.  
+The Image Challenge app is available at the iTunes App Store.
+The New England Journal of Medicine
+Downloaded from nejm.org at MIT LIBRARIES on May 16, 2024. For personal use only. 
+ No other uses without permission. Copyright © 2011 Massachusetts Medical Society. All rights reserved.

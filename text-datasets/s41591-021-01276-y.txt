@@ -1,0 +1,253 @@
+375
+news & views
+Nature Medicine | VOL 27 | March 2021 | 372–379 | www.nature.com/naturemedicine
+References
+	1.	 Permanyer, I. & Scholl, N. PLoS One 14, e0215742 (2019).
+	2.	 United Nations, Department of Economic and Social Affairs, 
+Population Division. https://www.un.org/development/desa/
+publications/world-population-prospects-2019-highlights.html 
+(2019).
+	3.	 Marmot, M., Allen, J., Bell, R., Bloomer, E. & Goldblatt, P. Lancet 
+380, 1011–1029 (2012).
+	4.	 Bilal, U. et al. Nat. Med. https://doi.org/10.1038/s41591-020-
+01214-4 (2021).
+	5.	 de Andrade, L. O. et al. Lancet 385, 1343–1351 (2015).
+	6.	 Rosengren, A. et al. Lancet Glob. Health 7, e748–e760 (2019).
+	7.	 Yusuf, S. et al. Lancet 395, 795–808 (2020).
+	8.	 Mackenbach, J. P. et al. Public Health 4, e529–e537 (2019).
+	9.	 Bilal, U. et al. Lancet Planet Health 3, e503–e510 (2019).
+	10.	Atun, R. et al. Lancet 385, 1230–1247 (2015).
+Competing interests
+The authors declare no competing interests.
+Credit: Andrei Krauchuk / Alamy Stock Vector
+ONCOLOGY
+Single-cell RNA sequencing: one step closer to 
+the clinic
+Single-cell RNA-sequencing can help in the prediction of drug resistance in patients with multiple myeloma.
+Romanos Sklavenitis-Pistofidis, Gad Getz and Irene Ghobrial
+M
+ultiple myeloma (MM), 
+the second-most-common 
+hematological malignancy 
+in the USA, comprises an 
+immunoglobulin-secreting plasma-cell 
+tumor that resides in the bone marrow 
+and can lead to permanent organ 
+damage and death1. Despite substantial 
+contributions by a highly active and 
+devoted research community, MM remains 
+a deadly disease, partly due to its marked 
+genetic heterogeneity that complicates 
+the discovery of universal biomarkers 
+and the development of ‘one-size-fits-all’ 
+therapy2. Although considerable advances 
+in MM therapeutics have improved patient 
+outcomes in recent years3–5, a major clinical 
+hurdle in curing this deadly and debilitating 
+disease has been that most patients with 
+MM eventually develop drug resistance  
+and relapse6,7. It is therefore imperative  
+to develop methods that can be used to 
+predict resistance to treatment  
+and alternative therapeutic options that 
+prevent or circumvent the development 
+of resistance. Now, in Nature Medicine, 
+Cohen et al. report that single-cell RNA 
+sequencing can be applied to patients’ 
+samples in the context of a clinical trial to 
+help in the prediction of resistance and to 
+guide therapeutic development to resensitize 
+tumors to drugs8.
+In the study, the authors used single-cell 
+RNA sequencing on bone-marrow samples 
+from patients with primary refractory 
+MM (PRMM) enrolled in the KYDAR 
+trial (a single-arm prospective trial of 
+daratumumab, carfilzomib, lenalidomide 
+and dexamethasone (DARA-KRD)). 
+Specifically, they performed MARS-seq 
+(massively parallel single-cell RNA 
+sequencing) on samples from a cohort  
+of 41 patients with PRMM who either  
+did not respond within the first 6 months  
+of therapy or progressed early during  
+the first 18 months of first-line treatment. 
+Serial samples were obtained from some  
+of these patients during treatment  
+(cycles 4 and 10).
+Comparing gene expression in tumor 
+cells from patients with PRMM versus 
+that in cells from healthy people, the 
+authors identified an expression signature 
+(module 1) that was upregulated in a subset 
+of patients with PRMM. That module 
+comprises genes encoding proteins related to 
+
+376
+news & views
+Nature Medicine | VOL 27 | March 2021 | 372–379 | www.nature.com/naturemedicine
+endoplasmic reticulum stress, the unfolded 
+protein response, and the proteasome 
+pathway, all of which are pathways relevant 
+to resistance to first-line proteasome 
+inhibitors.
+Notably, the authors found that 
+this transcriptional signature was an 
+independent risk factor of both progression 
+(progression-free survival) and death 
+(overall survival) in the KYDAR trial and in 
+an independent sample from the CoMMpass 
+study, a cohort of ~1,000 patients with newly 
+diagnosed MM for whom tumor DNA and 
+bulk RNA-sequencing data are available9. 
+These findings suggest that module 1 
+captures a resistance risk that is distinct 
+from that captured by standard clinical 
+risk-stratification systems. In fact, there is 
+substantial overlap between module 1 and a 
+DARA-KRD-resistance signature (generated 
+by comparison of patients with PRMM who 
+responded to DARA-KRD versus those who 
+did not), which suggests that this resistance 
+signature may be active and relevant 
+throughout the course of several lines  
+of treatment.
+Next, to explore if the resistance signature 
+could be used in clinics, in a prospective 
+manner, the authors developed a model 
+that can be applied to patients at baseline 
+to predict their response to DARA-KRD. 
+Although this model would be relevant for 
+the ~30% of patients who already harbor 
+resistant clones at baseline, it may also be 
+relevant for the ~40% of patients that have 
+small malignant clones that are undetectable 
+or non-existent at baseline but drive 
+progression through treatment selection and 
+evolution. For such cases, by dynamically 
+monitoring resistance in serial samples from 
+the KYDAR trial, this approach identified 
+resistant clones that appeared during 
+treatment. This result suggests that dynamic 
+monitoring of resistance while a patient is 
+being treated may allow the early detection 
+of an upcoming relapse, driven by small 
+resistant clones.
+While the use of gene-expression 
+profiling for risk-stratification purposes 
+has been previously applied to MM10, 
+the importance and novelty of this 
+study lie in the concurrent profiling of 
+tumor clonotypes with rearrangement of 
+variable-diversity-joining regions (which 
+serve as each tumor’s unique identity 
+tag11,12) and transcriptomes. In contrast to 
+the profiling of tumors in bulk, single-cell 
+sequencing approaches can differentiate 
+among clones within the same tumor, which 
+may or may not diverge substantially in 
+their drug-resistance capacity. Therefore, 
+this approach allows predictive scoring of 
+individual clones in every tumor and thus 
+may reveal smaller clones, some of which are 
+predicted to be resistant, even though the 
+majority of tumor cells may be sensitive to 
+therapy. Such cases would presumably evolve 
+under treatment and may need a different 
+regimen to achieve durable remissions. If 
+assessed in bulk, this signal would be diluted 
+across all clones, which would perhaps make 
+it undetectable, depending on the resistant 
+clone’s size. Furthermore, this approach 
+also enables the detection of small resistant 
+clones that appear while the patient is being 
+treated. This is particularly interesting, as 
+it underscores the utility of this method for 
+both profiling patients before treatment 
+initiation and dynamically assessing 
+responses while they are being treated.
+In the end, will this study change  
+clinical practice? And if not, what is  
+required for change? At present, single-cell 
+RNA sequencing is still too expensive  
+to be applied clinically as part of 
+standard-of-care treatment, and using 
+it to dynamically assess response in 
+patients with MM would require serial 
+bone-marrow biopsies, which are too 
+invasive to be allowed. Furthermore, the 
+resistance signature discovered in this study 
+is unlikely to be relevant for every regimen 
+and every patient. For example, although 
+this signature seems to be an important 
+predictor of resistance to proteasome 
+inhibitors, it was present in only ~5% of 
+newly diagnosed cases in the CoMMpass 
+cohort. Other alterations (e.g., mutations 
+in CRBN, which encodes cereblon) may be 
+important for resistance to lenalidomide 
+or other drugs13. Although this study is 
+not expected to change clinical practice 
+just yet, it does offer a blueprint for the 
+development of a drug-resistance atlas that 
+may indeed change clinical practice in the 
+future. For this vision to become a reality, 
+more whole-genome sequencing, single-cell 
+RNA sequencing and/or sequencing of 
+variable-diversity-joining regions, as well 
+as proteomics, will need to be performed 
+on patients being treated with different 
+regimens. Larger longitudinal cohorts are 
+needed in order to design comprehensive 
+resistance tests that may need to span 
+DNA, RNA and protein levels. By the time 
+this vision is achieved, clinical single-cell 
+sequencing may be feasible.
+❐
+Romanos Sklavenitis-Pistofidis1,2, 
+Gad Getz 
+ 2,3 and Irene Ghobrial 
+ 1,2,4 ✉
+1Department of Medical Oncology, Dana-Farber 
+Cancer Institute, Harvard Medical School, Boston, 
+MA, USA. 2Broad Institute of MIT and Harvard, 
+Cambridge, MA, USA. 3Department of Pathology, 
+Massachusetts General Hospital, Harvard Medical 
+School, Boston, MA, USA. 4Center for Prevention of 
+Progression of Blood Cancers, Dana-Farber Cancer 
+Institute, Boston, MA, USA.  
+✉e-mail: irene_ghobrial@dfci.harvard.edu
+Published online: 4 March 2021 
+https://doi.org/10.1038/s41591-021-01276-y
+References
+	1.	 National Cancer Institute Surveillance, Epidemiology, and End 
+Results Program. https://seer.cancer.gov/statfacts/html/mulmy.
+html (accessed 20 January 2021).
+	2.	 Kumar, S. K. & Rajkumar, S. V. Nat. Rev. Clin. Oncol. 15,  
+409–421 (2018).
+	3.	 Nunnelee, J. Z. Q. et al. Blood 134, 4573 (2019).
+	4.	 Thorsteinsdottir, S. et al. Haematologica 103, e412–e415 (2018).
+	5.	 Liu, Y., Tang, C. H., Qiu, H., Siggins, S. & Hou, H. A. Sci. Rep. 11, 
+1112 (2021).
+	6.	 Pinto, V. et al. Cancers (Basel) 12, 407 (2020).
+	7.	 Kumar, S. K. et al. Leukemia 26, 149–157 (2012).
+	8.	 Cohen, Y.C. et al. Nat. Med. https://doi.org/10.1038/s41591-021-
+01232-w (2021).
+	9.	 The Multiple Myeloma Research Foundation. https://themmrf.
+org/finding-a-cure/our-work/the-mmrf-commpass-study/ (2019 
+accessed 20 January 2021).
+	10.	Kuiper, R. et al. Blood 126, 1996–2004 (2015).
+	11.	Oberle, A. et al. Haematologica 102, 1105–1111 (2017).
+	12.	Scheijen, B. et al. Leukemia 33, 2227–2240 (2019).
+	13.	Gooding, S. et al. Blood 137, 232–237 (2021).
+Competing interests
+I.G. has a consulting and advisory role with Celgene, 
+Takeda, Bristol-Myers Squibb, Genentech, Janssen 
+Pharmaceuticals and Amgen, and has received research 
+funding/honoraria from Celgene, Takeda, Bristol-Myers 
+Squibb, Janssen Pharmaceuticals and Amgen. G.G. receives 
+research funds from IBM and Pharmacyclics; is an inventor 
+on patent applications related to MuTect, ABSOLUTE, 
+MutSig, MSMuTect, MSMutSig, MSIdetect, POLYSOLVER 
+and TensorQTL; and is a founder and consultant of and 
+holds privately held equity in Scorpion Therapeutics.

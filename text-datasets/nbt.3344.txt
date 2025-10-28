@@ -1,0 +1,1286 @@
+1152	
+VOLUME 33   NUMBER 11   NOVEMBER 2015   NATURE BIOTECHNOLOGY
+adenocarcinoma and diffuse large B-cell lymphoma1–5. The HLA 
+locus, located on chromosome 6, is among the most polymorphic 
+regions of the human genome, with thousands of documented 
+alleles for each gene6. These class I alleles are critical mediators of 
+the cytotoxic T-cell response, presenting cellular peptides on the cell 
+surface in a form that can be recognized by the T-cell receptor7,8. The 
+finding of enhanced somatic mutation rate in HLA genes has strongly 
+implicated HLA dysfunction as a possible mechanism of immune 
+evasion in the development and progression of certain cancers1–5.
+Each individual expresses six major histocompatibility 
+complex (MHC) class I alleles, encoded by three genes (HLA-A, 
+HLA-B and HLA-C) located on the two homologous copies of 
+chromosome 6. Conventional determination of HLA type is 
+performed using serology- and/or PCR-based methods that are labor-
+intensive and time-consuming9–11. Several protocols have recently 
+been proposed for HLA-targeted multiplexed PCR coupled with 
+next-generation sequencing, but by design, they provide information 
+restricted to HLA alleles, and not the rest of the genome12–16. 
+Theoretically, HLA typing information should be directly extractable 
+from WES data, an increasingly available and cost-effective approach 
+for the comprehensive analysis of genome-wide somatic alterations. 
+The human reference genome, however, has a single sequence for 
+each HLA gene and would likely misrepresent the true alleles in 
+the individual, thereby causing suboptimal alignments. In addition, 
+the HLA genes are GC-rich and therefore typically suffer from 
+lower sequencing coverage due to lower efficiency in capture and 
+amplification, and increased sequencing errors that further reduce 
+the alignment rates. Consequently, to accurately detect somatic 
+mutations in the HLA genes, one needs to first accurately align all 
+reads originating from this region in both the tumor and matched 
+normal samples and only then to apply somatic mutation detection 
+tools. We also surmised that conventional alignment and mutation 
+detection methods, which do not focus dedicated attention on this 
+highly polymorphic region, would be prone to errors.
+To this end, we developed the algorithm Polysolver (polymorphic 
+loci resolver), which enables high-precision HLA typing even while 
+using relatively low-coverage WES data, and a subsequent mutation 
+detection pipeline that uses the inferred alleles as a basis for high-
+fidelity detection of mutations in HLA genes. By analyzing WES 
+data from 7,930 cancer patients, we demonstrate high sensitivity 
+and specificity of our method in detecting HLA somatic mutations. 
+Further characterization suggests a functional impact of these 
+mutations on this biologically important and complex locus.
+Detection of somatic mutations in human leukocyte 
+antigen (HLA) genes using whole-exome sequencing 
+(WES) is hampered by the high polymorphism of the 
+HLA loci, which prevents alignment of sequencing 
+reads to the human reference genome. We describe a 
+computational pipeline that enables accurate inference 
+of germline alleles of class I HLA-A, B and C genes 
+and subsequent detection of mutations in these genes 
+using the inferred alleles as a reference. Analysis of 
+WES data from 7,930 pairs of tumor and healthy tissue 
+from the same patient revealed 298 nonsilent HLA 
+mutations in tumors from 266 patients. These 298 
+mutations are enriched for likely functional mutations, 
+including putative loss-of-function events. Recurrence 
+of mutations suggested that these ‘hotspot’ sites were 
+positively selected. Cancers with recurrent somatic 
+HLA mutations were associated with upregulation of 
+signatures of cytolytic activity characteristic of tumor 
+infiltration by effector lymphocytes, supporting immune 
+evasion by altered HLA function as a contributory 
+mechanism in cancer.
+Recent large-scale WES studies have revealed the existence and 
+relatively high frequency of somatic changes in HLA class I genes 
+in head and neck cancer, squamous cell lung cancer, stomach 
+Comprehensive analysis of cancer-associated somatic 
+mutations in class I HLA genes
+Sachet A Shukla1–3, Michael S Rooney2,4, Mohini Rajasagi1,5, Grace Tiao2, Philip M Dixon3, Michael S Lawrence2, 
+Jonathan Stevens6, William J Lane6,7, Jamie L Dellagatta6, Scott Steelman2, Carrie Sougnez2, Kristian Cibulskis2, 
+Adam Kiezun2, Nir Hacohen2,8,9, Vladimir Brusic1,5, Catherine J Wu1,2,5,8,11 & Gad Getz2,10,11
+1Cancer Vaccine Center, Dana-Farber Cancer Institute, Boston, Massachusetts, 
+USA. 2Broad Institute of MIT and Harvard, Cambridge, Massachusetts, USA. 
+3Department of Statistics, Iowa State University, Ames, Iowa, USA. 4Harvard/
+MIT Division of Health Sciences and Technology, Cambridge, Massachusetts, 
+USA. 5Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, 
+Massachusetts, USA. 6Department of Pathology, Brigham and Women’s Hospital, 
+Boston, Massachusetts, USA. 7Harvard Medical School, Boston, Massachusetts, 
+USA. 8Department of Medicine, Harvard Medical School, Boston, Massachusetts, 
+USA. 9Center for Immunology and Inflammatory Diseases and Department 
+of Medicine, Massachusetts General Hospital, Boston, Massachusetts, USA. 
+10Massachusetts General Hospital Cancer Center and Department of Pathology, 
+Boston, Massachusetts, USA. 11These authors contributed equally to this work. 
+Correspondence should be addressed to: C.J.W. (cwu@partners.org) or G.G. 
+(gadgetz@broadinstitute.org).
+Received 2 June; accepted 12 August; published online 15 September 2015; 
+corrected before print 1 October 2015; doi:10.1038/nbt.3344
+ANALYSIS
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY   VOLUME 33   NUMBER 11   NOVEMBER 2015	
+1153
+For validation, we applied Polysolver to 
+WES data from an independent set of 253 
+HapMap samples with known HLA genotypes 
+(Supplementary Tables 3 and 4). We 
+observed that Polysolver achieved an overall 
+mean sensitivity of 97% (83% of samples 
+had all allele species correctly identified), 
+overall mean precision of 98.8% (93.6% 
+samples had no incorrectly identified allele 
+species), mean overall accuracy of 97% (83% 
+samples had all alleles correctly called) and 
+a 100% homozygosity success rate (83 of 83 
+homozygous cases correctly identified) in HLA 
+typing at the protein coding level. Compared 
+to other recently reported algorithms for 
+inference of HLA type directly from WES 
+data, Polysolver outperformed four of five 
+other tools and performed comparably to the 
+recently described OptiType tool20 (Fig. 1b, 
+Supplementary Table 4 and Supplementary 
+Note 3). To accommodate future use of 
+Polysolver for samples from individuals 
+of unknown ethnic origin, we developed a 
+principal components (PC)-based method 
+for exome-based ethnicity inference (Online 
+Methods and Supplementary Fig. 3), which 
+can be used before analysis by Polysolver to 
+ensure maximal typing accuracy.
+Detection of somatic mutations within 
+the HLA region
+A standard approach for detection of somatic 
+mutations is to first align both tumor and 
+normal reads to the reference genome and then scan the genome 
+and identify mutational events observed in the tumor but not in the 
+matched normal (e.g., as implemented in MuTect21). We reasoned that 
+the accurate detection of individual native HLA type using germline 
+data by Polysolver could substantially improve alignment of reads (in 
+both tumor and normal samples) and hence improve the sensitivity and 
+specificity of somatic mutation calling within the HLA region (Fig. 2a). 
+In this setting, the inferred allele species for each HLA gene would serve 
+as patient-specific reference ‘chromosomes’ against which preselected 
+HLA reads from the tumor and germline samples are aligned separately, 
+followed by standard mutation calling. We therefore built an analysis 
+pipeline to call somatic mutations in the HLA genes that includes 
+the following steps: (i) ethnicity detection using the normal sample; 
+(ii) inference of HLA type by applying Polysolver on the normal sample 
+(although other highly accurate HLA typing tools could also be used); 
+(iii) re-alignment of the HLA reads in both tumor and normal samples to 
+the inferred HLA alleles while filtering out likely erroneous alignments 
+(Online Methods); (iv) application of standard tools to detect somatic 
+mutations (MuTect21 and Strelka22) by comparing the re-aligned tumor 
+and normal HLA reads.
+To test this approach, we initially assembled a data set of 2,545 cases 
+of matched tumor and germline DNA spanning 12 tumor types—10 
+from The Cancer Genome Atlas project (TCGA), and 2 separate 
+genomic studies focusing on CLL and melanoma. Fifty-nine HLA gene 
+somatic mutations were previously detected using standard methods 
+(Supplementary Note 4) and reported as part of a pan-cancer analysis 
+effort23 (Online Methods)17,24. On reanalysis of these cases with our 
+Polysolver-based mutation detection pipeline, we detected 36 of 59 
+RESULTS
+Inference of class I HLA alleles using Polysolver
+To develop Polysolver, we put together a training set of data from 
+eight chronic lymphocytic leukemia (CLL) patients for which 
+WES data as well as conventional PCR-based HLA typing were 
+available17 (Supplementary Table 1). We first confirmed the 
+expected poor coverage and inverse correlation between GC content 
+and coverage in HLA genes in this set (Supplementary Fig. 1). 
+We reasoned that coverage at these highly polymorphic regions 
+can be substantially improved by ensuring retrieval of true HLA 
+reads that failed to align to the canonical reference, followed by 
+alignment to a library of all known HLA alleles. These alignments 
+could then be used for subsequent computational inference of the 
+individual’s HLA type. Thus, Polysolver consists of the following 
+steps: (i) improved retrieval and alignment of HLA reads; 
+(ii) inference of the HLA alleles using a two-step Bayesian classification 
+approach (Fig. 1a, Supplementary Notes 1 and 2, and Supplementary 
+Software). In brief, we increased the precision of the alignment by 
+first selecting reads from the WES data that potentially originated 
+from the HLA region (Supplementary Fig. 2) and aligning them to 
+a full-length genomic library of all known HLA alleles based on the 
+IMGT (ImMunoGeneTics)/HLA database18 (Online Methods) using 
+a precise alignment method (Novoalign), and keeping all best-scoring 
+alignments for each read to use in subsequent steps. Inference of the 
+two alleles for each HLA gene was based on a Bayesian calculation 
+that takes into account the base qualities of aligned reads, observed 
+insert sizes, as well as the ethnicity-dependent prior probabilities of 
+each allele12,19 (Supplementary Table 2).
+Figure 1  Development and validation of Polysolver for inference of MHC class I type. (a) Schematic 
+of the Polysolver algorithm. (b) Comparative performance of Polysolver and other previously reported 
+algorithms20,41–44 by library size (error bars correspond to s.d.) using the following performance criteria: 
+(i) sensitivity, the proportion of all true allele species that are correctly identified by the algorithm; 
+(ii) precision, the probability that an inferred allele species is correct; (iii) accuracy, the fraction of 
+total number of alleles that are correctly called; and (iv) homozygosity success rate, the fraction of all 
+homozygous cases that are correctly inferred.
+Polysolver
+Polysolver
+Allele
+Score
+Allele
+Score
+Full-length genomic
+sequence library
+(6,597 alleles) based
+on IMGT
+Novoalign
+WEA reads
+OptiType
+Seq2HLA
+PHLAT
+HLAMiner
+HLAforest
+5–30
+30–60 60–100 100–170
+5–30
+30–60 60–100 100–170
+Number of reads (millions)
+5–30
+30–60 60–100 100–170
+5–30
+30–60 60–100 100–170
+HLA reads
+Extraction
+of HLA
+reads
+a
+b
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+1154	
+VOLUME 33   NUMBER 11   NOVEMBER 2015   NATURE BIOTECHNOLOGY
+(61%) previously reported HLA mutations, as well as 37 novel somatic 
+HLA mutations; in total, we detected 73 mutations in 64 of 2,545 cases 
+(Fig. 2b,c and Supplementary Tables 5–7). Manual review of all 
+HLA mutation events using IGV25 suggested that 9 of 23 mutations 
+identified exclusively by TCGA were true events, of which 6 were just 
+below the detection limit of our pipeline and were identified once we 
+slightly relaxed the read-filtering criteria used before mutation calling 
+(Supplementary Table 8 and Supplementary Note 5).
+When available, we examined matched RNA-sequencing data and 
+sought orthogonal evidence of expression of the somatically mutated 
+HLA allele that was detected by WES (indel calls were excluded from 
+this analysis owing to low reliability of indel alignment and detection 
+by RNA-seq26). A mutation was considered validated if there were at 
+least two alternate allele-bearing reads in the RNA-seq data for well-
+powered sites (Online Methods). In total, we could evaluate RNA-seq 
+data for 49 of 96 mutations, including 10 that were exclusively reported 
+by TCGA, 17 detected only by our pipeline and 22 that were detected by 
+both. We observed a high rate of RNA-seq-based validation of missense, 
+nonsense and splice-site mutations in the set of 22 mutations found in 
+common (8 of 8, 8 of 11, and 2 of 3 events, respectively; Fig. 2d and 
+Supplementary Table 9). We likewise observed high rates of validation 
+for events identified exclusively by the 
+Polysolver-based mutation detection pipeline 
+(7 of 9, 5 of 6, and 2 of 2 events, respectively). 
+By contrast, only 2 of 10 mutations uniquely 
+identified by TCGA were validated using RNA-
+seq.
+We further performed experimental 
+validation of inferred mutation calls through 
+direct targeted sequencing of HLA-A and 
+HLA-B alleles of 18 TCGA samples identified 
+as bearing HLA mutations for which DNA 
+material was available (Online Methods)27. 
+Six of these 18 samples did not have adequate 
+coverage at the site of mutation and were 
+removed from the analysis owing to lack 
+of sufficient power for mutation detection 
+(Online Methods). Of the remaining 12 
+mutations, this analysis confirmed all 11 
+of 11 HLA mutations that were inferred by 
+the Polysolver-based mutation detection 
+pipeline (5 identified by TCGA also; 6 
+identified exclusively by Polysolver), whereas 
+the sole mutation identified exclusively 
+by TCGA was not validated (Fig. 2d and 
+Supplementary Table 10). Altogether, these 
+results demonstrate that the Polysolver-based 
+approach is both a sensitive and specific 
+somatic mutation–detection strategy within 
+the highly polymorphic HLA loci.
+Patterns of somatic HLA mutation across 
+tumor types
+We extended our analysis of Polysolver-based 
+mutation detection to a total of 7,930 TCGA 
+tumor-normal pairs (including the original 
+collection of 2,545 and 5,385 additional 
+cases). In total, we detected 298 somatic HLA 
+mutations in 266 of 7,930 (3.3%) individuals 
+(Supplementary Tables 11 and 12). The 
+median allele fraction across somatic changes 
+was 33% (interquartile range: 16–58%), suggesting that most of these 
+mutations are heterozygous (Supplementary Fig. 4a).
+Among the cancer types, we observed differences in frequency, 
+localization and types of somatic HLA mutations (Fig. 3). In addition to 
+finding HLA mutations occurring significantly in head and neck (HLA-A, 
+HLA-B), lung squamous (HLA-A) and stomach (HLA-B) cancer as 
+previously reported, we further identified HLA-A (FDR, q = 2.3 × 10-8) 
+and HLA-B (FDR, q = 3.9 × 10-7) to be significantly mutated in colon 
+adenocarcinoma. By contrast, CLL (n = 128) and liver cancer (n = 
+202) entirely lacked HLA mutations, and only single mutations were 
+detected in glioblastoma (n = 390) and thyroid cancer (n = 486). 214 of 
+298 HLA mutations (71.8%) fell in 64 recurrent positions (i.e., amino 
+acids that were mutated in at least two instances). The recurrent sites 
+were distributed across the HLA gene (median of 2 mutated cases/
+recurrent site (range 2–24), (Fig. 3, bottom, Supplementary Table 13 
+and Supplementary Fig. 4b,c).
+Somatic class I HLA mutations are likely positively selected
+Alterations highly likely to have a functional effect, including loss-
+of-function events (nonsense, frameshift indels, splice site), were 
+significantly enriched in HLA mutations compared to non-HLA 
+Figure 2  Polysolver for the detection of somatic mutations in MHC class I alleles across cancers.  
+(a) Schema for detection of somatic changes in HLA genes using Polysolver. Mutation detection 
+algorithms MuTect21 and Strelka22 were incorporated for calling point mutations and indels, respectively, 
+following MHC class I typing of the germline by Polysolver. (b) Comparison of somatic HLA mutations 
+identified by TCGA (yellow) across cancers using standard approaches to those identified by Polysolver 
+(black) (n = 2,545). Green: mutations found in common between the two data sets. (c) Number of HLA 
+mutations and the percentage of samples bearing HLA mutations per cancer type identified by TCGA 
+and Polysolver. (d) Validation of mutations using RNA-seq and long-read sequencing. RNA-seq–based 
+validation was restricted to 49 samples with HLA point mutations (missense, nonsense, non-stop, splice 
+site) identified by exome analysis and with available RNA-seq data. Long-read sequencing was performed 
+on HLA alleles from 18 samples with available DNA material (Online Methods)27.
+Polysolver
+Nonsense + 
+nonstop
+Missense
+Melanoma
+Lung squamous
+Bladder
+Lung adenocarcinoma
+Colon
+Rectum
+Head and neck
+Endometrial
+Glioblastoma
+Ovarian
+Breast
+Chronic lymphocytic
+leukemia
+(n = 121)
+5%
+5%
+4.5%
+3.6%
+0%
+3.2%
+7.9%
+2%
+0%
+0.6%
+0.4%
+0%
+(n = 174)
+(n = 89)
+(n = 223)
+(n = 49)
+(n = 31)
+(n = 290)
+(n = 247)
+(n = 288)
+(n = 161)
+(n = 743)
+(n = 129)
+HLA-A
+HLA-B
+HLA-C
+Splice
+site
+TCGA samples with
+HLA mutation calls
+% validated by long-
+read sequencing
+Median somatic mutation
+frequency/Mb
+Number of mutations
+Polysolver 
+exclusive
+Polysolver 
+TCGA 
+exclusive
+TCGA 
+Common
+Novoalign
+HLA type
+A1 A2
+B1 B2
+C1 C2
+Germline reads
+Tumor reads
+Extraction
+of HLA
+reads
+n = 2,545
+Germline reads
+aligned to
+inferred alleles
+Detection algorithm (e.g., MuTect)
+Tumor reads
+aligned to
+inferred alleles
+Exon: 1
+2
+3
+4
+...8
+Exon: 1
+2
+3
+4
+...8
+a
+b
+c
+d
+23
+36
+37
+10
+17
+17
+5
+12
+18
+8
+7
+2
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY   VOLUME 33   NUMBER 11   NOVEMBER 2015	
+1155
+mutations (Fig. 4a, chi-squared test P < 2.2 × 
+10-16). We also observed that whereas 
+loss-of-function mutations occurred in all 
+functional domains of the HLA molecule, 
+they demonstrated a strong preference for 
+the N-terminal end in the leader peptide 
+sequence (P = 0.0038), which would likely 
+result in a completely nonfunctional protein 
+(Supplementary Fig. 4d). The highest 
+frequency of mutations localized to exon 4 
+(118 mutations, 39.6%), which encodes the 
+a3 domain of the HLA protein that binds to 
+the CD8 co-receptor of T cells28 (Fig. 4b). 
+Abrogation of this function could lead to a 
+loss of T-cell recognition and thereby a loss 
+of immune reactivity. The second-highest 
+frequency of mutations occurred in exon 3 
+(56 mutations, 18.8%) followed by exon 2 
+(49 mutations, 16.4%), which encode the a1 
+and a2 peptide binding domains of the HLA 
+molecule, respectively, which conventionally 
+bind 9- and 10-mer peptides for antigen 
+presentation29.
+Analysis of the position of the mutated 
+residues within exons 2 and 3 in relationship 
+to their predicted interaction with binding 
+peptide29 further strongly suggests alteration 
+of immune function by these somatic HLA 
+mutations (Supplementary Table 14). The 
+two major anchor grooves in the HLA molecule 
+bind to positions 2 and 9, respectively, of the 
+peptide, and a mutation in either groove 
+would be expected to profoundly affect the 
+biochemical stability of the MHC-peptide 
+complex29. A secondary anchor groove that 
+interacts primarily with the sixth amino acid 
+of the peptide lies between the two primary 
+anchor grooves30. Overall, 28.6% of mutations 
+(30 of 105) in the peptide binding domains 
+were in residues that come in contact with 
+the peptide and 80% (24 of 30) of these were 
+in positions that comprised one of the two 
+primary anchor grooves (Fig. 4c).
+We hypothesized that loss-of-function 
+HLA mutations would more likely arise in the 
+presence of selective pressure imposed by the 
+host immune response against the tumor. A 
+growing body of studies has shown that higher 
+mutational burdens in cancers give rise to a 
+higher load of mutation-derived immunogenic 
+epitopes and that immune responses against 
+these are associated with clinical benefit31. 
+These immune responses are presumably 
+driven by the presentation of tumor-derived 
+epitopes by antigen-presenting cells to stimulate 
+effector lymphocyte responses. Consistent 
+with the idea that a tumor would evolve in a 
+manner to escape recognition and destruction 
+by tumor-directed T or natural killer (NK) 
+cells, we detected an association between the 
+presence of HLA somatic mutations and tumor 
+Figure 3  Distribution of HLA mutations across cancers and across functional domains and tumor types. 
+Top, distribution of potential loss-of-function events, including out-of-frame and nonsense mutations. 
+The histogram summarizes the number of events identified at each position. Central panel, pattern of 
+mutations detected in each tumor type. Bottom, recurrent events; recurrent positions (with disease, 
+allele group) with frequency ≥5 cases/recurrent site are shown. Bladder (BLCA), breast (BRCA), cervical 
+squamous (CESC), colon adenocarcinoma (COAD), head and neck squamous (HNSC), lower-grade 
+glioma (LGG), lung adenocarcinoma (LUAD), lung squamous (LUSC), prostate adenocarcinoma (PRAD), 
+rectum adenocarcinoma (READ), melanoma (SKCM), stomach adenocarcinoma  (STAD), thyroid 
+(THCA), endometrial (UCEC).
+p.7 (n = 11)
+p.16 (n = 6)
+p.25 (n = 7)
+p.207 (n = 6)
+p.209 (n = 24)
+p.299 (n = 9)
+p.312 (n = 6)
+HNSC, HLA-A
+UCEC, HLA-A
+LUSC, HLA-A
+LUSC, HLA-A
+HNSC, HLA-A
+BLCA, HLA-A
+CESC, HLA-C
+CESC, HLA-A
+HNSC, HLA-A
+HNSC, HLA-A
+HNSC, HLA-B
+HNSC, HLA-B
+HNSC, HLA-B
+HNSC, HLA-B
+LUAD, HLA-B
+READ, HLA-B
+HNSC, HLA-B
+COAD, HLA-A
+COAD, HLA-A
+COAD, HLA-A
+BLCA, HLA-A
+BRCA, HLA-B
+LGG, HLA-A
+LUAD, HLA-A
+PRAD, HLA-A
+SKCM, HLA-A
+THCA, HLA-A
+COAD, HLA-B
+HNSC, HLA-A
+HNSC, HLA-A
+LUSC, HLA-A
+LUSC, HLA-A
+CESC, HLA-B
+CESC, HLA-B
+CESC, HLA-B
+STAD, HLA-B
+COAD, HLA-A
+COAD, HLA-A
+STAD, HLA-A
+STAD, HLA-A
+STAD, HLA-A
+STAD, HLA-A
+STAD, HLA-A
+STAD, HLA-A
+LUAD, HLA-B
+COAD, HLA-B
+COAD, HLA-B
+COAD, HLA-A
+STAD, HLA-B
+STAD, HLA-B
+UCEC, HLA-B
+STAD, HLA-B
+STAD, HLA-B
+STAD, HLA-B
+UCEC, HLA-B
+UCEC, HLA-B
+HNSC, HLA-B
+HNSC, HLA-B
+COAD, HLA-B
+COAD, HLA-B
+STAD, HLA-B
+STAD, HLA-A
+STAD, HLA-B
+STAD, HLA-B
+READ, HLA-B
+BLCA, HLA-A
+COAD, HLA-A
+COAD, HLA-A
+LUAD, HLA-A
+Frameshift
+Mutations
+In frame
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+1156	
+VOLUME 33   NUMBER 11   NOVEMBER 2015   NATURE BIOTECHNOLOGY
+expression signatures of effector lymphocyte infiltration, as recently 
+defined32 (Supplementary Table 15 and Fig. 4d). Although putative 
+loss-of-function somatic mutations in tumor HLA genes could lead to 
+a decrease in the presentation of immunogenic epitopes by the tumor 
+cell and evasion of immunologic targeting, these same mutations would 
+not affect the ability of nontumor, host antigen-presenting cells to ingest 
+and present tumor antigens to T cells, thereby stimulating immune 
+infiltration. To further examine this idea, we analyzed the expression 
+of 18,000 genes in matched RNA-seq data from 4,512 samples across 
+11 tumor types and found the strongest associations in 6 of 11 cancer 
+types (stomach, endometrial, cervical, head and neck, colorectal and 
+glioma), suggesting that reduced MHC class I activity may be particularly 
+important for driving immune escape in these tumor types. From this 
+unbiased analysis, the most significantly enriched genes were interferon 
+gamma (IFNG), T-cell attractive chemokines (CXCL9, CXCL10, 
+CXCL11), lytic molecules (GZMA, GZMH, PRF1, GNLY), as well as 
+the “Cytolytic Activity” metagene (analyzed previously as a measure of 
+anti-tumor T/NK cell activity32). These results suggest that acquisition 
+of HLA mutations without abrogation of expression may provide a 
+complementary immunosurveillance escape mechanism in which 
+potential destruction of the tumor by T cells and NK cells is precluded.
+DISCUSSION
+Immune evasion is a critical process in tumor biology and is enabled 
+by several mechanisms including immune-editing33, downregulation 
+of HLA expression34, secretion of immunosuppressive mediators35 
+and expression of proteins that modulate immune checkpoints36. 
+Most recently, somatic mutation of HLA genes was revealed to be 
+a significantly frequent process in some tumor types4. Improved 
+sensitivity and accuracy of somatic HLA mutation detection could better 
+characterize this already strongly implicated mechanism of immune 
+evasion across cancers. We therefore created Polysolver, a model-based 
+algorithm for accurate inference of HLA typing information from 
+germline exome-capture data, which enables more sensitive and specific 
+detection of somatic HLA mutations compared to standard techniques 
+reliant on alignment to the canonical reference genome.
+We have demonstrated that Polysolver infers HLA-type information 
+with 97% sensitivity and 98% precision from exome-capture sequencing 
+data and is among the best-performing tools for the analysis of HLA loci 
+from WES data. Indeed, different typing tools, or a combination thereof, 
+may be used for optimizing different aspects of HLA mutation detection 
+performance, for example, a consensus approach that only uses allele 
+species commonly identified by multiple tools as a basis for mutation 
+detection would favor increased specificity at the cost of sensitivity. 
+The better performance of HLA mutation detection was assessed to be 
+primarily due to use of inferred alleles as reference and employment of 
+stringent criteria for filtering aligned reads before mutation calling. We 
+estimate an increase in sensitivity from 58.8% to 94.1% and specificity 
+from 20% to 53.3% over standard methods, based on validation of 
+point mutations in RNA-seq data. An expected limitation of Polysolver 
+Figure 4  Distribution of MHC class I mutations 
+and evidence of positive functional selection.  
+(a) Comparison of spectrum of mutations in non-
+HLA genes and HLA genes. The ratio of number 
+of mutations of a particular type to the number of 
+silent mutations is compared between the non-
+HLA and HLA genes for all mutation types (chi-
+square test, P < 2.2 × 10-16). Ins., insertion;  
+del., deletion. (b) Distribution of HLA mutations 
+across exons. (c) Mutations in HLA positions that 
+are in actual physical contact with the peptide 
+(contact residues). Left panel, the relative 
+orientation of a 9-mer peptide with respect 
+to the HLA and T-cell molecules. Positions 2 
+and 9 constitute the primary anchors, whereas 
+position 6 forms the secondary anchor with HLA. 
+The remaining position interacts with the T-cell 
+molecule. Right panel, the nine amino acids of 
+the peptide and their corresponding HLA contact 
+residues are indicated along the rows (green, 
+HLA-interacting anchor positions; blue, T-cell-
+interacting positions). The histogram depicts 
+the frequency of observed HLA mutations in 
+contact residues corresponding to each peptide 
+position29. (d) Killer lymphocyte effector genes 
+are more highly expressed in tumors exhibiting 
+MHC class I mutation. Unbiased statistical 
+analysis was employed to find genes more highly 
+expressed in tumors harboring a mutation in an 
+MHC class I allele. Heatmap displays color-coded 
+expression ratio of medians (HLA-mutant vs. 
+nonmutant samples) for genes (columns) in each 
+cancer type (rows), excluding cancer types with 
+fewer than three instances of HLA mutation in 
+the cohort. *P < 0.05; **P < 0.0005 indicates 
+the significance of the association for the given 
+gene in the given cancer type according to one-sided Wilcoxon rank-sum test (null hypothesis: expression is not greater in the mutants). Cytolytic activity 
+(geometric mean of GZMA and PRF1 expression) is included as though a gene. The depicted genes are those for which expression in MHC class I–mutated 
+tumors was most significantly elevated across cancers (unadjusted P < 10-10 combined by Fisher’s method, Supplementary Table 15). 
+Total no. mutations per class/
+no. silent mutations
+T-cell contact 
+residues of 
+peptide
+Anchor
+residues 
+of peptide
+Fold change of medians
+HLA mutant vs. wild type
+*P < 0.05
+**P < 0.00005
+Silent
+Missense
+Nonsense
+Splice 
+site
+Nonstop
+a
+c
+d
+b
+Ins.
+Del.
+Ins.
+Del.
+P < 2.2 × 10–16
+Non-HLA mutations
+HLA mutations
+Frameshift
+In frame
+No. HLA mutations
+from 3,608 samples
+HNSC, HLA-B
+UCEC, HLA-C
+STAD,  HLA-B
+COAD, HLA-B
+UCEC, HLA-A
+COAD, HLA-B
+HNSC, HLA-B
+STAD,  HLA-B
+STAD, 
+HLA-C
+CESC, HLA-B
+HNSC, HLA-A
+HNSC, HLA-A
+HNSC, HLA-B
+HNSC, HLA-A
+LUSC,  HLA-A
+LUSC, HLA-C
+STAD,  HLA-B
+HNSC, HLA-A
+HNSC, HLA-A
+STAD, HLA-C
+STAD,  HLA-B
+STAD, HLA-C
+COAD,
+HLA-C
+COAD,
+HLA-A
+COAD, HLA-A
+COAD, HLA-B
+COAD, HLA-C
+UCEC, HLA-C
+UCEC, HLA-A
+READ, HLA-A
+HLA-A
+HLA-B
+HLA-C
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY   VOLUME 33   NUMBER 11   NOVEMBER 2015	
+1157
+METHODS
+Methods and any associated references are available in the online version 
+of the paper.
+Accession codes. dbGaP: phs000178. 
+Note: Any Supplementary Information and Source Data files are available in the 
+online version of the paper.
+ACKNOWLEDGMENTS
+C.J.W. is a Scholar of the Leukemia and Lymphoma Society and acknowledges 
+support from the Blavatnik Family Foundation, American Association for Cancer 
+Research (AACR) (SU2C Innovative Research Grant), National Heart, Lung, and 
+Blood Institute (NHLBI) (1RO1HL103532-01) and National Cancer Institute 
+(NCI) (1R01CA155010-01A1). This work has made extensive use of data generated 
+by TCGA, a project of the National Cancer Institute and National Human Genome 
+Research Institute. We thank E. Hodis for providing access to the melanoma 
+data. We would also like to thank C. McCowan (Broad Technology Labs), T. Shea 
+(Broad Technology Labs), S. Young (Broad Technology Labs) and M. Weiand 
+(Pacific Biosciences) for their help in setting up, performing and analyzing data 
+using Pacific Biosciences RSII instruments. We are grateful to E. Fritsch for critical 
+reading of the manuscript and providing valuable feedback.
+AUTHOR CONTRIBUTIONS
+C.J.W. proposed the initial idea of using exome data for HLA typing. S.A.S., G.G., 
+C.J.W., P.M.D. and K.C. conceived and designed Polysolver and the mutation 
+detection pipeline. G.T. and A.K. developed the ethnicity inference module. 
+M.S.L. and S.A.S. performed the mutation significance analysis. V.B., C.J.W. and 
+S.A.S. mapped the contact residue mutations. M.S.R. and N.H. performed the 
+gene expression analysis. J.S., W.J.L., S.S. and J.L.D. performed the experimental 
+validation. C.S. helped with data access and management. C.J.W., S.A.S., G.G. and 
+M.R. wrote the manuscript. C.J.W. and G.G. led the project.
+COMPETING FINANCIAL INTERESTS
+The authors declare competing financial interests: details are available in the online 
+version of the paper.
+Reprints and permissions information is available online at http://www.nature.com/
+reprints/index.html.
+1.	 Stransky, N. et al. The mutational landscape of head and neck squamous cell 
+carcinoma. Science 333, 1157–1160 (2011). 
+2.	 Cancer Genome Atlas Research Network. Comprehensive genomic characterization of 
+squamous cell lung cancers. Nature 489, 519–525 (2012). 
+3.	 Lohr, J.G. et al. Discovery and prioritization of somatic mutations in diffuse large B-cell 
+lymphoma (DLBCL) by whole-exome sequencing. Proc. Natl. Acad. Sci. USA 109, 
+3879–3884 (2012). 
+4.	 Lawrence, M.S. et al. Discovery and saturation analysis of cancer genes across 21 
+tumour types. Nature 505, 495–501 (2014). 
+5.	 Cancer Genome Atlas Research Network. Comprehensive molecular characterization 
+of gastric adenocarcinoma. Nature 513, 202–209 (2014). 
+6.	 The MHC sequencing consortium. Complete sequence and gene map of a human major 
+histocompatibility complex. The MHC sequencing consortium. Nature 401, 921–923 
+(1999). 
+7.	 Townsend, A. & Bodmer, H. Antigen recognition by class I-restricted T lymphocytes. 
+Annu. Rev. Immunol. 7, 601–624 (1989). 
+8.	 Bjorkman, P.J. & Parham, P. Structure, function, and diversity of class I major 
+histocompatibility complex molecules. Annu. Rev. Biochem. 59, 253–288 (1990). 
+9.	 Welsh, K. & Bunce, M. Molecular typing for the MHC with PCR-SSP. Rev. Immunogenet. 1, 
+157–176 (1999).
+10.	Fernandez-Viña, M.A., Falco, M., Sun, Y. & Stastny, P. DNA typing for HLA class I 
+alleles: I. Subsets of HLA-A2 and of -A28. Hum. Immunol. 33, 163–173 (1992). 
+11.	Tiercy, J.M. et al. Oligotyping of HLA-A2, -A3, and -B44 subtypes. Detection of subtype 
+incompatibilities between patients and their serologically matched unrelated bone 
+marrow donors. Hum. Immunol. 41, 207–215 (1994). 
+12.	Erlich, R.L. et al. Next-generation sequencing for HLA typing of class I loci. BMC 
+Genomics 12, 42 (2011). 
+13.	Wang, C. et al. High-throughput, high-fidelity HLA genotyping with deep sequencing. 
+Proc. Natl. Acad. Sci. USA 109, 8676–8681 (2012). 
+14.	Lank, S.M. et al. Ultra-high resolution HLA genotyping and allele discovery by highly 
+multiplexed cDNA amplicon pyrosequencing. BMC Genomics 13, 378 (2012). 
+15.	Danzer, M. et al. Rapid, scalable and highly automated HLA genotyping using next-
+generation sequencing: a transition from research to diagnostics. BMC Genomics 14, 
+221 (2013). 
+16.	Cao, H. et al. An integrated tool to study MHC region: accurate SNV detection and HLA 
+genes typing in human MHC region using targeted high-throughput sequencing. PLoS 
+One 8, e69388 (2013). 
+is its restriction to identification of known alleles, but future versions 
+may be augmented by an assembly-driven module that would enable 
+discovery of novel HLA alleles, and by representing a wider range of 
+ethnic groups. Polysolver and other available HLA typing tools that can 
+be used with WES are also not yet suitable for clinical use where much 
+higher accuracy (>99.9%) is required. However, the Polysolver-based 
+mutation detection pipeline can still be used effectively for detecting 
+somatic changes in HLA genes once experimentally determined HLA 
+typing information is available.
+In this study, we performed a comprehensive characterization of HLA 
+mutations in 7,930 samples across 20 different tumor types. We have 
+shown that, in comparison to previous studies, the HLA mutational 
+spectrum elucidated by our analysis has significantly reduced false 
+positives and detects additional somatic mutations. Several biologic 
+insights emerged from our analysis. First, we identified colon 
+adenocarcinoma to be significantly affected by somatic mutation in class 
+I HLA genes in addition to head and neck, lung squamous and stomach 
+cancer, thus further supporting HLA mutation as a common oncogenic 
+mechanism. In contrast, other cancers such as glioblastoma, ovarian 
+cancer and CLL largely lacked mutations in HLA genes. Second, several 
+characteristics of the identified nonsynonymous mutations suggest that 
+they functionally affect antigen presentation. We identified 29 sites 
+across the HLA genes that were recurrently mutated in at least three 
+cases, and 35 sites by two cases suggesting positive selection at these 
+positions. We further noted a significant enrichment in loss-​of-function 
+events in the HLA genes, such as frameshifting indels, nonsense and 
+splice-site mutations. These events would be expected to abrogate HLA 
+class I surface expression on tumors37–39, thereby affecting antigen 
+presentation to immune cells. We determined that the majority of the 
+detected mutations map to regions critical for antigen presentation. 
+More than a third of the mutations (39.6%) were in exon 4 that encodes 
+the MHC class I allele a3 domain, which binds to the CD8 co-receptor 
+on T cells28. Mutations in this domain have been previously shown to 
+abrogate binding to CD8 (ref. 40). Exons 2 and 3 harbored 35.2% of 
+the mutations—these exons encode the surfaces that present peptides 
+to immune cells. We found evidence that exon 2 and 3 HLA mutations 
+preferentially localized to residues critical for anchoring peptide to the 
+MHC binding grooves, and would be expected to interfere with the 
+fundamental process of antigen presentation29,30.
+Finally, we observed a strong association between effector lymphocyte 
+gene expression signatures and HLA mutations, which is consistent with 
+the hypothesis that somatic changes in these genes are a plausible immune 
+escape mechanism, which arise in response to increased cytolytic activity 
+in several tumor types. However, additional experiments are required to 
+better understand this mechanism.
+Improvements in massively parallel sequencing technologies are 
+now enabling increased coverage and longer read lengths, which 
+should further help Polysolver in resolving somatic changes in 
+HLA regions. Further efforts will be focused on extending the 
+methodology to other data modalities including RNA-seq and whole 
+genome sequencing. In addition to enabling better detection of HLA 
+mutations, accurate HLA typing by Polysolver can also be used to study 
+germline associations of HLA alleles in diseases, such as autoimmune 
+diseases and cancer. It could be used prospectively for preliminary 
+screening for matches for allogeneic organ transplantation. Finally, 
+as described here, Polysolver can be potentially extended to extract 
+sequence and mutation information from other polymorphic regions 
+in the genome such as MHC class II, nonclassical MHC alleles, TAP1 
+and TAP2 genes, and MIC-A and MIC-B ligands, and hence is a 
+generally applicable analysis framework to address these otherwise 
+challenging loci.
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+1158	
+VOLUME 33   NUMBER 11   NOVEMBER 2015   NATURE BIOTECHNOLOGY
+17.	Wang, L. et al. SF3B1 and other novel cancer genes in chronic lymphocytic leukemia. 
+N. Engl. J. Med. 365, 2497–2506 (2011). 
+18.	Robinson, J. et al. The IMGT/HLA database. Nucleic Acids Res. 41, D1222–D1227 
+(2013). 
+19.	Gonzalez-Galarza, F.F., Christmas, S., Middleton, D. & Jones, A.R. Allele frequency 
+net: a database and online repository for immune gene frequencies in worldwide 
+populations. Nucleic Acids Res. 39, D913–D919 (2011). 
+20.	Szolek, A. et al. OptiType: precision HLA typing from next-generation sequencing data. 
+Bioinformatics 30, 3310–3316 (2014). 
+21.	Cibulskis, K. et al. Sensitive detection of somatic point mutations in impure and 
+heterogeneous cancer samples. Nat. Biotechnol. 31, 213–219 (2013). 
+22.	Saunders, C.T. et al. Strelka: accurate somatic small-variant calling from sequenced 
+tumor-normal sample pairs. Bioinformatics 28, 1811–1817 (2012). 
+23.	Omberg, L. et al. Enabling transparent and collaborative computational analysis of 12 
+tumor types within The Cancer Genome Atlas. Nat. Genet. 45, 1121–1126 (2013). 
+24.	Hodis, E. et al. A landscape of driver mutations in melanoma. Cell 150, 251–263 (2012). 
+25.	Robinson, J.T. et al. Integrative genomics viewer. Nat. Biotechnol. 29, 24–26 
+(2011). 
+26.	Engström, P.G. et al. Systematic evaluation of spliced alignment programs for RNA-seq 
+data. Nat. Methods 10, 1185–1191 (2013). 
+27.	Roberts, R.J., Carneiro, M.O. & Schatz, M.C. The advantages of SMRT sequencing. 
+Genome Biol. 14, 405 (2013). 
+28.	Fayen, J. et al. Class I MHC alpha 3 domain can function as an independent structural 
+unit to bind CD8 alpha. Mol. Immunol. 32, 267–275 (1995). 
+29.	Brusic, V., Petrovsky, N., Zhang, G. & Bajic, V.B. Prediction of promiscuous peptides 
+that bind HLA class I molecules. Immunol. Cell Biol. 80, 280–285 (2002). 
+30.	Ruppert, J. et al. Prominent role of secondary anchor residues in peptide binding to 
+HLA-A2.1 molecules. Cell 74, 929–937 (1993). 
+31.	Brown, S.D. et al. Neo-antigens predicted by tumor genome meta-analysis correlate 
+with increased patient survival. Genome Res. 24, 743–750 (2014). 
+32.	Rooney, M.S., Shukla, S.A., Wu, C.J., Getz, G. & Hacohen, N. Molecular and genetic 
+properties of tumors associated with local immune cytolytic activity. Cell 160, 48–61 
+(2015). 
+33.	Schreiber, R.D., Old, L.J. & Smyth, M.J. Cancer immunoediting: integrating immunity’s 
+roles in cancer suppression and promotion. Science 331, 1565–1570 (2011). 
+34.	Bubeník, J. MHC class I down-regulation: tumour escape from immune surveillance? 
+(review). Int. J. Oncol. 25, 487–491 (2004).
+35.	Zou, W. Regulatory T cells, tumour immunity and immunotherapy. Nat. Rev. Immunol. 
+6, 295–307 (2006). 
+36.	Pardoll, D.M. The blockade of immune checkpoints in cancer immunotherapy. Nat. 
+Rev. Cancer 12, 252–264 (2012). 
+37.	Norgaard, L., Fugger, L., Madsen, H.O. & Svejgaard, A. Identification of 4 different 
+alternatively spliced HLA-A transcripts. Tissue Antigens 54, 370–378 (1999). 
+38.	Brady, C.S. et al. Multiple mechanisms underlie HLA dysregulation in cervical cancer. 
+Tissue Antigens 55, 401–411 (2000). 
+39.	Jiménez, P. et al. A nucleotide insertion in exon 4 is responsible for the absence of 
+expression of an HLA-A*0301 allele in a prostate carcinoma cell line. Immunogenetics 
+53, 606–610 (2001). 
+40.	Pittet, M.J. et al. Alpha 3 domain mutants of peptide/MHC class I multimers allow 
+the selective isolation of high avidity tumor-reactive CD8 T cells. J. Immunol. 171, 
+1844–1849 (2003). 
+41.	Boegel, S. et al. HLA typing from RNA-seq sequence reads. Genome Med. 4, 102 (2012). 
+42.	Kim, H.J. & Pourmand, N. HLA typing from RNA-seq data using hierarchical read 
+weighting. PLoS One 8, e67885 (2013). 
+43.	Bai, Y., Ni, M., Cooper, B., Wei, Y. & Fury, W. Inference of high resolution HLA types 
+using genome-wide RNA or DNA sequencing reads. BMC Genomics 15, 325 (2014). 
+44.	Warren, R.L. et al. Derivation of HLA types from shotgun sequence datasets. Genome 
+Med. 4, 95 (2012). 
+A N A LY S I S
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY
+doi:101038/nbt.3344
+ONLINE METHODS
+Polysolver is freely available for noncommercial use at http://www.
+broadinstitute.org/cancer/cga/polysolver and in Supplementary Software.
+WES data. All samples were obtained under Institutional Review Board 
+approval and with documented informed consent. A complete list of TCGA 
+samples is given in Supplementary Table 11. Mutational spectra of CLL17,45 
+and melanoma24 have previously been reported, whereas mutation lists for 
+lung squamous carcinoma (LUSC), lung adenocarcinoma (LUAD), blad-
+der (BLCA), head and neck (HNSC), colon (COAD) and rectum (READ), 
+glioblastoma (GBM), ovarian (OV), uterine corpus endometrial carcinoma 
+(UCEC) and breast (BRCA) were obtained from the Sage Bionetworks’ Synapse 
+resource (http://www.synapse.org/#!SYNAPSE:syn1729383). For a subset of 
+CLL patients (N = 8), HLA typing was performed by molecular typing (Tissue 
+Typing Laboratory, Brigham and Women’s Hospital, Boston), and these cases 
+were used as a training set for the Polysolver algorithm (Supplementary 
+Table 1). The validation set comprised 253 samples from 183 distinct indi-
+viduals (47 Caucasian, 50 Blacks, 41 Chinese and 45 Japanese individuals) that 
+had both exome data and experimentally determined HLA type information12 
+(http://www.1000genomes.org/).
+Polysolver allele database creation. To maximally retrieve true HLA reads, 
+we constructed a full-length genomic reference library of known HLA alleles 
+(6,597 unique entries) based on the Multiple Sequence Alignment (MSA) files 
+provided in the IMGT database (v3.10; http://www.ebi.ac.uk/ipd/imgt/hla/), 
+similar to the approach described in Erlich et al.12. We first used the cDNA file 
+to impute exons in an incompletely sequenced allele by using a reference allele 
+that had protein-level identity with the allele in question, as was evident by 
+concordance of 4-digit nomenclature. If no such reference allele was available, 
+we set as reference an allele that derived from the same allele group, as was 
+evident by concordance of 2-digit nomenclature. In cases where there were 
+multiple such possibilities for choosing the reference allele, we chose the first 
+listed allele in the MSA. A similar approach was used to impute the missing 
+components of the sequences listed in genomic (gDNA) MSA file. Finally the 
+full-length genomic sequence of each allele was imputed by assembling exons 
+from the cDNA imputation step and introns from the gDNA imputation.
+Ethnicity inference and prior probability estimation. 4-digit allele frequen-
+cies for different ethnicities were calculated by taking a sample-size weighted 
+average of all relevant population studies in the Allele Frequency Net Database 
+(http://www.allelefrequencies.net/).
+A rapid principal components analysis (PCA)-based method was 
+developed to infer ethnicity for samples of unknown racial origin (Kiezun 
+et al., unpublished data). Exome data for samples of known (self-described) 
+ethnicity from the 1000 Genomes and HapMap projects (n = 1,398, with 
+911 Caucasians, 375 Blacks, 54 Asians and 58 South Asians) was genotyped 
+at a predefined set of 5,845 loci chosen based on considerations related to 
+known linkage disequilibrium between different loci, representation on 
+population genotyping platforms and consistency between genome releases46. 
+A PCA revealed distinct segregation of Caucasian, Black, Asian and South 
+Asian samples in the 2-dimensional space defined by the first two principal 
+components. Any new sample of unknown ethnicity can now be projected 
+in this space and its Euclidean distance from the clusters centroids can be 
+computed. Ethnicity is inferred based on the cluster of minimal distance from 
+the sample projection.
+Allele inference. The posterior probability calculations for alleles correspond-
+ing to each HLA gene (A, B or C) are performed separately as described below:
+Let
+NA ≡ # alleles corresponding to the HLA gene
+N ≡ # reads aligning to at least one allele
+Nm ≡ # reads aligning to allele am
+NT ≡ # reads in the sequencing run
+fm ≡ population-based prior probability of allele m
+rk1 ≡ first read of read pair rk
+rk2 ≡ second read of read pair rk
+dk ≡ insert length of read pair rk
+lk1 ≡ length of first read of read pair rk
+lk2 ≡ length of second read of read pair rk
+qi ≡ Phred-like quality of sequenced base i
+ei ≡ probability that the sequenced base i is an error
+The quality scores of the alignment were used to build a model for the 
+sequencing process. Let us say that a given read pair rk does in fact derive from an 
+allele am and their sequence relationship allowing for miscalls in the sequencing 
+process is accurately captured in the alignment. Let YAi, YCi, YGi and YTi denote 
+random variables corresponding to observing bases A, C, G and T respectively 
+at position i in read pair rk in its alignment to allele am. Then
+YAi, YCi, YGi, YTi  ~ Multinomial(n = 1; αAi , αCi, αGi, αTi)
+where
+αBi = 1 – ei    if reference base at position i in am is B 
+= ei/3  otherwise
+Let D denote a random variable for the observed insert length of a paired read 
+in the sequencing run based on alignment to the complete genome. For a given 
+read pair rk, the empirical insert size distribution can be used to estimate the 
+probability of observing the insert length dk as
+I (dl =dk)
+Σ
+P (D = dk) =
+NT
+NT
+l=1
+Assuming positional independence of quality scores, and independence of 
+generated reads and their insert sizes, the probability of observing rk given allele 
+am is then
+lk1
+∏
+•  P (D = dk)
+P(rk|am) =
+if rk aligns to am 
+otherwise
+sk
+i
+α
+j
+α
+lk2
+∏
+i=1
+j=1
+where sk corresponds to the lowest theoretical probability achievable for read 
+pair r’k with perfect base qualities and segment lengths equal to those of rk. Since 
+93 is the maximum achievable base quality under Illumina 1.8+ format, sk is 
+computed as
+10–9.3
+3
+sk = (lk1 + lk2)  •  log
+≈ –23 • (lk1 + lk2)
+The posterior probability of allele am using all reads that align to it is given by
+P (am| r1, r2 ,..., rN) =
+P (rk |am) •  fm
+∏
+∏
+N
+k=1
+P (rk )
+N
+k=1
+Log transformation of the above equation yields
+Note that the terms N•sk and ∑
+log P(rk)
+N
+k=1
+ are constants for all alleles and 
+can be ignored. The first allele is inferred as the one that maximizes the posterior 
+probability.
+aw = argmax Lm
+am
+To infer the second allele we had to handle the fact that different alleles are very 
+similar to each other, including the winning allele. Therefore, we weight reads 
+aligning to multiple alleles by applying a heuristic strategy. For a given allele am, the 
+likelihood lmk of a read rk that also mapped to the winning allele aw with likelihood 
+lwk was weighted by a factor equal to lmk/(lmk + lwk). Consequently, reads mapping 
+exclusively to am with respect to aw were assigned a weight of 1. The read insert size 
+and allele prior probability components were preserved from the first allele inference 
+step. The second winner at each locus was identified as the allele with the maximal 
+reevaluated score.
+∑∑
+∑∑
+∑
+Lm= 
+log αi +
+log αj +
+log P(D = dk) + (N – Nm)sk + log fm –
+lk1
+k=1
+i=1
+k=1
+k=1
+j=1
+Nm
+lk2
+Nm
+∑
+k=1
+N
+Nm
+log P(rk)
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+doi:101038/nbt.3344	
+   NATURE BIOTECHNOLOGY
+Pre- and post-processing steps for HLA mutation detection. Prior to detec-
+tion of somatic changes using MuTect and Strelka by comparison of tumor 
+and normal HLA reads aligned to Polysolver-inferred HLA alleles, the fol-
+lowing changes and filters were implemented: (i) NotPrimaryAlignment bit 
+flag was turned off from all alignments as several reads mapped to multiple 
+alleles; (ii) mapping quality was changed to a nonzero value (=70) for all reads; 
+(iii) alignments where both mates did not align to the same reference allele 
+were discarded; and (iv) alignments where at least one mate had more than 
+one mutation, insertion or deletion event compared to the reference allele 
+were discarded. Soft-clipping of the reads was not allowed during the align-
+ment. Alleles with multiple detected somatic changes were removed from the 
+analysis. In cases where both inferred alleles were identical in the region of 
+detected somatic mutation, the mutation was assigned to the more common 
+allele in the population. All somatic events were visualized using IGV (MuTect: 
+‘KEEP’ entries in call_stats file, Strelka: All entries in all.somatic.indels.vcf file) 
+and the ones that passed manual review were further annotated for the gene 
+compartment (intron, exon, splice site) and protein change. Splice sites were 
+defined as the set of splice consensus sequence positions that had a bit score 
+of at least 1 in either the human major/U2 or human minor/U12 introns at the 
+exon/intron boundaries (9 positions at the 5ʹ splice donor end of the intron 
+including the ultimate base in the upstream exon, and 2 positions at the 3ʹ 
+splice acceptor end of the intron)47.
+Validation of somatic HLA mutations by RNA-seq evaluation. The 
+MutationValidator tool (data not shown) was used for orthogonal confirmation 
+of mutations in RNA-seq data. A mutation was considered validated in RNA-seq 
+if there were at least two reads supporting the mutation. In brief, to determine the 
+power, we first model the distribution of allelic fraction of the mutation based on 
+the exome data as a Beta(a+1, r+1) distribution, where a is the number of reads 
+bearing the alternate allele and r is the number of reads bearing the reference 
+allele at the site of mutation. Then, given the total number of reads aligning at 
+the position in the RNA-seq data (N), power was calculated as the probability 
+that we would detect at least two reads bearing the alternate allele in the RNA-seq 
+data (assuming the mutation has the same underlying allele fraction as the DNA) 
+using the Beta-binomial distribution Beta-Binom(N,a+1,r+1), that is,
+∑
+Power = 
+where
+( )
+B(k + a + 1, n – k + r + 1)
+B(a + 1, r + 1)
+B(x, y) = (x – 1)! (y – 1)! 
+(x + y – 1)! 
+k=2
+N
+N
+k
+A threshold of 80% power was used to consider a site to be powered to detect the 
+mutation in the RNA-seq data. Sites that had less than 80% power were removed 
+from the analysis.
+Standard HLA typing. Standard HLA typing was performed at the Brigham and 
+Women’s Hospital Tissue Typing Laboratory using a combination of sequence-
+specific oligonucleotide probe (SSO) and sequence specific primer (SSP) tech-
+niques. Genomic DNA samples were initially typed using locus-specific LabType 
+SSO kits (One Lambda Inc.) and analyzed using a Luminex 200. Loci for which 
+there were more than one common well-documented (CWD) allele were subse-
+quently resolved by PCR-SSP kits (One Lambda Inc. and Life Technologies) and 
+analyzed using gel electrophoresis.
+Validation of inferred somatic HLA mutations by targeted long sequencing 
+of HLA-A and –B. HLA-A and HLA-B amplification of TCGA samples. HLA 
+locus-specific amplification for HLA-A and HLA-B sequences were performed 
+separately using HGSgo-AmpX kits from GenDX (Utrecht, Netherlands). Briefly, 
+for each sample, 100 ng of genomic DNA was mixed with 1 µl of AmpX primer 
+(GenDX), 1.25 µl dNTP mix (Qiagen), 2.5 µl LongRange PCR Buffer (Qiagen), 
+0.4 Symbol l LongRange PCR Enzyme (Qiagen) and nuclease-free water was 
+added to a final volume of 25 µl per reaction. Samples were then placed in a 
+thermal cycler and PCR was performed using the following conditions: initial 
+denaturation at 95 °C for 3 min, followed by 35 cycles of 95 °C for 15 s, 65 °C for 
+30 s and 68 °C for 6 min, followed by a final incubation at 68 °C for 10 min. All 
+PCR reactions were then purified using Agencourt AMPureXP beads, ­according 
+to the manufacturer’s protocol (Beckman Coulter). Following AMPureXP puri-
+fication, the concentrations of the amplification products (~3.1–3.4 kb) were 
+confirmed by Quant-iT (Life Technologies), and the sizes were confirmed using 
+an Agilent Bioanalyzer DNA 7500 kit.
+Library construction and long sequencing. SMRTbell DNA template libraries 
+were prepared from the HLA-A and HLA-B amplicons, according to the 
+manufacturer’s suggested protocol (5 kb Template Preparation and Sequencing, 
+Pacific Biosciences). Briefly, equimolar pools of HLA-A and HLA-B amplicons 
+were prepared for each sample. Pooled amplicons were then end repaired and 
+ligated to barcoded SMRTbell adapters. Following the addition of barcoded 
+SMRTbell adapters, all samples were pooled and exonuclease treated according 
+to the manufacturer’s suggested protocol. Pooled, barcoded libraries were then 
+purified using AMPure PB beads (Pacific Biosciences) and quantified using 
+an Agilent Bioanalyzer DNA 7500 kit. Pooled samples were sequenced in 
+SMRTCells with a Pacific Biosciences RSII instrument using the P6 DNA/
+Polymerase Binding Kit in conjunction with the DNA Sequencing Reagent 
+4.0. Barcoded subreads were analyzed using the SMRT Analysis (version 2.3.0) 
+Long Amplicon Analysis (LAA) protocol.
+Analysis. We confirmed the accuracy of the Pacific Biosciences-based long 
+sequencing approach through testing six samples from normal volunteers with 
+known HLA typing (performed at BWH Tissue Typing laboratory based on a 
+combination of sequence-specific SSO and SSP techniques, see above), wherein 
+we observed 100% concordance between the two approaches. The LAA phased 
+consensus fastq sequences and HLA typing for each sample were derived using a 
+set of publicly available analysis tools (https://github.com/bnbowman/HlaTools). 
+In total, data were generated from 28 samples corresponding to 18 different 
+mutations (10 tumor/normal pairs and 8 tumor-only cases). The median number 
+of subreads generated per sample was 20,120 (range: 7,464–40,990). For validation 
+of Polysolver-predicted mutations, the subreads from the corresponding samples 
+were split into contiguous 76-mers, aligned to alleles comprising the inferred 
+HLA type for the individual using Novoalign (http://www.novocraft.com/) and 
+visualized using IGV. Only reads that had no more than one somatic event of 
+the same type (mismatch, insertion, deletion) as the mutation being assessed 
+were retained. After filtering, the median number of 76-mer reads mapping to 
+the allele predicted to have the mutation was 1,046 (range: 9–3,860). Power was 
+calculated using the MutationValidator tool as described above, and a threshold 
+of 80% power was used in evaluating the mutations.
+Identifying changes in gene expression associated with nonsilent MHC 
+class I mutation. Gene expression data were obtained and processed as 
+described32. In short, “Level_3” gene-level data were obtained from GDAC 
+Firehose (http://gdac.broadinstitute.org/). Read counts were tallied per gene 
+symbol and divided by the gene symbol’s maximum transcript length (as 
+defined by UCSC Genome Browser’s table “knownIsoforms” (hg19 version)). 
+For each sample, these values were rescaled to sum to a total of one million, 
+such that expression estimates may be interpreted as Transcripts Per Million 
+transcripts (TPM).
+For each gene (of ~18,000 quantified pan-cancer), a one-sided Wilcoxon 
+rank-sum test was applied to determine whether the mutants (those samples 
+nonsilently mutated in any of the six HLA alleles) demonstrated significantly 
+higher expression than the nonmutants. In performing this rank-based test, 
+random tie breaks were applied when two samples exhibited identical gene 
+expression. Note that in addition to the 18,000 genes tested, “cytolytic activity” 
+(defined previously as the geometric mean of GZMA and PRF1 expression32) 
+was also included. This process was executed separately per tumor type and 
+excluded tumor types for which the count of mutated samples with available 
+expression data was fewer than three (which excluded glioblastoma, CLL, 
+kidney clear cell cancer, liver cancer, ovarian cancer, prostate cancer, melanoma 
+and thyroid cancer). This resulted in a matrix of P-values (11 tumor types by 
+18,000 genes). Fisher’s method was applied to each gene to assess its overall 
+significance across the 11 tumor types. Per-cancer and pan-cancer P-values 
+are presented (Supplementary Table 15). Effect sizes (estimated by taking 
+the ratio of median expression in the mutants to median expression in the 
+nonmutants) for top genes (defined as those with unadjusted P < 10-10) are 
+depicted in the form of a heatmap (Fig. 4d). For this heatmap, row and column 
+orderings reflect hierarchical clustering (on the basis of the effect size variable), 
+though dendrograms are not shown.
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY
+doi:101038/nbt.3344
+This entire process was repeated, but we reversed the directionality of the 
+one-sided Wilcoxon rank-sum tests in order to identify genes with lower 
+expression in HLA mutants. Per-cancer and pan-cancer P-values for this 
+analysis are presented in Supplementary Table 16, and the effect size heatmap 
+appears as Supplementary Figure 5.
+45.	Landau, D.A. et al. Evolution and impact of subclonal mutations in chronic lymphocytic 
+leukemia. Cell 152, 714–726 (2013). 
+46.	Purcell, S.M. et al. A polygenic burden of rare disruptive mutations in schizophrenia. 
+Nature 506, 185–190 (2014). 
+47.	Irimia, M. & Roy, S.W. Origin of spliceosomal introns and alternative splicing. Cold 
+Spring Harb. Perspect. Biol. 6, a016071 (2014). 
+npg
+© 2015 Nature America, Inc. All rights reserved.
+
+NATURE BIOTECHNOLOGY
+E R R ATA
+Erratum: Comprehensive analysis of cancer-associated somatic mutations in 
+class I HLA genes
+Sachet A Shukla, Michael S Rooney, Mohini Rajasagi, Grace Tiao, Philip M Dixon, Michael S Lawrence, Jonathan Stevens, William J Lane, 
+Jamie L Dellagatta, Scott Steelman, Carrie Sougnez, Kristian Cibulskis, Adam Kiezun, Nir Hacohen, Vladimir Brusic, Catherine J Wu & 
+Gad Getz
+Nat. Biotechnol. doi:10.1038/nbt.3344; corrected online 1 October 2015
+In the version of this article initially published online, there were errors in three equations in the first page of Online Methods, in the section “Allele 
+inference”: “= ei/3 otherwise” should have been on a separate line; the equation beginning with “P (D = dk)” was missing an equal sign immediately 
+after this expression; and in the equation starting with Lm, the fifth summation sign was missing “k = 1”. On p. 3, under the first subheading on the 
+right-hand side, “ovarian cancer (n = 432)” should have read “thyroid cancer (n = 486).” In addition, the citation for Supplementary Software was 
+missing. The errors and omission have been corrected for the print, PDF and HTML versions of this article.
+npg
+© 2015 Nature America, Inc. All rights reserved.

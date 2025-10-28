@@ -1,0 +1,1981 @@
+1164 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+ Genomic Characterization of Brain 
+Metastases Reveals Branched Evolution 
+and Potential Therapeutic Targets 
+ Priscilla K.  Brastianos 1,2,3,4,5 ,  Scott L.  Carter 5,6 ,  Sandro  Santagata 7,8 ,  Daniel P.  Cahill 9 ,  Amaro  Taylor-Weiner 5 , 
+ Robert T.  Jones 4,10 ,  Eliezer M.  Van Allen 4,5 ,  Michael S.  Lawrence 5 ,  Peleg M.  Horowitz 11 ,  Kristian  Cibulskis 5 , 
+ Keith L.  Ligon 4,8 ,  Josep  Tabernero 12,13 ,  Joan  Seoane 12,13 ,  Elena  Martinez-Saez 14 ,  William T.  Curry 9 , 
+ Ian F.  Dunn 11 ,  Sun Ha  Paek 15,16 ,  Sung-Hye  Park 15,16 ,  Aaron  McKenna 5 ,  Aaron  Chevalier 5 ,  Mara  Rosenberg 5 , 
+ Frederick G.  Barker II 9 ,  Corey M.  Gill 3 ,  Paul  Van Hummelen 4,10 ,  Aaron R.  Thorner 4,10 ,  Bruce E.  Johnson 4 , 
+ Mai P.  Hoang 17 ,  Toni K.  Choueiri 4 ,  Sabina  Signoretti 8 ,  Carrie  Sougnez 5 ,  Michael S.  Rabin 4 ,  Nancy U.  Lin 4 , 
+ Eric P.  Winer 4 ,  Anat  Stemmer-Rachamimov 17 ,  Matthew  Meyerson 4,5,8,10 ,  Levi  Garraway 4,5,6 ,  Stacey  Gabriel 5 , 
+ Eric S.  Lander 5 ,  Rameen  Beroukhim 4,5,7 ,  Tracy T.  Batchelor 2 ,  José  Baselga 18 ,  David N.  Louis 17 ,  Gad  Getz 3,5,17 , 
+and  William C.  Hahn 4,5,10 
+ RESEARCH BRIEF 
+ 1 Department of  Medicine, Massachusetts General Hospital, Harvard Medical 
+School, Boston, Massachusetts.  2 Department of Neurology, Massachusetts 
+General Hospital, Harvard Medical School, Boston, Massachusetts.  3 Cancer 
+Center, Massachusetts General Hospital, Harvard Medical School, Boston, 
+Massachusetts.  4 Department of Medical Oncology, Dana-Farber Cancer 
+Institute, Boston, Massachusetts.  5 Broad Institute, Boston, Massachusetts. 
+ 6 Joint Center for Cancer Precision Medicine, Dana-Farber Cancer Institute, 
+Boston, Massachusetts.  7 Department of Cancer Biology, Dana-Farber Can-
+cer Institute, Boston, Massachusetts.  8 Department of Pathology, Brigham 
+and Women’s Hospital, Harvard Medical School, Boston, Massachusetts. 
+ 9 Department of Neurosurgery, Massachusetts General Hospital, Harvard 
+Medical School, Boston, Massachusetts.  10 Center for Cancer Genome Dis-
+covery, Dana-Farber Cancer Institute, Boston, Massachusetts.  11 Department 
+of Neurosurgery, Brigham and Women’s Hospital, Harvard Medical School, 
+Boston, Massachusetts.  12 Department of Medical Oncology, Vall d’Hebron 
+University, Barcelona, Spain.  13 Department of Pathology, Vall d’Hebron Uni-
+versity, Barcelona, Spain.  14 Vall d’Hebron University Hospital and Institute 
+of Oncology (VHIO), Barcelona, Spain.  15 Department of Neurosurgery, Seoul 
+National University College of Medicine, Seoul, South Korea.  16 Department 
+of Pathology, Seoul National University College of Medicine, Seoul, South 
+Korea.  17 Department of Pathology, Massachusetts General Hospital, Harvard 
+Medical School, Boston, Massachusetts.  18 Department of Medicine, Memo-
+rial Sloan Kettering Cancer Center, New York, New York. 
+ Note: Supplementary data for this article are available at Cancer Discovery 
+Online (http://cancerdiscovery.aacrjournals.org/). 
+ P.K. Brastianos and S.L. Carter contributed equally to this article. G. Getz 
+and W.C. Hahn contributed equally to this article. 
+doi: 10.1158/2159-8290.CD-15-0369
+©2015 American Association for Cancer Research.
+ ABSTRACT 
+ Brain metastases are associated with a dismal prognosis. Whether brain metas-
+tases harbor distinct genetic alterations beyond those observed in primary tumors 
+is unknown. We performed whole-exome sequencing of 86 matched brain metastases, primary tumors, 
+and normal tissue. In all clonally related cancer samples, we observed branched evolution, where all 
+metastatic and primary sites shared a common ancestor yet continued to evolve independently. In 
+53% of cases, we found potentially clinically informative alterations in the brain metastases not 
+detected in the matched primary-tumor sample. In contrast, spatially and temporally separated brain 
+metastasis sites were genetically homogenous. Distal extracranial and regional lymph node metas-
+tases were highly divergent from brain metastases. We detected alterations associated with sensitiv-
+ity to PI3K/AKT/mTOR, CDK, and HER2/EGFR inhibitors in the brain metastases. Genomic analysis 
+of brain metastases provides an opportunity to identify potentially clinically informative alterations 
+not detected in clinically sampled primary tumors, regional lymph nodes, or extracranial metastases. 
+ SIGNIFICANCE: Decisions for individualized therapies in patients with brain metastasis are often made 
+from primary-tumor biopsies. We demonstrate that clinically actionable alterations present in brain 
+metastases are frequently not detected in primary biopsies, suggesting that sequencing of primary 
+biopsies alone may miss a substantial number of opportunities for targeted therapy.  Cancer Discov; 
+5(11); 1164–77. ©2015 AACR. 
+See related commentary by Stricker and Arteaga, p. 1124 .
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1165 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+and (iii) determine whether lymph nodes or extracranial 
+metastases are genetically similar to brain metastases and 
+might serve as their proxy for genomic assessment and clinical 
+decision making. 
+ RESULTS 
+ Patients 
+ Clinical characteristics of the 86-patient case series are 
+shown in Supplementary Table S1. The majority of the cases 
+were derived from lung ( n = 38), breast ( n = 21), and renal cell 
+carcinomas ( n = 10). Of the 86 patients, 48 had a single brain 
+metastasis, whereas the rest of the cases had additional brain 
+metastases diagnosed radiographically. 
+ Genetic Divergence of Brain Metastases and 
+Primary Tumors 
+ Several lines of evidence indicate that tumors exhibit 
+genetic heterogeneity both across different anatomic regions 
+( 3–6 ,  8 ,  15 ) and within single cancer-tissue samples ( 7 ,  9 ,  16, 
+17 ). We applied previously described computational methods 
+to address the heterogeneity of cancer-tissue samples and 
+inferred the evolutionary relationship between the sequenced 
+tissue samples from each patient ( 16 ,  18–20 ). We integrated 
+data from somatic point mutations and copy-number altera-
+tions to estimate the fraction of cancer cells harboring each 
+point mutation; that is, their cancer-cell fraction (CCF; refs. 
+ 16 ,  18–21 ). Analysis of the CCF for each mutation across the 
+tissue samples derived from the same patient allowed us to 
+infer phylogenetic trees relating all cancer subclones detected 
+(Supplementary Figs. S1–S6). 
+ Corroborating prior observations, all clonally related pri-
+mary tumor and brain metastasis samples were consistent 
+with a branched evolution pattern ( 4 ,  22 ). Although they 
+shared a common ancestor, both the primary tumor and the 
+metastasis continued to evolve separately, reﬂ ected by (i) the 
+presence of distinct mutations (“private mutations”) with a 
+CCF = 1 (i.e., present in all cancer cells) in both samples (Sup-
+plementary Figs. S1 and S 7 ); and (ii) the fact that each sample 
+continued to develop minor cancer-cell populations deﬁ ned 
+by mutations with CCF < 1. 
+ We failed to identify a minor cancer-cell population in any 
+primary-tumor sample that was the ancestor of its paired 
+metastasis. Such a metastasis-founding subclone would harbor 
+mutations in a subset of the cancer cells of the primary-
+tumor sample (CCF primary < 1) that were present in all cancer 
+cells (CCF met = 1) of the metastasis sample (Supplementary 
+Fig. S7B). Although it is possible that more comprehensive 
+sampling of primary-tumor tissue might have revealed such 
+founding ancestor subclones ( 20 ,  22 ), this would not have 
+been clinically feasible in most cases. 
+ In four of 86 primary/metastasis pairs analyzed, we 
+did not identify common mutations between the primary 
+tumor and metastasis samples, suggesting that they were 
+clonally unrelated (Supplementary Fig. S7C). Three of 
+these arose in the lungs of smokers, with multiple histo-
+logically distinct primary tumors diagnosed clinically. An 
+additional patient with breast cancer had another primary 
+tumor in the contralateral breast; this patient was found to 
+harbor a heterozygous germline  BRCA1 (5385insC) allele. 
+ INTRODUCTION 
+ Brain metastases, most frequently originating from 
+melanoma and carcinomas of the lung and breast, are the 
+most common tumor in the brain. Approximately 200,000 
+cases are diagnosed annually in the United States alone. 
+Patients frequently develop brain metastases even while their 
+extracranial disease remains under control ( 1 ). Median sur-
+vival ranges from 3 to 27 months following metastatic spread 
+to the brain ( 1 ). Of patients who have clinically symptomatic 
+brain metastases, approximately half succumb to the can-
+cer in their brain ( 2 ). Unfortunately, treatment options are 
+limited, and most current clinical trials in the United States 
+exclude patients with brain metastases. 
+ Because cancers are genetically heterogeneous ( 3–9 ), sam-
+pling a cancer in two different locations is expected to reveal 
+mutations exclusive to each sample. Furthermore, because 
+brain metastases are often resected during clinical care, 
+such tissue provides an immediate opportunity for genomic 
+assessment of these life-threatening lesions. To date, the 
+extent to which brain metastases, often manifesting years 
+after the primary malignancy, share the genetic proﬁ le of 
+the primary tumor remains unknown. Massively parallel 
+sequencing of brain metastases has been performed on a 
+limited number of cases ( 7 ,  10 ), showing novel alterations in 
+the metastatic site. Prior studies have suggested activation 
+of the PI3K pathway in brain metastases ( 11, 12 ). Some gene 
+expression signatures have been associated with metastasis 
+to the brain ( 13, 14 ). 
+ We performed whole-exome sequencing on 86 “trios” of 
+patient-matched brain metastases, primary tumors, and nor-
+mal samples, all of which were collected in the course of clini-
+cal care (e.g., for diagnosis, symptom control, or restaging). 
+For 15 patients, we also characterized multiple metastatic 
+brain lesions, distal extracranial metastases, and additional 
+samples from the primary tumor or associated regional lymph 
+nodes. Our objectives were to (i) determine whether clinically 
+sampled brain metastases harbor distinct potentially clinically 
+informative mutations not detected in paired primary-tumor 
+samples; (ii) determine the extent to which such mutations are 
+shared among multiple regions of a single brain metastasis, 
+anatomically distinct brain metastasis sites, and temporally 
+separated lesions (in cases that recurred following therapy); 
+Current afﬁ liations for S.L. Carter: Joint Center for Cancer Precision Medi-
+cine, Dana-Farber Cancer Institute, Brigham and Women’s Hospital, Broad 
+Institute of Harvard and MIT, Harvard Medical School, Boston, Massachu-
+setts; Department of Biostatistics and Computational Biology, Dana-Far-
+ber Cancer Institute, Boston, Massachusetts; Department of Biostatistics, 
+Harvard School of Public Health, Boston, Massachusetts; Broad Institute 
+of Harvard-MIT, Boston, Massachusetts.
+ Corresponding Authors: Priscilla K. Brastianos, Division  of Neuro-Oncology, 
+Massachusetts General Hospital, 55 Fruit Street, Yawkey 9E, Boston, MA 
+02114. Phone: 617-643-1938; Fax: 617-643-2591; E-mail:  pbrastianos@
+partners.org ; William C. Hahn, Department of Medical Oncology, Dana-Farber 
+Cancer Institute, 450 Brookline Avenue, Dana 1538, Boston, MA 02215. 
+Phone: 617-632-2641; E-mail:  william_hahn@dfci.harvard.edu ; Scott L. 
+Carter, Cancer Program, Broad Institute of Harvard and MIT, 415 Main Street, 
+Cambridge, MA 02142. Phone: 617-714-7571; E-mail:  carter.scott@jimmy
+.harvard.edu; and Gad Getz, Cancer Program, Broad Institute of Harvard and 
+MIT, 415 Main Street, Cambridge, MA 02142. Phone: 617-714-7471; E-mail: 
+ gadgetz@broadinstitute.org 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1166 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+These 4 patients likely developed multiple clonally inde-
+pendent cancers in the context of exposure to tobacco 
+carcinogens or germline risk, suggesting that their brain 
+metastases arose from separate primary tumors (unavail-
+able for analysis). 
+ In many cases, we identiﬁ ed potentially clinically relevant 
+mutations in the brain metastasis that were not detected in 
+the clinically sampled primary tumor. Because the primary 
+and metastatic tissue samples were fully diverged siblings 
+with no detectable overlap of subclones, we calculated 
+power to have observed these mutations in the primary-
+tumor samples assuming a CCF of 1.0. However, it could 
+be argued that small subclones representing ancestors of 
+the metastasis might have been present in the primary 
+samples, but not detected (because their CCF would not 
+signiﬁ cantly displace that of their sibling subclones with 
+apparent CCF = 1.0 in the primary sample). We therefore 
+also calculated the minimum CCF of these mutations in 
+the primary sample for which we had detection power 
+≥ 0.95 (minimum CCF 95 ). 
+ For example, in a patient who had undergone resection of 
+a primary renal cell carcinoma (case 218), but subsequently 
+developed both extracranial metastases 3 years after resec-
+tion and a brain metastasis 7 months later while on beva-
+cizumab for progressive extracranial disease, we detected a 
+homozygous  PTEN nonsense mutation in the brain metas-
+tasis, but not in the primary-tumor sample. Biallelic loss 
+of  PTEN may correlate with sensitivity to some PI3K/AKT/
+mTOR inhibitors ( 23 ), and has also been found to medi-
+ate resistance to other inhibitors, including EGFR ( 24 ) and 
+PI3K inhibitors ( 25 ). Deep sequencing of the primary-tumor 
+sample using an independent library further supported the 
+absence of the mutation (0 of 263 reads; power > 0.99; mini-
+mum CCF 95 = 0.032). As previously reported in non–central 
+nervous system metastases of clear-cell renal cell carcinoma 
+(ccRCC; ref.  4 ), we also observed convergent evolution in this 
+case, with distinct  PBRM1 frameshift mutations present in 
+the brain metastasis and primary tumor, conﬁ rmed with deep 
+sequencing of the primary tumor ( Fig. 1A and Supplemen-
+tary Table S2). 
+ A second patient ( 24 ) with a single synchronous brain 
+metastasis from ccRCC had mutations in  MTOR ,  VHL , 
+and  PBRM1 that were shared by the metastasis and pri-
+mary tumor. Additional alterations in  PIK3CA (p.E542K) and 
+ CDKN2A (homozygous deletion) were detected only in the 
+brain-metastasis sample ( Fig. 1B and Supplementary Fig. S8). 
+Deep sequencing with an independent library failed to detect 
+ PIK3CA (Supplementary Table S2) in the primary-tumor sam-
+ple (0 of 733 reads, power > 0.99; minimum CCF 95 = 0.014). 
+ A third patient (135) with HER2-ampliﬁ ed breast cancer 
+and stable extracranial disease developed a brain metastasis 
+after 3 years of trastuzumab therapy. The brain metasta-
+sis and primary tumor shared an ampliﬁ cation in  ERBB2 
+and a homozygous deletion of  TP53 ; however, the primary 
+tumor harbored an additional  MYC ampliﬁ cation that was 
+not observed in the brain-metastasis sample, and the brain 
+metastasis harbored a homozygous missense mutation of 
+uncertain signiﬁ cance in  BRCA2 (p.H2563N) that was not 
+detected in the primary-tumor sample (0/82 reads;  Fig. 1C ). 
+Deep sequencing of an independent library from the primary-
+tumor sample (0/133 reads; power > 0.99; minimum CCF 95 = 
+0.027) also failed to detect the  BRCA2 mutation (Supplemen-
+tary Table S2). 
+ A fourth patient (0244) with HER2-ampliﬁ ed breast can-
+cer developed a brain metastasis after 2 years of trastuzu-
+mab therapy. We detected both a broad ampliﬁ cation (six 
+copies) and an activating point mutation in  EGFR (L858R; 
+7/129 reads) in the metastasis sample. In this case, the 
+mutant L858R allele was not ampliﬁ ed, consistent with the 
+ampliﬁ cation having occurred prior to the mutation ( Fig. 
+1D ). Both the ampliﬁ cation and the mutation were not 
+observed in the primary-tumor sample (0/204 reads;  Fig. 
+1D ) validated with additional deep sequencing (0/419 reads; 
+power > 0.99, minimum CCF = 0.067; Supplementary Table 
+S2). Although the L858R mutation is common in lung can-
+cers and is associated with sensitivity to geﬁ tinib ( 26 ), one 
+proposed mechanism of resistance in anti-HER2 therapy 
+in breast cancer is activation of EGFR ( 27, 28 ), suggesting 
+that trastuzumab therapy may have selected for this mutant 
+allele. We also detected an  FGFR1 ampliﬁ cation in the brain 
+metastasis and a  CCND2 ampliﬁ cation in the primary tumor 
+( Fig. 1D ). 
+ A ﬁ fth patient (331) with serous ovarian cancer experienced 
+a complete remission for 1 year following chemotherapy and 
+subsequently developed a solitary brain metastasis 5 years 
+later. The brain metastasis harbored a high-level ampliﬁ cation 
+of  ERBB2 (32 copies). Using immunohistochemical staining, 
+we conﬁ rmed that HER2 was indeed overexpressed in the 
+metastasis and was not detected in the primary tumor sample 
+( Fig. 1E ). Although  HER2 ampliﬁ cations are not commonly 
+observed in serous ovarian cancer ( 29 ), such ampliﬁ cation 
+events have been shown to confer sensitivity to anti-HER2 
+therapy in breast and other cancers ( 30 ). We also identiﬁ ed a 
+ BRAF ampliﬁ cation in the primary tumor that was not present 
+in the brain-metastasis sample ( Fig. 1E ). Further ampliﬁ ca-
+tions of  FGFR1 and  MYC were detected only in the brain 
+metastasis (6 and 7 copies, respectively; Supplementary Fig. 
+S9). These ﬁ ve examples demonstrate that genomic sampling 
+of resected brain metastases revealed potentially actionable 
+mutations not detected in the clinically sampled primary 
+tumors. 
+ The Landscape of Clinically Informative Driver 
+Alterations in Clinically Sampled Brain Metastases 
+and Primary Tumors 
+ The genetic divergence observed between clinically sam-
+pled primary tumors and brain metastases implies that 
+potentially clinically actionable targets present in the 
+brain metastasis may not be detected from analysis of 
+a single sample of the primary tumor ( Fig. 1 and Sup-
+plementary Fig. S1). We therefore evaluated the extent to 
+which primary-tumor biopsies and resected brain metas-
+tases, collected as part of clinical care, would allow iden-
+tiﬁ cation of oncogenic alterations with potential clinical 
+signiﬁ cance across our entire series of 86 paired cases. To 
+systematically perform this evaluation, we used the TAR-
+GET database ( 31 ) of genes for which somatic alterations 
+have therapeutic or prognostic implications (Supplemen-
+tary Table S3). Many of the TARGET alterations serve as 
+eligibility criteria in the context of genomically guided 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1167 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+ Figure 1.   Brain  metastases harbor clinically actionable mutations not detected in primary-tumor samples. A–E, phylogenetic trees inferred for ﬁ ve 
+example cases. Branch colors indicate the types of tissue samples descended from each branch (gray, shared by all samples; blue, primary-tumor sample; 
+red, brain metastasis). Darker-colored lines correspond to subpopulations of cancer cells detected with CCF < 1; the maximally branching evolutionary 
+relationships of these clusters are drawn on the ends of each sample branch, surrounded by shaded ellipses denoting the tissue sample. The thickness 
+of each branch is proportional to the CCF of mutations on that branch. Potentially clinically informative (TARGET) alterations (black) and additional 
+likely oncogenic alterations (gray) are annotated onto the phylogenetic branches on which they occurred. Timelines depict the sequence of diagnosis, 
+treatment, and tissue sampling for each case, with chemotherapy treatment intervals denoted by gray rectangles, and treatment with speciﬁ ed targeted 
+agents denoted by orange rectangles. Colored vertical lines denote collection of sequenced cancer tissues (blue, primary; red, brain metastasis). BEV, 
+bevacizumab; BM, brain metastasis; BM1, brain metastasis from one anatomic location; BM2, brain metastasis from second anatomic location; Bx, biopsy; 
+C, chemotherapy; CET, cetuximab; CR, complete response; Dx, diagnosis; EM, extracranial metastasis; I-131, radioactive iodine; LAP, lapatinib; LN, lymph 
+node; PARPi, PARP inhibitor; PBM, progressive brain metastasis; PED, progressive extracranial disease; PI3Ki, PI3K inhibitor; SED, stable extracranial 
+disease; Sx, surgery; SUN, sunitinib; TRA, trastuzumab; WBRT, whole brain radiotherapy; XRT, radiation. E, also shows immunohistochemical staining (IHC) 
+for HER2 in samples of the primary tumor (left), and brain metastasis (right). In addition, genomic copy ratios on chromosome 17 are shown (bottom) for 
+the primary-tumor sample (top) and brain metastasis (bottom). Large diamonds correspond to exons of  ERBB2 , colored according to ampliﬁ cation status 
+(black, unampliﬁ ed; red, ampliﬁ ed).  
+A
+B
+C
+D
+E
+Dx primary, BM, EM
+XRT to BM
+Sx BM, SED
+SUN
+Clear-cell renal cell carcinoma (024)
+Time
+(12 months)
+10 mutations
+PIK3CA p.E542K
+CDKN2A/B Del
+VHL p.L188P
+PBRM1 p.T43fs
+MTOR p.K1452N
+Dx primary
+PED, RF ablation
+PED
+Dx/Sx BM, PED
+BEV
+Clear-cell renal cell carcinoma (218)
+Time
+(5 years)
+10 mutations
+PTEN p.L139*
+VHL p.P86H
+TET2 p.D1142fs
+SETD2 p.M2517fs
+PBRM1 p.L1342fs
+PBRM1 p.S32fs
+Dx primary, EM
+Dx/Sx BM, SED
+C+TRA
+TRA
+HER2+ breast cancer (135)
+Time
+(4 years)
+50 mutations
+Chr 8q Amp (MYC)
+BRCA2 p.H2563N
+KDM5A p.R1217W
+ARID1A p.Q1424*
+ERBB2 H.amp
+TP53 Del
+ERLIN2 H.amp
+KAT6A H.amp
+TUBD1 / RNF43 H.amp
+Dx primary
+PED
+Dx/Sx BM
+C+TRA
+HER2+ breast cancer (244)
+Time
+(10 years)
+100 mutations
+CCND2 Amp
+GATA3 Amp (5x)
+Chr 7p Amp (EGFR)
+FGFR1 Amp
+TP53 p.Y220C
+Chr 8q Amp (MYC)
+ERBB2 H.amp
+NF1 p.V567G
+EGFR p.L858R
+CTNNB1 p.S33Y
+NF1 p.M747V
+GATA3 H.amp (25x)
+ETV1 H.Amp
+Shared
+Primary
+Brain metastasis
+Dx primary
+Sx primary
+PED
+CR
+Dx/Sx BM, SED
+Serous ovarian cancer (331)
+Time
+(6 years)
+100 mutations
+BRAF Amp
+BRCA1 Splice 
+ASXL1 p.S444*
+FGFR1 Amp
+MYC H.amp
+ERBB2 H.amp
+TP53 p.K132N
+MECOM / TERC H.amp 
+KAT6A H.amp
+NRAS p.R102Q
+AGAP1 Del
+Brain metastasis
+Primary
+HER2
+IHC
+−1
+0
+1
+2
+3
+4
+Log2 copy ratio
+1
+7
+Absolute copy number
+Primary
+ERBB2
+−1
+0
+1
+2
+3
+4
+1
+3
+7
+Brain metastasis
+ERBB2
+0
+20
+40
+60
+80
+Chromosome 17 (Mb)
+3
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1168 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+clinical trials in cancer, both histology speciﬁ c or independ-
+ent of histology ( 31 ). Alterations in TARGET genes were 
+prioritized according to deﬁ ned criteria ( 31 ). For exam-
+ple, some genes were required to have biallelic inactiva-
+tion, whereas others required ampliﬁ cation or speciﬁ c point 
+mutations. To organize our analysis, we partitioned the 
+TARGET genes into 13 categories (Supplementary Table S3) 
+corresponding to alterations that may be associated with 
+response to speciﬁ c classes of targeted therapies, or which 
+consist of important cancer drivers associated with progno-
+sis ( Fig. 2 and Supplementary Fig. S10). 
+ A total of 95,431 gene alterations were detected across our 
+dataset, of which 330 met the TARGET criteria of being clini-
+cally informative. Forty-six of 86 (53%) cases harbored at least 
+one such potentially actionable alteration in the brain metas-
+tasis that was not identiﬁ ed in the paired primary-tumor 
+sample. For all mutations detected exclusively in either the 
+primary tumor or metastasis sample of a given patient, we 
+conﬁ rmed that sequencing depth covering the absent muta-
+ Figure 2.   The landscape of potentially clinically actionable alterations in brain metastases and primary-tumor samples. A–D, alterations in genes 
+(rows) that may predict sensitivity to the indicated class of targeted agent. Vertical columns correspond to cases, which are ordered by primary histology 
+and presence/absence of alterations. Stacked bar graphs indicating the number of somatic point mutations detected in each phylogenetic branch of each 
+case (columns) are shown at the top of each panel. HER2 status determined during clinical evaluation is denoted by: black, positive; gray, negative; white, 
+not measured. COSMIC, Catalogue of Somatic Mutations in Cancer. 
+ 
+A
+B
+C
+D
+Breast cancer (21)
+Chromophobe renal cell carcinoma (1)
+Clear-cell renal cell carcinoma (8)
+Colorectal adenocarcinoma (4)
+Endometrial adenocarcinoma (1)
+Esophageal adenocarcinoma (2)
+Lung adenocarcinoma (29)
+Lung carcinoma (5)
+Lung squamous carcinoma (4)
+Melanoma (3)
+Papillary renal cell carcinoma (1)
+Papillary thyroid carcinoma (1)
+Salivary gland ductal carcinoma (1)
+Sarcoma (2)
+Serous ovarian cancer (3)
+^ High-level amplification
+ Amplification
+Homozygous deletion
+Missense (COSMIC)
+! Frameshift
+* Nonsense
+!
+$ Splice site
+Missense
+Two mutations
+Site < 0.99 power in primary
+Homozygous alteration
+Heterozygous alteration
+Detected in primary-tumor sample
+Detected in brain-metastasis sample
+Shared
+Detected in brain-metastasis sample (CCF < 1)
+Detected in primary-tumor sample (CCF < 1)
+0
+20
+40
+Mutations/Mb.
+PI3K/AKT/MTOR inhibitor
+Primary histology
+Clinical HER2 primary
+*
+! !
+^
+^
+*
+*
+*
+^
+^ ^
+^
+@$ *
+!
+!
+TSC2
+PIK3R1
+NF2
+FBXW7
+STK11
+AKT2
+NF1
+PIK3CA
+MET
+PTEN
+0176−MT
+0418−MT
+0314−MT
+0175−MT
+0155−MT
+0244−MT
+0274−MT
+0150−MT
+0361−MT
+0353−MT
+0218−MT
+0024−MT
+0352−MT
+0248−MT
+0132−MT
+0324−MT
+0227−MT
+0160−MT
+0251−MT
+0031−MT
+0337−MT
+0201−MT
+0071−MT
+0091−MT
+0321−MT
+0151−MT
+0067−MT
+0052−MT
+0308−MT
+0441−MT
+0344−MT
+0347−MT
+0405−MT
+0137−MT
+0138−MT
+0315−MT
+0402−MT
+0
+10
+20
+30
+40
+Mutations/Mb.
+HER2/EGFR inhibitor
+Primary histology
+Clinical HER2 primary
+^ ^
+^
+^
+^ ^ ^ ^ ^ ^ ^
+^ ^
+^
+^
+^ ^
+EGFR
+ERBB2
+0076−MT
+0244−MT
+0314−MT
+0043−MT
+0135−MT
+0274−MT
+0364−MT
+0175−MT
+0150−MT
+0116−MT
+0155−MT
+0049−MT
+0302−MT
+0296−MT
+0125−MT
+0067−MT
+0160−MT
+0251−MT
+0031−MT
+0115−MT
+0034−MT
+0261−MT
+0254−MT
+0052−MT
+0138−MT
+0331−MT
+0
+20
+40
+Mutations/Mb.
+CDK inhibitor
+Primary histology
+*
+^
+^
+^
+^
+^
+^ ^
+^
+$
+$
+^
+^
+^ ^
+^ ^ ^
+^
+^
+^
+^ ^
+^ ^
+^
+CDKN1B
+CCND2
+CCND3
+CDK4
+CCNE1
+RB1
+CDK6
+CCND1
+MCL1
+CDKN2A
+0361−MT
+0418−MT
+0175−MT
+0274−MT
+0176−MT
+0155−MT
+0148−MT
+0150−MT
+0149−MT
+0284−MT
+0314−MT
+0244−MT
+0126−MT
+0271−MT
+0024−MT
+0131−MT
+0125−MT
+0237−MT
+0067−MT
+0261−MT
+0115−MT
+0103−MT
+0114−MT
+0091−MT
+0160−MT
+0263−MT
+0241−MT
+0251−MT
+0199−MT
+0161−MT
+0337−MT
+0333−MT
+0034−MT
+0086−MT
+0227−MT
+0201−MT
+0262−MT
+0031−MT
+0052−MT
+0308−MT
+0254−MT
+0344−MT
+0405−MT
+0138−MT
+0235−MT
+0315−MT
+0402−MT
+0026−MT
+0
+20
+40
+Mutations/Mb.
+MAPK pathway inhibitor
+Primary histology
+^
+MAP2K1
+NRAS
+HRAS
+RAF1
+BRAF
+KRAS
+0150−MT
+0248−MT
+0136−MT
+0128−MT
+0114−MT
+0115−MT
+0103−MT
+0263−MT
+0333−MT
+0091−MT
+0160−MT
+0251−MT
+0199−MT
+0031−MT
+0161−MT
+0337−MT
+0086−MT
+0201−MT
+0151−MT
+0042−MT
+0227−MT
+0104−MT
+0052−MT
+0254−MT
+0308−MT
+0137−MT
+0053−MT
+0083−MT
+0331−MT
+tion provided adequate detection power (>0.99; Supplemen-
+tary Fig. S11). 
+ Alterations potentially predicting sensitivity to cyclin-
+dependent kinase (CDK ) inhibitors ( 31–33 ) were common 
+across our case series, with 71 alterations in 48 cases occur-
+ring in 10 of 11 evaluated genes ( Fig. 2A ). Of the 71 altera-
+tions, 44 were shared, seven were only in the primary sample, 
+and 20 were only in the brain-metastasis sample. The most 
+frequently altered gene in this group was  CDKN2A , with 17 
+events in total, including homozygous deletions in three of 
+eight ccRCC cases that were only in the brain-metastasis sam-
+ples ( Fig. 2A ).  MCL1 ampliﬁ cations, which preclinical studies 
+have shown to be associated with sensitivity to CDK inhibi-
+tors ( 34 ), were also common; ﬁ ve out of the 15 events were 
+detected only in the brain-metastasis samples. In addition, 
+ﬁ ve cases had shared homozygous  RB1 loss, which is associ-
+ated with resistance to CDK inhibitors ( 35 ). 
+ Mutations affecting the PI3K–AKT–mTOR pathway were 
+also frequent, with 43 alterations in 37 cases occurring in 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1169 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+10 of 15 evaluated genes ( Fig. 2B ). Of the 43 alterations, 
+24 were shared, ﬁ ve were detected only in the primary 
+samples, and 14 were detected only in the brain-metastasis 
+samples. Actionable alterations in these genes occurred fre-
+quently in breast cancers (9/21 cases, 6/9 of which were 
+shared), and lung adenocarcinoma (12/29 cases, 8/12 of 
+which were shared). Four of the eight brain metastases from 
+patients with primary ccRCC harbored mutations in the 
+PI3K–mTOR pathway detected only in the brain-metastasis 
+samples. In addition to the  PTEN mutation described above 
+( Fig. 1A ), another case had a shared small in-frame deletion 
+(p.D52del) in  PTEN with an additional splice site mutation 
+detected only in the brain-metastasis sample. A third ccRCC 
+case harbored a  PIK3CA E542K mutation ( Fig. 1B and  Fig. 
+2B ), and a fourth harbored a  PIK3R1 N564D mutation 
+previously reported in glioblastoma ( 36 ) that activates the 
+PI3K–AKT pathway ( 37 ). A ﬁ fth ccRCC brain metastasis 
+harbored a small frameshift deletion in  PTEN (K6fs) that 
+was predicted to be heterozygous (not shown). Activation of 
+the PI3K–mTOR pathway has been reported in metastatic 
+ccRCC lesions in extracranial sites ( 4 ). 
+ We also found mutations that predict sensitivity to HER2/
+EGFR inhibitors (e.g., trastuzumab, geﬁ tinib, cetuximab, 
+erlotinib, lapatinib) in 26 cases in two of four evaluated 
+genes (32 alterations, 20 shared, 2 only in primary-tumor 
+samples, 10 only in brain-metastasis samples). Thirteen 
+of 21 breast cancers harbored ampliﬁ cations in  ERBB2 , all 
+of which were shared. In one case (076), we detected an 
+additional activating  ERBB2 missense mutation (V777L; 
+ref.  38 ) only in the brain-metastasis sample in addition to 
+the shared  ERBB2 ampliﬁ cation. Notably, 2 patients with 
+lung cancer ( Fig. 2C ) and a third with ovarian cancer ( Fig. 
+1E ) had  ERBB2 ampliﬁ cations detected only in the brain-
+metastasis samples. Two patients with HER2-ampliﬁ ed 
+breast cancer harbored  EGFR alterations detected only in 
+the brain-metastasis samples; in addition to the case above 
+( Fig. 1E ), a second patient harbored broad ampliﬁ cation of 
+ EGFR (seven copies;  Fig. 2C ). 
+ The MAPK pathway inhibitor family includes agents that 
+inhibit  BRAF and  MEK , such as vemurafenib, dabrafenib, 
+or trametinib ( 31 ). Thirty-six alterations associated with 
+response to these agents were detected in 29 cases, in 6 of 11 
+evaluated genes (24 shared, 6 only in the primary samples, 
+6 only in the brain-metastasis samples;  Fig. 2D ). Activating 
+mutations in  KRAS , which have been associated with tumor 
+responses to MEK inhibitors ( 39, 40 ), were the most frequent 
+alteration in this group (19 cases) and were shared in all clon-
+ally related cases. 
+ Additional alterations under investigation for association 
+with various targeted therapies, including Ephrin inhibi-
+tors, epigenetic therapy, Notch inhibitors, WNT inhibitors, 
+AURKA inhibitors, multitargeted tyrosine kinase inhibitors, 
+MDM inhibitors, PARP inhibitors, as well as alterations that 
+might be diagnostic or prognostic, are shown in Supplemen-
+tary Fig. S10. 
+ Genetic Homogeneity of Brain Metastases 
+ The discrepancy in the oncogenic alterations detected in 
+clinically obtained samples from the primary tumors and 
+matched brain metastases raised the possibility that every 
+distinct brain metastasis lesion might harbor a unique set 
+of oncogenic alterations. Therefore, we sought to evaluate 
+the extent to which clinical sampling of a single brain metas-
+tasis region might be representative of the genetic altera-
+tions detected across various sites of intracranial metastasis 
+( Fig. 3A–G ). We assessed intralesion heterogeneity (by sam-
+pling multiple regions of single brain metastases), as well 
+as interlesion heterogeneity (by sampling from multiple 
+anatomically and temporally distinct brain metastases in 
+the same patient). In each scenario, we observed that all 
+proﬁ led brain-metastasis samples shared mutations that 
+were not detected in the clinically sampled primary tumor, 
+indicating that the subclones sampled in these lesions were 
+more related to one another than to those detected in the 
+primary-tumor sample ( Fig. 3A–G ). Most importantly, the 
+brain metastases shared nearly all of the potentially clini-
+cally informative driver alterations (29 of 30 alterations in 7 
+samples;  Fig. 3A–G ). 
+ For four cases ( Fig. 3A–C, and G ; 0302, 0308, 0314, 0137), 
+we analyzed multiple regions of the same brain metastasis 
+resection. In one example case (0314), we sampled four dis-
+tinct regions of a cerebellar metastasis from a patient with 
+metastatic HER2-ampliﬁ ed breast cancer ( Fig. 3C ; 314) and 
+found that each of these metastatic sites shared a  PIK3CA 
+mutation (E542K) and an ampliﬁ cation of  ERBB2 with the 
+primary tumor. In addition, we found  CCNE1 and  EGFR 
+ampliﬁ cations in all of the metastatic brain lesions that were 
+not detected in the primary-tumor sample (Supplementary 
+Figs. S12 and S13). The patient ultimately received treatment 
+with a PI3K inhibitor, with no evidence of intracranial disease 
+progression for 8 months. 
+ For four cases ( Fig. 3B, D, E, and G ; 0308, 0098, 0176, 
+0137), we obtained and analyzed samples from brain metas-
+tases taken prior to treatment and again at the time of 
+recurrence. For example, in a patient with a large cell 
+neuroendocrine lung cancer (0308;  Fig. 3B ), we sequenced 
+resections of brain metastases before and following whole-
+brain radiation and found that each sample shared a  MYC 
+ampliﬁ cation (six copies) that was not detected in the 
+primary-tumor sample ( Fig. 3B and Supplementary Fig. 
+S14). In another example, a patient with an estrogen recep-
+tor–, progesterone receptor–, and HER2-negative (triple-
+negative) breast cancer ( Fig. 3E ; 0176) underwent a resection 
+for a symptomatic cerebellar metastasis, and 2 months 
+later had a rapid local recurrence, necessitating reresection 
+( Fig. 3E ). The primary tumor and brain metastases shared 
+alterations in  TP53 ,  PTEN , and  MYC . The primary tumor 
+harbored an  MCL1 ampliﬁ cation that was not detected in 
+the brain-metastasis samples. We also identiﬁ ed an addi-
+tional mutation in  EZH2 (p.N640S; refs.  31 ,  41 ) in both 
+brain metastases but failed to detect this mutation in the 
+primary-tumor sample. 
+ In two cases where anatomically distinct brain metastases 
+were resected, we found that they were closely related to one 
+another and harbored identical potentially clinically informa-
+tive alterations ( Fig. 3F and G ). For example, a patient with 
+a  HER2 -ampliﬁ ed salivary gland ductal carcinoma ( Fig. 3F ; 
+0138) developed brain metastases while being treated with 
+trastuzumab. Analysis of a resected approximately 2 cm 3 
+cerebellar metastasis revealed potentially clinically informa-
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1170 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+E
+F
+G
+Dx primary
+Recurrent primary
+PED
+Dx BM1, SED
+WBRT
+Sx BM2, SED
+XRT BM2
+Sx BM2
+PED
+Melanoma (137)
+Time
+(3 years)
+Immunotherapy
+Immunotherapy
+Immunotherapy
+BM1
+BM2
+Recurrent
+BM2
+50 mutations
+BRAF p.V600E
+MET Amp
+ROBO2 Del
+MITF H.amp
+BM2 R1
+Recurrent BM2
+BM2 R2
+BM2 R3
+BM1
+BM2
+BM2
+BM1
+Dx primary
+PED
+Dx BM1, BM2,
+ Sx BM1, SED
+WBRT
+Sx BM2, SED
+C+TRA
+TRA
+Salivary gland ductal 
+carcinoma (138)
+Time
+(5 years)
+25 mutations
+Chr 7 Amp (CDK6/MET)
+Chr 8q Amp (MYC)
+CCNE1/AKT2 H.amp
+TP53 p.G244S
+ERBB2 H.amp
+BM2
+BM1 R2
+BM1 R1
+subclone1
+Dx primary
+Dx BM, PED
+PBM, WBRT, SED
+PED
+Sx BM, SED
+Sx recurrent BM
+C+BEV
+TMZ
+PARPi
+TN breast cancer (176)
+Time
+(4 years)
+50 mutations
+EZH2 p.N640S
+MCL1 Amp
+TP53 p.Y220C
+MYC Amp
+PTEN Del
+Recurrent BM
+BM
+FLT3 p.P606T
+A
+B
+C
+D
+Dx primary
+Dx/Sx BM, SED
+WBRT
+Sx recurrent BM
+                    PED
+Lung neuroendocrine (308)
+Time
+(2 years)
+100 mutations
+Chr 8q H.amp
+            (MYC)
+TP53 p.R249M/p.V274F
+MAP2K1 p.K57N
+MCL1 H.amp
+KIT Amp
+STK11 Del
+                TSC1 p.P1082A
+Recurrent
+BM R2
+BM R1
+BM R1 
+BM R2
+Dx BM
+WBRT
+Dx primary
+Sx BM, SED
+XRT to recurrent BM,
+SED
+Sx 1st BM recurrence,
+ SED
+Sx 2nd BM recurrence,
+ SED
+Lung adenocarcinoma (098)
+Time
+(2 years)
+50 mutations
+SMAD4 Del
+Chr 2p H.amp (ALK)
+NOTCH2 p.P6fs
+TP53 p.G279fs
+1st BM recurrence
+2nd BM recurrence
+BM
+IL7R/SLC1A3 H.amp
+YAP1/BIRC3/BIRC2/
+ TMEM123/MMP7/MMP20 H.amp
+APC p.S673G
+MECOM H.amp
+MAP2K4 p.D149
+ZNF217 H.amp 
+MYC H.amp
+KIT Amp
+Dx primary
+PED
+PED
+PED
+Dx/Sx BM
+WBRT
+PED
+Stable BM
+C+TRA
+C+LAP
+C+TRA
+TDM−1
+PI3Ki
+HER2+ breast cancer (314)
+Time
+(8 years)
+20 mutations
+Chr 7p H.amp (EGFR)
+CCNE1 H.amp
+TP53 p.C242S
+PIK3CA p.E542K
+Chr 8q Amp (MYC)
+ERBB2 H.amp
+AURKA H.amp
+BM R4
+BM R2
+BM R1
+BM R3
+MTOR p.S1597C
+TUBD1 H.amp
+subclone1
+subclone2
+Dx primary
+PED
+PED
+PED
+PED
+PED
+PED
+PED
+PED
+      Dx BM, 
+WBRT, SED
+Sx BM, PED
+C+TRA
+C+TRA
+C+TRA
+C+BEV
+C+LAP
+PI3Ki
+T−DM1
+LAP/TRA
+HER2+ breast cancer (302)
+Time
+(12 years)
+50 mutations
+TP53 Splice
+ERBB2 H.amp
+BM R3
+BM R2
+BM R1
+ERBB2 p.L816V
+KAT6A H.amp
+BDH1 H.amp
+BRAF p.L697F
+ PIK3CA H.amp
+Shared
+Primary
+Brain metastasis
+ Figure 3.   Anatomically and regionally distinct brain metastasis sam-
+ples share actionable drivers. A–G, seven cases for which multiple region-
+ally separated or anatomically distinct brain metastases were sequenced. 
+The samples labeled R1, R2, etc., refer to different regions of the same 
+pathology block. Phylogenetic trees and clinical histories are shown for 
+each case as in  Fig. 1 . C and F, minor subclones shared by >1 tissue sample 
+were detected (as described in the Methods). For these cases, the shared 
+areas denote the tissue samples, and indicate which subclones are present 
+in each sample. F and G, gadolinium-enhanced MRIs of the sampled brain 
+metastases are shown. 
+ 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1171 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+ Figure 4.   Regional lymph nodes and distal extracranial metastases are not a reliable surrogate for actionable mutation in brain metastases. A–H, 8 
+cases for which at least one primary tumor sample, regional lymph node, and extracranial metastasis were sequenced. Phylogenetic trees and clinical 
+histories are shown for each case as in  Fig. 1 . Tissue samples from extracranial metastases are depicted in green. 
+ 
+A
+B
+C
+D
+E
+F
+G
+H
+Dx primary, 
+Sx LNs
+PED
+Dx/Sx BM, SED
+PARPi
+Serous ovarian cancer (402)
+Time
+(6 years)
+25 mutations
+Chr 20q Amp
+   (AURKA)
+NF2 p.R262*
+TP53 p.I195F
+RB1 Splice
+PTEN Del
+Regional LN
+ (obturator)
+Dx primary
+Sx primary
+Dx/Sx BM,
+ SED
+Lung carcinoma (441)
+Time
+(9 months)
+100 mutations
+NF1 p.G2683E
+CTNNB1 p.S33C
+TP53 p.T155P
+Post-chemo/rad
+Pre-chemo/rad
+  ALK p.P254H
+FBXW7 p.R357T
+ FAT1 p.R2041fs
+Dx primary
+Dx/Sx lung met
+Dx/Sx BM, SED
+Immunotherapy
+Melanoma (053)
+Time
+(2 years)
+100 mutations
+NRAS p.Q61K
+Lung 
+TP53 p.Q192*
+NOTCH2 H.amp
+DOC2B Del
+Dx primary
+ Sx LN (12R)
+Dx/Sx BM,
+ SED
+Lung adenocarcinoma (091)
+Time
+(9 months)
+100 mutations
+Regional LN 
+     (12R)
+DOCK1 Del
+STK11 p.P281fs
+TP53 p.C141W / p.Q38* 
+KRAS p.G12C
+CDKN2A/B Del
+FBXW7 p.H52R
+Dx primary
+     Sx LNs
+PED
+Dx/Sx BM
+TN breast cancer (296)
+Time
+(2 years)
+20 mutations
+Chr7 Amp (EGFR)
+Regional LN
+ERBB4 Del
+Dx primary
+PED, Lung met Bx
+PED
+Dx/Sx BM, PED
+C+BEV C+CET
+Colorectal adenocarcinoma (128)
+Time
+(4 years)
+50 mutations
+Chr 8q Amp
+    (MYC) 
+APC p.S299fs/p.T772fs
+TP53 p.R65fs
+KRAS p.G12D
+Lung
+PRR14/FBRS H.amp
+Dx primary, EM,
+Dx/Sx BM
+PED, I−131
+PED, 
+Sx spinal T2 met
+SUN
+Papillary thyroid carcinoma (083)
+Time
+(4 years)
+20 mutations
+PTEN p.R233*
+HRAS p.Q61R
+Spinal T2
+Dx primary
+Dx/Sx lung met
+Dx/Bx breast nodule
+PED
+PED
+Dx BM
+PI3Ki/MEKi
+HER2– breast cancer (418)
+Time
+(3 years)
+50 mutations
+TP53 p.E204*
+CCND2 H.amp
+CDKN2A/B Del
+PTEN Del
+Lung
+COX18 H.amp
+TAF4B/KCTD1 H.amp
+Shared
+Primary
+Brain metastasis
+Extracranial metastasis
+tive ampliﬁ cations, including  MET, CDK6 ,  CCNE1 ,  MYC , and 
+ AKT2 , that were not identiﬁ ed in the primary-tumor sample 
+(Supplementary Figs. S15–S17). Ten months later, following 
+whole-brain radiation, the patient underwent a resection of 
+a symptomatic parietal lobe metastasis, which shared the 
+same ampliﬁ cations. Notably, at the time of progression in 
+both brain metastases, there was no evidence of extracranial 
+disease, and biopsy of an extracranial site for genetic analysis 
+would not have been possible. 
+ Brain Metastases Are Genetically Distinct 
+from Regional Lymph Nodes and Extracranial 
+Metastases 
+ Given that brain metastases can be clinically difﬁ cult 
+to access in some cases, we evaluated the extent to which 
+regional lymph nodes and distal extracranial metastases were 
+genetically similar to the brain metastases. We sequenced 
+eight cases with at least one additional primary-tumor sam-
+ple, regional lymph node, or extracranial metastasis, in addi-
+tion to the paired brain metastasis ( Fig. 4A–G ). 
+ The extracranial sites exhibited varying degrees of related-
+ness to the primary tumor and brain-metastasis samples. 
+In four of eight cases, the number of mutations private to 
+the brain metastasis sample was greater than the number of 
+truncal mutations shared by all samples ( Fig. 4A, C, D, and E ; 
+402, 296, 128, 83). Notably, in case 296, broad ampliﬁ cation 
+of chromosome 7 (six copies), including the  EGFR locus, was 
+detected in the primary-tumor sample, but not in matched 
+samples from a regional lymph node or brain metastasis ( Fig. 
+4C and Supplementary Fig. S18). 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1172 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+ In 2 of 4 patients with distal extracranial metastases, the 
+metastatic sites each harbored an approximately equal or 
+greater number of private mutations than the number of 
+mutations that were shared (truncal) or private to the brain-
+metastasis sample ( Fig. 4D and E ; 0128, 0083). In the third 
+case, the clinically sampled primary tumor and lung metas-
+tasis shared a common ancestor that harbored mutations 
+not detected in the brain-metastasis sample ( Fig. 4F ; 053). 
+In the fourth case, the brain and lung metastases shared a 
+common ancestor not in common with the primary-tumor 
+sample; however, the brain metastasis had more private 
+mutations than the primary and lung metastasis combined 
+( Fig. 4H ; 0418). 
+ In case 441, we sampled two regions of a primary lung 
+carcinoma, one before and one after two cycles of neoad-
+juvant chemotherapy and chest radiation, in addition to a 
+brain metastasis that was diagnosed 5 months later in the 
+absence of any extracranial disease ( Fig. 4G ). The two sam-
+ples from the primary tumor shared mutations that were 
+not detected in the brain-metastasis sample, and the brain 
+metastasis harbored mutations of uncertain signiﬁ cance 
+in  ALK (P254H),  FBXW7 (R357T), and  FAT1 (R2041fs) 
+that were not detected in either primary-tumor samples 
+( Fig. 4G ). 
+ DISCUSSION 
+ Brain metastases represent an unmet need in current onco-
+logic care. Approximately 8% to 10% of patients with cancer 
+will develop brain metastases, and more than half of these 
+patients will die within a few months following diagnosis of 
+intracranial metastasis ( 1 ). Genomically guided clinical trials 
+have been successful at matching patients to novel targeted 
+agents in patients with advanced cancer; however, patients 
+with active brain metastases are routinely excluded from these 
+trials in part due to the poor correlation between systemic 
+response and brain response ( 1 ). Patients will often develop 
+progressive brain metastases in the setting of extracranial 
+disease that is adequately controlled with existing chemother-
+apies or targeted therapies. Historically, this clinical diver-
+gence has been ascribed to inadequate systemic therapeutic 
+penetration of the blood–brain barrier. The observations 
+presented here suggest that additional potentially oncogenic 
+alterations may be present in brain metastases, and might 
+contribute to this divergence of therapeutic response in some 
+of these cases. 
+ We note that these mutations may represent precursors in 
+the evolutionary process leading to the metastasis; for exam-
+ple, they may have driven the proliferation or survival of a 
+prometastatic subclone within the primary tumor (that was 
+not sampled clinically). Alternately, it is possible that some 
+of these alterations were necessary for the establishment of 
+the initial metastatic outgrowth in the brain, but not for 
+its continued growth or maintenance. In addition, we note 
+that it is possible that some of the dependencies associated 
+with these alterations may be histology speciﬁ c or depend-
+ent on the presence or absence of additional mutations. As 
+our study involved a retrospective collection of samples, 
+further prospective clinical studies with agents that cross 
+the blood–brain barrier will be required to demonstrate that 
+these mutations are viable therapeutic targets for patients 
+with brain metastases. 
+ We found that 46 of 86 (53%) patients harbored a poten-
+tially clinically actionable alteration in the brain metastasis 
+that was not detected in the clinically sampled primary 
+tumor ( Fig. 2 ). These alterations may have critical clinical 
+implications because (i) patients often develop brain metas-
+tases even when presumably truncal mutations identiﬁ ed 
+in the primary tumor are successfully targeted with active 
+systemic agents [e.g., BRAF inhibitors ( 42 ), ALK inhibi-
+tors ( 43 ), or HER2 inhibitors ( 44 )]; (ii) additional evolu-
+tion in the brain metastasis lineage might contribute to 
+treatment resistance; (iii) actionable mutations present 
+in the brain metastasis cannot be reliably identiﬁ ed on 
+the basis of only a single biopsy of the primary tumor 
+( Fig. 2 ); and (iv) the primary and metastatic cancer samples 
+may be clonally unrelated, as was the case in four of the 
+86 cases in our study. Because more than 50% of patients 
+with brain metastases will die of intracranial progression, 
+targetable alterations present in cancer subclones speciﬁ c 
+to the brain metastasis represent an important opportunity 
+for novel targeted therapeutic strategies to affect overall 
+survival. 
+ Tissue from craniotomies provides an immediate oppor-
+tunity for more informed decision-making based on 
+genomic analysis. Many patients will have a brain metasta-
+sis resected as part of clinical care. Current clinical indica-
+tions for craniotomies in brain metastases include: need for 
+histologic diagnosis; resection of single (25%–50% of brain 
+metastases; refs.   45–47 ) or oligometastatic disease in the 
+setting of controlled extracranial disease; or resection of a 
+symptomatic or dominant lesion in the setting of multiple 
+brain metastases. Here, we show that although genetically 
+divergent from samples of their primary tumor ( Figs. 1 and 
+ 2 ), intracranial metastases were remarkably homogenous 
+with respect to driver and/or potentially targetable altera-
+tions ( Fig. 3 ), a ﬁ nding with implications for the metastatic 
+tropism of evolutionary branches that arise early dur-
+ing neoplastic development. Practically, this homogeneity 
+implies that, when clinically available, characterization of 
+even a single brain metastasis lesion may be more informa-
+tive than that of a single primary tumor biopsy for selection 
+of a targeted therapeutic agent. Notably, regional lymph 
+node and distal extracranial metastases were not reliable 
+surrogates for the oncogenic alterations found in brain 
+metastases ( Fig. 4 ). 
+ We note that more comprehensive characterization of the 
+primary tumor might reveal subclones that more closely 
+resemble intracranial disease. In current clinical practice, 
+however, decisions are often made after bulk molecular analy-
+sis of only a single biopsy from the primary tumor; without a 
+sample of brain metastasis tissue it is impossible to determine 
+to what extent genetic alterations in the primary biopsy rep-
+resent the divergent evolutionary branch of brain metastases. 
+In future studies, analysis of circulating tumor cells or cell-
+free DNA (from either blood or cerebrospinal ﬂ uid) should 
+be assessed in the context of existing brain-metastasis tissue 
+and autopsy studies in order to establish to what extent they 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1173 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+might be informative regarding actionable genomic altera-
+tions in brain metastases. 
+ METHODS 
+ The study was reviewed and approved by the human subjects 
+Institutional Review Boards of the Dana-Farber Cancer Institute 
+(Boston, MA), Brigham and Women’s Hospital (Boston, MA), Broad 
+Institute of Harvard and MIT (Boston, MA), Massachusetts Gen-
+eral Hospital  (Boston, MA), Seoul National University College of 
+Medicine (Seoul, South Korea), and Vall d’Hebron University Hos-
+pital (Barcelona, Spain). The study was conducted in accordance 
+with the Declaration of Helsinki. Written informed consent was 
+obtained from all participants. We identiﬁ ed 104 matched brain 
+metastases, primary tumors, and normal tissue that were collected 
+as part of standard clinical care between 1998 and 2012. In 15 of 
+these cases, we collected additional samples including multiple 
+brain metastasis lesions (7 cases) and extracranial lesions (8 cases 
+with regional lymph node metastases, extracranial metastases, or 
+additional primary-tumor tissue). All patients provided written 
+informed consent for genetic analysis. Board-certiﬁ ed neuropathol-
+ogists (S. Santagata, A. Stemmer-Rachamimov, and D.N. Louis) 
+conﬁ rmed the histologic diagnoses and selected representative 
+fresh-frozen or formalin-ﬁ xed parafﬁ n-embedded samples that had 
+an estimated purity of ≥40%. We performed whole-exome sequenc-
+ing of extracted tissue using methods as described on Illumina 
+HiSeq or Genome Analyzer IIX platforms ( 48, 49 ). Samples were 
+sequenced to median average depth of 108.3X (Supplementary 
+Fig. S19). Of the 104 cases, we focused on the 86 (Supplemen-
+tary Table S1) that exhibited sufﬁ ciently high purity in both 
+the primary and brain-metastasis samples ( 16 ) and for which 
+the DNA libraries were of sufﬁ cient quality (Supplementary Fig. 
+S19 and Supplementary File S1). Somatic copy-number altera-
+tions were inferred from sequencing read depth (Supplementary 
+Fig. S8, S9, S12–S18, S20, and Supplementary File S2). In addi-
+tion, we performed deep targeted sequencing (median depth 455X) 
+on a subset of primary-tumor samples using the Illumina HiSeq 
+platform ( 50 ) to conﬁ rm the presence or absence of mutations 
+(Supplementary Table S2). Immunohistochemistry for HER2/NEU 
+overexpression was used to validate ampliﬁ cation of  ERBB2 in the 
+brain metastasis and primary tumor in case 331. 
+Additional details regarding materials and methods are provided 
+in the Supplementary Methods. 
+ Accession codes: All data have been deposited in the database of 
+Geno types and Phenotypes (dbGaP): accession number phs000730.
+v1.p1. 
+ Analysis codes: Source-code implementing methods used in this 
+article can be accessed at http://bcb.dfci.harvard.edu/~scarter/clonal
+evolutionsuite. 
+ Branched-Sibling Model 
+ In order to address the genetic heterogeneity of cancer-tissue 
+samples, we analyzed mutation CCF data to determine whether the 
+tissue samples were sufﬁ ciently diverged from one another such 
+that no detectable overlap of minor subclones (CCF < 1) occurred, 
+a scenario we term the  branched-sibling model (Supplementary Figs. 
+S7B, S17A–S17C). In this model, the related cancer-tissue samples 
+descend from a common ancestral clone, but each has continued to 
+evolve independently with no overlap of subclones in the sampled 
+tissues. In this scenario, it is valid to construct standard phylogenetic 
+trees relating each tissue sample, with minor subclones (CCF < 1) pri-
+vate to each tissue sample represented as subtrees grafted on to each 
+sample tip. The branched-sibling scenario implies that such trees 
+accurately represent the evolutionary relationship of all subclonal 
+populations detected with CCF = 1 in the sampled cancer tissues. A 
+corollary of the branched-sibling model is that all mutations shared 
+in two or more samples must have CCF = 1 wherever they are present. 
+Thus, the appearance of mutations shared in two or more samples 
+with CCF < 1 in any of them either represents technical artifact or 
+constitutes evidence that the branched-sibling approximation is not 
+an accurate description of those samples. Because some degree of 
+technical artifact is occasionally expected, due to either sequencing 
+errors or incorrect estimation of CCF values, we applied further logi-
+cal constraints on the phylogenetic relationships between subclones 
+in order to distinguish true violations of the branched-sibling sce-
+nario (described below). 
+ To analyze the evolutionary relationship between paired primary-
+tumor and brain-metastasis samples, we ﬁ rst examined whether 
+we could ﬁ nd any cell population in any primary-tumor sample 
+that was an ancestor of the metastasis. Such a metastasis-founding 
+subclone would harbor mutations in a subset of the cancer cells 
+of the primary-tumor sample (CCF primary < 1) that were present 
+in all cancer cells (CCF met = 1) of the metastasis sample (violating 
+the branched-sibling model; Supplementary Fig. S7C). For each 
+patient, we analyzed the two-dimensional CCF distributions of 
+point mutations for all unique tissue-sample pairs (Supplementary 
+Figs. S1 and S3 and Supplementary File S3) using a previously 
+described 2-D Bayesian clustering algorithm (ref. 19; Supplemen-
+tary Methods). In most patients, we observed some mutations with 
+CCF met = 1 that were not detected in the primary. Similarly, in 
+most patients, we observed some mutations with CCF primary = 
+1 that were not detected in the paired metastasis. We reasoned that, 
+because subclones deﬁ ned by CCF primary < 1 and CCF met = 1 must be 
+the evolutionary siblings of subclones deﬁ ned by CCF primary < 1 and 
+CCF met = 0, a metastasis-founding subclone could not have been 
+present at a detectable fraction in these primary-tumor samples, as 
+this subclone would have displaced the mutations exclusive to the 
+primary, so that none would have CCF primary = 1 (Supplementary Fig. 
+S7B). Thus, the observation of mutation clusters with CCF primary < 1 
+and CCF met = 1 in the absence of this displacement was not con-
+sidered to be convincing evidence for a branched-sibling violation 
+(Supplementary File S3). We recently applied similar analysis to data 
+from a mouse model of lung cancer ( 20 ), where a valid metastasis-
+founding subclone was detected (Fig. 5 therein); however, we note 
+that approximately 50% of the total tumor mass was harvested for 
+sequencing in that case. 
+ Following similar reasoning, we examined CCF values in all pairs 
+of related cancer tissue samples. Most sample-pairs exhibited robust 
+mutation clusters with CCF = 1 in one sample that were undetected 
+in the other (Supplementary File S3), implying that they were suf-
+ﬁ ciently diverged from one another such that no partial-sharing of 
+subclones occurred between them. We note that evidence supporting 
+partial sharing of subclones between multiple sequenced regions of 
+individual brain metastases was observed for some cases, necessitat-
+ing special treatment (described below). 
+ Phylogenetic Inference on Related 
+Cancer-Tissue Samples 
+ We created phylogenetic trees using a four-phase process in order 
+to (i) be robust to both false-positive and false-negative mutation 
+calls; (ii) assign mutations to the correct branches of the tree; (iii) 
+distinguish tissue-restricted minor subclones, present in only a sub-
+set of the cancer cells in a given sample (CCF < 1); and (iv) identify 
+cases where minor subclones were shared by two or more related tis-
+sue samples (violating the branched-sibling model) and correct the 
+phylogenetic trees accordingly. 
+ In the ﬁ rst phase, we sought to ﬁ nd the best phylogenetic tree 
+explaining the observed point-mutation data. Somatic point-
+mutations were assumed to have arisen uniquely during the clonal 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1174 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+evolution of the cancer, with negligible back-mutation rates, for 
+example, due to chromosomal deletion of mutated alleles, which 
+did not appear to help explain the data (not shown). We constructed 
+a binary matrix of present/absent values for all point mutations 
+detected in any of the samples analyzed from a given patient. For 
+each sample, absent sites for which paired-detection power was 
+<0.7 were removed from consideration, as were sites for which <3 
+reads supporting the mutation were observed. We then searched for 
+the maximum-parsimony phylogeny using the parsimony-ratchet 
+method ( 51 ) on this matrix. 
+ In the second phase, we sought to assign mutations to branches 
+of the phylogeny inferred in phase I, taking into account uncer-
+tainty in the provisional mutation forced calls. We applied the Baye-
+sian clustering procedure described in the Supplementary Methods 
+to each sample individually, retaining all mutations provisionally 
+called with >0 supporting reads in that sample. A single pseudo-
+count observation was added having CCF = 1. We then identiﬁ ed 
+all provisional mutation calls (>0 supporting reads) made in at 
+least two samples of the case that were assigned to a CCF cluster 
+with posterior mode < 1.0 (Supplementary Fig. S5A). These muta-
+tion calls, which appeared to violate the branched-sibling model 
+(described above), were then rejected if the number of supporting 
+reads was <3 (Supplementary Fig. S5B). This modiﬁ ed matrix of 
+mutation calls was then used to assign each mutation to a branch 
+of the phylogenetic tree by assuming that the mutation occurred 
+uniquely during clonal evolution and was not subject to back muta-
+tion. For each sample, the number of mutations in each category is 
+shown in Supplementary Fig. S5C. Assignment of gene-level SCNAs 
+to branches was performed in a similar manner (Supplementary 
+Fig. S5D). 
+ In the third phase, we sought to obtain a more complete descrip-
+tion of the genetic divergence between the various tissue samples of 
+each case. We reﬁ ned the tips of each phylogenetic tree by distin-
+guishing between private mutations that occurred in all cancer cells 
+of each sample (CCF = 1) versus those that occurred in a restricted 
+subset of sampled cancer cells (CCF < 1). To make this distinction, for 
+each sample, we applied the Bayesian clustering technique (described 
+in Supplementary Methods) to the private mutations called only 
+in that sample. We added  N pseudo-count observations of CCF = 
+1, where  N was the number of mutations called in >1 samples of 
+the case that were also called in the sample being considered. This 
+process partitioned the private mutations into a small number of 
+putative subclones having distinct CCF values (Supplementary Fig. 
+S4). We then modiﬁ ed the phylogenetic trees by replacing each (non-
+germline) tip with a subtree representing the maximally branching 
+microphylogeny consistent with the observed set of CCF-cluster val-
+ues (i.e., respecting the rule that the sum of sibling subclones cannot 
+exceed that of their most recent common ancestor;  Figs. 1 ,  3 ,  and 4 , 
+and Supplementary Fig. S6). 
+ In the fourth phase, we examined whether evidence that the 
+branched-sibling model was not an adequate approximation of the 
+sampled cancer tissues could be discerned. We manually reviewed 
+detailed plots (Supplementary File S3) showing the estimated 
+CCF value of each mutation in each tissue sample, as well as the 
+2-D clustering results of mutation CCF values in all unique pairs 
+of related tissue samples (Supplementary Fig. S3) for evidence 
+of minor subclones (CCF < 1) shared by two or more samples, 
+as described above. In two cases in which evidence contradicting 
+the branched-sibling model was observed, phylogenetic trees were 
+manually adjusted (as described below) to accurately reﬂ ect the 
+evolutionary relationship between the different clonal lineages 
+as shown in  Fig. 3C and F . This was done in a manner analogous 
+to that described in a recent report ( 20 ); here, we extended simi-
+lar logic to the scenario where the same subclone was present in 
+multiple sequenced tissue samples. Detailed analysis of mutation 
+CCFs for each patient, including the automatically generated 
+phylogenetic trees (prior to manual adjustment), are available in 
+Supplementary File S3. 
+ For patient 138 ( Fig. 3F ), samples BM1 region1 and BM1 region2 
+shared a minor subclone (subclone1) deﬁ ned by 15 mutations, 
+present at CCF = 0.6 in BM1 region 1 and CCF = 0.55 in BM1 
+region 2. Because the mutations private to these samples had CCF 
+values consistent with being the siblings of subclone1 (CCF = 0.1 
+in BM1 region 1 and CCF = 0.3 in BM1 region2), we redrew the 
+tree this way. 
+ For patient 314 ( Fig. 3C ), samples BM region 2 and BM region 4 
+shared a minor subclone (subclone 2) deﬁ ned by eight mutations, 
+present at CCF = 0.45 in BM region 2 and CCF = 0.35 in BM region 
+4. Samples BM region 1 and BM region 3 shared a minor subclone 
+(subclone 1), deﬁ ned by seven mutations, present at CCF = 0.55 in 
+BM region 3 and CCF = 0.4 in BM region 1. In addition, BM region 1 and 
+BM region 3 appeared to contain a small number of cells (CCF < 0.05) 
+from subclone 2. In addition, extreme heterogeneity of primary-tumor 
+sample may have resulted in inaccurate CCF values for some muta-
+tions, leading to the appearance of a cluster having CCF < 1 in the 
+primary and CCF = 1 in all metastasis samples. 
+ Patients 176, 302, and 137 showed some evidence consistent with 
+shared subclones, but due to the small number of mutations involved 
+and the uncertainty in their CCF values, judgments about the validity 
+of these branched-sibling violations could not be made with conﬁ -
+dence. The trees were therefore left unaltered. 
+ In addition, patients 331, 104, 52, 263, and 91 harbored shared 
+mutations with CCF < 1. However, they were not logically consistent 
+with true violations of the branched-sibling model (e.g., they failed 
+to displace private mutations, which were present at CCF = 1 in 
+most samples from these cases). This, coupled with the substantial 
+heterogeneity of the copy proﬁ les in some of these samples, led us 
+to conclude that the appearance of mutations appearing to violate 
+the branched-sibling model was due to incorrect estimation of CCF 
+values. 
+ Prioritization of Clinically Informative Mutations 
+Using TARGET 
+ To systematically evaluate somatic alterations of potential clini-
+cal interest, we used the TARGET database ( 31 ) of genes for which 
+somatic alterations have therapeutic or prognostic implications in at 
+least one tumor type (Supplementary Table S3). Because the thera-
+peutic or prognostic evidence in TARGET is often based on one or a 
+few tumor types, we currently do not have evidence that these events 
+will be predictive of clinical responses to the indicated targeted thera-
+peutic agent in all of the tumor types studied here. Ongoing clinical 
+trials to test such hypotheses (“basket trials”) accept any patient with 
+a particular alteration regardless of their primary histology. However, 
+there is evidence that in some cases, such as for BRAF V600E muta-
+tions in colorectal cancer, the responses to therapies targeting the 
+same genomic events are histology dependent. 
+ Alterations in TARGET genes were prioritized according to 
+deﬁ ned criteria ( 31 ). For example, some genes were required to 
+have biallelic inactivation, whereas others required ampliﬁ cation 
+or speciﬁ c point mutations. In order to nominate a mutation as 
+“potentially clinically informative,” we ﬁ rst distinguished between 
+heterozygous and homozygous events (in which no reference alleles 
+remained in the cancer cells), by analyzing read-counts at mutated 
+loci using ABSOLUTE ( 16 ) to account for genomic copy numbers 
+and sample purity. 
+ We accepted as fulﬁ lling the “biallelic inactivation” TARGET 
+criteria genes harboring homozygous loss-of-function (LOF) muta-
+tions, homozygous deletion, or two heterozygous LOF mutations. 
+LOF mutations were deﬁ ned as: nonsense, frame-shift indel, in-frame 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1175 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+indel, or splice site mutations. To satisfy the “mutation” TARGET 
+criteria, we required the presence of at least one identical amino 
+acid substitution in the Catalogue of Somatic Mutations in Cancer 
+ (COSMIC) database (v67; ref.  52 ). To satisfy the “ampliﬁ cation” 
+ TARGET criteria, we required a gene-level somatic copy-number 
+alteration call of either “ampliﬁ cation” or “high-level ampliﬁ cation” 
+(as described above). 
+ Disclosure of Potential Conﬂ icts of Interest 
+ E.M. Van Allen is a consultant/advisory board member for Syapse 
+and Roche Ventana. B.E. Johnson has ownership interest (including 
+patents) in KEW Group and is a consultant/advisory board member 
+for the same. M. Meyerson reports receiving a commercial research 
+grant from Bayer; has ownership interest in Foundation Medicine and 
+in a patent licensed to Laboratory Corporation of America; and is a 
+consultant/advisory board member for Foundation Medicine. L.A. Gar-
+raway reports receiving a commercial research grant from Novartis; has 
+ownership interest (including patents) in Foundation Medicine; and is a 
+consultant/advisory board member for Novartis, Foundation Medicine, 
+Boehringer Ingelheim, and Warp Drive. R. Beroukhim is a consultant 
+at Novartis and reports receiving a commercial research grant from 
+Novartis. T. Batchelor reports receiving a commercial research grant 
+from Pﬁ zer; has received speakers bureau honoraria from Research To 
+Practice, Imedex, and Oakstone; and is a consultant/advisory board 
+member for Proximagen, Merck, Foundation Medicine, UpToDate, and 
+Champions Biotechnology. W.C. Hahn reports receiving a commercial 
+research grant from Novartis and is a consultant/advisory board mem-
+ber for the same. No potential conﬂ icts of interest were disclosed by the 
+other authors. 
+One of the Editors-in-Chief is an author on this article. In keeping 
+with the AACR’s editorial policy, the peer review of this submission 
+was managed by a senior member of Cancer Discovery’s editorial team; 
+a member of the AACR Publications Committee rendered the ﬁ nal 
+decision concerning acceptability . 
+ Authors’ Contributions 
+ Conception and design: P.K. Brastianos, S.L. Carter, P.M. Horowitz, 
+J. Tabernero, S.H. Paek, N.U. Lin, M. Meyerson, E.S. Lander, R. Beroukhim, 
+J. Baselga, D.N. Louis, W.C. Hahn
+ Development of methodology: P.K. Brastianos, S.L. Carter, 
+S. Santagata, R.T. Jones, P.M. Horowitz, J. Tabernero, J. Seoane, 
+E. Martinez-Saez, A. Chevalier, P. Van Hummelen, R. Beroukhim, 
+J. Baselga
+ Acquisition of data (provided animals, acquired and managed 
+patients, provided facilities, etc.): P.K. Brastianos, S. Santagata, 
+D.P. Cahill, R.T. Jones, K.L. Ligon, J. Tabernero, J. Seoane, E. Martinez-Saez,
+W.T. Curry, I.F. Dunn, S.H. Paek, F.G. Barker II, A.R. Thorner, 
+M.P. Hoang, T.K. Choueiri, S. Signoretti, C. Sougnez, M.S. Rabin, 
+N.U. Lin, E.P. Winer, A. Stemmer-Rachamimov, R. Beroukhim, 
+T.T. Batchelor
+ Analysis and interpretation of data (e.g., statistical analysis, 
+biostatistics, computational analysis): P.K. Brastianos, S.L. Carter, 
+D.P. Cahill, A. Taylor-Weiner, E.M. Van Allen, M.S. Lawrence, 
+P.M. Horowitz, K. Cibulskis, J. Tabernero, S.-H. Park, A. McKenna, 
+A. Chevalier, M. Rosenberg, F.G. Barker II, P. Van Hummelen, 
+A.R. Thorner, B.E. Johnson, M.P. Hoang, T.K. Choueiri, L. Garraway, 
+R. Beroukhim, T.T. Batchelor, J. Baselga, D.N. Louis, G. Getz, W.C. Hahn
+ Writing, review, and/or revision of the manuscript: P.K. Brastianos, 
+S.L. Carter, S. Santagata, D.P. Cahill, E.M. Van Allen, P.M. Horowitz, 
+K.L. Ligon, J. Tabernero, J. Seoane, W.T. Curry, S.H. Paek, F.G. Barker II, 
+A.R. Thorner, B.E. Johnson, M.P. Hoang, T.K. Choueiri, M.S. Rabin,
+N.U. Lin, E.P. Winer, A. Stemmer-Rachamimov, M. Meyerson, 
+L. Garraway, E.S. Lander, R. Beroukhim, T.T. Batchelor, J. Baselga, 
+D.N. Louis, G. Getz, W.C. Hahn
+ Administrative, technical, or material support (i.e., reporting 
+or organizing data, constructing databases): P.K. Brastianos, 
+R.T. Jones, K.L. Ligon, S.-H. Park, C.M. Gill, A.R. Thorner, 
+T.K. Choueiri, C. Sougnez, M.S. Rabin, R. Beroukhim
+ Study supervision: P.K. Brastianos, S.L. Carter, S.-H. Park, S. Gabriel, 
+R. Beroukhim, D.N. Louis, W.C. Hahn
+ Other (pathology review): A. Stemmer-Rachamimov 
+ Acknowledgments 
+ This article is dedicated to Maria Brastianos. The authors  would 
+like to thank the patients for providing tissue samples; Loreal Brown, 
+James Kim, and Bill Richards for assisting with sample collection; 
+Anna Schinzel and Gary Ciocci for fruitful discussions; Leslie Gaff-
+ney for assisting with the ﬁ gures, and Charilaos H. Brastianos for 
+critical review of the manuscript. 
+ Grant Support 
+ This work was supported by a grant from the NIH (National 
+Human Genome Research Institutes of Health Large-Scale Sequenc-
+ing and Analysis Center) U54 HG003067 (to E.S. Lander) to the 
+Broad Institute; the National Cancer Institute (TCGA Genome 
+Characterization Center) 5U24CA143687 (to M. Meyerson and S. 
+Gabriel) to the Broad Institute; the Brain Science Foundation (to 
+P.K. Brastianos); Susan G. Komen for the Cure (to P.K. Brastianos); 
+Terri Brodeur Breast Cancer Foundation (to P.K. Brastianos); Con-
+quer Cancer Foundation (to P.K. Brastianos); the American Brain 
+Tumor Association (to P.K. Brastianos); the Breast Cancer Research 
+Foundation (to P.K. Brastianos); U54CA143798 (to R. Beroukhim 
+and P.K. Brastianos); and the Mary Kay Foundation (to P.K. Bras-
+tianos and W.C. Hahn). W.C. Hahn and R. Beroukhim are supported 
+by Novartis. G. Getz is the Paul C. Zamecnick, MD, Chair in Oncol-
+ogy at MGH. N.U. Lin and E.P. Winer are supported by the Breast 
+Cancer Research Foundation. 
+ Received March 30, 2015; revised August 8, 2015; accepted August 
+11, 2015; published OnlineFirst September 26, 2015.
+ REFERENCES 
+  1.  Brastianos  PK ,  Curry  WT ,  Oh  KS .  Clinical discussion and review of 
+the management of brain metastases .  J Natl Compr Canc Netw  2013 ; 
+11 : 1153 – 64 . 
+  2.  Eichler  AF ,  Chung  E ,  Kodack  DP ,  Loefﬂ er  JS ,  Fukumura  D ,  Jain  RK . 
+ The biology of brain metastases-translation to new therapies .  Nat Rev 
+Clin Oncol  2011 ; 8 : 344 – 56 . 
+  3.  Campbell  PJ ,  Yachida  S ,  Mudie  LJ ,  Stephens  PJ ,  Pleasance  ED ,  Steb-
+bings  LA ,  et al.  The patterns and dynamics of genomic instability in 
+metastatic pancreatic cancer .  Nature  2010 ; 467 : 1109 – 13 . 
+  4.  Gerlinger  M ,  Rowan  AJ ,  Horswell  S ,  Larkin  J ,  Endesfelder  D , 
+ Gronroos  E ,  et al.  Intratumor heterogeneity and branched evolu-
+tion revealed by multiregion sequencing .  N Engl J Med  2012 ; 366 :
+ 883 – 92 . 
+  5.  Liu  W ,  Laitinen  S ,  Khan  S ,  Vihinen  M ,  Kowalski  J ,  Yu  G ,  et al.  Copy 
+number analysis indicates monoclonal origin of lethal metastatic 
+prostate cancer .  Nat Med  2009 ; 15 : 559 – 65 . 
+  6.  Navin  N ,  Kendall  J ,  Troge  J ,  Andrews  P ,  Rodgers  L ,  McIndoo  J , 
+ et al.  Tumour evolution inferred by single-cell sequencing .  Nature 
+ 2011 ; 472 : 90 – 4 . 
+  7.  Ding  L ,  Ellis  MJ ,  Li  S ,  Larson  DE ,  Chen  K ,  Wallis  JW ,  et al.  Genome 
+remodelling in a basal-like breast cancer metastasis and xenograft . 
+ Nature  2010 ; 464 : 999 – 1005 . 
+  8.  Xie  T ,  Cho  YB ,  Wang  K ,  Huang  D ,  Hong  HK ,  Choi  YL ,  et al.  Pat-
+terns of somatic alterations between matched primary and meta-
+static colorectal tumors characterized by whole-genome sequencing . 
+ Genomics  2014 ; 104 : 234 – 41 . 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+1176 | CANCER DISCOVERYNOVEMBER  2015 
+www.aacrjournals.org
+Brastianos et al.
+RESEARCH BRIEF
+  9.  Shah  SP ,  Morin  RD ,  Khattra  J ,  Prentice  L ,  Pugh  T ,  Burleigh  A ,  et al. 
+ Mutational evolution in a lobular breast tumour proﬁ led at single 
+nucleotide resolution .  Nature  2009 ; 461 : 809 – 13 . 
+ 10.  Paik  PK ,  Shen  R ,  Won  H ,  Rekhtman  N ,  Wang  L ,  Sima  CS ,  et al.  Next-
+generation sequencing of stage IV squamous cell lung cancers reveals 
+an association of PI3K aberrations and evidence of clonal heterogene-
+ity in patients with brain metastases .  Cancer Discov  2015 ; 5 : 610 – 21 . 
+ 11.  Chen  G ,  Chakravarti  N ,  Aardalen  K ,  Lazar  AJ ,  Tetzlaff  MT ,  Wub-
+benhorst  B ,  et al.  Molecular proﬁ ling of patient-matched brain and 
+extracranial melanoma metastases implicates the PI3K pathway as a 
+therapeutic target .  Clin Cancer Res  2014 ; 20 : 5537 – 46 . 
+ 12.  Wikman  H ,  Lamszus  K ,  Detels  N ,  Uslar  L ,  Wrage  M ,  Benner  C ,  et al. 
+ Relevance of PTEN loss in brain metastasis formation in breast can-
+cer patients .  Breast Cancer Res  2012 ; 14 : R49 . 
+ 13.  Bos  PD ,  Zhang  XH ,  Nadal  C ,  Shu  W ,  Gomis  RR ,  Nguyen  DX ,  et al. 
+ Genes that mediate breast cancer metastasis to the brain .  Nature 
+ 2009 ; 459 : 1005 – 9 . 
+ 14.  McMullin  RP ,  Wittner  BS ,  Yang  C ,  Denton-Schneider  BR ,  Hicks  D , 
+ Singavarapu  R ,  et al.  A BRCA1 deﬁ cient-like signature is enriched in 
+breast cancer brain metastases and predicts DNA damage-induced 
+poly (ADP-ribose) polymerase inhibitor sensitivity .  Breast Cancer Res 
+ 2014 ; 16 : R25 . 
+ 15.  Haffner  MC ,  Mosbruger  T ,  Esopi  DM ,  Fedor  H ,  Heaphy  CM ,  Walker 
+ DA ,  et al.  Tracking the clonal origin of lethal prostate cancer .  J Clin 
+Invest  2013 ; 123 : 4918 – 22 . 
+ 16.  Carter  SL ,  Cibulskis  K ,  Helman  E ,  McKenna  A ,  Shen  H ,  Zack  T , 
+et al.  Absolute quantiﬁ cation of somatic DNA alterations in human 
+cancer .  Nat Biotechnol  2012 ; 30 : 413 – 21 . 
+ 17.  Nik-Zainal  S ,  Alexandrov  LB ,  Wedge  DC ,  Van Loo  P ,  Greenman  CD , 
+ Raine  K ,  et al.  Mutational processes molding the genomes of 21 
+breast cancers .  Cell  2012 ; 149 : 979 – 93 . 
+ 18.  Landau  DA ,  Carter  SL ,  Getz  G ,  Wu  CJ .  Clonal evolution in hema-
+tological malignancies and therapeutic implications .  Leukemia 
+ 2014 ; 28 : 34 – 43 . 
+ 19.  Landau  DA ,  Carter  SL ,  Stojanov  P ,  McKenna  A ,  Stevenson  K ,  Law-
+rence  MS ,  et al.  Evolution and impact of subclonal mutations in 
+chronic lymphocytic leukemia .  Cell  2013 ; 152 : 714 – 26 . 
+ 20.  McFadden  DG ,  Papagiannakopoulos  T ,  Taylor-Weiner  A ,  Stewart  C , 
+ Carter  SL ,  Cibulskis  K ,  et al.  Genetic and clonal dissection of murine 
+small cell lung carcinoma progression by genome sequencing .  Cell 
+ 2014 ; 156 : 1298 – 311 . 
+ 21.  Lohr  JG ,  Stojanov  P ,  Carter  SL ,  Cruz-Gordillo  P ,  Lawrence  MS , 
+ Auclair  D ,  et al.  Widespread genetic heterogeneity in multiple mye-
+loma: implications for targeted therapy .  Cancer Cell  2014 ; 25 : 91 – 101 . 
+ 22.  Yachida  S ,  Jones  S ,  Bozic  I ,  Antal  T ,  Leary  R ,  Fu  B ,  et al.  Distant metas-
+tasis occurs late during the genetic evolution of pancreatic cancer . 
+ Nature  2010 ; 467 : 1114 – 7 . 
+ 23.  Ihle  NT ,  Lemos  R ,  Wipf  P ,  Yacoub  A ,  Mitchell  C ,  Siwak  D ,  et al. 
+ Mutations in the phosphatidylinositol-3-kinase pathway predict for 
+antitumor activity of the inhibitor PX-866 whereas oncogenic Ras is 
+a dominant predictor for resistance .  Cancer Res  2009 ; 69 : 143 – 50 . 
+ 24.  Sos  ML ,  Koker  M ,  Weir  BA ,  Heynck  S ,  Rabinovsky  R ,  Zander  T , 
+ et al.  PTEN loss contributes to erlotinib resistance in EGFR-mutant 
+lung cancer by activation of Akt and EGFR .  Cancer Res  2009 ; 69 : 
+3256 – 61 . 
+ 25.  Juric  D ,  Castel  P ,  Grifﬁ th  M ,  Grifﬁ th  OL ,  Won  HH ,  Ellis  H ,  et al. 
+ Convergent loss of PTEN leads to clinical resistance to a PI(3)Kalpha 
+inhibitor .  Nature  2015 ; 518 : 240 – 4 . 
+ 26.  Lynch  TJ ,  Bell  DW ,  Sordella  R ,  Gurubhagavatula  S ,  Okimoto  RA , 
+ Brannigan  BW ,  et al.  Activating mutations in the epidermal growth 
+factor receptor underlying responsiveness of non-small-cell lung can-
+cer to geﬁ tinib .  N Engl J Med  2004 ; 350 : 2129 – 39 . 
+ 27.  Krop  I ,  Flores  L ,  Najita  JS ,  Mayer  IA ,  Hobday  TJ ,  Falkson  I ,  et al.  The 
+role of EGFR ampliﬁ cation in trastuzumab resistance: a correlative 
+analysis of TBCRC003 .  J Clin Oncol 29: 2011 (suppl; abstr 528 . 
+ 28.  Ritter  CA ,  Perez-Torres  M ,  Rinehart  C ,  Guix  M ,  Dugger  T ,  Engelman 
+ JA ,  et al.  Human breast cancer cells selected for resistance to trastu-
+zumab  in vivo overexpress epidermal growth factor receptor and ErbB 
+ligands and remain dependent on the ErbB receptor network .  Clin 
+Cancer Res  2007 ; 13 : 4909 – 19 . 
+ 29.  TCGA .  Integrated genomic analyses of ovarian carcinoma .  Nature 
+ 2011 ; 474 : 609 – 15 . 
+ 30.  Bang  YJ ,  Van Cutsem  E ,  Feyereislova  A ,  Chung  HC ,  Shen  L ,  Sawaki 
+ A ,  et al.  Trastuzumab in combination with chemotherapy versus 
+chemotherapy alone for treatment of HER2-positive advanced gastric 
+or gastro-oesophageal junction cancer (ToGA): a phase 3, open-label, 
+randomised controlled trial .  Lancet  2010 ; 376 : 687 – 97 . 
+ 31.  Van Allen  EM ,  Wagle  N ,  Stojanov  P ,  Perrin  DL ,  Cibulskis  K ,  Mar-
+low  S ,  et al.  Whole-exome sequencing and clinical interpretation of 
+formalin-ﬁ xed, parafﬁ n-embedded tumor samples to guide precision 
+cancer medicine .  Nat Med  2014 ; 20 : 682 – 8 . 
+ 32.  Finn  RS ,  Dering  J ,  Conklin  D ,  Kalous  O ,  Cohen  DJ ,  Desai  AJ ,  et al. 
+ PD 0332991, a selective cyclin D kinase 4/6 inhibitor, preferentially 
+inhibits proliferation of luminal estrogen receptor-positive human 
+breast cancer cell lines  in vitro .  Breast Cancer Res  2009 ; 11 : R77 . 
+ 33.  Logan  JE ,  Mostoﬁ zadeh  N ,  Desai  AJ ,  VON Euw  E ,  Conklin  D , 
+ Konkankit  V ,  et al.  PD-0332991, a potent and selective inhibitor of 
+cyclin-dependent kinase 4/6, demonstrates inhibition of proliferation 
+in renal cell carcinoma at nanomolar concentrations and molecular 
+markers predict for sensitivity .  Anticancer Res  2013 ; 33 : 2997 – 3004 . 
+ 34.  Booher  RN ,  Hatch  H ,  Dolinski  BM ,  Nguyen  T ,  Harmonay  L , 
+Al-Assaad  AS ,  et al.  MCL1 and BCL-xL levels in solid tumors are pre-
+dictive of dinaciclib-induced apoptosis .  PLoS ONE  2014 ; 9 : e108371 . 
+ 35.  Fry  DW ,  Harvey  PJ ,  Keller  PR ,  Elliott  WL ,  Meade  M ,  Trachet  E ,  et al. 
+ Speciﬁ c inhibition of cyclin-dependent kinase 4/6 by PD 0332991 
+and associated antitumor activity in human tumor xenografts .  Mol 
+Cancer Ther  2004 ; 3 : 1427 – 38 . 
+ 36.  Cancer Genome Atlas Research Network .  Comprehensive genomic 
+characterization deﬁ nes human glioblastoma genes and core path-
+ways .  Nature  2008 ; 455 : 1061 – 8 . 
+ 37.  Jaiswal  BS ,  Janakiraman  V ,  Kljavin  NM ,  Chaudhuri  S ,  Stern  HM , 
+ Wang  W ,  et al.  Somatic mutations in p85alpha promote tumorigen-
+esis through class IA PI3K activation .  Cancer Cell  2009 ; 16 : 463 – 74 . 
+ 38.  Bose  R ,  Kavuri  SM ,  Searleman  AC ,  Shen  W ,  Shen  D ,  Koboldt  DC ,  et al. 
+ Activating HER2 mutations in HER2 gene ampliﬁ cation negative 
+breast cancer .  Cancer Discov  2013 ; 3 : 224 – 37 . 
+ 39.  Engelman  JA ,  Chen  L ,  Tan  X ,  Crosby  K ,  Guimaraes  AR ,  Upadhyay  R , 
+ et al.  Effective use of PI3K and MEK inhibitors to treat mutant Kras 
+G12D and PIK3CA H1047R murine lung cancers .  Nat Med  2008 ; 
+14 : 1351 – 6 . 
+ 40.  Wada  M ,  Horinaka  M ,  Yamazaki  T ,  Katoh  N ,  Sakai  T .  The dual RAF/
+MEK inhibitor CH5126766/RO5126766 may be a potential therapy 
+for RAS-mutated tumor cells .  PLoS ONE  2014 ; 9 : e113217 . 
+ 41.  Kikuchi  J ,  Takashina  T ,  Kinoshita  I ,  Kikuchi  E ,  Shimizu  Y ,  Sakak-
+ibara-Konishi  J ,  et al.  Epigenetic therapy with 3-deazaneplanocin A, 
+an inhibitor of the histone methyltransferase EZH2, inhibits growth 
+of non-small cell lung cancer cells .  Lung Cancer  2012 ; 78 : 138 – 43 . 
+ 42.  Rochet  NM ,  Dronca  RS ,  Kottschade  LA ,  Chavan  RN ,  Gorman  B , 
+Gilbertson  JR ,  et al.  Melanoma brain metastases and vemurafenib: 
+need for further investigation .  Mayo Clin Proc  2012 ; 87 : 976 – 81 . 
+ 43.  Maillet  D ,  Martel-Lafay  I ,  Arpin  D ,  Perol  M .  Ineffectiveness of crizo-
+tinib on brain metastases in two cases of lung adenocarcinoma with 
+EML4-ALK rearrangement .  J Thorac Oncol  2013 ; 8 : e30 – 1 . 
+ 44.  Musolino  A ,  Ciccolallo  L ,  Panebianco  M ,  Fontana  E ,  Zanoni  D , 
+ Bozzetti  C ,  et al.  Multifactorial central nervous system recurrence 
+susceptibility in patients with HER2-positive breast cancer: epide-
+miological and clinical data from a population-based cancer registry 
+study .  Cancer  2011 ; 117 : 1837 – 46 . 
+ 45.  Patchell  RA ,  Tibbs  PA ,  Walsh  JW ,  Dempsey  RJ ,  Maruyama  Y ,  Kryscio 
+ RJ ,  et al.  A randomized trial of surgery in the treatment of single 
+metastases to the brain .  N Engl J Med  1990 ; 322 : 494 – 500 . 
+ 46.  Stortebecker  TP .  Metastatic tumors of the brain from a neurosurgical 
+point of view; a follow-up study of 158 cases .  J Neurosurg  1954 ; 11 : 
+84 – 111 . 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024
+
+ 
+NOVEMBER  2015CANCER DISCOVERY | 1177 
+Genomics of Brain Metastases
+RESEARCH BRIEF
+ 47.  Patchell  RA ,  Tibbs  PA ,  Regine  WF ,  Dempsey  RJ ,  Mohiuddin  M , 
+Kryscio  RJ ,  et al.  Postoperative radiotherapy in the treatment of single 
+metastases to the brain: a randomized trial .  JAMA  1998 ; 280 :  1485 – 9 . 
+ 48.  Brastianos  PK ,  Horowitz  PM ,  Santagata  S ,  Jones  RT ,  McKenna  A , 
+ Getz  G ,  et al.  Genomic sequencing of meningiomas identiﬁ es onco-
+genic SMO and AKT1 mutations .  Nat Genet  2013 ; 45 : 285 – 9 . 
+ 49.  DePristo  MA ,  Banks  E ,  Poplin  R ,  Garimella  KV ,  Maguire  JR ,  Hartl  C , 
+ et al.  A framework for variation discovery and genotyping using next-
+generation DNA sequencing data .  Nat Genet  2011 ; 43 : 491 – 8 . 
+ 50.  Hong  YS ,  Kim  J ,  Pectasides  E ,  Fox  C ,  Hong  SW ,  Ma  Q ,  et al.  Src 
+Mutation induces acquired lapatinib resistance in ERBB2-ampli-
+ﬁ ed human gastroesophageal adenocarcinoma models .  PLoS ONE 
+ 2014 ; 9 : e109440 . 
+ 51.  Nixon  KC .  The parsimony ratchet, a new method for rapid parsimony 
+analysis .  Cladistics  1999 ; 15 : 407 – 14 . 
+ 52.  Shepherd  R ,  Forbes  SA ,  Beare  D ,  Bamford  S ,  Cole  CG ,  Ward  S ,  et al. 
+Data mining using the catalogue of somatic mutations in cancer 
+BioMart .  Database  2011 ; 2011 : bar018 . 
+Downloaded from http://aacrjournals.org/cancerdiscovery/article-pdf/5/11/1164/1716837/1164.pdf by Massachusetts Institute of Technology user on 16 May 2024

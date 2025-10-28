@@ -1,0 +1,853 @@
+Nature Genetics  VOLUME 46 | NUMBER 2 | FEBRUARY 2014	
+161
+l e t t e r s
+Craniopharyngiomas are epithelial tumors that typically arise 
+in the suprasellar region of the brain1. Patients experience 
+substantial clinical sequelae from both extension of the tumors 
+and therapeutic interventions that damage the optic chiasm, 
+the pituitary stalk and the hypothalamic area2–4. Using 
+whole-exome sequencing, we identified mutations in 
+CTNNB1 (-catenin) in nearly all adamantinomatous 
+craniopharyngiomas examined (11/12, 92%) and recurrent 
+mutations in BRAF (resulting in p.Val600Glu) in all 
+papillary craniopharyngiomas (3/3, 100%). Targeted 
+genotyping revealed BRAF p.Val600Glu in 95% of papillary 
+craniopharyngiomas (36 of 39 tumors) and mutation of 
+CTNNB1 in 96% of adamantinomatous craniopharyngiomas 
+(51 of 53 tumors). The CTNNB1 and BRAF mutations were 
+clonal in each tumor subtype, and we detected no other 
+recurrent mutations or genomic aberrations in either subtype. 
+Adamantinomatous and papillary craniopharyngiomas harbor 
+mutations that are mutually exclusive and clonal. These 
+findings have important implications for the diagnosis and 
+treatment of these neoplasms.
+Craniopharyngiomas occur at an average age-adjusted incidence 
+rate of 0.18 per 100,000 (ref. 5). There are two main subtypes of 
+craniopharyngiomas—the adamantinomatous form that is more 
+common in children and the papillary form that occurs predomi­
+nantly in adults. Located in or above the sella turcica, craniophar­
+yngiomas grow adjacent to the optic chiasm and often extend to 
+involve the hypothalamus, cranial nerves, ventricular system, 
+visual pathways and major blood vessels at the base of the brain. 
+Curative surgery is exceedingly difficult6, and resection can 
+contribute to complications. The spectrum of complications include 
+visual defects, severe headaches, pan-hypopituitarism, impaired 
+intellectual function and wide-ranging hypothalamic dysfunc­
+tion leading to sleep disorders7, abnormal thermoregulation and 
+diabetes insipidus, as well as to hyperphagia and uncontrollable 
+obesity2–4. Aptly, Harvey Cushing, the father of neurosurgery, who 
+introduced the term ‘craniopharyngioma’ declared them “the most 
+formidable of intracranial tumors.”8,9
+Knowledge of the molecular mechanisms that drive craniophar­
+yngiomas remains limited, which has hampered the development of 
+systemic therapies for this type of tumor. Mutations in exon 3 of 
+CTNNB1 (β-catenin), which encodes a degradation targeting motif, 
+have been described in adamantinomatous craniopharyngiomas, 
+occurring in 60–75% of patients in most published series10–12. 
+However, mutations that drive the growth of papillary craniopharyn­
+giomas have not been identified. To that end, we performed massively 
+Exome sequencing identifies BRAF mutations in papillary 
+craniopharyngiomas
+Priscilla K Brastianos1–5,22, Amaro Taylor-Weiner5,22, Peter E Manley6,22, Robert T Jones4,7, 
+Dora Dias-Santagata3,8, Aaron R Thorner4,7, Michael S Lawrence5, Fausto J Rodriguez9, Lindsay A Bernardo8, 
+Laura Schubert7, Ashwini Sunkavalli7, Nick Shillingford10, Monica L Calicchio10, Hart G W Lidov3,10,11, 
+Hala Taha12, Maria Martinez-Lage13, Mariarita Santi14, Phillip B Storm15,16, John Y K Lee15, James N Palmer15,17, 
+Nithin D Adappa17, R Michael Scott3,18, Ian F Dunn3,19, Edward R Laws Jr3,19, Chip Stewart5, 
+Keith L Ligon3,4,10,11, Mai P Hoang3,8, Paul Van Hummelen4,7, William C Hahn3–5,7, David N Louis3,8, 
+Adam C Resnick15,16, Mark W Kieran3,6,20,23, Gad Getz3,5,8,23 & Sandro Santagata3,10,11,21,23
+1Division of Hematology/Oncology, Massachusetts General Hospital, Boston, Massachusetts, USA. 2Division of Neuro-Oncology, Massachusetts General Hospital, 
+Boston, Massachusetts, USA. 3Harvard Medical School, Boston, Massachusetts, USA. 4Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, 
+Massachusetts, USA. 5Broad Institute of MIT and Harvard, Boston, Massachusetts, USA. 6Department of Pediatric Oncology, Dana-Farber Cancer Institute, Boston, 
+Massachusetts, USA. 7Center for Cancer Genome Discovery, Dana-Farber Cancer Institute, Boston, Massachusetts, USA. 8Department of Pathology, Massachusetts 
+General Hospital, Boston, Massachusetts, USA. 9Department of Pathology, Johns Hopkins University, Baltimore, Maryland, USA. 10Department of Pathology, Boston 
+Children’s Hospital, Boston, Massachusetts, USA. 11Department of Pathology, Brigham and Women’s Hospital, Boston, Massachusetts, USA.  12Children’s Cancer 
+Hospital Egypt, Cairo, Egypt. 13Department of Pathology and Laboratory Medicine, Hospital of the University of Pennsylvania, Philadelphia, Pennsylvania, USA. 
+14Department of Pathology, Children’s Hospital of Philadelphia, Philadelphia, Pennsylvania, USA. 15Department of Neurosurgery, Hospital of the University of 
+Pennsylvania, Philadelphia, Pennsylvania, USA. 16Division of Neurosurgery, Children’s Hospital of Philadelphia, Philadelphia, Pennsylvania, USA. 17Department of 
+Otorhinolaryngology–Head and Neck Surgery, Hospital of the University of Pennsylvania, Philadelphia, Pennsylvania, USA. 18Department of Neurosurgery, Boston 
+Children’s Hospital, Boston, Massachusetts, USA. 19Department of Neurosurgery, Brigham and Women’s Hospital, Boston, Massachusetts, USA. 20Department 
+of Pediatrics, Boston Children’s Hospital, Boston, Massachusetts, USA. 21Department of Cancer Biology, Dana-Farber Cancer Institute, Boston, Massachusetts, 
+USA. 22These authors contributed equally to this work. 23These authors jointly directed this work. Correspondence should be addressed to P.K.B. 
+(pbrast@broadinstitute.org), G.G. (gadgetz@broadinstitute.org) or S.S. (ssantagata@partners.org).
+Received 3 November 2013; accepted 9 December 2013; published online 12 January 2014; doi:10.1038/ng.2868
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+162	
+VOLUME 46 | NUMBER 2 | FEBRUARY 2014  Nature Genetics
+l e t t e r s
+mutations previously described in this tumor type and were located 
+in exon 3 exclusively10,12. In addition, adamantinomatous cranio­
+pharyngiomas harbored isolated mutations in genes that have been 
+implicated previously in cancer (Fig. 2). We identified mutations 
+in genes listed in the Cancer Gene Census16 that are involved in 
+transcriptional regulation (BCOR, CRTC3, MITF and PRDM1) and 
+epigenetic regulation (KDM5A and SMARCA4), as well as in DNA 
+repair (BRCA2) (Fig. 2). We detected additional mutations in genes 
+not listed in the Cancer Gene Census but that have described roles 
+in cancer, including genes involved in chromatin remodeling and 
+regulation of transcription (including ASCC2, KAT5, PIWIL1, SIN3A 
+and SMC1A), cell cycle and DNA repair (including ATR, BARD1, 
+CDC25B, HBP1, RBBP8 and RTEL1) and cell adhesion (ITGA3, PKD1, 
+PKD1L1, PODN, ROCK1 and RPTN)16. However, many of these may 
+be passenger mutations that do not contribute to tumor initiation 
+or progression.
+All three of the papillary craniopharyngiomas in our discovery 
+set harbored mutations (c.1799T > A) in the well-established 
+oncogene BRAF (resulting in p.Val600Glu) that have been shown 
+to constitutively activate this serine-threonine kinase that regulates 
+MAP kinase (also called ERK) signaling and affects cell division and 
+differentiation (Fig. 2). None of the three papillary craniopharyn­
+giomas had mutations in CTNNB1. Although two of these samples 
+were resected from adults (31 and 52 years old), one of the samples 
+was from a rare papillary craniopharyngioma that occurred in a child 
+(9 years old), suggesting a similar pathogenesis between pediatric and 
+adult papillary craniopharyngiomas. We did not identify mutations 
+in other genes listed in the Cancer Gene Census in these tumors, but 
+we did note isolated mutations in other genes with potential roles 
+parallel sequencing of 15 craniopharyngiomas from both subtypes 
+and targeted genotyping in samples from 95 additional patients.
+We first used whole-exome sequencing to analyze the DNA 
+from a discovery cohort of adamantinomatous (n = 12) and 
+papillary (n = 3) craniopharyngiomas (Supplementary Table 1).
+As craniopharyngiomas are often heterogeneous tumors with nests 
+of tumor cells interspersed between large amounts of reactive 
+tissue and stromal cells, we expected the mutations to have low 
+allelic fractions (i.e., the mutations might only be found in a small 
+subset of the sequenced cells because of substantial contamination 
+by normal cells). Thus, we analyzed the sequencing data with a 
+recently described method—MuTect—that uses a Bayesian clas­
+sifier to identify somatic mutations with very low allelic fractions 
+coupled with filters that provide high specificity13.
+In consonance with the benign histology of these tumors, we iden­
+tified only a relatively small number of nonsynonymous somatic 
+mutations in both craniopharyngioma subtypes when compared to 
+large cohorts of other tumor types14 (Fig. 1). The nonsynonymous 
+mutation rate of 0.9 per Mb in the craniopharyngioma samples was 
+similar to that found in a number of pediatric tumors, as well as that in 
+low-grade tumors in adults, for example, World Health Organization–
+classified grade I meningioma15 (Fig. 1). 58% of the mutations were 
+cytosine to thymidine at CpG dinucleotides, which is consistent 
+with spontaneous deamination and not a carcinogen-induced 
+process (Fig. 1)14. As we anticipated, the allelic fraction for many of 
+the mutations was very low (median, 3%; range, 0.96–48%).
+The most frequently mutated gene was CTNNB1, with mutations in 
+this gene present in 11 of 12 adamantinomatous craniopharyngiomas 
+(Fig. 2 and Supplementary Tables 2–4). These events overlapped with 
+Figure 1  Plot of the number of nonsynonymous mutations per megabase in craniopharyngiomas (n = 15) in comparison to a broad range of pediatric and 
+adult tumors n = 3,083). Data for all other tumor types, as well as the figure design, were taken from Lawrence et al.14. Each dot in this plot 
+corresponds to a matched tumor-normal pair. The vertical position indicates the frequency of somatic mutations in that exome. Tumor types are ordered 
+on the basis of their median nonsynonymous frequency, and within each tumor type, tumor-normal pairs are ordered from lowest to highest frequency. 
+The relative proportions of six different possible base-pair substitutions are indicated at the bottom. Craniopharyngioma data are derived from 
+whole-exome sequencing of 15 tumor-normal pairs, including 12 adamantinomatous and 3 papillary craniopharyngioma, and are marked in red. 
+AML, acute myelogenous leukemia; CLL, chronic lymphocytic leukemia; cranio, craniopharyngioma; DLBCL, diffuse large B-cell lymphoma; GBM, 
+glioblastoma multiforme; LUAD, lung adenocarcinoma; LUSC, lung squamous cell carcinoma.
+n = 22
+52
+20
+134
+26
+15
+23
+81
+227
+91
+121
+57
+13
+63
+225
+394
+219
+20
+49
+181
+231
+76
+88
+35
+335
+179
+121
+1,000
+100
+10
+1
+0.1
+0.01
+Somatic mutation frequency (/Mb)
+Rhabdoid
+Ewing
+Thyroid
+AML
+Medulloblastoma
+Carcinoid
+Cranio
+Neuroblastoma
+CLL
+Pancreas
+Low-grade glioma
+Prostate
+Breast
+Multiple myeloma
+Ovarian
+Cervical
+Kidney
+GBM
+Colorectal
+DLBCL
+Head and neck
+Esophageal
+Stomach
+Bladder
+LUAD
+LUSC
+Melanoma
+C–>T
+C–>A
+C–>G
+T–>C
+T–>A
+T–>G
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+Nature Genetics  VOLUME 46 | NUMBER 2 | FEBRUARY 2014	
+163
+l e t t e r s
+in cancer, including genes encoding chromatin remodeling factors 
+(CHD5 and CHD6)17 and cell adhesion molecules (CDH26 and 
+PTPRT)18 and one gene (KIAA1549) that is fused to BRAF in most 
+cases of pilocytic astrocytoma19,20. These mutations, similarly to some 
+of those found in adamantinomatous craniopharyngiomas, may also 
+be passenger mutations.
+We used MutSig14 to analyze the list of mutations identified in our 
+discovery cohort of 15 cases to identify genes that are significantly 
+mutated. Although our cohort is small compared to those from other 
+genomic studies14 (Fig. 1), the prevalence of mutations in CTNNB1 
+and BRAF was so high that we were readily able to detect these muta­
+tions as being statistically significant (Fig. 2).
+To validate our findings, we used targeted genotyping approaches 
+to analyze an additional 98 craniopharyngioma samples (from 95 
+different patients) for mutations in the most commonly mutated 
+genes in our discovery cohort—BRAF and CTNNB1. We also per­
+formed immunohistochemistry (IHC) using an antibody (VE1) that 
+selectively recognizes the BRAF p.Val600Glu mutant epitope and 
+not the wild-type epitope from BRAF21. In addition, we evaluated 
+the activation status of β-catenin using an antibody that allowed 
+us to detect nuclear (activated) and membranous (inactivated)
+β-catenin12. In total, our validation cohort consisted of 39 papillary 
+craniopharyngioma tumors from 36 different patients and 59 ada­
+mantinomatous craniopharyngioma tumors, each from a different 
+patient (Supplementary Table 1). Although we detected CTNNB1 
+mutations in the adamantinomatous craniopharyngioma samples 
+(51 of 53 samples, 96%), none of these samples harbored BRAF muta­
+tions (resulting in p.Val600Glu, p.Val600Asp, p.Val600Leu, p.Val600Met 
+or p.Val600Lys). We identified cytoplasmic and nuclear β-catenin by 
+IHC in all of the adamantinomatous samples tested, but β-catenin 
+was localized exclusively to the cytoplasmic membrane in all papillary 
+cranio­pharyngioma samples tested (Fig. 3 and Supplementary Table 1).
+Remarkably, by targeted genotyping and IHC, we detected the 
+p.Val600Glu alteration in 34 of the 36 patients with papillary cranio­
+pharyngiomas (94.4%) (Supplementary Table 1).
+The allelic fraction of mutations (including those in BRAF 
+and CTNNB1) in our whole-exome data was low (Fig. 2a and 
+Supplementary Table 2). This raised the possibility of genetic het­
+erogeneity in our tumor samples. To assess this possibility, we used 
+a recently developed computational method (Online Methods) that 
+corrects for tumor purity and estimates the fraction of cancer cell 
+nuclei that harbor a particular mutation (cancer cell fraction; CCF). 
+Although these methods demonstrated that most of the somatic muta­
+tions identified in our samples were indeed subclonal, we found that 
+the mutations in BRAF and CTNNB1 were clonal (i.e., they were 
+present in all tumor cells) in the analyzed samples (Figs. 2a and 4a 
+and Supplementary Table 2).
+To further validate our analysis of intratumor heterogeneity, 
+we reviewed the pattern and distribution of BRAF staining in the 
+4
+Syn.
+Nonsyn.
+3
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+.14
+.17
+.06
+.64
+.14
+.95
+.73
+.18
+.13
+.72
+Adamantinomatous
+Papillary
+Mutations per
+Mb
+0
+0.2
+Sample:
+24
+6
+3
+8
+1
+9
+5
+22
+25
+26
+27
+28
+29
+7
+2
+100
+0 1 2
+–log10 q
+3 4
+80
+60 %
+40
+20
+0
+Allelic
+fraction
+0.4
+CTNNB1
+BRAF
+KIAA1549
+PCM1
+ROS1
+BCOR
+KDM5A
+CRTC3
+MITF
+BRCA2
+PRDM16
+SMARCA4
+a
+b
+0
+Double_null
+Indel+null
+Transversion
+A->G
+*Cp(A/C/T)->T
+*CpG->T
+Missense
+Frameshift
+Nonsense
+0
+100
+CTNNB1
+BRAF
+200
+300
+400
+500
+600
+700
+0
+100
+200
+300
+Missense_mutation
+400
+500
+600
+700
+p.Asp32Tyr
+p.Ser33Phe
+p.Gly34Arg
+p.Ile35Ser
+p.His36Pro
+p.Ser37Cys
+p.Ser37Phe
+p.Thr41Ile
+p.Val600Glu
+4
+p
+Figure 2  Mutations in adamantinomatous and papillary craniopharyngiomas. (a) The number of mutations per megabase in each of 15 craniopharyngioma 
+whole-exome sequencing data sets (12 adamantinomatous and 3 papillary samples). Specific genes are shown that bear nonsynonymous somatic 
+mutations in genes listed in the Cancer Gene Census16. Right, false discovery rate q values providing the significance of the mutations in each listed 
+gene. Cancer-relevant genes that are not listed in the Cancer Gene Census are not shown. The q value is an evaluation of whether a gene is significantly 
+mutated above the expected basal rate of mutation. The q values for BRAF and CTNNB1 are both <0.00001. The q values of the other genes in the 
+plot are equal to 1. A full list of mutated genes is provided in Supplementary Table 2. Colors indicate the type of genetic change identified. Only one 
+mutation is indicated, even if multiple mutations were found in a particular gene. The CCF (0–1.0) for each indicated mutation is shown in white in the 
+corresponding box. The allelic fraction for mutations in each sample is shown in the box plot, with the median indicated by a red line (the allelic fraction 
+for each mutation is listed in Supplementary Table 2). The bottom and the top of the boxes represent the first and third quartiles, respectively; the ends 
+of the whiskers represent 1 s.d. above and below the median of the data; and the red dots represent outlier points not included in the whiskers. For each 
+sample, the relative frequencies of six different possible base-pair substitutions are shown at the bottom. Syn., synonymous; nonsyn., nonsynonymous. 
+(b) Schematics for CTNNB1 and BRAF indicating the location of the identified mutations (11 in CTNNB1 and 3 in BRAF).
+a
+b
+Figure 3  β-catenin localization is different in adamantinomatous and 
+papillary craniopharyngiomas. Shown are IHCs for β-catenin. (a) β-catenin 
+is localized to the cytoplasm and the nucleus in an adamantinomatous 
+craniopharyngioma. (b) β-catenin is localized to the cell membrane in a 
+papillary craniopharyngioma. Scale bars, 50 µm. β-catenin localization 
+in many samples from the discovery and validation cohort is reported in 
+Supplementary Table 1.
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+164	
+VOLUME 46 | NUMBER 2 | FEBRUARY 2014  Nature Genetics
+l e t t e r s
+craniopharyngioma samples (Supplementary Table 1). Using the 
+antibody selective for BRAF p.Val600Glu, we did not detect BRAF 
+p.Val600Glu in the adamantinomatous craniopharyngioma samples 
+(Supplementary Table 1) or in two of the papillary craniopharyn­
+gioma samples with wild-type BRAF that we tested (Fig. 4b). In 
+the genetically confirmed BRAF p.Val600Glu mutant samples, 
+however, we observed widespread immunoreactivity across the tumor 
+cell population. In these samples, lymphocytes and stromal cells 
+of the fibrovascular core of the tumors were not immunoreactive, 
+but the squamopapillary tumor epithelium stained diffusely for 
+BRAF p.Val600Glu. This observation supports the conclusion 
+that BRAF mutations are present uniformly throughout the neoplastic 
+epithelial cells.
+Our whole-exome sequencing data of craniopharyngiomas 
+demonstrates that the adamantinomatous and papillary subtypes 
+have distinct molecular underpinnings, each driven principally 
+by mutations in a single well-established oncogene: CTNNB1 
+(β-catenin) in the adamantinomatous form and BRAF in the papillary 
+form, independent of age.
+These mutations appear to be critical events in the pathogenesis of 
+these tumors for several reasons. First, the high prevalence of muta­
+tions in CTNNB1 and BRAF in craniopharyngiomas occurs among 
+an overall paucity of additional mutations, supporting that these 
+particular mutations are likely instrumental to the growth of these 
+tumors. Second, the mutations are clonal and segregate perfectly with 
+their respective histologic subtypes, indicating that they are defining 
+genetic aberrations. Moreover, the frequencies of these CTNNB1 and 
+BRAF mutations are much higher in craniopharyngiomas than in 
+most other tumor types that bear these mutations.
+Given the mutual exclusivity of mutations in BRAF and CTNNB1, 
+immunohistochemistry for BRAF p.Val600Glu and β-catenin could 
+be used to routinely distinguish papillary from adamantinomatous 
+craniopharyngiomas and thereby direct patients to appropriate 
+clinical trials. Whereas agents that target WNT signaling remain 
+in development22,23, the availability of BRAF inhibitors such as 
+vemurafenib24–29 and dabrafenib30,31 suggests that patients with 
+papillary craniopharyngiomas could benefit immediately from 
+such targeted therapeutics. These agents have shown a robust 
+clinical response against BRAF p.Val600Glu mutant melanomas25 
+and hairy cell leukemias32, as well as brain tumors such as pleo­
+morphic xanthoastrocytoma33,34 and ganglioglioma34,35. Trials of 
+these therapeutics for papillary craniopharyngiomas should be 
+explored in patients with either residual or recurrent tumors after 
+surgical resection. In addition, BRAF inhibitors could be evalu­
+ated as a first-line therapy to be used before surgical resection or 
+radiation therapy.
+In summary, our discovery of frequent and clonal mutations in 
+adamantinomatous and papillary craniopharyngioma in CTNNB1 
+and BRAF, respectively, offers valuable opportunities for testing 
+molecularly guided therapeutics for the treatment of these formida­
+ble brain tumors.
+URLs. Picard tools, http://picard.sourceforge.net/; SAMtools, 
+http://samtools.sourceforge.net/; Genome Analysis Toolkit (GATK),
+http://www.broadinstitute.org/gatk; Firehose, https://confluence.
+broadinstitute.org/display/GDAC/Home; Oncotator, http://www.
+broadinstitute.org/oncotator.
+Methods
+Methods and any associated references are available in the online 
+version of the paper.
+Accession codes. Data, including sequence data and analyses, will 
+be available for download from the database of Genotypes and 
+Phenotypes (dbGaP) under accession phs000696.v1.p1.
+Note: Any Supplementary Information and Source Data files are available in the 
+online version of the paper.
+Acknowledgments
+We thank M. Ducar for his assistance with genomic analyses; S. Chauvin for 
+project management; L. Brown and H. Malkin for assisting with sample collection; 
+T. Woo, B. Rich, R. Machaidze and D. Feldman for technical assistance; 
+N. Stransky for the design of Figure 2a; and H. Taylor-Weiner and C.H. 
+Brastianos for critical review of the manuscript. This work was supported by the 
+Jared Branfman Sunflowers for Life Fund for Pediatric Brain and Spinal Cancer 
+Research, the Pediatric Low-Grade Astrocytoma (PLGA) Program (S.S., W.C.H. 
+and Charles D. Stiles), Pedals for Pediatrics and the Clark Family (P.E.M. and 
+M.W.K.), the Stahl Family Charitable Foundation (P.E.M.), the Stop & Shop 
+Pediatric Brain Tumor Program (P.E.M. and M.W.K.), the Pediatric Brain Tumor 
+Clinical and Research Fund (P.E.M. and M.W.K.), the Children’s Brain Tumor 
+Foundation and the V Foundation (S.S.). S.S. is supported by grant K08 NS064168, 
+a
+b
+029
+028
+027
+026
+025
+024
+022
+009
+008
+007
+006
+005
+003
+002
+001
+0
+0
+1.0
+0.2
+0.4
+0.6
+CCF
+Purity
+H&E
+Adamantinomatous
+craniopharyngioma
+Papillary
+craniopharyngioma
+BRAF p.Val600Glu (VE1) IHC
+0.8
+1.0
+Figure 4  BRAF and CTNNB1 mutations are clonal in craniopharyngiomas. 
+(a) Left, a violin plot showing the CCFs for mutations in BRAF (orange) 
+and CTNNB1 (pink) in each tumor analyzed with whole-exome 
+sequencing. The median CCF of all nonsynonymous somatic mutations 
+for each sample is represented by a black dot. Right, bar graph showing 
+the computed purity for each sample (Online Methods); error bars, 
+s.e.m. (b) Hematoxylin and eosin (H&E) staining of adamantinomatous 
+and papillary craniopharyngiomas. IHC shows that adamantinomatous 
+craniopharyngiomas are negative for BRAF p.Val600Glu but that there is 
+a diffuse distribution of BRAF p.Val600Glu mutant protein in the 
+neoplastic epithelium of papillary craniopharyngiomas. Stromal elements 
+in the fibrovascular cores of the papillary tumors are negative for the 
+BRAF p.Val600Glu mutant protein. Scale bars, 100 µm.
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+Nature Genetics  VOLUME 46 | NUMBER 2 | FEBRUARY 2014	
+165
+l e t t e r s
+and P.K.B. is supported by grant K12 CA090354-11, the Brain Science Foundation, 
+Susan G. Komen for the Cure, the Terri Brodeur Breast Cancer Foundation, the 
+Conquer Cancer Foundation and the American Brain Tumor Association.
+AUTHOR CONTRIBUTIONS
+P.K.B., P.E.M., M.W.K., G.G. and S.S. designed the study. P.K.B., A.T.-W., C.S., G.G. 
+and S.S. wrote the manuscript. A.T.-W., P.K.B., C.S., A.R.T. and G.G. performed 
+computational analyses. P.V.H. supervised the sequencing. S.S. and D.N.L. 
+reviewed the histopathology, and S.S., D.N.L. and M.P.H. coordinated and reviewed 
+the immunohistochemistry. K.L.L. managed the tissue repository. R.T.J., L.A.B., 
+A.S., N.S., L.S. and M.L.C. coordinated sample acquisition, processed samples and 
+coordinated and performed exome and targeted sequencing. P.K.B., W.C.H., 
+D.D.-S., D.N.L., A.C.R., M.W.K., G.G. and S.S. supervised the study. H.G.W.L., 
+E.R.L., I.F.D., R.M.S., P.B.S., J.Y.K.L., J.N.P., N.D.A., H.T., M.M.-L., M.S., F.J.R., 
+P.E.M., A.C.R., D.D.-S., D.N.L. and S.S. identified and provided materials for 
+sequencing and validation, as well as clinical information. M.S.L. provided the 
+code and the data to generate Figure 1. All authors discussed the results and 
+implications and edited the manuscript. 
+COMPETING FINANCIAL INTERESTS
+The authors declare no competing financial interests.
+Reprints and permissions information is available online at http://www.nature.com/
+reprints/index.html.
+1.	 Louis, D.N., Ohgaki, H., Wiestler, O.D. & Cavenee, W.K. WHO Classification of 
+Tumours of the Central Nervous System 238–240 (International Agency for Research 
+on Cancer, 2007).
+2.	 Crotty, T.B. et al. Papillary craniopharyngioma: a clinicopathological study of 48 
+cases. J. Neurosurg. 83, 206–214 (1995).
+3.	 Duff, J. et al. Long-term outcomes for surgically resected craniopharyngiomas. 
+Neurosurgery 46, 291–302, discussion 302–305 (2000).
+4.	 Weiner, H.L. et al. Craniopharyngiomas: a clinicopathological analysis of factors 
+predictive of recurrence and functional outcome. Neurosurgery 35, 1001–1010, 
+discussion 1010–1011 (1994).
+5.	 Dolecek, T.A., Propp, J.M., Stroup, N.E. & Kruchko, C. CBTRUS statistical report: 
+primary brain and central nervous system tumors diagnosed in the United States 
+in 2005–2009. Neuro-oncol. 14 (suppl. 5), v1–v49 (2012).
+6.	 Liubinas, S.V., Munshey, A.S. & Kaye, A.H. Management of recurrent 
+craniopharyngioma. J. Clin. Neurosci. 18, 451–457 (2011).
+7.	 Manley, P.E. et al. Sleep dysfunction in long term survivors of craniopharyngioma. 
+J. Neurooncol. 108, 543–549 (2012).
+8.	 Barkhoudarian, G. & Laws, E.R. Craniopharyngioma: history. Pituitary 16, 1–8 
+(2013).
+9.	 Cushing, H. Intracranial tumors: notes upon a series of two thousand cases with 
+surgical mortality percentages pertaining thereto. JAMA 100, 284 (1932).
+10.	Buslei, R. et al. Common mutations of β-catenin in adamantinomatous 
+craniopharyngiomas but not in other tumours originating from the sellar region. 
+Acta Neuropathol. 109, 589–597 (2005).
+11.	Kato, K. et al. Possible linkage between specific histological structures and aberrant 
+reactivation of the Wnt pathway in adamantinomatous craniopharyngioma. J. Pathol. 
+203, 814–821 (2004).
+12.	Sekine, S. et al. Craniopharyngiomas of adamantinomatous type harbor β-catenin 
+gene mutations. Am. J. Pathol. 161, 1997–2001 (2002).
+13.	Cibulskis, K. et al. Sensitive detection of somatic point mutations in impure and 
+heterogeneous cancer samples. Nat. Biotechnol. 31, 213–219 (2013).
+14.	Lawrence, M.S. et al. Mutational heterogeneity in cancer and the search for new 
+cancer-associated genes. Nature 499, 214–218 (2013).
+15.	Brastianos, P.K. et al. Genomic sequencing of meningiomas identifies oncogenic 
+SMO and AKT1 mutations. Nat. Genet. 45, 285–289 (2013).
+16.	Futreal, P.A. et al. A census of human cancer genes. Nat. Rev. Cancer 4, 177–183 
+(2004).
+17.	Stanley, F.K., Moore, S. & Goodarzi, A.A. CHD chromatin remodelling enzymes and 
+the DNA damage response. Mutat. Res. 750, 31–44 (2013).
+18.	Laczmanska, I. & Sasiadek, M.M. Tyrosine phosphatases as a superfamily of 
+tumor suppressors in colorectal cancer. Acta Biochim. Pol. 58, 467–470 
+(2011).
+19.	Jones, D.T. et al. Oncogenic RAF1 rearrangement and a novel BRAF mutation as 
+alternatives to KIAA1549:BRAF fusion in activating the MAPK pathway in pilocytic 
+astrocytoma. Oncogene 28, 2119–2123 (2009).
+20.	Tian, Y. et al. Detection of KIAA1549-BRAF fusion transcripts in formalin-fixed 
+paraffin-embedded pediatric low-grade gliomas. J. Mol. Diagn. 13, 669–677 
+(2011).
+21.	Capper, D. et al. Assessment of BRAF V600E mutation status by immunohistochemistry 
+with a mutation-specific monoclonal antibody. Acta Neuropathol. 122, 11–19 
+(2011).
+22.	Anastas, J.N. & Moon, R.T. WNT signalling pathways as therapeutic targets in 
+cancer. Nat. Rev. Cancer 13, 11–26 (2013).
+23.	Basu, A. et al. An interactive resource to identify cancer genetic and 
+lineage dependencies targeted by small molecules. Cell 154, 1151–1161 
+(2013).
+24.	Chapman, P.B. et al. Improved survival with vemurafenib in melanoma with BRAF 
+V600E mutation. N. Engl. J. Med. 364, 2507–2516 (2011).
+25.	Flaherty, K.T. et al. Inhibition of mutated, activated BRAF in metastatic melanoma. 
+N. Engl. J. Med. 363, 809–819 (2010).
+26.	Ribas, A. & Flaherty, K.T. BRAF targeted therapy changes the treatment paradigm 
+in melanoma. Nat. Rev. Clin. Oncol. 8, 426–433 (2011).
+27.	Sosman, J.A. et al. Survival in BRAF V600–mutant advanced melanoma treated 
+with vemurafenib. N. Engl. J. Med. 366, 707–714 (2012).
+28.	Chamberlain, M.C. Salvage therapy with BRAF inhibitors for recurrent pleomorphic 
+xanthoastrocytoma: a retrospective case series. J. Neurooncol. 114, 237–240 
+(2013).
+29.	Rush, S., Foreman, N. & Liu, A. Brainstem ganglioglioma successfully treated with 
+vemurafenib. J. Clin. Oncol. 31, e159–e160 (2013).
+30.	Ascierto, P.A. et al. Phase II trial (BREAK-2) of the BRAF inhibitor dabrafenib 
+(GSK2118436) in patients with metastatic melanoma. J. Clin. Oncol. 31, 
+3205–3211 (2013).
+31.	Sievert, A.J. et al. Paradoxical activation and RAF inhibitor resistance of BRAF 
+protein kinase fusions characterizing pediatric astrocytomas. Proc. Natl. Acad. Sci. 
+USA 110, 5957–5962 (2013).
+32.	Dietrich, S. et al. BRAF inhibition in refractory hairy-cell leukemia. N. Engl. 
+J. Med. 366, 2038–2040 (2012).
+33.	Dias-Santagata, D. et al. BRAF V600E mutations are common in pleomorphic 
+xanthoastrocytoma: diagnostic and therapeutic implications. PLoS ONE 6, e17948 
+(2011).
+34.	Schindler, G. et al. Analysis of BRAF V600E mutation in 1,320 nervous system 
+tumors reveals high mutation frequencies in pleomorphic xanthoastrocytoma, 
+ganglioglioma and extra-cerebellar pilocytic astrocytoma. Acta Neuropathol. 121, 
+397–405 (2011).
+35.	MacConaill, L.E. et al. Profiling critical cancer gene mutations in clinical tumor 
+samples. PLoS ONE 4, e7887 (2009).
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+Nature Genetics
+doi:10.1038/ng.2868
+ONLINE METHODS
+Sample selection and preparation. The study was reviewed and approved 
+by the human subjects institutional review boards of the Dana-Farber 
+Cancer Institute, Brigham and Women’s Hospital, Broad Institute of 
+Harvard and MIT, Boston Children’s Hospital, Johns Hopkins Hospital, 
+Children’s Cancer Hospital Egypt and Children’s Hospital of Philadelphia. 
+Written informed consent was obtained from all participants whose tumor 
+samples were subjected to whole-exome sequencing. Histologic diagno­
+sis was reconfirmed on all samples by a board-certified neuropathologist 
+(S.S.), and representative fresh-frozen and paraffin-embedded blocks with 
+estimated purity ≥10% were selected. DNA was extracted from tissue shav­
+ings of frozen tissue or 1-mm core-punch biopsies (Miltex, 33-31AA-P/25) 
+from formalin-fixed paraffin-embedded tissue and from buffy coat prepara­
+tions of paired blood using standard techniques (QIAGEN, Valencia, CA). 
+The DNA was then quantified using PicoGreen dye (InVitrogen, Carlsbad 
+CA). Mass spectrometric genotyping with a well-established 48-SNP 
+panel was used to confirm the identity of tumor-normal pairs (Sequenom, 
+San Diego, CA)36.
+Whole-exome sequencing and analyses. Whole-exome sequencing was 
+performed as previously described15. In brief, DNA was fragmented by 
+sonication (Covaris Inc., Woburn, MA) to 150 bp and further purified using 
+Agencourt AMPure XP beads. 50 ng of size-selected DNA was then ligated to 
+specific adaptors during library preparation (Illumina TruSeq, Illumina Inc., 
+San Diego, CA). Each library was made with sample-specific barcodes and 
+quantified by quantitative PCR (Kapa Biosystems, Inc., Woburn, MA), and 
+two libraries were pooled to a total of 500 ng for exome enrichment using the 
+Agilent SureSelect hybrid capture kit (Whole Exome_v2 and Whole Exome_v4, 
+44 Mb; Agilent Technologies, Santa Clara, CA). Several captures were pooled 
+further and sequenced in one or more lanes to a final equivalent of two exomes 
+per lane on a HiSeq 2500 system (Illumina Inc, San Diego, CA).
+Read pairs were aligned to the hg19 reference sequence using the Burrows-
+Wheeler Aligner37, and sample reads were demultiplexed using Picard tools. 
+Data were sorted and duplicate-marked using SAMtools and Picard. Bias in 
+base quality score assignments due to flowcell, lane, dinucleotide context and 
+machine cycle were analyzed and recalibrated, and local realignment around 
+insertions or deletions (indels) was achieved using the Genome Analysis 
+Toolkit (GATK)38,39. Somatic variant calling was performed within the 
+Firehose environment40 using MuTect13. All sample pairs passed a quality-
+control pipeline to test for any tumor-normal and interindividual mixups 
+by comparing insert-size distribution and copy-number profile as described 
+previously41.
+Somatic mutations and short indels were called and post filtered using 
+MuTect13 and IndelLocator40,41. These were annotated to genes and compared 
+to events in the Catalogue of Somatic Mutations in Cancer (COSMIC) using 
+Oncotator, and spurious calls caused by mismapping and other previously 
+identified systematic errors were removed using an established list of known 
+problematic sites15,40,42,43. MutSig14 was used to determine the significance 
+of mutated genes. MutSig compares observed mutations against expected 
+sequence-specific, context-specific, tumor-specific and gene-specific back­
+ground mutation frequencies. Additionally MutSig prioritizes mutations 
+that are positionally clustered or occur in highly conserved regions40,42,43. 
+We analyzed mutational spectra and rates across multiple tumor types using 
+previously described methods14.
+Mutation clonality analysis. To assess whether mutations are clonal (i.e., 
+present in all cancer cells), we assessed the CCF of each mutation, as 
+described in Carter et al.44. Mutations for which the CCF is close to 1 are 
+considered clonal. Those mutations with lower probable CCFs are con­
+sidered subclonal. To determine the CCF, we first calculated the sample 
+purity (i.e., the percentage of tumor cells in our sample) by constructing 
+the probability density function for the allele fractions of mutations. Using 
+that information, we then identified a clonal heterozygous peak at or below 
+0.5 allele fraction: 
+pdf(af
+af,alt
+ref
+pdf
+)
+(
+( )
+,
+( )
+)
+=
++
++
+∑b
+m
+m
+m
+1
+1
+where af is the true allele fraction between 0 and 1, alt is the alternate allele 
+counts, ref is the reference allele counts and m is the index for mutation 
+count44. We assumed that the local copy number at each mutation is 2 for 
+craniopharyngioma and that each tumor has heterozygous clonal mutations 
+that are sufficient to form a peak45,46. Given these assumptions, the purity is 
+the peak af × 2.
+Once we estimated tumor purity, we then estimated the CCF for each muta­
+tion. The CCF is the percentage of tumor cells harboring a given mutation. 
+Clonal mutations have a true CCF of 1, and subclonal mutations have a true 
+CCF <1. The observed allele counts correspond to a probability density of the 
+CCF, which can be estimated with the following equation:44 
+pdf CCF
+CCF
+CN
+purity,alt
+ref
+pdf
+(
+,
+)
+( )
+( )
+,
+( )
+m
+m
+m
+m
+=
+×
++
++
+
+
+
+
+b
+1
+1
+where CN(m) is the local copy number at the given mutation m, and CCF 
+ranges from 0 to 1. The probability for any allele fraction greater than the 
+maximum CCF allowed was folded back to a CCF of 1. We again assumed a 
+copy number of 2 (refs. 26,27). We also considered the possibility that the site 
+is homozygous in both copies of the chromosome (loss of heterozygosity) by 
+multiplying the CCF by 2 in the equation above and chose the solution with 
+the highest peak probability. The CCF formulation is approximately equivalent 
+to ABSOLUTE44. The pdfs also provided a direct estimate of the confidence 
+intervals on CCF. Each mutation was classified as clonal or subclonal on the 
+basis of the probability that the CCF exceeded 0.80. A probability threshold 
+of 0.5 was used throughout for this classification47.
+Validation of candidate mutations by Sequenom genotyping and SNaPshot. 
+We validated all of the common mutations in BRAF and CTNNB1 by mass 
+spectrometric genotyping based on the Sequenom MassARRAY tech­
+nology (Sequenom Inc, San Diego, CA) using a multibase homogenous 
+Mass-Extend (hME) as previously described35,48. The complete hME assay 
+list is provided in Supplementary Table 3. A second targeted sequencing 
+platform (SNaPshot genotyping) was performed as previously described 
+to validate the BRAF p.Val600Glu (c.1799T>A) alteration in all papillary 
+craniopharyngiomas33,49,50.
+IHC. We performed immunohistochemical studies on 5-µm-thick whole-
+tissue sections of formalin-fixed paraffin-embedded tissue in a Bond 3 automated 
+immunostainer (Leica Microsystems, Bannockburn, IL, USA) using a primary 
+antibody against BRAF p.Val600Glu (clone VE1, 1:100, Spring Bioscience, 
+Pleasanton, CA) and a primary antibody against β-catenin (see below). 
+For BRAF p.Val600Glu, we deparaffinized the sections on the Leica Bond 
+using Bond Dewax solution and performed antigen retrieval with an 
+ethylenediaminetetraacetic acid–based solution (Leica) at pH 9 and a Leica 
+Polymer Refine kit for DAB (diaminobenzidine) staining. Appropriate positive 
+and negative controls were included. Positive staining was characterized by 
+diffuse and moderate cytoplasmic staining of the tumor cells. We considered 
+isolated nuclear staining, weak staining of occasional cells or faint diffuse staining 
+as negative staining. For β-catenin (BD Pharmingen, 610154, mouse monoclonal, 
+clone 14), antigen retrieval was performed in a pressure cooker in citrate buffer 
+(pH 6.0, 1:1,000 dilution) with a 45-min incubation followed by Dako anti-mouse 
+horseradish peroxidase for 30 min at room temperature. Cases with nuclear 
+staining (which ranged from low level to high level) were scored as positive, and 
+cases with membranous staining were scored as negative.
+36.	Demichelis, F. et al. SNP panel identification assay (SPIA): a genetic-based 
+assay for the identification of cell lines. Nucleic Acids Res. 36, 2446–2456 
+(2008).
+37.	Li, H. & Durbin, R. Fast and accurate short read alignment with Burrows-Wheeler 
+transform. Bioinformatics 25, 1754–1760 (2009).
+38.	DePristo, M.A. et al. A framework for variation discovery and genotyping 
+using next-generation DNA sequencing data. Nat. Genet. 43, 491–498 
+(2011).
+39.	McKenna, A. et al. The Genome Analysis Toolkit: a MapReduce framework for 
+analyzing next-generation DNA sequencing data. Genome Res. 20, 1297–1303 
+(2010).
+40.	Chapman, M.A. et al. Initial genome sequencing and analysis of multiple myeloma. 
+Nature 471, 467–472 (2011).
+npg
+© 2014 Nature America, Inc. All rights reserved.
+
+Nature Genetics
+doi:10.1038/ng.2868
+41.	Berger, M.F. et al. The genomic complexity of primary human prostate cancer. 
+Nature 470, 214–220 (2011).
+42.	Lohr, J.G. et al. Discovery and prioritization of somatic mutations in diffuse large 
+B-cell lymphoma (DLBCL) by whole-exome sequencing. Proc. Natl. Acad. Sci. USA 
+109, 3879–3884 (2012).
+43.	Stransky, N. et al. The mutational landscape of head and neck squamous cell 
+carcinoma. Science 333, 1157–1160 (2011).
+44.	Carter, S.L. et al. Absolute quantification of somatic DNA alterations in human 
+cancer. Nat. Biotechnol. 30, 413–421 (2012).
+45.	Rickert, C.H. & Paulus, W. Lack of chromosomal imbalances in adamantinomatous 
+and papillary craniopharyngiomas. J. Neurol. Neurosurg. Psychiatry 74, 260–261 
+(2003).
+46.	Yoshimoto, M. et al. Comparative genomic hybridization analysis of pediatric 
+adamantinomatous craniopharyngiomas and a review of the literature. J. Neurosurg. 
+101, 85–90 (2004).
+47.	Landau, D.A. et al. Evolution and impact of subclonal mutations in chronic 
+lymphocytic leukemia. Cell 152, 714–726 (2013).
+48.	Thomas, R.K. et al. High-throughput oncogene mutation profiling in human cancer. 
+Nat. Genet. 39, 347–351 (2007).
+49.	Corcoran, R.B. et al. BRAF gene amplification can promote acquired resistance to MEK
+inhibitors in cancer cells harboring the BRAF V600E mutation. Sci. Signal. 3, ra84 
+(2010).
+50.	Dias-Santagata, D. et al. Rapid targeted mutational analysis of human tumours: a clinical 
+platform to guide personalized cancer medicine. EMBO Mol. Med. 2, 146–158 (2010).
+npg
+© 2014 Nature America, Inc. All rights reserved.

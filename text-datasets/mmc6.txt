@@ -1,0 +1,3488 @@
+Article
+Passenger Hotspot Mutations in Cancer
+Graphical Abstract
+Highlights
+d Many cancer hotspots are passengers, recurring at inherently
+mutable genomic sites
+d Known genomic covariates are insufﬁcient to fully predict
+inherent mutability
+d Our LNP model accurately infers latent variability beyond
+what current covariates predict
+d Our LNP model identiﬁes putative driver hotspots with far
+fewer false-positives
+Authors
+Julian M. Hess, Andre Bernards,
+Jaegil Kim, ..., Nicholas J. Haradhvala,
+Michael S. Lawrence, Gad Getz
+Correspondence
+mslawrence@mgh.harvard.edu (M.S.L.),
+gadgetz@broadinstitute.org (G.G.)
+In Brief
+Somatic hotspot mutations found in
+tumors are generally considered
+evidence for selection and are used to
+nominate tumor drivers. Hess et al. show
+that many hotspots occur at inherently
+mutable sites without selection and
+develop a model that accounts for these
+passenger hotspots, which can more
+accurately nominate true driver
+mutations.
+Hess et al., 2019, Cancer Cell 36, 288–301
+September 16, 2019 ª 2019 Elsevier Inc.
+https://doi.org/10.1016/j.ccell.2019.08.002
+
+Cancer Cell
+Article
+Passenger Hotspot Mutations in Cancer
+Julian M. Hess,1 Andre Bernards,2,3 Jaegil Kim,1 Mendy Miller,1 Amaro Taylor-Weiner,1 Nicholas J. Haradhvala,1,2
+Michael S. Lawrence,1,2,3,4,* and Gad Getz1,2,3,4,5,*
+1The Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA
+2Center for Cancer Research, Massachusetts General Hospital, Boston, MA 02114, USA
+3Harvard Medical School, 250 Longwood Avenue, Boston, MA 02115, USA
+4Department of Pathology, Massachusetts General Hospital, Boston, MA 02114, USA
+5Lead Contact
+*Correspondence: mslawrence@mgh.harvard.edu (M.S.L.), gadgetz@broadinstitute.org (G.G.)
+https://doi.org/10.1016/j.ccell.2019.08.002
+SUMMARY
+Current statistical models for assessing hotspot signiﬁcance do not properly account for variation in site-
+speciﬁc mutability, thereby yielding many false-positives. We thus (i) detail a Log-normal-Poisson (LNP)
+background model that accounts for this variability in a manner consistent with models of mutagenesis; (ii)
+use it to show that passenger hotspots arise from all common mutational processes; and (iii) apply it to a
+10,000-patient cohort to nominate driver hotspots with far fewer false-positives compared with conven-
+tional methods. Overall, we show that many cancer hotspot mutations recurring at the same genomic site
+across multiple tumors are actually passenger events, recurring at inherently mutable genomic sites under
+no positive selection.
+INTRODUCTION
+The genome of a cell lineage continually accrues mutations over
+time. The vast majority of mutations are either selectively neutral
+‘‘passengers’’ that leave the lineage phenotypically unaltered, or
+selectively negative mutations that result in slower growth or cell
+death. However, occasionally, rare selectively positive mutations
+(‘‘drivers’’) that increase a cell’s proliferative ﬁtness can occur.
+Such a cell may acquire additional driver events that enable it
+to outcompete its neighbors, eventually transforming into cancer
+(Cairns, 1975; Stratton et al., 2009).
+Selectively positive mutations accumulate in tumor suppres-
+sors and oncogenes. These cancer driver genes are recurrently
+mutated across tumors, and can be identiﬁed based on having
+mutational densities signiﬁcantly above the background passen-
+ger density. This requires accurate estimation of the mutational
+background, a task complicated by its considerable heterogene-
+ity (Hodgkinson and Eyre-Walker, 2011). Some genomic ele-
+ments are recurrently mutated not due to positive selection but
+rather simply due to their higher mutability (Hodgkinson and
+Eyre-Walker, 2011; Stamatoyannopoulos et al., 2009; Pleasance
+et al., 2010). Over the past decade, the ﬁeld has developed
+increasingly sophisticated statistical models (Lawrence et al.,
+2013, 2014; Weghorn and Sunyaev, 2017; Martincorena et al.,
+2017; Dees et al., 2012; Getz et al., 2007) to infer and account
+for
+the
+heterogeneous
+mutational
+background.
+This
+has
+increased power and speciﬁcity to distinguish true drivers (with
+an excess of positively selected mutations) from false-positives
+(with increased mutation density due to high background muta-
+bility alone).
+Some of the best-known oncogenes are recurrently mutated
+at the same codon in many tumors, e.g., the V600E mutation in
+BRAF. Inspired by these examples, many methods for detecting
+driver events use exact positional recurrence as a signal of
+positive selection. This requires a model of background muta-
+bility at the site-speciﬁc level. The prevailing assumption has
+been that all equivalent base pairs within a particular gene
+(e.g., all sites with the same k-mer sequence context) have the
+Signiﬁcance
+Hotspot mutations have conventionally been taken as universal evidence of somatic positive selection, unequivocally pin-
+pointing genes driving tumorigenesis. We show here that this convention is falsely premised on an inaccurate statistical
+model of background mutagenesis. Many hotspots are actually passengers, recurring at inherently mutable sites under
+no positive selection, which current background models do not account for. We develop a model that accounts for variation
+in site-speciﬁc mutability and use it to nominate driver hotspots with far fewer false-positives compared with conventional
+methods. As the research community faces critical decisions in prioritizing putative driver mutations for deep experimental
+characterization to assess therapeutic potential, we offer our ﬁndings as a guide to avoid wasting valuable resources on
+passenger hotspots.
+288
+Cancer Cell 36, 288–301, September 16, 2019 ª 2019 Elsevier Inc.
+
+same background probability of being mutated. Thus, it is un-
+likely to observe by chance many tumors sharing mutations at
+a particular base pair in a gene, while the other equivalent
+base pairs of the gene remain unmutated. This leads to the con-
+ventional assumption that mutational hotspots must reﬂect true
+driver events and that no ‘‘passenger hotspots’’ occur. Here,
+we present evidence to the contrary.
+RESULTS
+In the same way that certain regions of the genome are more
+highly mutated than others, and certain fragile sites of the
+genome are more prone to breakage (Schrock and Huebner,
+2015; Mitsui and Tsuji, 2012), certain individual base pairs
+in the genome appear to be more mutable, simply because
+they are more vulnerable to damage and/or more refractory
+to repair. Thus, to identify signiﬁcantly mutated hotspots, we
+must ﬁrst be able to statistically estimate position-speciﬁc muta-
+tion frequencies. This requires a large cohort of very high-quality
+somatic mutation calls to have sufﬁcient power to accurately
+estimate base-level mutation frequencies and to avoid recur-
+rent sequencing artifacts or germline polymorphisms that
+can severely distort base-level analyses. Here, we examined a
+cohort of 9,023 quality-controlled whole-exome-sequenced
+tumor/normal pairs spanning 32 tumor types, generated by the
+The Cancer Genome Atlas MC3 mutation-calling initiative (Ellrott
+et al., 2018), a dataset containing 2,288,080 somatic single-
+nucleotide variations.
+Discovering Signiﬁcant Hotspots Based on a Statistical
+Model of the Site-Speciﬁc Background Mutational
+Frequency
+A common approach to ﬁnd signiﬁcantly mutated bases (i.e.,
+‘‘hotspots’’) is to compare the observed number of mutations
+across a cohort at a given site with the distribution of the ex-
+pected number of mutations predicted by a given background
+model, generating a p value for that site. Sites passing multi-
+ple-hypothesis correction (e.g., false discovery rate [FDR]
+q value % 0.1) are then considered signiﬁcant hotspots. Obvi-
+ously, what gets called statistically signiﬁcant is only biologically
+meaningful if the underlying statistical approximation of the true
+background mutation frequency is accurate. Although we
+cannot directly evaluate the underlying model’s overall accuracy
+since we lack ground truth background mutation frequencies for
+every genomic position, we can assess a given model’s speci-
+ﬁcity via orthogonal criteria for whether mutations deemed sig-
+niﬁcant are indeed under positive selection.
+One orthogonal criterion we can use to assess whether a mu-
+tation is under positive selection is the distribution of variant pro-
+tein-coding effects compared with expectation. Variant effects
+of mutations under no selective pressure will be randomly
+distributed according to the codon structure and signatures
+of mutational processes operating throughout the exome. In
+contrast, positively selected mutations are mostly nonsynony-
+mous or splice altering, because essentially all coding driver
+mutations alter their corresponding protein. A recent study (Mar-
+tincorena et al., 2017) estimated the fraction of synonymous
+driver mutations at approximately 5%, most of which are splice
+altering. Therefore, an effective proxy for the speciﬁcity of a given
+algorithm is the degree to which the candidate driver hotspots it
+ﬁnds are enriched for nonsynonymous mutations beyond the
+expected baseline.
+We calculate this baseline by using the overall exonic substitu-
+tion frequencies for each trinucleotide context to generate the ex-
+pected background frequencies of each coding effect––synony-
+mous, missense, nonsense––in that context. By adding the
+contributions from all 96 trinucleotide substitutions, weighted by
+their relative frequencies,we ﬁnd anoverall expected baseline dis-
+tribution of 28% synonymous, 67% missense, and 5% nonsense
+mutations (Figure S1). Note that throughout our entire analysis, we
+avoid splice-altering mutations by excluding genomic positions
+and mutations within 5 base pairs of a splice site, since synony-
+mous events at those positions frequently disrupt splicing (Supek
+et al., 2014). We also avoid mutations overlapping transcription
+factor binding sites by excluding positions overlapping regions
+harboring strongevidenceoftranscription factorbinding (i.e., sites
+assayed in more than 90 cell lines with >70% of scores >800), as
+inferred by ENCODE chromatin immunoprecipitation sequencing
+experiments (Gerstein et al., 2012).
+Hotspots in Non-KCGs Found Signiﬁcant by
+Conventional Algorithms Are Mostly Neutral
+A simple and still common background model employs the con-
+ventional assumption used in many studies up until recently (Van
+den Eynden et al., 2015; Lohr et al., 2012; Lawrence et al., 2014;
+Chang et al., 2016; Baeissa et al., 2017; Araya et al., 2016; Miller
+et al., 2015) that all sites within the same k-mer context in a given
+gene are equally mutable. Our version of this model, which we
+will refer to as ‘‘Uniform-within-gene,’’ assumes that the back-
+ground mutation frequency at a given position is proportional
+to the average exome-wide mutation frequency for the base sub-
+stitution/trinucleotide combination at that position, weighted by
+a gene-speciﬁc mutability factor that captures the overall num-
+ber of mutations in the gene. Expected counts are Poisson
+distributed around this background frequency. This null distribu-
+tion can also be generated by permuting mutations while main-
+taining their sequence context within each gene (e.g., Lawrence
+et al., 2014). Applying these assumptions yields a long list of
+1,677 signiﬁcant hotspots within 1,218 genes across our pan-
+cancer cohort. Although many of these signiﬁcant hotspots
+occur in known cancer genes (KCGs), as deﬁned by the Cancer
+Gene Census (CGC) (v.85) (Futreal et al., 2004)––77/133 KCGs
+contain signiﬁcant hotspots (Figure 1A) and recapitulate known
+driver events (e.g., BRAF V600E)––1,264 signiﬁcant hotspots
+occur in 1,131 genes with uncertain oncogenic roles (non-
+KCGs) (Figure 1A).
+Signiﬁcant hotspots in KCGs are nearly devoid of synonymous
+mutations (0.4% of mutations at hotspots versus the expected
+27.9%), providing strong orthogonal evidence that these muta-
+tions are indeed under positive selection. If the 1,264 putative
+driver hotspots in non-KCGs were also drivers, one would
+expect that they too would be highly depleted of synonymous
+mutations. Instead, however, we ﬁnd that the distribution of their
+coding effects is very close to what we expect by chance
+(observed silent 19.1% versus expected 24.3%, Figure 1B), indi-
+cating that most of these hotspots are equivalent to randomly
+chosen mutations, and are thus neutral passengers under little-
+to-no selective pressure.
+Cancer Cell 36, 288–301, September 16, 2019
+289
+
+Assuming that mutational patterns in KCGs reﬂect mutational
+patterns of driver genes in general, then the overwhelming ma-
+jority of all silent hotspots are likely to be passenger events, given
+their extreme paucity in KCGs. However, this is a conservative
+assumption––although the fraction of synonymous drivers was
+estimated at 5% (Martincorena et al., 2017) (of which most are
+splice altering), it is possible that non-splice-altering synony-
+mous mutations can have a functional effect, e.g., by affecting
+mRNA folding stability (Katz and Burge, 2003), binding of regula-
+tory factors, or translational efﬁciency (Quax et al., 2015). Such
+driver mutations are likely rare, owing to their absence in
+KCGs, but their exact prevalence is difﬁcult to quantify. There-
+fore, we liberally assume that 10% of non-splice-altering synon-
+ymous variants are in fact functional.
+We would expect a proportion of observed nonsynonymous
+mutations concordant with the expected ratio between (the
+A
+B
+C
+D
+E
+F
+G
+H
+Figure 1. Comparison of Number of Genes Containing Hotspots and Protein-Coding Effects of Hotspots Found Signiﬁcant by the Four Sta-
+tistical Models
+(A) Number of genes containing signiﬁcant hotspots (q % 0.1) according to the Uniform-within-gene statistical model, segregated by whether the gene is a known
+cancer gene (KCG) (i.e., in the Cancer Gene Census). Genes under neutral selection are conservatively deﬁned to have R95% probability of their dN/dS falling
+between 0.8 and 1.2; orange scale fades to white when this probability falls below 0.5. Genes under positive selection are deﬁned to have R97.5% probability
+dN / dS > 1.2; blue scale fades to white when probability falls below 0.7. Genes are denoted as lost from signiﬁcance relative to the Uniform-within-gene method.
+(B) Expected and observed distributions of protein-coding effects of hotspot mutations signiﬁcant (q % 0.1) by the Uniform-within-gene model, segregated by
+known cancer gene status. We estimate the overall fraction of false-positive passenger mutations (hatched bars) by assuming 90% of signiﬁcant synonymous
+hotspots are false-positives. Thus, the proportion of observed nonsynonymous mutations concordant with the expected ratio between synonymous and
+nonsynonymous mutations will also be passengers.
+(C) Same as (A) but according to the Uniform Poisson model.
+(D) Same as (B) but by the Uniform Poisson model.
+(E) Same as (A) but by the Gamma-Poisson model.
+(F) Same as (B) but by the Gamma-Poisson model.
+(G) Same as (A) but by the Log-normal-Poisson model.
+(H) Same as (B) but by the Log-normal-Poisson model. Lines between stacked bars denote 95% conﬁdence intervals.
+See also Figure S1, Tables S1, S2, and S3.
+290
+Cancer Cell 36, 288–301, September 16, 2019
+
+90% presumed nonfunctional) synonymous and nonsynony-
+mous mutations to also be passenger events. For example, if
+the expected ratio of synonymous to nonsynonymous mutations
+was 1:3, and 10% of putative signiﬁcant hotspots were synony-
+mous (of which 90% are presumed nonfunctional), then we
+would expect an additional 3 3 0.1 3 0.9 = 27% of the putative
+nonsynonymous hotspots to also be passengers. By this
+reasoning, at least 66.4% of putative nonsilent driver hotspots
+in non-KCGs according to the conventional Uniform-within-
+gene model are also false-positives, illustrated by the hatched
+bars in Figure 1A.
+In addition to ﬁnding that these hotspot mutations at the base
+pair level are neutral, we also noted that a large fraction of the
+genes containing these hotspots are themselves neutral. To
+determine this, we assessed whether a gene was under neutral
+selection (i.e., not under positive or negative selection) using
+the molecular evolution criterion of the ratio of a gene’s nonsyno-
+nymous:synonymous somatic mutation densities (dN/dS) (Ki-
+mura, 1977; Martincorena et al., 2017; Nei and Gojobori, 1986).
+After normalizing for signature heterogeneity and genes’ codon
+structures (Greenman et al., 2006), we expect parity between
+these densities (i.e., dN/dS z1) in genes under neutral selection.
+Computing dN/dS for each gene can only yield a conﬁdent esti-
+mate in genes with sufﬁcient numbers of mutations, allowing us
+to conservatively assess whether they were under neutral selec-
+tion. We identiﬁed 194 (of the 20,000) genes conﬁdently under
+neutral selection (R95% probability that the gene’s dN/dS is be-
+tween 0.8 and 1.2). A total of 22.8% of non-KCGs that contained
+signiﬁcant hotspots was either within these 194 genes (n = 70) or
+only contained silent hotspots (n = 200) (Figure 1A; Table S1),
+further conﬁrming the poor speciﬁcity of the conventional
+Uniform-within-gene model. Overall, we conclude that analysis
+methods based on the conventional assumption that equivalent
+base pairs have the same background mutability produce lists of
+candidate hotspots with many false-positives.
+Thus, the apparent signiﬁcant recurrence of mutations even
+at sites/genes under neutral selection is due to a naive back-
+ground model that fails to account for the underlying variability
+in the background base-wise mutability. We therefore need
+to model mutational recurrences with a site-speciﬁc background
+model.
+Currently Known Covariates Cannot Account for all
+Base-Wise Mutational Heterogeneity
+It is
+possible that
+the unaccounted
+variability
+might be
+completely explained by previously reported covariates that
+affect mutation frequencies on both coarse and ﬁne scales. Co-
+variates such as replication timing (Stamatoyannopoulos et al.,
+2009), chromatin state (Polak et al., 2015), and gene expression
+levels (Pleasance et al., 2010) have been reported to inﬂuence
+background mutability on a broad scale (100 kbp–1 Mbp).
+More recent studies have discovered that other covariates like
+nucleosome positions or transcription factor binding activity in-
+ﬂuence mutability on a much smaller scale (10s of base pairs)
+(Poulos et al., 2016; Sabarinathan et al., 2016; Mao et al.,
+2018). We tested a ﬁxed regression model in which the base-
+wise mutation frequency is entirely determined by these
+covariates, which we refer to as the ‘‘Uniform Poisson’’ model.
+However, we ﬁnd that the covariates alone are incapable of ex-
+plaining all of the variability, because 25.6% (n(dN/dS z 1) = 50,
+n(only silent hotspots) = 149) of the 737 non-KCGs containing
+signiﬁcant hotspots are conﬁdently under neutral selection (Fig-
+ure 1C). Moreover, the distribution of protein-coding effects of
+hotspots in non-KCGs found to be signiﬁcant by this method is
+essentially identical to that of the Uniform-within-gene model
+(observed silent fraction of 19.8% versus expected 24.8%; Fig-
+ure 1D). Although additional yet-undiscovered covariates may
+be able to better explain this variability in the future, we currently
+are forced to update the model to explicitly allow for variability
+in base-wise mutation frequencies beyond what can be fully
+modeled with currently known covariates.
+Introducing Uncertainty in Site-Speciﬁc Mutability
+Improves Speciﬁcity of Finding Driver Hotspots with
+Minimal Loss of Sensitivity
+In contrast to the Uniform Poisson model, another way to ac-
+count for the base-wise variability is by allowing the mutation
+frequency at each site to be drawn from a probability distribution
+reﬂecting additional variability in the background mutability. The
+choice and parameterization of the underlying distribution can
+make a large difference in model performance. Recent methods
+have employed a Gamma-Poisson model, both at the gene
+level (Weghorn and Sunyaev, 2017; Martincorena et al., 2017;
+Imielinski et al., 2017) and on the base level (Smith et al.,
+2016), in which mutation counts are still Poisson distributed,
+but the Poisson rates vary according to a ﬁtted gamma distribu-
+tion, adding an additional parameter to represent the overdisper-
+sion. There is no inherent biological rationale for using the
+gamma distribution to represent the uncertainty of the Poisson
+rates––it is merely mathematically convenient, because there is
+an easy closed-form expression for a Poisson distribution whose
+rate is gamma-distributed: the negative binomial/Gamma-Pois-
+son distribution. We found that by applying the Gamma-Poisson
+regression model indeed explained a large amount of the addi-
+tional variability, but it still did not capture all of it; while the set
+of signiﬁcant hotspots in non-KCGs is depleted of synonymous
+events (observed 12.3% versus expected 25.1%), we still see
+that 15.7% (31/197) of non-KCGs containing signiﬁcant hotspots
+are neutral (Figures 1E and 1F), suggesting that all the variability
+is not yet accounted for in this model and there is additional
+speciﬁcity to be gained.
+Next, we tried to improve on the Gamma-Poisson model by re-
+placing the gamma distribution with a log-normal distribution.
+Unlike the gamma distribution, arbitrarily chosen for its mathe-
+matical convenience, the log-normal distribution is based on
+the idea that mutant base pairs do not instantaneously arise
+but are the net result of many independent consecutive events
+(e.g., damage and repair processes), each with an independent
+probability of occurring. For instance, a mutagen has a certain
+probability of initially damaging a nucleotide, which in turn has
+a certain probability of being missed by all repair mechanisms
+before S phase. Should all of these events occur, the DNA poly-
+merase must also fail to recognize the lesion and incorporate the
+wrong complementary base, which must survive another cell cy-
+cle without being recognized to become a mutated base pair in
+the genome. By the geometric central limit theorem, this product
+of probabilities approaches a log-normal distribution (Sut-
+ton, 1997).
+Cancer Cell 36, 288–301, September 16, 2019
+291
+
+Applying this Log-normal-Poisson (LNP) model to our cohort
+identiﬁed a list of candidate driver hotspots in non-KCGs with
+the lowest fraction of non-KCGs under neutral selection with sig-
+niﬁcant hotspots (7% [6/86] of genes; Figure 1G) and was most
+depleted
+of
+synonymous
+events
+relative
+to
+expectation
+(observed 6.6% versus expected 26.5%; Figure 1H). These re-
+sults suggest that the LNP model has the highest speciﬁcity
+among the four tested models.
+Although the LNP model increases speciﬁcity of ﬁnding true
+oncogenic hotspots, this potential advantage may come at the
+expense of decreased sensitivity. Indeed, 31 KCGs containing
+signiﬁcant hotspots according to the Uniform-within-gene model
+are lost from signiﬁcance by the LNP model; 18 KCGs are lost
+from signiﬁcance by the Gamma-Poisson model (Figures 1E
+and 1G); and 28/15 genes are lost from signiﬁcance relative to
+the Uniform Poisson model by the LNP/Gamma-Poisson
+models, respectively. Although both the Gamma-Poisson and
+LNP models ﬁnd fewer KCGs containing hotspots than both con-
+ventional models, not all cancer genes driven by point mutations
+must have strong mutational hotspots. For example, many tumor
+suppressors can be inactivated via truncating mutations any-
+where in their open reading frame; thus, while the gene as a
+whole is recurrently mutated, its mutations do not need to recur
+at the same speciﬁc genomic position to incur the same func-
+tional effect. A position with many truncating mutations would
+not have any additional ﬁtness advantage over any other position
+with fewer truncating mutations, since any truncating muta-
+tions far enough upstream of the C terminus will either induce
+nonsense-mediated degradation of the mRNA or produce a
+nonfunctional partial protein product. Thus, recurrent mutations
+in cancer genes not driven by hotspots should not be considered
+false-negatives for an algorithm that solely evaluates mutations
+at the single-site level.
+Although such genes may not be driven by hotspots, they
+will still display an overall excess of nonsilent mutations and
+should therefore be signiﬁcant by a gene-level burden test.
+Of the 31 genes lost from signiﬁcance under the LNP model,
+23 are still signiﬁcant by a conservative burden test (Prob[dN/
+dS R 1.2] R0.975). The additional eight genes have too few mu-
+tations to conﬁdently establish an excess of nonsilent events by
+our conservative criterion but are all deemed signiﬁcant by more
+sophisticated methods (e.g., MutSigCV [Lawrence et al., 2013],
+which incorporates genomic covariates to estimate gene-level
+background mutation frequencies).
+Finally, we assess sensitivity on the individual allele level.
+When searching for totally uncharacterized driver events (i.e.,
+in non-KCGs), the goal is to identify both hotspots and the genes
+that harbor them. However, many researchers are looking to
+prioritize yet-uncharacterized potentially actionable mutations
+in already characterized genes. To this end, to increase our sta-
+tistical power, we restricted our hypothesis testing to only sites in
+KCGs. This yielded 775 hotspots (at the codon substitution level;
+Table S2) signiﬁcant by any of the four methods (qRHT < 0.1), 201
+of which are not signiﬁcant by the LNP model. However, most of
+these are loss-of-function events in tumor suppressors (deter-
+mined analytically by enrichment in truncating mutations, Prob
+[dT/dS R 1.2] R 0.975, Table S3); by the above reasoning, these
+should not be considered false-negatives in a site-speciﬁc signif-
+icance analysis. Excluding nonsense mutations and tumor sup-
+pressors, the LNP model misses 70 hotspots, corresponding
+to a 9% loss in sensitivity under the very liberal assumption
+that all 775 hotspots identiﬁed by any method are indeed true
+driver hotspots. The Gamma-Poisson, Uniform-within-gene,
+and Uniform Poisson methods miss 8.9%, 7.5%, and 1% of
+the 775, respectively.
+Thus, both the LNP and Gamma-Poisson models retain sensi-
+tivity on both the gene and allele levels if we speciﬁcally differen-
+tiate cancer genes driven by hotspots from genes driven by an
+overall excess of mutations.
+Comparative Analyses Conﬁrm Improved Performance
+of the LNP Model
+To more rigorously assess the sensitivity and speciﬁcity trade-
+offs of the different methods, we used receiver operating charac-
+teristic (ROC) curve analysis employing as ground truth sets: (i) a
+false-positive set of 194 genes conﬁdently under neutral selec-
+tion, as deﬁned before (Prob[0.8 % dN/dS % 1.2] R95%); and
+(ii) a true-positive set of 42 genes, deﬁned as KCGs with a high
+concentration of nonsilent mutations at recurrently mutated po-
+sitions. We identiﬁed these 42 true-positive genes by requiring
+that the dN/dS of each gene dropped by more than 5% when
+we removed all sites that were near signiﬁcance (q % 0.25) by
+the least conservative Uniform-within-gene model (Table S1).
+This ensures that it will attain 100% sensitivity by deﬁnition,
+setting a relevant point of comparison for the other models,
+because the Uniform-within-gene model has been widely em-
+ployed (Van den Eynden et al., 2015; Lohr et al., 2012; Lawrence
+et al., 2014; Chang et al., 2016; Baeissa et al., 2017; Araya et al.,
+2016; Miller et al., 2015). However, we were aware that this true-
+positive set depends on a speciﬁc method, and thus assembled
+an alternate one comprising all KCGs with ﬁve or more recurrent
+mutations in our cohort, with evidence in the literature supporting
+an oncogenic role for the recurrent event. We only included
+genes whose hotspots’ phenotypic effect was deemed consis-
+tent with primary tumor development, thus excluding mutations
+found only to confer resistance to treatment, or mutations found
+only to promote metastasis. We also only included genes tested
+in cell lines corresponding to the tissues in which the hotspot is
+observed in vivo. This alternate true-positive set comprised 53
+KCGs (Table S1).
+We then plotted ROC curves based on these ground truth sets
+for the four methods, using each method’s minimum q value
+across all sites in the gene as the discrimination threshold (Fig-
+ures 2A and S2A). We observed that the LNP model had the
+highest area under the curve (AUC), followed by the Gamma-
+Poisson, Uniform Poisson, and Uniform-within-gene methods.
+The differences in AUC were almost entirely due to differences
+in speciﬁcity, since all methods had comparable sensitivities.
+On each curve, we denote the positions on the ROC curves
+corresponding
+to
+the
+standard
+signiﬁcance
+threshold
+of
+q % 0.1, at which the LNP model identiﬁed 494 signiﬁcant hot-
+spots in 134 genes. Of these 134 genes, none of the genes
+belong to the negative truth set; 39 genes, containing 169
+hotspots, belong to the positive truth set, corresponding to a
+sensitivity of 89% (CI95%[75%, 95%]). At the same threshold,
+the Gamma-Poisson model achieved an insigniﬁcantly higher
+sensitivity of 95% (CI95%[85%, 99%]) but a false-positive rate
+of 4.1% (CI95%[1.8%, 7.29%]), corresponding to an FDR of
+292
+Cancer Cell 36, 288–301, September 16, 2019
+
+16% (8 false-positive genes out of 50). The speciﬁcity losses
+for the conventional models are even higher, with false-positive
+rates of 25%/38% and FDRs of 56%/62% for the Uniform Pois-
+son/Uniform-within-gene models, respectively. Re-running the
+benchmarks using the alternate true-positive set did not signiﬁ-
+cantly affect the results (Figure S2B). This ROC analysis sug-
+gests that the LNP model performs the best among the four
+models, having the highest speciﬁcity without a signiﬁcant loss
+in sensitivity for cancer genes driven by hotspots.
+Another way to quantify the inﬂation of signiﬁcant results of
+different methods is to examine their quantile-quantile (QQ)
+plots. Since we expect that most sites in the genome do not har-
+bor driver events, we expect their p values to be uniformly
+distributed. Indeed, when comparing the four different methods,
+we observe that the QQ plots of the conventional methods are
+inﬂated, demonstrating deviation from the uniform distribution
+toward more signiﬁcant p values in a large fraction of genomic
+loci (Figure S2C). The inﬂation of the models also affects the re-
+sulting q values and produces lists of signiﬁcant hotspots (and
+genes) that may contain more false-positives than expected by
+the q value cutoff. In the case of a well-calibrated model (and
+hence a well-behaved QQ plot), setting a speciﬁc q value
+threshold (e.g., q % 0.1) would result in a list of signiﬁcant hits
+that contain (on average) at most the desired fraction (10%) of
+false-positives. It is therefore important to test whether this is
+indeed the case.
+We used our set of false-positives to measure the empirical
+FDR. Since this is a conservative list, we expect to have an
+even lower FDR than the chosen q value cutoff. We compare
+the empirical FDR as a function of q value among the four models
+(Figure 2B). The LNP model is the only model for which the
+empirical FDR did not exceed the desired FDR (Table 1). By
+contrast, even at the extreme q value threshold of 108, approx-
+imately 3% of hotspots signiﬁcant by the Uniform-within-gene or
+Uniform Poisson models are in false-positive genes. Thus, these
+data conﬁrm that only the LNP model’s q value cutoff properly
+bounds the FDR.
+Finally, in addition to the ROC/QQ analyses, we present a
+nonparametric benchmark: the fraction of false-positives nomi-
+nated by each method in the top N signiﬁcant hotspots in non-
+KCGs. This reﬂects the approach of a researcher looking to
+prioritize putative drivers for experimental characterization,
+whose ﬁnite resources only allow for investigation of a ﬁxed num-
+ber of hotspots (e.g., 100). The method returning the fewest hot-
+spots in the false-positive truth set would likely contain the most
+true-positives, since a set of hotspots containing fewer conﬁdent
+false-positives will contain more potential drivers.
+Out of its top 100 hotspots in non-KCGs, the LNP model nom-
+inates zero occurring in a false-positive gene. The other three
+methods nominate between 5 and 9 false-positive hotspots. If
+we picked a gene at random out of the 19,315 genes we
+analyzed, there is a 1% chance of it being in the false-positive
+truth set (194 genes). Thus, we see that the other methods’ top
+100 hotspots are signiﬁcantly enriched for false-positives, and
+thus further depleted of potential true-positives.
+The LNP Model Produced the Most Accurate Estimates
+of Neutral Mutation Frequency
+In addition to evaluating model performance by examining the
+protein-coding effects of hotspots found signiﬁcant by each
+model, we can also assess how well each model predicts the
+expected number of mutated patients at each genomic position.
+A
+B
+Figure 2. Performance of the Four Methods Quantiﬁed by ROC and FDR Analysis
+(A) ROC curves for each method evaluated at the gene level. Truth set used for estimating false-positive rate comprises genes conﬁdently under neutral selection;
+truth set used for estimating true-positive rate comprises KCGs with a high proportion of mutations at recurrently mutated positions. A gene is considered a hit for
+the ROC analysis if it has at least one hotspot more signiﬁcant than a speciﬁc q value cutoff. q value cutoffs of 0.1 and 0.01 are marked on each curve. Because the
+Log-normal-Poisson model has a false-positive rate of 0 even at q < 0.1, we indicate this position in ROC space with an ‘‘*’’ marker at the lowest possible non-zero
+false-positive rate.
+(B) Fraction of loci falling in false-positive truth set genes (empirical FDR) as a function of q value. The gray area indicates the region for which the empirical FDR
+exceeds the q value; methods whose curves lie in this region yield more false-positives than expected by the q value cutoff. Colored regions indicate 95% beta
+distribution conﬁdence intervals on the fractions. q value thresholds of 0.1, 0.01, and 0.001 are shown as vertical dotted lines, with circles denoting where they
+intersect the curves.
+See also Figure S2 and Table S1.
+Cancer Cell 36, 288–301, September 16, 2019
+293
+
+A well-calibrated model accurately infers the background muta-
+tion frequency at each position, so the expected mutation fre-
+quencies at positions under neutral selection will be concordant
+with the observed frequencies. On the other hand, a poorly
+calibrated model that inaccurately models the background fre-
+quency will predict mutational frequencies that signiﬁcantly
+deviate from the observed frequencies.
+To compare the accuracy of the different background models,
+we calculated the observed distribution of recurrent synony-
+mously mutated sites (i.e., the fraction of sites with a speciﬁc
+number of mutations out of all sites that can harbor synonymous
+mutations) (Figure 3A). We then compared with the expected
+distributions predicted by each of the four models. While the
+conventional models underestimate the fraction of sites mutated
+in three or more patients––synonymous sites mutated in exactly
+three patients are 3.53 more likely than expected by the Uni-
+form-within-gene model; overall, synonymous mutations recur-
+ring in R3 patients are 123 more likely than expected by the
+model––both
+overdispersed
+models
+(Gamma-Poisson
+and
+LNP) are more accurate, with the LNP model most correctly
+recapitulating the observed distribution even for highly recurrent
+events, with synonymous mutations recurring in R3 patients
+1.843 more likely than expected by the Gamma-Poisson model,
+but only 1.053 more likely by the LNP model.
+Although the two overdispersed models performed much bet-
+ter in predicting mutation frequencies than the non-overdis-
+persed models, they are not identical. We illustrate a speciﬁc
+instance of this by looking at a sequence context containing
+recurrent mutations in likely passenger genes that only the
+LNP model avoids calling signiﬁcant (Figure 3B). Three of the
+most recurrently mutated positions in the sequence context
+A(A/C)G occur in Spectrin alpha (SPTA1; ten missense muta-
+tions: six in stomach adenocarcinoma and one each in bladder,
+cervical, colon, and lung squamous tumors), Titin (TTN; seven
+missense mutations: three stomach, two colorectal, one each
+in lung squamous and esophageal tumors), and regulating syn-
+aptic exocytosis protein 2 (RIMS2; ten synonymous mutations:
+ﬁve stomach, three colon, one each in esophageal and liver tu-
+mors). All three of these mutations were found to be signiﬁcant
+by the Gamma-Poisson model (q = 53104, q = 0.002, and
+q = 0.002, respectively) and by both conventional models
+(q values < 1013 for all genes and models) but not by the LNP
+model (q = 0.97, q = 0.72, and q = 1.0, respectively). Because
+all of these genes are only expressed in speciﬁc tissue types
+(SPTA1 in red blood cell progenitors, TTN in muscle cells, and
+RIMS2 in neurons), it is highly likely that these represent passen-
+ger hotspots. Additional evidence that these genes are passen-
+gers is provided by the dN/dS analysis, which assigns the genes
+tight conﬁdence intervals around 1 (SPTA1: mean dN/dS 1.05,
+CI95% [0.92,1.19]; TTN: mean 0.98, CI95% [0.94,1.02]; RIMS2
+mean 1.02, CI95% [0.86,1.22]), and by the fact that the hotspot
+in RIMS2 is synonymous. By contrast, three of the other most
+recurrently mutated positions in the context fall in known drivers
+(EGFR, TP53, and KRAS, mutated in 8, 13, and 14 patients,
+respectively), and are signiﬁcant by all four methods. Thus, taken
+together, these data suggest that the overdispersed LNP model
+most accurately predicts actual mutation frequencies and
+makes the fewest false-positive calls.
+Signiﬁcant Hotspots Identiﬁed by the LNP Model
+The main scientiﬁc interest of any signiﬁcance analysis method is
+to discover promising but not yet experimentally validated driver
+candidates for subsequent experimental follow-up. Since the
+LNP model performed well in excluding many more false-posi-
+tive passenger mutations than the other three tested models,
+we can have more conﬁdence that the genes in the resulting
+list of still-signiﬁcant hotspots are enriched for true drivers. The
+LNP model yielded 494 signiﬁcant hotspots (q % 0.1) in 134
+genes (49 KCGs, containing 405 hotspots, and 85 non-KCGs,
+containing 89 hotspots) (Table S2). The KCGs contain 29 of
+the conservative true-positive genes (including KRAS, BRAF,
+and PIK3CA) and also 20 other genes not in the truth set but
+still with signiﬁcant hotspots, including PTEN, SMAD4, and
+CDKN2A.
+Since we use an FDR threshold of q % 0.1, approximately 49
+out of the 494 signiﬁcant hotspots should be false-positives. If
+we assume that none of the 405 hotspots in KCGs are false-pos-
+itives, then we expect that 40 (= 89  49) out of the 89 hotspots in
+85 non-KCGs are true-positives.
+Within the 85 non-KCGs (Figure 4), 26 have been previously
+experimentally implicated in cancer but are not yet well-known
+enough to be included in the CGC, or are in the CGC but not
+due to somatic point mutations (e.g., implicated by germline
+risk alleles or copy-number/structural alterations). We discuss
+these genes in depth in Table S4 and Figure S3.
+We note that the three other models (and other conventional
+methods) also ﬁnd all of our signiﬁcant hotspots, but are diluted
+by many other false-positives. Overall, we demonstrate that the
+LNP model produces a highly accurate list of driver hotspots that
+provide clear biological hypotheses, some of which have already
+been supported by experimental data. Future experiments will
+be needed to validate the functional role of the other hotspots.
+Hotspot-Generating Mutational Processes Have Similar
+Base-Wise Heterogeneity Despite Having Vastly
+Different Mutation Frequencies
+Our results provide evidence of pervasive variability in base-
+wise
+mutation
+frequency
+across
+cancer,
+irrespective
+of
+mutagen or underlying mutational process. Next, we tested
+whether different mutational processes have different levels
+of variability. Each mutational process has speciﬁcity for partic-
+ular genomic contexts and features, deﬁning a set of ‘‘bases-
+at-risk’’ for that process. We might expect differences in the
+degree to which different mutational processes diverge from
+uniformly targeting their bases-at-risk and thus different levels
+of variability. Because there is considerable heterogeneity in
+Table 1. Fraction of Hotspots in Conﬁdent False-Positive Genes
+(Empirical FDR) at the Indicated q Value Cutoff
+Method
+q % 0.1
+q % 0.01
+q % 0.001
+Uniform-within-
+gene
+0.06 (102/1,678)
+0.05 (45/920)
+0.03 (19/590)
+Uniform Poisson
+0.05 (82/1,547)
+0.03 (29/1,006)
+0.02 (14/713)
+Gamma-Poisson
+0.01 (8/710)
+0.01 (5/504)
+0.01 (3/387)
+Log-normal-
+Poisson
+0.0 (0/511)
+0.0 (0/290)
+0.0 (0/191)
+294
+Cancer Cell 36, 288–301, September 16, 2019
+
+the overall mutation frequencies of different processes (ranging
+from  10 muts=million bases  at  risk for methylated-CpG
+deamination
+to
+>5; 000 muts=million bases  at  risk
+for
+POLE hypermutation), we might predict a correspondingly
+wide range in the variability across bases-at-risk of different
+processes. Tellingly, many published analyses have been
+forced to exclude hypermutated tumors from signiﬁcance ana-
+lyses because they yield too many signiﬁcantly mutated genes/
+hotspots, largely due to the inaccurate background models in
+wide use (Bailey et al., 2018; Martincorena et al., 2017). One
+might surmise from this that high-mutation-frequency pro-
+cesses are more prone to generating hotspots, reﬂecting
+greater variability in their base-wise mutation frequencies.
+The LNP framework provides a natural way of quantifying both
+the mutation frequency and variability of different mutational pro-
+cesses. We ﬁt the model to all bases-at-risk for each process;
+the log-normal parameters em and es are equal to the geometric
+mean and geometric standard deviation, respectively, of the
+base-wise mutation frequency. The geometric mean is simply
+equivalent to the median of the log-normal distribution. The geo-
+metric standard deviation es is a dimensionless scale factor indi-
+cating the average multiplicative distance from the mean; for
+example, es = 2 signiﬁes that at 1 standard deviation above the
+mean, bases will be twice as mutable as the average. At its min-
+imum value es = 1, there is no variability. Hence, the same value
+of es indicates an equivalent amount of base-wise variability,
+irrespective of mutation frequency. Our fully Bayesian model
+ﬁnds not only the optimal values of em and es, but also the pos-
+terior distributions of these parameters. In general, mutational
+processes that generate few mutations will have high posterior
+uncertainty, while processes that generate many mutations will
+have lower uncertainty.
+We selected the following eight mutational processes to
+examine using the LNP model because they are mostly of known
+causes and very speciﬁc to certain patients and sequence con-
+texts, making assignments of patients to these signatures unam-
+biguous: APOBEC (3A+3B, COSMIC Signatures 2 and 13), aging
+(spontaneous methylated-CpG deamination, COSMIC Sig. 1),
+esophageal (Dulak et al., 2013) (COSMIC Sig. 17), MSI (COSMIC
+Sig. 6), POLE (COSMIC Sig. 10), POLE + MSI (Haradhvala et al.,
+2018) (COSMIC Sig. 14), smoking (COSMIC Sig. 4), and UV (UV-
+A only, COSMIC Sig. 7). We used SignatureAnalyzer (Kim et al.,
+2016), which is based on a Bayesian implementation of non-
+negative matrix factorization, to infer the probabilities of each
+mutation being assigned to each process. We then identiﬁed 8
+subcohorts of patients (each comprising between 44 and 4,739
+patients) in which each of these processes dominated (R75%
+assignment probability) at their relevant sequence contexts
+(e.g., C/T mutations at CpG sites for aging). The mutational
+spectra of these subcohorts are shown in Figure S4. For each
+Fraction of synonymous exonic positions
+Obs./Exp.
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+10 -10
+10 -8
+10 -6
+10 -4
+10 -2
+0.97
+10 0
+10 1
+10 2
+10 3
+Number of mutated patients
+Number of mutated patients
+0
+10 -40
+10 -35
+10 -30
+10 -25
+10 -20
+10 -15
+10 -10
+10 -5
+10 0
+Prob(# mutations at each site)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Confident driver events
+Confident passenger events
+Log-normal-Poisson
+Gamma-Poisson
+Uniform Poisson
+Uniform-within-gene
+Predicted fractions
+Observed fractions
+TP53 
+L194R
+KRAS 
+Q61H
+RIMS2 
+S454S
+SPTA1 
+K1732T
+EGFR 
+L62R
+TTN 
+E16119D
+q > 0.1
+< 1 exp. mutated site
+A
+B
+Significance
+Figure 3. Predicted Frequencies of Recurrent Mutations According to the Four Methods
+(A) Fraction of synonymous hotspot mutations observed in multiple patients (0–15; total cohort size 9,023). Colored lines represent the expected fraction of sites
+as predicted by each of the four models; dashed black lines represent the observed fractions. The ratios of observed:expected fractions for each model are
+plotted above each recurrence level. Log-normal-Poisson model best matches the observed fractions. The gray region indicates a fraction corresponding to <1
+base pair of synonymous exonic territory (21.4 million possible base pair substitutions that could yield a synonymous codon change).
+(B) Probabilities of observing every mutation in sequence context A(A/C)G as predicted by the four models; each dot corresponds to an observed mutation.
+Lines connect the different models’ predictions for the same mutation; blue lines highlight conﬁdent driver mutations, while red lines highlight conﬁdent passenger
+mutations. The gray region indicates model predictions with a q value > 0.1 (i.e., non-signiﬁcant recurrence), indicating that, while driver hotspot mutations are
+signiﬁcant by all models, only the Log-normal-Poisson model correctly infers passenger hotspot mutations as non-signiﬁcant.
+Cancer Cell 36, 288–301, September 16, 2019
+295
+
+of these ‘‘process-centric’’ subcohorts, we ﬁt the LNP model to
+the relevant contexts.
+We plotted the posterior distributions of em and es for each
+pentamer context belonging to the eight mutational pro-
+cesses to test whether processes with higher mutation fre-
+quencies also have higher base-wise variability. To our sur-
+prise, our results show that, despite extreme heterogeneity
+in overall mutation frequency (spanning nearly 5 orders of
+magnitude),
+most
+mutational
+processes
+show
+a
+similar
+amount of non-zero base-wise variability (Figure 5A), with es
+approximately between 2 and 3.
+Notably, the only exception was the esophageal mutational
+process, which showed the highest variability despite having
+one of the lowest mutation frequencies. This may indicate
+that additional yet-undiscovered factors may correspond to
+elevated mutability at speciﬁc bases-at-risk for this process.
+It
+was
+recently
+reported
+that
+the
+esophageal
+signature
+disproportionately mutates positions within CTCF binding
+sites (Katainen et al., 2015), possibly due to bound CTCF
+transcription factors occluding damaged bases from repair
+processes.
+To test whether variability was independent of mutation
+rate even within individual processes, we partitioned the
+high mutation frequency processes between hypermutated
+samples (top decile of mutation frequency) and non-hyper-
+mutants,
+and
+compared
+their
+es
+values.
+We
+observed
+similar levels of base-wise variability between the two parti-
+tions (Figure S5A), indicating that there is nothing unusual
+about the distribution of mutations in hypermutants, and
+nothing that should warrant their exclusion in signiﬁcance
+analyses.
+Explanatory Power of Genomic Covariates Differs
+among Mutational Processes
+Although we previously showed in the Uniform Poisson regres-
+sion model analysis that genomic covariates cannot fully
+explain all base-wise mutational variability, their explanatory
+power is non-zero. The LNP model provides a natural way to
+quantify the contribution of each covariate toward explaining
+this variability: the amount that es decreases as we incorporate
+RXRA
+MB21D2*
+ERCC2
+SLC27A5
+OXA1L
+BCL2L12
+SOX17
+PDE3A*
+SPTLC3
+PCBP1
+STK19
+C3orf70*
+EEF1A1
+RQCD1
+SUCO
+Gene
+LNP q value
+0
+5
+10
+15
+Number of mutations
+Adrenocortical
+Bladder
+Breast
+Cervical
+Colon
+DLBCL
+Esophageal
+Glioblastoma
+Head and neck
+Kidney renal
+Kidney papillary
+Low grade glioma
+Liver
+Lung adenocarcinoma
+Lung squamous
+Mesothelioma
+Pancreatic
+Paraganglioma
+Prostate
+Rectal
+Sarcoma
+Skin melanoma
+Stomach
+Testicular
+Thyroid
+Uterine
+10 -1
+10 -3
+10 -5
+10 -7
+Figure 4. The Top 15 Non-KCGs with Signiﬁcant Hot-
+spots by the LNP Model (q < 0.1) Segregated by Tumor
+Type
+For each non-KCG-containing signiﬁcant hotspots, we indi-
+cate the total number of mutated patients within each tumor
+type at all signiﬁcant hotspots. Genes in bold have been
+previously experimentally characterized as cancer genes but
+are not in the CGC. Genes marked with a star have hotspots
+that occur at optimal APOBEC3A hairpin substrate sequences
+and are likely passengers. See also Tables S2 and S4, and
+Figure S3.
+additional covariates corresponds directly to the
+variance explained by the added covariates. The
+value of es after all covariates have been incorpo-
+rated is the unexplained variance, which would
+approach es = 1 if the covariates completely
+explained the base-wise variability, because there
+would be no extra variance beyond what the covariates
+predict.
+We grouped the covariates by genomic scale: replication
+timing and expression (Lawrence et al., 2013) inﬂuence mutation
+frequencies on a coarse scale (100 kbp–1 Mbp), while nucleo-
+some positions and DNase hypersensitivity inﬂuence mutation
+frequencies on a ﬁne scale (10 bp). We also quantiﬁed the ef-
+fect of accounting for pentamer context speciﬁcity on mutation
+frequency (i.e., considering the ﬂanking ±2 upstream/down-
+stream positions in addition to the immediate 5ʹ/30 positions).
+In Figure 5B, we plot the amount of total variance explained by
+the aforementioned covariate sets and the amount of remaining
+unexplained variance for each of the trinucleotide contexts asso-
+ciated with each mutational signature. From this analysis, the
+following universal patterns stand out: (1) unexplained variance
+is higher than explained variance; (2) pentamer contexts are
+almost always important (with the notable exception of the aging
+signature); and (3) there is no correlation between the amount of
+unexplained variance and the amount of explained variance, and
+processes with more total variance do not necessarily have more
+variance explained by covariates.
+There are likely yet-undiscovered properties of the genome
+that affect mutability. For example, we examined the effect of
+adding XR-seq coverage (Hu et al., 2015)—an extrinsic mea-
+surement of nucleotide excision repair (NER) activity, used to
+repair pyrimidine dimers resulting from UV damage—as a covar-
+iate in our model. We found that this covariate explained an
+average additional 10% of variance in the UV subcohort (Fig-
+ure S5B), indicating that many passenger UV hotspots occur at
+loci predictably refractory to NER. However, the intrinsic
+genomic properties that determine amenability to NER are
+unknown.
+For certain processes, standard genomic covariates are
+completely non-explanatory. Although certain APOBEC trinucle-
+otides display considerable variability among pentamer contexts
+(Chan et al., 2015), neither coarse nor ﬁne covariates explain any
+additional variability. However, Buisson et al. (2019) recently
+showed that the APOBEC3A (A3A) cytidine deaminase preferen-
+tially targets DNA hairpin loops. Cytosines residing at optimal
+hairpin loop positions/motifs can show a >2003 increase
+296
+Cancer Cell 36, 288–301, September 16, 2019
+
+Figure 5. Comparison of the Heterogeneity of Base-Wise Mutability for Different Mutational Processes as Inferred by the Log-Normal-
+Poisson Model
+(A) Log-normal-Poisson posterior distributions of base-wise mutation frequency (median mutations per million sites em) and mutations’ deviation from being
+uniformly Poisson distributed (geometric standard deviation es) for different mutational processes. Each colored area represents the posterior 95% conﬁdence
+region for a pentamer context associated with a given mutational process (Figure S4). es = 1 corresponds to uniformly Poisson distributed mutations. Since es>1
+for all processes, we see that base-wise variability is universal and pervasive. Marginal distributions of em and es are shown below and to the right of the plot,
+respectively. Lines within each region are principal axes of the posterior density (i.e., eigenvectors of the covariance matrix of the estimated posterior density).
+(B) Amount of base-wise mutation rate variability es explained by model covariates (colored), and remaining unexplained variance after all covariates have been
+incorporated (gray), for each relevant trinucleotide context in each mutational process.
+See also Figures S4 and S5.
+Cancer Cell 36, 288–301, September 16, 2019
+297
+
+in A3A-induced mutation rate. Incorporating A3A substrate
+optimality, as deﬁned in Buisson et al. (2019), as a covariate
+into our model removes several A3A mutational hotspots from
+signiﬁcance (Figure S5C, Table S2).
+Conversely, coarse covariates—namely gene expression—
+explain a substantial amount of smoking mutational variability.
+This is expected since the C/A mutations comprising the
+smoking signature are caused by benzo[a]pyrene guanine ad-
+ducts (Denissenko et al., 1996), which are often corrected by
+transcription-coupled repair (Fousteri and Mullenders, 2008),
+which occurs more frequently in highly expressed genes (Pleas-
+ance et al., 2010).
+DISCUSSION
+Discovering cancer drivers from sequencing data requires over-
+coming the problem of detecting signal (mutational recurrence)
+above a background of non-random noise (variable intrinsic
+mutability). We detect drivers by statistically modeling this back-
+ground and looking for recurrence that signiﬁcantly exceeds it.
+This approach is only fruitful if the underlying model is accurate.
+As the corpus of cancer genomes has exponentially grown over
+the last decade, we have become statistically powered to
+observe background mutational variability at increasingly ﬁne
+genomic scales, which we must accordingly account for in our
+background models. Initially, around 2007, cohorts were so
+small (10 patients) that we lacked the power to observe any
+variability at all, although we suggested that this might indeed
+be the case (Getz et al., 2007). Thus, models assumed that every
+genomic region was equally mutable, and that all recurrent mu-
+tation stemmed from positive selection (Sjo¨ blom et al., 2006). As
+cohorts grew to 1,000 patients, around 2013, we became pow-
+ered to observe heterogeneity on the scale of a gene, and infer
+that most recurrently mutated genes were actually passengers
+with high intrinsic mutability. However, cohorts were still too
+small to estimate mutability on levels smaller than a gene, so
+models did not account for it. This led to the assumption that
+any base pair recurrently mutated beyond the overall back-
+ground level of its gene had to be a driver (Van den Eynden
+et al., 2015; Lohr et al., 2012; Lawrence et al., 2014; Chang
+et al., 2016; Araya et al., 2016; Baeissa et al., 2017).
+We are able to challenge this assumption in the current era of
+cohorts comprising 10,000 patients, which powers us to esti-
+mate background mutability on the smallest possible genomic
+scale: that of the individual base pair. Here, we demonstrate
+that base-wise mutational variability is so extreme that a large
+proportion of recurrently mutated base pairs in non-KCGs are
+in fact passengers. Unlike most hotspots found signiﬁcant by
+our LNP model, most signiﬁcant hotspots under the two toy
+models we compare it against (Uniform-within-gene and Uniform
+Poisson) are under no positive selection by orthogonal criteria.
+Although our toy models are merely illustrative, many recently
+published algorithms intended for actual driver discovery (both at
+the gene and site level) do not account for base-wise variability in
+their background models. Using these naive models, various
+groups reported lists of signiﬁcant genes or hotspots with many
+likely false-positives. Our own MutSigCL method (Lawrence
+et al., 2014), which analyzes mutational clustering on the gene
+level, reports a long list of signiﬁcant genes at FDR < 10%
+when run on the cohort analyzed here, some of which fall in our
+false-positive truth set. Likewise, the statistical model used in
+another study (Chang et al., 2016) yielded 1,202 signiﬁcant hot-
+spots at FDR < 1%, which required additional analyses and
+manual review to yield a ﬁnal report of 470 hotspots. Since
+FDRs are only meaningful if their underlying statistics are well
+calibrated, rigorous validation of the statistical models should
+be performed whenever the signiﬁcance levels are overly conﬁ-
+dent. Failure to do so has potentially severe consequences
+in situations like identifying genes for deep experimental follow-
+up or as drug targets. Owing to the substantial cost of such
+follow-up experiments, properly accounting for base-wise vari-
+ability is essential when selecting these candidates to avoid
+wasting valuable scientiﬁc resources on passenger hotspots.
+In addition to providing an improved model for assessing
+mutational signiﬁcance, our LNP model also sheds light on the
+fundamental nature of mutagenesis. It has long been known
+that
+background
+mutability
+correlates
+with
+coarse-scale
+genomic features, and more recent studies have shown that spe-
+ciﬁc ﬁne-scale genomic features undergo localized increased
+mutability (Mao et al., 2018; Poulos et al., 2016; Sabarinathan
+et al., 2016; Katainen et al., 2015). We show here that neither
+of these factors can explain the amount of observed base-wise
+variability, suggesting that there are yet-undiscovered properties
+of the genome that affect mutability. These may include: (1) other
+secondary/tertiary DNA structural motifs (Harteis and Schneider,
+2014; Georgakopoulos-Soares et al., 2018); (2) yet-unknown
+proteins bound to the DNA; (3) a combination of the two (e.g.,
+binding of ETS transcription factors has been shown to rotate
+adjacent pyrimidines into a more favorable conformation to
+form a cyclobutane dimer [Mao et al., 2018]); (4) local chromatin
+structure (which could affect gene expression or accessibility to
+mutagens or repair enzymes); or (5) sequence-speciﬁc polymer-
+ase error modes that our datasets are not yet powered to detect.
+Accounting for all potential covariates, however, may never be
+able to fully explain the observed variability since the mutations
+we observe in a tumor genome are merely a snapshot of the
+aggregated effect of many ﬂuctuating mutational processes
+that have been active over the course of the tumor’s life history.
+These processes’ activity levels and bases-at-risk vary as a
+function of continuously changing factors, such as the tumor’s
+microenvironment, mutagen exposure, or epigenetic state,
+which are complicated to model with static covariates. We prob-
+abilistically represent the unexplained variability with a log-
+normal distribution because it represents the net product of
+consecutive molecular events. The log-normal distribution has
+theoretical justiﬁcation and currently best ﬁts the observed
+data. But, as datasets grow in size, increasing our power to
+distinguish low-frequency drivers from background, we also
+become more powered to infer the distribution of background
+mutability, which may require us to further reﬁne our probabilistic
+models.
+Regardless of the underlying causes of the dramatic heteroge-
+neity we observe in base-wise mutability, its existence has
+implications in the ﬁelds of molecular evolution and population
+genetics. We ﬁnd that base-wise heterogeneity is pervasive
+across all mutational processes, including methylated-CpG
+deamination, which is overwhelmingly responsible for de novo
+germline mutations (Ehrlich and Wang, 1981; Hodgkinson and
+298
+Cancer Cell 36, 288–301, September 16, 2019
+
+Eyre-Walker, 2011). This suggests that the inﬁnite-sites model
+underpinning many assumptions in population genetics may
+be incorrect—for instance, the probability of identical alleles in
+multiple unrelated individuals originating from different common
+ancestors may be much higher than a naive coalescent theory
+would predict. Many somatic methods also rely on the inﬁnite-
+sites model; for example, tools for clonal structure inference
+often impose a hard constraint that the same mutation can never
+arise in multiple subclones independently.
+In addition, large-scale genomic organization has been
+thought to reﬂect coarse variability in background mutability
+(Chuang and Li, 2004), wherein genes more tolerant of mutation
+are thought to reside in more highly mutable regions of the
+genome. Variability at the base pair level may equivalently
+mold genomic architecture on ﬁne scales. For example, it has
+long been speculated that the sequence composition of immu-
+noglobulin variable chains is speciﬁcally biased to induce AID
+hypermutation hotspots at positions that accelerate the process
+of antigen selection (Jolly et al., 1996). Genome-wide selective
+pressure may be analogously guided or constrained due to
+variable site-speciﬁc mutability.
+In conclusion, further growth of cancer sequencing datasets
+will allow us to survey the landscape of drivers with even greater
+precision, reveal the intricacies of mutational processes, and
+even elucidate how these mutational processes shape evolu-
+tionary selection. But, as datasets continually grow and evolve,
+so must our methods and the conclusions we draw from them.
+STAR+METHODS
+Detailed methods are provided in the online version of this paper
+and include the following:
+d KEY RESOURCES TABLE
+d LEAD CONTACT AND MATERIALS AVAILABILITY
+d METHOD DETAILS
+B Mutation Calling and QC
+B Deﬁnition of Known Cancer Genes
+d QUANTIFICATION AND STATISTICAL ANALYSIS
+B Calculating Expected Coding Effect Fractions
+B Gene dN/dS Calculation
+B Description of Signiﬁcance Methods
+B MCMC Implementation
+d DATA AND CODE AVAILABILITY
+SUPPLEMENTAL INFORMATION
+Supplemental Information can be found online at https://doi.org/10.1016/j.
+ccell.2019.08.002.
+ACKNOWLEDGMENTS
+We thank Daniel Rosebrock and Dimitri Livitz for providing MYC absolute
+copy-number calls, Yosef E. Maruvka for providing microsatellite indel calls
+with respect to UPF2 mutant status, Esther Rheinbay for providing TFBS activ-
+ity and chromatin state tracks, as well as Chip Stewart and Barry Taylor for
+helpful comments and fruitful discussion on the manuscript. J.M.H. and
+G.G.
+were
+partially
+funded
+by
+NCI
+GDAC
+grants
+(U24CA143845,
+U24CA210999). M.S.L. was partially funded by G.G. funds at the Broad Insti-
+tute and M.S.L. startup funds at Massachusetts General Hospital. G.G. was
+partially funded by Paul C. Zamecnik Chair in Oncology, MGH Cancer Center.
+AUTHOR CONTRIBUTIONS
+Conceptualization,
+J.M.H.,
+M.S.L.,
+and
+G.G.;
+Methodology,
+J.M.H.
+and G.G.; Software, J.M.H.; Formal Analysis and Investigation, J.M.H.;
+SignatureAnalyzer Results, J.K.; Data Curation, J.M.H., M.S.L., and A.B.;
+Visualization, J.M.H.; Writing – Original Draft, J.M.H., M.S.L., and G.G.;
+Writing – Review & Editing, G.G., M.S.L., M.M., A.T.-W., and N.J.H.; Super-
+vision, G.G. and M.S.L.; Funding Acquisition, G.G.
+DECLARATION OF INTERESTS
+G.G. receives research funds from IBM and Pharmacyclics. G.G. is an inventor
+on
+patent
+applications
+related
+to
+MuTect,
+MutSig,
+ABSOLUTE,
+and
+POLYSOLVER. M.S.L. is an inventor on patent applications related to MuTect
+and MutSig.
+Received: November 21, 2018
+Revised: May 15, 2019
+Accepted: August 6, 2019
+Published: September 16, 2019
+REFERENCES
+Araya, C.L., Cenik, C., Reuter, J.A., Kiss, G., Pande, V.S., Snyder, M.P., and
+Greenleaf, W.J. (2016). Identiﬁcation of signiﬁcantly mutated regions across
+cancer types highlights a rich landscape of functional molecular alterations.
+Nat. Genet. 48, 117–125.
+Baeissa, H., Benstead-Hume, G., Richardson, C.J., and Pearl, F.M.G. (2017).
+Identiﬁcation and analysis of mutational hotspots in oncogenes and tumour
+suppressors. Oncotarget 8, 21290–21304.
+Bailey, M.H., Tokheim, C., Porta-Pardo, E., Sengupta, S., Bertrand, D.,
+Weerasinghe, A., Colaprico, A., Wendl, M.C., Kim, J., Reardon, B., et al.
+(2018). Comprehensive characterization of cancer driver genes and mutations.
+Cell 173, 371–385.e18.
+Buisson, R., Langenbucher, A., Bowen, D., Kwan, E.E., Benes, C.H., Zou, L.,
+and Lawrence, M.S. (2019). Passenger hotspot mutations in cancer driven
+by APOBEC3A and mesoscale genomic features. Science 364, https://doi.
+org/10.1126/science.aaw2872.
+Cairns, J. (1975). Mutation selection and the natural history of cancer. Nature
+255, 197–200.
+Chan, K., Roberts, S.A., Klimczak, L.J., Sterling, J.F., Saini, N., Malc, E.P., Kim,
+J., Kwiatkowski, D.J., Fargo, D.C., Mieczkowski, P.A., et al. (2015). An
+APOBEC3A hypermutation signature is distinguishable from the signature of
+background mutagenesis by APOBEC3B in human cancers. Nat. Genet. 47,
+1067–1072.
+Chang, M.T., Asthana, S., Gao, S.P., Lee, B.H., Chapman, J.S., Kandoth, C.,
+Gao, J.J., Socci, N.D., Solit, D.B., Olshen, A.B., et al. (2016). Identifying recur-
+rent mutations in cancer reveals widespread lineage diversity and mutational
+speciﬁcity. Nat. Biotechnol. 34, 155–163.
+Chuang, J.H., and Li, H. (2004). Functional bias and spatial organization of
+genes in mutational hot and cold regions in the human genome. PLoS Biol.
+2, 253–263.
+Cibulskis, K., Lawrence, M.S., Carter, S.L., Sivachenko, A., Jaffe, D., Sougnez,
+C., Gabriel, S., Meyerson, M., Lander, E.S., and Getz, G. (2013). Sensitive
+detection of somatic point mutations in impure and heterogeneous cancer
+samples. Nat. Biotechnol. 31, 213–219.
+Costello, M., Pugh, T.J., Fennell, T.J., Stewart, C., Lichtenstein, L., Meldrim,
+J.C., Fostel, J.L., Friedrich, D.C., Perrin, D., Dionne, D., et al. (2013).
+Discovery and characterization of artifactual mutations in deep coverage tar-
+geted capture sequencing data due to oxidative DNA damage during sample
+preparation. Nucleic Acids Res. 41, e67.
+Dees, N.D., Zhang, Q., Kandoth, C., Wendl, M.C., Schierding, W., Koboldt,
+D.C., Mooney, T.B., Callaway, M.B., Dooling, D., Mardis, E.R., et al. (2012).
+MuSiC: identifying mutational signiﬁcance in cancer genomes. Genome Res.
+22, 1589–1598.
+Cancer Cell 36, 288–301, September 16, 2019
+299
+
+Denissenko, M.F., Pao, A., Tang, M., and Pfeifer, G.P. (1996). Preferential
+formation of benzo[a]pyrene adducts at lung cancer mutational hotspots in
+P53. Science 274, 430–432.
+Derrien, T., Estelle´ , J., Marco Sola, S., Knowles, D.G., Raineri, E., Guigo´ , R.,
+and Ribeca, P. (2012). Fast computation and applications of genome mapp-
+ability. PLoS One 7, e30377.
+Dulak, A.M., Stojanov, P., Peng, S., Lawrence, M.S., Fox, C., Stewart, C.,
+Bandla, S., Imamura, Y., Schumacher, S.E., Sheﬂer, E., et al. (2013). Exome
+and whole-genome sequencing of esophageal adenocarcinoma identiﬁes
+recurrent driver events and mutational complexity. Nat. Genet. 45, 478–486.
+Ehrlich, M., and Wang, R.Y. (1981). 5-Methylcytosine in eukaryotic DNA.
+Science 212, 1350–1357.
+Ellrott, K., Bailey, M.H., Saksena, G., Covington, K.R., Kandoth, C., Stewart,
+C., Hess, J., Ma, S., Chiotti, K.E., McLellan, M., et al. (2018). Scalable open sci-
+ence approach for mutation calling of tumor exomes using multiple genomic
+pipelines. Cell Syst. 6, 271–281.e7.
+Fousteri, M., and Mullenders, L.H.F. (2008). Transcription-coupled nucleotide
+excision repair in mammalian cells: molecular mechanisms and biological ef-
+fects. Cell Res. 18, 73–84.
+Futreal, P.A., Coin, L., Marshall, M., Down, T., Hubbard, T., Wooster, R.,
+Rahman, N., and Stratton, M.R. (2004). A census of human cancer genes.
+Nat. Rev. Cancer 4, 177–183.
+Georgakopoulos-Soares, I., Morganella, S., Jain, N., Hemberg, M., and
+Nik-Zainal, S. (2018). Noncanonical secondary structures arising from
+non-B DNA motifs are determinants of mutagenesis. Genome Res. 28,
+1264–1271.
+Gerstein, M.B., Kundaje, A., Hariharan, M., Landt, S.G., Yan, K.K., Cheng, C.,
+Mu, X.J., Khurana, E., Rozowsky, J., Alexander, R., et al. (2012). Architecture of
+the
+human
+regulatory
+network
+derived
+from
+ENCODE
+data.
+Nature
+489, 91–100.
+Getz, G., Ho¨ ﬂing, H., Mesirov, J.P., Golub, T.R., Meyerson, M., Tibshirani, R.,
+and Lander, E.S. (2007). Comment on ‘‘The consensus coding sequences of
+human breast and colorectal cancers’’. Science 317, 1500.
+Greenman, C., Wooster, R., Futreal, P.A., Stratton, M.R., and Easton, D.F.
+(2006). Statistical analysis of pathogenicity of somatic mutations in cancer.
+Genetics 173, 2187–2198.
+Haradhvala, N.J., Kim, J., Maruvka, Y.E., Polak, P., Rosebrock, D., Livitz, D.,
+Hess, J.M., Leshchiner, I., Kamburov, A., Mouw, K.W., et al. (2018). Distinct
+mutational signatures characterize concurrent loss of polymerase proof-
+reading and mismatch repair. Nat. Commun. 9, 1746.
+Harteis, S., and Schneider, S. (2014). Making the bend: DNA tertiary structure
+and protein-DNA interactions. Int. J. Mol. Sci. 15, 12335–12363.
+Hodgkinson, A., and Eyre-Walker, A. (2011). Variation in the mutation rate
+across mammalian genomes. Nat. Rev. Genet. 12, 756–766.
+Hu, J., Adar, S., Selby, C.P., Lieb, J.D., and Sancar, A. (2015). Genome-
+wide
+analysis
+of
+human
+global
+and
+transcription-coupled
+excision
+repair of UV damage at single-nucleotide resolution. Genes Dev. 29,
+948–960.
+Imielinski, M., Guo, G., and Meyerson, M. (2017). Insertions and deletions
+target lineage-deﬁning genes in human cancers. Cell 168, 460–472.e14.
+Jolly, C.J., Wagner, S.D., Rada, C., Klix, N., Milstein, C., and Neuberger,
+M.S. (1996). The targeting of somatic hypermutation. Semin. Immunol. 8,
+159–168.
+Katainen, R., Dave, K., Pitk€anen, E., Palin, K., Kivioja, T., V€alim€aki, N., Gylfe,
+A.E., Ristolainen, H., H€anninen, U.A., Cajuso, T., et al. (2015). CTCF/cohe-
+sin-binding sites are frequently mutated in cancer. Nat. Genet. 47, 818–821.
+Katz, L., and Burge, C.B. (2003). Widespread selection for local RNA second-
+ary structure in coding regions of bacterial genes. Genome Res. 13,
+2042–2051.
+Kim, J., Mouw, K.W., Polak, P., Braunstein, L.Z., Kamburov, A., Tiao, G.,
+Kwiatkowski, D.J., Rosenberg, J.E., Van Allen, E.M., D’Andrea, A.D., et al.
+(2016). Somatic ERCC2 mutations are associated with a distinct genomic
+signature in urothelial tumors. Nat. Genet. 48, 600–606.
+Kimura, M. (1977). Preponderance of synonymous changes as evidence for
+the neutral theory of molecular evolution. Nature 267, 275–276.
+Lawrence, M.S., Stojanov, P., Mermel, C.H., Robinson, J.T., Garraway, L.A.,
+Golub, T.R., Meyerson, M., Gabriel, S.B., Lander, E.S., and Getz, G. (2014).
+Discovery and saturation analysis of cancer genes across 21 tumour types.
+Nature 505, 495–501.
+Lawrence, M.S., Stojanov, P., Polak, P., Kryukov, G.V., Cibulskis, K.,
+Sivachenko, A., Carter, S.L., Stewart, C., Mermel, C.H., Roberts, S.A., et al.
+(2013). Mutational heterogeneity in cancer and the search for new cancer-
+associated genes. Nature 499, 214–218.
+Lek, M., Karczewski, K.J., Minikel, E.V., Samocha, K.E., Banks, E., Fennell, T.,
+O’Donnell-Luria, A.H., Ware, J.S., Hill, A.J., Cummings, B.B., et al. (2016).
+Analysis of protein-coding genetic variation in 60,706 humans. Nature 536,
+285–291.
+Lohr, J.G., Stojanov, P., Lawrence, M.S., Auclair, D., Chapuy, B., Sougnez, C.,
+Cruz-Gordillo, P., Knoechel, B., Asmann, Y.W., Slager, S.L., et al. (2012).
+Discovery and prioritization of somatic mutations in diffuse large B-cell lym-
+phoma (DLBCL) by whole-exome sequencing. Proc. Natl. Acad. Sci. U S A
+109, 3879–3884.
+Mao, P., Brown, A.J., Esaki, S., Lockwood, S., Poon, G.M.K., Smerdon, M.J.,
+Roberts, S.A., and Wyrick, J.J. (2018). ETS transcription factors induce a
+unique UV damage signature that drives recurrent mutagenesis in melanoma.
+Nat. Commun. 9, 2626.
+Martincorena, I., Raine, K.M., Gerstung, M., Dawson, K.J., Haase, K., Van Loo,
+P., Davies, H., Stratton, M.R., and Campbell, P.J. (2017). Universal patterns of
+selection in cancer and somatic tissues. Cell 171, 1029–1041.e21.
+Miller, M.L., Reznik, E., Gauthier, N.P., Aksoy, B.A., Korkut, A., Gao, J., Ciriello,
+G., Schultz, N., and Sander, C. (2015). Pan-cancer analysis of mutation hot-
+spots in protein domains. Cell Syst. 1, 197–209.
+Mitsui, J., and Tsuji, S. (2012). Common chromosomal fragile sites: breakages
+and rearrangements in somatic and germline cells. Atlas Genet. Cytogenet.
+Oncol. Haematol. https://doi.org/10.4267/2042/46078.
+Nei, M., and Gojobori, T. (1986). Simple methods for estimating the numbers of
+synonymous and nonsynonymous nucleotide substitutions. Mol. Biol. Evol. 3,
+418–426.
+Pleasance, E.D., Cheetham, R.K., Stephens, P.J., McBride, D.J., Humphray,
+S.J., Greenman, C.D., Varela, I., Lin, M.L., Ordo´ n˜ ez, G.R., Bignell, G.R.,
+et al. (2010). A comprehensive catalogue of somatic mutations from a human
+cancer genome. Nature 463, 191–196.
+Polak, P., Karlic, R., Koren, A., Thurman, R., Sandstrom, R., Lawrence, M.S.,
+Reynolds, A., Rynes, E., Vlahovicek, K., Stamatoyannopoulos, J.A., et al.
+(2015). Cell-of-origin chromatin organization shapes the mutational landscape
+of cancer. Nature 518, 360–364.
+Poulos, R.C., Thoms, J.A.I., Guan, Y.F., Unnikrishnan, A., Pimanda, J.E., and
+Wong, J.W.H. (2016). Functional mutations form at CTCF-cohesin binding
+sites in melanoma due to uneven nucleotide excision repair across the motif.
+Cell Rep. 17, 2865–2872.
+Quax, T.E.F., Claassens, N.J., So¨ ll, D., and van der Oost, J. (2015). Codon bias
+as a means to ﬁne-tune gene expression. Mol. Cell 59, 149–161.
+Sabarinathan, R., Mularoni, L., Deu-Pons, J., Gonzalez-Perez, A., and Lopez-
+Bigas, N. (2016). Nucleotide excision repair is impaired by binding of transcrip-
+tion factors to DNA. Nature 532, 264–267.
+Schrock, M.S., and Huebner, K. (2015). WWOX: a fragile tumor suppressor.
+Exp. Biol. Med. 240, 296–304.
+Sjo¨ blom, T., Jones, S., Wood, L.D., Parsons, D.W., Lin, J., Barber, T.D.,
+Mandelker, D., Leary, R.J., Ptak, J., Silliman, N., et al. (2006). The consensus
+coding sequences of human breast and colorectal cancers. Science 314,
+268–274.
+Smith, T.C.A., Carr, A.M., and Eyre-Walker, A.C. (2016). Are sites with multiple
+single nucleotide variants in cancer genomes a consequence of drivers, hyper-
+mutable sites or sequencing errors? PeerJ 4, e2391.
+Stamatoyannopoulos, J.A., Adzhubei, I., Thurman, R.E., Kryukov, G.V., Mirkin,
+S.M., and Sunyaev, S.R. (2009). Human mutation rate associated with DNA
+replication timing. Nat. Genet. 41, 393–395.
+300
+Cancer Cell 36, 288–301, September 16, 2019
+
+Stratton, M.R., Campbell, P.J., and Futreal, P.A. (2009). The cancer genome.
+Nature 458, 719–724.
+Supek, F., Min˜ ana, B., Valca´ rcel, J., Gabaldo´ n, T., and Lehner, B. (2014).
+Synonymous mutations frequently act as driver mutations in human cancers.
+Cell 156, 1324–1335.
+Sutton, J. (1997). Gibrat’s legacy. J. Econ. Lit. 35, 40–59.
+Van den Eynden, J., Fierro, A.C., Verbeke, L.P.C., and Marchal, K. (2015).
+SomInaClust: detection of cancer genes based on somatic mutation patterns
+of inactivation and clustering. BMC Bioinformatics 16, 1–12.
+Weghorn, D., and Sunyaev, S. (2017). Bayesian inference of negative and pos-
+itive selection in human cancers. Nat. Genet. 49, 1785–1788.
+Cancer Cell 36, 288–301, September 16, 2019
+301
+
+STAR+METHODS
+KEY RESOURCES TABLE
+LEAD CONTACT AND MATERIALS AVAILABILITY
+Inquiries on materials availability should be directed to corresponding author Gad Getz (gadgetz@broadinstitute.org).
+Both the exact TCGA MC3 mutation calls used in this paper and the BAM ﬁles used to generate/QC them are protected data,
+requiring appropriate dbGaP authorization to access. We have also included a link to an unprotected version of the MC3 callset
+that will yield essentially identical results.
+METHOD DETAILS
+Mutation Calling and QC
+We obtained the MC3 TCGA mutation calls from Synapse, a cohort comprising 10,510 unique patients (3,850,525 somatic single-
+nucleotide variations [sSNVs] called by two or more mutation callers) before ﬁltering. MC3 is a curated set of high-quality mutation
+calls run through numerous QC ﬁlters with failing samples/mutations annotated in the mutation annotation ﬁle (MAF), allowing the end
+user to exclude them.
+We excluded all patients failing MC3 sample-level ﬁlters (i) excessive cross-sample contamination (MAF ﬁlter contest); (ii) whole
+genome ampliﬁed libraries (MAF ﬁlters wga_only, native_wga_mix); and (iii) bad sequencing runs due to mid-run sequencer fail-
+ure (MAF ﬁlter badseq). This left us with a cohort of 9,023 patients, from which we further excluded mutations failing the following
+MC3 site-level ﬁlters:
+(i) Panel-of-normals (PoN): for each genomic position, the PoN encodes the distribution of alternate read fractions (AFs) across z
+8,000 TCGA normals. We removed candidate variant calls that occurred at sites recurrently harboring alternate reads across
+the PoN whose AFs were consistent with the candidate variant. For a full description of the panel-of-normals ﬁlter, see the Sup-
+plemental Information of (Ellrott et al., 2018). (MAF ﬁlter broad_PoN_v2).
+(ii) ExAC: site appeared in ExAC (Lek et al., 2016) (z 60,000 normal samples) with allele count R 50. This gave us greater power
+than the PoN to ﬁlter germline polymorphisms somehow missing from the matched normal. (MAF ﬁlter common_in_exac).
+(iii) Low normal coverage: sequencing coverage of the matched normal at the position of the somatic variant was fewer than eight
+reads, making it difﬁcult to distinguish the somatic call from a rare germline polymorphism. (MAF ﬁlter ndp)
+(iv) OxoG: variant was likely a sequencing artifact caused by oxidative damage during shearing in library preparation. For a full
+description of this artifact mode, see (Costello et al., 2013). (MAF ﬁlter oxog).
+In total, 861,664 failing mutations were excluded, leaving us with 2,988,861 passing sSNVs.
+In addition to removing MC3 ﬂagged calls, we applied two additional ﬁlters not employed in MC3:
+(i) We performed another round of PoN ﬁltering using a panel comprising exomes captured using Illumina’s ICE protocol, which
+was used only for TCGA samples sequenced late in the project. The ICE protocol introduces recurrent artifacts not observed in
+exomes captured using Agilent’s capture kit, which was used for the majority of TCGA and comprises the entirety of the PoN
+used by MC3.
+(ii) We found that many recurrent mutations were in fact false positives caused by read misalignments, verifying this by BLATing
+reads supporting the variant calls and seeing that they mapped with fewer mismatches elsewhere in the reference genome. To
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Software and Algorithms
+Log-normal-Poisson regression algorithm
+This paper
+https://github.com/broadinstitute/getzlab-LNP
+Code to reproduce this paper’s ﬁgures and analyses
+This paper
+https://github.com/broadinstitute/getzlab-PHS
+Other
+TCGA MC3 somatic mutation callset (protected)
+TCGA
+https://www.synapse.org/#!Synapse:syn5917256
+TCGA MC3 somatic mutation callset (unprotected)
+TCGA
+https://www.synapse.org/#!Synapse:syn7824274
+TCGA hg19 BAM ﬁles
+TCGA
+https://portal.gdc.cancer.gov/legacy-archive/
+e1
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+mitigate this problem, we excluded calls in 75mer windows (chosen to match the typical read length of TCGA exomes) that
+were not completely unique (Derrien et al., 2012) in the reference.
+This left us with 2,288,080 analysis-ready sSNVs.
+Finally, we annotated all mutations’ gene names and protein-coding effects according to our own transcript deﬁnitions, namely all
+GENCODE v19 protein coding transcripts with unambiguous translation start/stop sites and splice sites.
+We re-annotated because accurate calculation of dN/dS (STAR Methods, Gene dN/dS Calculation) requires knowing the precise
+number of sequence contexts in each gene that can give rise to each coding effect (e.g., number of T(C/T)G sites that yield syn-
+onymous mutations), weighted by sequencing coverage across the cohort. Such exact transcript deﬁnitions were unavailable in
+MC3, whose calls were annotated using a pipeline that does not expose them. We weighted sequence context/protein coding effect
+territory by coverage because some context/effect combinations, although nominally possible based on a gene’s open rading frame
+(ORF) sequence, occur at positions that consistently lack sequencing coverage, thereby deﬂating mutation frequency estimates. For
+each coding position, we computed the fraction of sufﬁciently covered tumor/normal pairs across 7,732 TCGA whole exome pairs.
+We used the binary criterion of sufﬁcient coverage employed by MuTect (Cibulskis et al., 2013), i.e. 14 high-quality reads/bases in the
+tumor, 8 high-quality reads/bases in the matched normal. This allowed us to compute coverage-weighted context/effect territories
+by weighting each ORF position yielding a given context/effect by the fraction of sufﬁciently covered samples at that position.
+Furthermore, these exact transcript deﬁnitions are required for most conservatively estimating overall protein-coding effect distri-
+butions (STAR Methods, calculating expected coding effect fractions), which requires accounting for loci in overlapping transcripts
+that yield different protein-coding effects. We annotated mutations with the most deleterious effect across all transcripts at each po-
+sition (synonymous < missense < nonsense) to avoid erroneously misclassifying mutations that are synonymous on one transcript but
+protein-altering on a different overlapping transcript.
+Deﬁnition of Known Cancer Genes
+We assembled our list of Known Cancer Genes from the Cancer Gene Census (CGC) (v85) (Futreal et al., 2004), which comprises 719
+genes. However, our KCG list is a subset of 133 genes, since not all genes listed in the CGC are relevant to this study, which only
+considers somatic single nucleotide variants (sSNVs). The CGC indexes many genes driven by a variety of mechanisms outside
+the scope of this study, such as genes only driven by structural variants (e.g., MYC), or genes that are only germline risk factors
+(e.g., APOBEC3B). In addition, many genes in the CGC are only reported as drivers in tumor types not included in TCGA (e.g.,
+many blood cancers). Finally, some CGC genes are only drivers in non-primary tumors (e.g., relapse or post-treatment resistance
+tumors). We thus only considered genes explicitly listed in the CGC as drivers of primary tumors in the 32 tumor types in our cohort,
+excluding genes driven only by structural variants.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Calculating Expected Coding Effect Fractions
+Given a set of genes and their observed coding mutations, we wish to calculate the distribution of the expected fractions of protein-
+coding effects (i.e., synonymous, missense, nonsense), assuming the mutations were distributed uniformly throughout the coding
+sequences of these genes, conserving sequence context (in order to normalize for mutational processes).
+For example, in the cartoon coding sequence, the three effects of all possible strand-collapsed T(C/T)G mutations (highlighted in
+blue) are: (i) a synonymous substitution at codon 4 (Ile.4/Ile); (ii) a missense substitution at codon 7 (Arg.7/Gln, note mutation is on
+the reverse complement strand, shown as hatching); and (iii) a nonsense substitution also at codon 7 (Arg.7/Stop).
+Assuming every TCG in the cartoon sequence is equally mutable, we would therefore expect random T(C/T)G mutations to result
+in an even distribution of coding effects — 1/3 synonymous, 1/3 missense, and 1/3 nonsense substitutions.
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e2
+
+We can calculate the expected distribution of coding effects across a set of genes, if we assume that the variability of mutation
+rates across genes is independent from the gene-speciﬁc tendency to generate synonymous, missense, or nonsense mutations.
+Given a large enough set of genes, this assumption is reasonable.
+For each trinucleotide context t, we calculate Ft(ejjci), the fraction of genomic positions that match t across the whole exome (or a
+subset of genes, e.g., known cancer genes only) that would yield coding effect ej, given base change ci, where j˛{1,2,3} corresponds
+to the three coding effects (synonymous/missense/nonsense), and i˛{1,2,3} corresponds to the three possible base substitutions.
+We compute these fractions by enumerating the codon changes for every possible substitution at every coding position in our
+gene set.
+For a given set of observed coding mutations at context t within this gene set, we denote the fraction that are of the ith base change
+as ft;ci. For example, if 95% of observed mutations at t = TCG are ci = C/T, then fTCG,C/T = 0.95.
+For each of the three coding effects ej, the joint probability of seeing nt,eh{nt,e1,nt,e2,nt,e3} mutations given Nt total mutations within
+context t is multinomial distributed
+nt;e
+Ft; ft; Nt  mult
+0
+B
+B
+@
+X
+i
+Ftðe1jciÞft;ci
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+pðe1jftÞ
+;
+X
+i
+Ftðe2jciÞft;ci;
+X
+i
+Ftðe3jciÞft;ci; Nt
+1
+C
+C
+A:
+However, because some trinucleotide contexts have low mutation counts for a given base change, there can be considerable
+uncertainty on ft;ci. We quantify this uncertainty by modeling the f’s not as single values, but drawn from a distribution. The ideal
+distribution for the f’s is a Dirichlet distribution, which quantiﬁes the uncertainty on multinomial probabilities derived from counts,
+deﬁning the hierarchical model
+nt;ejFt; ft; Nt  multðpðe1jftÞ; pðe2jftÞ; pðe3jftÞ; NtÞ
+ftjnt;c  dir
+
+nt;c1 + 1; nt;c2 + 1; nt;c3 + 1
+
+:
+We obtain the probability distribution on nt,e by marginalizing over ft, i.e.,
+pðnt;e
+nt;c; NtÞ
+=
+R
+dftmult
+
+nt;e1; nt;e2; nt;e3
+pðe1jftÞ; pðe2jftÞ; pðe3jftÞ; Nt
+
+3 dir
+
+ft;c1; ft;c2; ft;c3
+nt;c1 + 1; nt;c2 + 1; nt;c3 + 1
+
+f
+R dft
+Y
+3
+j = 1
+pðej
+ftÞnt;ej
+nt;ej!
+Y
+3
+j = 1
+f
+nt;cj
+t;cj
+(Equation 1.1)
+Since there is no closed form for this integral over the 2D Dirichlet simplex, we compute it by sampling the full joint distribution
+p(nt,e,ftjnt,c,Nt) via Markov Chain Monte Carlo (MCMC), and only considering the values drawn for nt,e. Our full conditionals are
+pðnt;e
+  Þ
+f
+Y
+3
+j = 1
+pðej
+ftÞnej
+nej!
+f
+mult
+
+nt;e1; nt;e2; nt;e3
+pðe1jftÞ; pðe2jftÞ; pðe3jftÞ; Nt
+
+pðftj  Þ
+f
+Y
+3
+j = 1
+pðej
+ftÞnt;ej Y
+3
+j = 1
+f
+nt;cj
+t;cj
+the ﬁrst of which we can sample from directly, the second of which cannot be analytically sampled from and requires Metropolis-
+Hastings sampling.
+To compute the overall expected fraction of coding effects for the set of observed mutations, we convolve over the count distri-
+butions for the 32 strand-collapsed trinucleotides and 3 substitutions from (Equation 1.1),
+ntot;e1; ntot;e2; ntot;e3  
+32
+t = 1
+
+3
+ci = 1 pðnt;e
+nt;c; NtÞ
+(Equation 1.2)
+and then consider the fractions of each effect type (i.e., after dividing the counts by N = P
+tNt) as the Dirichlet distribution
+ftot;e1; ftot;e2; ftot;e3  dir
+
+ntot;e1; ntot;e2; ntot;e3
+
+:
+Gene dN/dS Calculation
+In the previous section, we computed the expected fractions of protein coding effects, given a set of mutations and their contexts/
+substitutions. A related but distinct problem is computing whether the nonsynonymous mutation density signiﬁcantly exceeds the
+e3
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+synonymous mutation density for a given gene. This ratio-of-densities, referred to as dN / dS in molecular evolution, is a good proxy
+for inferring whether a gene as a whole is under any kind of selective pressure:
+d A gene under neutral selection will be mutated randomly and will have no bias towards generating nonsynonymous over
+synonymous events, after normalizing for the gene sequence and codon structure. Therefore, the dN / dS of genes under
+neutral selection will be very close to 1.
+d A gene under positive selection will have an excess of nonsynonymous events, relative to synonymous events, since
+phenotypes that change ﬁtness (positive or negative) arise overwhelmingly more often from protein altering mutations than
+from synonymous mutations. Therefore, the dN / dS of genes under positive selection will exceed 1.
+d A gene under negative selection will have a dearth of nonsynonymous events, since protein altering substitutions would be
+selected out, keeping relatively more synonymous substitutions. Therefore, dN / dS of genes under negative selection will
+be less than 1.
+We are interested in identifying genes that are conﬁdently drivers (to deﬁne a true positive set) or genes that are conﬁdently
+passengers (for a true negative set). As in the previous section, we are not simply interested in a point estimate of dN / dS for a
+given gene, but rather its distribution. It is crucial to estimate the uncertainty on dN / dS to conﬁdently conclude whether
+a gene is indeed under positive or neutral selection. Uncertainty in dN / dS decreases as the number of mutations in the gene
+increases.
+As mentioned previously, we must normalize for heterogeneous mutation frequencies at different genomic contexts and the codon
+structure of the gene. For each of the 96 trinucleotide channels (16 contexts 3 6 base changes), the expected number of mutations
+with coding effect e in gene g is simply
+lg;e;ch
+
+ng;e;c
+
+= rcNg;e;c ;
+where rc is the exome-wide mutation frequency for channel c and Ng,e,c is the number of positions (corrected for sequencing
+coverage) in the ORF of g within channel c that would yield a codon substitution of a particular effect e (i.e., synonymous, missense,
+nonsense).
+If mutation frequencies were constant across all genes, then the observed number of mutations for channel c and effect e in any
+gene would be Poisson distributed around this average, i.e.,
+ng;e;c  pois
+
+lg;e;c
+
+:
+(Equation 2.1)
+We know this is not the case, as different genes have different background mutabilities, so the overall number of mutations could
+be higher or lower than this expectation. Furthermore, driver genes are under positive selection, so their number of nonsynonymous
+mutations could be higher than this expectation. We correct for this heterogeneity with a gene-speciﬁc scale factor we infer from
+the data.
+We assume background mutability/selective pressure is channel-independent — for example, we do not expect a more highly
+mutable gene to be more mutable only with respect to T(C/T)G mutations, or a driver gene to be enriched for nonsynonymous
+events preferentially for A(A/T)G mutations. Because of this channel-independence assumption, we scale lg,e,c by a channel-
+agnostic correction factor bg,e, so the Poisson distribution in (Equation 2.1) becomes
+ng;e;c  pois
+
+bg;elg;e;c
+
+:
+(Equation 2.2)
+bg,e reﬂects the overall excess/dearth of mutations with coding effect e in gene g. For example, bg,nonsyn close to 1 means that
+the number of nonsynonymous mutations is close to what we expect given average mutation frequencies; values signiﬁcantly
+higher than 1 indicate an excess of nonsynonymous events; values close to 0 indicate a paucity. Of course, bg,nonsyn[1 is not
+necessarily indicative of positive selection — a highly mutable gene under neutral evolution would have a comparable excess of
+both nonsynonymous and synonymous events. To infer selective pressure on gene g, we are interested in the ratio of these scale
+factors,
+dN = dShbg;nonsyn
+bg;syn
+:
+We calculate bg,e from its likelihood, which is the product of (Equation 2.2) over the 96 channels,
+L
+
+bg;e
+
+	
+ng;e;ci; lg;e;ci
+
+i˛f1.96g
+
+=
+Y
+96
+i = 1
+pois
+
+ng;e;ci; bg;elg;e;ci
+
+f
+Y
+96
+i = 1
+
+bg;elg;e;ci
+ng;e;ci exp
+
+ bg;elg;e;ci
+
+f
+b
+P
+i
+ng;e;ci
+g;e
+exp
+ 
+ bg;e
+X
+i
+lg;e;ci
+!
+:
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e4
+
+For genes with many mutations, we could simply ﬁnd the maximum likelihood estimate of bg,e, as the likelihood would be sharply
+peaked. However, since many genes have only a few mutations and have considerable uncertainty around the maximum likelihood
+estimate (MLE), we use the full posterior on bg,e. Luckily, the Poisson likelihood is proportional to the gamma distribution, allowing us
+to explicitly deﬁne this posterior:
+p
+
+bg;e; ng;e; lg;e
+
+f
+L
+
+bg;e
+ng;e; lg;e
+
+f
+b
+P
+i
+ng;e;ci
+g;e
+exp
+ 
+ bg;e
+X
+i
+lg;e;ci
+!
+f
+gamma
+ 
+bg;e
+1 +
+X
+i
+ng;e;ci;
+X
+i
+lg;e;ci
+!
+:
+We can then treat both bg,nonsyn and bg,syn as gamma random variables, with the ratio dN/dS their quotient,
+dN
+dS  bg;nonsyn
+bg;syn
+bg;nonsyn
+
+gamma
+
+1 +
+X
+i
+ng;nonsyn;ci;
+X
+i
+lg;nonsyn;ci
+!
+bg;syn
+
+gamma
+
+1 +
+X
+i
+ng;syn;ci;
+X
+i
+lg;syn;ci
+!
+:
+Finally, we obtain the distribution of dN / dS via a Monte Carlo simulation.
+We can generalize this approach to infer the distribution of arbitrary protein-coding effect ratios — for example, whether genes are
+enriched for truncating mutations relative to synonymous mutations, thereby increasing sensitivity to detect tumor suppressors,
+which often harbor truncating events.
+We list such genes in Table S3 (Prob[dT / dS > 2.5] > 0.975). As expected, the list almost entirely comprises well-known tumor
+suppressors as per the Cancer Gene Census (CGC), or genes not yet indexed by the CGC but with evidence in the literature support-
+ing their status as tumor suppressors, whose citations we have included in the table. While the list contains few totally uncharacter-
+ized potential drivers, it is nonetheless conﬁrmation that the method we use to compute d* / dS works well.
+Description of Signiﬁcance Methods
+In this section, we detail the four models presented in the main text: the two conventional methods, Uniform-within-gene and
+Uniform Poisson regression, which both assume that base-wise mutation frequencies have no latent variability beyond what
+can be predicted by sequence context and genomic covariates, and the two overdispersed methods Gamma-Poisson regression
+and Log-normal-Poisson regression, which allow mutation frequencies to have additional underlying variability beyond what the
+covariates predict (modeled as gamma or log-normal distributions, respectively).
+Uniform-within-Gene Model
+The Uniform-within-gene model assumes that all sites of the same k-mer context in the same gene are equally mutable. There are
+many methods that employ this conventional assumption, with varying implementations (Miller et al., 2015; Van den Eynden et al.,
+2015; Lohr et al., 2012; Lawrence et al., 2014; Chang et al., 2016; Baeissa et al., 2017; Araya et al., 2016).
+One particular method described by (Chang et al., 2016) assumes that the background mutation rate at a given position with trinu-
+cleotide context t in gene g is proportional to the average exome-wide mutation rate across all contexts t, weighted by a gene- and
+codon-speciﬁc mutability factor. In other words, it assumes that every context/codon combination t,c within gene g is equally
+mutable. It also does not account for differing substitution rates, e.g., it considers all mutations at TCG contexts equally likely, irre-
+spective of base change.
+Because we consider mutations solely on the positional level, not on the codon level, we re-implemented a method similar to that of
+Chang et al., which we call Uniform-within-gene, that does not include codon-speciﬁc factors, but does account for different sub-
+stitution rates.
+Let ns,c equal the total number of mutations with base substitution s at k-mer context c, and Nc equal the total number of contexts c
+in the exome. The overall mutation rate for this context/substitution is
+rs;c = ns;c
+
+Nc :
+(Equation 3.1)
+If all genes were equally mutable, the expected number of mutations xs,c at any genomic position of context c with base substitution
+s would simply be Poisson distributed (assuming binomial convergence) with rate parameter rs,c,
+xs;c  poisðrs;cÞ:
+(Equation 3.2)
+The Uniform-within-gene model accounts for the fact that different genes have different intrinsic mutabilities by scaling rs,c by a
+gene-speciﬁc mutability factor Fg, which explicitly assumes that all contexts/substitutions within the same gene are equally scaled.
+Suppose the coding sequence of gene g contains Ng,c positions of context c. Assuming no gene-speciﬁc scaling, the expected
+total number of mutations in g would be lg,s,c = rs,cNg,c, with rs,c from (Equation 3.1). The observed numbers of mutations xg,s,c for
+e5
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+this gene/context/substitution is again Poisson distributed around this average value, but this time scaled by an unknown
+parameter Fg:
+xg;s;c  pois
+
+lg;s;cFg
+
+:
+To calculate Fg, we ﬁrst compute its likelihood over all 4k/2 strand-collapsed contexts33 substitutions (equals to 96 for k = 3),
+L
+
+Fg
+	
+xi;j
+
+
+=
+Y
+i = 1
+4k=2 Y
+j = 1
+3
+pois
+
+xi;j
+lg;i;jFg
+
+:
+Next, we ﬁnd the maximum likelihood estimate for Fg,
+bF g =
+P
+i;jxg;i;j
+P
+i;jlg;i;j
+:
+(Equation 3.3)
+Scaling the rate parameter of (Equations C.3.2) by (C.3.3), we can compute a p value (i.e., the probability of seeing at least the
+observed number of mutations by chance) for a particular gene, site, and substitution type by plugging in the observed number of
+mutations, ~xg;c;s, into the upper cumulative distribution function (CDF) of the Poisson distribution
+P
+~xg;c;s
+
+h Pr
+
+xRxg;c;s
+
+=
+X
+N
+x = ~xg;c;s
+pois
+
+x
+rs;c bF g
+
+:
+Uniform Poisson Regression Model
+Rather than estimate the background mutability of a gene from its own mutation burden as in the Uniform-within-gene model, we can
+estimate it by regressing against covariates known to inﬂuence background mutability. Because covariates can be associated with
+genomic regions of different scales (e.g., from the single base-pair to entire chromatin regions), this approach is not limited to learning
+mutability solely on the gene scale, as is the case with the Uniform-within-gene model, but rather allows pooling information from
+genomic regions of arbitrary scales.
+We implement this model via standard Poisson regression, i.e., a ﬁxed effect general linear model (GLM) with a log link function. For
+a given genomic position i mutated xi,k times across the cohort with context and substitution k and covariate vector c!
+i, we assume
+the observed mutation count is Poisson distributed, with the log of its rate parameter linearly deﬁned by the covariates, i.e.,
+xi;k
+ c!
+i  poisðli;kÞ
+logli;k = bk0 + b!
+k, c!
+i:
+(Equation 3.4)
+To ﬁnd the intercept bk0 and slope b!
+k parameters, we maximize their likelihood function with respect to all exonic positions of
+context and substitution k, whose set we denote Ek:
+Lðbk0; b!
+k
+	
+xi;k
+
+; c!Þ =
+Y
+i˛Ek
+poisðxi;k
+expðbk0 + b!
+k, c!
+iÞÞ:
+This likelihood function is log-convex so its maximum bbk0; cb!
+k can be found via simple optimization methods, e.g., gradient
+descent. In practice, we use Newton-Raphson because the number of parameters is low enough that computing their full Hessian
+(O(n2) in number of parameters) is feasible.
+Once we have found our model parameters for each k, we can assign a p value for any position with context and substitution k with
+counts ~xi;k and speciﬁc covariates fc!
+i from the upper CDF of the Poisson distribution, as before:
+P
+~xi;k
+fc!
+i
+
+h Pr
+
+xR~xi;k
+fc!
+i
+
+=
+X
+N
+x = ~xi;k
+pois
+
+x
+exp
+bbk0 + cb!
+k,fc!
+i
+
+:
+Gamma-Poisson Regression Model
+The previous two models both assume that the base-wise mutability (i.e., the Poisson distribution’s rate parameter) is ﬁxed once the
+model parameters are found. However, this assumption does not allow for additional uncertainty in the base-wise mutability. To allow
+for additional uncertainty, we can probabilistically model the base-wise mutability using an arbitrary distribution p(q). This forms a
+hierarchical model for observed mutation counts x,
+x  poisðlÞ
+l  pðqÞ
+whose probability density function (PDF) is the compound distribution
+pðxjqÞ =
+Z N
+0
+dl poisðxjlÞpðljqÞ;
+(Equation 3.5)
+with the parameters q of the latent distribution of the base-wise mutability learned from the data, e.g., using maximum likelihood.
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e6
+
+Unfortunately, the integral in (Equation 3.5) is only analytically tractable for a few choices of pðljqÞ. One common choice is the
+gamma distribution; as mentioned in the main text, there is no intrinsic biological motivation for using this distribution — it is merely
+mathematically convenient. If p(l | q) h gamma(l | a,b), (Equation 3.5) becomes
+pðxja; bÞ
+=
+Z N
+0
+dl poisðxjlÞgammaðlja; bÞ
+=
+1
+x!
+ba
+GðaÞ
+Z N
+0
+dl expð  lÞlx 3 expð  l=bÞla1:
+(Equation 3.6)
+This integral is of the form
+R N
+0 dx expð  axÞxb1 = abGðbÞ, so (Equation 3.6) becomes
+pðxja; bÞ
+=
+1
+x!
+ba
+GðaÞ
+ b
+1 + b
+x + a b
+1 + b
+a
+Gða + xÞ
+Z
+pðxja; pÞ
+=
+Gða + xÞ
+Gðx + 1ÞGðaÞpxð1  pÞa;
+the PDF of the negative binomial distribution for p = b/(1 + b). Unlike the Poisson distribution, which is immediately amenable to
+parameterization as a GLM whose log mean can be linearly parameterized by covariates (Equation 3.4), the negative binomial
+must be re-written in terms of its mean, m = pa/(1p), yielding the GLM
+p
+
+xi;k
+a; b0; b!; c!
+i
+
+f
+ mi
+a + mi
+xi;k
+a
+a + mi
+a
+logmi;k = bk0 + b!
+k, c!
+i:
+As before, optimal values for model parameters (intercept bk0, slope vector b!
+k, and dispersion parameter a) can be found via
+maximum likelihood estimation. Finally, we assign p values as with the other methods by computing the upper CDF of the negative
+binomial distribution parameterized by its MLE values.
+Log-Normal-Poisson Regression Model
+A more principled choice for the latent distribution for the base-wise mutability is the log-normal distribution. Mutations are the prod-
+uct of independent consecutive events, each with an independent probability of occurring; by the geometric central limit theorem,
+this product of probabilities approaches a log-normal distribution (Sutton, 1997).
+As in the Uniform Poisson regression model (Equation 3.4), the covariates linearly determine the log of the Poisson rate, but this
+time we include an additional linear factor ei,k, which is a random variable that represents additional latent mutation rate variability at
+position i (with context and substitution k) not explained by the covariates. For genomic position i mutated xi times with covariate
+vector c!
+i in channel k, our model is
+xi;k
+ c!
+i  poisðli;kÞ
+logli;k = b!
+k, c!
+i + mk + skei;k
+ei;k  N ð0; 1Þ:
+The PDF of xi,k is then
+pðxi;k
+mk; sk; b!
+k; c!
+iÞ =
+Z N
+0
+dei;k poisðxi;k
+expð b!
+k, c!
+i + mk + skei;kÞÞN ðei;k
+0; 1Þ:
+(Equation 3.7)
+Sinceei,k is a standard normal random variable, expð b!
+k, c!
+i + mk + skei;kÞ is log-normally distributedwithgeometric mean b!
+k , c!
+i + mk
+andgeometricstandarddeviationsk. These parameters areinterpretable: mk represents the overall geometricmean mutation frequency
+forcontext/substitution k, sktheoverall geometricstandarddeviation aroundthis mean (i.e.,theaveragemultiplicativedistancefromthe
+mean), and b!
+k the geometric covariate slope vector associated with k (i.e., the multiplicative effect each covariate has on the muta-
+tion rate).
+In addition to being better statistically calibrated than the other methods (see Results), the log-normal-Poisson model carries other
+advantages:
+1. Because sk is multiplicative, it quantiﬁes overdispersion irrespective of mutation frequency, allowing for comparisons
+between different mutational processes. For example, exp(sk) = 2 indicates that bases in context-substitution pair k that are
+one geometric standard deviation above the mean will be approximately twice as mutable as sites at the mean, while bases
+falling one g. standard deviation below the mean will be approximately half as mutable, regardless of the mean mutation fre-
+quency.
+2. The log-normal-Poisson model accommodates nested variance (variance is additive). Suppose that we are analyzing muta-
+tions within trinucleotide context c. We would ﬁt the model to all exonic sites of that sequence context. Now suppose that
+we would like to account for additional variance explained by the 16 ﬂanking pentanucleotide contexts. The set of base-pairs
+belonging to the trinucleotide context c is a superset of the base-pairs belonging to a pentamer context ﬂanking that
+e7
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+trinucleotide. Thus, we can express the total variance for base-pair i at context/substitution k as the sum of the overall trinu-
+cleotide variance and the additional variance explained by the pentamer context of i:
+logli;k = b!
+k, c!
+i + mkpent + sktrieitri + skpenteipent;
+(Equation 3.8)
+with eitri and eipent representing independent standard normal random variables. The total variance for the pentamer context is
+s2
+ktri + s2
+kpent, since the variance of the sum of independent normal random variables is the sum of their variances. In general linear
+mixed model parlance, the pentamers are categorical random effects.
+3. The natural parameterization in terms of mean and variance allows us to naturally quantify the amount of variance explained by
+model factors (e.g., covariates). The amount that s2 drops after adding a covariate is equivalent to the variance explained
+by that covariate, given the other covariates already present in the model. To obtain the average linear contribution of each
+covariate, we ﬁt the model for all possible sets of covariates, and then perform an ordinary least squares ﬁt to ﬁnd each mar-
+ginal linear contribution. For example, if there are three covariates, we ﬁt a model for each of the 23 = 8 possible combinations,
+obtaining s2
+0.s2
+7, the observed values of model parameter s2 for each covariate set (0: no covariates, 7: all covariates). We then
+ﬁt the following linear model,
+2
+666666664
+1
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+0
+1
+0
+1
+1
+«
+«
+«
+«
+1
+1
+1
+1
+3
+777777775
+s!2
+lin =
+2
+666666664
+s2
+0
+s2
+1
+s2
+2
+s2
+3
+«
+s2
+7
+3
+777777775
+;
+witha1inthedatamatrixrepresentingthepresenceofeachcovariate.Theﬁrstcolumnistheinterceptandthusentirelycomprisesones.
+s!2
+lin is then the marginal linear contribution of each covariate; its ﬁrst element (i.e., the intercept) is the remaining amount of unexplained
+variance after all covariates have been incorporated; the other three elements are the variance explained by their respective covariate.
+To ﬁt the log-normal-Poisson model’s parameters, we employ a fully Bayesian approach, sampling from the parameters’ posterior
+distribution pðmk; sk; b!
+k
+fxi;kg; f c!gÞ via MCMC. We use MCMC instead of a standard likelihood (or quasi-likelihood) approach
+because:
+1. The model parameters provide meaningful summary statistics of the base-wise mutation rate; as such, we are not merely inter-
+ested in the model’s predictions (i.e., signiﬁcance values), but also its parameters. It is therefore useful to not only obtain their
+optimal best-ﬁt values, but their overall posterior distribution, to quantify our conﬁdence in the model.
+2. The integral in (Equation 3.7) is analytically intractable, but it is amenable to approximation via Gibbs sampling, given the hi-
+erarchical nature of the model.
+We describe the MCMC in detail in STAR Methods, MCMC implementation.
+To compute p values for the previous three models, we ﬁrst ﬁnd a point estimate bq of optimal model parameters (e.g., via maximum
+likelihood estimation), and then use the upper CDF parameterized by bq, for an observed number of mutations ~xi with covariates fc!
+i at
+base-pair i,
+P
+~xi
+fc!
+i
+
+=
+X
+N
+x = ~xi
+p
+
+x
+bq; fc!
+i
+
+:
+Because the log-normal-Poisson model is fully Bayesian, we no longer use a point estimate for bq, but rather integrate the CDF over
+the full domain Q of the posterior on q, yielding posterior predictive p values
+P
+
+~xi
+
+~c!
+i
+
+=
+X
+N
+x = ~xi
+Z
+Q
+dq p
+
+x
+q; ~c!
+i
+
+pðqjfxg; f c!g Þ
+(Equation 3.9)
+MCMC Implementation
+In this section, we detail the implementation of the Markov Chain Monte Carlo (MCMC) sampler used to ﬁt the log-normal-Poisson
+regression model. As with most non-conjugate hierarchical models, the log-normal-Poisson probability density function (Equa-
+tion 3.7) is analytically intractable — its most general form is the compound distribution
+pðxjm; sÞ =
+Z N
+0
+de poisðxjeÞlogN ðejm; sÞ;
+(Equation 4.1)
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e8
+
+which has no closed form, so analytically sampling any distribution derived from the log-normal-Poisson PDF (e.g., the posterior on
+model parameters) will also lack closed form.
+Model Statement
+Recall the model hierarchy of the general linear mixed model deﬁned in Equations 3.7 and 3.8 in Log-Normal-Poisson Regres-
+sion Model.
+For observed number of mutated patients xi at the ith base-pair whose covariate vector is c!
+i, we have
+xij c!
+i  poisðliÞ
+logli = b!, c!
+i + m + sei
+ei  N ð0; 1Þ:
+For a set {x} of n base-pairs with covariates f c!g, the full posterior distribution across all parameters — i.e., including the latent e in
+(Equation 4.1) or (Equation 3.7) — is
+pðm; s; b!; e1; .; enjfxg; f c!g; HÞf
+Y
+i = 1
+n
+½pðxijexpð b!, c!
+i + m + seiÞÞpðeiÞpðm; s; b!jHÞ
+(Equation 4.2)
+for set of hyperparameters H. In the case of nested variability (i.e., when adding m total categorical random effects), the model
+hierarchy becomes
+xi
+ c!
+i; 1i,  poisðliÞ
+logli = b!, c!
+i +
+X
+j = 1
+m
+ðmj + sjeijÞ1ij + s0ei0
+	
+eij
+
+ N ð0; 1Þ;
+(Equation 4.3)
+where 1ij is an indicator function for whether the ith base is of category j, and the set {eij} comprises independent standard normal
+random variables. The full posterior (Equation 4.2) becomes
+pðm1; .; mm; s0; s1; .; sm; b!; fegjfxg; f c!g; H Þ
+f
+Y
+n
+i = 1
+"
+p
+ 
+xi
+exp
+ 
+b!, c!
+i +
+Xm
+j = 1ðmj + sjeijÞ1ij + s0ei0
+! !
+pðei0Þ
+Y
+m
+j = 1
+pðeijÞ1ij
+#
+pðfmg; fsg; b!jH Þ
+(Equation 4.4)
+In our analyses, we only use the categorical random effects to represent ﬂanking pentamer contexts within each trimer. Suppose
+that we ﬁt the model to the set of all base-pair substitutions {xk} at trinucleotide substitution k, e.g. TCT/TAT. Our categories within
+fxkg are the j = 1 . 16 pentamer contexts ﬂanking k (e.g., ATCTG), which are unique for each base-pair. Then (Equations C.4.3)
+becomes (C.3.8); the sum in (C.4.3) disappears, since 1ij = 0 for all but a single value of j — each base-pair can only have a single
+pentamer context. We denote the pentamer context associated with the ith base-pair as j(i).
+Explicitly writing out the full posterior distribution for the single random effect model for n base-pairs in trinucleotide context k, we have
+pðm1; .; m16; s0; s1; .; s16; b!; fegjfxkg; f c!g; HÞ
+f
+Y
+n
+i = 1
+"
+p
+ 
+xi
+exp
+ 
+b!, c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+li
+!!
+pðei0Þp
+
+eijðiÞ
+
+#
+pðfmg; fsg; b!jHÞ
+(Equation 4.5)
+By sampling from the full posterior in (Equations 4.5) and ignoring the samples for latent parameters e, we simultaneously sample
+the distribution on the parameters of interest ({m}, {s}, b!) while marginalizing out feg, i.e., performing the integral in (Equations 4.1).
+Because these full posteriors can have millions of parameters (each eij˛{e} corresponds to a single base-pair, and we ﬁt the model to
+all base-pairs within a trinucleotide context), they are impractical to sample in a single draw. We therefore use a Metropolis-within-
+Gibbs scheme: we partition the joint posterior’s parameters into uncorrelated blocks, and independently sample from the full
+conditional of each block. In the next sections, we detail these parameter blocks and their full conditionals. We will focus exclusively
+on the nested model in (Equations 4.5), since the non-nested model is a simpliﬁed subset of it.
+Metropolis-within-Gibbs Description
+The Gibbs sampler allows us to draw from a high dimensional probability distribution by iteratively sampling lower dimensional sub-
+sets of its parameters conditioned on all the other parameters. For example, if sampling in three dimensions from the distribution
+pðx; y; zÞ is difﬁcult, iterative univariate samples from full conditional distributions p(xjy,z), p(yjx,z), and p(zjx,y) will converge to multi-
+variate samples (x,y,z) from the full joint. We will denote full conditional distributions as p(x|): x conditioned on all other parameters in
+the joint, i.e., (y, z).
+For notational convenience, let us ﬁrst expand (Equations C.4.5) in terms of the PDFs of the Poisson and standard normal distributions
+corresponding to p(xijli) and p(eij), respectively. Recall that li is a function of mj(i), s0, sj(i), b!, {e}, and c!
+i; we omit the arguments for brevity.
+e9
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+pðfmg; fsg; b!; fegjfxkg; f c!g; H Þf
+Y
+n
+i = 1
+"
+expðlixi  expðliÞ Þexp
+
+ e2
+i0
+2
+
+exp
+ 
+
+e2
+ijðiÞ
+2
+! #
+3 pðfmg; fsg; b!jH Þ
+(Equation 4.6)
+We see that the e’s are independent, so each eij can be sampled independently as its own 1-dimensional block. To allow for cor-
+relation between each mj and each sj, we sample (mj, sj) as a 2-D block. Likewise, if there is correlation between covariates, we will
+expect correlation between elements of b!˛Rb, and will therefore sample b! as a b-dimensional block.
+Because none of the full conditionals can be sampled from analytically, we will sample from them using the Metropolis-Hastings
+algorithm: given some target distribution p(x) that is impossible to analytically sample from, we randomly sample x* from some easy-
+to-sample proposal distribution q(x*jx) that approximates p(x), and accept the new value x* with probability
+Prðx/xÞ = min
+
+1; pðxÞqðxjxÞ
+pðxÞqðxjxÞ
+
+:
+Iterating this procedure will yield random samples from target p(x).
+Of course, performance of this method critically depends on choosing a proposal distribution that well-approximates the distribu-
+tion being sampled. All of the full conditionals are log-concave; furthermore, terms above second-order in their series expansions
+around their maxima are negligible, so we will use proposal distributions that quadratically approximate the full conditionals centered
+at their maxima. We ﬁnd each full conditional’s global maximum, and propose using a (multivariate) t distribution whose mean is the
+global maximum and whose (co)variance is the curvature at the maximum,
+c
+m!^= hbx; byi = argmax
+x;y
+ðlogpðx; yj  Þ Þ
+bS =  H1½logpðbx; byj  Þ 
+qðx; yjx; yÞ  tn
+
+c
+m!^; bS
+
+;
+where H1 is the inverse Hessian. n is the degrees-of-freedom of the t distribution, which can be tuned to achieve better approxima-
+tion of the target distribution.
+To ﬁnd the maxima, we use Newton-Raphson iterations (since we are already calculating the Hessian), augmented with backtrack-
+ing linesearch to avoid potentially overshooting.
+Metropolis-within-Gibbs Sampling Blocks
+Here, we detail the sampling procedure used for each full conditional block.
+mj, sj block The full conditional of each (mj,sj) block is
+log pðmj; sj
+  Þf
+X
+i˛J
+
+ðmj + sjeijÞxi  exp
+
+b!, c!
+i + mj + s0ei0 + sjeij
+ 
++ logpðmj; sj
+HÞ:
+Until this point, we have not speciﬁed the form of our priors. Because
+X  mj + sjN ð0; 1ÞhX  N
+
+mj; s2
+j
+
+;
+it makes sense to specify a joint prior pðmj; sj
+HÞ on (mj,sj) conjugate to the normal distribution, to make interpretation of hyperpara-
+meters H easy. In this case, this is the normal-inverse-gamma distribution:
+mj; s2
+j  N G1ðA; B; M; SÞ:
+(Equation 4.7)
+where A and B are the shape/scale parameters of the gamma distribution, and M and S are the mean/variance parameters of the
+normal distribution, respectively. These parameters signify that s2
+j was estimated from 2A observations with sample mean M and
+sum of sample squared deviations 2B; mj was estimated from S observations with sample mean M. To actually implement this prior,
+we make change-of-variable tj = 1=s2
+j , turning the normal-inverse-gamma prior into a normal-gamma prior
+mj; tj  N GðA; B; M; SÞ:
+With our prior in hand, we need to compute the gradient and Hessian of the full conditional in order to perform our Newton-Raphson
+iterations. Our gradient is
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e10
+
+V
+!logpðmj; tj
+  Þ
+=
+ v
+vmj
+logpðmj; tj
+  Þ; v
+vtj
+logpðmj; tj
+  Þ
+
+v
+vmj
+logpðmj; tj
+  Þ =
+X
+i˛J
+xi  expðmjÞ
+X
+i˛J
+exp
+
+b!$ c!
+i + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijﬃﬃﬃtj
+p
+
+Stjðmj  MÞ
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+v
+vmj
+logNGðmj; tj
+A; B; M; SÞ
+v
+vtj
+logpðmj; tj
+  Þ = 
+1
+2t3=2
+j
+X
+i˛J
+eijxi
++ expðmjÞ
+X
+i˛J
+exp
+
+b!$ c!
+i + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijﬃﬃﬃtj
+p
+
+eij
+2t3=2
+j
++ A  1
+tj
+ 1
+B  S
+2ðmj  MÞ2 + 1
+2tj
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+v
+vtj
+logNG
+;
+and our Hessian components are
+Hm;m
+=
+expðmjÞ
+X
+i˛J
+exp
+
+b!$ c!
+i + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijﬃﬃﬃtj
+p
+
+St
+|ﬄ{zﬄ}
+v2
+vm2
+j
+logNG
+Ht;t
+=
+3
+4t5=2
+j
+X
+i˛J
+eijxi + expðmjÞ
+X
+i˛J
+exp
+
+b!$ c!
+i + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijﬃﬃﬃtj
+p
+
+eij
+"
+
+3
+4t5=2
+j
+ eij
+4t3
+j
+#
+2A  1
+2t2
+j
+|ﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄ}
+v2
+vt2
+j
+logNG
+Hm;t
+= expðmjÞ
+X
+i˛J
+exp
+
+b!$ c!
+i + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijﬃﬃﬃtj
+p
+
+eij
+2t3=2
+j
+Tðmj  MÞ
+|ﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄ}
+v2
+vmjvtj
+logNG
+To actually use this gradient/Hessian to perform Newton-Raphson iterations, and since Newton-Raphson updates are only stable
+on functions whose domain is R, we need to make change-of-variable g1 : R + /R; tj1logðtjÞ, because tj˛(0,N). Recall that when
+transforming parameters of a probability distribution with some function g1, we need to multiply by the Jacobian of the inverse trans-
+form g to preserve the volume element. Thus, for g1(tj) = log(tj),
+pðmj; gðtjÞ
+  Þ dg
+dtj
+= pðmj; expðtjÞ
+  ÞexpðtjÞ:
+As a result, our log-space gradient/Hessian are actually
+V
+!½logpðmj; expðtjÞ
+  Þ + tj
+H½logpðmj; expðtjÞ
+  Þ + tj 
+Performing this change-of-variables requires invoking the chain rule. For the gradient, this is straightforward:
+V
+!fðx; gðyÞÞ =
+vf
+vx; vf
+vg
+vg
+vy
+
+;
+so for g(y) = exp(y), we simply multiply the untransformed t component of the gradient ðvgfÞ by exp(tj), and then add 1 to account for
+the Jacobian. For the Hessian, we need to invoke the chain rule twice, to account for the second derivative. Hxx is unchanged. The
+other components transform as follows:
+e11
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+Hyy
+=
+v
+vy
+vf
+vg
+vg
+vy
+
+=
+vf
+vg
+v2g
+vy2 +
+vg
+vy
+2 v2f
+vg2
+Hxy
+=
+v
+vy
+vf
+vx
+
+=
+vg
+vy
+v2f
+vgvx
+vgf is the untransformed t component of the gradient; v2
+yg = expðtjÞ; ðvygÞ2 = expð2tjÞ; v2
+gf is the untransformed ðt; tÞ component of
+the Hessian; and v2
+gxf is the untransformed m; t component of the Hessian. Because the Jacobian term in the gradient is a constant 1,
+it disappears entirely in the Hessian.
+s0 block In addition to each (mj,sj) for each pentamer context, we also have an overall variance term s0 shared between the pen-
+tamers. Its full conditional is
+logpðs0j  Þf
+X
+n
+i = 1
+
+s0ei0xi  exp
+
+b!, c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+ 
++ logpðs0jHÞ:
+We place an inverse gamma prior on s2
+0  G1ðA;BÞ, whose parameters have the same conjugate interpretation as the normal-in-
+verse-gamma prior for (mj,sj), (Equation 4.7). As before, we perform change-of-variable t0 = 1=s2
+0 to actually implement this model
+structure. Our gradient and Hessian are simply the ﬁrst and second derivatives of p(s0|):
+v
+vt0
+logpðt0j  Þ
+=
+ 1
+2t3=2
+0
+X
+n
+i = 1
+ei0xi
++ P
+n
+i = 1
+exp
+
+b!$ c!
+i + mjðiÞ + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijðiÞ
+ﬃﬃﬃﬃﬃﬃ
+tjðiÞ
+p
+ ei0
+2t3=2
+0
++
+A  1
+t0
+ 1
+B
+|ﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄ}
+v
+vt0
+logGðA; BÞ
+and
+v2
+vt2
+0
+logpðt0j  Þ
+=
+3
+4t5=2
+0
+X
+n
+i = 1
+ei0xi
++ P
+n
+i = 1
+exp
+
+b!$ c!
+i + mjðiÞ + ei0ﬃﬃﬃﬃ
+t0
+p
++ eijðiÞ
+ﬃﬃﬃﬃﬃﬃﬃ
+tjðiÞ
+p
+
+ei0
+"
+
+3
+4t5=2
+0
+ ei0
+4t3
+0
+#
+A  1
+t2
+0
+|ﬄﬄﬄﬄ{zﬄﬄﬄﬄ}
+v2
+vt2
+0
+logGðA; BÞ
+:
+As before, we actually perform the Newton-Raphson iterations on log p(exp(t0)|), transforming the PDF and ﬁrst/second deriv-
+atives with the appropriate Jacobian and chain rule factors, respectively.
+b! block Our full conditional is
+logpð b!j  Þf
+X
+n
+i = 1
+
+b!, c!
+ixi + exp
+
+b!, c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+ 
++ logpð b!jHÞ;
+with pð b!jHÞ equal to multivariate normal prior b!  N mð m!
+b;SbÞ. For both notational convenience and computational efﬁciency, we
+express the sums of dot products (i.e., P
+i
+b!, c!
+i) as matrix multiplications over covariate matrix C =
+
+c!
+1
+/
+c!
+n
+u
+and data vector
+x! = hx1; .xniu. We similarly vectorize our sets of parameters and latent random variables, with parameter vectors s!
+J =
+hsjð1Þ; sjð2Þ; .; sjðnÞiu
+and
+m!
+J =
+hmjð1Þ; .; mjðnÞiu,
+and
+latent
+random
+variable
+vectors
+e!
+0 = he10; e20; .; en0iu
+and
+e!
+J =
+he1jð1Þ; .; enjðnÞiu. Our gradient is
+V
+!pð b!jÞ = x!uC  exp1ðC b!+ m!
+J + s0 e!
+0 + s!
+J, e!
+JÞu
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+q!
+CS1
+b ð b!  m!
+bÞ
+|ﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄﬄ}
+V
+!
+pð b!
+j m!
+b;SbÞ
+;
+where exp1 is the elementwise exponential. Our Hessian is simply
+H =  Cudiagð q!ÞC  S1
+b :
+Because C can have millions of rows, we speed up calculation of the Hessian by noting that any matrix multiplication of the form
+CuDC with diagonal D can be expressed as
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e12
+
+CuDC = Cu
+ X
+j = 1
+n
+djEjj
+!
+C =
+X
+n
+j = 1
+djCuEjjC =
+X
+n
+j = 1
+dj c!
+j5 c!
+j
+where dj is the jth diagonal element of D, Ejj the corresponding standard basis matrix, and c!
+j the jth row of C. Because the covariate
+matrix C is constant, we only need to calculate each outer product c!
+j5 c!
+j once ahead of time, greatly saving time when computing
+the Hessian, which only requires computing a linear combination of the outer product matrices.
+e blocks For each shared latent random variable ei0˛e0, our full conditional is
+logpðei0jÞ f s0ei0xi  exp
+
+b!, c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+
+ e2
+i0
+2 :
+Likewise, each nested latent random variable’s full conditional is
+logp
+
+eijðiÞ
+ 
+
+f sjeijðiÞxi  exp
+
+b!, c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+
+
+e2
+ijðjÞ
+2 :
+Each of these full conditionals is univariate, so their gradients/Hessians will simply be the ﬁrst/second derivatives, which are of
+the form
+v
+vei0
+logpðei0j  Þ
+=
+s0xi  s0exp
+
+b!$ c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+
+ ei0
+v2
+ve2
+i0
+logpðei0j  Þ
+=
+ s2
+0exp
+
+b!$ c!
+i + mjðiÞ + s0ei0 + sjðiÞeijðiÞ
+
+ 1;
+substituting the appropriate s/e as necessary.
+Posterior Predictive Calculation
+To actually infer whether an observed level of recurrent mutation signiﬁcantly exceeds the expected background, we compute a pos-
+terior predictive p value as stated in Equation 3.9. This entails integrating the parameters of the log-normal-Poisson distribution over
+the posterior probabilities of the model parameters, whose domain we denote Q. Given some observed number of mutations ~x with
+covariates fc! and category (i.e., pentamer context) , the posterior predictive is
+To compute the outer integral over model parameters, we simply average draws from the MCMC:
+where (i) is the ith MCMC draw.
+To compute the inner integrals over latent parameters, we use Hermite quadrature. Hermite polynomials provide a basis for
+approximating integrals of the form R N
+N dx fðxÞexpð  x2Þ. In our case, the inner integrand is
+omitting normalizing constants for brevity. We can transform this into a function of a single variable by noting that the sum of normal
+random variables e0 and is equivalent to the single normal random variable
+. Our integrand becomes
+which is of the form f (x) exp (x2) after change-of-variable x = e=
+ﬃﬃﬃ
+2
+p
+, and therefore amenable to approximation via Hermite
+quadrature,
+e13
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+
+Z N
+N
+de fðeÞexp
+
+e2
+2
+
+=
+ﬃﬃﬃ
+2
+p Z N
+N
+dx fðxÞexp
+
+x2
+z
+ﬃﬃﬃ
+2
+p X
+n
+i = 1
+wifðxiÞ;
+where xi is the ith root of Hermite polynomial Hn, and wi is the ith Hermite quadrature weight. Note the additional factor of
+ﬃﬃﬃ
+2
+p
+from
+transforming the volume element de.
+DATA AND CODE AVAILABILITY
+Code for running the MCMC to sample the Log-normal-Poisson model posterior and compute signiﬁcance values is available at
+https://github.com/broadinstitute/getzlab-LNP. Code for reproducing the manuscript ﬁgures and analyses is available at https://
+github.com/broadinstitute/getzlab-PHS.
+Cancer Cell 36, 288–301.e1–e14, September 16, 2019
+e14
+
+Cancer Cell, Volume 36
+Supplemental Information
+Passenger Hotspot Mutations in Cancer
+Julian M. Hess, Andre Bernards, Jaegil Kim, Mendy Miller, Amaro Taylor-Weiner, Nicholas
+J. Haradhvala, Michael S. Lawrence, and Gad Getz
+
+A>C
+A>G
+A>T
+C>A
+C>G
+C>T
+A_A
+A_G
+A_C
+A_G
+A_T
+C_A
+C_C
+C_G
+C_T
+G_A
+G_C
+G_G
+G_T
+T_C
+T_T
+C_G
+A_A
+A_C
+A_T
+C_A
+C_C
+C_G
+C_T
+G_A
+G_C
+G_T
+T_A
+T_C
+T_T
+T_A
+T_C
+T_T
+A_A
+A_C
+A_G
+A_T
+C_A
+C_C
+C_G
+C_T
+G_A
+G_C
+G_G
+G_T
+T_A
+T_C
+T_G
+T_T
+Figure S1: Expected protein-coding effects for each of the 96 trinucleotide substitutions; related to Figure 1. Width of each bar is pro-
+portional to observed mutation burden in our cohort for that substitution. Note that A(A→[CT])T and A(C→[AG])T substitutions can never
+generate synonymous (gray) mutations, and [CG](C→G)[ACG]/T(C→G)[CG]/[ACGT](C→T)T substitutions can never generate nonsense
+(red) mutations.
+
+Minimum q value in gene significant 
+by at least one method
+Minimum q value in gene not 
+significant by any method
+Confident false positive gene
+q ≤ 0.1 significance cutoff
+Confident true positive gene
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+Log-normal-Poisson
+1
+10 -1 10 -2 10 -3 10 -4 10 -5 10 -6 10 -7
+≤10 -8
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+Gamma-Poisson
+1
+10 -1 10 -2 10 -3 10 -4 10 -5 10 -6 10 -7
+≤10 -8
+Uniform-within-gene
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+Uniform Poisson
+1
+10 -1 10 -2 10 -3 10 -4 10 -5 10 -6 10 -7
+≤10 -8
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+1
+10 -1 10 -2 10 -3 10 -4 10 -5 10 -6 10 -7
+≤10 -8
+Uniform Poisson
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+1
+10 -1 10 -2 10 -3 10 -4 10 -5 10 -6 10 -7
+≤10 -8
+Gamma-Poisson
+1
+10 -1
+10 -2
+10 -3
+10 -4
+10 -5
+10 -6
+10 -7
+≤10 -8
+A
+C
+B
+10 -2
+10 -1
+10 0
+False Positive Rate
+0.6
+0.65
+0.7
+0.75
+0.8
+0.85
+0.9
+0.95
+1
+True Positive Rate
+10 -2
+10 -1
+10 -2
+10 -1
+10 -2
+10 -1
+10 -1
+10 -2
+Log-normal-Poisson
+Gamma-Poisson
+Uniform Poisson
+Uniform-within-gene
+Uniform theoretical p value quantiles
+Observed p value quantiles
+Figure S2: Comparison of methods’ statistical calibration; related to Figure 2. (A) Cross-method comparison of minimum q values across
+all mutations in each gene. Genes in false-positive/true-positive truth sets are circled in red and green, respectively. q value cutoff of 0.1
+shown as dashed lines. For clarity, points at q = 1 or q < 10−8 are randomly jittered. Comparison of Log-normal-Poisson method against
+other methods highlighted in gray. (B) Alternate version of Figure 2A showing ROC curves with positive truth set comprising genes with
+recurrent mutations whose oncogenic roles are supported by the literature. Negative truth set comprises genes conﬁdently under neutral
+selection, as before. (C) Quantile-Quantile (QQ) plots of each method’s p values. Dashed 1:1 line corresponds to uniformly distributed
+p values; gray area represents region of Benjamini-Hochberg q value < 0.1. For legibility purposes, observed p values are capped at a
+minimum value of 10−16.
+
+Q61/Q72 GTP hydrolysis site
+H/K/NRAS G12/13 activating sites
+Switch-II motif
+PKN binding 
+domain
+Putative acyl-CoA 
+synthetase domain
+WT
+S146L
+0
+2
+10
+20
+30
+40
+50
+60
+MYC absolute copy number
+E1033D
+WT
+1   
+10  
+100 
+1000
+3000
+Total number of indels
+A
+B
+C
+D
+E
+H/K/NRAS coordinates
+RRAS2 coordinates
+HRAS
+KRAS
+NRAS
+RRAS2
+RAC1
+RHOA
+RHOB
+RHOC
+SLC27A1
+SLC27A2
+SLC27A3
+SLC27A4
+SLC27A5
+SLC27A6
+Figure S3: Functional exposition of putative driver hotspots; related to Figure 4. In all sequence alignment plots, amino acids with
+orange letters are mutated; amino acids with black backgrounds are signiﬁcant hotspots (by the Log-normal-Poisson model). Other colors
+represent the number of matching amino acids across the alignment. (A) Sequence alignment of ﬁrst 68 amino acids of canonical Ras
+subfamily members H/K/NRAS and ﬁrst 79 amino acids of RRAS2, with both H/K/NRAS and RRAS2 coordinates shown to emphasize
+homology between hydrolysis site Q61 (and well-known driver locus) of canonical subfamily members with Q72 in RRAS2. (B) Sequence
+alignments of three subsections of Rho GTPase subfamily members RAC1 and RHOA/B/C. The ﬁrst subsection comprises amino acids
+1-16, in order to showcase similarity of N termini. The next subsection contains the highly conserved Switch-II motif, which contains
+a signiﬁcant hotspot in RHOB and has high mutation burden across the four Rho GTPase subfamily members. The third subsection
+contains the PKN-binding domain, which also contains a signiﬁcant hotspot in RHOB. (C) Sequence alignment of solute carrier 27 family
+members, illustrating signiﬁcant hotspot in SLC27A5 occurring in highly conserved motif (putative acyl-CoA synthetase domain) within a
+larger nonconserved context. (D) Absolute copy number at MYC of all wildtype patients versus S146L mutants. Red crosses show allelic
+copy number of somatic mutations. Ranksum of mutant vs. wildtype absolute copy number p value = 0.02. (E) Total somatic indel burden
+of UPF2 E1033D mutants versus wildtype patients in the same cohort as the mutants. Ranksum of indel burden p value = 2.3 × 10−7
+
+0
+2
+APOBEC
+× 10 4
+No. of mutations
+4
+6
+0
+0.5
+Esophageal
+× 10 4
+No. of mutations
+1
+0
+0.5
+1
+Smoking
+× 10 4
+No. of mutations
+1.5
+2
+0
+1
+2
+3
+MSI
+No. of mutations
+× 10 4
+4
+5
+0
+1
+2
+POLE+MSI
+No. of mutations
+× 10 4
+3
+4
+0
+2
+4
+POLE
+× 10 4
+No. of mutations
+6
+8
+0
+2
+4
+UV
+× 10 4
+No. of mutations
+6
+8
+0
+2
+CpG (Aging)
+× 10 4
+No. of mutations
+4
+6
+C 
+T
+C 
+A
+C 
+G
+A
+G
+A
+T
+A
+C
+Mutation Context
+Figure S4: Total mutation counts of the 96 trinucleotide substitutions in each mutational process-centric subcohort; related to Figure
+5. Opaque bars show counts of mutations deﬁnitively attributed to the relevant mutational process (Bayesian NMF factor assignment
+probability ≥0.75); transparent bars show counts of all other mutations in the process-centric subcohort not attributed to the relevant
+mutational process.
+
+GTCGC
+CTCGT
+TTCGT
+CTCCT
+TTCGC
+TCCCA
+TTCAT
+TTCCT
+ATCAT
+TCCAT
+TCCAC
+CTCGC
+TCCCT
+TCCTT
+TTCCC
+TTCGG
+TCCCC
+TTCCA
+TTCAC
+TCCTC
+TTCTC
+CTCCC
+TTCTT
+ATCCT
+TCCAG
+ATCCA
+TTCGA
+CTCGG
+ATCGC
+TTCAG
+ATCCC
+ATCAC
+CTCAT
+ATCGT
+GTCCT
+ATCGA
+TTCTG
+ATCAG
+GTCGT
+CTCGA
+TTCAA
+TCCCG
+TTCCG
+GTCCG
+ATCAA
+CCCCT
+CTCCA
+ATCGG
+CTCCG
+ATCTT
+TCCTG
+CCCCG
+GCCCT
+TCCGT
+TCCAA
+CCCTT
+CTCTT
+GTCCC
+ATCCG
+CTCTG
+GTCCA
+CCCCC
+Sequence context
+-0.5
+-0.4
+-0.3
+-0.2
+-0.1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+Fraction of additional variance
+explained by XR-Seq covariate
+1
+10 -2
+10 -4
+10 -6
+10 -8
+10 -10
+10 -12
+10 -14
+p value sans hairpin covariate
+1
+10 -2
+10 -4
+10 -6
+10 -8
+10 -10
+10 -12
+10 -14
+p value with hairpin covariate
+MB21D2 Q311E
+AHR Q383H
+MB21D2 Q311*
+MROH2B E1109K
+PDE3A L275L
+RXRA D402N
+TBC1D12 M1*
+LPAR6 L277L
+A
+B
+C
+Figure S5: Properties of mutational processes; related to Figure 5. (A) Joint posterior distributions of geometric standard deviation eσ
+for non-hypermutants vs. hypermutants. Each colored area is the 95% conﬁdence region for a pentamer context associated with a given
+mutational process. Only mutational processes with sufﬁciently tight posterior densities in both the hypermutant and non-hypermutant
+partitions are shown. (B) Variance explained by including XR-seq coverage as a covariate in the UV process-centric subcohort, stratiﬁed by
+pentamer contexts around the 8 pyrimidine dimer trinucleotide contexts most affected by UV mutagenesis. Variance explained is presented
+as the fold-change in the log-normal variance after including XR-seq coverage as a model covariate, relative to log-normal variance of
+the model run with only the standard covariates. Bars represent 90% posterior conﬁdence intervals; central dashes represent posterior
+means. (C) Comparison of Log-normal-Poisson model p values for APOBEC-induced hotspots in non-KCGs, with/without APOBEC hairpin
+substrate optimality covariate. Grey regions indicate p values falling below 10% FDR threshold. Note simultaneous presence of missense
+and nonsense events at the same nucleotide in MB21D2, and synonymous hotspots in PDE3A and LPAR6 — evidence that these events
+are passenger hotspots under no positive selection.

@@ -1,0 +1,249 @@
+Maria I. Carlo, MD
+Semanti Mukherjee, PhD
+Kenneth Offit, MD, MPH
+Author Affiliations: Department of Medicine, Memorial Sloan Kettering Cancer
+Center, New York, New York (Carlo, Offit); Sloan Kettering Institute, New York,
+New York (Mukherjee, Offit).
+Corresponding Author: Maria I. Carlo, MD, Department of Medicine,
+Memorial Sloan Kettering Cancer Center, 353 E 68th St, New York, NY 10065
+(carlom@mskcc.org).
+Published Online: February 28, 2019. doi:10.1001/jamaoncol.2019.0025
+Conflict of Interest Disclosures: Dr Carlo reports grants from National Cancer
+Institute during the conduct of the study and personal fees from Pfizer outside
+the submitted work. No other disclosures were reported.
+1. Carlo MI, Mukherjee S, Mandelker D, et al. Prevalence of germline mutations
+in cancer susceptibility genes in patients with advanced renal cell carcinoma.
+JAMA Oncol. 2018;4(9):1228-1235. doi:10.1001/jamaoncol.2018.1986
+2. Mandelker D, Zhang L, Kemel Y, et al. Mutation detection in patients with
+advanced cancer by universal sequencing of cancer-related genes in tumor and
+normal dna vs guideline-based germline testing. JAMA. 2017;318(9):825-835.
+doi:10.1001/jama.2017.11137
+Analyzing Frequently Mutated Genes
+and the Association With Tumor Mutation Load
+To the Editor In their recent article, Li et al1 found that somatic
+mutations in MUC16 were associated with high tumor muta-
+tion load (TML) and improved survival in patients with gas-
+triccancer(GC).Theauthorsconcludedthattheirfindings“may
+be immediately applicable for guiding immunotherapy treat-
+ment for patients with GC,” giving the impression that MUC16
+mutations are special with regard to high TML and improved
+survival. However, MUC16 mutations are more likely to be the
+result of high TML rather than the cause and do not have a pre-
+dictivevalueforprognosisbeyondthatofotherfrequentlymu-
+tated genes.
+Any gene in the genome has a higher chance of being ran-
+domly mutated in tumors with high TML. The MUC16 gene,
+which is the second longest gene and covers approximately 65
+kb, has a reasonable chance of being mutated in tumors with
+high TML. In fact, when reanalyzing the Cancer Genome At-
+las GC cohort used by Li et al,1 210 of the 212 genes mutated
+in more than 10% of patients with GC are significantly associ-
+ated with higher TML (all with P < 10−6, Wilcoxon signed rank
+test). This suggests that mutations in highly mutable genes are
+indicators, not drivers, of high TML.
+This problem of determining significant associations
+occurs across many disciplines, and we recently adopted an
+approach,2 first applied in the field of numerical ecology,3 to
+perform association analyses while controlling for TML.
+Empirical P values are calculated by randomizing the muta-
+tions in a cohort while maintaining both the total number of
+mutations in each patient and each gene. Genes with muta-
+tions simply owing to random chance will have the same
+association with TML as in the random permutations, and
+hence will not be statistically significant. Applying this
+approach to the data used by Li et al, MUC16 mutations are
+not significantly associated with high TML (empirical
+P = .32) or improved survival (23 of 100 randomized sets had
+log rank P values < .007 and 32 had lower Wilcoxon test
+P values; empirical P = .23).
+Furthermore, when associating genes with survival using
+a naive approach (without controlling for TML), 25 of the 212
+most frequently mutated genes (those mutated in >10% of pa-
+tients reported on by Li et al1) are nominally associated with
+prolonged survival (log-rank comparison of patients with vs
+without a mutation in the gene; P < .05 for all 25 genes). In-
+deed, 6 genes (eg, CDH23 and ANK1) were even more signifi-
+cant than MUC16, demonstrating that the association with sur-
+vival is not unique to MUC16.
+Given that almost all frequently mutated genes are asso-
+ciated with high TML and that the associations of MUC16 mu-
+tations and improved survival with TML are not significant
+when controlling for the overall mutation load, we believe that
+MUC16 is merely one of many long genes that can reflect high
+TML. There is no reason to assume from these analyses that
+MUC16 has a special functional association with survival or a
+unique prognostic predictive value. Any further analyses re-
+garding the functional role of mutations in MUC16 or any other
+gene (eg, association with gene expression changes) in GC
+shouldtestwhetherthemutationsinthegenereflecthighTML
+or selection owing to a functional role.
+Yosef E. Maruvka, PhD
+Nicholas J. Haradhvala, BA
+Gad Getz, PhD
+Author Affiliations: Cancer Center, Massachusetts General Hospital, Boston.
+Corresponding Author: Gad Getz, PhD, Cancer Center, Massachusetts General
+Hospital, 55 Fruit St, Boston, MA 02114 (gadgetz@broadinstitute.org).
+Published Online: March 7, 2019. doi:10.1001/jamaoncol.2019.0127
+Conflict of Interest Disclosures: Dr Getz reports research funding from IBM
+and Pharmacyclics and is an inventor of various bioinformatics-related patents.
+No other disclosures were reported.
+1. Li X, Pasche B, Zhang W, Chen K. Association of MUC16 mutation with tumor
+mutation load and outcomes in patients with gastric cancer. JAMA Oncol. 2018;
+4(12):1691-1698. doi:10.1001/jamaoncol.2018.2805
+2. Kim J, Mouw KW, Polak P, et al. Somatic ERCC2 mutations are associated
+with a distinct genomic signature in urothelial tumors. Nat Genet. 2016;48(6):
+600-606. doi:10.1038/ng.3557
+3. Strona G, Nappo D, Boccacci F, Fattorini S, San-Miguel-Ayanz J. A fast and
+unbiased procedure to randomize ecological binary matrices with fixed row and
+column totals. Nat Commun. 2014;5:4114. doi:10.1038/ncomms5114
+In Reply Maruvka et al analyzed the associations of MUC16 mu-
+tation with tumor mutation load (TML) and survival out-
+come in the Cancer Genome Atlas gastric cohort by using the
+Curveball algorithm1 to randomize the mutation matrix with-
+out altering the row and column totals. In our view, their analy-
+sis underestimated the variability of genetic mutation in the
+cohort. Their interpretations of the conclusions of our study2
+may have resulted from some misunderstanding.
+We agree that most frequently mutated genes are associ-
+ated with high TML. A higher TML in the tumor genome is
+largely reflected by frequent mutation in genes. However, the
+associationofMUC16mutationwithTMLdoesnotindicatethat
+MUC16 mutation is the driver of high TML. We did not make
+this claim in our article.
+Maruvka et al used the Curveball algorithm to permutate
+the mutation matrix by fixing the total number of mutations
+in each patient and each gene. The Curveball algorithm, as de-
+Letters
+jamaoncology.com
+(Reprinted)
+JAMA Oncology
+April 2019
+Volume 5, Number 4
+577
+© 2019 American Medical Association. All rights reserved.
+Downloaded from jamanetwork.com by M.I.T. Libraries user on 05/17/2024
+
+scribed by Strona and colleagues,1 was developed to random-
+ize presence-absence matrices in numerical ecology by fixing
+row and column totals. Herein we demonstrate that the vari-
+ability of the mutation matrix is likely to be underestimated
+when both margin totals are fixed. Let A and B denote 2 bi-
+nary mutation matrices with identical dimension ordered
+by TML. The dissimilarity d of A and B was measured as
+1 −sum(A and B) / sum(A|B). For the binary mutation matrix
+of the Cancer Genome Atlas data set, we performed random
+permutation with the Curveball algorithm 1000 times and cal-
+culated the dissimilarity d between each permutated matrix
+and the original binary mutation matrix; the final dissimilar-
+ity vector was denoted as dCurveball. In addition, we randomly
+sampled with replacement 2 matrices from the original bi-
+nary mutation and calculated their dissimilarity. This proce-
+dure was also repeated 1000 times; we denoted the dissimi-
+larity vector as dsampling. The average value of dCurveball was
+significantlysmallerthandsampling(ttest,0.83vs0.88;P < .001),
+which suggests that randomizing the binary mutation matrix
+with the row and column totals fixed cannot fully capture
+the variability of the original mutation matrix. Furthermore,
+the TML of a tumor also varies over the course of disease de-
+velopment and progression. Thus, application of the Curve-
+ball algorithm to examine the associations of gene mutation
+with TML and clinical phenotypes is rather conservative.
+In our study,1 the association of MUC16 mutations with
+TML and improved survival in patients with gastric cancer was
+addressed for confounding factors in multivariate models in-
+cluding DNA mismatch repair signatures that can be used as
+surrogate variables for high TML. These associations were vali-
+dated in the independent Asian cohort. The CDH23 and ANK1
+genes mentioned by Maruvka et al were not associated with
+prognosis in the multivariate Cox analysis of the Asian cohort
+(hazardratio[HR],2.15;95%CI,0.55-8.30;P = .27andHR,2.15;
+95% CI, 0.59-7.76; P = .24, respectively).
+Different algorithms often give rise to different results. The
+association of MUC16 mutations with high TML and improved
+survivalobtainedfromtraditionalmultivariatelogisticandCox
+modelsinourstudyshouldnotbenegatedwhentheresultswere
+not significant based on the Curveball algorithm, especially
+when the application of this algorithm in such a circumstance
+still needs to be discussed. We would like to note that 2 recent
+studies reported the association of MUC16 mutations with fa-
+vorable prognosis in gastric cancer3 and endometrial cancer by
+enhancing cytotoxic T-lymphocyte infiltration.4
+Xiangchun Li, PhD
+Wei Zhang, PhD
+Kexin Chen, MD, PhD
+Author Affiliations: Tianjin Medical University Cancer Institute and Hospital,
+Tianjin, China (Li); Comprehensive Cancer Center of Wake Forest Baptist
+Medical Center, Winston Salem, North Carolina (Zhang); Department of
+Epidemiology and Biostatistics, Tianjin Medical University Cancer Institute and
+Hospital, Tianjin, China (Chen).
+Corresponding Author: Kexin Chen, MD, PhD, Department of Epidemiology
+and Biostatistics, Tianjin Medical University Cancer Institute and Hospital,
+Huanhu Xi Road, Tiyuan Bei, Hexi District, Tianjin 300060, China
+(chenkexin@tjmuch.com).
+Published Online: March 7, 2019. doi:10.1001/jamaoncol.2019.0135
+Conflict of Interest Disclosures: None reported.
+1. Strona G, Nappo D, Boccacci F, Fattorini S, San-Miguel-Ayanz J. A fast and
+unbiased procedure to randomize ecological binary matrices with fixed row and
+column totals. Nat Commun. 2014;5:4114.
+2. Li X, Pasche B, Zhang W, Chen K. Association of MUC16 mutation with tumor
+mutation load and outcomes in patients with gastric cancer. JAMA Oncol.
+2018;4(12):1691-1698. doi:10.1001/jamaoncol.2018.2805
+3. Zhao H, Zhang L. MUC16 mutation predicts a favorable clinical outcome and
+correlates decreased Warburg effect in gastric cancer. Biochem Biophys Res
+Commun. 2018;506(4):780-786. doi:10.1016/j.bbrc.2018.10.156
+4. Hu J, Sun J. MUC16 mutations improve patients’ prognosis by enhancing the
+infiltration and antitumor immunity of cytotoxic T lymphocytes in the
+endometrial cancer microenvironment. Oncoimmunology. 2018;7(10):e1487914.
+doi:10.1080/2162402X.2018.1487914
+Omitted Disclosures of Potential Conflicts of Interest
+in Articles Published in JAMA Oncology
+To the Editor I write to amend my disclosures of potential
+conflicts of interest in articles1-11 published in JAMA Oncology
+in 2016 through 2018. In 1 of these articles, “Safety and Effi-
+cacy of Pembrolizumab Monotherapy in Patients With Pre-
+viously Treated Advanced Gastric and Gastroesophageal
+Junction Cancer: Phase 2 Clinical KEYNOTE-059 Trial,”8
+which represented a clinical trial of a novel therapeutic in
+patients with gastric cancer, I reported relevant disclosures
+related to consulting work with the biotechnology and phar-
+maceutical industry focused on cancer drug development
+as follows: “Dr Fuchs has been a consultant for Eli Lilly,
+Entrinsic Health, Pfizer, Merck, Sanofi, Roche, Genentech,
+Merrimack Pharmaceuticals, Dicerna, Bayer, Agios, Gilead
+Sciences, Five Prime Therapeutics, and Taiho.” However,
+that disclosure did not include my relationships at the time
+with Celgene and KEW. The other studies assessed the role
+of obesity, diet, lifestyle habits, and genetic mutations
+in cancer risk and outcome,1-7,9-11 and for those articles I
+reported that I had no potential conflicts of interest to dis-
+closure. With respect to these analyses of obesity, diet, life-
+style habits, and genetic mutations and cancer, I did not
+consider that my consulting work in drug development rep-
+resented a potential conflict of interest or a relevant finan-
+cial activity to the submitted works. Additionally, I did not
+believe that my consulting work would be perceived by
+readers to have influenced or give the appearance of poten-
+tially influencing analyses of obesity, diet, lifestyle habits,
+and genetic mutations in cancer risk and outcome.
+Nevertheless, in the interest of full transparency, I wish to
+disclose all relationships with companies that produce prod-
+ucts and services related to cancer care and to add the follow-
+ing disclosures to each of these articles1-11: “Dr Fuchs has been
+a consultant and/or a scientific advisor for Eli Lilly, Entrinsic
+Health, Pfizer, Merck, Sanofi, Roche, Genentech, Merrimack
+Pharmaceuticals, Dicerna, Bayer, Celgene, Agios, Gilead Sci-
+ences,FivePrimeTherapeutics,Taiho,andKEW.”Mostofthose
+disclosures were included in the article on pembrolizumab
+monotherapy for gastric cancer.8 For that article, published on
+March 15, 2018, the following disclosure should also be added:
+“Dr Fuchs has been a consultant for Celgene and KEW and also
+serves on the Board of Directors for CytomX Therapeutics; in
+Letters
+578
+JAMA Oncology
+April 2019
+Volume 5, Number 4
+(Reprinted)
+jamaoncology.com
+© 2019 American Medical Association. All rights reserved.
+Downloaded from jamanetwork.com by M.I.T. Libraries user on 05/17/2024

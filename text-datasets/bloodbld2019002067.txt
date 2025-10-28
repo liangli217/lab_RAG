@@ -1,0 +1,2097 @@
+Regular Article
+LYMPHOID NEOPLASIA
+Genomic analyses of PMBL reveal new drivers and
+mechanisms of sensitivity to PD-1 blockade
+Bjoern Chapuy,1,2,* Chip Stewart,3,* Andrew J. Dunford,3,* Jaegil Kim,3 Kirsty Wienand,1 Atanas Kamburov,3 Gabriel K. Grifﬁn,4
+Pei-Hsuan Chen,4 Ana Lako,4 Robert A. Redd,5 Claire M. Cote,1 Matthew D. Ducar,6 Aaron R. Thorner,6 Scott J. Rodig,4 Gad Getz,3,7,8,†
+and Margaret A. Shipp1,†
+1Department of Medical Oncology, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA; 2Department of Hematology and Oncology, University
+Medical Center G¨ottingen, G¨ottingen, Germany; 3Broad Institute of Harvard and Massachusetts Institute of Technology, Cambridge, MA; 4Department of Pathology,
+Brigham and Women’s Hospital, Harvard Medical School, Boston, MA; 5Department of Data Sciences and 6Center for Cancer Genome Discovery, Dana-Farber Cancer
+Institute, Boston, MA; and 7Department of Pathology and 8Center for Cancer Research, Massachusetts General Hospital, Harvard Medical School, Boston, MA
+K E Y P O I N T S
+l Comprehensive
+genomic analyses of
+PMBL reveal new
+genetic drivers such
+as ZNF217.
+l High mutational
+burden, MSI, and
+APOBEC signatures
+may be additional
+mechanisms of
+sensitivity to PD-1
+blockade in PMBL.
+Primary mediastinal large B-cell lymphomas (PMBLs) are aggressive tumors that typically
+present as large mediastinal masses in young women. PMBLs share clinical, transcriptional,
+and molecular features with classical Hodgkin lymphoma (cHL), including constitutive
+activation of nuclear factor kB (NF-kB), JAK/STAT signaling, and programmed cell death
+protein 1 (PD-1)–mediated immune evasion. The demonstrated efﬁcacy of PD-1 blockade in
+relapsed/refractory PMBLs led to recent approval by the US Food and Drug Administration
+and underscored the importance of characterizing targetable genetic vulnerabilities in this
+disease. Here, we report a comprehensive analysis of recurrent genetic alterations
+—somatic mutations, somatic copy number alterations, and structural variants—in a cohort
+of 37 newly diagnosed PMBLs. We identiﬁed a median of 9 genetic drivers per PMBL,
+including known and newly identiﬁed components of the JAK/STAT and NF-kB signaling
+pathways and frequent B2M alterations that limit major histocompatibility complex class I
+expression, as in cHL. PMBL also exhibited frequent, newly identiﬁed driver mutations in
+ZNF217 and an additional epigenetic modiﬁer, EZH2. The majority of these alterations were clonal, which supports
+their role as early drivers. In PMBL, we identiﬁed several previously uncharacterized molecular features that may
+increase sensitivity to PD-1 blockade, including high tumor mutational burden, microsatellite instability, and an
+apolipoprotein B mRNA editing catalytic polypeptide-like (APOBEC) mutational signature. The shared genetic features
+between PMBL and cHL provide a framework for analyzing the mechanism of action of PD-1 blockade in these related
+lymphoid malignancies. (Blood. 2019;134(26):2369-2382)
+Introduction
+Primary mediastinal large B-cell lymphoma (PMBL) is a rare
+aggressive B-cell non-Hodgkin lymphoma (NHL) that is thought
+to arise from thymic medullary B cells.1 Typically, PMBL occurs in
+young women who present with large, localized mediastinal
+masses.1 After its identiﬁcation in 1986,2-4 PMBL was initially
+categorized as a subtype of diffuse large B-cell lymphoma
+(DLBCL). Transcriptional proﬁling of PMBL revealed reduced
+expression of B-cell receptor signaling intermediates, including
+surface immunoglobulin, and constitutive activation of JAK/
+STAT and nuclear factor kB (NF-kB) signaling cascades, mo-
+lecular features reminiscent of classical Hodgkin lymphoma
+(cHL).5-7 In contrast to cHL, PMBL has not been associated with
+previous Epstein-Barr virus infection.8 The shared clinical, patho-
+morphologic, and molecular features of PMBL and cHL and the
+differences between PMBL and DLBCL led to the recognition of
+PMBL as a distinct lymphoma entity.1
+Previous genetic analyses of PMBL deﬁned mechanisms of
+NF-kB activation, including 2p16.1/REL copy gain5,6,9 and
+inactivating mutations of TNFAIP3, which encodes the ubiquitin-
+editing enzyme A20.10 Recently, another negative regulator of
+the NF-kB pathway, NFKBIE, was found to be inactivated by a 4-
+bp deletion in PMBLs.11
+Additional genetic alterations that increase JAK/STAT signaling
+in PMBL have been described including loss-of-function muta-
+tions of the phosphatase and negative regulator PTPN112 and
+gain-of-function mutations in STAT613 and IL4R.14 We and others
+identiﬁed a recurrently ampliﬁed region on 9p/9p24.1 that in-
+cludes JAK2 and increases JAK/STAT signaling in PMBL.15-18
+Functional data also suggested a disease-essential role of the
+9p24.1/JMJD2C-encoded histone demethylase in heterochro-
+matin formation.16
+© 2019 by The American Society of Hematology
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2369
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+Interestingly, the 9p24.1-ampliﬁed region also includes CD274
+(PD-L1)/PDCD1LG2 (PD-L2) which increases the expression of
+these programmed cell death protein 1 (PD-1) ligands and
+provides a genetic mechanism of immune escape in PMBL.7,15,18
+The coampliﬁcation of programmed death-ligand 1 and 2 (PD-
+L1/PD-L2) and JAK2 increases the expression of PD-L1 and PD-
+L2 both directly by increasing their copy numbers and indirectly
+by increasing the expression of the ligands via JAK/STAT
+signaling.15,19 Structural variants (SVs) deregulating PD-L1 and
+PD-L2 by translocation, inversion, or deletion of the 39 un-
+translated region (39UTR) of PD-L1 have also been reported in
+PMBL.20
+PMBLs exhibit additional genetic alterations leading to im-
+mune escape, including SVs of the major histocompatibility
+complex (MHC) class II transactivator (CIITA) that are reported
+to decrease MHC class II expression.21,22 Copy loss of the
+MHC class I and MHC class II regions (hereafter MHCI and
+MHCII) were also previously described as hallmark features in
+PMBL.3,18,23,24
+In newly diagnosed patients with PMBL, induction therapy in-
+cludes an anthracycline-based polychemotherapy regimen and
+an anti-CD20 antibody (rituximab) often followed by consoli-
+dation radiotherapy of residual mediastinal masses.25,26 Al-
+though this approach results in durable remissions in the majority
+of these young patients, comorbidities include the long-term
+complications of directed radiotherapy.25 In addition, patients
+with relapsed/refractory PMBL have more limited treatment
+options. The recently demonstrated efﬁcacy of PD-1 blockade
+with pembrolizumab in relapsed/refractory PMBL27 led to rapid
+approval by the US Food and Drug Administration and under-
+scored the importance of characterizing targetable genetic
+vulnerabilities in this disease.
+For these reasons, we performed a comprehensive genomic
+analysis of a representative cohort of newly diagnosed patients
+with PMBL and compared their genetic signatures to those of the
+related lymphoid disease, cHL.28 These companion studies
+provide new insights into shared and unique pathogenetic
+mechanisms, including bases of response and resistance to
+PD-1 blockade, in both of these diseases.
+Material and methods
+Patient characteristics and cell lines
+We collected diagnostic biopsy specimens from 37 patients with
+PMBL, including 2 previously described cases.29 All samples
+were centrally reviewed by an expert hematopathologist (S.J.R.).
+The patients characteristics are summarized in supplemental
+Figure 1 and supplemental Table 1 (available on the Blood
+Web site). In this cohort, 65% of the biopsy specimens were
+from frozen tissue and the remainder were from formalin-ﬁxed
+parafﬁn-embedded samples; the majority of patients (95%)
+had no patient-matched normal specimens (supplemental
+Figure 1; supplemental Table 1). This study was approved by
+the Institutional Review Board of the Dana-Farber Cancer
+Institute. Three PMBL cell lines, Farage, Karpas 1106P, and
+U2940, were obtained from the German Cell Line Collection
+and were conﬁrmed by short tandem repeat proﬁling before
+analysis.
+DNA extraction, library preparation, and
+whole-exome sequencing
+DNA extraction, library preparation, and whole-exome se-
+quencing (WES) and SV detection for the frozen tumor samples
+were performed as recently reported.30 For the cell lines and
+formalin-ﬁxed parafﬁn-embedded samples, DNA was extracted
+and libraries were prepared as previously described18 (see
+supplemental Methods). All samples with successful library
+preparation (yielding $250 ng of DNA libraries) were taken
+forward to hybrid capture. Samples were pooled in 3-plex and
+captured using Agilent SureSelect Human All Exon Exome v5,
+the custom DLBCL_Rearrangm_v1 bait set, and the Agilent
+SureSelect hybrid capture kit as previously described.18,30
+Quality control, ﬁltering, variant calling,
+signiﬁcance analyses, mutational signature
+analyses, purity/ploidy detection, and
+immunohistochemistry
+Quality controls included matching of the 2 tumor/normal pairs
+by mass spectrometric ﬁngerprint genotyping, estimation of con-
+tamination in samples using ContEst31 and alignment and cov-
+erage matrices as previously reported (supplemental Table 1).30
+Somatic mutations, somatic copy number alterations (SCNAs)
+and SVs were detected by using previously described analyt-
+ical pipelines, including our algorithm for evaluating tumors
+without paired normal samples.30 SVs were characterized by
+using a pipeline that combines 4 detection algorithms,30 in-
+cluding BreaKmer,32 Lumpy v0.2.13,33 dRanger,34 SVaBA,35
+and validation by BreakPointer.36 Purity and ploidy were
+inferred using ABSOLUTE.37 Genes more frequently mutated
+than by chance, candidate cancer genes (CCGs), were identiﬁed
+with MutSig2CV38 and recurrent SCNAs were identiﬁed by
+GISTIC 2.0.39 Details of the mutational signature analysis are
+described in supplemental Methods. Generation of the gene-by-
+sample matrix and the mutation density (by tumor type) plot
+are described in detail in Wienand et al.28 Presence or absence
+of the apolipoprotein B mRNA editing catalytic polypeptide-like
+(APOBEC) signature-associated single nucleotide polymorphism
+(SNP) rs12628403 was detected by MutTect40 in force-calling
+mode (–force_alleles –force_output) at hg19 site chr22:39358037.
+All other analyses were performed as previously described.30 Im-
+munohistochemistry and scoring are described in detail in sup-
+plemental Methods.
+Results
+Signiﬁcantly mutated driver genes
+Diagnostic biopsy specimens from 37 patients with PMBL
+(median age, 34 years; 70%, female) and 3 additional PMBL cell
+lines (supplemental Figure 1; supplemental Table 1) were sub-
+jected to WES with an expanded bait set that captured selected
+SVs. Because the majority of PMBLs had no patient-matched
+normal samples (supplemental Figure 1; supplemental Table 1),
+we applied our recently reported analytical framework and al-
+gorithms to analyze WES data in the absence of paired normal
+specimens.30 After calling single nucleotide variants and indels in
+individual patients, we applied our MutSig2CV algorithm38 and
+identiﬁed 15 CCGs (q , 0.1; Figure 1A; supplemental Table 2A).
+As an orthogonal means of prioritizing mutations, we applied
+CLUMPS, an algorithm that overlays all identiﬁed missense mu-
+tations onto known 3D structures and detects spatial mutation
+2370
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+A
+STAT6
+B
+ZNF217
+C
+0
+100
+Allelic
+fraction
+non-CpG ts
+CpG tv
+CpG ts
+Indels & DNP
+non-CpG tv
+0
+%
+100
+37 PMBLs
+Non syn.
+Syn.
+B2M
+TNFAIP3
+GNA13
+ZNF217
+TP53
+IRF2BP2
+IL4R
+STAT6
+IKZF3
+XPO1
+EZH2
+HIST1H1E
+PAX5
+CSF2RB
+HIST2H2BE
+8%
+14%
+11%
+22%
+14%
+16%
+11%
+43%
+30%
+19%
+22%
+43%
+35%
+32%
+41%
+# mutations
+20 15 10 5 0
+0
+20
+40
+60
+80
+100
+# mutations/Mb
+Nonsense
+Frame shift
+In frame indel
+Syn.
+Missense
+Splice site
+*
+* *
+-log10 (q-value)
+0 1 2 3 4
+D
+# mutations
+p.I242N
+0
+200
+400
+600
+825aa
+0
+5
+IL4R
+Other
+Missense
+12
+1
+IL4Ra_N
+p.D419V/H/N/Y
+0
+200
+400
+600
+847aa
+0
+6
+STAT6
+p.N417Y
+Missense
+22
+STAT_int STAT_alpha
+STAT_bind
+STAT6_C
+SH2
+zf-H2C2_2
+p.A260P/T
+0
+200
+100
+400
+300
+509aa
+0
+5
+IKZF3
+Other
+Missense
+3
+1
+0
+119aa
+0
+5
+p.L7* p.L13fs
+B2M
+Other
+Missense
+Truncating
+10
+3
+2
+C1-set
+p.E571K/A
+IBN_N
+0
+200
+400
+600
+800
+1071aa
+0
+5
+XPO1
+Missense
+6
+CRM1_C
+Xpo1
+Other
+Missense
+5
+1
+p.Y641C/H/N
+0
+200
+600
+746aa
+0
+5
+EZH2
+EZH2_WD_binding
+400
+SET
+p.G103A/S
+0
+100
+219aa
+0
+5
+HIST1H1E
+Missense
+12
+Linker_histone
+0
+100
+200
+300
+391aa
+0
+5
+PAX5
+Pax2_C
+PAX
+Other
+Missense
+4
+1
+Missense
+Truncating
+3
+2
+p.VP785fs
+0
+200
+600
+897aa
+0
+5
+CSF2RB
+IL6Ra_bind
+400
+fn3
+Missense
+Truncating
+1
+2
+p.L103V/fs
+0
+126aa
+0
+5
+HIST1H2BE
+Histone
+zf-A20
+0
+200
+400
+600
+790aa
+0
+5
+TNFAIP3
+Other
+Missense
+Truncating
+18
+3
+3
+OTU
+p.Q28*/RKSKE28fs
+0
+100
+200
+300
+377aa
+0
+5
+GNA13
+Other
+Missense
+Truncating
+8
+8
+1
+G-alpha
+zf-C2H2
+zf-H2C2_2
+zf-C2H2_4
+p.C158S/W
+0
+200
+400
+600
+800
+1048aa
+0
+5
+ZNF217
+Other
+Missense
+Truncating
+6
+13
+1
+P53_tetramer
+0
+100
+200
+300
+393aa
+0
+5
+TP53
+P53_TAD
+Missense
+Truncating
+3
+5
+P53
+IRF-2BP1_2
+0
+200
+400
+587aa
+0
+5
+IRF2BP2
+Other
+Missense
+Truncating
+4
+6
+1
+Figure 1. Recurrently mutated genes in PMBL. (A) Comutation plot of recurrently mutated CCGs; gene-by-sample matrix color-coded by mutation type (middle); ranked by
+signiﬁcance (MutSig2CV38 q , 0.1, right); number and frequency of recurrent mutations (left); total number of mutations (top); allelic fraction and base substitution distribution of
+mutations in individual samples (below); Asterisks indicate 3 hypermutator cases; ts, transitions; tv, transversions; DNP, dinucleotide polymorphism. (B-C) Spatial clustering of
+mutations was discovered with CLUMPS41; examples include STAT6 (panel B: PDB: 4y5u; STAT6 dimer is shown with individual molecules in gray and cyan, respectively; DNA in
+purple) and ZNF217 (panel C: PDB: 2kmk; DNA in cyan). Mutated residues are shown in red and color-intensity and thickness of line scales with number of mutations. (D) Mutation
+diagrams (lollipop ﬁgures) for all signiﬁcantly mutated genes; aa, amino acid. For each signiﬁcantly mutated gene (MutSig2CV q , 0.1), all nonsynonymous mutations are
+visualized within the functional domains of the respective protein using MutationMapper v2.1.0.85,86 Genes are ranked by signiﬁcance as in (A).
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2371
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+clustering.41 CLUMPS detected 10 genes with signiﬁcant 3D
+clustering (q , 0.25) including 6 CCGs that were also identiﬁed
+by MutSig2CV (supplemental Table 2B). Notably, overlaying
+the predicted protein changes onto available 3D protein
+structures provided additional insights into the likely functions
+of speciﬁc alterations, such as mutational clustering in DNA-
+binding domains of STAT6 and zinc ﬁnger protein 217 (ZNF217)
+and additional protein interaction domains of ZNF21742
+(Figure 1B-C).
+The list of CCGs included genes with known roles in PMBL, such
+as IL4R14 and TNFAIP310 and mutational drivers in additional
+B-cell lymphomas (B2M, GNA13, EZH2, STAT6, IKZF3, XPO1,
+TP53, PAX5) and other cancers (TP53 and XPO1)18,30,43-49
+(Figure 1A; supplemental Table 2). Pathway enrichment analysis
+of the PMBL CCGs with the C2 gene sets of the Molecular
+Signature Database (MSigDB)50 highlighted the role of these
+alterations in the interferon-g (IFN-g), interleukin-4 (IL-4)/JAK/
+STAT, and NF-kB signaling pathways (supplemental Figure 2A).
+All of these pathways were previously reported to be perturbed
+in PMBL.51
+Speciﬁcally, we found mutations in STAT6 (43% of patients), IL4R
+(30%), and CSF2RB (14%) to be CCGs within the JAK/STAT
+pathway (Figure 1A-C). The mutations in the DNA-binding do-
+main of STAT6 included the p.D419 hotspot that was previously
+characterized as a gain-of-function alteration in follicular lym-
+phoma (Figure 1A-B,D).46 Moreover, we conﬁrmed the recently
+described gain-of-function mutations in IL4R, including the
+hotspot at I242N, in PMBL.14 The mutations in CSF2RB, which
+encodes the common b-subunit of the granulocyte-macrophage
+colony-stimulating factor, IL-3, and IL-5, are of note because
+these receptors all signal via the JAK/STAT pathway (Figure 1A-
+C).52 We also identiﬁed previously unreported recurrent muta-
+tions in IRF2BP2 (19%), which encodes a transcriptional cofactor
+that interacts with IRF2 and modulates IFN-g–induced PD-L1
+expression in certain tumor models (Figure 1A-C).53,54
+In addition to conﬁrming the frequent mutations of the negative
+NF-kB regulator TNFAIP3 (41%),10 we identiﬁed recurrent mu-
+tations of PAX5 (11%) and IKZF3 (11%), which encode the B-cell
+transcription factors PAX5 and Aiolos, respectively (Figure 1A,C).
+Recurrent mutations in TP53 were detected at a frequency
+(22%) similar to that in DLBCL30 (Figure 1A,C). Interestingly, we
+also identiﬁed hotspot E571K mutations in XPO1 (16%), which
+encodes an importin-b family member that transports certain
+proteins and RNAs to the cytosol, including p53 and STAT6
+(Figure 1A,C).55,56 These XPO1 hotspot mutations cluster in the
+cargo recognition groove and increase XPO1 activity, as pre-
+viously described in PMBL.55-57
+PMBLs exhibited several mutations that were previously re-
+ported in transcriptionally deﬁned germinal center B-cell
+DLBCLs.30,47,58 These included GNA13 mutations in 35% of
+PMBLs and hotspot Y641 mutations in EZH2, the catalytic
+subunit of the polycomb repressive complex 2 (PRC2) in 14% of
+these tumors (Figure 1A,D). We also identiﬁed mutations in
+HIST1H1E and HIST1H2BE, histone genes that were also per-
+turbed in a subset of germinal center B-cell DLBCLs.30
+We identiﬁed frequent mutations in ZNF217 in 43% of PMBLs
+(6 truncating, 13 missense, 1 other) (Figure 1A-C; supplemental
+Figure 2B). ZNF217 binds to DNA and recruits several multi-
+protein complexes that epigenetically regulate gene expression.42,59
+Previous studies reported recurrent ampliﬁcations of 20q13,
+which includes ZNF217, in several solid tumors, including
+breast, colon, and hepatocellular carcinoma.42,59 In certain
+solid tumor model systems, enforced expression of ZNF217
+limited apoptosis, stimulated epithelial-to-mesenchymal tran-
+sition, and increased proliferation.42 However, the mutational
+pattern of ZNF217 in PMBL (Figure 1D; supplemental Figure 2B)
+suggests an inactivating role. ZNF217 transcript levels were
+similar in the subset of PMBLs with wild-type or mutated
+ZNF217 and available gene expression proﬁles (supplemental
+Figure 2C).
+The most signiﬁcantly mutated gene in our PMBL cohort was
+B2M, which encodes beta-2-microglobulin (b2M), the invariant
+chain of the MHC class I. b2M is responsible for the correct
+intracellular transport of MHC class I molecules to the plasma
+membrane and is essential for the presentation of endogenously
+degraded self- and non–self-antigens.60 B2M is also frequently
+mutated in cHL28,61 and was reported to be infrequently mutated
+in a targeted analysis of PMBL.62
+Notably, we identiﬁed additional mutations in previously re-
+ported modiﬁers of JAK/STAT signaling, including SOCS1 (35%
+[13 of 37] at 32 sites), PTPN1 (14% [5 of 37] at 6 sites), and NF-kB
+activation, including NFKBIE (19% [7 of 37] at 11 sites), that did
+not reach statistical signiﬁcance in our analysis.
+Mutational signature analysis
+To further deﬁne the mutational processes operating in PMBL,
+we used our SignatureAnalyzer tool63 (Figure 2; supplemental
+Figure 3; supplemental Table 3) as we recently reported for
+analyzing DLBCL.30 Interestingly, we discovered that 3 (8%) of 37
+patients had a microsatellite instability (MSI) signature associ-
+ated with defective DNA mismatch repair and MSI (Figure 2A;
+supplemental Methods). As expected, these 3 samples were
+associated with a hypermutation phenotype (Figures 1A 2A-B)
+with a signiﬁcantly increased number of short indels (P 5 .0024;
+1-tailed Mann-Whitney U test). The molecular bases for the
+mismatch repair deﬁciency included frameshift mutations in
+MLH1 in 2 tumors and biallelic likely inactivating mutations in
+PMS2 in 2 tumors (1 tumor with cooccurring MLH1 and PMS2
+mutations). The observed incidence of MSI-associated hyper-
+mutations is similar in PMBL and cHL28 but is signiﬁcantly higher
+than the prevalence of MSI in DLBCL (0.3%).30 These ﬁndings are
+noteworthy because MSI has been associated with increased
+sensitivity to PD-1 blockade in certain solid tumors.64-68
+Despite the young age of our PMBL patient cohort, the majority
+of remaining mutations were caused by spontaneous de-
+amination of cytosines at cytosine-phosphate-guanines (CpGs),
+a genetic signature usually associated with older age at di-
+agnosis (Figure 2A-B). The high frequency of mutations attrib-
+uted to the aging signature (4.5 mutations/Mb) in young adults is
+an additional shared feature of PMBL and cHL.28
+In PMBL, as in cHL, the next most prevalent mutational signa-
+tures were APOBEC and AID (Figure 2A-B).28 The APOBEC
+signature was found in 7 (19%) of 37 PMBLs, which is of note
+because APOBEC signatures have been associated with an
+increased response to PD-1 blockade in non–small-cell lung
+2372
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+cancers.69 To identify putative molecular mechanisms of in-
+creased APOBEC mutagenesis, we genotyped our PMBL pa-
+tients with a high APOBEC signature for SNP rs12628403. This
+SNP is a proxy for a short (30-kb) deletion that fuses the coding
+region of APOBEC3A to the 39UTR of APOBEC3B and generates
+a more stable chimeric transcript, APOBEC3AB, that has been
+linked to increased APOBEC mutagenesis.70,71 We detected the
+rs12628403 SNP in 8 of the 37 PMBL samples, including in 2 of
+the 3 patients who had the highest APOBEC signatures (c_M_07
+and c_M_1404). In fact, the APOBEC signature activity was
+signiﬁcantly higher in patients who exhibited the rs12628403
+SNP (hg19 chr22:39358037A.C; Wilcoxon rank-sum test
+P 5 .032; supplemental Figure 3F).
+Next, we assessed the relative contribution of the aging,
+APOBEC, and AID signatures to the PMBL drivers (Figure 2C).
+TP53 and HIST2H2BE mutations were exclusively caused by
+spontaneous deamination of CpGs (aging), and XPO1 and
+CSFR2B mutations were predominantly caused by the aging
+mutational pattern (Figure 2C), as in cHL.28 In contrast, STAT6
+was perturbed by each of the 3 mutational mechanisms (aging,
+APOBEC, and AID (Figure 2C; supplemental Figure 3G-H). In
+a combined analysis of 37 PMBLs and 3 PMBL cell lines, we
+identiﬁed the above-mentioned mutational signatures and
+detected 2 additional signatures, COSMIC11 and COSMIC15,
+only in the PMBL cell lines. Whereas COSMIC15 is another
+MSI-associated mutational signature, COSMIC11 is associated
+with DNA damage caused by alkylating agents (supplemental
+Figure 3D-E), likely reﬂecting the derivation of the PMBL cell
+lines from heavily pretreated patients.
+SCNAs and SVs
+To detect SCNAs, we ﬁrst applied our copy number pipeline to
+the WES data and identiﬁed 17 recurrent SCNAs by using the
+GISTIC 2.0 algorithm,39 including 10 copy gains (2 focal and 8
+arm level) and 7 copy losses (6 focal and 1 arm level) (Figure 3A;
+supplemental Table 4). Copy gains of 9p/9p24.1/PD-L1/PD-L2
+and 2p/2p16.1/REL were detected in 70% (26 of 37) and 36% (11
+of 37) of PMBLs, respectively (Figure 3A; supplemental Figure 4).
+These ﬁndings are in line with our previous reports and are the
+A
+600
+C->A
+C->G
+C->T
+T->A
+T->C
+T->G
+Aging
+APOBEC
+MSI
+AID
+300
+600
+50
+Contributions
+Tri-nucleotide sequence motifs
+0
+0
+0
+0
+Aging
+APOBEC
+MSI
+AID
+Contributions (# of mutations)
+37 primary PMBLs
+400
+Clustered
+Non-Clustered
+0
+300
+0
+100
+0
+3000
+0
+B
+HIST1H1E
+STAT6
+IRF2BP2
+PAX5
+GNA13
+ZNF217
+B2M
+TNFAIP3
+IL4R
+EZH2
+IKZF3
+XPO1
+CSF2RB
+TP53
+HIST2H2BE
+Aging
+AID
+0
+0.2 0.4 0.6 0.8
+1 0 10 20
+Number of
+mutations
+Signature proportion
+APOBEC
+C
+Figure 2. Mutational signatures operating in PMBLs. (A) De novo discovery identiﬁed 4 mutational signatures in 37 PMBLs using SignatureAnalyzer63: spontaneous de-
+amination at CpGs (C.T CpG, aging, COSMIC1), APOBEC (COSMIC2 and COSMIC13), AID, and MSI (COSMIC26). (B) Signature activity as total count of contributing mutations
+in 37 PMBCLs. Nearest mutation distance ,10 kb. (C) Proportion of each signature for mutations in signiﬁcantly mutated genes (MutSig2CV q , 0.1). This is based on the mean
+likelihood of association (supplemental Methods) of each mutation to each signature (left). Error bars reﬂect the standard error. Total number of mutations depicted as histogram
+(right).
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2373
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+2p(22%)
+2q(19%)
+2p16.1(14%,4|0),
+REL
+9p24.1(27%,12|3),
+JAK2, PD-L1, PD-L2
+5p(24%)
+5q(19%)
+9p(62%)
+9q(43%)
+21q(24%)
+4
+4
+2
+2
+-log10(q-value)
+Arm-level
+Focal
+Ampliﬁcations
+7q(24%)
+1
+2
+3
+4
+5
+7
+6
+8
+9
+10
+11
+12
+13
+15
+17
+19
+21
+14
+16
+18
+20
+22
+Arm-level
+Focal
+Deletions
+7p(11%)
+6p21.32(32%,744|25),
+HLA class I/II
+6q23.3(16%,129|7),
+TNFAIP3
+15q15.1(21%,341|4),
+B2M
+16p13.3(8%,4|0)
+19q13.32(11%,11|0)
+22q13.2(5%,123|0)
+4
+4
+2
+2
+-log10(q-value)
+1
+2
+3
+4
+5
+7
+6
+8
+9
+10
+11
+12
+13
+15
+17
+19
+21
+14
+16
+18
+20
+22
+A
+BCL2
+PTPN1
+WBP2
+SOCS1
+CIITA
+IGH
+AMPD3
+TBL1XR1
+BCL6
+TP63
+THEMIS
+PVT1
+PD-1
+Ligands
+X
+Y
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+B
+AMPD3
+11,2
+Protein fusion: in frame
+CIITA
+IGH
+14,3
+CIITA
+IGH
+23,7
+BCL2
+5,5
+Deletion of promoter
+CIITA
+6,3
+Deletion of promoter
+CIITA
+2,2
+TP63
+PTPN1
+IGH
+24,6
+SOCS1
+24,6
+WBP2
+IGH
+16,4
+Deletion of 3’UTR
+PD-L1
+4,0
+Tandem duplication
+PD-L1
+PD-L2
+RLN2
+PLGRKT
+C
+Figure 3. SCNAs and SVs in PMBL. (A) GISTIC2.0-deﬁned recurrent somatic copy number gain (red, left panel) and loss (blue, right panel) are visualized as mirror plots with arm-
+level alterations to the left and focal alterations to the right. Chromosomes are depicted on the vertical axis. Green line denotes the signiﬁcance threshold (q , 0.1). Signiﬁcant
+peaks are labeled with their associated cytoband/arm followed in brackets by frequency of the alteration, the number of total genes, and Cancer Gene Census genes in the
+signiﬁcant regions, respectively. Genes that are also signiﬁcantly mutated are shown in black, and other relevant drivers are shown in gray. Note that the signiﬁcant focal deletion
+in 16p13.3 does not include CREBBP.87 (B) Detected chromosomal rearrangements are visualized as a circos plot.88 (C) Select SVs and their breakpoints are plotted in their
+genomic context. Exons are visualized as boxes: start codon-containing exons in red, untranslated regions are in smaller boxes, coding exons are underlined in green, and
+previously identiﬁed superenhancers74 in black. Numbers indicate the supporting reads for the plotted SV in the format: split-reads, read-pairs. SV type is listed if it is not a
+translocation.
+2374
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+bases for increased expression of PD-1 ligands and REL in
+PMBL.15,18,24,72 Frequent focal copy losses included 6p21.33/
+MHCI/MHCII, 6q23.3/TNFAIP3, and 15q15.1/B2M in 32%, 16%,
+and 21% of the patients, respectively (Figure 3A; supplemental
+Figure 4).
+We detected SVs and deﬁned them at the base-pair level by
+combining multiple algorithms (see “Methods”; supplemental
+Table 5). These included CIITA SVs in 4 (11%) of 37 of the
+patients, consistent with previous reports,21,22 and infrequent (2
+of 37) SVs of PD-1 ligands, including a tandem duplication of
+both PD-1 ligands and a deletion of the 39UTR of PD-L1 (Figure
+3B-C). The latter has been reported as an additional mechanism
+of PD-L1 deregulation in T-cell NHL (T-NHL) and DLBCL.73 In
+addition, we identiﬁed 2 gain-of-function translocations in which
+the immunoglobulin superenhancer74 is juxtaposed to either
+BCL2 or WBP2 (Figure 3C). WBP2 is a recently described on-
+cogene that functions as a transcriptional coactivator implicated
+in the Hippo- and Wnt-signaling pathways in breast cancer.75
+Cooccurrence of genetic alterations and perturbed
+pathways
+After identifying the recurrent genetic drivers in PMBL, we ex-
+plored the patterns of genetic alterations in individual tumors
+and the full series. For this reason, we generated a gene-sample
+matrix of the recurrent CCGs, SCNAs, and SVs and performed 2-
+way hierarchical clustering (Figure 4A; supplemental Table 6).
+Multiple mechanisms of perturbing driver genes Combined
+analyses of recurrent CCGs, SCNAs, and SVs revealed that certain
+candidate driver genes were perturbed by multiple mechanisms
+(Figures 4A and 5). Examples include TNFAIP3 alterations (59%
+overall, 41% mutations, 24% focal copy loss, 6% biallelic) that in-
+crease NF-kB signaling and B2M alterations (51% overall, 30%
+mutations, 27% focal copy loss, 6% biallelic) (Figures 4A and 5) that
+limit MHC class I antigen presentation.
+Multiple mechanisms of perturbing signaling pathways and
+immune recognition The combined analyses of the 3 types of
+genetic alterations also revealed multiple mechanisms of per-
+turbing speciﬁc signaling pathways (Figures 4A and 5). In par-
+ticular, 81% (30 of 37) of the tumors exhibited 1 or more events
+affecting components of the JAK/STAT pathway (Figures 4A and
+5), including IL4R mutations (32%), 9p/9p24.1/JAK2 copy gain
+(70%), STAT6 mutations (43%), CSFR2B mutations (14%), SOCS1
+SVs (3%), and IRF2BP2 mutations (19%). Chromatin-perturbing
+CCGs, including ZNF217, EZH2, HIST1H1E, and HIST2H2BE
+mutations (Figure 1), were found in 57% (21 of 37) of PMBLs
+(Figures 4A and 5).
+A potential genetic basis of PD-1–mediated immune escape was
+detected in 81% (30 of 37) of PMBLs. However, 73% (22 of 30) of
+these PMBLs also had genetic alterations of antigen pre-
+sentation pathway components, including B2M copy loss or
+mutations, copy loss of 6q21.33 (which includes MHCI/MHCII),
+mutations in EZH2, and SVs of CIITA (Figures 4A and 5).
+Overall, we observed a convergence of genetic events in NF-kB
+and JAK/STAT signaling pathways and perturbations in immune
+recognition and epigenetic modulation (Figures 4A and 5). The
+majority of these events were also detected in the 3 PMBL cell
+lines, underscoring their utility as model systems of the disease
+(Figure 4A, right panel). However, as described above, the cell
+lines included additional mutational signatures reﬂecting, in
+part, their previous treatment with alkylating agents (supple-
+mental Figure 3E).
+Additional genetic substructure Although the majority of
+PMBLs exhibited 9p copy gain and frequent 6p21.33 copy loss,
+hierarchical clustering revealed additional genetic substructure
+(Figure 4A, left and right branches). PMBLs in the left branch of
+the dendrogram included the 3 identiﬁed hypermutators and
+additional tumors with a signiﬁcantly higher frequency of CCGs
+(P 5 .0056, Mann-Whitney U test), including ZNF217 (P 5 .003,
+Fisher’s exact test) and TNFAIP3 (P 5 .0136, Fisher’s exact test)
+(Figure 4A; supplemental Figure 5A-B). Patients with tumors in
+the left branch were signiﬁcantly more likely to be female (81%
+female [left] vs 45% female [right]; P 5 .05, Fisher’s exact test)
+and to be younger at diagnosis (33.5 years [left] vs 38 years
+[right]) (supplemental Figure 5C-D), highlighting the potential
+clinical relevance of the genetic substructure (Figure 4A).
+Clonal and subclonal genetic events Next, we assessed purity
+and ploidy of the PMBL series using ABSOLUTE37 (supplemental
+Table 1). Thereafter, we estimated the cancer cell fraction for
+each genetic alteration30 (ie, the fraction of tumor cells harboring
+each genetic event). Of interest, the majority of recurrent genetic
+alterations in PMBL were clonal (Figure 4B). Because PMBL
+occurs predominantly in females, we speciﬁcally searched for
+alterations that were enriched on the X chromosome and per-
+formed an X chromosome–speciﬁc copy number evaluation
+(data not shown). However, these analyses did not reveal X
+chromosome–associated explanations for the predominance of
+females in PMBL.
+Assessment of antigen presentation pathways in
+PMBL
+As noted, the antigen presentation pathways in PMBL were
+perturbed by multiple recurrent alterations, including B2M
+mutations, focal copy number losses of B2M and the MHCI/
+MHCII loci, and SVs of CIITA and EZH2 mutations (Figures 4A
+and 5). EZH2 mutations were recently described as a mechanism
+of reducing expression of MHC class I and MHC class II in
+lymphomas.76 These ﬁndings prompted us to compare the
+composite genetic signature to b2M, MHC class I, and class II
+protein expression in our PMBL series (Figure 6A-D).
+To this end, the 28 PMBLs with available tissue blocks were
+stained for b2M, MHC class I, and MHC class II and scored by an
+expert hematopathologist (S.J.R.) blinded to the genetic fea-
+tures (Figure 6A). This analysis revealed that 46% (13 of 28), 43%
+(12 of 28), and 75% (21 of 28) of tumor cells had detectable
+(positive [H-score .100] or decreased [H-score 10-99]) mem-
+branous expression of b2M, MHC class I, and MHC class II,
+respectively (Figure 6A-B). As in cHL,77,78 we observed a sig-
+niﬁcant correlation between the expression of b2M and MHC
+class I in individual PMBLs (P , .0001 Spearman correlation;
+Figure 6B); however, expression of MHC class I and MHC class II
+were
+independent
+parameters
+(Figure
+6A;
+supplemental
+Figure 7A). Genetic perturbations in the MHC class I pathway
+components were more common in tumors without MHC class I
+expression (Figure 6A). The 3 PMBLs with EZH2 mutations lacked
+MHC class I expression; 2 of these patients also lacked ex-
+pression of MHC class II (Figure 6A).
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2375
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+Farage
+K1106
+U2940
+GNA13
+10
+# of Alt.
+0
+Hypermutator
+PMBL
+Cell
+Lines
+Gender
+0
+40
+Frequency [%]
+80
+HIST2H2BE
+PAX5
+TNFAIP3
+XPO1
+B2M
+ZNF217
+IRF2BP2
+CSF2RB
+STAT6
+9p24.1*
+CIITA
+IKZF3
+PD-1 Ligands
+TP53
+6q23.3
+19q13.32
+22q13.2
+9p
+9q
+HIST1H1E
+2p16.1/REL
+IL4R
+7q
+5p
+5q
+6p21.33
+EZH2
+15q15.3
+21q
+16p13.3
+2q
+2p
+7p
+*9p24.1
+JAK2
+PD-L1
+PD-L2
+Mutations:
+SCNAs:
+High-level gain
+High-level loss
+Low-level gain
+Low-level loss
+No
+SVs:
+non-syn.
+Yes
+No
+No
+A
+%
+100
+0
+2
+n = 
+2
+4
+8
+12
+8
+10
+4
+7
+9
+6
+4
+4
+3
+7
+4
+15 11
+8
+6
+15
+8
+6
+12 12
+5
+15 21
+9
+17
+8
+2
+7
+9
+3
+1
+0.8
+CCF
+Clonal
+PD-1 Ligands
+22q13.2
+19q13.32
+15q15.1
+6p21.32
+7p
+9p24.1*
+TBL1XR1
+5q
+5p
+6q23.3
+2p16.1/REL
+CSF2RB
+PAX5
+IRF2BP2
+IKZF3
+STAT6
+GNA13
+HIST1H1E
+EZH2
+TNFAIP3
+TP53
+XPO1
+IL4R
+B2M
+CIITA
+9q
+9p
+21q
+ZNF217
+2p
+HIST2H2BE
+2q
+7q
+16p13.3
+Subclonal
+0.6
+0.4
+0.2
+0
+B
+Clonal
+Subclonal
+Figure 4. Cooccurring alterations and clonality of genetic drivers in PMBL. (A) Genetic driver alterations as color-coded matrix. PMBLs alterations were 2-way hierarchically
+clustered using a 1-Pearson-correlation, revealing major left and right branches. Alterations in PMBL cell lines to the right. Bar graphs to the right and bottom summarize the
+number of events across alterations and patients, respectively. Alt, alterations; non-syn, nonsynonymous. (B) The cancer cell fractions (CCF) of all genetic drivers are visualized on
+top and ranked by their median CCF (red line) from high to low (left to right; error bar, interquartile range). The staggered bar graph plots the fraction of clonal and subclonal
+events, with a CCF $0.9 being clonal.
+2376
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+The analyzed PMBLs largely had cell surface expression of both
+MHC class I and MHC class II (Figure 6A,D, top row), cell surface
+expression of only MHC class II (Figure 6A,D, bottom row), or
+absent/decreased expression of both MHC class I and MHC
+class II (Figure 6A,D, middle row). Of interest, we reported similar
+patterns in cHL, in which expression of MHC class II, but not
+MHC class I, was predictive for response to PD-1 blockade.78
+After characterizing MHC class I and MHC class II expression in
+this PMBL cohort, we assessed additional components of the
+tumor immune inﬁltrate with a multiparametric spectral imaging
+panel (PAX5, CD3, CD4, CD8, CD68, and 49,6-diamidino-2-
+phenylindole [DAPI]) and established methods.79 PMBLs with
+higher levels of MHC class II expression had increased numbers
+of tumor-inﬁltrating CD31/CD41 T cells (P 5 .08, Cuzick’s trend
+test; supplemental Figure 7B-C). In addition, the number of
+tumor-inﬁltrating CD681 macrophages was signiﬁcantly higher
+in PMBLs that lacked MHC class I expression (P 5 .044, Cuzick’s
+trend test; supplemental Figure 7D-E). Given the recently
+described role of MHC class I in protecting tumor cells from
+macrophage-mediated phagocytosis,80,81 the inverse relation-
+ship between CD681 macrophage inﬁltration and MHC class I
+expression in PMBL (supplemental Figure 7D-E) may have func-
+tional relevance.
+Comparison of genetic alterations in PMBL and
+other lymphoid and solid malignancies
+After identifying the recurrent genetic alterations (CCGs,
+SCNAs, SVs) in this PMBL series, we compared their frequencies
+to those in a recently described PMBL cohort82 and our own
+comprehensively characterized series of cHL28 and DLBCL30
+(Figure 7A; supplemental Figure 7A). Because a gene could be
+perturbed in an entity but not reach the level of signiﬁcance for a
+driver, we compared the raw frequencies of each alteration
+(Figure 7A). Ten of the 15 CCGs and 4 SCNAs in our PMBL series
+were also identiﬁed in the additional PMBL data set82 (supplemental
+Figure 7A). Our cohort of PMBLs shared several genetic features
+with cHL, including frequent copy gains of 9p/9p24.1/PD-1 ligands
+Transcriptional Deregulation
+IKZF3
+Transcription
+IRF2BP2
+PRC2
+EZH2
+HIST1H1E
+HIST2H2BE
+ZNF217
+PAX5
+MHC I
+MHC II
+XPO1
+NPC
+STAT6
+STAT6
+TRAF
+RIP
+NEMO
+IKK
+p65
+p50
+p65
+p50
+STAT6
+p
+PD-L1/L2
+JAK2
+SOCS1
+CSFR2B
+STAT6
+PD-1
+TCR
+CD4
+CD8
+Tcell
+NF- B
+pathway
+Immune evasion
+JAK/STAT
+pathway
+TNFAIP3
+IKK
+p
+p
+Cytokines
+STAT6
+p
+or
+Enhanceosome
+MHC II genes
+MHC II
+transcripts
+PD-L1
+transcripts
+LOCUS
+GENE
+2p/2p16.1
+REL
+9p/9p24.1
+PD-L1 /PD-L2 /JAK2
+MHC I* /MHC II*
+TNFAIP3
+Mutation
+Ampliﬁcation
+Deletion
+Structural
+variant
+KEY
++ Mutation
+GNA13
+G13
+ARGEF
+RHO
+AKT
+GPCR
+B2M
+IL4R
+p
+p
+XPO1
+REL
+6p21.33
+6p23.3
+B2M
+15q15.1
+PMBL predominant compared to cHL
+TCR
+Deletion
+IB/
+IB
+Cell cycle
+progression
+TP53
+targets
+TP53
+TP63
+CIITA
+
+Figure 5. Genetically perturbed pathways in PMBL. Recurrent genetic drivers, including CCGs, SCNAs, and SVs, are visualized in their functional pathways. Note that certain
+drivers are perturbed by several genetic mechanisms and that several alterations converge on the level of a deregulated pathway (bold). Alterations that are known to inactivate
+the involved proteins are noted (┴). An asterisk (*) denotes all genes related to MHC class I and or MHC class II. A purple circle/box with a darker gray background highlights
+genes that are more frequently altered in PMBL compared with cHL. p, phosphorylation.
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2377
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+and multiple alterations that activate NF-kB and JAK/STAT sig-
+naling and perturb antigen presentation (Figure 7A).28 Differences
+included recurrent mutations of ZNF217, TP53, IRF2BP2, EZH2,
+and certain histone genes (HIST2H2BE) in PMBL that were less
+frequent in cHL (Figure 7A).28 In contrast, certain alterations such
+as BCL2 and BCL6 translocations were more frequent in DLBCL
+E2M/PAX5
+c_M_1615a (§)
+c_M_1616a (#)
+c_M_1402 (*)
+MHC I/PAX5
+MHC II/PAX5
+C
+0
+100
+r = 0.89
+p<0.0001
+0
+100
+200
+300
+MHC I H-score
+B2M H-score
+200
+300
+0
+Mutations:
+SCNAs:
+SVs:
+non-syn.
+High-level loss
+Yes
+No
+Low-level loss
+No
+No
+100
+*
+§
+B2M
+B2M
+MHC I
+MHC II
+15q15.3/B2M
+6p21.33/MHC I
+6p21.33/MHC II
+CIITA
+EZH2
+#
+IHC H-score
+200
+300
+A
+B
+Figure 6. Expression of b2M, MHC class I, and MHC class II proteins affected by different genetic alterations. (A) Tumor-speciﬁc protein expression for b2M, MHC class I,
+and MHC class II is visualized as color-coded H-score (intensity 3 percent positive) for all 28 PMBLs with available immunohistochemistry (IHC) data (brown, top panel). Genetic
+alterations in B2M, MHCI/MHCII, CIITA, and EZH2 color coded by alteration type (key below). Cases depicted in (C) indicated on top with an asterisk, section symbol, and pound
+sign. (B) Correlation of H-scores of MHC class I and b2M. P values were obtained by using a Spearman correlation test. (C) Representative examples of cases with positive
+expression of b2M, HLA class I, and HLA class II (top); absence of b2M, HLA class I expression, and decreased HLA class II expression (middle); and absent b2M, HLA class I
+expression, and positive HLA class II expression (bottom). H-score, lower right corner; genotype, upper right corner. Arrow heads indicate region of interest. Scale bar 5 20 mm.
+del, deletion; mut, mutated; wt, wild-type.
+2378
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+0
+Mutations
+Ampliﬁcations
+Deletions
+SVs
+B2M
+TNFAIP3
+GNA13
+ZNF217
+TP53
+IRF2BP2
+IL4R
+STAT6
+IKZF3
+XPO1
+EZH2
+HIST1H1E
+PAX5
+CSF2RB
+HIST2H2BE
+2p16.1
+2p
+2q
+5p
+5q
+7q
+9p24.1
+9p
+9q
+21q
+6p21.33
+6q23.3
+7p
+15q15.3
+16p13.3
+19q13.32
+22q13.2
+BCL2
+BCL6
+CIITA
+CD274
+SOCS1
+TBL1XR1
+TP63
+40
+80
+PMBL
+(n=37)
+*
+cHL
+(n=23)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+0
+40
+Frequency [%]
+80
+DLBCL
+(n=304)
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+0
+40
+80
+A
+n=397
+Coding mutations/Mb per sample
+10-2
+10-1
+100
+101
+102
+103
+n=381
+Coding mutations
+Clonal coding mutations
+Signiﬁcantly mutated genes
+n=419 n=101 n=217 n=264
+n=55
+n=304 n=214
+n=37
+n=125 n=420 n=416 n=256
+Thyroid
+carcinoma
+Chronic lymphoid
+leukemia
+Low grade
+glioma
+Kidney renal papillary
+cell carcinoma
+Kidney renal clear
+cell carcinoma
+Glioblastoma
+multiforme
+Uterine carcino-
+sarcoma
+Diffuse large
+B-cell lymphoma
+Stomach adeno-
+carcinoma
+Primary Mediastinal
+Large B-cell Lymphoma
+Urothelial bladder
+carcinoma
+Lung adeno-
+carcinoma
+Lung Squamous
+Cell Carcinoma
+Skin cutaneous
+melanoma
+B
+Figure 7. Comparative analysis of lymphoma drivers and mutational burden. (A) Signiﬁcant genetic alternations found in PMBL (left panel) are compared with our own
+reported cohorts of cHL (middle panel),28 and DLBCL (right panel).30 Alterations are color-coded: mutations, black; copy gains (ampliﬁcations), red; copy losses (deletions), blue;
+SVs, green. Error bars indicate standard errors. Because this analysis is PMBL-centric, there are additional DLBCL-speciﬁc alterations30 that are not found in PMBL. Note that
+signiﬁcantly recurrent somatic alterations in PMBL are not necessarily signiﬁcantly recurrent in other tumor cohorts despite being observed frequently. Signiﬁcant genetic drivers
+in cHL28 and DLBCL30 are indicated with an asterisk. (B) Mutational density across different tumor types, ordered from low to high mutational burden (left to right). Tumor types
+are ordered by median mutation burden. Coding mutations in black, clonal coding mutations in blue, and signiﬁcantly mutated genes in red.
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2379
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+and less common in PMBL and cHL (Figure 7A).28 TP53
+mutations were detected at similar frequencies in DLBCL
+(21%30) and PMBL (22%) (Figure 7A; compare left and right
+columns). However, in contrast to DLBCL, in which a subset
+of tumors exhibited biallelic alterations of TP53,30 PMBLs
+harbored only monoallelic TP53 mutations (Figure 4). The
+recurrent genetic alterations in PMBL were not coordinately
+enriched in any of our recently deﬁned DLBCL genetic
+clusters (C1-C5)30 (supplemental Figure 7B), highlighting the
+distinctive features of large-cell lymphomas arising in the
+mediastinum.
+We also compared the mutational density of all, clonal, and
+driver mutations in PMBL with those in the reported cancers from
+The Cancer Genome Atlas project (Figure 7B). The median
+mutational density (7.0 mutations/MB) in PMBLs was signiﬁcantly
+higher than that in DLBCLs (P 5 8 3 1026, 1-sided Wilcoxon test)
+and most solid cancers and comparable to that in bladder cancer
+and lung adenocarcinomas (Figure 7B). In PMBL, the relatively
+high mutational density may be an additional cause for increased
+neoantigen production and responsiveness to PD-1 blockade.
+Discussion
+In this comprehensive genomic analysis of PMBL, we deﬁned re-
+current mutations, SCNAs, and targeted SVs; assessed their clon-
+ality; overlaid mutations on 3D protein structures; analyzed the
+predominant mutation signatures in the coding genome; and com-
+pared the molecular signature and mutational burden of PMBL to
+that of related lymphoid malignancies and additional solid tumors.
+In this report and in Wienand et al,28 we identiﬁed recurrent
+genetic alterations of the NF-kB, JAK/STAT signaling and MHC
+antigen presentation pathways that were shared by PMBLs and
+cHLs (Figures 5 and 7A). Notably, it was necessary to capture all 3
+types of recurrent genetic events—CCGs, SCNAs, and SVs—to
+fully gauge the scope of these pervasive pathway alterations. We
+also identiﬁed genetic alterations of speciﬁc epigenetic modi-
+ﬁers (ZNF217 and EZH2), transcription factors (PAX5 and
+IRF2BP2), and TP53 that were more common in PMBL than in
+cHL (Figures 5 and 7A). Therefore, PMBLs have genetic features
+and pathway perturbations that are common to cHL in addition to
+more selective, potentially disease-deﬁning alterations (Figure 5).
+Similarities between PMBL and cHL include a relatively high
+mutational burden compared with that in other lymphoid and
+solid cancers.28 Although PMBL and cHL are predominantly
+tumors of young adults, these lymphomas have a high rate of
+spontaneous deamination of CpGs, a clock-like mutational
+signature that is typically associated with aging, potentially
+reﬂecting a much higher division rate of the precursor B cells.28,83
+In addition, both PMBLs and cHLs exhibit MSI and APOBEC
+mutational signatures that have been associated with a more
+favorable response to PD-1 blockade.28,69,84
+Our analyses also revealed that PMBLs, like cHLs, exhibit mul-
+tiple genetic bases of perturbed MHC class I expression and less
+frequent decreased MHC class II expression (Figure 6A).28 The
+relative levels of MHC class I and II expression by PMBLs also
+impact the cellular composition of the tumor microenvironment
+(supplemental Figure 6B-D). Taken together, these data build
+upon earlier observations regarding a targetable basis of immune
+evasion in PMBL and cHL and provide a framework to compre-
+hensively assess molecular mechanisms of response and resistance
+to PD-1 blockade and develop rational combination therapies.
+Acknowledgment
+The authors thank all patients for donating their samples.
+This work was supported by the Claudia Adams Barr Program in Basic
+Cancer Research (B.C.), a Medical Oncology Translational Grant Program
+(B.C.), an LLS Translational Research Award (M.A.S.), a grant from the
+National Institutes of Health, National Cancer Institute (RO1 CA161026)
+(M.A.S.), and by the Miller Family Fund (M.A.S.). G.G. was partially
+supported by the Paul C. Zamecnick, MD, Chair in Oncology at the
+Massachusetts General Hospital Cancer Center.
+Authorship
+Contribution: B.C., C.S., G.G., and M.A.S. conceived the project and
+provided leadership; B.C., C.S., A.J.D., J.K., K.W., A.K., G.K.G., P.-H.C.,
+A.L., R.A.R., C.M.C., M.D.D., A.R.T., S.J.R., G.G., and M.A.S analyzed the
+data and contributed to scientiﬁc discussions; B.C., G.K.G., and S.J.R.
+collected the samples; P.-H.C. and S.J.R. generated and interpreted the
+immunohistochemistry data; B.C., C.S., A.J.D., G.G., and M.A.S wrote
+the paper; and all authors read the paper and agreed to the content.
+Conﬂict-of-interest disclosure: M.A.S. has received research funding from
+Bristol-Myers Squibb, Bayer, and Merck, served on advisory boards for
+Bayer and Bristol-Myers Squibb, and received honoraria from Bristol-
+Myers Squibb and Bayer. G.G. received research funds from IBM and
+Pharmacyclics and is an inventor on patent applications related to
+MuTect, ABSOLUTE, MutSig2CV, and POLYSOLVER. S.J.R. received
+research funding from Bristol-Myers Squibb, Merck, KITE/Gilead, and
+Afﬁmed. G.K.G. is a consultant for Moderna Therapeutics. The remaining
+authors declare no competing ﬁnancial interests.
+ORCID proﬁles: B.C., 0000-0002-6485-8773; C.S., 0000-0003-2245-
+9552;
+A.J.D.,
+0000-0002-6152-3169;
+K.W.,
+0000-0001-9548-4420;
+R.A.R.,
+0000-0002-1329-5288;
+S.J.R.,
+0000-0003-1761-9769;
+G.G.,
+0000-0002-0936-0753; M.A.S., 0000-0002-3949-6897.
+Correspondence: Margaret Shipp, Dana-Farber Cancer Institute, 450
+Brookline Ave, Mayer 513, Boston, MA 02215; e-mail: margaret_shipp@
+dfci.harvard.edu; and Gad Getz, Broad Institute of Harvard and Mas-
+sachusetts Institute of Technology, Harvard Medical School, Cambridge,
+MA 02142; e-mail: gadgetz@broadinstitute.org.
+Footnotes
+Submitted 17 June 2019; accepted 14 October 2019. Prepublished
+online as Blood First Edition paper, 28 October 2019; DOI 10.1182/
+blood.2019002067.
+*B.C., C.S., and A.J.D. contributed equally to this work.
+†G.G. and M.A.S. jointly supervised this work.
+The new WES data has been deposited in the dbGAP database
+(www.ncbi.nlm.nig.gov/gap) with the accession number phs000450.
+The online version of this article contains a data supplement.
+The publication costs of this article were defrayed in part by page charge
+payment. Therefore, and solely to indicate this fact, this article is hereby
+marked “advertisement” in accordance with 18 USC section 1734.
+2380
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+REFERENCES
+1.
+Swerdlow SH, Campo E, Pileri SA, et al. The
+2016 revision of the World Health Organiza-
+tion classiﬁcation of lymphoid neoplasms.
+Blood. 2016;127(20):2375-2390.
+2.
+M ¨oller P, L¨ammler B, Eberlein-Gonska M, et al.
+Primary mediastinal clear cell lymphoma of
+B-cell type. Virchows Arch A Pathol Anat
+Histopathol. 1986;409(1):79-92.
+3.
+M ¨oller P, L¨ammler B, Herrmann B, Otto HF,
+Moldenhauer G, Momburg F. The primary
+mediastinal clear cell lymphoma of B-cell type
+has variable defects in MHC antigen expres-
+sion. Immunology. 1986;59(3):411-417.
+4.
+M ¨oller P, Moldenhauer G, Momburg F, et al.
+Mediastinal lymphoma of clear cell type is a
+tumor corresponding to terminal steps of
+B cell differentiation. Blood. 1987;69(4):
+1087-1095.
+5.
+Savage KJ, Monti S, Kutok JL, et al. The
+molecular signature of mediastinal large B-cell
+lymphoma differs from that of other diffuse
+large B-cell lymphomas and shares features
+with classical Hodgkin lymphoma. Blood.
+2003;102(12):3871-3879.
+6.
+Feuerhake F, Kutok JL, Monti S, et al.
+NFkappaB activity, function, and target-gene
+signatures in primary mediastinal large B-cell
+lymphoma and diffuse large B-cell lymphoma
+subtypes. Blood. 2005;106(4):1392-1399.
+7.
+Rosenwald A, Wright G, Leroy K, et al.
+Molecular diagnosis of primary mediastinal
+B cell lymphoma identiﬁes a clinically favor-
+able subgroup of diffuse large B cell lym-
+phoma related to Hodgkin lymphoma. J Exp
+Med. 2003;198(6):851-862.
+8.
+Cazals-Hatem D, Lepage E, Brice P, et al.
+Primary mediastinal large B-cell lymphoma. A
+clinicopathologic study of 141 cases com-
+pared with 916 nonmediastinal large B-cell
+lymphomas, a GELA (“Groupe d’Etude des
+Lymphomes de l’Adulte”) study. Am J Surg
+Pathol. 1996;20(7):877-888.
+9.
+Joos S, Otaño-Joos MI, Ziegler S, et al. Primary
+mediastinal (thymic) B-cell lymphoma is
+characterized by gains of chromosomal ma-
+terial including 9p and ampliﬁcation of the REL
+gene. Blood. 1996;87(4):1571-1578.
+10. Schmitz R, Hansmann ML, Bohle V, et al.
+TNFAIP3 (A20) is a tumor suppressor gene in
+Hodgkin lymphoma and primary mediastinal
+B cell lymphoma. J Exp Med. 2009;206(5):
+981-989.
+11. Mansouri L, Noerenberg D, Young E, et al.
+Frequent NFKBIE deletions are associated
+with poor outcome in primary mediastinal
+B-cell lymphoma. Blood. 2016;128(23):
+2666-2670.
+12. Gunawardana J, Chan FC, Telenius A, et al.
+Recurrent somatic mutations of PTPN1 in
+primary mediastinal B cell lymphoma and
+Hodgkin lymphoma. Nat Genet. 2014;46(4):
+329-335.
+13. Ritz O, Guiter C, Castellano F, et al. Recurrent
+mutations of the STAT6 DNA binding domain
+in primary mediastinal B-cell lymphoma.
+Blood. 2009;114(6):1236-1242.
+14. Vigan `o E, Gunawardana J, Mottok A, et al.
+Somatic IL4R mutations in primary mediastinal
+large B-cell lymphoma lead to constitutive
+JAK-STAT signaling activation. Blood. 2018;
+131(18):2036-2046.
+15. Green MR, Monti S, Rodig SJ, et al. Integrative
+analysis reveals selective 9p24.1 ampliﬁca-
+tion, increased PD-1 ligand expression, and
+further induction via JAK2 in nodular scle-
+rosing Hodgkin lymphoma and primary me-
+diastinal large B-cell lymphoma. Blood. 2010;
+116(17):3268-3277.
+16. Rui L, Emre NC, Kruhlak MJ, et al. Cooperative
+epigenetic modulation by cancer amplicon
+genes. Cancer Cell. 2010;18(6):590-605.
+17. Hao Y, Chapuy B, Monti S, Sun HH, Rodig S,
+Shipp MA. Selective JAK2 inhibition speciﬁ-
+cally decreases Hodgkin lymphoma and me-
+diastinal large B-cell lymphoma growth in vitro
+and in vivo. Clin Cancer Res. 2014;20(10):
+2674-2683.
+18. Chapuy B, Roemer MG, Stewart C, et al.
+Targetable genetic features of primary tes-
+ticular and primary central nervous system
+lymphomas. Blood. 2016;127(7):869-881.
+19. Green MR, Rodig S, Juszczynski P, et al.
+Constitutive AP-1 activity and EBV infection
+induce PD-L1 in Hodgkin lymphomas and
+posttransplant lymphoproliferative disorders:
+implications for targeted therapy. Clin Cancer
+Res. 2012;18(6):1611-1618.
+20. Twa DD, Chan FC, Ben-Neriah S, et al.
+Genomic rearrangements involving pro-
+grammed death ligands are recurrent in pri-
+mary mediastinal large B-cell lymphoma.
+Blood. 2014;123(13):2062-2065.
+21. Steidl C, Shah SP, Woolcock BW, et al. MHC
+class II transactivator CIITA is a recurrent gene
+fusion partner in lymphoid cancers. Nature.
+2011;471(7338):377-381.
+22. Mottok A, Woolcock B, Chan FC, et al.
+Genomic alterations in CIITA are frequent in
+primary mediastinal large B cell lymphoma
+and are associated with diminished MHC class
+II expression. Cell Reports. 2015;13(7):
+1418-1431.
+23. Roberts RA, Wright G, Rosenwald AR, et al.
+Loss of major histocompatibility class II gene
+and protein expression in primary mediastinal
+large B-cell lymphoma is highly coordinated
+and related to poor patient survival. Blood.
+2006;108(1):311-318.
+24. Lenz G, Wright GW, Emre NC, et al. Molecular
+subtypes of diffuse large B-cell lymphoma
+arise by distinct genetic pathways. Proc Natl
+Acad Sci U S A. 2008;105(36):13520-13525.
+25. Giulino-Roth L. How I treat primary mediasti-
+nal B-cell lymphoma. Blood. 2018;132(8):
+782-790.
+26. Dunleavy K, Pittaluga S, Maeda LS, et al.
+Dose-adjusted EPOCH-rituximab therapy in
+primary mediastinal B-cell lymphoma. N Engl
+J Med. 2013;368(15):1408-1416.
+27. Zinzani PL, Ribrag V, Moskowitz CH, et al.
+Safety and tolerability of pembrolizumab in
+patients with relapsed/refractory primary
+mediastinal large B-cell lymphoma. Blood.
+2017;130(3):267-270.
+28. Wienand K, Chapuy B, Steward C, et al.
+Genomic analyses of ﬂow-sorted Hodgkin
+Reed-Sternberg cells reveal complementary
+mechanisms of immune evasion. Blood Adv.
+2019;3(23):4065-4080.
+29. Lohr JG, Stojanov P, Lawrence MS, et al.
+Discovery and prioritization of somatic muta-
+tions in diffuse large B-cell lymphoma (DLBCL)
+by whole-exome sequencing. Proc Natl Acad
+Sci U S A. 2012;109(10):3879-3884.
+30. Chapuy B, Stewart C, Dunford AJ, et al.
+Molecular subtypes of diffuse large B cell
+lymphoma are associated with distinct patho-
+genic mechanisms and outcomes. Nat Med.
+2018;24(5):679-690.
+31. Cibulskis K, McKenna A, Fennell T, Banks E,
+DePristo M, Getz G. ContEst: estimating cross-
+contamination of human samples in next-
+generation sequencing data. Bioinformatics.
+2011;27(18):2601-2602.
+32. Abo RP, Ducar M, Garcia EP, et al. BreaKmer:
+detection of structural variation in targeted
+massively parallel sequencing data using
+kmers. Nucleic Acids Res. 2015;43(3):e19.
+33. Layer RM, Chiang C, Quinlan AR, Hall IM.
+LUMPY: a probabilistic framework for struc-
+tural variant discovery. Genome Biol. 2014;
+15(6):R84.
+34. Berger MF, Lawrence MS, Demichelis F, et al.
+The genomic complexity of primary human
+prostate cancer. Nature. 2011;470(7333):
+214-220.
+35. Wala JA, Bandopadhayay P, Greenwald NF,
+et al. SvABA: genome-wide detection of
+structural variants and indels by local assem-
+bly. Genome Res. 2018;28(4):581-591.
+36. Drier Y, Lawrence MS, Carter SL, et al. Somatic
+rearrangements across cancer reveal classes
+of samples with distinct patterns of DNA
+breakage and rearrangement-induced hy-
+permutability. Genome Res. 2013;23(2):
+228-235.
+37. Carter SL, Cibulskis K, Helman E, et al.
+Absolute quantiﬁcation of somatic DNA al-
+terations in human cancer. Nat Biotechnol.
+2012;30(5):413-421.
+38. Lawrence MS, Stojanov P, Polak P, et al.
+Mutational heterogeneity in cancer and the
+search for new cancer-associated genes.
+Nature. 2013;499(7457):214-218.
+39. Mermel CH, Schumacher SE, Hill B, Meyerson
+ML, Beroukhim R, Getz G. GISTIC2.0 facili-
+tates sensitive and conﬁdent localization of
+the targets of focal somatic copy-number al-
+teration in human cancers. Genome Biol.
+2011;12(4):R41.
+40. Cibulskis K, Lawrence MS, Carter SL, et al.
+Sensitive detection of somatic point mutations
+in impure and heterogeneous cancer samples.
+Nat Biotechnol. 2013;31(3):213-219.
+41. Kamburov A, Lawrence MS, Polak P, et al.
+Comprehensive assessment of cancer mis-
+sense mutation clustering in protein struc-
+tures. Proc Natl Acad Sci U S A. 2015;112(40):
+E5486-E5495.
+42. Cohen PA, Donini CF, Nguyen NT, Lincet H,
+Vendrell JA. The dark side of ZNF217, a key
+regulator of tumorigenesis with powerful
+biomarker value. Oncotarget. 2015;6(39):
+41566-41581.
+43. Challa-Malladi M, Lieu YK, Califano O, et al.
+Combined genetic inactivation of b2-
+Microglobulin and CD58 reveals frequent
+escape from immune recognition in diffuse
+GENOMIC ANALYSIS OF PMBL
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+2381
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
+
+large B cell lymphoma. Cancer Cell. 2011;
+20(6):728-740.
+44. Muppidi JR, Schmitz R, Green JA, et al. Loss of
+signalling via Ga13 in germinal centre B-cell-
+derived lymphoma. Nature. 2014;516(7530):
+254-258.
+45. Morin RD, Johnson NA, Severson TM, et al.
+Somatic mutations altering EZH2 (Tyr641) in
+follicular and diffuse large B-cell lymphomas
+of germinal-center origin. Nat Genet. 2010;
+42(2):181-185.
+46. Yildiz M, Li H, Bernard D, et al. Activating
+STAT6 mutations in follicular lymphoma.
+Blood. 2015;125(4):668-679.
+47. Pasqualucci L, Trifonov V, Fabbri G, et al.
+Analysis of the coding genome of diffuse large
+B-cell lymphoma. Nat Genet. 2011;43(9):
+830-837.
+48. Morin RD, Mendez-Lago M, Mungall AJ, et al.
+Frequent mutation of histone-modifying
+genes in non-Hodgkin lymphoma. Nature.
+2011;476(7360):298-303.
+49. Monti S, Chapuy B, Takeyama K, et al.
+Integrative analysis reveals an outcome-
+associated and targetable pattern of p53 and
+cell cycle deregulation in diffuse large B cell
+lymphoma. Cancer Cell. 2012;22(3):359-372.
+50. Subramanian A, Tamayo P, Mootha VK, et al.
+Gene set enrichment analysis: a knowledge-
+based approach for interpreting genome-
+wide expression proﬁles. Proc Natl Acad Sci U
+S A. 2005;102(43):15545-15550.
+51. Steidl C, Gascoyne RD. The molecular patho-
+genesis of primary mediastinal large B-cell
+lymphoma. Blood. 2011;118(10):2659-2669.
+52. Watanabe-Smith K, Tognon C, Tyner JW,
+Meijerink JP, Druker BJ, Agarwal A. Discovery
+and functional characterization of a germline,
+CSF2RB-activating mutation in leukemia.
+Leukemia. 2016;30(9):1950-1953.
+53. Dorand RD, Nthale J, Myers JT, et al. Cdk5
+disruption attenuates tumor PD-L1 expression
+and promotes antitumor immunity. Science.
+2016;353(6297):399-403.
+54. Ramalho-Oliveira R, Oliveira-Vieira B, Viola
+JPB. IRF2BP2: A new player in the regulation
+of cell homeostasis. J Leukoc Biol. 2019;
+106(3):717-723.
+55. Miloudi H, Leroy K, Jardin F, Sola B. STAT6 is a
+cargo of exportin 1: Biological relevance in
+primary mediastinal B-cell lymphoma. Cell
+Signal. 2018;46:76-82.
+56. Camus V, Miloudi H, Taly A, Sola B, Jardin F.
+XPO1 in B cell hematological malignancies:
+from recurrent somatic mutations to targeted
+therapy. J Hematol Oncol. 2017;10(1):47.
+57. Jardin F, Pujals A, Pelletier L, et al. Recurrent
+mutations of the exportin 1 gene (XPO1) and
+their impact on selective inhibitor of nuclear
+export compounds sensitivity in primary me-
+diastinal B-cell lymphoma. Am J Hematol.
+2016;91(9):923-930.
+58. Morin RD, Mungall K, Pleasance E, et al.
+Mutational and structural analysis of diffuse
+large B-cell lymphoma using whole-genome
+sequencing. Blood. 2013;122(7):1256-1265.
+59. Quinlan KG, Verger A, Yaswen P, Crossley M.
+Ampliﬁcation of zinc ﬁnger gene 217 (ZNF217)
+and cancer: when good ﬁngers go bad.
+Biochim Biophys Acta. 2007;1775(2):333-340.
+60. Peaper DR, Cresswell P. Regulation of MHC
+class I assembly and peptide binding. Annu
+Rev Cell Dev Biol. 2008;24(1):343-368.
+61. Reichel J, Chadburn A, Rubinstein PG, et al.
+Flow sorting and exome sequencing reveal
+the oncogenome of primary Hodgkin and
+Reed-Sternberg cells. Blood. 2015;125(7):
+1061-1072.
+62. Dubois S, Viailly PJ, Mareschal S, et al. Next-
+generation sequencing in diffuse large B-cell
+lymphoma highlights molecular divergence
+and therapeutic opportunities: a LYSA study.
+Clin Cancer Res. 2016;22(12):2919-2928.
+63. Kim J, Mouw KW, Polak P, et al. Somatic
+ERCC2 mutations are associated with a dis-
+tinct genomic signature in urothelial tumors.
+Nat Genet. 2016;48(6):600-606.
+64. Abida W, Cheng ML, Armenia J, et al. Analysis
+of the prevalence of microsatellite instability in
+prostate cancer and response to immune
+checkpoint blockade. JAMA Oncol. 2019;5(4):
+471-478.
+65. Wang T, Lee LH, Vyas M, et al. Colorectal
+carcinoma with double somatic mismatch re-
+pair gene inactivation: clinical and patholog-
+ical characteristics and response to immune
+checkpoint blockade. Mod Pathol. 2019;
+32(10):1551-1562.
+66. Llosa NJ, Cruise M, Tam A, et al. The vigorous
+immune microenvironment of microsatellite
+instable colon cancer is balanced by multiple
+counter-inhibitory checkpoints. Cancer Dis-
+cov. 2015;5(1):43-51.
+67. Overman MJ, McDermott R, Leach JL, et al.
+Nivolumab in patients with metastatic DNA
+mismatch repair-deﬁcient or microsatellite
+instability-high colorectal cancer (CheckMate
+142): an open-label, multicentre, phase 2
+study. Lancet Oncol. 2017;18(9):1182-1191.
+68. Wang Z, Zhao J, Wang G, et al. Commutations
+in DNA damage response pathways serve as
+potential biomarkers for immune checkpoint
+blockade. Cancer Res. 2018;78(22):
+6486-6496.
+69. Wang S, Jia M, He Z, Liu XS. APOBEC3B and
+APOBEC mutational signature as potential
+predictive markers for immunotherapy re-
+sponse in non-small cell lung cancer.
+Oncogene. 2018;37(29):3924-3936.
+70. Caval V, Susp `ene R, Shapira M, Vartanian JP,
+Wain-Hobson S. A prevalent cancer suscep-
+tibility APOBEC3A hybrid allele bearing
+APOBEC3B 3’UTR enhances chromosomal
+DNA damage. Nat Commun. 2014;5(1):5129.
+71. Nik-Zainal S, Wedge DC, Alexandrov LB, et al.
+Association of a germline copy number
+polymorphism of APOBEC3A and APOBEC3B
+with burden of putative APOBEC-dependent
+mutations in breast cancer. Nat Genet. 2014;
+46(5):487-491.
+72. Shi M, Roemer MG, Chapuy B, et al.
+Expression of programmed cell death 1 ligand
+2 (PD-L2) is a distinguishing feature of primary
+mediastinal (thymic) large B-cell lymphoma
+and associated with PDCD1LG2 copy gain.
+Am J Surg Pathol. 2014;38(12):1715-1723.
+73. Kataoka K, Shiraishi Y, Takeda Y, et al.
+Aberrant PD-L1 expression through 39-UTR
+disruption in multiple cancers. Nature. 2016;
+534(7607):402-406.
+74. Chapuy B, McKeown MR, Lin CY, et al.
+Discovery and characterization of super-
+enhancer-associated dependencies in diffuse
+large B cell lymphoma. Cancer Cell. 2013;
+24(6):777-790.
+75. Li Z, Lim SK, Liang X, Lim YP. The transcrip-
+tional coactivator WBP2 primes triple-
+negative breast cancer cells for responses to
+Wnt signaling via the JNK/Jun kinase path-
+way. J Biol Chem. 2018;293(52):20014-20028.
+76. Ennishi D, Takata K, B ´eguelin W, et al.
+Molecular and genetic characterization of
+MHC deﬁciency identiﬁes EZH2 as thera-
+peutic target for enhancing immune recog-
+nition. Cancer Discov. 2019;9(4):546-563.
+77. Roemer MG, Advani RH, Redd RA, et al.
+Classical Hodgkin lymphoma with reduced
+b2M/MHC class I expression is associated with
+inferior outcome independent of 9p24.1 sta-
+tus. Cancer Immunol Res. 2016;4(11):910-916.
+78. Roemer MGM, Redd RA, Cader FZ, et al.
+Major Histocompatibility Complex Class II and
+Programmed Death Ligand 1 Expression
+Predict Outcome After Programmed Death 1
+Blockade in Classic Hodgkin Lymphoma.
+J Clin Oncol. 2018;36(10):942-950.
+79. Carey CD, Gusenleitner D, Lipschitz M, et al.
+Topological analysis reveals a PD-L1-associ-
+ated microenvironmental niche for Reed-
+Sternberg cells in Hodgkin lymphoma. Blood.
+2017;130(22):2420-2430.
+80. Barkal AA, Weiskopf K, Kao KS, et al.
+Engagement of MHC class I by the inhibitory
+receptor LILRB1 suppresses macrophages and
+is a target of cancer immunotherapy. Nat
+Immunol. 2018;19(1):76-84.
+81. Zhang CC, Fu YX. Another way to not get
+eaten. Nat Immunol. 2018;19(1):6-7.
+82. Mottok A, Hung SS, Chavez EA, et al.
+Integrative genomic analysis identiﬁes key
+pathogenic mechanisms in primary mediasti-
+nal large B-cell lymphoma. Blood. 2019;
+134(10):802-813.
+83. Alexandrov LB, Nik-Zainal S, Wedge DC, et al;
+ICGC PedBrain. Signatures of mutational
+processes in human cancer. Nature. 2013;
+500(7463):415-421.
+84. Le DT, Uram JN, Wang H, et al. PD-1 blockade
+in tumors with mismatch-repair deﬁciency.
+N Engl J Med. 2015;372(26):2509-2520.
+85. Cerami E, Gao J, Dogrusoz U, et al. The cBio
+cancer genomics portal: an open platform for
+exploring multidimensional cancer genomics
+data. Cancer Discov. 2012;2(5):401-404.
+86. Gao J, Aksoy BA, Dogrusoz U, et al.
+Integrative analysis of complex cancer geno-
+mics and clinical proﬁles using the cBioPortal.
+Sci Signal. 2013;6(269):pl1.
+87. Rusconi D, Negri G, Colapietro P, et al.
+Characterization of 14 novel deletions un-
+derlying Rubinstein-Taybi syndrome: an up-
+date of the CREBBP deletion repertoire. Hum
+Genet. 2015;134(6):613-626.
+88. Krzywinski M, Schein J, Birol I, et al. Circos: an
+information aesthetic for comparative geno-
+mics. Genome Res. 2009;19(9):1639-1645.
+2382
+blood® 26 DECEMBER 2019 | VOLUME 134, NUMBER 26
+CHAPUY et al
+Downloaded from http://ashpublications.org/blood/article-pdf/134/26/2369/1549702/bloodbld2019002067.pdf by guest on 17 May 2024
